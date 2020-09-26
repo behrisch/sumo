@@ -4,185 +4,23 @@ on:
   push:            # run on push events
     paths-ignore:  # but ignore everything in the docs subfolder 
       - 'docs/**'
+    tags:
+      - '*'
   pull_request:    # run on pull requests
     paths-ignore:  # but ignore everything in the docs subfolder 
       - 'docs/**'
 
 jobs:
-  ###########################
-  # BUILDING ON LINUX
-  ###########################
-  build-linux:
-    runs-on: ubuntu-latest
-    strategy:
-      # Allow all other matrix-jobs to continue running, even if one of the jobs fails
-      fail-fast: false
-      matrix:
-        build_type: [full, minimal]
-        compiler: [gcc, clang]
-
-    steps:
-    - name: Cloning SUMO
-      uses: actions/checkout@v2
-      with:
-        path: sumo
-
-    - name: Fetching SUMO tags
-      run: |
-        cd sumo
-        git fetch --prune --unshallow
-
-    - name: Preparing Build System
-      run: |
-        sudo apt-get update 
-        sudo apt-get install cmake libeigen3-dev libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgtest-dev libgoogle-perftools-dev libgl2ps-dev python3-dev python3-setuptools swig openjdk-8-jdk maven ccache
-        sudo pip3 install texttest
-
-    - name: Preparing Gtest
-      run: |
-        pushd /usr/src/gtest
-        sudo mkdir build
-        cd build
-        if [[ "${{ matrix.compiler }}" == "gcc" ]]; then sudo CC=gcc CXX=g++ cmake ..; fi
-        if [[ "${{ matrix.compiler }}" == "clang" ]]; then sudo CC=clang CXX=clang++ cmake ..; fi
-        sudo make
-        sudo cp libgtest* /usr/lib/
-
-    - name: Building SUMO
-      run: |
-        mkdir -p sumo/cmake-build 
-        cd sumo/cmake-build 
-        if [[ "${{ matrix.compiler }}" == "gcc" ]]; then export CC=gcc; export CXX=g++; fi
-        if [[ "${{ matrix.compiler }}" == "clang" ]]; then export CC=clang; export CXX=clang++; fi
-        if [[ "${{ matrix.build_type }}" == "full" ]]; then cmake ..; fi
-        if [[ "${{ matrix.build_type }}" == "minimal" ]]; then cmake -DFOX_CONFIG= -DPROJ_LIBRARY= -DCHECK_OPTIONAL_LIBS=OFF ..; fi 
-        make -j4
-
-    - name: Building Traas
-      run: |
-        cd sumo/cmake-build 
-        make traas
-
-    - name: Installing SUMO
-      run: |
-        cd sumo/cmake-build 
-        sudo make install
-
-    - name: Building Examples and Tests
-      run: |
-        cd sumo/cmake-build
-        if [[ "${{ matrix.build_type }}" == "full" ]]; then make CTEST_OUTPUT_ON_FAILURE=1 examples test; fi
-
-    - name: Uploading artifacts (SUMO binaries)
-      uses: actions/upload-artifact@v1
-      with:
-        name: Linux-${{ matrix.compiler }}-${{ matrix.build_type }}
-        path: sumo/bin
-
-  ###################
-  # BUILDING wheels
-  ###################
-  build-manylinux-wheels:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Cloning SUMO
-      uses: actions/checkout@v2
-
-    - name: Fetching SUMO tags
-      run: |
-        git fetch --prune --unshallow
-
-    - name: Building Python wheels
-      uses: docker://quay.io/pypa/manylinux2014_x86_64
-      with:
-        entrypoint: tools/build/build_wheels.sh
-
-    - name: Uploading artifacts (Python wheels)
-      uses: actions/upload-artifact@v1
-      with:
-        name: manylinux-wheels
-        path: wheelhouse
-
-  ###################
-  # PUBLISHING wheels
-  ###################
   publish-wheels:
-    needs: [build-windows,build-manylinux-wheels]
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/download-artifact@v2
-
     - name: Moving artifacts
       run: |
-        ls -lR
-        mkdir dist
-        mv ./*-wheels/* dist
-        mv dist/sumo-*cp38* `echo dist/sumo-*cp38* | sed 's/cp38-cp38/py2.py3-none/'`
+        python tools/build/setup-sumolib.py bdist_wheel
+
     - name: Publish to Test PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
         password: ${{ secrets.TEST_PYPI_TOKEN }}
         repository_url: https://test.pypi.org/legacy/
-
-  ###################
-  # BUILDING ON macOS
-  ###################
-  build-osx:
-    runs-on: macos-latest
-    steps:
-    - name: Cloning SUMO
-      uses: actions/checkout@v2
-      with:
-        path: sumo
-
-    - name: Fetching SUMO tags
-      run: |
-        cd sumo
-        git fetch --prune --unshallow
-
-    - name: Preparing Build System
-      run: |
-        brew update
-        brew cask install xquartz
-        brew install xerces-c fox proj gdal gl2ps  
-
-    - name: Installing Google Test
-      run: |
-        git clone https://github.com/google/googletest
-        cd googletest
-        git checkout release-1.10.0
-        mkdir build
-        cd build
-        cmake ..
-        make
-        make install
-
-    - name: Building SUMO
-      run: |
-        mkdir -p sumo/cmake-build 
-        cd sumo/cmake-build 
-        cmake .. 
-        make -j4
-
-    - name: Building Traas
-      run: |
-        cd sumo/cmake-build 
-        make traas
-
-    - name: Installing SUMO
-      run: |
-        cd sumo/cmake-build 
-        sudo make install
-
-    - name: Building Examples and Tests
-      run: |
-        cd sumo/cmake-build
-        make CTEST_OUTPUT_ON_FAILURE=1 examples test
-
-    - name: Uploading artifacts (SUMO binaries)
-      uses: actions/upload-artifact@v1
-      with:
-        name: macOS
-        path: sumo/bin
