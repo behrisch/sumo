@@ -20,12 +20,10 @@ jobs:
       with:
         path: sumo
 
-    - name: Fetching SUMO tags
+    - name: Fetching tags, building wheel
       run: |
         cd sumo
         git fetch --prune --unshallow
-    - name: Moving artifacts
-      run: |
         python tools/build/setup-sumolib.py bdist_wheel
 
     - name: Publish to Test PyPI
