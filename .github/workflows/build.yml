@@ -15,6 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Cloning SUMO
+      uses: actions/checkout@v2
+      with:
+        path: sumo
+
+    - name: Fetching SUMO tags
+      run: |
+        cd sumo
+        git fetch --prune --unshallow
     - name: Moving artifacts
       run: |
         python tools/build/setup-sumolib.py bdist_wheel
