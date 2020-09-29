@@ -22,6 +22,7 @@ jobs:
 
     - name: Fetching tags, building wheel
       run: |
+        pip install wheel
         cd sumo
         git fetch --prune --unshallow
         python tools/build/setup-sumolib.py bdist_wheel
