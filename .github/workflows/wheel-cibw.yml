@@ -30,6 +30,7 @@ jobs:
         with:
           path: sumo
           fetch-depth: 0
+          fetch-tags: true
 
       # - name: Fetching SUMO tags
       #   run: |
