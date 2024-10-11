@@ -21,7 +21,7 @@ import os
 from skbuild import setup
 import version
 
-_, SUMO_VERSION = version.get_pep440_version(), "1.21.0"
+_, SUMO_VERSION = "", "1.21.0"
 package_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 setup(
