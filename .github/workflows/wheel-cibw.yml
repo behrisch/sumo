@@ -32,10 +32,10 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
 
-      # - name: Fetching SUMO tags
-      #   run: |
-      #     cd sumo
-      #     git fetch --tags --force
+      - name: Fetching SUMO tags
+        run: |
+          cd sumo
+          git fetch --tags --force
 
       # - name: Preparing wheel eclipse-sumo
       #   run: |
