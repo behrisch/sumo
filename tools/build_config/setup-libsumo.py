@@ -21,7 +21,7 @@ import os
 from skbuild import setup
 import version
 
-SUMO_VERSION = version.get_pep440_version()
+SUMO_VERSION = "1.21.0" # version.get_pep440_version()
 package_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 setup(
@@ -47,5 +47,5 @@ setup(
     packages=['libsumo'],
     package_dir={'': package_dir},
     package_data={'libsumo': ['*.pyd', '*.so', '*.dylib']},
-#    install_requires=['traci>='+SUMO_VERSION, 'eclipse-sumo>='+SUMO_VERSION],
+    install_requires=['traci>='+SUMO_VERSION, 'eclipse-sumo>='+SUMO_VERSION],
 )
