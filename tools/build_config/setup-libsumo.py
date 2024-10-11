@@ -17,30 +17,12 @@
 # @date    2017-01-26
 
 
-from setuptools import setup
-from setuptools.dist import Distribution
-from setuptools.command.install import install
 import os
-
+from skbuild import setup
 import version
 
 SUMO_VERSION = version.get_pep440_version()
 package_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-
-
-class InstallPlatlib(install):
-    def finalize_options(self):
-        install.finalize_options(self)
-        if self.distribution.has_ext_modules():
-            self.install_lib = self.install_platlib
-
-
-class BinaryDistribution(Distribution):
-    """Distribution which always forces a binary package with platform name"""
-
-    def has_ext_modules(self):
-        return True
-
 
 setup(
     name='libsumo',
@@ -66,6 +48,4 @@ setup(
     package_dir={'': package_dir},
     package_data={'libsumo': ['*.pyd', '*.so', '*.dylib']},
     install_requires=['traci>='+SUMO_VERSION, 'eclipse-sumo>='+SUMO_VERSION],
-    cmdclass={'install': InstallPlatlib},
-    distclass=BinaryDistribution
 )
