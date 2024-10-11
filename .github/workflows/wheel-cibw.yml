@@ -53,6 +53,7 @@ jobs:
 
       - name: Preparing wheel libsumo
         run: |
+          cp sumo/build_config/pyproject.toml sumo/tools
           python3 sumo/tools/build_config/version.py sumo/tools/build_config/setup-libsumo.py sumo/tools/setup.py
 
       - name: Building wheel libsumo
