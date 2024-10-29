@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-06-11 10:35:56 by Eclipse SUMO netedit Version v1_20_0+0459-30b40d5d475
+<!-- generated on 2024-10-29 16:00:12 by Eclipse SUMO netedit Version v1_21_0+0570-cf2b8cf0724
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
@@ -11,10 +21,10 @@
     <trainStop id="trainStopB" name="m" lane="EdgeCenter0_1" startPos="6.05" endPos="12.95"/>
     <containerStop id="containerStopA" lane="Edge2_1" startPos="34.00" endPos="44.00"/>
     <containerStop id="containerStopB" lane="EdgeCenter1_1" startPos="10.36" endPos="20.73"/>
-    <chargingStation id="chargingStationA" lane="Edge2_1" startPos="13.00" endPos="21.00"/>
-    <chargingStation id="chargingStationB" lane="EdgeCenter1_1" startPos="34.42" endPos="41.58"/>
     <parkingArea id="parkingAreaA" lane="Edge2_1" startPos="22.00" endPos="32.00"/>
     <parkingArea id="parkingAreaB" lane="EdgeCenter0_1" startPos="16.41" endPos="26.77"/>
+    <chargingStation id="chargingStationA" lane="Edge2_1" startPos="13.00" endPos="21.00"/>
+    <chargingStation id="chargingStationB" lane="EdgeCenter1_1" startPos="34.42" endPos="41.58"/>
     <!-- Detectors -->
     <inductionLoop id="e1_0" lane="Edge4_1" pos="3.00" period="300.00" file="e1_0.xml"/>
     <inductionLoop id="e1_1" lane="Edge1_1" pos="27.00" period="300.00" file="e1_1.xml"/>
