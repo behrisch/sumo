@@ -222,18 +222,18 @@ GNEContour::calculateContourEdgeGeometryPoints(const GUIVisualizationSettings& s
             const auto nearestPos = edgeGeometry.positionAtOffset2D(nearestOffset);
             // check position within geometry of middle geometry points
             for (int i = 1; i < lastGeometryPointIndex; i++) {
-                if (edgeGeometry[i].distanceSquaredTo(nearestPos) <= squaredRadius) {
+                if (edgeGeometry[i].distanceSquaredTo2D(nearestPos) <= squaredRadius) {
                     gViewObjectsHandler.checkGeometryPoint(d, edge, edgeGeometry, i, edge->getType(), radius);
                 }
             }
             // check extrems
             if (firstExtrem) {
-                if (edgeGeometry[0].distanceSquaredTo(nearestPos) <= squaredRadius) {
+                if (edgeGeometry[0].distanceSquaredTo2D(nearestPos) <= squaredRadius) {
                     gViewObjectsHandler.checkGeometryPoint(d, edge, edgeGeometry, 0, edge->getType(), radius);
                 }
             }
             if (lastExtrem) {
-                if (edgeGeometry[lastGeometryPointIndex].distanceSquaredTo(nearestPos) <= squaredRadius) {
+                if (edgeGeometry[lastGeometryPointIndex].distanceSquaredTo2D(nearestPos) <= squaredRadius) {
                     gViewObjectsHandler.checkGeometryPoint(d, edge, edgeGeometry, lastGeometryPointIndex, edge->getType(), radius);
                 }
             }

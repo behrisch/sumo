@@ -101,9 +101,6 @@ public:
      */
     static void buildVehicleDevices(SUMOVehicle& v, std::vector<MSVehicleDevice*>& into);
 
-    /** @brief Returns the search state corresponding to the /
-
-    public:
     /** @brief Constructor
      *
      * @param[in] holder The vehicle that holds this device

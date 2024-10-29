@@ -23,6 +23,7 @@
 #include <netedit/GNEViewNet.h>
 #include <netedit/GNEUndoList.h>
 #include <netedit/GNENet.h>
+#include <utils/options/OptionsCont.h>
 #include <utils/xml/NamespaceIDs.h>
 
 #include "GNEAdditionalHandler.h"
@@ -468,10 +469,12 @@ GNEAdditionalHandler::buildSingleLaneDetectorE2(const CommonXMLStructure::SumoBa
         NeteditParameters neteditParameters(sumoBaseObject);
         // get lane
         GNELane* lane = myNet->getAttributeCarriers()->retrieveLane(laneID, false);
+        // check friendlyPos in small lanes
+        const bool friendlyPosCheck = checkFriendlyPosSmallLanes(pos, length, lane->getParentEdge()->getNBEdge()->getFinalLength(), friendlyPos);
         // check lane
         if (lane == nullptr) {
             writeErrorInvalidParent(SUMO_TAG_LANE_AREA_DETECTOR, id, SUMO_TAG_LANE, laneID);
-        } else if (!checkLanePosition(pos, length, lane->getParentEdge()->getNBEdge()->getFinalLength(), friendlyPos)) {
+        } else if (!checkLanePosition(pos, length, lane->getParentEdge()->getNBEdge()->getFinalLength(), friendlyPosCheck)) {
             writeErrorInvalidPosition(SUMO_TAG_LANE_AREA_DETECTOR, id);
         } else if (length < 0) {
             writeErrorInvalidNegativeValue(SUMO_TAG_LANE_AREA_DETECTOR, id, SUMO_ATTR_LENGTH);
@@ -500,7 +503,7 @@ GNEAdditionalHandler::buildSingleLaneDetectorE2(const CommonXMLStructure::SumoBa
             // build E2 single lane
             GNEAdditional* detectorE2 = new GNELaneAreaDetector(id, lane, myNet, pos, length, period, trafficLight, filename,
                     vehicleTypes, nextEdges, detectPersons, name, timeThreshold,
-                    speedThreshold, jamThreshold, friendlyPos, show, parameters);
+                    speedThreshold, jamThreshold, friendlyPosCheck, show, parameters);
             // insert depending of allowUndoRedo
             if (myAllowUndoRedo) {
                 myNet->getViewNet()->getUndoList()->begin(detectorE2, TL("add lane area detector '") + id + "'");
@@ -1899,6 +1902,28 @@ GNEAdditionalHandler::fixLanePosition(double& pos, double& length, const double 
     if ((length < 0) || ((pos + length) > laneLength)) {
         length = POSITION_EPS;
     }
+}
+
+
+bool
+GNEAdditionalHandler::checkFriendlyPosSmallLanes(double pos, const double length, const double laneLength, const bool friendlyPos) {
+    if (friendlyPos == true) {
+        return true;
+    } else if (OptionsCont::getOptions().getBool("e2.friendlyPos.automatic")) {
+        // adjust from and to (negative means that start at the end of lane and count backward)
+        if (pos < 0) {
+            pos += laneLength;
+        }
+        // check extremes
+        if ((pos < 0) || (pos > laneLength)) {
+            return true;
+        }
+        // check pos + length
+        if ((pos + length) > laneLength) {
+            return true;
+        }   
+    }
+    return false;
 }
 
 

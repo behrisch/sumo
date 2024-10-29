@@ -55,7 +55,8 @@ TraCIServerAPI_ParkingArea::processSet(TraCIServer& server, tcpip::Storage& inpu
     std::string warning = ""; // additional description for response
     // variable
     int variable = inputStorage.readUnsignedByte();
-    if (variable != libsumo::VAR_PARAMETER) {
+    if (variable != libsumo::VAR_PARAMETER &&
+            variable != libsumo::VAR_ACCESS_BADGE) {
         return server.writeErrorStatusCmd(libsumo::CMD_SET_PARKINGAREA_VARIABLE, "Change ParkingArea State: unsupported variable " + toHex(variable, 2) + " specified", outputStorage);
     }
     // id
@@ -81,6 +82,13 @@ TraCIServerAPI_ParkingArea::processSet(TraCIServer& server, tcpip::Storage& inpu
                 libsumo::ParkingArea::setParameter(id, name, value);
             }
             break;
+            case libsumo::VAR_ACCESS_BADGE: {
+                std::vector<std::string> badges;
+                if (!server.readTypeCheckingStringList(inputStorage, badges)) {
+                    return server.writeErrorStatusCmd(libsumo::CMD_SET_PARKINGAREA_VARIABLE, "A string list is needed to update the ParkingArea access badges.", outputStorage);
+                }
+                libsumo::ParkingArea::setAcceptedBadges(id, badges);
+            }
             default:
                 break;
         }

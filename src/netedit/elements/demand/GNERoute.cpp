@@ -115,7 +115,7 @@ myVClass(originalRoute->getVClass()) {
 
 
 GNERoute::GNERoute(GNENet* net, GNEVehicle* vehicleParent, const GNEDemandElement* originalRoute) :
-    GNEDemandElement(vehicleParent, net, GLO_ROUTE, GNE_TAG_ROUTE_EMBEDDED, GUIIconSubSys::getIcon(GUIIcon::ROUTE),
+    GNEDemandElement(vehicleParent, net, GLO_ROUTE_EMBEDDED, GNE_TAG_ROUTE_EMBEDDED, GUIIconSubSys::getIcon(GUIIcon::ROUTE),
                      GNEPathManager::PathElement::Options::DEMAND_ELEMENT | GNEPathManager::PathElement::Options::ROUTE,
 {}, originalRoute->getParentEdges(), {}, {}, {vehicleParent}, {}),
 Parameterised(originalRoute->getACParametersMap()),
@@ -141,7 +141,7 @@ myVClass(vClass) {
 
 GNERoute::GNERoute(GNENet* net, GNEDemandElement* vehicleParent, const std::vector<GNEEdge*>& edges,
                    const RGBColor& color, const int repeat, const SUMOTime cycleTime, const Parameterised::Map& parameters) :
-    GNEDemandElement(vehicleParent, net, GLO_ROUTE, GNE_TAG_ROUTE_EMBEDDED, GUIIconSubSys::getIcon(GUIIcon::ROUTE),
+    GNEDemandElement(vehicleParent, net, GLO_ROUTE_EMBEDDED, GNE_TAG_ROUTE_EMBEDDED, GUIIconSubSys::getIcon(GUIIcon::ROUTE),
                      GNEPathManager::PathElement::Options::DEMAND_ELEMENT | GNEPathManager::PathElement::Options::ROUTE,
 {}, edges, {}, {}, {vehicleParent}, {}),
 Parameterised(parameters),
@@ -298,7 +298,11 @@ GNERoute::fixDemandElementProblem() {
 
 SUMOVehicleClass
 GNERoute::getVClass() const {
-    return myVClass;
+    if (myTagProperty.getTag() == GNE_TAG_ROUTE_EMBEDDED) {
+        return getParentDemandElements().at(0)->getVClass();
+    } else {
+        return myVClass;
+    }
 }
 
 
@@ -382,9 +386,16 @@ GNERoute::drawGL(const GUIVisualizationSettings& /*s*/) const {
 
 void
 GNERoute::computePathElement() {
-    const auto vClass = myTagProperty.getTag() == GNE_TAG_ROUTE_EMBEDDED ? getVClass() : SVC_PASSENGER;
-    // calculate path
-    myNet->getPathManager()->calculateConsecutivePathEdges(this, vClass, getParentEdges());
+    // calculate path depending if is embedded
+    if (myTagProperty.getTag() == GNE_TAG_ROUTE_EMBEDDED) {
+        const auto firstLaneIndex = getParentDemandElements().at(0)->getAttribute(SUMO_ATTR_DEPARTLANE);
+        const auto lastLaneIndex = getParentDemandElements().at(0)->getAttribute(SUMO_ATTR_ARRIVALLANE);
+        myNet->getPathManager()->calculateConsecutivePathEdges(this, getVClass(), getParentEdges(),
+                canParse<int>(firstLaneIndex) ? parse<int>(firstLaneIndex) : -1,
+                canParse<int>(lastLaneIndex) ? parse<int>(lastLaneIndex) : -1);
+    } else {
+        myNet->getPathManager()->calculateConsecutivePathEdges(this, SVC_PASSENGER, getParentEdges());
+    }
     // if path is empty, then calculate path again using SVC_IGNORING
     if (!myNet->getPathManager()->isPathValid(this)) {
         myNet->getPathManager()->calculateConsecutivePathEdges(this, SVC_IGNORING, getParentEdges());

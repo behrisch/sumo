@@ -46,9 +46,12 @@ public:
     static std::string getName(const std::string& stopID);
     static int getVehicleCount(const std::string& stopID);
     static std::vector<std::string> getVehicleIDs(const std::string& stopID);
+    static std::vector<std::string> getAcceptedBadges(const std::string& stopID);
 
     LIBSUMO_ID_PARAMETER_API
     LIBSUMO_SUBSCRIPTION_API
+
+    static void setAcceptedBadges(const std::string& stopID, const std::vector<std::string>& badges);
 
 #ifndef LIBTRACI
 #ifndef SWIG

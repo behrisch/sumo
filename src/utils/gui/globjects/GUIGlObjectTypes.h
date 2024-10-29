@@ -177,6 +177,8 @@ enum GUIGlObjectType {
 
     /// @brief a route
     GLO_ROUTE = 310,
+    /// @brief a route
+    GLO_ROUTE_EMBEDDED = 311,
 
     /// @}
 

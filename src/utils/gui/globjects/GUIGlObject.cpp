@@ -114,6 +114,7 @@ StringBijection<GUIGlObjectType>::Entry GUIGlObject::GUIGlObjectTypeNamesInitial
     {"vType",                   GLO_VTYPE},
     //
     {"route",                   GLO_ROUTE},
+    {"routeEmbedded",           GLO_ROUTE_EMBEDDED},
     //
     {"ride",                    GLO_RIDE},
     {"walk",                    GLO_WALK},

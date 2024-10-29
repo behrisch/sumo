@@ -24,3 +24,6 @@ targetFunction
 
 # Two vehicles which replace parts of a regular stop with a charging stop
 replaceStop
+
+# All charging stations are deactivated (power set to zero)
+zeroPower

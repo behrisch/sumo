@@ -184,7 +184,9 @@ private:
 #ifdef PROJ_API_FILE
     void initProj(const std::string& proj);
 
+#ifdef PROJ_VERSION_MAJOR
     bool checkError(projPJ projection) const;
+#endif
 
     /// @brief The proj.4-projection to use
     projPJ myProjection;

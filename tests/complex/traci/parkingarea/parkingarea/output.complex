@@ -1,9 +1,10 @@
- Retrying in 1 seconds
 parkingareas ('stop1', 'stop2')
 parkingarea count 2
 stop attributes:
-  stop=stop1 lane=WC_0 startPos=25.0 endPos=45.0 name=Downtown
-  stop=stop2 lane=CE_0 startPos=35.0 endPos=65.0 name=Main Station
+  stop=stop1 lane=WC_0 startPos=25.0 endPos=45.0 name=Downtown acceptedBadges=('retail',)
+    changed acceptedBadges=
+  stop=stop2 lane=CE_0 startPos=35.0 endPos=65.0 name=Main Station acceptedBadges=('intermodal',)
+    changed acceptedBadges=
 time: 0.0
   stop=stop1 vC=0 vIDs=()
   stop=stop2 vC=0 vIDs=()

@@ -749,14 +749,31 @@ GNEPathManager::calculatePath(PathElement* pathElement, SUMOVehicleClass vClass,
 
 
 void
-GNEPathManager::calculateConsecutivePathEdges(PathElement* pathElement, SUMOVehicleClass vClass, const std::vector<GNEEdge*> edges) {
+GNEPathManager::calculateConsecutivePathEdges(PathElement* pathElement, SUMOVehicleClass vClass, const std::vector<GNEEdge*> edges,
+        const int firstLaneIndex, const int lastLaneIndex) {
     // declare lane vector
     std::vector<GNELane*> lanes;
-    // reserve lanes
-    lanes.reserve(edges.size());
-    // get first allowed lane of every edge
-    for (const auto& edge : edges) {
-        lanes.push_back(edge->getLaneByAllowedVClass(vClass));
+    if (edges.size() > 0) {
+        lanes.reserve(edges.size());
+        // add first lane
+        if ((firstLaneIndex >= 0) && (firstLaneIndex < (int)edges.front()->getLanes().size())) {
+            lanes.push_back(edges.front()->getLanes().at(firstLaneIndex));
+        } else {
+            lanes.push_back(edges.front()->getLaneByAllowedVClass(vClass));
+        }
+        // add rest of lanes
+        if (edges.size() > 1) {
+            // add middle lanes
+            for (int i = 1; i < ((int)edges.size() - 1); i++) {
+                lanes.push_back(edges[i]->getLaneByAllowedVClass(vClass));
+            }
+            // add last lane
+            if ((lastLaneIndex >= 0) && (lastLaneIndex < (int)edges.back()->getLanes().size())) {
+                lanes.push_back(edges.back()->getLanes().at(lastLaneIndex));
+            } else {
+                lanes.push_back(edges.back()->getLaneByAllowedVClass(vClass));
+            }
+        }
     }
     // calculate consecutive path lanes
     calculateConsecutivePathLanes(pathElement, lanes);

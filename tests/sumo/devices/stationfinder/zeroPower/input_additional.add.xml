@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+
+    <!-- In this chargingStation vehicle need to stop to start charging -->
+    <chargingStation id="CS1" lane="D2_0" startPos="50" endPos="70" power="0"  efficiency="0.95" chargeInTransit="false" chargeDelay="0"/>
+
+    <!-- In this chargingStation vehicle don't need to stop to start charging -->
+    <chargingStation id="CS2" lane="D2_1" startPos="100" endPos="120" power="0"  efficiency="0.9" chargeInTransit="true" chargeDelay="0"/>
+
+    <!-- In this chargingStation vehicle need to stop for charging but charging start with a delay of 3 timeSteps -->
+    <chargingStation id="CS3" lane="D2_0" startPos="150" endPos="170" power="0"  efficiency="0.85" chargeInTransit="false" chargeDelay="3"/>
+
+    <!-- In this chargingStation vehicle don0't need to stop for charging but charging start with a delay of 5 timeSteps -->
+    <chargingStation id="CS4" lane="D2_1" startPos="200" endPos="220" power="0"  efficiency="0.8" chargeInTransit="true" chargeDelay="5"/>
+
+    <!-- in this charging station vehicle will not charge energy because efficiency is 0 -->
+    <chargingStation id="CS5" lane="D2_0" startPos="250" endPos="270" power="0"  efficiency="0" chargeInTransit="false" chargeDelay="0"/>
+
+    <!-- A bus stop to ilustrate the different syntax in the definition of stops (see input_routes.rou.xml, line 26) -->
+    <busStop id="BS1" lane="D2_1" startPos="300" endPos="320" />
+
+</additional>

@@ -328,7 +328,8 @@ public:
     void calculatePath(PathElement* pathElement, SUMOVehicleClass vClass, const std::vector<GNEEdge*> edges);
 
     /// @brief calculate consecutive path edges
-    void calculateConsecutivePathEdges(PathElement* pathElement, SUMOVehicleClass vClass, const std::vector<GNEEdge*> edges);
+    void calculateConsecutivePathEdges(PathElement* pathElement, SUMOVehicleClass vClass, const std::vector<GNEEdge*> edges,
+                                       const int firstLaneIndex = -1, const int lastLaneIndex = -1);
 
     /// @brief calculate consecutive path lanes
     void calculateConsecutivePathLanes(PathElement* pathElement, const std::vector<GNELane*> lanes);

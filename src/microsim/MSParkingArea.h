@@ -230,6 +230,13 @@ public:
     /// @brief set number alternatives
     void setNumAlternatives(int alternatives);
 
+    /// @brief get the accepted badges
+    std::vector<std::string> getAcceptedBadges() const;
+
+    /// @brief set the accepted badges
+    void setAcceptedBadges(const std::vector<std::string>& badges);
+
+
 protected:
     /// @brief overwrite the capacity (caution: will delete ANY previous parking space definitions)
     void setRoadsideCapacity(int capactity);

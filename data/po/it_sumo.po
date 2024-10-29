@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2024-07-22 10:12+0200\n"
-"PO-Revision-Date: 2024-10-23 11:43+0000\n"
+"PO-Revision-Date: 2024-10-25 09:22+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -7051,11 +7051,11 @@ msgstr "La fermata invalida '%' è stata rimossa dalla linea '%'."
 
 #: src/netbuild/NBPTLine.cpp:331
 msgid "Removed duplicate stop '%' at area '%' from line '%'."
-msgstr ""
+msgstr "Fermata raddoppiata '%' nell'area '%' rimossa dalla linea '%'."
 
 #: src/netbuild/NBPTLine.cpp:334
 msgid "Removed duplicate stop '%' named '%' from line '%'."
-msgstr ""
+msgstr "Fermata raddoppiata '%' chiamata '%' rimossa dalla linea '%'."
 
 #: src/netbuild/NBPTLineCont.cpp:124
 msgid ""
@@ -8843,11 +8843,11 @@ msgstr "Una lunghezza di corsia dell'arco '%' non è positiva (%)."
 
 #: src/netimport/NIImporter_VISUM.cpp:846
 msgid "Could not find split position for edge '%'."
-msgstr ""
+msgstr "Non ho potuto trovare la posizione di separazione dell'arco '%'."
 
 #: src/netimport/NIImporter_VISUM.cpp:856
 msgid "Ups - could not insert node!"
-msgstr ""
+msgstr "Il nodo non poteva essere inserito!"
 
 #: src/netimport/NIImporter_VISUM.cpp:917
 #, c-format
@@ -9487,28 +9487,28 @@ msgstr ""
 
 #: src/netload/NLBuilder.cpp:259
 msgid "Loading weights from '%'..."
-msgstr ""
+msgstr "Carica di pesi da '%'..."
 
 #: src/netload/NLBuilder.cpp:270
 msgid "Loading state from '%'"
-msgstr ""
+msgstr "Carica del stato da '%'"
 
 #: src/netload/NLBuilder.cpp:290
 msgid "Loading done."
-msgstr ""
+msgstr "Carica terminata."
 
 #: src/netload/NLBuilder.cpp:395
 msgid "Wrong number of state file names!"
-msgstr ""
+msgstr "Numero sbagliato di nomi di file di stati!"
 
 #: src/netload/NLBuilder.cpp:430
 msgid "Loading % from '%'"
-msgstr ""
+msgstr "Carica di % da '%'"
 
 #: src/netload/NLBuilder.cpp:450
 #, c-format
 msgid "The route file '%' is not accessible."
-msgstr ""
+msgstr "Non si può accedere al file di itinerari '%'."
 
 #: src/netload/NLBuilder.cpp:466
 msgid ""
@@ -9551,7 +9551,7 @@ msgstr ""
 #: src/netload/NLHandler.cpp:558
 #, c-format
 msgid "Another lane with the id '%' exists."
-msgstr ""
+msgstr "Esiste un'altra corsia con il codice identificativo '%'."
 
 #: src/netload/NLHandler.cpp:628
 msgid "An unknown lane ('%') was tried to be set as incoming to junction '%'."

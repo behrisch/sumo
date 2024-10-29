@@ -1,4 +1,4 @@
 <add>
-    <parkingArea id="stop1" lane="WC_0" startPos="25" endPos="45" roadsideCapacity="2" name="Downtown"/>
-    <parkingArea id="stop2" lane="CE_0" startPos="35" endPos="65" roadsideCapacity="3" name="Main Station"/>
+    <parkingArea id="stop1" lane="WC_0" startPos="25" endPos="45" roadsideCapacity="2" name="Downtown" acceptedBadges="retail"/>
+    <parkingArea id="stop2" lane="CE_0" startPos="35" endPos="65" roadsideCapacity="3" name="Main Station" acceptedBadges="intermodal"/>
 </add>

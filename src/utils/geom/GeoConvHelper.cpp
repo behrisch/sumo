@@ -357,23 +357,33 @@ GeoConvHelper::cartesian2geo(Position& cartesian) const {
 
 
 #ifdef PROJ_API_FILE
+#ifdef PROJ_VERSION_MAJOR
 bool
 GeoConvHelper::checkError(projPJ projection) const {
     const int err_no = proj_context_errno(PJ_DEFAULT_CTX);
+    const char* err_string = "";
+    if (err_no != 0) {
+#if PROJ_VERSION_MAJOR > 7
+        err_string = proj_context_errno_string(PJ_DEFAULT_CTX, err_no);
+#else
+        err_string = proj_errno_string(err_no);
+#endif
+    }
     if (projection == nullptr) {
         if (err_no == 0) {
             WRITE_WARNING(TL("Failed to create transformation, reason unknown."));
         } else {
-            WRITE_WARNINGF(TL("Failed to create transformation, %."), proj_context_errno_string(PJ_DEFAULT_CTX, err_no));
+            WRITE_WARNINGF(TL("Failed to create transformation, %."), err_string);
         }
         return false;
     }
     if (err_no != 0) {
-        WRITE_WARNINGF(TL("Failed to transform, %."), proj_context_errno_string(PJ_DEFAULT_CTX, err_no));
+        WRITE_WARNINGF(TL("Failed to transform, %."), err_string);
         return false;
     }
     return true;
 }
+#endif
 #endif
 
 

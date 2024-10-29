@@ -574,6 +574,20 @@ MSParkingArea::setNumAlternatives(int alternatives) {
 }
 
 
+std::vector<std::string>
+MSParkingArea::getAcceptedBadges() const {
+    std::vector<std::string> result(myAcceptedBadges.begin(), myAcceptedBadges.end());
+    return result;
+}
+
+
+void
+MSParkingArea::setAcceptedBadges(const std::vector<std::string>& badges) {
+    myAcceptedBadges.clear();
+    myAcceptedBadges.insert(badges.begin(), badges.end());
+}
+
+
 void
 MSParkingArea::setRoadsideCapacity(int capacity) {
     // reinit parking lot generation process

@@ -6,7 +6,7 @@ title: Calibrator
 
 These trigger-type objects may be specified within an {{AdditionalFile}} and allow the
 dynamic adaption of traffic flows, speeds and vehicle parameters (vTypes). The syntax for such an
-object is: `<calibrator id="<ID>" lane="<LANE_ID>" output="<OUTPUT_FILE>"/\>`. They can be used to modify simulation
+object is: `<calibrator id="<ID>" lane="<LANE_ID>" output="<OUTPUT_FILE>"/>`. They can be used to modify simulation
 scenario based on induction loop measurements. They can also be used to model location-base changes in driving behavior.
 
 A calibrator will remove vehicles in excess of the specified flow and it will insert new vehicles (of the specified type)

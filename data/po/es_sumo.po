@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2024-07-22 10:12+0200\n"
-"PO-Revision-Date: 2024-09-24 07:30+0000\n"
+"PO-Revision-Date: 2024-10-24 11:41+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: src/activitygen/AGActivityGen.cpp:46
 msgid "Reading input"
@@ -2450,6 +2450,8 @@ msgid ""
 "The submodel to use in JuPedSim ('CollisionFreeSpeed', "
 "'CollisionFreeSpeedV2', 'GeneralizedCentrifugalForce', 'SocialForce')"
 msgstr ""
+"El submodelo a usar en JuPedSim ('CollisionFreeSpeed', "
+"'CollisionFreeSpeedV2', 'GeneralizedCentrifugalForce', 'SocialForce')"
 
 #: src/microsim/MSFrame.cpp:572
 msgid "The neighbor repulsion strength of the JuPedSim model"
@@ -2760,7 +2762,7 @@ msgstr "El tiempo de finalización debe ser posterior al tiempo de inicio."
 
 #: src/microsim/MSFrame.cpp:917
 msgid "the minimum step-length is 0.001."
-msgstr ""
+msgstr "el valor mínimo de paso es 0.001."
 
 #: src/microsim/MSFrame.cpp:932
 msgid "The save-state time=% will not be used before simulation end at %."
@@ -2793,6 +2795,7 @@ msgstr ""
 #: src/microsim/MSFrame.cpp:956
 msgid "Sublane dynamics are not supported by mesoscopic simulation."
 msgstr ""
+"La dinámica de subcarriles no está soportada por la simulación mesoscópica."
 
 #: src/microsim/MSFrame.cpp:960
 msgid ""
@@ -2821,6 +2824,8 @@ msgid ""
 "Invalid value '%' for option 'default.emergencydecel'. Must be a FLOAT or "
 "'default' or 'decel'."
 msgstr ""
+"Valor '%' no válido para la opción 'default.emergencydecel'. Debe ser un "
+"FLOAT, 'default' o 'decel'."
 
 #: src/microsim/MSFrame.cpp:1010
 msgid "You need a non-negative delay."
@@ -2849,12 +2854,17 @@ msgid ""
 "Invalid transfer option '%'. Must be one of 'parkingAreas', 'ptStops' or "
 "'allJunctions'."
 msgstr ""
+"Opción de transferencia '%' no válida. Debe ser una de los siguientes: "
+"'parkingAreas', 'ptStops' o 'allJunctions'."
 
 #: src/microsim/MSFrame.cpp:1052
 msgid ""
 "Invalid JuPedSim model '%'. Must be one of 'CollisionFreeSpeed', "
 "'CollisionFreeSpeedV2', 'GeneralizedCentrifugalForce' or 'SocialForce'."
 msgstr ""
+"Modelo JuPedSim '%' no válido. Debe ser uno de los siguientes: "
+"'CollisionFreeSpeed', 'CollisionFreeSpeedV2', 'GeneralizedCentrifugalForce' "
+"o 'SocialForce'."
 
 #: src/microsim/MSFrame.cpp:1110
 msgid ""
@@ -3651,6 +3661,8 @@ msgid ""
 "Some undefined resistance coefficients for vType '%' (requires "
 "resCoef_constant, resCoef_linear and resCoef_quadratic)"
 msgstr ""
+"Hay algunos coeficientes de resistencia no definidos para el vType '%' ("
+"requiere resCoef_constant, resCoef_linear y resCoef_quadratic)"
 
 #: src/microsim/cfmodels/MSCFModel_Rail.cpp:153
 msgid ""
@@ -4009,6 +4021,8 @@ msgid ""
 "Additional time the vehicle shall need to reach the intersection after the "
 "signal turns green"
 msgstr ""
+"Tiempo adicional que necesitará el vehículo para llegar a la intersección "
+"después de que la señal cambie a verde"
 
 #: src/microsim/devices/MSDevice_GLOSA.cpp:62
 msgid ""
@@ -4493,6 +4507,8 @@ msgid ""
 "Euclidean search distance in meters (a negative value disables the "
 "restriction)"
 msgstr ""
+"Distancia euclidiana de búsqueda en metros (un valor negativo desactiva la "
+"restricción)"
 
 #: src/microsim/devices/MSDevice_StationFinder.cpp:73
 msgid "When to trigger a new search if no station has been found"
@@ -4597,11 +4613,11 @@ msgstr ""
 
 #: src/microsim/devices/MSDevice_StationFinder.cpp:558
 msgid "The charging rate limit of vehicle '%' is lifted at time=%"
-msgstr ""
+msgstr "El límite de tasa de carga del vehículo '%' se levanta en el tiempo =%"
 
 #: src/microsim/devices/MSDevice_StationFinder.cpp:560
 msgid "The charging rate of vehicle '%' is limited to % at time=%"
-msgstr ""
+msgstr "La tasa de carga del vehículo '%' se limita a % en el tiempo=%"
 
 #: src/microsim/devices/MSDevice_StationFinder.cpp:612
 msgid "Parameter '%' is not supported for device of type '%'"
@@ -5291,6 +5307,8 @@ msgstr "Error durante la iteración %: %"
 #: src/microsim/transportables/MSPModel_JuPedSim.cpp:572
 msgid "Person '%' in vanishing area '%' was removed from the simulation."
 msgstr ""
+"La persona '%' en el área de desvanecimiento '%' fue removida de la "
+"simulación."
 
 #: src/microsim/transportables/MSPModel_JuPedSim.cpp:678
 msgid "Error while generating geometry for carriages."
@@ -5775,11 +5793,11 @@ msgstr "Se agregaron % señales ferroviarias en % paradas."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1496
 msgid "Could not straighten corridor %."
-msgstr ""
+msgstr "No se pudo enderezar el corredor %."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1501
 msgid "Moved % rail junctions for straightening % corridors."
-msgstr ""
+msgstr "Se movieron % cruces ferroviarios para enderezar % corredores."
 
 #: src/netbuild/NBAlgorithms_Ramps.cpp:121
 #, c-format
@@ -5833,7 +5851,7 @@ msgstr ""
 
 #: src/netbuild/NBEdge.cpp:1048
 msgid "Removing sharp angle of % degrees at edge '%', segment %."
-msgstr ""
+msgstr "Removiendo ángulo agudo de % grados en la arista '%', segmento %."
 
 #: src/netbuild/NBEdge.cpp:1057
 msgid "Found angle of % degrees at edge '%', segment %."
@@ -6524,7 +6542,7 @@ msgstr ""
 
 #: src/netbuild/NBFrame.cpp:526
 msgid "Interprets STR[] as list of tls ids to exclude from joining"
-msgstr ""
+msgstr "Interpreta STR[] como lista de IDs de semáforos a excluir de combinarse"
 
 #: src/netbuild/NBFrame.cpp:635
 msgid "Only keep edges with speed in meters/second > FLOAT"
@@ -7557,6 +7575,8 @@ msgid ""
 "Was not able to apply the OpenDRIVE signal group information onto the signal "
 "program of traffic light % generated by SUMO."
 msgstr ""
+"No se pudo aplicar la información del grupo de señales OpenDRIVE al programa "
+"de señales del semáforo % generado por SUMO."
 
 #: src/netconvert_main.cpp:98
 msgid ""
@@ -10712,7 +10732,7 @@ msgstr ""
 
 #: src/polyconvert/PCLoaderOSM.cpp:204
 msgid ", (front-to-back dist: %)"
-msgstr ""
+msgstr ", (distancia de adelante hacia atrás: %)"
 
 #: src/polyconvert/PCLoaderOSM.cpp:206
 msgid "Assembled polygon from relation '%' (name:%)%"
@@ -12577,7 +12597,7 @@ msgstr ""
 #: src/utils/traction_wire/Circuit.cpp:351
 #: src/utils/traction_wire/Circuit.cpp:476
 msgid "The negative node of current source is not the ground."
-msgstr ""
+msgstr "El nodo negativo de la fuente de corriente no es la tierra."
 
 #: src/utils/traction_wire/Circuit.cpp:505
 #: src/utils/traction_wire/Circuit.cpp:515

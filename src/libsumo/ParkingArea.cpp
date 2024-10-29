@@ -13,6 +13,7 @@
 /****************************************************************************/
 /// @file    ParkingArea.cpp
 /// @author  Jakob Erdmann
+/// @author  Mirko Barthauer
 /// @date    16.03.2020
 ///
 // C++ TraCI client API implementation
@@ -22,6 +23,7 @@
 #include <microsim/MSNet.h>
 #include <microsim/MSLane.h>
 #include <microsim/MSStoppingPlace.h>
+#include <microsim/MSParkingArea.h>
 #include <libsumo/TraCIConstants.h>
 #include "Helper.h"
 #include "ParkingArea.h"
@@ -88,6 +90,17 @@ ParkingArea::getVehicleIDs(const std::string& stopID) {
     return result;
 }
 
+std::vector<std::string>
+ParkingArea::getAcceptedBadges(const std::string& stopID) {
+    return dynamic_cast<MSParkingArea*>(getParkingArea(stopID))->getAcceptedBadges();
+}
+
+
+void
+ParkingArea::setAcceptedBadges(const std::string& stopID, const std::vector<std::string>& badges) {
+    dynamic_cast<MSParkingArea*>(getParkingArea(stopID))->setAcceptedBadges(badges);
+}
+
 
 std::string
 ParkingArea::getParameter(const std::string& stopID, const std::string& param) {
@@ -134,6 +147,8 @@ ParkingArea::handleVariable(const std::string& objID, const int variable, Variab
             return wrapper->wrapDouble(objID, variable, getEndPos(objID));
         case VAR_NAME:
             return wrapper->wrapString(objID, variable, getName(objID));
+        case VAR_ACCESS_BADGE:
+            return wrapper->wrapStringList(objID, variable, getAcceptedBadges(objID));
         case VAR_STOP_STARTING_VEHICLES_NUMBER:
             return wrapper->wrapInt(objID, variable, getVehicleCount(objID));
         case VAR_STOP_STARTING_VEHICLES_IDS:

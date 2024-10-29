@@ -706,7 +706,7 @@ MSDevice_StationFinder::setParameter(const std::string& key, const std::string& 
     } else if (key == "repeat") {
         myRepeatInterval = TIME2STEPS(MAX2(0., doubleValue));
     } else if (key == "radius") {
-        myRadius = MAX2(0., doubleValue);
+        myRadius = TIME2STEPS(MAX2(0., doubleValue));
     } else if (key == "reserveFactor") {
         myReserveFactor = MAX2(1., doubleValue);
     } else {

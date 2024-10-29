@@ -13,6 +13,7 @@
 
 # @file    _parkingarea.py
 # @author  Jakob Erdmann
+# @author  Mirko Barthauer
 # @date    2020-06-02
 
 from __future__ import absolute_import
@@ -65,3 +66,18 @@ class ParkingAreaDomain(Domain):
         Get the IDs of vehicles stopped at the named parking area.
         """
         return self._getUniversal(tc.VAR_STOP_STARTING_VEHICLES_IDS, stopID)
+
+    def getAcceptedBadges(self, stopID):
+        """getAcceptedBadges(string) -> list(string)
+        Get the badge keywords which allow access to the parking area.
+        """
+        return self._getUniversal(tc.VAR_ACCESS_BADGE, stopID)
+
+    def setAcceptedBadges(self, stopID, badges):
+        """
+        setAcceptedBadges(string, list) ->  None
+        Set the badge keywords which allow access to the parking area.
+        """
+        if isinstance(badges, str):
+            badges = [badges]
+        self._setCmd(tc.VAR_ACCESS_BADGE, stopID, "l", badges)

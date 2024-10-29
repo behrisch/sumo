@@ -96,7 +96,7 @@ GNEConnection::updateGeometry() {
         // value obtained from GNEJunction::drawgl
         if (nbCon.customShape.size() != 0) {
             myConnectionGeometry.updateGeometry(nbCon.customShape);
-        } else if (getEdgeFrom()->getNBEdge()->getToNode()->getShape().area() > 4) {
+        } else {
             if (nbCon.shape.size() > 1) {
                 PositionVector connectionShape;
                 if (nbCon.shape.front() == nbCon.shape.back()) {
@@ -120,9 +120,6 @@ GNEConnection::updateGeometry() {
                                                         (double) 5. * (double) getEdgeFrom()->getNBEdge()->getNumLanes(),
                                                         (double) 5. * (double) nbCon.toEdge->getNumLanes()));
             }
-        } else {
-            myConnectionGeometry.updateGeometry({laneShapeFrom.positionAtOffset(MAX2(0.0, laneShapeFrom.length() - 1)),
-                                                 laneShapeTo.positionAtOffset(MIN2(1.0, laneShapeFrom.length()))});
         }
         // check if internal junction marker must be calculated
         if (nbCon.haveVia && (nbCon.shape.size() != 0)) {

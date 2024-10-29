@@ -116,6 +116,12 @@ public:
         /// @brief destructor
         ~IntervalSelector();
 
+        /// @brief enable contents
+        void enableContents() const;
+
+        /// @brief disable contents
+        void disableContents() const;
+
         /// @brief refresh interval selector
         void refreshIntervalSelector();
 
@@ -139,6 +145,7 @@ public:
         /// @}
 
     protected:
+        /// @brief FOX needs this
         FOX_CONSTRUCTOR(IntervalSelector)
 
     private:

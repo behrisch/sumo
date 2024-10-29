@@ -38,12 +38,15 @@ print("parkingareas", traci.parkingarea.getIDList())
 print("parkingarea count", traci.parkingarea.getIDCount())
 print("stop attributes:")
 for stop in traci.parkingarea.getIDList():
-    print("  stop=%s lane=%s startPos=%s endPos=%s name=%s" % (
+    print("  stop=%s lane=%s startPos=%s endPos=%s name=%s acceptedBadges=%s" % (
         stop,
         traci.parkingarea.getLaneID(stop),
         traci.parkingarea.getStartPos(stop),
         traci.parkingarea.getEndPos(stop),
-        traci.parkingarea.getName(stop)))
+        traci.parkingarea.getName(stop),
+        traci.parkingarea.getAcceptedBadges(stop)))
+    traci.parkingarea.setAcceptedBadges(stop, [])
+    print("    changed acceptedBadges=%s" % (" ".join(traci.parkingarea.getAcceptedBadges(stop))))
 
 for step in range(50):
     if step % 5 == 0:

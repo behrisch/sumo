@@ -1994,6 +1994,15 @@ GNEJunction::commitMoveShape(const GNEMoveResult& moveResult, GNEUndoList* undoL
             undoList->begin(this, "moving " + toString(SUMO_ATTR_SHAPE) + " of " + getTagStr());
             setAttribute(SUMO_ATTR_SHAPE, toString(moveResult.shapeToUpdate), undoList);
             undoList->end();
+        } else if (myNBNode->hasCustomShape()) {
+            // commit new shape
+            undoList->begin(this, "moving custom " + toString(SUMO_ATTR_SHAPE) + " of " + getTagStr());
+            setAttribute(SUMO_ATTR_POSITION, toString(moveResult.shapeToUpdate.front()), undoList);
+            // calculate offset and apply to custom shape
+            const auto customShapeOffset = moveResult.shapeToUpdate.front() - myNBNode->getCenter();
+            const auto customShapeMoved = myNBNode->getShape().added(customShapeOffset);
+            setAttribute(SUMO_ATTR_SHAPE, toString(customShapeMoved), undoList);
+            undoList->end();
         } else {
             setAttribute(SUMO_ATTR_POSITION, toString(moveResult.shapeToUpdate.front()), undoList);
         }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType accel="1.0" decel="5.0" id="ElectricVehicle1" emissionClass="Energy" mass="1600" length="12" maxSpeed="100.0" sigma="0.0" minGap="2.5" color="1,1,1">
+        <param key="device.battery.capacity" value="35000"/>
+        <param key="device.battery.maxPower" value="100000"/>
+        <param key="rotatingMass" value="30"/>
+        <param key="frontSurfaceArea" value="2.2"/>
+        <param key="airDragCoefficient" value="0.33"/>
+        <param key="radialDragCoefficient" value="0"/>
+        <param key="rollDragCoefficient" value="0.01"/>
+        <param key="constantPowerIntake" value="40"/>
+        <param key="propulsionEfficiency" value="0.9"/>
+        <param key="recuperationEfficiency" value="0.9"/>
+    </vType>
+
+    <route id="route01" edges="D2 L2 L12 L10 L7 D7"/>
+
+    <vehicle depart="000" id="veh0" route="route01" type="ElectricVehicle1">
+        <param key="device.battery.chargeLevel" value="150"/>
+    </vehicle>
+</routes>

@@ -643,6 +643,15 @@ public:
      */
     static void fixLanePosition(double& pos, double& length, const double laneLength);
 
+    /**@brief check if enable friendly pos in small lanes
+     * @param[in] pos pos position of element over lane
+     * @param[in] length element's length
+     * @param[in] laneLength Length of the lane
+     * @param[in] friendlyPos Attribute of element
+     * @return true if the element position is valid, false in otherweise
+     */
+    static bool checkFriendlyPosSmallLanes(double pos, const double length, const double laneLength, const bool friendlyPos);
+
     /**@brief check if the given positions over a lane is valid
      * @param[in] from begin position of element over lane
      * @param[in] to end position of element over lane

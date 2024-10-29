@@ -111,6 +111,11 @@ GNEGenericDataFrame::DataSetSelector::refreshDataSetSelector(const GNEDataSet* c
     // check if we have to set current element
     if (currentItemIndex != -1) {
         myDataSetsComboBox->setCurrentItem(currentItemIndex, FALSE);
+        if (myGenericDataFrameParent->getIntervalSelector()) {
+            myGenericDataFrameParent->getIntervalSelector()->enableContents();
+        }
+    } else if (myGenericDataFrameParent->getIntervalSelector()) {
+        myGenericDataFrameParent->getIntervalSelector()->disableContents();
     }
     // recalc frame
     recalc();
@@ -133,6 +138,8 @@ GNEGenericDataFrame::DataSetSelector::getDataSet() const {
 
 long
 GNEGenericDataFrame::DataSetSelector::onCmdCreateDataSet(FXObject*, FXSelector, void*) {
+    // first disable interval selector
+    myGenericDataFrameParent->getIntervalSelector()->disableContents();
     // get string
     const std::string dataSetID = myNewDataSetIDTextField->getText().text();
     // check conditions
@@ -229,6 +236,30 @@ GNEGenericDataFrame::IntervalSelector::IntervalSelector(GNEGenericDataFrame* gen
 
 
 GNEGenericDataFrame::IntervalSelector::~IntervalSelector() {}
+
+
+void
+GNEGenericDataFrame::IntervalSelector::enableContents() const {
+    myNewIntervalCheckButton->enable();
+    myHorizontalFrameBegin->enable();
+    myBeginTextField->enable();
+    myHorizontalFrameEnd->enable();
+    myEndTextField->enable();
+    myCreateIntervalButton->enable();
+    myIntervalsTreelist->enable();
+}
+
+
+void
+GNEGenericDataFrame::IntervalSelector::disableContents() const {
+    myNewIntervalCheckButton->disable();
+    myHorizontalFrameBegin->disable();
+    myBeginTextField->disable();
+    myHorizontalFrameEnd->disable();
+    myEndTextField->disable();
+    myCreateIntervalButton->disable();
+    myIntervalsTreelist->disable();
+}
 
 
 void
