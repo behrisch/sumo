@@ -672,7 +672,7 @@ GUILane::drawGL(const GUIVisualizationSettings& s) const {
                 // compute lane-marking intersection points)
                 double halfWidth = isInternal ? myQuarterLaneWidth : (myHalfLaneWidth - SUMO_const_laneMarkWidth / 2);
                 mustDrawMarkings = !isInternal && myPermissions != 0 && myPermissions != SVC_PEDESTRIAN && exaggeration == 1.0 && !isWaterway(myPermissions) && !isAirway(myPermissions);
-                const int cornerDetail = drawDetails && !isInternal ? (s.drawForRectangleSelection ? 8 : (int)(s.scale * exaggeration)) : 0;
+                const int cornerDetail = drawDetails && !isInternal ? (s.drawForRectangleSelection ? 4 : MIN2(32, (int)(s.scale * exaggeration))) : 0;
                 double offset = halfWidth * MAX2(0., (exaggeration - 1)) * (MSGlobals::gLefthand ? -1 : 1);
                 if (spreadSuperposed) {
                     offset += halfWidth * 0.5 * (MSGlobals::gLefthand ? -1 : 1);

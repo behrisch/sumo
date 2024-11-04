@@ -1445,7 +1445,7 @@ MSDriveWay::match(MSRouteIterator firstIt, MSRouteIterator endIt) const {
                 return false;
             }
             if (!myFoundJump && prev->getBidiEdge() == next && prev == &myForward.back()->getEdge()) {
-                assert(myIsSubDriveway);
+                assert(myIsSubDriveway || myBidiEnded);
                 // must not leave driveway via reversal
 #ifdef DEBUG_MATCH
                 std::cout << getID() << " back=" << myForward.back()->getID() << " noMatch route " << toString(ConstMSEdgeVector(firstIt, endIt)) << "\n";

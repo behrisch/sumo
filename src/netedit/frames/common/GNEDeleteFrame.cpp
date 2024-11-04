@@ -442,8 +442,6 @@ GNEDeleteFrame::removeAttributeCarrier(const GNEViewNetHelper::ViewObjectsSelect
     }
     // enable update geometry
     myViewNet->getNet()->enableUpdateGeometry();
-    // update view to show changes
-    myViewNet->updateViewNet();
 }
 
 

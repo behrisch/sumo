@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
-"POT-Creation-Date: 2024-10-30 16:24+0100\n"
+"POT-Creation-Date: 2024-11-04 13:14+0100\n"
 "PO-Revision-Date: 2024-09-02 03:09+0000\n"
 "Last-Translator: Yiyang Chen <chenyy553@mail2.sysu.edu.cn>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/eclipse-sumo/sumo-gui-netedit/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/eclipse-sumo/sumo-gui-netedit/zh_Hans/>\n"
 "Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -642,15 +643,17 @@ msgstr "\t时间节距\t执行单一仿真时间节距。"
 
 #: src/gui/GUIApplicationWindow.cpp:700
 msgid ""
-"Time:\tToggle between time formats\tToggle between seconds and "
-"hour:minute:seconds display."
+"Time:\tToggle between time formats\tToggle between seconds and hour:minute:"
+"seconds display."
 msgstr "时间:\t切换时间格式\t时间显示切换：秒 或 小时：分钟：秒。"
 
 #: src/gui/GUIApplicationWindow.cpp:714
 msgid ""
 "Delay (ms):\tDelay per simulated second\tDelay per simulated second. Click "
 "to toggle between the last two delay values."
-msgstr "延迟(毫秒):\t每个仿真秒(simulated second)的延迟\t每个仿真秒的延迟。按键执行最后两个延迟值的切换 。"
+msgstr ""
+"延迟(毫秒):\t每个仿真秒(simulated second)的延迟\t每个仿真秒的延迟。按键执行最"
+"后两个延迟值的切换 。"
 
 #: src/gui/GUIApplicationWindow.cpp:737
 msgid "Scale Traffic:"
@@ -1038,8 +1041,8 @@ msgstr "关于 Eclipse SUMO 的 sumo-gui"
 
 #: src/gui/dialogs/GUIDialog_AboutSUMO.cpp:54
 msgid ""
-"Graphical user interface for the microscopic, multi-modal traffic simulation"
-" SUMO."
+"Graphical user interface for the microscopic, multi-modal traffic simulation "
+"SUMO."
 msgstr "用于多模式微观交通仿真的图形用户界面。"
 
 #: src/gui/dialogs/GUIDialog_AboutSUMO.cpp:57
@@ -1048,8 +1051,7 @@ msgstr "引入JuPedSim %.%.%"
 
 #: src/gui/dialogs/GUIDialog_AboutSUMO.cpp:64
 #: src/netedit/dialogs/GNEAbout.cpp:67
-msgid ""
-"This application is based on code provided by the Eclipse SUMO project."
+msgid "This application is based on code provided by the Eclipse SUMO project."
 msgstr "这个应用程序是基于Eclipse SUMO项目提供的代码。"
 
 #: src/gui/dialogs/GUIDialog_AboutSUMO.cpp:65
@@ -2656,7 +2658,8 @@ msgstr "用易变的选项进行重新计算"
 msgid ""
 "Changes produced in the net due a recomputing with volatile options cannot "
 "be undone. Continue?"
-msgstr "由于使用易变选项重新计算而在网络中产生的更改将无法复原。 还继续执行吗？"
+msgstr ""
+"由于使用易变选项重新计算而在网络中产生的更改将无法复原。 还继续执行吗？"
 
 #: src/netedit/GNEApplicationWindow.cpp:1992
 #: src/netedit/GNEApplicationWindow.cpp:2052
@@ -3171,8 +3174,7 @@ msgid "Save TLS Programs As..."
 msgstr "将交通信号方案另存为..."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:401
-msgid ""
-"Save all traffic light programs of the current network to another file."
+msgid "Save all traffic light programs of the current network to another file."
 msgstr "现有路网内所有交通信号方案另存新档。"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:407
@@ -4318,7 +4320,8 @@ msgstr "载入netedit 设定档 '%' f 失败。"
 msgid ""
 "Invalid input network option. Load with either sumo/netedit/netconvert "
 "config or with -new option"
-msgstr "输入路网选项无效。使用 sumo/netedit/netconvert 设定档案或 -new 选项载入"
+msgstr ""
+"输入路网选项无效。使用 sumo/netedit/netconvert 设定档案或 -new 选项载入"
 
 #: src/netedit/GNELoadThread.cpp:136
 msgid "Invalid Options. Nothing loaded"
@@ -4610,13 +4613,16 @@ msgid ""
 "settings override the default. Must be a multiple of the simulation step-"
 "length."
 msgstr ""
-"车辆跟车和变道模型的行动点之间的默认间隔长度（以秒为单位）。如果没有指定，则按默认值使用仿真步长。车辆或VType特定的设置将覆盖默认值。必须是仿真步长的倍数。"
+"车辆跟车和变道模型的行动点之间的默认间隔长度（以秒为单位）。如果没有指定，则"
+"按默认值使用仿真步长。车辆或VType特定的设置将覆盖默认值。必须是仿真步长的倍"
+"数。"
 
 #: src/netedit/GNELoadThread.cpp:506
 msgid ""
 "Select default speed deviation. A negative value implies vClass specific "
 "defaults (0.1 for the default passenger class)"
-msgstr "选择速度偏差的预设值。负值表示 vClass 特定预设值（ 0.1为小客车等级的预设值)"
+msgstr ""
+"选择速度偏差的预设值。负值表示 vClass 特定预设值（ 0.1为小客车等级的预设值)"
 
 #: src/netedit/GNELoadThread.cpp:545
 msgid "Failed to reset options."
@@ -4734,8 +4740,7 @@ msgstr "合并路口的位置"
 
 #: src/netedit/GNENet.cpp:1578
 msgid ""
-"There is another unselected junction in the same position of joined "
-"junction."
+"There is another unselected junction in the same position of joined junction."
 msgstr "在合并路口的相同位置上有另外一个未被选择的路口。"
 
 #: src/netedit/GNENet.cpp:1579
@@ -5237,7 +5242,8 @@ msgstr "在多个路口上新增交通信号(TLS)"
 
 #: src/netedit/GNEViewNet.cpp:5808
 msgid "Shift + click to create two additionals in the same position"
-msgstr "移位键(shift) + 点选(click) 將在同一个位置上新加两个附加项(additionals)"
+msgstr ""
+"移位键(shift) + 点选(click) 將在同一个位置上新加两个附加项(additionals)"
 
 #: src/netedit/GNEViewNet.cpp:6063
 msgid "Control + click to create two stop in the same position"
@@ -5484,7 +5490,9 @@ msgstr "將状态应用于所有相位(phases)"
 msgid ""
 "Toggle whether clicking should apply state changes to all phases of the "
 "current TLS plan."
-msgstr "切换是否点击时应将更改的状态(state)应用于现有交通信号(TLS) 方案的所有相位(phase)。"
+msgstr ""
+"切换是否点击时应将更改的状态(state)应用于现有交通信号(TLS) 方案的所有相位"
+"(phase)。"
 
 #: src/netedit/GNEViewNetHelper.cpp:2471
 msgid "Automatic merging junction"
@@ -5515,8 +5523,7 @@ msgid "Edge chain mode"
 msgstr "路段链(chain)模式"
 
 #: src/netedit/GNEViewNetHelper.cpp:2491
-msgid ""
-"Create consecutive edges with a single click (hit ESC to cancel chain)."
+msgid "Create consecutive edges with a single click (hit ESC to cancel chain)."
 msgstr "单击一下即可建立连续的路段（按 ESC 取消链(chain))。"
 
 #: src/netedit/GNEViewNetHelper.cpp:2498
@@ -6616,8 +6623,8 @@ msgstr "参数是由一個密码(key)及值(value)定义的。\n"
 #: src/netedit/dialogs/GNESingleParametersDialog.cpp:402
 #: src/netedit/dialogs/GNEVTypeDistributionsDialog.cpp:397
 msgid ""
-"- In Netedit can be defined using format "
-"key1=parameter1|key2=parameter2|...\n"
+"- In Netedit can be defined using format key1=parameter1|"
+"key2=parameter2|...\n"
 msgstr "- 在netedit 內可以用格式密码 1=参数1|密码 2=参数2|...来定义的\n"
 
 #: src/netedit/dialogs/GNEMultipleParametersDialog.cpp:406
@@ -7145,7 +7152,7 @@ msgstr "路段"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1192
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2968
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3022
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9144
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9145
 msgid "Edge ID"
 msgstr "路段识别名（ID）"
 
@@ -7163,9 +7170,11 @@ msgstr "在SUMO路段类型档案中的一个类型名称"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1241
 msgid ""
-"If the shape is given it should start and end with the positions of the "
-"from-node and to-node"
-msgstr "如果給定形状(shape)，则应以起始节点(from-node)和终止节点(to-node)的位置开始和结束"
+"If the shape is given it should start and end with the positions of the from-"
+"node and to-node"
+msgstr ""
+"如果給定形状(shape)，则应以起始节点(from-node)和终止节点(to-node)的位置开始和"
+"结束"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1246
 msgid "The length of the edge in meter"
@@ -7223,8 +7232,8 @@ msgstr "车道识别名 （ID）(自动生成, 无法编辑)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1329
 msgid ""
-"The enumeration index of the lane (0 is the rightmost lane, <NUMBER_LANES>-1"
-" is the leftmost one)"
+"The enumeration index of the lane (0 is the rightmost lane, <NUMBER_LANES>-1 "
+"is the leftmost one)"
 msgstr "车道的枚举指数（0是最右边的车道，<NUMBER_LANES>-1是最左边的车道）"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1334
@@ -7342,15 +7351,18 @@ msgstr "如果设定, 通过这个（车道-2-车道）连接的车辆将不会�
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1526
 msgid ""
-"if set to false, vehicles which pass this (lane-2-lane) connection) will not"
-" worry about blocking the intersection"
-msgstr "如果设置为假值（false），通过这个（车道-2-车道）连接的车辆将不会担心堵塞路口"
+"if set to false, vehicles which pass this (lane-2-lane) connection) will not "
+"worry about blocking the intersection"
+msgstr ""
+"如果设置为假值（false），通过这个（车道-2-车道）连接的车辆将不会担心堵塞路口"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1532
 msgid ""
 "If set to a more than 0 value, an internal junction will be built at this "
 "position (in m)/n from the start of the internal lane for this connection"
-msgstr "如果设置为大于0的值，将在该连接的内部车道起点的这个位置（以m计）/n处建立一个内部结点"
+msgstr ""
+"如果设置为大于0的值，将在该连接的内部车道起点的这个位置（以m计）/n处建立一个"
+"内部结点"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1538
 msgid ""
@@ -7433,11 +7445,13 @@ msgstr "车道上的起始位置(车道上较低位置)(以米为单位)"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1997
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4360
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4506
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9149
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9150
 msgid ""
 "The end position on the lane (the higher position on the lane) in meters, "
 "must be larger than startPos by more than 0.1m"
-msgstr "车道上的结束位置(车道上较高的位置) (以米为单位), 必须比起始位置(startPos)大于 0.1米以上"
+msgstr ""
+"车道上的结束位置(车道上较高的位置) (以米为单位), 必须比起始位置(startPos)大"
+"于 0.1米以上"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1677
 msgid "Name of busStop"
@@ -7459,9 +7473,8 @@ msgstr "公交站(busStop)的名称"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3475
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4365
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4511
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9429
-msgid ""
-"If set, no error will be reported if element is placed behind the lane."
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9430
+msgid "If set, no error will be reported if element is placed behind the lane."
 msgstr "如果设定，若元素放置在车道后面，不会报告任何错误。"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1683
@@ -7485,7 +7498,7 @@ msgstr "相反地，它将放置在距离 车道尽头0.1 米处或 0.1位置(po
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3477
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4367
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4513
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9431
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9432
 msgid ""
 "if the position was negative and larger than the lanes length after "
 "multiplication with - 1"
@@ -7500,8 +7513,8 @@ msgstr "意思是在这个公交站的公交线路的名称。这仅用于视觉
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1695
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1762
 msgid ""
-"Larger numbers of persons trying to enter will create an upstream jam on the"
-" sidewalk"
+"Larger numbers of persons trying to enter will create an upstream jam on the "
+"sidewalk"
 msgstr "大量人群试图进入将会在人行道上造成上游堵塞"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1701
@@ -7545,7 +7558,7 @@ msgstr "火车站(trainStop)名称"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3476
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4366
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4512
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9431
 msgid ""
 "Instead, it will be placed 0.1 meters from the lanes end or at position 0.1,"
 msgstr "相反地，它将放置在距离车道末端 0.1 米处或 0.1 米位置，"
@@ -7577,7 +7590,7 @@ msgid "The walking length of the access in meters"
 msgstr "通道的步行长度(米)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1823
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6079
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6080
 msgid "ContainerStop"
 msgstr ""
 
@@ -7649,8 +7662,8 @@ msgstr "在运输过程中启用或禁用充电，即车辆必须或不得停车
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1946
 msgid ""
-"Time delay after the vehicles has reached / stopped on the charging station,"
-" before the energy transfer (charging) begins"
+"Time delay after the vehicles has reached / stopped on the charging station, "
+"before the energy transfer (charging) begins"
 msgstr "车辆到达/停在充电站后，能量传输（充电）开始之前的时间延迟"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:1952
@@ -7705,8 +7718,8 @@ msgstr "路边停车位的宽度"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2043
 msgid ""
-"The length of the road-side parking spaces. By default (endPos - startPos) /"
-" roadsideCapacity"
+"The length of the road-side parking spaces. By default (endPos - startPos) / "
+"roadsideCapacity"
 msgstr "路边停车位的长度。预设情況下为（终点位置 - 开始位置）/路边容量"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2049
@@ -7750,8 +7763,8 @@ msgstr "E1 的id"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2495
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2530
 msgid ""
-"The id of the lane the detector shall be laid on. The lane must be a part of"
-" the network used"
+"The id of the lane the detector shall be laid on. The lane must be a part of "
+"the network used"
 msgstr "检测器所在车道的 ID。车道必须位于所用路网內"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2126
@@ -7759,13 +7772,14 @@ msgstr "检测器所在车道的 ID。车道必须位于所用路网內"
 msgid ""
 "The position on the lane the detector shall be laid on in meters. The "
 "position must be a value between -1*lane's length and the lane's length"
-msgstr "检测器在车道上的位置应以米为单位设置。该位置必须是在正负一个车道长度之間"
+msgstr ""
+"检测器在车道上的位置应以米为单位设置。该位置必须是在正负一个车道长度之間"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2131
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2204
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2305
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2397
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9599
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9600
 msgid ""
 "The aggregation period the values the detector collects shall be summed up"
 msgstr "在汇总期内检测器采集到的值应相加"
@@ -7796,8 +7810,8 @@ msgstr "要考虑的车辆类型ID的空格分隔清单"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2418
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2555
 msgid ""
-"List of edge ids that must all be part of the future route of the vehicle to"
-" qualify for detection"
+"List of edge ids that must all be part of the future route of the vehicle to "
+"qualify for detection"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2157
@@ -7849,14 +7863,17 @@ msgstr "以时间为基础的阈值，用来定义车辆必须停等多少时间
 msgid ""
 "The speed-based threshold that describes how slow a vehicle has to be to be "
 "recognized as halting) in m/s"
-msgstr "以速度为基础的閾值，用来定义车辆必须行驶多慢才会被认为是停等 (单位为 米/秒)"
+msgstr ""
+"以速度为基础的閾值，用来定义车辆必须行驶多慢才会被认为是停等 (单位为 米/秒)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2254
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2355
 msgid ""
 "The maximum distance to the next standing vehicle in order to make this "
 "vehicle count as a participant to the jam in m"
-msgstr "车辆到下一个停等的车辆的最大距离(米)，此距离用于计算该车辆是否被视为堵塞的参与者"
+msgstr ""
+"车辆到下一个停等的车辆的最大距离(米)，此距离用于计算该车辆是否被视为堵塞的参"
+"与者"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2268
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2369
@@ -8080,7 +8097,7 @@ msgid "First calibrator flow departure time"
 msgstr "第一个校准器流量离开时间"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2833
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8431
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8432
 msgid "End of departure interval"
 msgstr "出发间隔结束"
 
@@ -8122,15 +8139,19 @@ msgstr "车辆重新搜寻路径(rerouting)机率(0-1)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2900
 msgid ""
-"The waiting time threshold (in s) that must be reached to activate rerouting"
-" (default -1 which disables the threshold)"
-msgstr "启动路径重新搜寻必须达到的等待时间閾值, 以秒为单位(预设值为-1, 表示禁用此閾值)"
+"The waiting time threshold (in s) that must be reached to activate rerouting "
+"(default -1 which disables the threshold)"
+msgstr ""
+"启动路径重新搜寻必须达到的等待时间閾值, 以秒为单位(预设值为-1, 表示禁用此閾"
+"值)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2906
 msgid ""
 "The list of vehicle types that shall be affected by this rerouter (empty to "
 "affect all types)"
-msgstr "受此重新搜寻路径裝置(rerouter)影响的车辆类型清单(空的表示所有车辆类型將被影响)"
+msgstr ""
+"受此重新搜寻路径裝置(rerouter)影响的车辆类型清单(空的表示所有车辆类型將被影"
+"响)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:2911
 msgid ""
@@ -8266,12 +8287,12 @@ msgid "A bitmap to use for rendering this polygon"
 msgstr "用于呈现此多边形的点阵图"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3190
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8322
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8323
 msgid "Enable or disable use image file as a relative path"
 msgstr "允许或禁止使用图像档案作为相对路径"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3196
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8328
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8329
 msgid "Angle of rendered image in degree"
 msgstr "呈现的图像的角度 (以度为单位)"
 
@@ -8344,7 +8365,7 @@ msgid "The RGBA color with which the TAZ shall be displayed"
 msgstr "显示的交通分区(TAZ)的颜色(RGBA)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3345
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8293
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8294
 msgid "Name of POI"
 msgstr "兴趣点的名称"
 
@@ -8428,8 +8449,8 @@ msgstr "架空电线开始夹(overheadWireIDStartClamp)的架空电线区段车�
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3513
 msgid ""
-"ID of the overhead wire segment, to the end of which the overhead wire clamp"
-" is connected"
+"ID of the overhead wire segment, to the end of which the overhead wire clamp "
+"is connected"
 msgstr "与架空电线夹终点连接的架空电线区段的识别名(ID)"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3518
@@ -8475,8 +8496,8 @@ msgstr "路径识别名(id)"
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3616
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3667
 msgid ""
-"The edges the vehicle shall drive along, given as their ids, separated using"
-" spaces"
+"The edges the vehicle shall drive along, given as their ids, separated using "
+"spaces"
 msgstr "车辆应沿着的路段行驶，以其ID形式给出，用空格分隔"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3621
@@ -8549,15 +8570,15 @@ msgstr "车辆的最大速度[米/秒]"
 msgid ""
 "The vehicle's expected multiplicator for lane speed limits (or a "
 "distribution specifier)"
-msgstr "车辆预期的车道速度限制乘数(multiplicator) (或一个分布说明符(specifier))"
+msgstr ""
+"车辆预期的车道速度限制乘数(multiplicator) (或一个分布说明符(specifier))"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3743
 msgid "The vehicle's desired maximum velocity (interacts with speedFactor)."
 msgstr "车辆所需的最大速度 (与 speedFactor 交互作用)。"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3744
-msgid ""
-"Applicable when no speed limit applies (bicycles, some motorways) [m/s]"
+msgid "Applicable when no speed limit applies (bicycles, some motorways) [m/s]"
 msgstr "适用于沒有速度限制的情況 (自行车, 某些高速公路） [m/s]"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3749
@@ -8582,8 +8603,8 @@ msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3778
 msgid ""
-"Image file for rendering vehicles of this type (should be grayscale to allow"
-" functional coloring)"
+"Image file for rendering vehicles of this type (should be grayscale to allow "
+"functional coloring)"
 msgstr "用于渲染这种类型的车辆的图像文件（应该是灰度的，以便进行功能性着色）"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:3783
@@ -8903,8 +8924,7 @@ msgid "The name of the lane the waypoint shall be located at"
 msgstr "定位点(waypoint)应位于的车道的名称"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4519
-msgid ""
-"The lateral offset on the named lane at which the vehicle must waypoint"
+msgid "The lateral offset on the named lane at which the vehicle must waypoint"
 msgstr "车辆必须在已指定车道上定点的侧向偏移值"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4533
@@ -8964,2210 +8984,1899 @@ msgid "ContainerFlow"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4738
-msgid "Transport: edge->edge"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4748
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4758
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4768
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4778
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4788
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4798
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4808
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4819
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4829
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4839
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4849
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4859
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4869
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4879
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4889
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4900
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4910
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4920
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4930
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4940
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4950
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4960
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4970
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4981
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4991
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5001
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5011
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5021
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5031
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5041
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5051
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5062
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5072
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5082
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5092
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5102
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5112
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5122
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5132
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5143
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5153
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5163
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5173
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5183
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5193
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5203
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5213
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5225
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5235
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5245
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5255
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5265
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5275
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5285
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5295
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5306
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5316
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5326
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5336
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5346
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5356
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5366
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5376
+#: src/netedit/frames/common/GNESelectorFrame.cpp:121
+msgid "Transport"
+msgstr "运输工具"
+
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4738
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4748
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4758
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4768
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4778
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4788
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4798
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4808
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4900
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4981
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5062
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5143
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5225
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5306
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5420
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5450
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5825
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5906
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5987
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6177
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6187
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6197
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6207
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6217
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6227
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6237
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6247
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6339
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6420
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6868
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6878
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6888
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6898
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6908
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6918
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6928
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6938
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7030
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7111
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7192
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7273
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7354
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7435
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7538
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7548
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7558
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7568
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7578
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7588
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7598
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7608
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7700
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7781
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7862
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7943
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8024
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8105
+#: src/utils/gui/div/GUIMessageWindow.cpp:71
+msgid "edge"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4748
-msgid "Transport: edge->taz"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4819
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4829
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4839
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4849
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4859
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4869
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4879
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4889
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4910
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4991
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5072
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5153
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5235
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5316
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5511
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5835
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5916
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5997
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6187
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6258
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6268
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6278
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6288
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6298
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6308
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6318
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6328
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6349
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6511
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6878
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6949
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6959
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6969
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6979
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6989
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6999
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7009
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7019
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7040
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7121
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7202
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7283
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7364
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7445
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7548
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7619
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7629
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7639
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7649
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7659
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7669
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7679
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7689
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7710
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7791
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7872
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7953
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8034
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8115
+msgid "taz"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4758
-msgid "Transport: edge->junction"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4839
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4900
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4910
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4920
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4930
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4940
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4950
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4960
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4970
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5001
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5082
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5163
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5245
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5326
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5632
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5845
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5926
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6007
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6197
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6278
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6339
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6349
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6359
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6369
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6379
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6389
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6399
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6409
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6888
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6969
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7030
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7040
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7050
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7060
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7070
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7080
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7090
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7100
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7131
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7212
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7293
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7374
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7455
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7558
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7639
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7700
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7710
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7720
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7730
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7740
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7750
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7760
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7770
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7801
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7882
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7963
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8044
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8125
+#: src/utils/gui/div/GUIMessageWindow.cpp:73
+msgid "junction"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4768
-msgid "Transport: edge->busStop"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4849
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4930
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4981
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4991
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5001
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5011
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5021
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5031
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5041
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5051
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5092
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5173
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5255
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5336
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5450
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5723
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5855
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5936
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6017
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6207
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6288
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6369
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6420
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6450
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6898
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6979
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7060
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7111
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7121
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7131
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7141
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7151
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7161
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7171
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7181
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7222
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7303
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7384
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7465
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7568
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7649
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7730
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7781
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7791
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7801
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7811
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7821
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7831
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7841
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7851
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7892
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7973
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8054
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8135
+#: src/utils/gui/div/GUIMessageWindow.cpp:77
+msgid "busStop"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4778
-msgid "Transport: edge->trainStop"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4859
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4940
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5021
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5062
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5072
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5082
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5092
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5102
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5112
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5122
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5132
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5183
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5265
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5346
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5784
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5865
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5946
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6027
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6217
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6298
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6379
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6511
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6784
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6908
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6989
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7070
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7151
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7192
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7202
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7212
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7222
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7232
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7242
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7252
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7262
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7313
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7394
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7475
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7578
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7659
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7740
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7821
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7862
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7872
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7882
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7892
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7902
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7912
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7922
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7932
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7983
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8064
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8145
+#: src/utils/gui/div/GUIMessageWindow.cpp:78
+msgid "trainStop"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4788
-msgid "Transport: edge->containerStop"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4869
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4950
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5031
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5112
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5143
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5153
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5163
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5173
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5183
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5193
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5203
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5213
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5275
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5356
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5632
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5825
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5835
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5845
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5855
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5865
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5875
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5885
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5895
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5956
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6037
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6227
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6308
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6389
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6632
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6918
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6999
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7080
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7161
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7242
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7273
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7283
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7293
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7303
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7313
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7323
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7333
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7343
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7404
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7485
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7588
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7669
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7750
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7831
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7912
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7943
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7953
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7963
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7973
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7983
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7993
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8003
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8013
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8074
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8155
+#: src/utils/gui/div/GUIMessageWindow.cpp:79
+msgid "containerStop"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4798
-msgid "Transport: edge->chargingStation"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4879
+#: src/netedit/elements/GNEAttributeCarrier.cpp:4960
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5041
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5122
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5203
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5225
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5235
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5245
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5255
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5265
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5275
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5285
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5295
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5366
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5723
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5885
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5906
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5916
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5926
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5936
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5946
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5956
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5966
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5976
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6047
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6237
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6318
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6399
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6723
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6928
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7009
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7090
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7171
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7252
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7333
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7354
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7364
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7374
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7384
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7394
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7404
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7414
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7424
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7495
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7598
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7679
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7760
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7841
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7922
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8003
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8024
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8034
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8044
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8054
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8064
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8074
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8084
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8094
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8165
+#: src/utils/gui/div/GUIMessageWindow.cpp:80
+msgid "chargingStation"
 msgstr ""
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4808
-msgid "Transport: edge->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4819
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4829
-msgid "Transport: taz->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4839
-msgid "Transport: taz->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4849
-msgid "Transport: taz->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4859
-msgid "Transport: taz->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4869
-msgid "Transport: taz->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4879
-msgid "Transport: taz->chargingStation"
-msgstr ""
-
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4889
-msgid "Transport: taz->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4900
-msgid "Transport: junction->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4910
-msgid "Transport: junction->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4920
-msgid "Transport: junction->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4930
-msgid "Transport: junction->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4940
-msgid "Transport: junction->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4950
-msgid "Transport: junction->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4960
-msgid "Transport: junction->chargingStation"
-msgstr ""
-
 #: src/netedit/elements/GNEAttributeCarrier.cpp:4970
-msgid "Transport: junction->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4981
-msgid "Transport: busStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:4991
-msgid "Transport: busStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5001
-msgid "Transport: busStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5011
-msgid "Transport: busStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5021
-msgid "Transport: busStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5031
-msgid "Transport: busStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5041
-msgid "Transport: busStop->chargingStation"
-msgstr ""
-
 #: src/netedit/elements/GNEAttributeCarrier.cpp:5051
-msgid "Transport: busStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5062
-msgid "Transport: trainStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5072
-msgid "Transport: trainStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5082
-msgid "Transport: trainStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5092
-msgid "Transport: trainStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5102
-msgid "Transport: trainStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5112
-msgid "Transport: trainStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5122
-msgid "Transport: trainStop->chargingStation"
-msgstr ""
-
 #: src/netedit/elements/GNEAttributeCarrier.cpp:5132
-msgid "Transport: trainStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5143
-msgid "Transport: containerStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5153
-msgid "Transport: containerStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5163
-msgid "Transport: containerStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5173
-msgid "Transport: containerStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5183
-msgid "Transport: containerStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5193
-msgid "Transport: containerStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5203
-msgid "Transport: containerStop->chargingStation"
-msgstr ""
-
 #: src/netedit/elements/GNEAttributeCarrier.cpp:5213
-msgid "Transport: containerStop->parkingArea"
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5295
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5306
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5316
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5326
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5336
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5346
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5356
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5366
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5376
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5895
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5976
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5987
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5997
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6007
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6017
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6027
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6037
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6047
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6057
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6247
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6328
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6409
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6784
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6938
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7019
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7100
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7181
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7262
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7343
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7424
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7435
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7445
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7455
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7465
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7475
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7485
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7495
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7505
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7608
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7689
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7770
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7851
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7932
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8013
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8094
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8105
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8115
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8125
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8135
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8145
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8155
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8165
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8175
+#: src/utils/gui/div/GUIMessageWindow.cpp:82
+msgid "parkingArea"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5224
-msgid "Transport: chargingStation->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5234
-msgid "Transport: chargingStation->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5244
-msgid "Transport: chargingStation->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5254
-msgid "Transport: chargingStation->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5264
-msgid "Transport: chargingStation->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5274
-msgid "Transport: chargingStation->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5284
-msgid "Transport: chargingStation->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5294
-msgid "Transport: chargingStation->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5305
-msgid "Transport: parkingArea->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5315
-msgid "Transport: parkingArea->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5325
-msgid "Transport: parkingArea->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5335
-msgid "Transport: parkingArea->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5345
-msgid "Transport: parkingArea->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5355
-msgid "Transport: parkingArea->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5365
-msgid "Transport: parkingArea->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5375
-msgid "Transport: parkingArea->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5399
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5400
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5420
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5450
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5511
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5632
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5723
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5784
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5825
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5835
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5845
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5855
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5865
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5875
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5885
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5895
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5906
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5916
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5926
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5936
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5946
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5956
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5966
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5976
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5987
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5997
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6007
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6017
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6027
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6037
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6047
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6057
 msgid "Tranship"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5408
+#: src/netedit/elements/GNEAttributeCarrier.cpp:5409
 msgid "Tranship: edges"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5419
-msgid "Tranship: edge->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5429
-msgid "Tranship: edge->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5439
-msgid "Tranship: edge->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5449
-msgid "Tranship: edge->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5459
-msgid "Tranship: edge->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5469
-msgid "Tranship: edge->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5479
-msgid "Tranship: edge->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5489
-msgid "Tranship: edge->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5500
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5510
-msgid "Tranship: taz->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5520
-msgid "Tranship: taz->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5530
-msgid "Tranship: taz->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5540
-msgid "Tranship: taz->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5550
-msgid "Tranship: taz->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5560
-msgid "Tranship: taz->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5570
-msgid "Tranship: taz->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5581
-msgid "Tranship: junction->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5591
-msgid "Tranship: junction->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5601
-msgid "Tranship: junction->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5611
-msgid "Tranship: junction->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5621
-msgid "Tranship: junction->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5631
-msgid "Tranship: junction->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5641
-msgid "Tranship: junction->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5651
-msgid "Tranship: junction->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5662
-msgid "Tranship: busStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5672
-msgid "Tranship: busStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5682
-msgid "Tranship: busStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5692
-msgid "Tranship: busStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5702
-msgid "Tranship: busStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5712
-msgid "Tranship: busStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5722
-msgid "Tranship: busStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5732
-msgid "Tranship: busStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5743
-msgid "Tranship: trainStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5753
-msgid "Tranship: trainStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5763
-msgid "Tranship: trainStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5773
-msgid "Tranship: trainStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5783
-msgid "Tranship: trainStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5793
-msgid "Tranship: trainStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5803
-msgid "Tranship: trainStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5813
-msgid "Tranship: trainStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5824
-msgid "Tranship: containerStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5834
-msgid "Tranship: containerStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5844
-msgid "Tranship: containerStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5854
-msgid "Tranship: containerStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5864
-msgid "Tranship: containerStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5874
-msgid "Tranship: containerStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5884
-msgid "Tranship: containerStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5894
-msgid "Tranship: containerStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5905
-msgid "Tranship: chargingStation->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5915
-msgid "Tranship: chargingStation->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5925
-msgid "Tranship: chargingStation->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5935
-msgid "Tranship: chargingStation->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5945
-msgid "Tranship: chargingStation->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5955
-msgid "Tranship: chargingStation->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5965
-msgid "Tranship: chargingStation->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5975
-msgid "Tranship: chargingStation->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5986
-msgid "Tranship: parkingArea->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:5996
-msgid "Tranship: parkingArea->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6006
-msgid "Tranship: parkingArea->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6016
-msgid "Tranship: parkingArea->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6026
-msgid "Tranship: parkingArea->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6036
-msgid "Tranship: parkingArea->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6046
-msgid "Tranship: parkingArea->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6056
-msgid "Tranship: parkingArea->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6088
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6089
 msgid "ContainerStop: edge"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6099
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6100
 msgid "ContainerStop: busStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6110
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6111
 msgid "ContainerStop: trainStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6121
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6122
 msgid "ContainerStop: containerStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6131
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6132
 msgid "ContainerStop: chargingStation"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6142
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6143
 msgid "ContainerStop: parkingArea"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6167
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7528
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6168
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6177
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6187
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6197
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6207
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6217
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6227
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6237
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6247
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6258
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6268
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6278
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6288
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6298
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6308
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6318
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6328
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6339
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6349
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6359
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6369
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6379
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6389
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6399
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6409
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6420
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6430
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6440
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6450
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6460
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6480
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6490
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6511
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6551
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6561
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6571
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6582
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6592
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6612
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6622
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6632
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6642
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6652
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6673
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6683
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6703
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6713
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6723
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6733
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6744
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6754
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6764
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6774
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6784
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6794
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6804
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7529
 msgid "PersonTrip"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6176
-msgid "PersonTrip: edge->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6186
-msgid "PersonTrip: edge->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6196
-msgid "PersonTrip: edge->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6206
-msgid "PersonTrip: edge->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6216
-msgid "PersonTrip: edge->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6226
-msgid "PersonTrip: edge->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6236
-msgid "PersonTrip: edge->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6246
-msgid "PersonTrip: edge->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6257
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6267
-msgid "PersonTrip: taz->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6277
-msgid "PersonTrip: taz->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6287
-msgid "PersonTrip: taz->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6297
-msgid "PersonTrip: taz->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6307
-msgid "PersonTrip: taz->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6317
-msgid "PersonTrip: taz->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6327
-msgid "PersonTrip: taz->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6338
-msgid "PersonTrip: junction->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6348
-msgid "PersonTrip: junction->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6358
-msgid "PersonTrip: junction->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6368
-msgid "PersonTrip: junction->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6378
-msgid "PersonTrip: junction->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6388
-msgid "PersonTrip: junction->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6398
-msgid "PersonTrip: junction->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6408
-msgid "PersonTrip: junction->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6419
-msgid "PersonTrip: busStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6429
-msgid "PersonTrip: busStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6439
-msgid "PersonTrip: busStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6449
-msgid "PersonTrip: busStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6459
-msgid "PersonTrip: busStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6469
-msgid "PersonTrip: busStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6479
-msgid "PersonTrip: busStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6489
-msgid "PersonTrip: busStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6500
-msgid "PersonTrip: trainStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6510
-msgid "PersonTrip: trainStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6520
-msgid "PersonTrip: trainStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6530
-msgid "PersonTrip: trainStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6540
-msgid "PersonTrip: trainStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6550
-msgid "PersonTrip: trainStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6560
-msgid "PersonTrip: trainStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6570
-msgid "PersonTrip: trainStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6581
-msgid "PersonTrip: containerStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6591
-msgid "PersonTrip: containerStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6601
-msgid "PersonTrip: containerStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6611
-msgid "PersonTrip: containerStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6621
-msgid "PersonTrip: containerStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6631
-msgid "PersonTrip: containerStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6641
-msgid "PersonTrip: containerStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6651
-msgid "PersonTrip: containerStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6662
-msgid "PersonTrip: chargingStation->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6672
-msgid "PersonTrip: chargingStation->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6682
-msgid "PersonTrip: chargingStation->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6692
-msgid "PersonTrip: chargingStation->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6702
-msgid "PersonTrip: chargingStation->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6712
-msgid "PersonTrip: chargingStation->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6722
-msgid "PersonTrip: chargingStation->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6732
-msgid "PersonTrip: chargingStation->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6743
-msgid "PersonTrip: parkingArea->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6753
-msgid "PersonTrip: parkingArea->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6763
-msgid "PersonTrip: parkingArea->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6773
-msgid "PersonTrip: parkingArea->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6783
-msgid "PersonTrip: parkingArea->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6793
-msgid "PersonTrip: parkingArea->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6803
-msgid "PersonTrip: parkingArea->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6813
-msgid "PersonTrip: parkingArea->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6837
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6838
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6868
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6878
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6888
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6898
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6908
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6918
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6928
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6938
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6949
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6959
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6969
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6979
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6989
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6999
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7009
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7019
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7030
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7040
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7050
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7060
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7070
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7080
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7090
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7100
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7111
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7121
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7131
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7141
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7151
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7161
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7171
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7181
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7192
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7202
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7212
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7222
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7232
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7242
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7252
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7262
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7273
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7283
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7293
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7303
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7313
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7323
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7333
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7343
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7354
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7364
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7374
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7384
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7394
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7404
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7414
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7424
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7435
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7445
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7455
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7465
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7475
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7485
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7495
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7505
 msgid "Walk"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6846
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6847
 msgid "Walk: edges"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6856
+#: src/netedit/elements/GNEAttributeCarrier.cpp:6857
 msgid "Walk: route"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6867
-msgid "Walk: edge->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6877
-msgid "Walk: edge->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6887
-msgid "Walk: edge->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6897
-msgid "Walk: edge->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6907
-msgid "Walk: edge->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6917
-msgid "Walk: edge->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6927
-msgid "Walk: edge->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6937
-msgid "Walk: edge->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6948
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6958
-msgid "Walk: taz->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6968
-msgid "Walk: taz->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6978
-msgid "Walk: taz->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6988
-msgid "Walk: taz->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:6998
-msgid "Walk: taz->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7008
-msgid "Walk: taz->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7018
-msgid "Walk: taz->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7029
-msgid "Walk: junction->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7039
-msgid "Walk: junction->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7049
-msgid "Walk: junction->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7059
-msgid "Walk: junction->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7069
-msgid "Walk: junction->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7079
-msgid "Walk: junction->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7089
-msgid "Walk: junction->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7099
-msgid "Walk: junction->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7110
-msgid "Walk: busStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7120
-msgid "Walk: busStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7130
-msgid "Walk: busStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7140
-msgid "Walk: busStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7150
-msgid "Walk: busStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7160
-msgid "Walk: busStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7170
-msgid "Walk: busStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7180
-msgid "Walk: busStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7191
-msgid "Walk: trainStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7201
-msgid "Walk: trainStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7211
-msgid "Walk: trainStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7221
-msgid "Walk: trainStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7231
-msgid "Walk: trainStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7241
-msgid "Walk: trainStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7251
-msgid "Walk: trainStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7261
-msgid "Walk: trainStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7272
-msgid "Walk: containerStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7282
-msgid "Walk: containerStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7292
-msgid "Walk: containerStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7302
-msgid "Walk: containerStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7312
-msgid "Walk: containerStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7322
-msgid "Walk: containerStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7332
-msgid "Walk: containerStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7342
-msgid "Walk: containerStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7353
-msgid "Walk: chargingStation->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7363
-msgid "Walk: chargingStation->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7373
-msgid "Walk: chargingStation->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7383
-msgid "Walk: chargingStation->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7393
-msgid "Walk: chargingStation->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7403
-msgid "Walk: chargingStation->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7413
-msgid "Walk: chargingStation->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7423
-msgid "Walk: chargingStation->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7434
-msgid "Walk: parkingArea->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7444
-msgid "Walk: parkingArea->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7454
-msgid "Walk: parkingArea->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7464
-msgid "Walk: parkingArea->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7474
-msgid "Walk: parkingArea->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7484
-msgid "Walk: parkingArea->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7494
-msgid "Walk: parkingArea->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7504
-msgid "Walk: parkingArea->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7537
-msgid "Ride: edge->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7547
-msgid "Ride: edge->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7557
-msgid "Ride: edge->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7567
-msgid "Ride: edge->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7577
-msgid "Ride: edge->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7587
-msgid "Ride: edge->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7597
-msgid "Ride: edge->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7607
-msgid "Ride: edge->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7618
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7628
-msgid "Ride: taz->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7638
-msgid "Ride: taz->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7648
-msgid "Ride: taz->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7658
-msgid "Ride: taz->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7668
-msgid "Ride: taz->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7678
-msgid "Ride: taz->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7688
-msgid "Ride: taz->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7699
-msgid "Ride: junction->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7709
-msgid "Ride: junction->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7719
-msgid "Ride: junction->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7729
-msgid "Ride: junction->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7739
-msgid "Ride: junction->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7749
-msgid "Ride: junction->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7759
-msgid "Ride: junction->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7769
-msgid "Ride: junction->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7780
-msgid "Ride: busStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7790
-msgid "Ride: busStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7800
-msgid "Ride: busStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7810
-msgid "Ride: busStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7820
-msgid "Ride: busStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7830
-msgid "Ride: busStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7840
-msgid "Ride: busStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7850
-msgid "Ride: busStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7861
-msgid "Ride: trainStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7871
-msgid "Ride: trainStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7881
-msgid "Ride: trainStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7891
-msgid "Ride: trainStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7901
-msgid "Ride: trainStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7911
-msgid "Ride: trainStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7921
-msgid "Ride: trainStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7931
-msgid "Ride: trainStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7942
-msgid "Ride: containerStop->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7952
-msgid "Ride: containerStop->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7962
-msgid "Ride: containerStop->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7972
-msgid "Ride: containerStop->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7982
-msgid "Ride: containerStop->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:7992
-msgid "Ride: containerStop->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8002
-msgid "Ride: containerStop->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8012
-msgid "Ride: containerStop->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8023
-msgid "Ride: chargingStation->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8033
-msgid "Ride: chargingStation->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8043
-msgid "Ride: chargingStation->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8053
-msgid "Ride: chargingStation->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8063
-msgid "Ride: chargingStation->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8073
-msgid "Ride: chargingStation->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8083
-msgid "Ride: chargingStation->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8093
-msgid "Ride: chargingStation->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8104
-msgid "Ride: parkingArea->edge"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8114
-msgid "Ride: parkingArea->taz"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8124
-msgid "Ride: parkingArea->junction"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8134
-msgid "Ride: parkingArea->busStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8144
-msgid "Ride: parkingArea->trainStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8154
-msgid "Ride: parkingArea->containerStop"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8164
-msgid "Ride: parkingArea->chargingStation"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8174
-msgid "Ride: parkingArea->parkingArea"
-msgstr ""
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8197
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7538
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7548
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7558
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7568
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7578
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7588
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7598
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7608
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7619
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7629
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7639
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7649
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7659
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7669
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7679
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7689
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7700
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7710
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7720
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7730
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7740
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7750
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7760
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7770
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7781
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7791
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7801
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7811
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7821
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7831
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7841
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7851
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7862
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7872
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7882
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7892
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7902
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7912
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7922
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7932
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7943
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7953
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7963
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7973
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7983
+#: src/netedit/elements/GNEAttributeCarrier.cpp:7993
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8003
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8013
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8024
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8034
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8044
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8054
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8064
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8074
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8084
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8094
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8105
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8115
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8125
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8135
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8145
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8155
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8165
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8175
+msgid "Ride"
+msgstr ""
+
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8198
 msgid "PersonStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8206
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8207
 msgid "PersonStop: edge"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8217
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8218
 msgid "PersonStop: busStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8228
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8229
 msgid "PersonStop: trainStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8239
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8240
 msgid "PersonStop: containerStop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8249
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8250
 msgid "PersonStop: chargingStation"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8260
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8261
 msgid "PersonStop: parkingArea"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8274
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8275
 msgid "The color with which the POI shall be displayed"
 msgstr "显示兴趣点的颜色"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8280
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8281
 msgid "A typename for the POI"
 msgstr "兴趣点的类型名称（typename)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8286
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8287
 msgid "POI Icon"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8298
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8299
 msgid "The layer of the POI for drawing and selecting"
 msgstr "用于绘制或选择的兴趣点的图层"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8304
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8305
 msgid "Width of rendered image in meters"
 msgstr "呈现的图像的宽度(以米为单位)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8310
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8311
 msgid "Height of rendered image in meters"
 msgstr "呈现的图像的高度(以米为单位)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8316
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8317
 msgid "A bitmap to use for rendering this POI"
 msgstr "用于呈现此兴趣点的点阵图"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8341
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8342
 msgid "This vehicle's color"
 msgstr "此车辆的顏色"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8347
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8348
 msgid "The lane on which the vehicle shall be inserted"
 msgstr "车辆应该被置入的车道"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8353
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8354
 msgid "The position at which the vehicle shall enter the net"
 msgstr "车辆应进入路网时的所在位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8359
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8360
 msgid "The speed with which the vehicle shall enter the network"
 msgstr "车辆进入路网时的应有速度"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8365
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8366
 msgid "The lane at which the vehicle shall leave the network"
 msgstr "车辆应离开路网时所在车道"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8371
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8372
 msgid "The position at which the vehicle shall leave the network"
 msgstr "车辆离开路网时所在位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8377
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8378
 msgid "The speed with which the vehicle shall leave the network"
 msgstr "车辆离开路网时应有的速度"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8383
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8384
 msgid ""
-"A string specifying the id of a public transport line which can be used when"
-" specifying person rides"
+"A string specifying the id of a public transport line which can be used when "
+"specifying person rides"
 msgstr "当指定人员乘車(ride)时, 一个用于指定公共运输路线的识别名的字串"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8388
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8389
 msgid "The number of occupied seats when the vehicle is inserted"
 msgstr "当车辆被置入路网时, 已占用的座位数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8394
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8395
 msgid "The number of occupied container places when the vehicle is inserted"
 msgstr "车辆置入时, 已占用的容器位置数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8400
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8401
 msgid ""
 "The lateral position on the departure lane at which the vehicle shall enter "
 "the net"
 msgstr "车辆进入路网时所处的出发车道的侧向位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8406
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8407
 msgid ""
 "The lateral position on the arrival lane at which the vehicle shall arrive"
 msgstr "车辆抵达时所在抵达车道的側向位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8412
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8413
 msgid "Insertion checks"
 msgstr "插入检查"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8425
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8426
 msgid "First flow departure time"
 msgstr "第一个流量的出发时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8437
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8458
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8438
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8459
 msgid "probability for emitting a flow each second"
 msgstr "每秒注入流量的概率"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8438
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8439
 msgid "(not together with vehsPerHour or period)"
 msgstr "（不与vehsPerHour 或周期一起使用）"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8444
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8445
 msgid "Number of flows per hour, equally spaced"
 msgstr "每小时流量的数量,等间隔"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8445
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8446
 msgid "(not together with period or probability or poisson)"
 msgstr "(不与周期或概率或泊松一起使用)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8451
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8452
 msgid "Insert equally spaced flows at that period"
 msgstr "在该周期內注入等间距的流量"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8452
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8453
 msgid "(not together with vehsPerHour or probability or poisson)"
 msgstr "（不与 vehsPerHour , 概率或帕松(poisson)分配一起使用）"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8459
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8460
 msgid "(not together with vehsPerHour or period or poisson)"
 msgstr "（不与 vehsPerHour , 周期或帕松(poisson)分配一起使用）"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8465
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8466
 msgid ""
 "Insert flow expected vehicles per second with poisson distributed insertion "
 "rate"
 msgstr "根据帕松(poisson)分配注入率, 每秒注入预期车辆的流量"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8466
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8467
 msgid "(not together with period or vehsPerHour or probability)"
 msgstr "（不与周期, 每小时车辆数(vehsPerHour)或概率一起使用）"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8479
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8480
 msgid "The acceleration ability of vehicles of this type [m/s^2]"
 msgstr "此类型车辆的加速能力 [米/平方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8485
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8486
 msgid "The deceleration ability of vehicles of this type [m/s^2]"
 msgstr "此类型车辆的减速能力[米/平方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8491
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8492
 msgid ""
-"The apparent deceleration of the vehicle as used by the standard model "
-"[m/s^2]"
+"The apparent deceleration of the vehicle as used by the standard model [m/"
+"s^2]"
 msgstr "标准模式使用的车辆视在減速 [米/平方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8497
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8498
 msgid "The maximal physically possible deceleration for the vehicle [m/s^2]"
 msgstr "车辆的最大物理可能減速度 [米/平方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8503
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8510
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8504
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8511
 msgid "Car-following model parameter"
 msgstr "跟车模式参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8516
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8517
 msgid "SKRAUSSX parameter 1"
 msgstr "SKRAUSSX参数1"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8521
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8522
 msgid "SKRAUSSX parameter 2"
 msgstr "SKRAUSSX参数2"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8526
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8527
 msgid "SKRAUSSX parameter 3"
 msgstr "SKRAUSSX参数3"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8531
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8532
 msgid "SKRAUSSX parameter 4"
 msgstr "SKRAUSSX参数4"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8536
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8537
 msgid "SKRAUSSX parameter 5"
 msgstr "SKRAUSSX参数5"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8541
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8542
 msgid "EIDM Look ahead / preview parameter [s]"
 msgstr "EIDM 前瞻/预览参数 [秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8547
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8548
 msgid "EIDM AP Reaction Time parameter [s]"
 msgstr "EIDM AP 反应时间参数 [秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8553
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8554
 msgid "EIDM Wiener Process parameter for the Driving Error [s]"
 msgstr "驾驶误差的EIDM 维纳过程(Wiener process)参数 [秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8559
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8560
 msgid "EIDM Wiener Process parameter for the Estimation Error [s]"
 msgstr "预测错误的EIDM 维纳过程(Wiener process)参数 [秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8565
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8566
 msgid "EIDM Coolness parameter of the Enhanced IDM [-]"
 msgstr "改善的IDM模式的EIDM 冷却度参数 [-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8572
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8573
 msgid "EIDM leader speed estimation error parameter [-]"
 msgstr "EIDM前领车速度的预测错误参数[-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8578
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8579
 msgid "EIDM gap estimation error parameter [-]"
 msgstr "EIDM 间距预测错误参数 [-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8584
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8585
 msgid "EIDM driving error parameter [-]"
 msgstr "EIDM 驾驶错误参数 [-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8590
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8591
 msgid "EIDM maximal jerk parameter [m/s^3]"
 msgstr "EIDM 最大急卫参数 [米/立方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8596
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8597
 msgid ""
-"EIDM maximal negative acceleration between two Action Points (threshold) "
-"[m/s^2]"
+"EIDM maximal negative acceleration between two Action Points (threshold) [m/"
+"s^2]"
 msgstr "在两个动作点(action points)之间的EIDM 最大负加速度（阈值） [米/平方秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8602
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8603
 msgid ""
 "EIDM Time parameter until vehicle reaches amax after startup/driveoff [s]"
 msgstr "在启动//行驶后车辆达到最大加速度的EIDM时间参数[秒]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8608
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8609
 msgid "EIDM Flatness parameter of startup/driveoff curve [-]"
 msgstr "EIDM 启动/起步曲线平坦度参数 [-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8614
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8615
 msgid "EIDM Shift parameter of startup/driveoff curve [-]"
 msgstr "EIDM 启动/起步曲线的偏移参数 [-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8620
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8621
 msgid ""
-"EIDM parameter if model shall include vehicle dynamics into the acceleration"
-" calculation [0/1]"
+"EIDM parameter if model shall include vehicle dynamics into the acceleration "
+"calculation [0/1]"
 msgstr "EIDM参数，如果模式应将车辆动力学纳入加速度计算 [0/1]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8626
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8627
 msgid ""
 "EIDM parameter how many vehicles are taken into the preview calculation of "
 "the driver (at least always 1!) [-]"
 msgstr "EIDM 参数, 有多少车辆被纳入驱动程序的预览计算（至少总是 1！）[-]"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8632
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8638
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8633
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8639
 msgid "Peter Wagner 2009 parameter"
 msgstr "彼得·瓦格纳 (Peter Wagner) 2009 参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8644
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8650
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8645
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8651
 msgid "IDMM parameter"
 msgstr "IDMM参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8656
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8662
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8668
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8674
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8680
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8686
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8692
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8698
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8704
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8657
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8663
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8669
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8675
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8681
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8687
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8693
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8699
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8705
 msgid "W99 parameter"
 msgstr "W99 参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8710
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8715
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8711
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8716
 msgid "Wiedemann parameter"
 msgstr "魏德曼(Wiedemann)参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8720
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8721
 msgid "MinGap factor parameter"
 msgstr "最小间距(MinGap)因素参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8725
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8726
 msgid "K parameter"
 msgstr "K 参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8730
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8731
 msgid "Kerner Phi parameter"
 msgstr "克纳(Kerner)斐(Phi)参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8735
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8736
 msgid "IDM Delta parameter"
 msgstr "IDM 德尔塔(Delta)参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8740
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8741
 msgid "IDM Stepping parameter"
 msgstr "IDM步进参数"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8745
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8746
 msgid "Train Types"
 msgstr "火车类型"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8759
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8760
 msgid ""
 "Minimum distance to pedestrians that are walking towards the conflict point "
 "with the ego vehicle."
 msgstr "行人走向与自我(ego)车辆的冲突点的最小距离。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8765
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8766
 msgid ""
 "The accumulated waiting time after which a vehicle will drive onto an "
 "intersection even though this might cause jamming."
 msgstr "即使这可能会导致拥堵，车辆将驶进路口的累积等待时间。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8771
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8772
 msgid ""
 "This value causes vehicles to violate a yellow light if the duration of the "
 "yellow phase is lower than the given threshold."
 msgstr "如果黄灯相位的时间低于给定的閾值，则此值会导致车辆闯黃灯。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8777
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8778
 msgid ""
-"This value causes vehicles to violate a red light if the duration of the red"
-" phase is lower than the given threshold."
+"This value causes vehicles to violate a red light if the duration of the red "
+"phase is lower than the given threshold."
 msgstr "如果红灯相位的时间低于給定的閾值，则此值会导致车辆闯红灯。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8783
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8784
 msgid ""
-"This value causes vehicles affected by jmDriveAfterRedTime to slow down when"
-" violating a red light."
+"This value causes vehicles affected by jmDriveAfterRedTime to slow down when "
+"violating a red light."
 msgstr "此值会导致受 jmDriveAfterRedTime 影响的车辆在闯红灯时减速。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8789
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8790
 msgid ""
 "This value causes vehicles to ignore foe vehicles that have right-of-way "
 "with the given probability."
 msgstr "此值会导致车辆忽略具有給定概率的行驶路权的对手(foe)车辆。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8795
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8796
 msgid "This value is used in conjunction with jmIgnoreFoeProb."
 msgstr "此值与 jmIgnoreFoeProb 联合使用。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8796
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8797
 msgid ""
 "Only vehicles with a speed below or equal to the given value may be ignored."
 msgstr "只有速度低于或等于給定值的车辆才能被忽略。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8802
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8803
 msgid ""
 "This value configures driving imperfection (dawdling) while passing a minor "
 "link."
 msgstr "此值用于设定驾驶员在经过次要路段时, 不完善的驾驶情况(磨蹭 dawdling) 。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8808
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8809
 msgid ""
 "This value defines the minimum time gap when passing ahead of a prioritized "
 "vehicle. "
 msgstr "此值定义在优先车辆前面超车时的最小时间间隔。 "
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8814
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8815
 msgid "Willingess of drivers to impede vehicles with higher priority"
 msgstr "驾驶员阻碍具有更高优先权车辆的意愿"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8827
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8828
 msgid ""
 "The eagerness for performing strategic lane changing. Higher values result "
 "in earlier lane-changing."
 msgstr "渴望进行策略性车道变换的程度。较高的值会导致较早的车道变化。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8833
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8834
 msgid ""
 "The willingness for performing cooperative lane changing. Lower values "
 "result in reduced cooperation."
 msgstr "进行合作性的车道变换的意愿。较低的值会导致合作減少。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8839
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8840
 msgid ""
 "The eagerness for performing lane changing to gain speed. Higher values "
 "result in more lane-changing."
 msgstr "渴望进行车道变化以提高速度的程度。值越高，車道变换越多。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8845
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8846
 msgid ""
 "The eagerness for following the obligation to keep right. Higher values "
 "result in earlier lane-changing."
 msgstr "渴望遵循靠右的义务的程度。值越高，车道变换越早。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8851
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8852
 msgid ""
 "The eagerness for using the configured lateral alignment within the lane."
 msgstr "渴望使用已设定( configured)的车道內侧向对齐方式的程度。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8852
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8853
 msgid ""
 "Higher values result in increased willingness to sacrifice speed for "
 "alignment."
 msgstr "值越高，则牺牲速度以进行对齐(alignment)的意愿就越高。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8858
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8859
 msgid ""
 "The eagerness for overtaking through the opposite-direction lane. Higher "
 "values result in more lane-changing."
 msgstr "渴望利用对向车道超車的程度。值越高，车道变换越多。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8864
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8865
 msgid "Willingness to encroach laterally on other drivers."
 msgstr "侧向的侵犯干扰其他驾驶者的意愿。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8870
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8871
 msgid ""
 "Minimum lateral gap when encroaching laterally on other drives (alternative "
 "way to define lcPushy)"
 msgstr "侧向地侵犯干扰其他驾驶者的最小侧向间距(也可以用lcPushy來定义)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8876
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8877
 msgid "Willingness to accept lower front and rear gaps on the target lane."
 msgstr "接受目标车道上较低的前后间距的意愿。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8882
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8883
 msgid "Dynamic factor for modifying lcAssertive and lcPushy."
 msgstr "用于修改lcAssertive和lcPushy的动态系数。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8888
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8889
 msgid ""
 "Time to reach maximum impatience (of 1). Impatience grows whenever a lane-"
 "change manoeuvre is blocked."
 msgstr "达到最大不耐烦的时间(1)。每当车道变换被阻止时，不耐烦的程度就会增加。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8894
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8895
 msgid "Maximum lateral acceleration per second."
 msgstr "每秒最大侧向加速度。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8900
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8901
 msgid ""
-"Factor for configuring the strategic lookahead distance when a change to the"
-" left is necessary (relative to right lookahead)."
-msgstr "当需要向左变换（相当于向右前看）时, 用于设定策略性向前看距离的系数(factor)。"
+"Factor for configuring the strategic lookahead distance when a change to the "
+"left is necessary (relative to right lookahead)."
+msgstr ""
+"当需要向左变换（相当于向右前看）时, 用于设定策略性向前看距离的系数(factor)。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8906
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8907
 msgid ""
 "Factor for configuring the threshold asymmetry when changing to the left or "
 "to the right for speed gain."
 msgstr "当为了提高速度而向左或向右变换时, 为了设定閾值不对称的系数。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8912
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8913
 msgid "Upper bound on lateral speed when standing."
 msgstr "站立时侧向速度的上限。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8918
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8919
 msgid ""
 "Upper bound on lateral speed while moving computed as lcMaxSpeedLatStanding "
 "+ lcMaxSpeedLatFactor * getSpeed()"
-msgstr "移动时侧向速度上限的计算为lcMaxSpeedLatStanding + lcMaxSpeedLatFactor * getSpeed()"
-
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8924
-msgid ""
-"Distance to an upcoming turn on the vehicles route, below which the "
-"alignment"
-msgstr "与车辆路线上即将出现的转弯的距离，低于该转弯的路线"
+msgstr ""
+"移动时侧向速度上限的计算为lcMaxSpeedLatStanding + lcMaxSpeedLatFactor * "
+"getSpeed()"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:8925
+msgid ""
+"Distance to an upcoming turn on the vehicles route, below which the alignment"
+msgstr "与车辆路线上即将出现的转弯的距离，低于该转弯的路线"
+
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8926
 msgid "should be dynamically adapted to match the turn direction."
 msgstr "应该动态地调整以符合转弯方向。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8931
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8932
 msgid "The probability for violating rules gainst overtaking on the right."
 msgstr "违反规则的概率以能进行右侧超车。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8937
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8938
 msgid "Time threshold for the willingness to change right."
 msgstr "愿意向右变换的时间阈值。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8943
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8944
 msgid ""
 "Speed difference factor for the eagerness of overtaking a neighbor vehicle "
 "before changing lanes (threshold = factor*speedlimit)."
 msgstr "改变车道前急于超越邻车的速度差系数（阈值=系数*速度限制）。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8958
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8959
 msgid "The name of the person"
 msgstr "人的姓名"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8963
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8964
 msgid "The id of the person type to use for this person"
 msgstr "这个人要使用的人的类型的id"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8969
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8970
 msgid "This person's color"
 msgstr "这个人的颜色"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8975
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8976
 msgid "The position at which the person shall enter the net"
 msgstr "该人应在什么位置入网"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8988
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8989
 msgid "The name of the container"
 msgstr "货箱的名称"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8993
+#: src/netedit/elements/GNEAttributeCarrier.cpp:8994
 msgid "The id of the container type to use for this container"
 msgstr "这个货箱要使用的货箱类型的id"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:8999
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9000
 msgid "This container's color"
 msgstr "这个货箱的颜色"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9005
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9006
 msgid "The position at which the container shall enter the net"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9018
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9409
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9019
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9410
 msgid "Minimum duration for stopping"
 msgstr "最短停靠时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9025
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9416
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9026
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9417
 msgid "The time step at which the route continues"
 msgstr "路径继续时的时间长度"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9031
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9032
 msgid ""
 "If set to a non-negative time value, then the stop duration can be extended "
 "at most by the extension value in seconds"
 msgstr "如果设置为一个非负的时间值，那么停止时间最多可以延长秒数的延长值"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9038
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9039
 msgid "Whether a person or container or both may end the stop"
 msgstr "人员、集装箱抑或两者均可结束停靠"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9045
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9046
 msgid "List of elements that must board the vehicle before it may continue"
 msgstr "在车辆继续之前，必須登上车辆的要素清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9050
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9051
 msgid "Joins this train to another upon reaching the stop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9056
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9057
 msgid "List of elements that can board the vehicle before it may continue"
 msgstr "在车辆继续之前，可以登上车辆的要素清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9061
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9062
 msgid "Whether the vehicle stops on the road or beside"
 msgstr "无论车辆是停在路上还是停在旁边"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9068
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9069
 msgid "Activity displayed for stopped person in GUI and output files"
 msgstr "在图形用户界面和输出文件中显示被拦截者的活动"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9073
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9074
 msgid ""
 "Parameter to be applied to the vehicle to track the trip id within a "
 "cyclical public transport route"
 msgstr "应用于车辆的参数，以跟踪环线公共交通路线内的行程ID"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9078
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9079
 msgid ""
 "New line attribute to be set on the vehicle when reaching this stop (for "
 "cyclical public transport route)"
 msgstr "当到达这一站时，将在车辆上设置新的线路属性（适用于环线公共交通线路）"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9084
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9085
 msgid "Speed to be kept while driving between startPos and endPos"
 msgstr "在startPos和endPos之间行驶时要保持的速度"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9090
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9091
 msgid ""
-"Whether the stop may be skipped if no passengers wants to embark or "
-"disembark"
+"Whether the stop may be skipped if no passengers wants to embark or disembark"
 msgstr "如果没有乘客想上船或下船，是否可以跳过该站"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9097
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9098
 msgid ""
 "transfer time if there shall be a jump from this stop to the next route edge"
 msgstr "如果从这一站跳到下一个路线的路段，则转移时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9103
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9104
 msgid "Splits the train upon reaching the stop"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9119
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9120
 msgid "list of consecutive edges"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9124
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9125
 msgid "Arrival position on the last edge"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9131
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9132
 msgid "Route ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9136
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9137
 msgid "Arrival position on the destination edge"
 msgstr "目的地路段上的抵达位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9155
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9156
 msgid "Bus stop ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9161
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9162
 msgid "Train stop ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9167
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9168
 msgid "Container stop ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9173
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9174
 msgid "Charging station ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9179
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9180
 msgid "Parking area ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9186
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9187
 msgid "Edge start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9192
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9193
 msgid "TAZ start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9198
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9199
 msgid "Junction start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9204
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9205
 msgid "BuStop start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9210
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9211
 msgid "TrainStop start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9216
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9217
 msgid "ContainerStop start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9222
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9223
 msgid "ChargingStation start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9228
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9229
 msgid "ParkingArea start ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9235
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9236
 msgid "Edge end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9242
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9243
 msgid "The position at which the tranship shall enter the net"
 msgstr "运送应进入路网时的位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9248
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9249
 msgid "arrival position on the destination edge"
 msgstr "目标路段上的抵达位置"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9255
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9256
 msgid "TAZ end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9261
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9262
 msgid "Junction end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9267
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9268
 msgid "BuStop end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9273
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9274
 msgid "TrainStop end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9279
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9280
 msgid "ContainerStop end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9285
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9286
 msgid "ChargingStation end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9291
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9292
 msgid "ParkingArea end ID"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9304
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9305
 msgid "List of possible vehicle types to take"
 msgstr "可供使用的车辆类型的清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9309
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9310
 msgid ""
 "List of possible traffic modes. Walking is always possible regardless of "
 "this value"
 msgstr "可能的交通运具清单。无论此值如何，步行始终是可能的"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9314
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9315
 msgid "list of vehicle alternatives to take for the person trip"
 msgstr "人行程可以使用的替代车辆清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9319
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9320
 msgid "Walk factor"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9325
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9361
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9378
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9326
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9362
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9379
 msgid ""
 "id of the travel group. Persons with the same group may share a taxi ride"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9337
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9390
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9338
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9391
 msgid ""
 "speed of the person for this tranship in m/s (not together with duration)"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9343
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9396
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9344
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9397
 msgid "duration of the plan in second (not together with speed)"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9356
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9357
 msgid "list of vehicle alternatives to take for the ride"
 msgstr "乘车时可以使用的替代车辆清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9373
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9374
 msgid "list of vehicle alternatives to take for the transport"
 msgstr "运送的替代车辆清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9422
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9423
 msgid "Activity displayed for stopped person in GUI and output files "
 msgstr "在GUI及输出文件中为停等人员显示的活动 "
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9452
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9453
 #: src/netedit/frames/data/GNEGenericDataFrame.cpp:70
 msgid "DataSet"
 msgstr "数据组"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9457
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9458
 msgid "Data set ID"
 msgstr "数据组ID"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9470
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9471
 msgid "DataInterval"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9476
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9477
 msgid "Interval ID"
 msgstr "间隔ID"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9482
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9483
 msgid "Data interval begin time"
 msgstr "数据间隔开始时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9488
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9489
 msgid "Data interval end time"
 msgstr "数据间隔结束时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9501
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9502
 msgid "EdgeRelationSingle"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9506
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9507
 msgid "edge ID"
 msgstr "路段 ID"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9517
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9518
 msgid "EdgeRelation"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9522
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9523
 msgid "The ID of the edge the edgeRel starts at"
 msgstr "路段关系(edgeRel)开始的路段的识别名(ID)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9527
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9528
 msgid "The ID of the edge the edgeRel ends at"
 msgstr "路段关系(edgeRel)结束的路段的识别名(ID)"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9538
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9539
 msgid "TAZRelation"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9544
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9545
 msgid "The name of the TAZ the TAZRel starts at"
 msgstr "交通分区Rel开始的交通分区的名称"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9549
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9550
 msgid "The name of the TAZ the TAZRel ends at"
 msgstr "交通分区Rel结束的交通分区名称"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9560
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9561
 msgid "MeanDataEdge"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9574
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9575
 msgid "MeanDataLane"
 msgstr ""
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9589
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9590
 msgid "The id of this set of measurements"
 msgstr "这组测量值的id"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9594
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9595
 msgid "The path to the output file. The path may be relative"
 msgstr "输出文件的路径。该路径可以是相对的"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9604
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9605
 msgid ""
 "The time to start writing. If not given, the simulation's begin is used."
 msgstr "开始写作的时间。如果没有给出，则使用仿真的开始时间。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9609
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9610
 msgid "The time to end writing. If not given the simulation's end is used."
 msgstr "结束写作的时间。如果没有给出，则使用仿真的结束时间。"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9614
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9615
 msgid ""
 "If set to true, edges/lanes which were not used by a vehicle during this "
 "period will not be written"
 msgstr "如果设置为 \"true\"，在此期间没有被车辆使用的路段/车道将不会被写入"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9621
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9622
 msgid "If set, junction internal edges/lanes will be written as well"
 msgstr "如果设置，结点内部路段/车道也将被写入"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9627
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9628
 msgid ""
 "The maximum travel time in seconds to write if only very small movements "
 "occur"
 msgstr "如果仅发生非常小的移动, 则写出以秒为单位最长旅行时间"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9633
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9634
 msgid ""
 "Consider an edge/lane unused if it has at most this many sampled seconds"
 msgstr "如果一路段/车道最多有这么多的采样秒数，就认为它没有被使用"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9639
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9640
 msgid "The maximum speed to consider a vehicle halting;"
 msgstr "认为车辆停止的最大速度;"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9645
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9646
 msgid "space separated list of vehicle type ids to consider"
 msgstr "以空格分隔的要考虑的车辆类型ID清单"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9650
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9651
 msgid ""
 "whether aggregation should be performed over all vehicles that entered the "
 "edge/lane in the aggregation interval"
 msgstr "是否应该对在聚集区间内进入路段/车道的所有车辆进行聚集"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9656
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9657
 msgid ""
 "Whether pedestrians shall be recorded instead of vehicles. Allowed value is "
 "walk"
 msgstr "是否应记录行人而不是车辆。允许的值是步行"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9661
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9662
 msgid "List of attribute names that shall be written"
 msgstr "应被写入的属性名称列表"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9666
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9667
 msgid "Restrict output to the given list of edge ids"
 msgstr "将输出限制在给定的路段ID列表中"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9671
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9672
 msgid "Restrict output to the given list of edges given in file"
 msgstr "将输出限制在文件中给出的路段列表中"
 
-#: src/netedit/elements/GNEAttributeCarrier.cpp:9676
+#: src/netedit/elements/GNEAttributeCarrier.cpp:9677
 msgid ""
-"Whether the traffic statistic of all edges shall be aggregated into a single"
-" value"
+"Whether the traffic statistic of all edges shall be aggregated into a single "
+"value"
 msgstr "是否应将所有路段的流量统计汇总为一个单一的值"
 
 #: src/netedit/elements/GNEHierarchicalElement.cpp:445
@@ -11348,8 +11057,8 @@ msgstr "添加停车区 '"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:371
 msgid ""
-"Could not build parking space in netedit; attribute width cannot be parse to"
-" float."
+"Could not build parking space in netedit; attribute width cannot be parse to "
+"float."
 msgstr "无法在netedit中建立停车位；属性宽度不能被解析为浮动值。"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:373
@@ -11360,8 +11069,8 @@ msgstr "无法在netedit中建立停车位；属性长度不能被解析为浮�
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:375
 msgid ""
-"Could not build parking space in netedit; attribute angle cannot be parse to"
-" float."
+"Could not build parking space in netedit; attribute angle cannot be parse to "
+"float."
 msgstr "无法在netedit中建立停车位；属性长度不能被解析为浮点。"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:396
@@ -11378,7 +11087,9 @@ msgstr "添加感应线圈 '"
 msgid ""
 "Could not build lane area detector with ID '%' in netedit; invalid traffic "
 "light ID."
-msgstr "无法在netedit中布设编号 (ID)为 '%' 的车道区域检测器；无效的交通信号灯编号 (ID)。"
+msgstr ""
+"无法在netedit中布设编号 (ID)为 '%' 的车道区域检测器；无效的交通信号灯编号 "
+"(ID)。"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:509
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:570
@@ -11438,7 +11149,8 @@ msgstr "在''中添加掉头间隔时间"
 #, c-format
 msgid ""
 "Could not build interval with begin '%' and end '%' in '%' due overlapping."
-msgstr "由于重叠，无法在 netedit 中创建起始时刻为 \"%\"、结束时刻为 '%' 的区间。"
+msgstr ""
+"由于重叠，无法在 netedit 中创建起始时刻为 \"%\"、结束时刻为 '%' 的区间。"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1006
 msgid "add closing lane reroute in '"
@@ -11641,8 +11353,8 @@ msgid ""
 "calibratorFlow of calibrator '%' cannot be written. Either type or "
 "vehsPerHour or speed must be enabled"
 msgstr ""
-"校准器 \"%\" 的校准器流量 (calibratorFlow) 无法写入。 "
-"必须启用类型（type）、小时车辆数（vehsPerHour）或速度（speed）"
+"校准器 \"%\" 的校准器流量 (calibratorFlow) 无法写入。 必须启用类型（type）、"
+"小时车辆数（vehsPerHour）或速度（speed）"
 
 #: src/netedit/elements/additional/GNELaneAreaDetector.cpp:167
 #: src/netedit/elements/additional/GNEOverheadWire.cpp:125
@@ -13090,8 +12802,7 @@ msgid "Netedit Parameters Help"
 msgstr ""
 
 #: src/netedit/frames/GNENeteditAttributes.cpp:380
-msgid ""
-"- Reference point: Mark the initial position of the additional element."
+msgid "- Reference point: Mark the initial position of the additional element."
 msgstr "- 参考点：标记附加元素的初始位置。"
 
 #: src/netedit/frames/GNENeteditAttributes.cpp:381
@@ -13137,8 +12848,7 @@ msgid "  the mouse. This option can be modified inspecting element."
 msgstr "  鼠标。这个选项可以修改检查元素。"
 
 #: src/netedit/frames/GNENeteditAttributes.cpp:393
-msgid ""
-"- Center view: if is enabled, view will be center over created element."
+msgid "- Center view: if is enabled, view will be center over created element."
 msgstr "- - 中心视图：如果启用，视图将以创建的元素为中心。"
 
 #: src/netedit/frames/GNENetworkSelector.cpp:49
@@ -13632,7 +13342,8 @@ msgstr "设置新的母体"
 msgid ""
 "- Mark as front element: Mark element as front element (Will be drawn over "
 "all other elements)\n"
-msgstr "- 标记为前面的元素：将元素标记为前面的元素（将被画在所有其他元素之上）\n"
+msgstr ""
+"- 标记为前面的元素：将元素标记为前面的元素（将被画在所有其他元素之上）\n"
 
 #: src/netedit/frames/common/GNEInspectorFrame.cpp:369
 msgid "- Block movement: disable movement in move mode\n"
@@ -13646,8 +13357,8 @@ msgstr "- 块状形状：禁用移动形状的顶点和边缘。整个形状可�
 
 #: src/netedit/frames/common/GNEInspectorFrame.cpp:371
 msgid ""
-"- Close shape: Add or remove the last vertex with the same position of first"
-" edge'."
+"- Close shape: Add or remove the last vertex with the same position of first "
+"edge'."
 msgstr "- 关闭形状。添加或删除与第一条路段相同位置的最后一个顶点'。"
 
 #: src/netedit/frames/common/GNEInspectorFrame.cpp:402
@@ -13742,8 +13453,8 @@ msgstr "未知数集"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:272
 msgid ""
-"- The 'Match Attribute' controls allow to specify a set of objects which are"
-" then applied to the current selection\n"
+"- The 'Match Attribute' controls allow to specify a set of objects which are "
+"then applied to the current selection\n"
 msgstr "- 匹配属性 \"控件允许指定一组对象，然后将其应用于当前选择。\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:273
@@ -13776,23 +13487,29 @@ msgstr "- 空表达式可以匹配所有对象\n"
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:279
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:461
 msgid ""
-"- For numerical attributes the match expression must consist of a comparison"
-" operator ('<', '>', '=') and a number.\n"
-msgstr "- 对于数字属性，匹配表达式必须由一个比较运算符（'<'、'>'、'='）和一个数字组成。\n"
+"- For numerical attributes the match expression must consist of a comparison "
+"operator ('<', '>', '=') and a number.\n"
+msgstr ""
+"- 对于数字属性，匹配表达式必须由一个比较运算符（'<'、'>'、'='）和一个数字组"
+"成。\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:280
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:462
 msgid ""
 "- An object matches if the comparison between its attribute and the given "
 "number by the given operator evaluates to 'true'\n"
-msgstr "- 如果一个对象的属性与给定的数字通过给定的运算符进行比较后评估为'真'，则该对象匹配。\n"
+msgstr ""
+"- 如果一个对象的属性与给定的数字通过给定的运算符进行比较后评估为'真'，则该对"
+"象匹配。\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:282
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:464
 msgid ""
 "- For string attributes the match expression must consist of a comparison "
 "operator ('', '=', '!', '^') and a string.\n"
-msgstr "- 对于字符串属性，匹配表达式必须由一个比较运算符（''、'='、'！'、'^'）和一个字符串组成。\n"
+msgstr ""
+"- 对于字符串属性，匹配表达式必须由一个比较运算符（''、'='、'！'、'^'）和一个"
+"字符串组成。\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:283
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:465
@@ -13824,8 +13541,7 @@ msgstr "- 例子:\n"
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:289
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:471
 msgid ""
-"     junction; id; 'foo' -> match all junctions that have 'foo' in their "
-"id\n"
+"     junction; id; 'foo' -> match all junctions that have 'foo' in their id\n"
 msgstr "     junction; id; 'foo' -> 匹配所有id中带有'foo'的结点\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:290
@@ -13834,8 +13550,8 @@ msgid ""
 "     junction; type; '=priority' -> match all junctions of type 'priority', "
 "but not of type 'priority_stop'\n"
 msgstr ""
-"     junction; type; '=priority' -> "
-"匹配所有'priority'类型的路口，但不匹配'priority_stop'类型的路口。\n"
+"     junction; type; '=priority' -> 匹配所有'priority'类型的路口，但不匹"
+"配'priority_stop'类型的路口。\n"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:291
 #: src/netedit/frames/common/GNEMatchGenericDataAttribute.cpp:473
@@ -13862,7 +13578,9 @@ msgstr ""
 msgid ""
 "- The 'MatchGenericData Attribute' controls allow to specify a set of "
 "objects which are then applied to the current selection\n"
-msgstr "-- MatchGenericData Attribute \"控件允许指定一组对象，然后将其应用于当前选择。\n"
+msgstr ""
+"-- MatchGenericData Attribute \"控件允许指定一组对象，然后将其应用于当前选"
+"择。\n"
 
 #: src/netedit/frames/common/GNEMoveFrame.cpp:70
 msgid "Common move options"
@@ -14053,10 +13771,6 @@ msgstr "路径"
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2043
 msgid "Containers"
 msgstr "容器"
-
-#: src/netedit/frames/common/GNESelectorFrame.cpp:121
-msgid "Transport"
-msgstr "运输工具"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:122
 msgid "Tranships"
@@ -14789,9 +14503,10 @@ msgstr "在单击时按住 <Shift> 以创建牢固 (unyielding) 连接 (pass=tru
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:315
 msgid ""
-"Hold <CTRL> while clicking to create conflicting connections (i.e. at zipper"
-" nodes or with incompatible permissions)"
-msgstr "在单击时按住 <Ctrl> 以创建冲突连接（例如，在拉链节点或具有不兼容的权限时）"
+"Hold <CTRL> while clicking to create conflicting connections (i.e. at zipper "
+"nodes or with incompatible permissions)"
+msgstr ""
+"在单击时按住 <Ctrl> 以创建冲突连接（例如，在拉链节点或具有不兼容的权限时）"
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:329
 msgid "Possible Target"
@@ -14955,8 +14670,7 @@ msgstr "创建路段"
 
 #: src/netedit/frames/network/GNECreateEdgeFrame.cpp:692
 msgid ""
-"Select either default edgeType or short edge or a custom edgeType or "
-"template"
+"Select either default edgeType or short edge or a custom edgeType or template"
 msgstr ""
 
 #: src/netedit/frames/network/GNECreateEdgeFrame.cpp:694
@@ -15618,7 +15332,8 @@ msgstr "创建一个新的交通信号方案。"
 msgid ""
 "Delete a traffic light program. If all programs are deleted the junction "
 "turns into a priority junction."
-msgstr "删除一个交通信号方案。如果所有控制方案都被删除，路口就会变成一个优先路口。"
+msgstr ""
+"删除一个交通信号方案。如果所有控制方案都被删除，路口就会变成一个优先路口。"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1403
 msgid "Reset single"
@@ -15708,8 +15423,7 @@ msgid "Clean unused states from all phase"
 msgstr "清除所有相位的未使用状态"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1947
-msgid ""
-"Clean unused states from all phase. (Not allowed for multiple programs)"
+msgid "Clean unused states from all phase. (Not allowed for multiple programs)"
 msgstr "从所有相位中清理未使用的状态。(不允许有多个程序）"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1951
@@ -15724,7 +15438,9 @@ msgstr "为所有相位的状态向量扩展一个条目"
 msgid ""
 "Extend the state vector for all phases by one entry. (Unused until a "
 "connection or crossing is assigned to the new index)"
-msgstr "将所有相位的状态向量扩展一个条目。(在一个连接或交叉点被分配到新的指数之前未使用)"
+msgstr ""
+"将所有相位的状态向量扩展一个条目。(在一个连接或交叉点被分配到新的指数之前未使"
+"用)"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1957
 msgid "Group Sig."
@@ -15740,7 +15456,9 @@ msgstr "通过让具有相同信号状态的连接使用相同的指数来缩短
 msgid ""
 "Shorten state definition by letting connections with the same signal states "
 "use the same index. (Not allowed for multiple programs)"
-msgstr "通过让具有相同信号状态的连接使用相同的指数来缩短状态定义。(对于多个程序来说不允许)"
+msgstr ""
+"通过让具有相同信号状态的连接使用相同的指数来缩短状态定义。(对于多个程序来说不"
+"允许)"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1963
 msgid "Ungroup Sig."
@@ -15932,14 +15650,6 @@ msgstr "加载选择时出现错误"
 msgid " time"
 msgstr ""
 
-#: src/utils/gui/div/GUIMessageWindow.cpp:71
-msgid "edge"
-msgstr ""
-
-#: src/utils/gui/div/GUIMessageWindow.cpp:73
-msgid "junction"
-msgstr ""
-
 #: src/utils/gui/div/GUIMessageWindow.cpp:74
 msgid "vehicle"
 msgstr ""
@@ -15952,28 +15662,8 @@ msgstr ""
 msgid "tlLogic"
 msgstr ""
 
-#: src/utils/gui/div/GUIMessageWindow.cpp:77
-msgid "busStop"
-msgstr ""
-
-#: src/utils/gui/div/GUIMessageWindow.cpp:78
-msgid "trainStop"
-msgstr ""
-
-#: src/utils/gui/div/GUIMessageWindow.cpp:79
-msgid "containerStop"
-msgstr ""
-
-#: src/utils/gui/div/GUIMessageWindow.cpp:80
-msgid "chargingStation"
-msgstr ""
-
 #: src/utils/gui/div/GUIMessageWindow.cpp:81
 msgid "overheadWireSegment"
-msgstr ""
-
-#: src/utils/gui/div/GUIMessageWindow.cpp:82
-msgid "parkingArea"
 msgstr ""
 
 #: src/utils/gui/div/GUIParameterTableWindow.cpp:76
@@ -16160,8 +15850,7 @@ msgid "Invalid vClass"
 msgstr "无效的vClass"
 
 #: src/utils/gui/settings/GUISettingsHandler.cpp:77
-msgid ""
-"The 'value' attribute is deprecated for breakpoints. Please use 'time'."
+msgid "The 'value' attribute is deprecated for breakpoints. Please use 'time'."
 msgstr "断点的'值（value)'属性已被废弃。请使用'时间（time）'。"
 
 #: src/utils/gui/settings/GUISettingsHandler.cpp:385
@@ -17647,8 +17336,7 @@ msgstr "改变显示语言需要重新启动才能生效。"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:419
 msgid ""
-"For the Debug build you might also need to set the LANG environment "
-"variable."
+"For the Debug build you might also need to set the LANG environment variable."
 msgstr "对于調試(Debug)构建，您可能还需要设置LANG环境变量。"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:422
@@ -17890,12 +17578,15 @@ msgstr "无法转换以%为单位的坐标。"
 #~ "element must be at least networkElement, additional, TAZ, demandElement, "
 #~ "dataElement or meanData"
 #~ msgstr ""
-#~ "要素必须少是 networkElement、additional、TAZ、demandElement、dataElement 或 meanData"
+#~ "要素必须少是 networkElement、additional、TAZ、demandElement、dataElement "
+#~ "或 meanData"
 
 #~ msgid ""
-#~ "element can be only a networkElement, additional, demandElement, dataElement"
-#~ " or meanData at the same time"
-#~ msgstr "要素只能同时是networkElement、附加要素、demandElement、dataElement 或meanData"
+#~ "element can be only a networkElement, additional, demandElement, "
+#~ "dataElement or meanData at the same time"
+#~ msgstr ""
+#~ "要素只能同时是networkElement、附加要素、demandElement、dataElement 或"
+#~ "meanData"
 
 #~ msgid "element can be only a shape, TAZ or wire element at the same time"
 #~ msgstr "要素只能同时是图形物件、分区或是通讯线"
@@ -18095,7 +17786,8 @@ msgstr "无法转换以%为单位的坐标。"
 #~ msgid "A person trip from edge to busStop needs one edge and one busStop"
 #~ msgstr "一个人从路段到公共汽车站的行程需要一个路段和一个公共汽车站"
 
-#~ msgid "A person trip from edge to trainStop needs one edge and one trainStop"
+#~ msgid ""
+#~ "A person trip from edge to trainStop needs one edge and one trainStop"
 #~ msgstr "人员从道路到火车站的行程需要一条道路和一个火车站"
 
 #~ msgid "A person trip from junction to junction needs two junctions junction"
@@ -18140,7 +17832,8 @@ msgstr "无法转换以%为单位的坐标。"
 #~ msgid "reference center"
 #~ msgstr "参照中心"
 
-#~ msgid "  - Reference Left will create it with startPos = 70 and endPos = 100."
+#~ msgid ""
+#~ "  - Reference Left will create it with startPos = 70 and endPos = 100."
 #~ msgstr "  - 参考左图将以startPos = 70和endPos = 100来创建它。"
 
 #~ msgid ""
@@ -18773,9 +18466,10 @@ msgstr "无法转换以%为单位的坐标。"
 #~ msgstr "停车车辆在视图上的纬度位置"
 
 #~ msgid ""
-#~ "The vehicles expected multiplicator for lane speed limits (or a distribution"
-#~ " specifier)"
-#~ msgstr "车辆预期的车道速度限制的乘法器(multiplicator)（或分布指定器(specifier)）"
+#~ "The vehicles expected multiplicator for lane speed limits (or a "
+#~ "distribution specifier)"
+#~ msgstr ""
+#~ "车辆预期的车道速度限制的乘法器(multiplicator)（或分布指定器(specifier)）"
 
 #~ msgid "The vehicles desired maximum velocity (interacts with speedFactor)."
 #~ msgstr "车辆期望的最大速度(与速度因素(speedFactor)交互作用)。"

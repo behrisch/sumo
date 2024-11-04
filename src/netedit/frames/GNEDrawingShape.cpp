@@ -20,6 +20,7 @@
 #include <config.h>
 
 #include <netedit/frames/common/GNEInspectorFrame.h>
+#include <netedit/GNEViewNet.h>
 #include <utils/foxtools/MFXDynamicLabel.h>
 #include <utils/gui/div/GUIDesigns.h>
 #include <utils/gui/windows/GUIAppEnum.h>
@@ -159,6 +160,7 @@ GNEDrawingShape::isDrawing() const {
 void
 GNEDrawingShape::setDeleteLastCreatedPoint(bool value) {
     myDeleteLastCreatedPoint = value;
+    myFrameParent->getViewNet()->updateViewNet();
 }
 
 

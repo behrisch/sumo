@@ -241,8 +241,6 @@ GNEElementTree::onCmdDeleteItem(FXObject*, FXSelector, void*) {
             myFrameParent->getViewNet()->getNet()->deleteGenericData(myClickedGenericData, myFrameParent->getViewNet()->getUndoList());
         }
     }
-    // update net
-    myFrameParent->getViewNet()->updateViewNet();
     // refresh AC Hierarchy
     refreshHierarchicalElementTree();
     // check if inspector frame has to be shown again

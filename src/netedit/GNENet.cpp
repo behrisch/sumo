@@ -2191,8 +2191,6 @@ GNENet::saveAdditionals() {
             // show debug information
             WRITE_DEBUG("Additionals saved after dialog");
         }
-        // update view
-        myViewNet->updateViewNet();
         // set focus again in net
         myViewNet->setFocus();
     } else {
@@ -2247,8 +2245,6 @@ GNENet::saveDemandElements() {
             // show debug information
             WRITE_DEBUG("demand elements saved after dialog");
         }
-        // update view
-        myViewNet->updateViewNet();
         // set focus again in net
         myViewNet->setFocus();
     } else {

@@ -141,8 +141,6 @@ GNEConnectorFrame::ConnectionModifications::onCmdSaveModifications(FXObject*, FX
         myConnectorFrameParent->cleanup();
         // mark network for recomputing
         myConnectorFrameParent->getViewNet()->getNet()->requireRecompute();
-        // update viewNet
-        myConnectorFrameParent->getViewNet()->updateViewNet();
     }
     return 1;
 }

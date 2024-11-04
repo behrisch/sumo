@@ -115,8 +115,7 @@ GNEViewNetHelper::LockManager::isObjectLocked(GUIGlObjectType objectType, const 
     } else if ((objectType == GLO_CONTAINER) || (objectType == GLO_CONTAINERFLOW)) {
         // containers
         return myLockedElements.at(GLO_CONTAINER).lock;
-    }
-    else if ((objectType >= GLO_STOP) && (objectType <= GLO_STOP_PLAN)) {
+    } else if ((objectType >= GLO_STOP) && (objectType <= GLO_STOP_PLAN)) {
         // stops
         return myLockedElements.at(GLO_STOP).lock;
     } else {
@@ -1446,6 +1445,7 @@ GNEViewNetHelper::MoveMultipleElementModul::beginMoveSelection() {
     } else if (myViewNet->myViewObjectsSelector.getEdgeFront()) {
         calculateEdgeSelection(myViewNet->myViewObjectsSelector.getEdgeFront());
     }
+    myViewNet->updateViewNet();
 }
 
 
@@ -2187,7 +2187,7 @@ GNEViewNetHelper::EditModes::setSupermode(Supermode supermode, const bool force)
                 myViewNet->myNet->computeDemandElements(myViewNet->myViewParent->getGNEAppWindows());
             }
             // reset TAZ contours (due filling)
-            for (const auto &TAZ : myViewNet->getNet()->getAttributeCarriers()->getAdditionals().at(SUMO_TAG_TAZ)) {
+            for (const auto& TAZ : myViewNet->getNet()->getAttributeCarriers()->getAdditionals().at(SUMO_TAG_TAZ)) {
                 TAZ.second->resetAdditionalContour();
             }
         }

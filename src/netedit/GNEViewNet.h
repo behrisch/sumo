@@ -72,7 +72,7 @@ public:
     void buildViewToolBars(GUIGlChildWindow* v);
 
     /// @brief Mark the entire GNEViewNet to be repainted later
-    void updateViewNet() const;
+    void updateViewNet(const bool ignoreViewUpdater = true) const;
 
     /// @brief force supermode network(used after load/create new network)
     void forceSupemodeNetwork();

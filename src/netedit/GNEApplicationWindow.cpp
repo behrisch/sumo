@@ -3214,8 +3214,6 @@ GNEApplicationWindow::onCmdSaveNetwork(FXObject* sender, FXSelector sel, void* p
         }
         // end save network
         getApp()->endWaitCursor();
-        // update view
-        myViewNet->updateViewNet();
         // set focus again in net
         myViewNet->setFocus();
         return 1;

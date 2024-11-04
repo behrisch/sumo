@@ -694,8 +694,6 @@ GNEInspectorFrame::TemplateEditor::onCmdCopyTemplate(FXObject*, FXSelector, void
         myInspectorFrameParent->myViewNet->getUndoList()->end();
         // refresh inspector parent
         myInspectorFrameParent->myAttributesEditor->refreshAttributeEditor(true, true);
-        // update view (to see visual changes)
-        myInspectorFrameParent->myViewNet->updateViewNet();
     }
     return 1;
 }

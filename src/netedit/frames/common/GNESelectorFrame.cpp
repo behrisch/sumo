@@ -317,7 +317,6 @@ GNESelectorFrame::SelectionOperation::loadFromFile(const std::string& file) cons
             mySelectorFrameParent->handleIDs(loadedACs);
             mySelectorFrameParent->myViewNet->getUndoList()->end();
         }
-        mySelectorFrameParent->myViewNet->updateViewNet();
     }
 }
 

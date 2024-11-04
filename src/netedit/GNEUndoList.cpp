@@ -21,6 +21,7 @@
 #include <netedit/GNEViewParent.h>
 #include <netedit/changes/GNEChange_Attribute.h>
 #include <netedit/frames/common/GNESelectorFrame.h>
+#include <utils/gui/div/GUIGlobalViewUpdater.h>
 
 #include "GNEApplicationWindow.h"
 #include "GNEUndoList.h"
@@ -151,6 +152,8 @@ GNEUndoList::undo() {
         change->next = redoList;
         redoList = change;
         myWorking = false;
+        // update view net (is called only if gViewUpdater.allowUpdate() is enable)
+        myGNEApplicationWindowParent->getViewNet()->updateViewNet(false);
     }
     // update specific controls
     myGNEApplicationWindowParent->updateControls();
@@ -174,6 +177,8 @@ GNEUndoList::redo() {
         change->next = undoList;
         undoList = change;
         myWorking = false;
+        // update view net (is called only if gViewUpdater.allowUpdate() is enable)
+        myGNEApplicationWindowParent->getViewNet()->updateViewNet(false);
     }
     // update specific controls
     myGNEApplicationWindowParent->updateControls();
@@ -233,16 +238,20 @@ GNEUndoList::begin(Supermode supermode, GUIIcon icon, const std::string& descrip
     }
     // Add to end
     changeGroup->group = myChangeGroups.top();
+    // disable update
+    gViewUpdater.disableUpdate();
 }
 
 
 void
 GNEUndoList::end() {
     myChangeGroups.pop();
+    // enable update
+    gViewUpdater.enableUpdate();
+    // update view without ignoring viewUpdater (used to avoid slowdows during massive edits)
+    myGNEApplicationWindowParent->getViewNet()->updateViewNet(false);
     // check if net has to be updated
     if (myChangeGroups.empty() && myGNEApplicationWindowParent->getViewNet()) {
-        // update view
-        myGNEApplicationWindowParent->getViewNet()->updateViewNet();
         // check if we have to update selector frame
         const auto& editModes = myGNEApplicationWindowParent->getViewNet()->getEditModes();
         if ((editModes.isCurrentSupermodeNetwork() && editModes.networkEditMode == NetworkEditMode::NETWORK_SELECT) ||
