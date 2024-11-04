@@ -388,6 +388,8 @@ SUMOVehicleParameter::parseDepartLane(const std::string& val, const std::string&
         dld = DepartLaneDefinition::ALLOWED_FREE;
     } else if (val == "best") {
         dld = DepartLaneDefinition::BEST_FREE;
+    } else if (val == "best_prob") {
+        dld = DepartLaneDefinition::BEST_PROB;
     } else if (val == "first") {
         dld = DepartLaneDefinition::FIRST_ALLOWED;
     } else {
@@ -402,9 +404,9 @@ SUMOVehicleParameter::parseDepartLane(const std::string& val, const std::string&
     }
     if (!ok) {
         if (id.empty()) {
-            error = "Invalid departLane definition for " + element + ". Must be one of (\"random\", \"free\", \"allowed\", \"best\", \"first\", or an int>=0)";
+            error = "Invalid departLane definition for " + element + ". Must be one of (\"random\", \"free\", \"allowed\", \"best\", \"best_prob\", \"first\", or an int>=0)";
         } else {
-            error = "Invalid departLane definition for " + element + " '" + id + "';\n must be one of (\"random\", \"free\", \"allowed\", \"best\", \"first\", or an int>=0)";
+            error = "Invalid departLane definition for " + element + " '" + id + "';\n must be one of (\"random\", \"free\", \"allowed\", \"best\", \"best_prob\", \"first\", or an int>=0)";
         }
     }
     return ok;
@@ -815,6 +817,9 @@ SUMOVehicleParameter::getDepartLane() const {
             break;
         case DepartLaneDefinition::BEST_FREE:
             val = "best";
+            break;
+        case DepartLaneDefinition::BEST_PROB:
+            val = "best_prob";
             break;
         case DepartLaneDefinition::FIRST_ALLOWED:
             val = "first";

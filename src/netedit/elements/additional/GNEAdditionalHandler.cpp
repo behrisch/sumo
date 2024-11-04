@@ -1128,7 +1128,8 @@ GNEAdditionalHandler::buildRouteProbReroute(const CommonXMLStructure::SumoBaseOb
 
 void
 GNEAdditionalHandler::buildRouteProbe(const CommonXMLStructure::SumoBaseObject* sumoBaseObject, const std::string& id, const std::string& edgeID, const SUMOTime period,
-                                      const std::string& name, const std::string& file, const SUMOTime begin, const Parameterised::Map& parameters) {
+                                      const std::string& name, const std::string& file, const SUMOTime begin, const std::vector<std::string>& vTypes,
+                                      const Parameterised::Map& parameters) {
     // check conditions
     if (!SUMOXMLDefinitions::isValidAdditionalID(id)) {
         writeInvalidID(SUMO_TAG_ROUTEPROBE, id);
@@ -1148,7 +1149,7 @@ GNEAdditionalHandler::buildRouteProbe(const CommonXMLStructure::SumoBaseObject* 
             writeErrorInvalidFilename(SUMO_TAG_ROUTEPROBE, id);
         } else {
             // build route probe
-            GNEAdditional* routeProbe = new GNERouteProbe(id, myNet, edge, period, name, file, begin, parameters);
+            GNEAdditional* routeProbe = new GNERouteProbe(id, myNet, edge, period, name, file, begin, vTypes, parameters);
             // insert depending of allowUndoRedo
             if (myAllowUndoRedo) {
                 myNet->getViewNet()->getUndoList()->begin(routeProbe, TL("add route probe '") + id + "'");

@@ -310,11 +310,11 @@ GitHub commit | `3aa106d1bf3221031cca75cfe259913d9d3e88ae` (the complete Commit 
 
 ## Example
 ```
-The issue #5697 was reported by @angelobanse. @behrisch commited 3aa106d1bf3221031cca75cfe259913d9d3e88ae to close that issue.
+The issue #5697 was reported by @angelobanse. @behrisch committed 3aa106d1bf3221031cca75cfe259913d9d3e88ae to close that issue.
 ```
 ***will display:***
 
-The issue #5697 was reported by @angelobanse. @behrisch commited 3aa106d1bf3221031cca75cfe259913d9d3e88ae to close that issue.
+The issue #5697 was reported by @angelobanse. @behrisch committed 3aa106d1bf3221031cca75cfe259913d9d3e88ae to close that issue.
 
 
 

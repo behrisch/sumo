@@ -88,7 +88,7 @@ can be omitted, but [sumo-gui](sumo-gui.md),
     zlib](http://www.libpng.org/pub/png/src/libpng-LICENSE.txt)
   - libjpeg - [self made license, free also for commercial use and
     binary
-    distribution](https://github.com/winlibs/libjpeg/blob/master/README)
+    distribution](https://github.com/winlibs/libjpeg/blob/master/README.md)
 
 ### [PROJ.4](https://proj.org/) - Cartographic Projections Library
 

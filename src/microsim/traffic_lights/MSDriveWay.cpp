@@ -30,6 +30,7 @@
 #include <microsim/MSNet.h>
 #include <microsim/MSVehicleControl.h>
 #include <microsim/MSJunctionLogic.h>
+#include <mesosim/MELoop.h>
 #include "MSRailSignal.h"
 #include "MSDriveWay.h"
 #include "MSRailSignalControl.h"
@@ -149,9 +150,10 @@ MSDriveWay::notifyEnter(SUMOTrafficObject& veh, Notification reason, const MSLan
     UNUSED_PARAMETER(reason);
     UNUSED_PARAMETER(enteredLane);
 #ifdef DEBUG_MOVEREMINDER
-    std::cout << SIMTIME << " notifyEnter " << getDescription() << " veh=" << veh.getID() << " lane=" << enteredLane->getID() << " reason=" << reason << "\n";
+    std::cout << SIMTIME << " notifyEnter " << getDescription() << " veh=" << veh.getID() << " lane=" << (MSGlobals::gUseMesoSim ? veh.getEdge()->getID() : enteredLane->getID()) << " reason=" << reason << "\n";
 #endif
-    if (veh.isVehicle() && enteredLane == myLane && (reason == NOTIFICATION_DEPARTED || reason == NOTIFICATION_JUNCTION || reason == NOTIFICATION_PARKING)) {
+    if (veh.isVehicle() && (enteredLane == myLane || (MSGlobals::gUseMesoSim && veh.getEdge() == &myLane->getEdge()))
+            && (reason == NOTIFICATION_DEPARTED || reason == NOTIFICATION_JUNCTION || reason == NOTIFICATION_PARKING)) {
         SUMOVehicle& sveh = dynamic_cast<SUMOVehicle&>(veh);
         MSRouteIterator firstIt = std::find(sveh.getCurrentRouteEdge(), sveh.getRoute().end(), myLane->getNextNormal());
         if (myTrains.count(&sveh) == 0 && match(firstIt, sveh.getRoute().end())) {
@@ -189,6 +191,10 @@ MSDriveWay::notifyLeave(SUMOTrafficObject& veh, double /*lastPos*/, Notification
                 myVehicleEvents.push_back(VehicleEvent(SIMSTEP, false, veh.getID(), reason));
             }
             return false;
+        } else if (MSGlobals::gUseMesoSim && reason != MSMoveReminder::NOTIFICATION_SEGMENT) {
+            // notifyLeave is called before moving the route iterator
+            const MSLane* leftLane = (*(dynamic_cast<SUMOVehicle&>(veh).getCurrentRouteEdge()))->getLanes().front();
+            return notifyLeaveBack(veh, reason, leftLane);
         } else {
             return true;
         }
@@ -206,7 +212,7 @@ MSDriveWay::notifyLeaveBack(SUMOTrafficObject& veh, Notification reason, const M
     std::cout << SIMTIME << " notifyLeaveBack " << getDescription() << " veh=" << veh.getID() << " lane=" << Named::getIDSecure(leftLane) << " reason=" << toString(reason) << "\n";
 #endif
     if (veh.isVehicle()) {
-        if (leftLane == myForward.back() && veh.getBackLane() != leftLane->getBidiLane()) {
+        if (leftLane == myForward.back() && (veh.getBackLane() != leftLane->getBidiLane() || MSGlobals::gUseMesoSim)) {
             myTrains.erase(&dynamic_cast<SUMOVehicle&>(veh));
             if (myWriteVehicles) {
                 myVehicleEvents.push_back(VehicleEvent(SIMSTEP, false, veh.getID(), reason));
@@ -897,7 +903,12 @@ MSDriveWay::buildRoute(const MSLink* origin, double length,
                 myForward.push_back(toLane);
                 if (myForward.size() == 1) {
                     myLane = toLane;
-                    toLane->addMoveReminder(this);
+                    if (MSGlobals::gUseMesoSim) {
+                        MESegment* s = MSGlobals::gMesoNet->getSegmentForEdge(myLane->getEdge());
+                        s->addDetector(this, myLane->getIndex());
+                    } else {
+                        toLane->addMoveReminder(this);
+                    }
                 }
             }
         } else if (bidi == nullptr) {
@@ -959,7 +970,7 @@ MSDriveWay::buildRoute(const MSLink* origin, double length,
             if ((next != end && &link->getLane()->getEdge() == *next)
                     && isRailway(link->getViaLaneOrLane()->getPermissions())) {
                 toLane = link->getViaLaneOrLane();
-                if (link->getTLLogic() != nullptr) {
+                if (link->getTLLogic() != nullptr && link->getTLIndex() >= 0) {
                     if (link == origin) {
                         WRITE_WARNINGF(TL("Found circular block after % (% edges, length %)"), warnID, toString(myRoute.size()), toString(length));
                         //std::cout << getClickableTLLinkID(origin) << " circularBlock2=" << toString(myRoute) << "\n";

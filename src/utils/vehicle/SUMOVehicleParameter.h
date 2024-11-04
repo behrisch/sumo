@@ -146,6 +146,8 @@ enum class DepartLaneDefinition {
     ALLOWED_FREE,
     /// @brief The least occupied lane from best lanes
     BEST_FREE,
+    /// @brief The lane most likely according the speedFactor (from best lanes)
+    BEST_PROB,
     /// @brief The rightmost lane the vehicle may use
     FIRST_ALLOWED
 };

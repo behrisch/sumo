@@ -320,8 +320,8 @@ void
 GNERouteHandler::buildTrip(const CommonXMLStructure::SumoBaseObject* sumoBaseObject, const SUMOVehicleParameter& vehicleParameters,
                            const std::string& fromEdgeID, const std::string& toEdgeID) {
     // parse edges
-    const auto fromEdge = parseEdge(SUMO_TAG_TRIP, fromEdgeID);
-    const auto toEdge = parseEdge(SUMO_TAG_TRIP, toEdgeID);
+    const auto fromEdge = parseEdge(SUMO_TAG_TRIP, fromEdgeID, sumoBaseObject, true);
+    const auto toEdge = parseEdge(SUMO_TAG_TRIP, toEdgeID, sumoBaseObject, false);
     // set via attribute
     if (sumoBaseObject && sumoBaseObject->hasStringListAttribute(SUMO_ATTR_VIA)) {
         vehicleParameters.via = sumoBaseObject->getStringListAttribute(SUMO_ATTR_VIA);
@@ -438,8 +438,8 @@ void
 GNERouteHandler::buildFlow(const CommonXMLStructure::SumoBaseObject* sumoBaseObject, const SUMOVehicleParameter& vehicleParameters,
                            const std::string& fromEdgeID, const std::string& toEdgeID) {
     // parse edges
-    const auto fromEdge = parseEdge(SUMO_TAG_FLOW, fromEdgeID);
-    const auto toEdge = parseEdge(SUMO_TAG_FLOW, toEdgeID);
+    const auto fromEdge = parseEdge(SUMO_TAG_FLOW, fromEdgeID, sumoBaseObject, true);
+    const auto toEdge = parseEdge(SUMO_TAG_FLOW, toEdgeID, sumoBaseObject, false);
     // set via attribute
     if (sumoBaseObject && sumoBaseObject->hasStringListAttribute(SUMO_ATTR_VIA)) {
         vehicleParameters.via = sumoBaseObject->getStringListAttribute(SUMO_ATTR_VIA);
@@ -2259,13 +2259,97 @@ GNERouteHandler::parseTAZ(const SumoXMLTag tag, const std::string& TAZID) {
 
 
 GNEEdge*
-GNERouteHandler::parseEdge(const SumoXMLTag tag, const std::string& edgeID) {
-    GNEEdge* edge = myNet->getAttributeCarriers()->retrieveEdge(edgeID, false);
-    // empty edges aren't allowed. If edge is empty, write error, clear edges and stop
+GNERouteHandler::parseEdge(const SumoXMLTag tag, const std::string& edgeID,
+                           const CommonXMLStructure::SumoBaseObject* sumoBaseObject,
+                           const bool firstEdge) {
+    GNEEdge* edge = nullptr;
+    if (edgeID.empty()) {
+        if (sumoBaseObject->getSumoBaseObjectChildren().size() > 0) {
+            const auto frontTag = sumoBaseObject->getSumoBaseObjectChildren().front()->getTag();
+            const auto backTag = sumoBaseObject->getSumoBaseObjectChildren().back()->getTag();
+            if (firstEdge && ((frontTag == SUMO_TAG_STOP) || (frontTag == SUMO_TAG_TRAIN_STOP) ||
+                (frontTag == SUMO_TAG_CONTAINER_STOP) || (frontTag == SUMO_TAG_CHARGING_STATION) ||
+                (frontTag == SUMO_TAG_PARKING_AREA))) {
+                edge = parseStopEdge(sumoBaseObject->getSumoBaseObjectChildren().front());
+            } else if (!firstEdge && ((backTag == SUMO_TAG_STOP) || (backTag == SUMO_TAG_TRAIN_STOP) ||
+                (backTag == SUMO_TAG_CONTAINER_STOP) || (backTag == SUMO_TAG_CHARGING_STATION) ||
+                (backTag == SUMO_TAG_PARKING_AREA))) {
+                edge = parseStopEdge(sumoBaseObject->getSumoBaseObjectChildren().back());
+            }
+        }
+    } else {
+        edge = myNet->getAttributeCarriers()->retrieveEdge(edgeID, false);
+    }
+    // write info if edge doesn't exist
     if (edge == nullptr) {
         writeError(TLF("Could not build % in netedit", toString(tag)) + std::string("; ") + TLF("% doesn't exist.", toString(SUMO_TAG_EDGE)));
     }
     return edge;
+}
+
+
+GNEEdge*
+GNERouteHandler::parseStopEdge(const CommonXMLStructure::SumoBaseObject* sumoBaseObject) const {
+    if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_EDGE)) {
+        return myNet->getAttributeCarriers()->retrieveEdge(sumoBaseObject->getStringAttribute(SUMO_ATTR_EDGE), false);
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_LANE)) {
+        return parseEdgeFromLaneID(sumoBaseObject->getStringAttribute(SUMO_ATTR_LANE));
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_BUS_STOP)) {
+        const auto busStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_BUS_STOP, sumoBaseObject->getStringAttribute(SUMO_ATTR_BUS_STOP), false);
+        const auto trainStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_TRAIN_STOP, sumoBaseObject->getStringAttribute(SUMO_ATTR_BUS_STOP), false);
+        if (busStop != nullptr) {
+            return busStop->getParentLanes().front()->getParentEdge();
+        } else if (trainStop != nullptr) {
+            return trainStop->getParentLanes().front()->getParentEdge();
+        } else {
+            return nullptr;
+        }
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_TRAIN_STOP)) {
+        const auto busStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_BUS_STOP, sumoBaseObject->getStringAttribute(SUMO_ATTR_TRAIN_STOP), false);
+        const auto trainStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_TRAIN_STOP, sumoBaseObject->getStringAttribute(SUMO_ATTR_TRAIN_STOP), false);
+        if (busStop != nullptr) {
+            return busStop->getParentLanes().front()->getParentEdge();
+        } else if (trainStop != nullptr) {
+            return trainStop->getParentLanes().front()->getParentEdge();
+        } else {
+            return nullptr;
+        }
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_CONTAINER_STOP)) {
+        const auto containerStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_CONTAINER_STOP, sumoBaseObject->getStringAttribute(SUMO_ATTR_CONTAINER_STOP), false);
+        if (containerStop != nullptr) {
+            return containerStop->getParentLanes().front()->getParentEdge();
+        } else {
+            return nullptr;
+        }
+
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_CHARGING_STATION)) {
+        const auto containerStop = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_CHARGING_STATION, sumoBaseObject->getStringAttribute(SUMO_ATTR_CHARGING_STATION), false);
+        if (containerStop != nullptr) {
+            return containerStop->getParentLanes().front()->getParentEdge();
+        } else {
+            return nullptr;
+        }
+
+    } else if (sumoBaseObject->hasStringAttribute(SUMO_ATTR_PARKING_AREA)) {
+        const auto parkingArea = myNet->getAttributeCarriers()->retrieveAdditional(SUMO_TAG_PARKING_AREA, sumoBaseObject->getStringAttribute(SUMO_ATTR_PARKING_AREA), false);
+        if (parkingArea != nullptr) {
+            return parkingArea->getParentLanes().front()->getParentEdge();
+        } else {
+            return nullptr;
+        }
+    } else {
+        return nullptr;
+    }
+}
+
+
+GNEEdge*
+GNERouteHandler::parseEdgeFromLaneID(const std::string &laneID) const {
+    std::string edgeID = laneID;
+    for (int i = ((int)laneID.size() - 1); (i >= 0) && (laneID[i+1] != '_'); i--) {
+        edgeID.pop_back();
+    }
+    return myNet->getAttributeCarriers()->retrieveEdge(edgeID, false);
 }
 
 

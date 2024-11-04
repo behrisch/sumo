@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-02 08:45:53 by Eclipse SUMO sumo Version v1_15_0+0714-4818e7c
+<!-- generated on 2024-11-01 10:31:58 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -30,6 +30,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </time>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -41,9 +42,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <tlsStates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tlsstates_file.xsd">
@@ -138,99 +140,99 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <tlsState time="88.00" id="gneJ2" programID="0" phase="0" state="G"/>
     <tlsState time="89.00" id="gneJ2" programID="0" phase="0" state="G"/>
     <tlsState time="90.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="91.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="92.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="93.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="94.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="95.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="96.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="97.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="98.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="99.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="100.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="101.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="102.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="103.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="104.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="105.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="106.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="107.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="108.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="109.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="110.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="111.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="112.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="113.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="114.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="115.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="116.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="117.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="118.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="119.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="120.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="121.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="122.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="123.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="124.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="125.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="126.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="127.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="128.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="129.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="130.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="131.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="132.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="133.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="134.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="135.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="136.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="137.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="138.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="139.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="140.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="141.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="142.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="143.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="144.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="145.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="146.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="147.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="148.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="149.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="150.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="151.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="152.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="153.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="154.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="155.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="156.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="157.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="158.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="159.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="160.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="161.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="162.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="163.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="164.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="165.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="166.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="167.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="168.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="169.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="170.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="171.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="172.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="173.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="174.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="175.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="176.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="177.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="178.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="179.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="180.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="181.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="182.00" id="gneJ2" programID="0" phase="0" state="G"/>
-    <tlsState time="183.00" id="gneJ2" programID="0" phase="0" state="G"/>
+    <tlsState time="91.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="92.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="93.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="94.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="95.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="96.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="97.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="98.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="99.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="100.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="101.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="102.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="103.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="104.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="105.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="106.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="107.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="108.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="109.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="110.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="111.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="112.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="113.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="114.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="115.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="116.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="117.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="118.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="119.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="120.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="121.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="122.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="123.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="124.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="125.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="126.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="127.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="128.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="129.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="130.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="131.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="132.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="133.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="134.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="135.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="136.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="137.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="138.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="139.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="140.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="141.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="142.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="143.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="144.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="145.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="146.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="147.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="148.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="149.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="150.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="151.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="152.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="153.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="154.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="155.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="156.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="157.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="158.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="159.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="160.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="161.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="162.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="163.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="164.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="165.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="166.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="167.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="168.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="169.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="170.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="171.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="172.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="173.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="174.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="175.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="176.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="177.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="178.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="179.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="180.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="181.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="182.00" id="gneJ2" programID="0" phase="1" state="r"/>
+    <tlsState time="183.00" id="gneJ2" programID="0" phase="1" state="r"/>
     <tlsState time="184.00" id="gneJ2" programID="0" phase="0" state="G"/>
     <tlsState time="185.00" id="gneJ2" programID="0" phase="0" state="G"/>
     <tlsState time="186.00" id="gneJ2" programID="0" phase="0" state="G"/>

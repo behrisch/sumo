@@ -787,7 +787,7 @@ endif ()
 add_custom_target(doxygen
     COMMAND rm -rf docs/doxygen
     COMMAND mkdir docs/doxygen
-    COMMAND doxygen sumo.doxyconf &> doxygen.log
+    COMMAND doxygen sumo.doxyconf > doxygen.log 2>&1
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 set_property(TARGET doxygen PROPERTY EXCLUDE_FROM_DEFAULT_BUILD TRUE)
 set_property(TARGET doxygen PROPERTY FOLDER "doc")

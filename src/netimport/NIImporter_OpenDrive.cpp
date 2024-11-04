@@ -133,6 +133,7 @@ SequentialStringBijection::Entry NIImporter_OpenDrive::openDriveAttrs[] = {
     { "t",              NIImporter_OpenDrive::OPENDRIVE_ATTR_T },
     { "x",              NIImporter_OpenDrive::OPENDRIVE_ATTR_X },
     { "y",              NIImporter_OpenDrive::OPENDRIVE_ATTR_Y },
+    { "z",              NIImporter_OpenDrive::OPENDRIVE_ATTR_Z },
     { "hdg",            NIImporter_OpenDrive::OPENDRIVE_ATTR_HDG },
     { "curvStart",      NIImporter_OpenDrive::OPENDRIVE_ATTR_CURVSTART },
     { "curvEnd",        NIImporter_OpenDrive::OPENDRIVE_ATTR_CURVEND },
@@ -2292,9 +2293,10 @@ NIImporter_OpenDrive::myStartElement(int element,
         case OPENDRIVE_TAG_OFFSET: {
             double x = attrs.get<double>(OPENDRIVE_ATTR_X, "offset", ok);
             double y = attrs.get<double>(OPENDRIVE_ATTR_Y, "offset", ok);
-            myOffset.set(x, y);
+            double z = attrs.get<double>(OPENDRIVE_ATTR_Z, "offset", ok);
+            myOffset.set(-x, -y, -z);
             if (GeoConvHelper::getNumLoaded()) {
-                GeoConvHelper::getLoaded().moveConvertedBy(x, y);
+                GeoConvHelper::getLoaded().moveConvertedBy(-x, -y);
             }
         }
         break;

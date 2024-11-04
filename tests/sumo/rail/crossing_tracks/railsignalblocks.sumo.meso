@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-02 08:45:54 by Eclipse SUMO sumo Version v1_15_0+0714-4818e7c
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -25,6 +25,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <processing>
         <collision.check-junctions value="true"/>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -36,9 +37,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <railsignal-block-output>
@@ -47,60 +49,85 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </railSignal>
     <railSignal id="s2">
         <link linkIndex="0" from="T4_0_0" to="TO1_0_0">
-            <driveWay edges="TO1_0">
+            <driveWay id="s2.0" vehicle="rail1" edges="TO1_0">
                 <forward lanes="TO1_0_0"/>
                 <bidi lanes="TO1_1_0"/>
                 <flank lanes=""/>
-                <protectingSwitches links=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="s2.0"/>
             </driveWay>
         </link>
     </railSignal>
     <railSignal id="s3">
         <link linkIndex="0" from="T7_1_0" to="TL2_1_0">
-            <driveWay edges="TL2_1">
+            <driveWay id="s3.0" vehicle="rail2" edges="TL2_1">
                 <forward lanes="TL2_1_0"/>
                 <bidi lanes="TL2_0_0"/>
                 <flank lanes=""/>
-                <protectingSwitches links=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="s3.0"/>
             </driveWay>
         </link>
     </railSignal>
     <railSignal id="s4">
         <link linkIndex="0" from="TR2_1_0" to="T8_1_0">
-            <driveWay edges="T8_1 T15_1 T7_1 TL2_1">
+            <driveWay id="s4.0" vehicle="rail2" edges="T8_1 T15_1 T7_1 TL2_1">
                 <forward lanes="T8_1_0 T15_1_0 T7_1_0"/>
                 <bidi lanes="T8_0_0 T15_0_0 T7_0_0 TL2_0_0"/>
-                <flank lanes="T16_0_0 T3_1_0 T4_1_0 TO1_1_0 T1_1_0"/>
-                <protectingSwitches links="w2_3"/>
-                <conflictLinks signals="s1_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="s6_0"/>
+                <foes driveWays="s4.0 s6.0.0"/>
             </driveWay>
+            <subDriveWay id="s4.0.0" vehicle="" edges="T8_1">
+                <forward lanes="T8_1_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="s5">
         <link linkIndex="0" from="TL1_0_0" to="T11_0_0">
-            <driveWay edges="T11_0 T12_0 T16_0 T3_0 T4_0 TO1_0">
+            <driveWay id="s5.0" vehicle="rail1" edges="T11_0 T12_0 T16_0 T3_0 T4_0 TO1_0">
                 <forward lanes="T11_0_0"/>
                 <bidi lanes="T11_1_0 T12_1_0 T16_1_0 T3_1_0 T4_1_0 TO1_1_0"/>
-                <flank lanes="T13_1_0 TR1_1_0"/>
-                <protectingSwitches links=""/>
+                <flank lanes=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="s5.0"/>
             </driveWay>
         </link>
     </railSignal>
     <railSignal id="s6">
         <link linkIndex="0" from="T11_0_0" to="T12_0_0">
-            <driveWay edges="T12_0 T16_0 T3_0 T4_0 TO1_0">
+            <driveWay id="s6.0" vehicle="rail1" edges="T12_0 T16_0 T3_0 T4_0 TO1_0">
                 <forward lanes="T12_0_0 T16_0_0 T3_0_0 T4_0_0"/>
                 <bidi lanes="T12_1_0 T16_1_0 T3_1_0 T4_1_0 TO1_1_0"/>
-                <flank lanes="T15_0_0 T8_1_0 T13_1_0 TR1_1_0"/>
-                <protectingSwitches links="w1_2"/>
+                <flank lanes=""/>
                 <conflictLinks signals="s4_0"/>
+                <foes driveWays="s4.0.0 s6.0"/>
             </driveWay>
+            <subDriveWay id="s6.0.0" vehicle="" edges="T12_0 T16_0">
+                <forward lanes="T12_0_0 T16_0_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="s7">
         <link linkIndex="0" from="T13_0_0" to="TR1_0_0"/>
     </railSignal>
+    <departJunction id="e5">
+        <driveWay id="e5.d0" vehicle="rail1" edges="TL1_0 T11_0 T12_0 T16_0 T3_0 T4_0 TO1_0">
+            <forward lanes="TL1_0_0"/>
+            <bidi lanes="TL1_1_0 T11_1_0 T12_1_0 T16_1_0 T3_1_0 T4_1_0 TO1_1_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="e5.d0"/>
+        </driveWay>
+    </departJunction>
+    <departJunction id="e4">
+        <driveWay id="e4.d0" vehicle="rail2" edges="TR2_1 T8_1 T15_1 T7_1 TL2_1">
+            <forward lanes="TR2_1_0"/>
+            <bidi lanes="TR2_0_0 T8_0_0 T15_0_0"
+                    deadlockCheck="T7_0_0 TL2_0_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="e4.d0"/>
+        </driveWay>
+    </departJunction>
 </railsignal-block-output>

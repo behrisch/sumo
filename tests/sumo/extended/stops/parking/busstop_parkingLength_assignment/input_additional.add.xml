@@ -1,0 +1,7 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="bs0" lane="beg_0" startPos="100" endPos="110" parkingLength="22"/>
+
+    <vType id="DEFAULT_VEHTYPE" sigma="0" vClass="bus" length="10"/>
+    <route id="1" edges="beg"/>
+
+</additional>

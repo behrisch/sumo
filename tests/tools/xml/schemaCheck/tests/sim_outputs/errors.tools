@@ -4,7 +4,6 @@ sumo/basic/container/triggered_oldStyle/tripinfos.sumo.meso:44:0:ERROR:SCHEMASV:
 sumo/basic/container/triggered_oldStyle/tripinfos.sumo.meso:45:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'transport', attribute 'waitingTime': '-2.60' is not a valid value of the union type 'timeTypeWithErrorValue'.
 sumo/cf_model/IDM/insert_with_speedLimit_speedFactor0.8/tripinfos.sumo:35:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'tripinfo', attribute 'timeLoss': '-0.06' is not a valid value of the union type 'timeType'.
 sumo/devices/glosa/slowDown_no/tripinfos.sumo:45:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'tripinfo', attribute 'timeLoss': '-0.37' is not a valid value of the union type 'timeType'.
-sumo/devices/glosa/speedUp/tripinfos.sumo:45:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'tripinfo', attribute 'timeLoss': '-0.15' is not a valid value of the union type 'timeType'.
 sumo/extended/state/load_shifted/tripinfos.sumo:43:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'tripinfo', attribute 'depart': '-10.00' is not a valid value of the union type 'timeTypeWithErrorValue'.
 sumo/extended/state/load_shifted/tripinfos.sumo.meso:51:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_3: Element 'tripinfo', attribute 'depart': '-10.00' is not a valid value of the union type 'timeTypeWithErrorValue'.
 sumo/output/emission-output/attributes/rawdump.sumo:48:0:ERROR:SCHEMASV:SCHEMAV_CVC_COMPLEX_TYPE_4: Element 'vehicle': The attribute 'eclass' is required but missing.

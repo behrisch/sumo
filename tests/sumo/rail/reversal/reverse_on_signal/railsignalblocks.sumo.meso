@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on Thu Sep  3 17:20:07 2020 by Eclipse SUMO sumo Version v1_6_0+1961-95c187100c
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
 http://www.eclipse.org/legal/epl-v20.html
-SPDX-License-Identifier: EPL-2.0
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -19,43 +24,55 @@ SPDX-License-Identifier: EPL-2.0
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
-        <pedestrian.model value="nonInteracting"/>
     </processing>
 
     <report>
         <xml-validation value="never"/>
-        <xml-validation.routes value="never"/>
         <duration-log.disable value="true"/>
         <no-step-log value="true"/>
     </report>
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <railsignal-block-output>
     <railSignal id="11">
         <link linkIndex="0" from="h_0" to="branch_0">
-            <driveWay edges="branch">
-                <forward lanes="branch_0"/>
-                <bidi lanes="-branch_0"/>
+            <driveWay id="11.0" vehicle="light_rail_S46:0.0" edges="branch -branch -h g">
+                <forward lanes="branch_0 -branch_0"/>
+                <bidi lanes="-branch_0 branch_0 h_0"/>
                 <flank lanes=""/>
-                <protectingSwitches links=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="0.d0 11.0"/>
             </driveWay>
         </link>
         <link linkIndex="1" from="-branch_0" to="-h_0">
-            <driveWay edges="-h g end">
+            <driveWay id="11.1" vehicle="light_rail_S46:0.0" edges="-h g end">
                 <forward lanes="-h_0 g_0 end_0"/>
                 <bidi lanes="h_0"/>
-                <flank lanes="b_0 f_0"/>
-                <protectingSwitches links="1_1 1_0"/>
+                <flank lanes=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="0.d0 11.1"/>
             </driveWay>
+            <subDriveWay id="11.1.0" vehicle="" edges="-h">
+                <forward lanes="-h_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
+    <departJunction id="0">
+        <driveWay id="0.d0" vehicle="light_rail_S46:0.0" edges="beg f h branch -branch -h g">
+            <forward lanes="beg_0 f_0 h_0"/>
+            <bidi lanes="-h_0 -branch_0 branch_0 h_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="0.d0 11.0 11.1.0"/>
+        </driveWay>
+    </departJunction>
 </railsignal-block-output>

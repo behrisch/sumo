@@ -48,6 +48,7 @@ jobs:
       if: matrix.build_type == 'full' && github.repository == 'DLR-TS/sumo' && github.event_name == 'schedule' && matrix.compiler == 'gcc'
       uses: dieghernan/cff-validator@v3
       with:
+        install-r: true
         citation-path: sumo/CITATION.cff
 
     - name: Cloning jupedsim

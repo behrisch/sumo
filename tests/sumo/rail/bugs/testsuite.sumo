@@ -79,3 +79,6 @@ ticket13262
 
 # crash with junction-taz
 ticket14973
+
+# collision involving rail_crossing
+ticket15658

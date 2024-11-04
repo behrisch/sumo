@@ -1,0 +1,9 @@
+<routes>
+    <vType id="t0" sigma="0" maxSpeed="10"/>
+
+    <route id="NS" edges="NC CS"/>
+    <route id="ES" edges="EC CS"/>
+
+    <vehicle id="prio"   type="t0" route="NS" depart="0" departPos="-0.1" departSpeed="max"/>
+    <vehicle id="noprio" type="t0" route="ES" depart="0" departPos="-0.1" departSpeed="0"/>
+</routes>

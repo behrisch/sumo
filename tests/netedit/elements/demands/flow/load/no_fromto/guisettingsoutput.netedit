@@ -1,0 +1,225 @@
+<viewsettings>
+    <scheme name="testing">
+        <opengl dither="0" fps="0" drawBoundaries="0" disableDottedContours="0" forceDrawRectangleSelection="0" geometryIndices_show="0" geometryIndices_size="50.00" geometryIndices_color="255,0,128" geometryIndices_bgColor="128,0,0,0" geometryIndices_constantSize="1" geometryIndices_onlySelected="0"/>
+        <background backgroundColor="white" showGrid="1" gridXSize="2.00" gridYSize="2.00"/>
+        <edges laneEdgeMode="0" scaleMode="0" laneShowBorders="0" showBikeMarkings="1" showLinkDecals="1" realisticLinkRules="0" showLinkRules="1" showRails="1" secondaryShape="0" hideConnectors="0" widthExaggeration="1.00" minSize="0.00" showDirection="0" showSublanes="1" spreadSuperposed="0" disableHideByZoom="0" edgeParam="EDGE_KEY" laneParam="LANE_KEY" vehicleParam="PARAM_NUMERICAL" vehicleScaleParam="PARAM_NUMERICAL" vehicleTextParam="PARAM_TEXT" edgeData="speed" edgeDataID="" edgeDataScaling="" edgeValueHideCheck="0" edgeValueHideThreshold="0.00" edgeValueHideCheck2="0" edgeValueHideThreshold2="200.00"
+                edgeName_show="0" edgeName_size="60.00" edgeName_color="orange" edgeName_bgColor="128,0,0,0" edgeName_constantSize="1" edgeName_onlySelected="0"
+                internalEdgeName_show="0" internalEdgeName_size="45.00" internalEdgeName_color="128,64,0" internalEdgeName_bgColor="128,0,0,0" internalEdgeName_constantSize="1" internalEdgeName_onlySelected="0"
+                cwaEdgeName_show="0" cwaEdgeName_size="60.00" cwaEdgeName_color="magenta" cwaEdgeName_bgColor="128,0,0,0" cwaEdgeName_constantSize="1" cwaEdgeName_onlySelected="0"
+                streetName_show="0" streetName_size="60.00" streetName_color="yellow" streetName_bgColor="128,0,0,0" streetName_constantSize="1" streetName_onlySelected="0"
+                edgeValue_show="0" edgeValue_size="100.00" edgeValue_color="cyan" edgeValue_bgColor="128,0,0,0" edgeValue_constantSize="1" edgeValue_onlySelected="0" edgeScaleValue_show="0" edgeScaleValue_size="100.00" edgeScaleValue_color="blue" edgeScaleValue_bgColor="128,0,0,0" edgeScaleValue_constantSize="1" edgeScaleValue_onlySelected="0">
+            <colorScheme name="uniform">
+                <entry color="black" name="road"/>
+                <entry color="grey" name="sidewalk"/>
+                <entry color="192,66,44" name="bike lane"/>
+                <entry color="200,255,200" name="green verge"/>
+                <entry color="150,200,200" name="waterway"/>
+                <entry color="black" name="railway"/>
+                <entry color="64,0,64" name="rails on road"/>
+                <entry color="92,92,92" name="no passenger"/>
+                <entry color="red" name="closed"/>
+                <entry color="green" name="connector"/>
+                <entry color="orange" name="forbidden"/>
+                <entry color="145,145,145" name="data mode"/>
+                <entry color="200,240,240" name="airway"/>
+            </colorScheme>
+            <colorScheme name="by selection">
+                <entry color="grey" name="unselected"/>
+                <entry color="0,80,180" name="selected"/>
+            </colorScheme>
+            <colorScheme name="by permission code" interpolated="1">
+                <entry color="240,240,240" threshold="0.00" name="nobody"/>
+                <entry color="grey" threshold="32.00" name="pedestrian"/>
+                <entry color="10,10,10" threshold="64.00" name="passenger"/>
+                <entry color="166,147,26" threshold="256.00" name="taxi"/>
+                <entry color="40,100,40" threshold="512.00" name="bus"/>
+                <entry color="80,80,80" threshold="2080.00" name="pedestrian_delivery"/>
+                <entry color="192,66,44" threshold="65536.00" name="bicycle"/>
+                <entry color="150,200,200" threshold="8388608.00" name="waterway"/>
+                <entry color="255,206,0" threshold="7247921119.00" name="motorway"/>
+                <entry color="black" threshold="7248019423.00" name="disallow_pedestrian"/>
+                <entry color="black" threshold="7248019455.00" name="normal_road"/>
+                <entry color="green" threshold="8589934591.00" name="all"/>
+            </colorScheme>
+            <colorScheme name="by allowed speed (lanewise)" interpolated="1">
+                <entry color="red" threshold="0.00"/>
+                <entry color="yellow" threshold="8.33"/>
+                <entry color="green" threshold="15.28"/>
+                <entry color="cyan" threshold="22.22"/>
+                <entry color="blue" threshold="33.33"/>
+                <entry color="magenta" threshold="41.67"/>
+            </colorScheme>
+            <colorScheme name="by lane number (streetwise)" interpolated="1">
+                <entry color="red" threshold="0.00"/>
+                <entry color="blue" threshold="5.00"/>
+            </colorScheme>
+            <colorScheme name="by given length/geometrical length" interpolated="1">
+                <entry color="red" threshold="0.00"/>
+                <entry color="orange" threshold="0.25"/>
+                <entry color="yellow" threshold="0.50"/>
+                <entry color="179,179,179" threshold="1.00"/>
+                <entry color="green" threshold="2.00"/>
+                <entry color="cyan" threshold="4.00"/>
+                <entry color="blue" threshold="100.00"/>
+            </colorScheme>
+            <colorScheme name="by angle">
+                <entry color="yellow"/>
+            </colorScheme>
+            <colorScheme name="by priority" interpolated="1">
+                <entry color="red" threshold="-20.00"/>
+                <entry color="yellow" threshold="0.00"/>
+                <entry color="green" threshold="20.00"/>
+            </colorScheme>
+            <colorScheme name="by height at start" interpolated="1">
+                <entry color="blue" threshold="-10.00"/>
+                <entry color="red" threshold="0.00"/>
+                <entry color="yellow" threshold="50.00"/>
+                <entry color="green" threshold="100.00"/>
+                <entry color="magenta" threshold="200.00"/>
+            </colorScheme>
+            <colorScheme name="by height at segment start" interpolated="1">
+                <entry color="blue" threshold="-10.00"/>
+                <entry color="red" threshold="0.00"/>
+                <entry color="yellow" threshold="50.00"/>
+                <entry color="green" threshold="100.00"/>
+                <entry color="magenta" threshold="200.00"/>
+            </colorScheme>
+            <colorScheme name="by inclination" interpolated="1">
+                <entry color="blue" threshold="-0.30"/>
+                <entry color="green" threshold="-0.10"/>
+                <entry color="grey" threshold="0.00"/>
+                <entry color="yellow" threshold="0.10"/>
+                <entry color="red" threshold="0.30"/>
+            </colorScheme>
+            <colorScheme name="by segment inclination" interpolated="1">
+                <entry color="blue" threshold="-0.30"/>
+                <entry color="green" threshold="-0.10"/>
+                <entry color="grey" threshold="0.00"/>
+                <entry color="yellow" threshold="0.10"/>
+                <entry color="red" threshold="0.30"/>
+            </colorScheme>
+            <colorScheme name="by param (numerical, streetwise)" interpolated="1">
+                <entry color="204,204,204" threshold="0.00"/>
+            </colorScheme>
+            <colorScheme name="by param (numerical, lanewise)" interpolated="1">
+                <entry color="204,204,204" threshold="0.00"/>
+            </colorScheme>
+            <colorScheme name="by distance (kilometrage)" interpolated="1">
+                <entry color="red" threshold="-1.00"/>
+                <entry color="204,204,204" threshold="0.00"/>
+                <entry color="red" threshold="1.00"/>
+            </colorScheme>
+            <colorScheme name="by abs distance (kilometrage)" interpolated="1">
+                <entry color="204,204,204" threshold="0.00"/>
+                <entry color="red" threshold="1.00"/>
+            </colorScheme>
+            <colorScheme name="by edgeData (numerical, streetwise)" interpolated="1">
+                <entry color="225,225,225" name="missing data"/>
+            </colorScheme>
+            <scalingScheme name="default">
+                <entry color="1.00" name="uniform"/>
+            </scalingScheme>
+        </edges>
+        <vehicles vehicleMode="0" vehicleScaleMode="0" vehicleQuality="0" vehicle_minSize="1.00" vehicle_exaggeration="1.00" vehicle_constantSize="0" vehicle_constantSizeSelected="0" showBlinker="1" drawMinGap="0" drawBrakeGap="0" showBTRange="0" showRouteIndex="0" scaleLength="1" drawReversed="0" showParkingInfo="0"
+                  vehicleName_show="0" vehicleName_size="60.00" vehicleName_color="204,153,0" vehicleName_bgColor="128,0,0,0" vehicleName_constantSize="1" vehicleName_onlySelected="0"
+                  vehicleValue_show="0" vehicleValue_size="80.00" vehicleValue_color="cyan" vehicleValue_bgColor="128,0,0,0" vehicleValue_constantSize="1" vehicleValue_onlySelected="0"
+                  vehicleScaleValue_show="0" vehicleScaleValue_size="80.00" vehicleScaleValue_color="grey" vehicleScaleValue_bgColor="128,0,0,0" vehicleScaleValue_constantSize="1" vehicleScaleValue_onlySelected="0"
+                  vehicleText_show="0" vehicleText_size="80.00" vehicleText_color="red" vehicleText_bgColor="128,0,0,0" vehicleText_constantSize="1" vehicleText_onlySelected="0">
+            <colorScheme name="uniform">
+                <entry color="yellow"/>
+            </colorScheme>
+            <scalingScheme name="uniform">
+                <entry color="1.00"/>
+            </scalingScheme>
+        </vehicles>
+        <persons personMode="0" personQuality="2" showPedestrianNetwork="1" pedestrianNetworkColor="179,217,255" person_minSize="1.00" person_exaggeration="1.00" person_constantSize="0" person_constantSizeSelected="0"
+                 personName_show="0" personName_size="60.00" personName_color="0,153,204" personName_bgColor="128,0,0,0" personName_constantSize="1" personName_onlySelected="0"
+                  personValue_show="0" personValue_size="80.00" personValue_color="cyan" personValue_bgColor="128,0,0,0" personValue_constantSize="1" personValue_onlySelected="0">
+            <colorScheme name="uniform">
+                <entry color="yellow"/>
+            </colorScheme>
+        </persons>
+        <containers containerMode="0" containerQuality="0" container_minSize="1.00" container_exaggeration="1.00" container_constantSize="0" container_constantSizeSelected="0"
+                 containerName_show="0" containerName_size="60.00" containerName_color="0,153,204" containerName_bgColor="128,0,0,0" containerName_constantSize="1" containerName_onlySelected="0">
+            <colorScheme name="uniform">
+                <entry color="yellow"/>
+            </colorScheme>
+        </containers>
+        <junctions junctionMode="0"
+                   drawLinkTLIndex_show="0" drawLinkTLIndex_size="65.00" drawLinkTLIndex_color="128,128,255" drawLinkTLIndex_bgColor="invisible" drawLinkTLIndex_constantSize="0" drawLinkTLIndex_onlySelected="0"
+                   drawLinkJunctionIndex_show="0" drawLinkJunctionIndex_size="65.00" drawLinkJunctionIndex_color="128,128,255" drawLinkJunctionIndex_bgColor="invisible" drawLinkJunctionIndex_constantSize="0" drawLinkJunctionIndex_onlySelected="0"
+                   junctionID_show="0" junctionID_size="60.00" junctionID_color="0,255,128" junctionID_bgColor="128,0,0,0" junctionID_constantSize="1" junctionID_onlySelected="0"
+                   junctionName_show="0" junctionName_size="60.00" junctionName_color="192,255,128" junctionName_bgColor="128,0,0,0" junctionName_constantSize="1" junctionName_onlySelected="0"
+                   internalJunctionName_show="0" internalJunctionName_size="50.00" internalJunctionName_color="0,204,128" internalJunctionName_bgColor="128,0,0,0" internalJunctionName_constantSize="1" internalJunctionName_onlySelected="0"
+                   tlsPhaseIndex_show="0" tlsPhaseIndex_size="150.00" tlsPhaseIndex_color="yellow" tlsPhaseIndex_bgColor="128,0,0,0" tlsPhaseIndex_constantSize="1" tlsPhaseIndex_onlySelected="0" tlsPhaseName_show="0" tlsPhaseName_size="150.00" tlsPhaseName_color="orange" tlsPhaseName_bgColor="128,0,0,0" tlsPhaseName_constantSize="1" tlsPhaseName_onlySelected="0"
+                   showLane2Lane="0" drawShape="1" drawCrossingsAndWalkingareas="1" junction_minSize="1.00" junction_exaggeration="1.00" junction_constantSize="0" junction_constantSizeSelected="0">
+            <colorScheme name="uniform">
+                <entry color="102,0,0"/>
+                <entry color="204,0,0" name="junction bubble"/>
+                <entry color="230,100,115" name="geometry points"/>
+                <entry color="green" name="custom shape"/>
+                <entry color="magenta" name="connections missing"/>
+                <entry color="205,180,180" name="data mode"/>
+            </colorScheme>
+            <colorScheme name="by selection">
+                <entry color="grey" name="unselected"/>
+                <entry color="0,80,180" name="selected"/>
+            </colorScheme>
+            <colorScheme name="by type">
+                <entry color="green" name="traffic_light"/>
+                <entry color="0,128,0" name="traffic_light_unregulated"/>
+                <entry color="yellow" name="priority"/>
+                <entry color="red" name="priority_stop"/>
+                <entry color="blue" name="right_before_left"/>
+                <entry color="cyan" name="allway_stop"/>
+                <entry color="grey" name="district"/>
+                <entry color="magenta" name="unregulated"/>
+                <entry color="black" name="dead_end"/>
+                <entry color="orange" name="rail_signal"/>
+                <entry color="172,108,44" name="zipper"/>
+                <entry color="192,255,192" name="traffic_light_right_on_red"/>
+                <entry color="128,0,128" name="rail_crossing"/>
+                <entry color="0,0,128" name="left_before_right"/>
+            </colorScheme>
+            <colorScheme name="by height" interpolated="1">
+                <entry color="blue" threshold="-10.00"/>
+                <entry color="grey" threshold="0.00"/>
+                <entry color="red" threshold="10.00"/>
+                <entry color="yellow" threshold="50.00"/>
+                <entry color="green" threshold="100.00"/>
+                <entry color="magenta" threshold="200.00"/>
+            </colorScheme>
+        </junctions>
+        <additionals addMode="0" add_minSize="1.00" add_exaggeration="1.00" add_constantSize="0" add_constantSizeSelected="0" addName_show="0" addName_size="60.00" addName_color="255,0,128" addName_bgColor="128,0,0,0" addName_constantSize="1" addName_onlySelected="0" addFullName_show="0" addFullName_size="60.00" addFullName_color="255,0,128" addFullName_bgColor="128,0,0,0" addFullName_constantSize="1" addFullName_onlySelected="0" busStopColor="76,170,50" busStopColorSign="255,235,0" chargingStationColor="114,210,252" chargingStationColorCharge="255,180,0" chargingStationColorSign="255,235,0" containerStopColor="83,89,172" containerStopColorSign="177,184,186,171" parkingAreaColor="83,89,172" parkingAreaColorSign="177,184,186" parkingSpaceColor="255,200,200" parkingSpaceColorContour="green" personTripColor="200,0,255" personTripWidth="0.25" rideColor="blue" rideWidth="0.25" selectedAdditionalColor="0,0,150" selectedConnectionColor="0,0,100" selectedContainerColor="0,0,120" selectedContainerPlanColor="0,0,130" selectedCrossingColor="0,100,196" selectedEdgeColor="0,0,204" selectedEdgeDataColor="0,0,150" selectedLaneColor="0,0,128" selectedPersonColor="0,0,120" selectedPersonPlanColor="0,0,130" selectedProhibitionColor="0,0,120" selectedRouteColor="0,0,150" selectedVehicleColor="0,0,100" selectionColor="0,0,204" stopColor="220,20,30" waypointColor="0,127,14" stopContainerColor="red" stopPersonColor="red" trainStopColor="76,170,50" trainStopColorSign="255,235,0" transhipColor="100,0,200" transhipWidth="0.25" transportColor="100,200,0" transportWidth="0.25" tripWidth="0.20" vehicleTripColor="200,0,255" walkColor="green" walkWidth="0.25"/>
+        <pois poiTextParam="PARAM_TEXT" poi_minSize="0.00" poi_exaggeration="1.00" poi_constantSize="0" poi_constantSizeSelected="0" poiDetail="16" poiName_show="0" poiName_size="50.00" poiName_color="0,127,70" poiName_bgColor="128,0,0,0" poiName_constantSize="1" poiName_onlySelected="0" poiType_show="0" poiType_size="60.00" poiType_color="0,127,70" poiType_bgColor="128,0,0,0" poiType_constantSize="1" poiType_onlySelected="0" poiText_show="0" poiText_size="80.00" poiText_color="140,0,255" poiText_bgColor="128,0,0,0" poiText_constantSize="1" poiText_onlySelected="0">
+            <colorScheme name="given POI color">
+                <entry color="red"/>
+            </colorScheme>
+            <colorScheme name="by selection">
+                <entry color="179,179,179" name="unselected"/>
+                <entry color="0,102,204" name="selected"/>
+            </colorScheme>
+            <colorScheme name="uniform">
+                <entry color="red"/>
+            </colorScheme>
+        </pois>
+        <polys poly_minSize="0.00" poly_exaggeration="1.00" poly_constantSize="0" poly_constantSizeSelected="0" polyName_show="0" polyName_size="50.00" polyName_color="255,0,128" polyName_bgColor="128,0,0,0" polyName_constantSize="1" polyName_onlySelected="0" polyType_show="0" polyType_size="60.00" polyType_color="255,0,128" polyType_bgColor="128,0,0,0" polyType_constantSize="1" polyType_onlySelected="0">
+            <colorScheme name="given polygon color">
+                <entry color="orange"/>
+            </colorScheme>
+            <colorScheme name="by selection">
+                <entry color="179,179,179" name="unselected"/>
+                <entry color="0,102,204" name="selected"/>
+            </colorScheme>
+            <colorScheme name="uniform">
+                <entry color="orange"/>
+            </colorScheme>
+            <colorScheme name="random">
+                <entry color="yellow"/>
+            </colorScheme>
+        </polys>
+        <view3D show3DTLSLinkMarkers="1" show3DTLSDomes="1" show3DHeadUpDisplay="1" generate3DTLSModels="0" ambient3DLight="32,32,32" diffuse3DLight="64,64,64"/>
+        <legend showSizeLegend="1" showColorLegend="0" showVehicleColorLegend="0"/>
+    </scheme>
+    <viewport zoom="140.00" x="0.00" y="0.00" angle="0.00"/>
+</viewsettings>

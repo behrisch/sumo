@@ -11,12 +11,12 @@
     <!-- Vehicles, persons and containers (sorted by depart) -->
     <person id="p_0" depart="0.00">
         <walk from="Edge0" busStop="busStopA"/>
-        <ride to="EdgeCenter0" modes="public" lines="Line1" vTypes="type1"/>
+        <ride to="EdgeCenter0" lines="Line1"/>
     </person>
 
     <!-- Vehicles, persons and containers (sorted by depart) -->
     <person id="p_1" depart="0.00">
         <walk from="EdgeCenter0" busStop="busStopB"/>
-        <ride to="Edge5" modes="car" lines="Line2" vTypes="type2"/>
+        <ride to="Edge5" lines="Line2"/>
     </person>
 </routes>

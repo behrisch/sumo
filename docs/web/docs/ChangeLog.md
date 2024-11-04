@@ -9,12 +9,33 @@ title: ChangeLog
 - sumo
   - Fixed rerouting error on the last route edge with a stop #15552
   - Fixed routing error on departure #15563
-  - Fixed invalid warnings regarding inconsistent loaded stop times #15602 
+  - Fixed invalid warnings regarding inconsistent loaded stop times #15602
+  - Fixed blocked vehicles at busStop with attribute parkingLength #15644
+  - Fixed train collision at rail_crossing #15658 
 
 - netedit
   - Loaded containers starting from stops are now drawn #15567
   - ESC aborts creation of edgeRel and tazRel datas #15601
-  - Fixed invalid TAZ coloring during mouse hovering in create TAZRel mode #15544 
+  - Fixed invalid TAZ coloring during mouse hovering in create TAZRel mode #15544
+  - Simplified creation of laneArea detectors on short lanes #15142
+  - Vehicles placed in elevated lanes can now be moved #15367
+  - Fixed invalid route shown for non-default departLane #15056
+  - Improve geometry of embedded routes #13980 
+  - Fixed Crash when editing options before loading a network #13881
+  - Fixed text rendering of small elements when zoomed out #15185
+  - Selectable area of a POI doesn't now corresponds to custom radius #15532 
+  - Fixed crash after undo-redo due to distributions #15642
+  - Fixed invalid behavior after pressing ESC key in person plan mode #15193
+  - Modified default vType is no longer written after being reset #14985
+  - data mode: create interval elements are disabled until a dataset has been selected #13309
+  - "Show geometry point indices" option is now working #13969
+  - Turnaround connections are now visible for bidi-rail edges #14486
+  - Moving a junction now moves it's custom shape #15456
+  - Fixed missing/strange attributes while adding routeprobe #15268
+  - Can now load trips without from / to #15074 
+
+- netconvert 
+  - Fixed invalid sign of geo-coordinate offset in OpenDRIVE input and output #15624 
 
 - TraCI
   - Fixed crash when calling `vehicle.getNextLinks` and `lane.getLinks` at junction type `allway_stop` or `priority_stop` #15603 (regression in 1.21.0)
@@ -24,6 +45,10 @@ title: ChangeLog
 - sumo
   - The new vType attribute `lcContRight` can be used to configure lane choice at a lane split where all lanes have equal strategic value. #15579
   - Added option **--insertion-checks** to set global defaults for vehicle attribute `insertionChecks` #15149
+  - Added option **--pedestrian.striping.jamfactor** to configure the speed of jammed pedestrians (default 0.25) #15610
+  - GLOSA Device now looks several phases into the future and can also take queues into account #15614
+  - Added new vType attributes `jmAdvance` and `jmExtraGap` to configure the behavior on junctions for crossing and merging streams of traffic #15654
+  - Added new insertion behavior `departLane="best_prob"` to increase throughput on multi-lane roads #15661 
   - railways
     - major rewrite of signal logic #7578
     - major improvement in railway simulation speed (simulation time reduced by ~50-75% depending on scenario size) #4379 
@@ -33,8 +58,19 @@ title: ChangeLog
     - The new option **--deadlock-output** can be use to log detected deadlocks and also their resolution
     - Logged deadlocks can be loaded as additional file to prevent them in a subsequent simulation #15569 
 
+- netedit
+  - Additional output now writes chargingStation after parkingArea elements #15628
+  - Removed "invert edges" from GNECrossingFrame #15129
+ 
+- sumo-gui
+  - The value of SUMO_HOME is now shown in the *About Dialog* (also for netedit) #15218
+ 
+- netconvert
+  - Added support for zipped shape files #15623
 
 ### Miscellaneous
+
+- Added analysis on the effects of attribute `departLane` on [insertion capacity](Simulation/RoadCapacity.md#insertion_capacity_on_a_2-lane_road).
 
 
 ## Version 1.21.0 (10.10.2024)
@@ -1269,7 +1305,7 @@ title: ChangeLog
   - Fixed bug where stops on looped routes where saved in an invalid order. Issue #12054 (regression in 1.12.0)
   - Right click on elements above a polygon now acts on the top element again. Issue #12111 (regression in 1.14.1)
   - Fixed invalid position of start and end edge geometry points after merging geometry points in move mode. Issue #12178 (regression in 1.14.1)
-  - Fixed bug where during creation of new edge, sometimes, the candidate "to" junction wasn't drawn wit magenta dotted contour. Issue #12013 (regression in 1.15.0)
+  - Fixed bug where during creation of new edge, sometimes, the candidate "to" junction wasn't drawn with a magenta dotted contour. Issue #12013 (regression in 1.15.0)
   - Fixed crash when using 'convert to roundabout' from the junction context menu. Issue #12355 (regression in 1.15.0)
   - Fixed invalid selection outline. Issue #12033
   - Fixed bug where right-click object-choice-menu lists the same object twice. Issue #12034

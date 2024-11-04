@@ -1,0 +1,6 @@
+--no-step-log --no-duration-log 
+--net-file=net.net.xml 
+-a=input_additional.add.xml 
+-r=input_routes.rou.xml 
+--stop-output stopinfos.xml
+--ignore-route-errors

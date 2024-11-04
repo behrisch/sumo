@@ -102,3 +102,43 @@ Comments
 - default departSpeed is '0' which gives the worst possible insertion capacity
 - default sigma is '0.5' and default speedDev for passenger cars is 0.1
 - for the default *Krauss* model, step-length has a side effect on the average speed reduction from sigma (this can be remedied by setting `sigmaStep="1"` in the `vType`)
+
+# Insertion capacity on a 2-lane road
+
+The following table shows road capacities that can be achieved at vehicle
+insertion on a 2-lane road depending on the used insertion parameters. The road speed limit was 16.66m/s which gives a theoretical capacity of 4964 veh/hour.
+The script which produces the data points for the table below can be found [here](https://github.com/eclipse-sumo/sumo/tree/main/tests/complex/sumo/insertionCapacity_2lane).
+
+- sigma was constant at 0.5
+- speedDev was constant at 0.1
+
+| departLane | departSpeed | capacity | capacity <br/> --step-length 0.1 | capacity <br/> --extrapolate-departpos | capacity <br/> --step-length 0.1 <br/> --extrapolate-departpos |
+| ---------- | ----------- | -------- | ---------- | -------- | -------- |
+| first      | max | 1664 | 3224 | 1657 | 3210 |
+| random     | max | 3289 | 4370 | 3298 | 4376 |
+| free       | max | 3279 | 4378 | 3304 | 4379 |
+| best_prob  | max | 3331 | 4419 | 3321 | 4432 |
+| first      | avg | 1922 | 2653 | 2385 | 2763 |
+| random     | avg | 3881 | 4421 | 3972 | 4426 |
+| free       | avg | 3870 | 4432 | 3970 | 4431 |
+| best_prob  | avg | 3878 | 4500 | 4039 | 4512 |
+
+# Insertion capacity on a 3-lane road
+
+The following table shows road capacities that can be achieved at vehicle
+insertion on a 3-lane road depending on the used insertion parameters. The road speed limit was 16.66m/s which gives a theoretical capacity of 7447 veh/hour.
+The script which produces the data points for the table below can be found [here](https://github.com/eclipse-sumo/sumo/tree/main/tests/complex/sumo/insertionCapacity_3lane).
+
+- sigma was constant at 0.5
+- speedDev was constant at 0.1
+
+| departLane | departSpeed | capacity | capacity <br/> --step-length 0.1 | capacity <br/> --extrapolate-departpos | capacity <br/> --step-length 0.1 <br/> --extrapolate-departpos |
+| ---------- | ----------- | -------- | ---------- | -------- | -------- |
+| first      | max | 1647 | 3216 | 1656 | 3224 |
+| random     | max | 4952 | 6569 | 4953 | 6575 |
+| free       | max | 4936 | 6568 | 4956 | 6562 |
+| best_prob  | max | 5068 | 6683 | 5053 | 6706 |
+| first      | avg | 1907 | 2623 | 2369 | 2708 |
+| random     | avg | 5826 | 6626 | 5958 | 6639 |
+| free       | avg | 5794 | 6641 | 5951 | 6659 |
+| best_prob  | avg | 5718 | 6845 | 6136 | 6854 |

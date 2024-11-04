@@ -1,0 +1,7 @@
+<routes>
+
+   <vType id="DEFAULT_VEHTYPE" sigma="0" speedDev="0.2"/>
+   <route id="1" edges="beg end"/>
+   <flow id="v" begin="0" period="exp(0.5)" end="3600" departSpeed="avg" route="1" departLane="best_prob"/>
+
+</routes>

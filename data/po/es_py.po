@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
-"POT-Creation-Date: 2023-07-21 15:19+0200\n"
+"POT-Creation-Date: 2023-07-10 15:12+0200\n"
 "PO-Revision-Date: 2023-07-11 07:33+0000\n"
 "Last-Translator: Angelo Banse <angelo_22@outlook.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
-"python-tools/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/python-tools/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,118 +18,118 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0-dev\n"
 
-#: C:\Repos\sumo/tools/game\runner.py:63
+#: D:\Repos\sumo/tools/game\runner.py:63
 msgid "Interactive Traffic Light"
 msgstr "Juego interactivo de semáforos"
 
-#: C:\Repos\sumo/tools/game\runner.py:64
+#: D:\Repos\sumo/tools/game\runner.py:64
 msgid "Research intersection Ingolstadt"
 msgstr "Intersección de investigación Ingolstadt"
 
-#: C:\Repos\sumo/tools/game\runner.py:65
+#: D:\Repos\sumo/tools/game\runner.py:65
 msgid "Simple Junction"
 msgstr "Intersección simple"
 
-#: C:\Repos\sumo/tools/game\runner.py:66
+#: D:\Repos\sumo/tools/game\runner.py:66
 msgid "Simple Junction (Demo)"
 msgstr "Intersección simple (Demo)"
 
-#: C:\Repos\sumo/tools/game\runner.py:67
+#: D:\Repos\sumo/tools/game\runner.py:67
 msgid "Four Junctions"
 msgstr "Cuatro intersecciones"
 
-#: C:\Repos\sumo/tools/game\runner.py:68
+#: D:\Repos\sumo/tools/game\runner.py:68
 msgid "Six Junctions"
 msgstr "Seis intersecciones"
 
-#: C:\Repos\sumo/tools/game\runner.py:69
+#: D:\Repos\sumo/tools/game\runner.py:69
 msgid "Prof. Kühne"
 msgstr "Prof. Kühne"
 
-#: C:\Repos\sumo/tools/game\runner.py:70
+#: D:\Repos\sumo/tools/game\runner.py:70
 msgid "3D Junction Virtual World"
 msgstr "Intersección en 3D - mundo virtual"
 
-#: C:\Repos\sumo/tools/game\runner.py:71
+#: D:\Repos\sumo/tools/game\runner.py:71
 msgid "3D Junction OpenStreetMap"
 msgstr "Intersección en 3D - OpenStreetMap"
 
-#: C:\Repos\sumo/tools/game\runner.py:72
+#: D:\Repos\sumo/tools/game\runner.py:72
 msgid "Highway Ramp"
 msgstr "Entrada a la autopista"
 
-#: C:\Repos\sumo/tools/game\runner.py:73
+#: D:\Repos\sumo/tools/game\runner.py:73
 msgid "Combined Highway On and Off Ramp"
 msgstr "Acceso combinado de entrada y salida a la autopista"
 
-#: C:\Repos\sumo/tools/game\runner.py:74
+#: D:\Repos\sumo/tools/game\runner.py:74
 msgid "Corridor"
 msgstr "Trayecto"
 
-#: C:\Repos\sumo/tools/game\runner.py:75
+#: D:\Repos\sumo/tools/game\runner.py:75
 msgid "Highway Ramp A10"
 msgstr "Rampa de la autopista A10"
 
-#: C:\Repos\sumo/tools/game\runner.py:76
+#: D:\Repos\sumo/tools/game\runner.py:76
 msgid "Demand Responsive Transport (new)"
 msgstr "Transporte a demanda (nuevo)"
 
-#: C:\Repos\sumo/tools/game\runner.py:77
+#: D:\Repos\sumo/tools/game\runner.py:77
 msgid "DRT - Advanced (new)"
 msgstr "Transporte a demanda - avanzado (nuevo)"
 
-#: C:\Repos\sumo/tools/game\runner.py:78
+#: D:\Repos\sumo/tools/game\runner.py:78
 msgid "DRT - Demo"
 msgstr "Transporte a demanda - Demo"
 
-#: C:\Repos\sumo/tools/game\runner.py:79 C:\Repos\sumo/tools/game\runner.py:89
+#: D:\Repos\sumo/tools/game\runner.py:79 D:\Repos\sumo/tools/game\runner.py:89
 msgid "Highscore"
 msgstr "Puntuaciones"
 
-#: C:\Repos\sumo/tools/game\runner.py:80
+#: D:\Repos\sumo/tools/game\runner.py:80
 msgid "Reset Highscore"
 msgstr "Restablecer puntuaciones"
 
-#: C:\Repos\sumo/tools/game\runner.py:81
+#: D:\Repos\sumo/tools/game\runner.py:81
 msgid "German"
 msgstr "Alemán"
 
-#: C:\Repos\sumo/tools/game\runner.py:82
+#: D:\Repos\sumo/tools/game\runner.py:82
 msgid "English"
 msgstr "Inglés"
 
-#: C:\Repos\sumo/tools/game\runner.py:83
+#: D:\Repos\sumo/tools/game\runner.py:83
 msgid "Italian"
 msgstr "Italiano"
 
-#: C:\Repos\sumo/tools/game\runner.py:84
+#: D:\Repos\sumo/tools/game\runner.py:84
 msgid "Spanish"
 msgstr "Español"
 
-#: C:\Repos\sumo/tools/game\runner.py:85
+#: D:\Repos\sumo/tools/game\runner.py:85
 msgid "French"
 msgstr "Francés"
 
-#: C:\Repos\sumo/tools/game\runner.py:86
+#: D:\Repos\sumo/tools/game\runner.py:86
 msgid "Chinese (simplified)"
 msgstr "Chino (simplificado)"
 
-#: C:\Repos\sumo/tools/game\runner.py:87
+#: D:\Repos\sumo/tools/game\runner.py:87
 msgid "Chinese (traditional)"
 msgstr "Chino (tradicional)"
 
-#: C:\Repos\sumo/tools/game\runner.py:88
+#: D:\Repos\sumo/tools/game\runner.py:88
 msgid "Quit"
 msgstr "Salir"
 
-#: C:\Repos\sumo/tools/game\runner.py:90
+#: D:\Repos\sumo/tools/game\runner.py:90
 msgid "Congratulations!"
 msgstr "¡Felicitaciones!"
 
-#: C:\Repos\sumo/tools/game\runner.py:91
+#: D:\Repos\sumo/tools/game\runner.py:91
 msgid "Your Score"
 msgstr "Tu puntaje"
 
-#: C:\Repos\sumo/tools/game\runner.py:92
+#: D:\Repos\sumo/tools/game\runner.py:92
 msgid "Continue"
 msgstr "Continuar"

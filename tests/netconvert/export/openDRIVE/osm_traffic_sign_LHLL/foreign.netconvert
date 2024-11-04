@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-06 11:13:39 by Eclipse SUMO netconvert Version v1_15_0+0803-69359a94708
+<!-- generated on 2024-10-30 11:50:37 by Eclipse SUMO netconvert Version v1_21_0+0515-80728aea4bd
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
         <sumo-net-file value="input_net.net.xml"/>
@@ -46,17 +46,17 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <xml-validation value="never"/>
     </report>
 
-</configuration>
+</netconvertConfiguration>
 -->
 
 <OpenDRIVE>
-    <header revMajor="1" revMinor="4" name="" version="1.00" date="Tue Dec  6 11:13:39 2022" north="0.79" south="0.00" east="97.95" west="0.00">
+    <header revMajor="1" revMinor="4" name="" version="1.00" date="Wed Oct 30 11:50:37 2024" north="0.79" south="0.00" east="97.95" west="0.00">
         <geoReference>
  <![CDATA[
  +proj=utm +zone=32 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 ]]>
         </geoReference>
-        <offset x="-513331.89" y="-5415293.50" z="0.00" hdg="0"/>
+        <offset x="513331.89" y="5415293.50" z="-0.00" hdg="0"/>
     </header>
     <road name="" length="97.95318576" id="20" junction="-1">
         <link>
@@ -64,7 +64,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         </link>
         <type s="0" type="town"/>
         <planView>
-            <geometry s="0.00000000" x="0.00000000" y="0.79000000" hdg="-0.00806516" length="97.95318576">
+            <geometry s="0.00000000" x="-0.00000000" y="0.79000000" hdg="-0.00806516" length="97.95318576">
                 <line/>
             </geometry>
         </planView>
@@ -103,7 +103,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         </link>
         <type s="0" type="town"/>
         <planView>
-            <geometry s="0.00000000" x="97.95000000" y="0.00000000" hdg="3.13352749" length="97.95318576">
+            <geometry s="0.00000000" x="97.95000000" y="-0.00000000" hdg="3.13352749" length="97.95318576">
                 <line/>
             </geometry>
         </planView>

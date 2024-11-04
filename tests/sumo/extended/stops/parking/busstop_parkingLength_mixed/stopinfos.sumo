@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-04-11 10:27:05 by Eclipse SUMO sumo Version v1_19_0+1774-c2740415b91
+<!-- generated on 2024-10-31 14:31:41 by Eclipse SUMO sumo Version v1_21_0+0539-52416b729a4
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -36,13 +36,13 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <no-step-log value="true"/>
     </report>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <stops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/stopinfo_file.xsd">
     <stopinfo id="b0" type="DEFAULT_VEHTYPE" lane="beg_0" pos="120.00" parking="1" started="16.00" ended="26.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
     <stopinfo id="b1" type="DEFAULT_VEHTYPE" lane="beg_0" pos="107.50" parking="0" started="20.00" ended="120.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
-    <stopinfo id="b4" type="DEFAULT_VEHTYPE" lane="beg_0" pos="115.00" parking="1" started="127.00" ended="157.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
-    <stopinfo id="b6" type="DEFAULT_VEHTYPE" lane="beg_0" pos="110.00" parking="1" started="131.00" ended="161.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="b4" type="DEFAULT_VEHTYPE" lane="beg_0" pos="113.50" parking="1" started="127.00" ended="157.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="b6" type="DEFAULT_VEHTYPE" lane="beg_0" pos="107.00" parking="1" started="130.00" ended="160.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
     <stopinfo id="b2" type="DEFAULT_VEHTYPE" lane="beg_0" pos="120.00" parking="1" started="35.00" ended="185.00" busStop="bs0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
 </stops>

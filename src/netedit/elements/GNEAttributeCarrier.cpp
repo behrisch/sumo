@@ -2612,6 +2612,11 @@ GNEAttributeCarrier::fillAdditionalElements() {
                                               TL("The time at which to start generating output"),
                                               "0");
         myTagProperties[currentTag].addAttribute(attrProperty);
+
+        attrProperty = GNEAttributeProperties(SUMO_ATTR_VTYPES,
+                                              GNEAttributeProperties::STRING | GNEAttributeProperties::LIST | GNEAttributeProperties::DEFAULTVALUE,
+                                              TL("Space separated list of vehicle type ids to consider (empty to affect all types)"));
+        myTagProperties[currentTag].addAttribute(attrProperty);
     }
     currentTag = SUMO_TAG_VSS;
     {

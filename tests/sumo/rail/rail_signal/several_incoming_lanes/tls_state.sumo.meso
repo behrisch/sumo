@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-02 08:45:53 by Eclipse SUMO sumo Version v1_15_0+0714-4818e7c
+<!-- generated on 2024-11-01 10:31:58 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -30,6 +30,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </time>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -41,9 +42,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <tlsStates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tlsstates_file.xsd">
@@ -75,32 +77,32 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <tlsState time="25.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
     <tlsState time="26.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
     <tlsState time="27.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="28.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="29.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="30.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="31.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="32.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="33.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="34.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="35.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="36.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="37.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="38.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="39.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="40.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="41.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="42.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="43.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="44.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="45.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="46.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="47.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="48.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="49.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="50.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="51.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="52.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
-    <tlsState time="53.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
+    <tlsState time="28.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="29.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="30.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="31.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="32.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="33.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="34.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="35.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="36.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="37.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="38.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="39.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="40.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="41.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="42.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="43.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="44.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="45.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="46.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="47.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="48.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="49.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="50.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="51.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="52.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
+    <tlsState time="53.00" id="gneJ2" programID="0" phase="1" state="rrr"/>
     <tlsState time="54.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
     <tlsState time="55.00" id="gneJ2" programID="0" phase="0" state="rrG"/>
     <tlsState time="56.00" id="gneJ2" programID="0" phase="0" state="rrG"/>

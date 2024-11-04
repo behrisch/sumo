@@ -1,4 +1,4 @@
 Error: Attribute 'departLane' in definition of vehicle '0' is empty.
 Error: Invalid departLane definition for vehicle '0';
- must be one of ("random", "free", "allowed", "best", "first", or an int>=0)
+ must be one of ("random", "free", "allowed", "best", "best_prob", "first", or an int>=0)
 Quitting (on error).

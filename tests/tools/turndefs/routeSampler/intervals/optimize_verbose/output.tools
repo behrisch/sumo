@@ -1,26 +1,28 @@
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+1 rows, 2 cols, 2 nonzeros
+0 rows, 0 cols, 0 nonzeros
+Presolve : Reductions: rows 0(-2); columns 0(-5); elements 0(-6) - Reduced to empty
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Objective value     :  0.0000000000e+00
+HiGHS run time      :          0.00
 Loaded 3 routes (3 distinct)
-Starting optimization for interval [0.0, 300.0] (mismatch 3)
-Primal Feasibility  Dual Feasibility    Duality Gap         Step             Path Parameter      Objective          
-1.0                 1.0                 1.0                 -                1.0                 2.0                 
-0.1987546857788     0.1987546857788     0.1987546857788     0.8082513113128  0.1987546857788     4.393248922143      
-0.008291028323282   0.008291028323282   0.008291028323282   1.0              0.008291028323274   0.09677074944865    
-8.918567148797e-07  8.918567147813e-07  8.918567147827e-07  0.9998931647711  8.918567147863e-07  1.53014794187e-05   
-4.459302260786e-11  4.459292531314e-11  4.459286386537e-11  0.9999499999416  4.459286866238e-11  7.650758188988e-10  
-Optimization terminated successfully.
-         Current function value: 0.000000    
-         Iterations: 4
+Starting optimization for interval [0.0, 300.0] (mismatch 20)
 Optimization succeeded
 0: Wrote 10 routes (1 distinct) achieving total count 20 (100.00%) at 2 locations. GEH<5 for 100.00%
-Starting optimization for interval [300.0, 600.0] (mismatch 2)
-Primal Feasibility  Dual Feasibility    Duality Gap         Step             Path Parameter      Objective          
-1.0                 1.0                 1.0                 -                1.0                 2.0                 
-0.2161377068906     0.2161377068906     0.2161377068906     0.7898732189133  0.2161377068906     3.53109029528       
-0.007941087737694   0.00794108773768    0.00794108773768    1.0              0.007941087737673   0.07443680218474    
-7.678096780595e-07  7.678096780077e-07  7.678096780655e-07  0.999903802767   7.678096780306e-07  8.547794648276e-06  
-3.839055569184e-11  3.839062480404e-11  3.839050822407e-11  0.9999499998564  3.839066020544e-11  4.273905648925e-10  
-Optimization terminated successfully.
-         Current function value: 0.000000    
-         Iterations: 4
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+1 rows, 1 cols, 1 nonzeros
+0 rows, 0 cols, 0 nonzeros
+Presolve : Reductions: rows 0(-2); columns 0(-5); elements 0(-6) - Reduced to empty
+Solving the original LP from the solution after postsolve
+Model   status      : Optimal
+Objective value     :  0.0000000000e+00
+HiGHS run time      :          0.00
+Starting optimization for interval [300.0, 600.0] (mismatch 16)
 Optimization succeeded
 300: Wrote 8 routes (1 distinct) achieving total count 16 (100.00%) at 2 locations. GEH<5 for 100.00%
 avg interval input count: count 2, min 16.00 (300.0), max 20.00 (0.0), mean 18.00, Q1 16.00, median 20.00, Q3 20.00

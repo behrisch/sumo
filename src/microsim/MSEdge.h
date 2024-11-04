@@ -553,6 +553,21 @@ public:
      */
     MSLane* getFreeLane(const std::vector<MSLane*>* allowed, const SUMOVehicleClass vclass, double departPos) const;
 
+    /** @brief Finds the most probable lane allowing the vehicle class
+     *
+     * The most probable lane is the one which best corresponds to the desired speed of the vehicle
+     * Vehicles with lower speeds will use lanes to the right while
+     * vehicles with higher speeds will use lanes to the left
+     *
+     * @param[in] allowed The lanes to choose from
+     * @param[in] vclass The vehicle class to look for
+     * @param[in] departPos An upper bound on vehicle depart position
+     * @param[in] maxSpeed The vehicles maxSpeed (including speedFactor)
+     * @return the least occupied lane
+     * @see allowedLanes
+     */
+    MSLane* getProbableLane(const std::vector<MSLane*>* allowed, const SUMOVehicleClass vclass, double departPos, double maxSpeed) const;
+
 
     /** @brief Finds a depart lane for the given vehicle parameters
      *

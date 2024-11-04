@@ -1180,8 +1180,6 @@ enum {
     MID_GNE_USESELECTED,
     /// @brief clear selection of elements
     MID_GNE_CLEARSELECTION,
-    /// @brief invert selection of elements
-    MID_GNE_INVERTSELECTION,
     /// @brief stop selection of consecutive edges/lanes
     MID_GNE_STOPSELECTION,
     /// @brief abort selection of consecutive edges/lanes

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-03-21 11:46:08 by Eclipse SUMO sumo Version v1_16_0+1515-7c289bd
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -25,6 +25,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -36,21 +37,25 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <railsignal-block-output>
     <railSignal id="1">
         <link linkIndex="0" from="1043_0" to="1044_0">
-            <driveWay edges="1044 1072 1047 1048">
+            <driveWay id="1.0" vehicle="v_0" edges="1044 1072 1047 1048">
                 <forward lanes="1044_0 1072_0 1047_0 1048_0"/>
                 <bidi lanes="1031_0 1005_0 1006_0 1007_0"/>
-                <flank lanes="1002_0"/>
-                <protectingSwitches links=""/>
+                <flank lanes=""/>
                 <conflictLinks signals="2_0"/>
+                <foes driveWays="1.0 2.0.0"/>
             </driveWay>
+            <subDriveWay id="1.0.0" vehicle="" edges="1044">
+                <forward lanes="1044_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="10">
@@ -58,47 +63,58 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </railSignal>
     <railSignal id="11">
         <link linkIndex="0" from="1051_0" to="1052_0">
-            <driveWay edges="1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
+            <driveWay id="11.0" vehicle="v_0" edges="1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
                 <forward lanes="1052_0 1075_0 1058_0 1077_0 1053_0 1054_0 1043_0"/>
                 <bidi lanes="1033_0 1017_0 1034_0 1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
-                <flank lanes="1068_0 1002_0"/>
-                <protectingSwitches links=""/>
-                <conflictLinks signals="28_0 2_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="2_0"/>
+                <foes driveWays="11.0 12.0.0 2.0"/>
             </driveWay>
+            <subDriveWay id="11.0.0" vehicle="" edges="1052 1075 1058 1077">
+                <forward lanes="1052_0 1075_0 1058_0 1077_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="12">
         <link linkIndex="0" from="1013_0" to="1012_0">
-            <driveWay edges="1012 1034 1017 1033 1011">
-                <forward lanes="1012_0 1034_0 1017_0 1033_0 1011_0"/>
-                <bidi lanes="1077_0 1058_0 1075_0 1052_0 1051_0"/>
-                <flank lanes="1068_0 1073_0 1084_0 1066_0 1081_0"/>
-                <protectingSwitches links="37_0"/>
-                <conflictLinks signals="28_0"/>
+            <driveWay id="12.0" vehicle="v_0" edges="1012 1034 1017 1033 1011 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
+                <forward lanes="1012_0 1034_0 1017_0 1033_0 1011_0 1051_0"/>
+                <bidi lanes="1077_0 1058_0 1075_0 1052_0 1051_0 1011_0 1033_0 1017_0 1034_0"
+                    deadlockCheck="1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="15_0 2_0"/>
+                <foes driveWays="11.0.0 12.0 15.0 2.0"/>
             </driveWay>
+            <subDriveWay id="12.0.0" vehicle="" edges="1012 1034 1017 1033">
+                <forward lanes="1012_0 1034_0 1017_0 1033_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="15">
         <link linkIndex="0" from="1055_0" to="1056_0">
-            <driveWay edges="1056 1057 1081 1066 1084 1073 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
+            <driveWay id="15.0" vehicle="v_1" edges="1056 1057 1081 1066 1084 1073 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
                 <forward lanes="1056_0 1057_0 1081_0 1066_0 1084_0 1073_0 1051_0"/>
                 <bidi lanes="1016_0 1037_0 1026_0 1040_0 1032_0 1010_0 1011_0 1033_0 1017_0 1034_0"
-                    deadlockCheck="1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0 1002_0"/>
-                <flank lanes="1038_0 1042_0 1027_0"/>
-                <protectingSwitches links="35_3 35_3"/>
-                <conflictLinks signals="27_0 2_0"/>
+                    deadlockCheck="1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="12_0 2_0"/>
+                <foes driveWays="12.0 15.0 2.0"/>
             </driveWay>
         </link>
     </railSignal>
     <railSignal id="2">
         <link linkIndex="0" from="1003_0" to="1002_0">
-            <driveWay edges="1002 1031 1001 1000 1013 1012 1034 1017 1033 1011">
+            <driveWay id="2.0" vehicle="v_0" edges="1002 1031 1001 1000 1013 1012 1034 1017 1033 1011 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
                 <forward lanes="1002_0 1031_0 1001_0 1000_0 1013_0"/>
-                <bidi lanes="1071_0 1044_0 1043_0 1054_0 1053_0 1077_0 1058_0 1075_0 1052_0 1051_0"/>
-                <flank lanes="1005_0 1006_0 1068_0 1073_0 1084_0 1066_0 1081_0"/>
-                <protectingSwitches links="37_0"/>
-                <conflictLinks signals="6_0 28_0"/>
+                <bidi lanes="1071_0 1044_0 1043_0 1054_0 1053_0 1077_0 1058_0 1075_0 1052_0 1051_0 1011_0 1033_0 1017_0 1034_0"
+                    deadlockCheck="1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="12_0 15_0"/>
+                <foes driveWays="1.0.0 11.0 12.0 15.0 2.0"/>
             </driveWay>
+            <subDriveWay id="2.0.0" vehicle="" edges="1002 1031">
+                <forward lanes="1002_0 1031_0"/>
+            </subDriveWay>
         </link>
     </railSignal>
     <railSignal id="27">
@@ -110,4 +126,24 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <railSignal id="6">
         <link linkIndex="0" from="1007_0" to="1006_0"/>
     </railSignal>
+    <departJunction id="3">
+        <driveWay id="3.d0" vehicle="v_0" edges="1003 1002 1031 1001 1000 1013 1012 1034 1017 1033 1011 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
+            <forward lanes="1003_0"/>
+            <bidi lanes="1045_0 1071_0"
+                    deadlockCheck="1044_0 1043_0 1054_0 1053_0 1077_0 1058_0 1075_0 1052_0 1051_0 1011_0 1033_0 1017_0 1034_0 1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="3.d0"/>
+        </driveWay>
+    </departJunction>
+    <departJunction id="14">
+        <driveWay id="14.d0" vehicle="v_1" edges="1055 1056 1057 1081 1066 1084 1073 1051 1052 1075 1058 1077 1053 1054 1043 1044 1072 1047 1048">
+            <forward lanes="1055_0"/>
+            <bidi lanes="1015_0 1016_0 1037_0 1026_0 1040_0 1032_0 1010_0 1011_0 1033_0 1017_0 1034_0"
+                    deadlockCheck="1012_0 1013_0 1000_0 1001_0 1031_0 1005_0 1006_0 1007_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="14.d0"/>
+        </driveWay>
+    </departJunction>
 </railsignal-block-output>

@@ -125,7 +125,7 @@ of the [iTETRIS](https://www.ict-itetris.eu/)[\[4\]](#references) project. The
 development of [PHEMlight](../Models/Emissions/PHEMlight.md) is
 described in the deliverable "*Deliverable 4.1 - Extended Simulation
 Tool PHEM coupled to SUMO with User Guide* (Draft)"[\[5\]](#references) of the
-[COLOMBO](https://verkehrsforschung.dlr.de/en/projects/colombo)[\[6\]](#references) project.
+[COLOMBO](http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo)[\[6\]](#references) project.
 
 ## Emission-optimal Routing
 
@@ -201,7 +201,7 @@ simulate and evaluate some of such actions in his Master thesis[\[15\]](#referen
     (Draft). COLOMBO consortium, 2013
 
 6.  [*COLOMBO* - Cooperative Self-Organizing System for low Carbon
-    Mobility at low Penetration Rates](https://verkehrsforschung.dlr.de/en/projects/colombo). COLOMBO
+    Mobility at low Penetration Rates](http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo). COLOMBO
     web site. COLOMBO consortium. Last visited on 8th of January 2014.
 
 7.  D. Krajzewicz and L. Bieker. *Investigating Ecological Impacts on
@@ -243,6 +243,6 @@ simulate and evaluate some of such actions in his Master thesis[\[15\]](#referen
 
 <div style="border:1px solid #909090; min-height: 35px;" align="right">
 <span style="float: right; margin-top: -5px;"><a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm"><img src="../images/FP7-small.gif" alt="Seventh Framework Programme"></a>
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
 <span style="">This part of SUMO was developed, reworked, or extended within the project
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>

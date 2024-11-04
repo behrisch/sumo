@@ -1,0 +1,9 @@
+<routes>
+
+   <vType id="t0" sigma="0" speedFactor="1.1" desiredMaxSpeed="20"/>
+   <vType id="t1" sigma="0" speedFactor="0.9" desiredMaxSpeed="30"/>
+   <route id="1" edges="beg end"/>
+   <vehicle id="v0" type="t0" depart="0" departSpeed="avg" route="1" departLane="best_prob"/>
+   <vehicle id="v1" type="t1" depart="0" departSpeed="avg" route="1" departLane="best_prob"/>
+
+</routes>

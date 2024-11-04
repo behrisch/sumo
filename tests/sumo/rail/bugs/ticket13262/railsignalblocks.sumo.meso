@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-05-16 09:15:30 by Eclipse SUMO sumo Version v1_17_0+0296-b8bcdf0
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -24,6 +24,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -35,32 +36,57 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <railsignal-block-output>
     <railSignal id="J2">
         <link linkIndex="0" from="E1_0" to="E2_0">
-            <driveWay edges="E2 E3 E4">
+            <driveWay id="J2.0" vehicle="v_0" edges="E2 E3 E4 -E4 E4 E5 E6">
                 <forward lanes="E2_0"/>
-                <bidi lanes="-E2_0 -E3_0 -E4_0"/>
-                <flank lanes="-E5_0 -E6_0"/>
-                <protectingSwitches links=""/>
-                <conflictLinks signals=""/>
+                <bidi lanes="-E2_0 -E3_0 -E4_0 E4_0 -E4_0 -E5_0 -E6_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="J3_0"/>
+                <foes driveWays="J2.0 J7.d0.0"/>
             </driveWay>
         </link>
     </railSignal>
     <railSignal id="J3">
         <link linkIndex="0" from="E2_0" to="E3_0">
-            <driveWay edges="E3 E4">
-                <forward lanes="E3_0 E4_0"/>
-                <bidi lanes="-E3_0 -E4_0"/>
-                <flank lanes="-E5_0 -E6_0"/>
-                <protectingSwitches links=""/>
-                <conflictLinks signals=""/>
+            <driveWay id="J3.0" vehicle="v_0" edges="E3 E4 -E4 E4 E5 E6">
+                <forward lanes="E3_0 E4_0 -E4_0 E4_0 E5_0 E6_0"/>
+                <bidi lanes="-E3_0 -E4_0 E4_0 -E4_0 -E5_0 -E6_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="J3_0"/>
+                <foes driveWays="J3.0 J7.d0.1"/>
             </driveWay>
         </link>
     </railSignal>
+    <departJunction id="J7">
+        <driveWay id="J7.d0" vehicle="v_1" edges="-E6 -E5 -E4 -E3 -E2 -E1 -E0">
+            <forward lanes="-E6_0 -E5_0 -E4_0 -E3_0 -E2_0 -E1_0 -E0_0"/>
+            <bidi lanes="E6_0 E5_0 E4_0 E3_0 E2_0 E1_0 E0_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals=""/>
+            <foes driveWays="J0.d0 J2.0 J3.0 J7.d0"/>
+        </driveWay>
+        <subDriveWay id="J7.d0.0" vehicle="" edges="-E6 -E5 -E4 -E3 -E2">
+            <forward lanes="-E6_0 -E5_0 -E4_0 -E3_0 -E2_0"/>
+        </subDriveWay>
+        <subDriveWay id="J7.d0.1" vehicle="" edges="-E6 -E5 -E4 -E3">
+            <forward lanes="-E6_0 -E5_0 -E4_0 -E3_0"/>
+        </subDriveWay>
+    </departJunction>
+    <departJunction id="J0">
+        <driveWay id="J0.d0" vehicle="v_0" edges="E0 E1 E2 E3 E4 -E4 E4 E5 E6">
+            <forward lanes="E0_0 E1_0"/>
+            <bidi lanes="-E0_0 -E1_0 -E2_0 -E3_0 -E4_0 E4_0 -E4_0 -E5_0 -E6_0"/>
+            <flank lanes=""/>
+            <conflictLinks signals="J3_0"/>
+            <foes driveWays="J0.d0 J7.d0"/>
+        </driveWay>
+    </departJunction>
 </railsignal-block-output>

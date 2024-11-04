@@ -79,7 +79,7 @@ NWFrame::fillOptions(OptionsCont& oc, bool forNetgen) {
     oc.addDescription("amitran-output", "Output", TL("The generated net will be written to FILE using Amitran format"));
 
     oc.doRegister("matsim-output", new Option_FileName());
-    oc.addDescription("matsim-output", "Output", TL("The generated net will be written to FILE using MATsim format"));
+    oc.addDescription("matsim-output", "Output", TL("The generated net will be written to FILE using MATSim format"));
 
     oc.doRegister("opendrive-output", new Option_FileName());
     oc.addDescription("opendrive-output", "Output", TL("The generated net will be written to FILE using OpenDRIVE format"));

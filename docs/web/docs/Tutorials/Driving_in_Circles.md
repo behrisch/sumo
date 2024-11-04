@@ -248,7 +248,7 @@ driving to the first edge and completing the circle.
 - The second rerouter will be located on the **first edge** of our route and
 have a `destProbReroute`-element to the **last edge**. So when vehicles arrive
 at the first edge, they will be redirected to the last edge of the route where
-the first rerouter ist located and so the vehicles will be driving in circles
+the first rerouter is located and so the vehicles will be driving in circles
 again and again.
 
 To add the first rerouter we have to check the "id" of the last edge of our

@@ -19,7 +19,7 @@ New reservations: ['4', '5', '6']
 Pending reservations: ['3']
 Solve DARP with simple_rerouting
 Solve ILP
-Dispatch: taxiA_2y_5y_1y_0z_1z_2z_5z
+Dispatch: taxiA_2y_5y_1y_0z_1z_5z_2z
 
 Run dispatcher
 New reservations: ['7', '8', '9']
@@ -63,6 +63,7 @@ Pending reservations: ['3', '7']
 Solve DARP with simple_rerouting
 Reservation 3 (person ('3',)) cannot be served
 Solve ILP
+Dispatch: taxiA_1z_2z_5z
 
 Run dispatcher
 Pending reservations: ['7']

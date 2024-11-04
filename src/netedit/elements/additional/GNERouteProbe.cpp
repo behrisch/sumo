@@ -38,7 +38,7 @@ GNERouteProbe::GNERouteProbe(GNENet* net) :
     GNEAdditional("", net, GLO_ROUTEPROBE, SUMO_TAG_ROUTEPROBE,
                   GUIIconSubSys::getIcon(GUIIcon::ROUTEPROBE), "", {}, {}, {}, {}, {}, {}),
                             myPeriod(SUMOTime_MAX_PERIOD),
-myBegin(0) {
+    myBegin(0) {
     // reset default values
     resetDefaultValues();
     // update centering boundary without updating grid
@@ -47,13 +47,15 @@ myBegin(0) {
 
 
 GNERouteProbe::GNERouteProbe(const std::string& id, GNENet* net, GNEEdge* edge, const SUMOTime period, const std::string& name,
-                             const std::string& filename, SUMOTime begin, const Parameterised::Map& parameters) :
+                             const std::string& filename, SUMOTime begin, const std::vector<std::string>& vehicleTypes,
+                             const Parameterised::Map& parameters) :
     GNEAdditional(id, net, GLO_ROUTEPROBE, SUMO_TAG_ROUTEPROBE,
                   GUIIconSubSys::getIcon(GUIIcon::ROUTEPROBE), name, {}, {edge}, {}, {}, {}, {}),
-Parameterised(parameters),
-myPeriod(period),
-myFilename(filename),
-myBegin(begin) {
+    Parameterised(parameters),
+    myPeriod(period),
+    myFilename(filename),
+    myBegin(begin),
+    myVehicleTypes(vehicleTypes) {
     // update centering boundary without updating grid
     updateCenteringBoundary(false);
 }
@@ -74,11 +76,14 @@ GNERouteProbe::writeAdditional(OutputDevice& device) const {
         device.writeAttr(SUMO_ATTR_PERIOD, time2string(myPeriod));
     }
     device.writeAttr(SUMO_ATTR_EDGE, getParentEdges().front()->getID());
+    if (!myFilename.empty()) {
+        device.writeAttr(SUMO_ATTR_FILE, myFilename);
+    }
     if (!myAdditionalName.empty()) {
         device.writeAttr(SUMO_ATTR_NAME, myAdditionalName);
     }
-    if (!myFilename.empty()) {
-        device.writeAttr(SUMO_ATTR_FILE, myFilename);
+    if (!myVehicleTypes.empty()) {
+        device.writeAttr(SUMO_ATTR_VTYPES, myVehicleTypes);
     }
     // write parameters (Always after children to avoid problems with additionals.xsd)
     writeParams(device);
@@ -242,6 +247,8 @@ GNERouteProbe::getAttribute(SumoXMLAttr key) const {
             }
         case SUMO_ATTR_BEGIN:
             return time2string(myBegin);
+        case SUMO_ATTR_VTYPES:
+            return toString(myVehicleTypes);
         case GNE_ATTR_SELECTED:
             return toString(isAttributeCarrierSelected());
         case GNE_ATTR_PARAMETERS:
@@ -282,6 +289,7 @@ GNERouteProbe::setAttribute(SumoXMLAttr key, const std::string& value, GNEUndoLi
         case SUMO_ATTR_PERIOD:
         case SUMO_ATTR_FREQUENCY:
         case SUMO_ATTR_BEGIN:
+        case SUMO_ATTR_VTYPES:
         case GNE_ATTR_SELECTED:
         case GNE_ATTR_PARAMETERS:
             GNEChange_Attribute::changeAttribute(this, key, value, undoList);
@@ -331,6 +339,12 @@ GNERouteProbe::isValid(SumoXMLAttr key, const std::string& value) {
             }
         case SUMO_ATTR_BEGIN:
             return canParse<SUMOTime>(value);
+        case SUMO_ATTR_VTYPES:
+            if (value.empty()) {
+                return true;
+            } else {
+                return SUMOXMLDefinitions::isValidListOfTypeID(value);
+            }
         case GNE_ATTR_SELECTED:
             return canParse<bool>(value);
         case GNE_ATTR_PARAMETERS:
@@ -367,6 +381,9 @@ GNERouteProbe::setAttribute(SumoXMLAttr key, const std::string& value) {
             break;
         case SUMO_ATTR_BEGIN:
             myBegin = parse<SUMOTime>(value);
+            break;
+        case SUMO_ATTR_VTYPES:
+            myVehicleTypes = parse<std::vector<std::string> >(value);
             break;
         case GNE_ATTR_SELECTED:
             if (parse<bool>(value)) {

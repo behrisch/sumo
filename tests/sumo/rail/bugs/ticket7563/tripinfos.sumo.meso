@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-08-26 15:32:36 by Eclipse SUMO sumo Version v1_20_0+1721-016cfd09667
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -25,6 +25,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -36,13 +37,14 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
 </sumoConfiguration>
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
-    <tripinfo id="v0" depart="0.00" departLane="gneE0_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="42.00" arrivalLane="gneE6_0" arrivalPos="100.00" arrivalSpeed="13.89" duration="42.00" routeLength="579.68" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="0" devices="tripinfo_v0" vType="train" speedFactor="1.00" vaporized=""/>
     <tripinfo id="v2" depart="0.00" departLane="gneE12_0" departPos="0.00" departSpeed="0.00" departDelay="0.00" arrival="108.00" arrivalLane="gneE12_0" arrivalPos="99.62" arrivalSpeed="0.93" duration="108.00" routeLength="99.62" waitingTime="0.00" waitingCount="0" stopTime="100.00" timeLoss="100.00" rerouteNo="0" devices="tripinfo_v2" vType="train" speedFactor="1.00" vaporized=""/>
-    <tripinfo id="v1" depart="0.00" departLane="gneE7_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="115.00" arrivalLane="gneE12_0" arrivalPos="99.62" arrivalSpeed="13.89" duration="115.00" routeLength="590.73" waitingTime="71.82" waitingCount="0" stopTime="0.00" timeLoss="71.82" rerouteNo="0" devices="tripinfo_v1" vType="train" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="v0" depart="0.00" departLane="gneE0_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="144.00" arrivalLane="gneE6_0" arrivalPos="100.00" arrivalSpeed="13.89" duration="144.00" routeLength="579.68" waitingTime="102.00" waitingCount="0" stopTime="0.00" timeLoss="102.00" rerouteNo="0" devices="tripinfo_v0" vType="train" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="v1" depart="0.00" departLane="gneE7_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="144.00" arrivalLane="gneE12_0" arrivalPos="99.62" arrivalSpeed="13.89" duration="144.00" routeLength="590.73" waitingTime="101.00" waitingCount="0" stopTime="0.00" timeLoss="101.00" rerouteNo="0" devices="tripinfo_v1" vType="train" speedFactor="1.00" vaporized=""/>
 </tripinfos>

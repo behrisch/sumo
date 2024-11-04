@@ -93,7 +93,7 @@ MSStoppingPlace::getCenterPos() const {
 
 void
 MSStoppingPlace::enter(SUMOVehicle* veh, bool parking) {
-    double beg = veh->getPositionOnLane() + veh->getVehicleType().getMinGap();
+    double beg = veh->getPositionOnLane() + veh->getVehicleType().getMinGap() * (parking ? myParkingFactor : 1);
     double end = beg - veh->getVehicleType().getLengthWithGap() * (parking ? myParkingFactor : 1);
     myEndPositions[veh] = std::make_pair(beg, end);
     computeLastFreePos();
@@ -107,15 +107,16 @@ MSStoppingPlace::getLastFreePos(const SUMOVehicle& forVehicle, double /*brakePos
         double pos = myLastFreePos - vehGap;
         if (myParkingFactor < 1 && myLastParking != nullptr && forVehicle.hasStops() && (forVehicle.getStops().front().pars.parking == ParkingType::ONROAD)
                 && myLastParking->remainingStopDuration() < forVehicle.getStops().front().getMinDuration(SIMSTEP)) {
-            // stop far back enough so that the previous vehicle can leave
-            pos = myLastParking->getPositionOnLane() - myLastParking->getLength() - vehGap - NUMERICAL_EPS;
+            // stop far back enough so that the previous parking vehicle can leave (even if this vehicle fits, it will
+            // be a blocker because it stops on the road)
+            pos = MIN2(pos, myLastParking->getPositionOnLane() - myLastParking->getLength() - vehGap - NUMERICAL_EPS);
         }
         if (forVehicle.getLane() == &myLane && forVehicle.getPositionOnLane() < myEndPos && forVehicle.getPositionOnLane() > myBegPos && forVehicle.getSpeed() <= SUMO_const_haltingSpeed) {
             return forVehicle.getPositionOnLane();
         }
         if (!fits(pos, forVehicle)) {
             // try to find a place ahead of the waiting vehicles
-            const double vehLength = forVehicle.getVehicleType().getLength();
+            const double vehLength = forVehicle.getVehicleType().getLength() * myParkingFactor;
             std::vector<std::pair<double, std::pair<double, const SUMOVehicle*> > > spaces;
             for (auto it : myEndPositions) {
                 spaces.push_back(std::make_pair(it.second.first, std::make_pair(it.second.second, it.first)));
@@ -134,6 +135,10 @@ MSStoppingPlace::getLastFreePos(const SUMOVehicle& forVehicle, double /*brakePos
                     return prev;
                 }
                 prev = it.second.first - vehGap;
+            }
+            if (myParkingFactor < 1 && myLastParking != nullptr) {
+                // stop far back enough so that the previous vehicle can leave
+                pos = MIN2(pos, myLastParking->getPositionOnLane() - myLastParking->getLength() - vehGap - NUMERICAL_EPS);
             }
         }
         return pos;

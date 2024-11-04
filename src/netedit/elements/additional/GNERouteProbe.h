@@ -43,10 +43,12 @@ public:
      * @oaran[in] name Route Probe Name
      * @param[in] filename The file for generated output
      * @param[in] begin The time at which to start generating output
+     * @param[in] vTypes list of vehicle types to be affected
      * @param[in] parameters generic parameters
      */
     GNERouteProbe(const std::string& id, GNENet* net, GNEEdge* edge, const SUMOTime period, const std::string& name,
-                  const std::string& filename, SUMOTime begin, const Parameterised::Map& parameters);
+                  const std::string& filename, SUMOTime begin, const std::vector<std::string>& vehicleTypes,
+                  const Parameterised::Map& parameters);
 
     /// @brief Destructor
     ~GNERouteProbe();
@@ -164,6 +166,9 @@ protected:
 
     /// @brief begin of rerouter
     SUMOTime myBegin;
+
+    /// @brief vehicle types
+    std::vector<std::string> myVehicleTypes;
 
     /// @brief route probe logo offset
     Position myRouteProbeLogoOffset;

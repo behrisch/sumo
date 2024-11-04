@@ -186,11 +186,11 @@ following output can be used:
 A vehicle can have either a foreseeable stop on its route or stop at a junction or in a jam.
 In both cases it will still produce emissions / consume energy as long as the motor is running.
 For planned stops SUMO will switch off the engine immediately if the duration is longer than 300s
-(configurable via the vehicle type parameter `shutOffStopDuration`).
+(configurable via the vehicle type [generic parameter](../Simulation/GenericParameters.md) `<param key="shutOffStopDuration" value="300"/>` with a value in seconds).
 
 The automated start/stop also for unplanned stops is not enabled by default but can be set using
-the vehicle type parameter `shutOffAutoDuration`. This expects a value in seconds and will switch
-off the engine automatically if the vehicle does not move for longer than the given time.
+the vehicle type [generic parameter](../Simulation/GenericParameters.md) `<param key="shutOffAutoDuration" value="20"/>`.
+This expects a value in seconds and will switch off the engine automatically if the vehicle does not move for longer than the given time.
 
 # Coasting vehicles
 
@@ -213,9 +213,9 @@ available.
 
 <div style="border:1px solid #909090; min-height: 35px;" align="right">
 <span style="float: right; margin-top: -5px;"><a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm"><img src="../images/FP7-small.gif" alt="Seventh Framework Programme"></a>
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
 <span style="">This part of SUMO was developed, reworked, or extended within the project
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>
 
 <div style="border:1px solid #909090; min-height: 35px;" align="right">
 <span style="float: right; margin-top: -5px;"><a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm"><img src="../images/FP7-small.gif" alt="Seventh Framework Programme"></a>

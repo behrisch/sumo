@@ -44,3 +44,6 @@ ticket9448
 
 # converting only a part
 bbox
+
+# input file is geo-referenced an shifted (re-importing opendrive-output)
+offset

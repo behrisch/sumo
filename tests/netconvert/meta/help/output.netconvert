@@ -1,4 +1,4 @@
-Eclipse SUMO netconvert Version v1_20_0+1963-cf76c26275c
+Eclipse SUMO netconvert Version v1_21_0+0569-8a49b199df8
  Copyright (C) 2001-2024 German Aerospace Center (DLR) and others; https://sumo.dlr.de
 Network importer / builder for the microscopic, multi-modal traffic simulation
  SUMO.
@@ -36,7 +36,7 @@ Input Options:
   --visum-file FILE                    Read VISUM-net from FILE
   --vissim-file FILE                   Read VISSIM-net from FILE
   --robocup-dir FILE                   Read RoboCup-net from DIR
-  --matsim-files FILE                  Read MATsim-net from FILE
+  --matsim-files FILE                  Read MATSim-net from FILE
   --itsumo-files FILE                  Read ITSUMO-net from FILE
   --heightmap.shapefiles FILE          Read heightmap from ArcGIS shapefile
   --heightmap.geotiff FILE             Read heightmap from GeoTIFF
@@ -68,7 +68,7 @@ Output Options:
   --amitran-output FILE                The generated net will be written to
                                         FILE using Amitran format
   --matsim-output FILE                 The generated net will be written to
-                                        FILE using MATsim format
+                                        FILE using MATSim format
   --opendrive-output FILE              The generated net will be written to
                                         FILE using OpenDRIVE format
   --dlr-navteq-output FILE             The generated net will be written to
@@ -608,7 +608,7 @@ Formats Options:
   --osm.speedlimit-none FLOAT          The speed limit to be set when there is
                                         no actual speed limit in reality
   --matsim.keep-length                 The edge lengths given in the
-                                        MATSIM-file will be kept
+                                        MATSim-file will be kept
   --matsim.lanes-from-capacity         The lane number will be computed from
                                         the capacity
   --shapefile.street-id STR            Read edge ids from column STR

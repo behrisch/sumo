@@ -109,9 +109,9 @@ NWWriter_OpenDrive::writeNetwork(const OptionsCont& oc, NBNetBuilder& nb) {
         device.closeTag();
         if (gch.getOffsetBase() != Position(0, 0)) {
             device.openTag("offset");
-            device.writeAttr("x", gch.getOffsetBase().x());
-            device.writeAttr("y", gch.getOffsetBase().y());
-            device.writeAttr("z", gch.getOffsetBase().z());
+            device.writeAttr("x", -gch.getOffsetBase().x());
+            device.writeAttr("y", -gch.getOffsetBase().y());
+            device.writeAttr("z", -gch.getOffsetBase().z());
             device.writeAttr("hdg", 0);
             device.closeTag();
         }

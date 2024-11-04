@@ -232,14 +232,7 @@ RouteHandler::parseSumoBaseObject(CommonXMLStructure::SumoBaseObject* obj) {
             break;
         // vehicles
         case SUMO_TAG_TRIP:
-            if (obj->hasStringAttribute(SUMO_ATTR_FROM) &&
-                    obj->hasStringAttribute(SUMO_ATTR_TO)) {
-                // build trip with from-to edges
-                buildTrip(obj,
-                          obj->getVehicleParameter(),
-                          obj->getStringAttribute(SUMO_ATTR_FROM),
-                          obj->getStringAttribute(SUMO_ATTR_TO));
-            } else if (obj->hasStringAttribute(SUMO_ATTR_FROM_JUNCTION) &&
+            if (obj->hasStringAttribute(SUMO_ATTR_FROM_JUNCTION) &&
                        obj->hasStringAttribute(SUMO_ATTR_TO_JUNCTION)) {
                 // build trip with from-to junctions
                 buildTripJunctions(obj,
@@ -254,7 +247,11 @@ RouteHandler::parseSumoBaseObject(CommonXMLStructure::SumoBaseObject* obj) {
                               obj->getStringAttribute(SUMO_ATTR_FROM_TAZ),
                               obj->getStringAttribute(SUMO_ATTR_TO_TAZ));
             } else {
-                throw ProcessError("Invalid from-to values in trips");
+                // build trip with from-to edges
+                buildTrip(obj,
+                          obj->getVehicleParameter(),
+                          obj->hasStringAttribute(SUMO_ATTR_FROM)? obj->getStringAttribute(SUMO_ATTR_FROM) : "",
+                          obj->hasStringAttribute(SUMO_ATTR_TO)? obj->getStringAttribute(SUMO_ATTR_TO) : "");
             }
             break;
         case SUMO_TAG_VEHICLE:
@@ -269,13 +266,6 @@ RouteHandler::parseSumoBaseObject(CommonXMLStructure::SumoBaseObject* obj) {
                 // build flow over route
                 buildFlowOverRoute(obj,
                                    obj->getVehicleParameter());
-            } else if (obj->hasStringAttribute(SUMO_ATTR_FROM) &&
-                       obj->hasStringAttribute(SUMO_ATTR_TO)) {
-                // build flow with from-to edges
-                buildFlow(obj,
-                          obj->getVehicleParameter(),
-                          obj->getStringAttribute(SUMO_ATTR_FROM),
-                          obj->getStringAttribute(SUMO_ATTR_TO));
             } else if (obj->hasStringAttribute(SUMO_ATTR_FROM_JUNCTION) &&
                        obj->hasStringAttribute(SUMO_ATTR_TO_JUNCTION)) {
                 // build flow with from-to junctions
@@ -290,6 +280,12 @@ RouteHandler::parseSumoBaseObject(CommonXMLStructure::SumoBaseObject* obj) {
                               obj->getVehicleParameter(),
                               obj->getStringAttribute(SUMO_ATTR_FROM_TAZ),
                               obj->getStringAttribute(SUMO_ATTR_TO_TAZ));
+            } else {
+                // build flow with from-to edges
+                buildFlow(obj,
+                    obj->getVehicleParameter(),
+                    obj->hasStringAttribute(SUMO_ATTR_FROM)? obj->getStringAttribute(SUMO_ATTR_FROM) : "",
+                    obj->hasStringAttribute(SUMO_ATTR_TO)? obj->getStringAttribute(SUMO_ATTR_TO) : "");
             }
             break;
         // persons
@@ -518,7 +514,33 @@ RouteHandler::parseTrip(const SUMOSAXAttributes& attrs) {
             writeError(TL("Attributes 'from', 'fromJunction' and 'fromTaz' cannot be defined together"));
         } else if ((attrs.hasAttribute(SUMO_ATTR_TO) + attrs.hasAttribute(SUMO_ATTR_TO_JUNCTION) + attrs.hasAttribute(SUMO_ATTR_TO_TAZ)) > 1) {
             writeError(TL("Attributes 'to', 'toJunction' and 'toTaz' cannot be defined together"));
-        } else if (attrs.hasAttribute(SUMO_ATTR_FROM) && attrs.hasAttribute(SUMO_ATTR_TO)) {
+        } else if (attrs.hasAttribute(SUMO_ATTR_FROM_JUNCTION) && attrs.hasAttribute(SUMO_ATTR_TO_JUNCTION)) {
+            // from-to attributes
+            const std::string fromJunction = attrs.get<std::string>(SUMO_ATTR_FROM_JUNCTION, tripParameter->id.c_str(), parsedOk);
+            const std::string toJunction = attrs.get<std::string>(SUMO_ATTR_TO_JUNCTION, tripParameter->id.c_str(), parsedOk);
+            if (parsedOk) {
+                // set tag
+                myCommonXMLStructure.getCurrentSumoBaseObject()->setTag(SUMO_TAG_TRIP);
+                // set vehicle parameters
+                myCommonXMLStructure.getCurrentSumoBaseObject()->setVehicleParameter(tripParameter);
+                // add other attributes
+                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_FROM_JUNCTION, fromJunction);
+                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_TO_JUNCTION, toJunction);
+            }
+        } else if (attrs.hasAttribute(SUMO_ATTR_FROM_TAZ) && attrs.hasAttribute(SUMO_ATTR_TO_TAZ)) {
+            // from-to attributes
+            const std::string fromJunction = attrs.get<std::string>(SUMO_ATTR_FROM_TAZ, tripParameter->id.c_str(), parsedOk);
+            const std::string toJunction = attrs.get<std::string>(SUMO_ATTR_TO_TAZ, tripParameter->id.c_str(), parsedOk);
+            if (parsedOk) {
+                // set tag
+                myCommonXMLStructure.getCurrentSumoBaseObject()->setTag(SUMO_TAG_TRIP);
+                // set vehicle parameters
+                myCommonXMLStructure.getCurrentSumoBaseObject()->setVehicleParameter(tripParameter);
+                // add other attributes
+                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_FROM_TAZ, fromJunction);
+                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_TO_TAZ, toJunction);
+            }
+        } else {
             // from-to attributes
             const std::string from = attrs.getOpt<std::string>(SUMO_ATTR_FROM, tripParameter->id.c_str(), parsedOk, "");
             const std::string to = attrs.getOpt<std::string>(SUMO_ATTR_TO, tripParameter->id.c_str(), parsedOk, "");
@@ -534,34 +556,6 @@ RouteHandler::parseTrip(const SUMOSAXAttributes& attrs) {
                 myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_TO, to);
                 myCommonXMLStructure.getCurrentSumoBaseObject()->addStringListAttribute(SUMO_ATTR_VIA, via);
             }
-        } else if (attrs.hasAttribute(SUMO_ATTR_FROM_JUNCTION) && attrs.hasAttribute(SUMO_ATTR_TO_JUNCTION)) {
-            // from-to attributes
-            const std::string fromJunction = attrs.getOpt<std::string>(SUMO_ATTR_FROM_JUNCTION, tripParameter->id.c_str(), parsedOk, "");
-            const std::string toJunction = attrs.getOpt<std::string>(SUMO_ATTR_TO_JUNCTION, tripParameter->id.c_str(), parsedOk, "");
-            if (parsedOk) {
-                // set tag
-                myCommonXMLStructure.getCurrentSumoBaseObject()->setTag(SUMO_TAG_TRIP);
-                // set vehicle parameters
-                myCommonXMLStructure.getCurrentSumoBaseObject()->setVehicleParameter(tripParameter);
-                // add other attributes
-                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_FROM_JUNCTION, fromJunction);
-                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_TO_JUNCTION, toJunction);
-            }
-        } else if (attrs.hasAttribute(SUMO_ATTR_FROM_TAZ) && attrs.hasAttribute(SUMO_ATTR_TO_TAZ)) {
-            // from-to attributes
-            const std::string fromJunction = attrs.getOpt<std::string>(SUMO_ATTR_FROM_TAZ, tripParameter->id.c_str(), parsedOk, "");
-            const std::string toJunction = attrs.getOpt<std::string>(SUMO_ATTR_TO_TAZ, tripParameter->id.c_str(), parsedOk, "");
-            if (parsedOk) {
-                // set tag
-                myCommonXMLStructure.getCurrentSumoBaseObject()->setTag(SUMO_TAG_TRIP);
-                // set vehicle parameters
-                myCommonXMLStructure.getCurrentSumoBaseObject()->setVehicleParameter(tripParameter);
-                // add other attributes
-                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_FROM_TAZ, fromJunction);
-                myCommonXMLStructure.getCurrentSumoBaseObject()->addStringAttribute(SUMO_ATTR_TO_TAZ, toJunction);
-            }
-        } else {
-            writeError(TL("trip definition needs either 'from/to' or 'fromJunction/toJunction' or 'fromTaz/toTaz'"));
         }
         // delete trip parameter (because in XMLStructure we have a copy)
         delete tripParameter;

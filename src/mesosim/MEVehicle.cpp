@@ -479,6 +479,15 @@ MEVehicle::updateDetectors(SUMOTime currentTime, const bool isLeave, const MSMov
                 traceMoveReminder("notifyLeave", rem->first, rem->second, true);
             }
 #endif
+
+            if (isLeave) {
+                rem->second += getEdge()->getLength();
+#ifdef _DEBUG
+                if (myTraceMoveReminders) {
+                    traceMoveReminder("adaptedPos", rem->first, rem->second, true);
+                }
+#endif
+            }
             ++rem;
         } else {
 #ifdef _DEBUG

@@ -96,8 +96,6 @@ public:
         /// @brief called when clear selection button is pressed
         long onCmdClearSelection(FXObject*, FXSelector, void*);
 
-        /// @brief called when invert selection button is pressed
-        long onCmdInvertSelection(FXObject*, FXSelector, void*);
         /// @}
 
     protected:
@@ -113,9 +111,6 @@ public:
 
         /// @brief button for clear selection
         FXButton* myClearEdgesSelection;
-
-        /// @brief button for invert selection
-        FXButton* myInvertEdgesSelection;
 
         /// @brief current Junction
         GNEJunction* myCurrentJunction;
@@ -150,9 +145,6 @@ public:
 
         /// @brief clear edges
         void clearEdges();
-
-        /// @brief invert edges
-        void invertEdges(GNEJunction* parentJunction);
 
         /// @brief use selected eges
         void useSelectedEdges(GNEJunction* parentJunction);

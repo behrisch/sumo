@@ -52,7 +52,7 @@ Adding additional with different references
 
 ## Additional hierarchies
 
-Certain additionals need another previous additionals already placed in the network to be created (For example, a *detEntry* or *detExit* needs a previous *detectorE3* placed in the network. These child additionals are inserted in the same way as an Additional, but the insertion of an additional child is
+Certain additionals need another previous additionals already placed in the network to be created (For example, a *detEntry* or *detExit* needs a previous *detectorE3* placed in the network). These child additionals are inserted in the same way as an Additional, but the insertion of an additional child is
 different. Before the insertion of an *additional child* in the map, either the ID of the *additional parent* parent must be selected in the list of IDs placed on the left frame or additional parent must be clicked in the view. In the list the IDs of the additional parents only appear when they can be parents of the additional child (Referring to the given example: if the user wants to insert a *detEntry*, than only IDs of *detectorE3* will appear in the list on the left frame). Additional parents and their childs are graphically connected by a yellow line.
 
 ![](../images/GNEAdditionalSet.png)

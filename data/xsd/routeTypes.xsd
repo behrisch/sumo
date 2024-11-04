@@ -103,6 +103,8 @@
         </xsd:attribute>
         <xsd:attribute name="jmStoplineGap" type="nonNegativeFloatType"/>
         <xsd:attribute name="jmTimegapMinor" type="nonNegativeFloatType"/>
+        <xsd:attribute name="jmExtraGap" type="nonNegativeFloatType"/>
+        <xsd:attribute name="jmAdvance" type="nonNegativeFloatType"/>
         <xsd:attribute name="jmStopSignWait" type="xsd:float"/>
         <xsd:attribute name="jmAllwayStopWait" type="xsd:float"/>
         <xsd:attribute name="sigma">
@@ -641,6 +643,7 @@
                     <xsd:enumeration value="allowed"/>
                     <xsd:enumeration value="first"/>
                     <xsd:enumeration value="best"/>
+                    <xsd:enumeration value="best_prob"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:union>

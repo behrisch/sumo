@@ -843,20 +843,30 @@ MSBaseVehicle::removeReminder(MSMoveReminder* rem) {
 void
 MSBaseVehicle::activateReminders(const MSMoveReminder::Notification reason, const MSLane* enteredLane) {
     for (MoveReminderCont::iterator rem = myMoveReminders.begin(); rem != myMoveReminders.end();) {
-        if (rem->first->notifyEnter(*this, reason, enteredLane)) {
+        // skip the reminder if it is a lane reminder but not for my lane (indicated by rem->second > 0.)
+        if (rem->first->getLane() != nullptr && rem->second > 0.) {
 #ifdef _DEBUG
             if (myTraceMoveReminders) {
-                traceMoveReminder("notifyEnter", rem->first, rem->second, true);
+                traceMoveReminder("notifyEnter_skipped", rem->first, rem->second, true);
             }
 #endif
             ++rem;
         } else {
+            if (rem->first->notifyEnter(*this, reason, enteredLane)) {
 #ifdef _DEBUG
-            if (myTraceMoveReminders) {
-                traceMoveReminder("notifyEnter", rem->first, rem->second, false);
-            }
+                if (myTraceMoveReminders) {
+                    traceMoveReminder("notifyEnter", rem->first, rem->second, true);
+                }
 #endif
-            rem = myMoveReminders.erase(rem);
+                ++rem;
+            } else {
+#ifdef _DEBUG
+                if (myTraceMoveReminders) {
+                    traceMoveReminder("notifyEnter", rem->first, rem->second, false);
+                }
+#endif
+                rem = myMoveReminders.erase(rem);
+            }
         }
     }
 }

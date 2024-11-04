@@ -1,0 +1,4 @@
+Warning: Teleporting vehicle 't2'; waited too long, from edge 'E0':0, time=308.20.
+Warning: Teleporting vehicle 't3'; waited too long, from edge '-E1':0, time=308.20.
+Warning: Vehicle 't2' ends teleporting on edge 'b':0, time=315.40.
+Warning: Vehicle 't3' ends teleporting on edge '-f':0, time=315.40.

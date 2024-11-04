@@ -273,7 +273,7 @@ SOURCE_DEPS = [
 
 def buildTemplateToolHeader(templateHeaderFile):
     print(
-        "#pragma once\n"
+        u"#pragma once\n"
         "#include <string>\n"
         "#include <vector>\n"
         "\n"
@@ -348,7 +348,7 @@ def generateTemplate(app, appBin):
         sys.stderr.write("Error when generating template for " + app + ": '%s'" % e)
         template = ""
     # join variable and formatted template
-    return 'const std::string %sTemplate = "%s";\n' % (app, template)
+    return u'const std::string %sTemplate = "%s";\n' % (app, template)
 
 
 def generateToolTemplates(toolDir, toolPaths, verbose):
@@ -357,7 +357,7 @@ def generateToolTemplates(toolDir, toolPaths, verbose):
     """
     print("Obtaining tool templates.")
     procs = []
-    result = ""
+    result = u""
     for toolPath in toolPaths:
         toolName = os.path.basename(toolPath)[:-3]
         if verbose:
@@ -408,9 +408,9 @@ def main():
         with io.open("templates.h", 'w', encoding='utf8') as templateHeaderFile:
             buildTemplateToolHeader(templateHeaderFile)
             is_debug = sys.argv[1].endswith("D") or sys.argv[1].endswith("D.exe")
-            print("const std::vector<TemplateTool> templateTools {\n", file=templateHeaderFile)
+            print(u"const std::vector<TemplateTool> templateTools {\n", file=templateHeaderFile)
             print(generateToolTemplates(toolDir, TOOLS, is_debug), file=templateHeaderFile)
-            print("};\n", file=templateHeaderFile)
+            print(u"};\n", file=templateHeaderFile)
             # generate sumo Template
             print(generateTemplate("sumo", sys.argv[1]), file=templateHeaderFile)
             # generate netgenerate Template

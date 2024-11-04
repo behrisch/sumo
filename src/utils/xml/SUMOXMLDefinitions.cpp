@@ -993,6 +993,8 @@ SequentialStringBijection::Entry SUMOXMLDefinitions::attrs[] = {
     { "jmStoplineGap",          SUMO_ATTR_JM_STOPLINE_GAP },
     { "jmStoplineCrossingGap",  SUMO_ATTR_JM_STOPLINE_CROSSING_GAP },
     { "jmTimegapMinor",         SUMO_ATTR_JM_TIMEGAP_MINOR },
+    { "jmExtraGap",             SUMO_ATTR_JM_EXTRA_GAP },
+    { "jmAdvance",              SUMO_ATTR_JM_ADVANCE },
     { "jmStopSignWait",         SUMO_ATTR_JM_STOPSIGN_WAIT },
     { "jmAllwayStopWait",       SUMO_ATTR_JM_ALLWAYSTOP_WAIT },
     { "junctionModel.ignoreIDs",    SUMO_ATTR_JM_IGNORE_IDS },

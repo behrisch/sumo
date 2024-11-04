@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-08-26 15:32:36 by Eclipse SUMO sumo Version v1_20_0+1721-016cfd09667
+<!-- generated on 2024-11-01 10:31:59 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -25,6 +25,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -36,12 +37,13 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
 </sumoConfiguration>
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
-    <tripinfo id="ego" depart="1.00" departLane="a_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="44.00" arrivalLane="p_0" arrivalPos="99.62" arrivalSpeed="13.89" duration="43.00" routeLength="590.73" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="1" devices="tripinfo_ego routing_ego" vType="train" speedFactor="1.00" vaporized=""/>
-    <tripinfo id="leader" depart="0.00" departLane="b_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="75.00" arrivalLane="-a_0" arrivalPos="100.00" arrivalSpeed="13.89" duration="75.00" routeLength="1039.04" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="1" devices="tripinfo_leader routing_leader" vType="train" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="ego" depart="1.00" departLane="a_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="346.00" arrivalLane="p_0" arrivalPos="99.62" arrivalSpeed="13.89" duration="345.00" routeLength="590.73" waitingTime="301.00" waitingCount="0" stopTime="0.00" timeLoss="301.00" rerouteNo="1" devices="tripinfo_ego routing_ego" vType="train" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="leader" depart="0.00" departLane="b_0" departPos="0.00" departSpeed="13.89" departDelay="0.00" arrival="376.00" arrivalLane="-a_0" arrivalPos="100.00" arrivalSpeed="13.89" duration="376.00" routeLength="1039.04" waitingTime="301.00" waitingCount="0" stopTime="0.00" timeLoss="301.00" rerouteNo="1" devices="tripinfo_leader routing_leader" vType="train" speedFactor="1.00" vaporized=""/>
 </tripinfos>

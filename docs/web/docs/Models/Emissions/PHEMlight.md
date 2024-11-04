@@ -11,10 +11,10 @@ since 1999. PHEM is based on an extensive European set of vehicle
 measurements and covers passenger cars, light duty vehicles and heavy
 duty vehicles from city buses up to 40 ton semi-trailers.
 
-Within [COLOMBO](https://verkehrsforschung.dlr.de/en/projects/colombo), a simplified version of PHEM,
+Within [COLOMBO](http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo), a simplified version of PHEM,
 embedded into SUMO, was developed. The [PHEMlight](https://www.itna.tugraz.at/assets/files/areas/em/PHEMlight_en.pdf) model is the result of
 this work. An in-depth description can be found in
-[COLOMBO](https://verkehrsforschung.dlr.de/en/projects/colombo)'s deliverable
+[COLOMBO](http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo)'s deliverable
 [D4.2](https://web.archive.org/web/20170808122505/https://www.colombo-fp7.eu/results_deliverables.php). The model
 received a major update to version 2.0.0.0 in the beginning of 2016
 which also used new names for all vehicle classes, most notably all
@@ -230,6 +230,6 @@ The special class `zero` may be used to specify a vehicle without emissions.
 
  <div style="border:1px solid #909090; min-height: 35px;" align="right">
 <span style="float: right; margin-top: -5px;"><a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm"><img src="../../images/FP7-small.gif" alt="Seventh Framework Programme"></a>
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo"><img src="../../images/COLOMBO-small.png" alt="COLOMBO project"></a></span>
 <span style="">This part of SUMO was developed, reworked, or extended within the project
-<a href="https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>
+<a href="http://web.archive.org/web/20240722054138/https://verkehrsforschung.dlr.de/en/projects/colombo">"COLOMBO"</a>, co-funded by the European Commission within the <a href="https://web.archive.org/web/20191005024529/https:/ec.europa.eu/research/fp7/index_en.cfm">Seventh Framework Programme</a>.</span></div>

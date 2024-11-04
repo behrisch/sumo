@@ -1,4 +1,4 @@
-Eclipse SUMO netgenerate Version v1_20_0+1963-cf76c26275c
+Eclipse SUMO netgenerate Version v1_21_0+0533-1a2fd70ff1a
  Copyright (C) 2001-2024 German Aerospace Center (DLR) and others; https://sumo.dlr.de
 Synthetic network generator for the microscopic, multi-modal traffic simulation
  SUMO.
@@ -112,7 +112,7 @@ Output Options:
   --amitran-output FILE                The generated net will be written to
                                         FILE using Amitran format
   --matsim-output FILE                 The generated net will be written to
-                                        FILE using MATsim format
+                                        FILE using MATSim format
   --opendrive-output FILE              The generated net will be written to
                                         FILE using OpenDRIVE format
   --dlr-navteq-output FILE             The generated net will be written to

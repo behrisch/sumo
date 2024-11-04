@@ -223,8 +223,10 @@ behavior. For a description see
 - jmSigmaMinor: When planning to pass a minor link, optimum
   acceleration is assumed. (higher values cause reduced acceleration
   and thus decrease time gaps and safety)
-- jmTimegapMinor: Minimum time gap when passing a minor link ahead of
+- jmTimegapMinor: Minimum time gap when passing a minor link ahead or after
   a prioritized vehicle (lower values decrease safety)
+- jmAdvance: controls whether the ego vehicle may advance towards the conflict point when it's trajectory crosses with a foe vehicle that has already entered the intersection
+- jmExtraGap: defines extra distance to keep to a foe vehicle that has already entered the intersection
 
 # Safety-Related Outputs
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-03-20 23:55:02 by Eclipse SUMO sumo Version v1_19_0+1436-ce33cf99c4c
+<!-- generated on 2024-11-01 10:31:58 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -22,9 +22,11 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <write-license value="true"/>
         <tripinfo-output value="tripinfos.xml"/>
         <railsignal-block-output value="railsignal_blocks.xml"/>
+        <railsignal-vehicle-output value="railsignal_vehicles.xml"/>
     </output>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -36,23 +38,32 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <railsignal-block-output>
     <railSignal id="B">
         <link linkIndex="0" from="-b_0" to="-a_0">
-            <driveWay edges="-a">
+            <driveWay id="B.1" vehicle="t0" edges="-a">
                 <forward lanes="-a_0"/>
                 <bidi lanes="a_0"/>
                 <flank lanes=""/>
-                <protectingSwitches links=""/>
                 <conflictLinks signals=""/>
+                <foes driveWays="B.1"/>
             </driveWay>
         </link>
-        <link linkIndex="1" from="a_0" to="b_0"/>
+        <link linkIndex="1" from="a_0" to="b_0">
+            <driveWay id="B.0" vehicle="t0" edges="b">
+                <forward lanes="b_0"/>
+                <bidi lanes="-b_0"/>
+                <flank lanes=""/>
+                <conflictLinks signals="C_0"/>
+                <foes driveWays="B.0"/>
+            </driveWay>
+        </link>
     </railSignal>
     <railSignal id="C">
         <link linkIndex="0" from="-c_0" to="-b_0"/>

@@ -377,7 +377,7 @@ class crossing:
         edges = 1
         priority = 2
         width = 3
-        button = 11
+        button = 10
 
     class createTLS:
         edges = 1
@@ -413,8 +413,7 @@ class crossing:
         parameters = 7
 
     clearEdges = 3
-    invertEdges = 4
-    firstField = 5
+    firstField = 4
 
 
 # TLS

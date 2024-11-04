@@ -1,0 +1,3 @@
+--no-step-log --no-duration-log --net-file=net.net.xml -r input_routes.rou.xml
+--step-length 0.25
+--tripinfo-output tripinfos.xml

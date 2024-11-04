@@ -1,6 +1,6 @@
 # these requirements are used to make sure the tests run only with versions known to work on GitHub actions
 # the "normal" requirements should be used in addition
-ortools==9.10.4067; python_version >= '3.8'
-pandas<2.2.0
-matplotlib==3.8.4; python_version >= '3.9'
-contourpy==1.2.1; python_version >= '3.9'
+ortools==9.10.4067; python_version >= '3.8' and python_version < '3.13'
+pandas<2.2.0; python_version < '3.13'
+matplotlib==3.8.4; python_version >= '3.9' and python_version < '3.13'
+contourpy==1.2.1; python_version >= '3.9' and python_version < '3.13'

@@ -39,8 +39,7 @@
 
 FXDEFMAP(GNECrossingFrame::EdgesSelector) EdgesSelectorMap[] = {
     FXMAPFUNC(SEL_COMMAND,  MID_GNE_USESELECTED,        GNECrossingFrame::EdgesSelector::onCmdUseSelectedEdges),
-    FXMAPFUNC(SEL_COMMAND,  MID_GNE_CLEARSELECTION,     GNECrossingFrame::EdgesSelector::onCmdClearSelection),
-    FXMAPFUNC(SEL_COMMAND,  MID_GNE_INVERTSELECTION,    GNECrossingFrame::EdgesSelector::onCmdInvertSelection),
+    FXMAPFUNC(SEL_COMMAND,  MID_GNE_CLEARSELECTION,     GNECrossingFrame::EdgesSelector::onCmdClearSelection)
 };
 
 FXDEFMAP(GNECrossingFrame::CrossingParameters) CrossingParametersMap[] = {
@@ -104,9 +103,6 @@ GNECrossingFrame::EdgesSelector::EdgesSelector(GNECrossingFrame* crossingFramePa
 
     // Create button for clear selection
     myClearEdgesSelection = GUIDesigns::buildFXButton(getCollapsableFrame(), TL("Clear edges"), "", "", nullptr, this, MID_GNE_CLEARSELECTION, GUIDesignButton);
-
-    // Create button for invert selection
-    myInvertEdgesSelection = GUIDesigns::buildFXButton(getCollapsableFrame(), TL("Invert edges"), "", "", nullptr, this, MID_GNE_INVERTSELECTION, GUIDesignButton);
 }
 
 
@@ -136,7 +132,6 @@ GNECrossingFrame::EdgesSelector::enableEdgeSelector(GNEJunction* currentJunction
     }
     // Enable rest of elements
     myClearEdgesSelection->enable();
-    myInvertEdgesSelection->enable();
 }
 
 
@@ -147,7 +142,6 @@ GNECrossingFrame::EdgesSelector::disableEdgeSelector() {
     // disable all elements of the EdgesSelector
     myUseSelectedEdges->disable();
     myClearEdgesSelection->disable();
-    myInvertEdgesSelection->disable();
     // Disable crossing parameters
     myCrossingFrameParent->myCrossingParameters->disableCrossingParameters();
     // Update view net to show the new colors
@@ -179,13 +173,6 @@ GNECrossingFrame::EdgesSelector::onCmdUseSelectedEdges(FXObject*, FXSelector, vo
 long
 GNECrossingFrame::EdgesSelector::onCmdClearSelection(FXObject*, FXSelector, void*) {
     myCrossingFrameParent->myCrossingParameters->clearEdges();
-    return 1;
-}
-
-
-long
-GNECrossingFrame::EdgesSelector::onCmdInvertSelection(FXObject*, FXSelector, void*) {
-    myCrossingFrameParent->myCrossingParameters->invertEdges(myCurrentJunction);
     return 1;
 }
 
@@ -311,20 +298,6 @@ GNECrossingFrame::CrossingParameters::markEdge(GNEEdge* edge) {
 void
 GNECrossingFrame::CrossingParameters::clearEdges() {
     myCrossingEdges->setText("");
-    // Update colors and attributes
-    onCmdSetAttribute(nullptr, 0, nullptr);
-}
-
-
-void
-GNECrossingFrame::CrossingParameters::invertEdges(GNEJunction* parentJunction) {
-    std::vector<std::string> crossingEdges;
-    for (const auto& edge : parentJunction->getChildEdges()) {
-        if (std::find(myCurrentSelectedEdges.begin(), myCurrentSelectedEdges.end(), edge) == myCurrentSelectedEdges.end()) {
-            crossingEdges.push_back(edge->getID());
-        }
-    }
-    myCrossingEdges->setText(joinToString(crossingEdges, " ").c_str());
     // Update colors and attributes
     onCmdSetAttribute(nullptr, 0, nullptr);
 }

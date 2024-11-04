@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-08-26 15:32:34 by Eclipse SUMO sumo Version v1_20_0+1721-016cfd09667
+<!-- generated on 2024-11-01 10:31:58 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -23,6 +23,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <write-license value="true"/>
         <tripinfo-output value="tripinfos.xml"/>
         <railsignal-block-output value="railsignal_blocks.xml"/>
+        <railsignal-vehicle-output value="railsignal_vehicles.xml"/>
     </output>
 
     <time>
@@ -31,6 +32,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </time>
 
     <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
         <default.speeddev value="0"/>
     </processing>
 
@@ -42,6 +44,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <mesoscopic>
         <mesosim value="true"/>
+        <meso-junction-control value="true"/>
     </mesoscopic>
 
 </sumoConfiguration>
@@ -49,5 +52,5 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
     <tripinfo id="rail1" depart="0.00" departLane="gneE1_0" departPos="0.00" departSpeed="5.00" departDelay="0.00" arrival="123.00" arrivalLane="gneE5_0" arrivalPos="146.43" arrivalSpeed="5.00" duration="123.00" routeLength="606.04" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="1" devices="tripinfo_rail1 routing_rail1" vType="railSlow" speedFactor="1.00" vaporized=""/>
-    <tripinfo id="rail2" depart="21.00" departLane="gneE1_0" departPos="0.00" departSpeed="13.89" departDelay="21.00" arrival="126.00" arrivalLane="gneE5_0" arrivalPos="146.43" arrivalSpeed="5.00" duration="105.00" routeLength="606.04" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="59.51" rerouteNo="1" devices="tripinfo_rail2 routing_rail2" vType="railFast" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="rail2" depart="21.00" departLane="gneE1_0" departPos="0.00" departSpeed="13.89" departDelay="21.00" arrival="135.00" arrivalLane="gneE5_0" arrivalPos="146.43" arrivalSpeed="13.89" duration="114.00" routeLength="606.04" waitingTime="63.00" waitingCount="0" stopTime="0.00" timeLoss="69.67" rerouteNo="1" devices="tripinfo_rail2 routing_rail2" vType="railFast" speedFactor="1.00" vaporized=""/>
 </tripinfos>

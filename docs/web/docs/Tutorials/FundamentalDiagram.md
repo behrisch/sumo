@@ -124,4 +124,4 @@ Some tests cases can be obtained at
 - [2lane_IDM](https://sumo.dlr.de/extractTest.php?path=sumo/cf_model/fundamental/2lane_IDM)
 
 !!! note
-    Theses tests set a low value of **--end** to save time. To get a fuller fundamental diagram, increase the end time.
+    These tests set a low value of **--end** to save time. To get a fuller fundamental diagram, increase the end time.

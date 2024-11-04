@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-03-16 22:13:16 by Eclipse SUMO sumo Version v1_16_0+1369-4e333104ec3
+<!-- generated on 2024-10-31 17:21:03 by Eclipse SUMO sumo Version v1_21_0+0539-52416b729a4
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -26,6 +26,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <processing>
         <default.speeddev value="0"/>
         <use-stop-ended value="true"/>
+        <use-stop-started value="true"/>
     </processing>
 
     <report>
@@ -38,7 +39,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <mesosim value="true"/>
     </mesoscopic>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
@@ -71,34 +72,54 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <stop lane="beg_0" endPos="6.00" arrival="60.00" until="50.00"/>
     </vehicle>
 
-    <vehicle id="until_before_depart" depart="60.00" arrival="103.00">
+    <vehicle id="until_before_arrival_with_ended" depart="1.00" arrival="106.00">
+        <route edges="beg end"/>
+        <stop lane="beg_0" endPos="6.00" arrival="60.00" until="50.00" ended="74.00"/>
+    </vehicle>
+
+    <vehicle id="ended_before_arrival" depart="1.00" arrival="107.00">
+        <route edges="beg end"/>
+        <stop lane="beg_0" endPos="6.00" arrival="60.00" until="70.00" ended="75.00"/>
+    </vehicle>
+
+    <vehicle id="ended_before_arrival_with_started" depart="1.00" arrival="107.00">
+        <route edges="beg end"/>
+        <stop lane="beg_0" endPos="6.00" arrival="60.00" until="70.00" started="1.00" ended="75.00"/>
+    </vehicle>
+
+    <vehicle id="ended_before_started" depart="54.00" arrival="108.00">
+        <route edges="beg end"/>
+        <stop lane="beg_0" endPos="6.00" arrival="40.00" until="70.00" started="54.00" ended="75.00"/>
+    </vehicle>
+
+    <vehicle id="until_before_depart" depart="64.00" arrival="108.00">
         <route edges="beg end"/>
         <stop lane="beg_0" endPos="6.00" until="50.00"/>
     </vehicle>
 
-    <vehicle id="until_before_depart_with_ended" depart="60.00" arrival="104.00">
+    <vehicle id="until_before_depart_with_ended" depart="65.00" arrival="109.00">
         <route edges="beg end"/>
-        <stop lane="beg_0" endPos="6.00" until="50.00" ended="66.00"/>
+        <stop lane="beg_0" endPos="6.00" until="50.00" ended="76.00"/>
     </vehicle>
 
-    <vehicle id="until_before_depart_with_ended2" depart="60.00" arrival="106.00">
+    <vehicle id="until_before_depart_with_ended2" depart="65.00" arrival="109.00">
         <route edges="beg end"/>
-        <stop lane="beg_0" endPos="6.00" until="50.00" ended="74.00"/>
+        <stop lane="beg_0" endPos="6.00" until="50.00" ended="77.00"/>
     </vehicle>
 
-    <vehicle id="arrival_before_depart" depart="60.00" arrival="107.00">
+    <vehicle id="arrival_before_depart" depart="65.00" arrival="110.00">
         <route edges="beg end"/>
         <stop lane="beg_0" endPos="6.00" arrival="40.00" duration="5.00"/>
     </vehicle>
 
-    <vehicle id="arrival_before_depart_with_started" depart="64.00" arrival="107.00">
+    <vehicle id="arrival_before_depart_with_started" depart="74.00" arrival="115.00">
         <route edges="beg end"/>
-        <stop lane="beg_0" endPos="6.00" arrival="40.00" duration="5.00" started="64.00"/>
+        <stop lane="beg_0" endPos="6.00" arrival="40.00" duration="5.00" started="74.00"/>
     </vehicle>
 
-    <vehicle id="arrival_before_depart_with_started2" depart="65.00" arrival="108.00">
+    <vehicle id="arrival_before_depart_with_started2" depart="75.00" arrival="116.00">
         <route edges="beg end"/>
-        <stop lane="beg_0" endPos="6.00" arrival="40.00" duration="5.00" started="65.00"/>
+        <stop lane="beg_0" endPos="6.00" arrival="40.00" duration="5.00" started="75.00"/>
     </vehicle>
 
 </routes>

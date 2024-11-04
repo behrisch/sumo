@@ -406,10 +406,12 @@ public:
      * @param[in] name Calibrator name
      * @param[in] file The file to read the routeprobe definitions from
      * @param[in] begin The time at which to start generating output
+     * @param[in] vTypes list of vehicle types to be affected
      * @param[in] parameters generic parameters
      */
     void buildRouteProbe(const CommonXMLStructure::SumoBaseObject* sumoBaseObject, const std::string& id, const std::string& edgeID, const SUMOTime period,
-                         const std::string& name, const std::string& file, const SUMOTime begin, const Parameterised::Map& parameters);
+                         const std::string& name, const std::string& file, const SUMOTime begin, const std::vector<std::string>& vTypes,
+                         const Parameterised::Map& parameters);
 
     /**@brief Builds a VariableSpeedSign (lane speed additional)
      * @param[in] sumoBaseObject sumo base object used for build

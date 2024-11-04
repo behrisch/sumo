@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
-"POT-Creation-Date: 2023-07-21 15:19+0200\n"
+"POT-Creation-Date: 2023-07-10 15:12+0200\n"
 "PO-Revision-Date: 2023-05-25 07:25+0000\n"
 "Last-Translator: yunpangfloetteroed <yun-pang.floetteroed@dlr.de>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"eclipse-sumo/python-tools/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/eclipse-sumo/python-tools/zh_Hant/>\n"
 "Language: zh-Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,118 +18,118 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.18-dev\n"
 
-#: C:\Repos\sumo/tools/game\runner.py:63
+#: D:\Repos\sumo/tools/game\runner.py:63
 msgid "Interactive Traffic Light"
 msgstr "互動式交通號誌"
 
-#: C:\Repos\sumo/tools/game\runner.py:64
+#: D:\Repos\sumo/tools/game\runner.py:64
 msgid "Research intersection Ingolstadt"
 msgstr "因戈爾施塔特(Ingolstadt) 市內的研究路口"
 
-#: C:\Repos\sumo/tools/game\runner.py:65
+#: D:\Repos\sumo/tools/game\runner.py:65
 msgid "Simple Junction"
 msgstr "簡單路口"
 
-#: C:\Repos\sumo/tools/game\runner.py:66
+#: D:\Repos\sumo/tools/game\runner.py:66
 msgid "Simple Junction (Demo)"
 msgstr "簡單路口(展示)"
 
-#: C:\Repos\sumo/tools/game\runner.py:67
+#: D:\Repos\sumo/tools/game\runner.py:67
 msgid "Four Junctions"
 msgstr "四個路口"
 
-#: C:\Repos\sumo/tools/game\runner.py:68
+#: D:\Repos\sumo/tools/game\runner.py:68
 msgid "Six Junctions"
 msgstr "六個路口"
 
-#: C:\Repos\sumo/tools/game\runner.py:69
+#: D:\Repos\sumo/tools/game\runner.py:69
 msgid "Prof. Kühne"
 msgstr "屈内(Kühne) 教授"
 
-#: C:\Repos\sumo/tools/game\runner.py:70
+#: D:\Repos\sumo/tools/game\runner.py:70
 msgid "3D Junction Virtual World"
 msgstr "三維路口虛擬世界"
 
-#: C:\Repos\sumo/tools/game\runner.py:71
+#: D:\Repos\sumo/tools/game\runner.py:71
 msgid "3D Junction OpenStreetMap"
 msgstr "三維路口開放街圖(OpenStreetMap)"
 
-#: C:\Repos\sumo/tools/game\runner.py:72
+#: D:\Repos\sumo/tools/game\runner.py:72
 msgid "Highway Ramp"
 msgstr "高速公路匝道"
 
-#: C:\Repos\sumo/tools/game\runner.py:73
+#: D:\Repos\sumo/tools/game\runner.py:73
 msgid "Combined Highway On and Off Ramp"
 msgstr "合併的高速公路上下匝道"
 
-#: C:\Repos\sumo/tools/game\runner.py:74
+#: D:\Repos\sumo/tools/game\runner.py:74
 msgid "Corridor"
 msgstr "走廊"
 
-#: C:\Repos\sumo/tools/game\runner.py:75
+#: D:\Repos\sumo/tools/game\runner.py:75
 msgid "Highway Ramp A10"
 msgstr "高速公路匝道 A10"
 
-#: C:\Repos\sumo/tools/game\runner.py:76
+#: D:\Repos\sumo/tools/game\runner.py:76
 msgid "Demand Responsive Transport (new)"
 msgstr "需求反應運輸(新)"
 
-#: C:\Repos\sumo/tools/game\runner.py:77
+#: D:\Repos\sumo/tools/game\runner.py:77
 msgid "DRT - Advanced (new)"
 msgstr "需求反應運輸(DRT) - 進階 (新)"
 
-#: C:\Repos\sumo/tools/game\runner.py:78
+#: D:\Repos\sumo/tools/game\runner.py:78
 msgid "DRT - Demo"
 msgstr "需求反應運輸(DRT) - 展示"
 
-#: C:\Repos\sumo/tools/game\runner.py:79 C:\Repos\sumo/tools/game\runner.py:89
+#: D:\Repos\sumo/tools/game\runner.py:79 D:\Repos\sumo/tools/game\runner.py:89
 msgid "Highscore"
 msgstr "排行榜"
 
-#: C:\Repos\sumo/tools/game\runner.py:80
+#: D:\Repos\sumo/tools/game\runner.py:80
 msgid "Reset Highscore"
 msgstr "重設排行榜"
 
-#: C:\Repos\sumo/tools/game\runner.py:81
+#: D:\Repos\sumo/tools/game\runner.py:81
 msgid "German"
 msgstr "德語"
 
-#: C:\Repos\sumo/tools/game\runner.py:82
+#: D:\Repos\sumo/tools/game\runner.py:82
 msgid "English"
 msgstr "英語"
 
-#: C:\Repos\sumo/tools/game\runner.py:83
+#: D:\Repos\sumo/tools/game\runner.py:83
 msgid "Italian"
 msgstr ""
 
-#: C:\Repos\sumo/tools/game\runner.py:84
+#: D:\Repos\sumo/tools/game\runner.py:84
 msgid "Spanish"
 msgstr ""
 
-#: C:\Repos\sumo/tools/game\runner.py:85
+#: D:\Repos\sumo/tools/game\runner.py:85
 msgid "French"
 msgstr ""
 
-#: C:\Repos\sumo/tools/game\runner.py:86
+#: D:\Repos\sumo/tools/game\runner.py:86
 msgid "Chinese (simplified)"
 msgstr ""
 
-#: C:\Repos\sumo/tools/game\runner.py:87
+#: D:\Repos\sumo/tools/game\runner.py:87
 msgid "Chinese (traditional)"
 msgstr ""
 
-#: C:\Repos\sumo/tools/game\runner.py:88
+#: D:\Repos\sumo/tools/game\runner.py:88
 msgid "Quit"
 msgstr "結束"
 
-#: C:\Repos\sumo/tools/game\runner.py:90
+#: D:\Repos\sumo/tools/game\runner.py:90
 msgid "Congratulations!"
 msgstr "恭喜!"
 
-#: C:\Repos\sumo/tools/game\runner.py:91
+#: D:\Repos\sumo/tools/game\runner.py:91
 msgid "Your Score"
 msgstr "您的分數"
 
-#: C:\Repos\sumo/tools/game\runner.py:92
+#: D:\Repos\sumo/tools/game\runner.py:92
 msgid "Continue"
 msgstr "繼續"

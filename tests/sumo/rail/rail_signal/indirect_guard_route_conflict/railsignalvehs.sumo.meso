@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-01 10:31:58 by Eclipse SUMO sumo Version v1_21_0+0544-8c77a935d25
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <tripinfo-output value="tripinfos.xml"/>
+        <railsignal-block-output value="railsignal_blocks.xml"/>
+        <railsignal-vehicle-output value="railsignal_vehicles.xml"/>
+    </output>
+
+    <processing>
+        <time-to-teleport.railsignal-deadlock value="200"/>
+        <default.speeddev value="0"/>
+    </processing>
+
+    <report>
+        <xml-validation value="never"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <mesoscopic>
+        <mesosim value="true"/>
+        <meso-junction-control value="true"/>
+    </mesoscopic>
+
+</sumoConfiguration>
+-->
+
+<railsignal-vehicle-output>
+    <railSignal id="B.A">
+        <link linkIndex="0" from="T12_0_0" to="T13_0_0">
+            <driveWay id="B.A.0">
+                <entry id="rail2" time="8.00" reason="1"/>
+                <exit id="rail2" time="35.00" reason="1"/>
+            </driveWay>
+            <subDriveWay id="B.A.0.0"/>
+        </link>
+    </railSignal>
+    <railSignal id="B.F">
+        <link linkIndex="0" from="T18_1_0" to="T17_1_0"/>
+    </railSignal>
+    <railSignal id="B.N1">
+        <link linkIndex="0" from="T5_0_0" to="T6_0_0"/>
+    </railSignal>
+    <railSignal id="B.N2">
+        <link linkIndex="0" from="T15_0_0" to="T16_0_0">
+            <driveWay id="B.N2.0">
+                <entry id="rail2" time="35.00" reason="1"/>
+                <exit id="rail2" time="51.00" reason="9"/>
+            </driveWay>
+        </link>
+    </railSignal>
+    <railSignal id="B.P1">
+        <link linkIndex="0" from="T5_1_0" to="T4_1_0"/>
+    </railSignal>
+    <railSignal id="B.P2">
+        <link linkIndex="0" from="T15_1_0" to="T14_1_0">
+            <driveWay id="B.P2.0">
+                <entry id="rail1" time="6.00" reason="1"/>
+                <exit id="rail1" time="48.00" reason="9"/>
+            </driveWay>
+            <subDriveWay id="B.P2.0.0"/>
+        </link>
+    </railSignal>
+    <departJunction id="A">
+        <driveWay id="A.d0"/>
+    </departJunction>
+    <departJunction id="B.N2">
+        <driveWay id="B.N2.d0"/>
+    </departJunction>
+</railsignal-vehicle-output>

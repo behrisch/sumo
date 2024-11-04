@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-10-30 15:08:52 by Eclipse SUMO netedit Version v1_21_0+0519-b8bbe24a86f
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <trip id="t_0" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="EdgeCenter1">
+        <stop busStop="busStopA" duration="60.00"/>
+        <stop busStop="busStopB" duration="60.00"/>
+    </trip>
+    <trip id="t_1" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="EdgeCenter0">
+        <stop trainStop="trainStopA" duration="60.00"/>
+        <stop trainStop="trainStopB" duration="60.00"/>
+    </trip>
+    <trip id="t_10" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="Edge2">
+        <stop parkingArea="parkingAreaA" duration="60.00" parking="1"/>
+    </trip>
+    <trip id="t_11" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge0" to="Edge0">
+        <stop lane="Edge0_1" startPos="49.49" endPos="59.49" duration="60.00"/>
+    </trip>
+    <trip id="t_2" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="EdgeCenter1">
+        <stop containerStop="containerStopA" duration="60.00"/>
+        <stop containerStop="containerStopB" duration="60.00"/>
+    </trip>
+    <trip id="t_3" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="EdgeCenter1">
+        <stop chargingStation="chargingStationA" duration="60.00"/>
+        <stop chargingStation="chargingStationB" duration="60.00"/>
+    </trip>
+    <trip id="t_4" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="EdgeCenter0">
+        <stop parkingArea="parkingAreaA" duration="60.00" parking="1"/>
+        <stop parkingArea="parkingAreaB" duration="60.00" parking="1"/>
+    </trip>
+    <trip id="t_5" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge0" to="Edge3">
+        <stop lane="Edge0_1" startPos="49.49" endPos="59.49" duration="60.00"/>
+        <stop lane="Edge3_1" startPos="6.72" endPos="16.72" duration="60.00"/>
+    </trip>
+    <trip id="t_6" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="Edge2">
+        <stop busStop="busStopA" duration="60.00"/>
+    </trip>
+    <trip id="t_7" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="Edge2">
+        <stop trainStop="trainStopA" duration="60.00"/>
+    </trip>
+    <trip id="t_8" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="Edge2">
+        <stop containerStop="containerStopA" duration="60.00"/>
+    </trip>
+    <trip id="t_9" type="DEFAULT_BIKETYPE" depart="0.00" from="Edge2" to="Edge2">
+        <stop chargingStation="chargingStationA" duration="60.00"/>
+    </trip>
+</routes>

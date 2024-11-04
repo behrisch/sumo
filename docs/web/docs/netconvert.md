@@ -578,7 +578,7 @@ Files](Basics/Using_the_Command_Line_Applications.md#configuration_files).
 
 By default, netconvert assumes networks to follow right-hand traffic
 rules. When importing importing/building a network for a jurisdiction
-wiht left-hand traffic, the option **--lefthand** must be set.
+with left-hand traffic, the option **--lefthand** must be set.
 
 Note, that this also influences geometries if the edges which make up a
 two-directional road are defined using the road-center-line as geometry.
@@ -588,7 +588,7 @@ left. This means that for some edges, the same input geometries can be
 used to build right-hand as well as left-hand networks. However, if the
 edge geometries are defined using the center-line of the directional
 edge (attribute \{\{XML|1=spreadType="center"/\>) then the geometries are
-only useable for a specific type of jurisdiction (networks with the
+only usable for a specific type of jurisdiction (networks with the
 wrong setting for **--lefthand** will look strange).
 
 # Warnings during Import

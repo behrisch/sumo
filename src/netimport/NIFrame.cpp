@@ -124,7 +124,7 @@ NIFrame::fillOptions(OptionsCont& oc, bool forNetedit) {
 
     oc.doRegister("matsim-files", new Option_FileName());
     oc.addSynonyme("matsim-files", "matsim");
-    oc.addDescription("matsim-files", "Input", TL("Read MATsim-net from FILE"));
+    oc.addDescription("matsim-files", "Input", TL("Read MATSim-net from FILE"));
 
     oc.doRegister("itsumo-files", new Option_FileName());
     oc.addSynonyme("itsumo-files", "itsumo");
@@ -234,7 +234,7 @@ NIFrame::fillOptions(OptionsCont& oc, bool forNetedit) {
 
     // register matsim options
     oc.doRegister("matsim.keep-length", new Option_Bool(false));
-    oc.addDescription("matsim.keep-length", "Formats", TL("The edge lengths given in the MATSIM-file will be kept"));
+    oc.addDescription("matsim.keep-length", "Formats", TL("The edge lengths given in the MATSim-file will be kept"));
 
     oc.doRegister("matsim.lanes-from-capacity", new Option_Bool(false));
     oc.addDescription("matsim.lanes-from-capacity", "Formats", TL("The lane number will be computed from the capacity"));

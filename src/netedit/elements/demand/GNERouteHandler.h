@@ -263,7 +263,15 @@ protected:
     GNEAdditional* parseTAZ(const SumoXMLTag tag, const std::string& TAZID);
 
     /// @brief parse edge
-    GNEEdge* parseEdge(const SumoXMLTag tag, const std::string& edgeID);
+    GNEEdge* parseEdge(const SumoXMLTag tag, const std::string& edgeID,
+                       const CommonXMLStructure::SumoBaseObject* sumoBaseObject,
+                       const bool firstEdge);
+
+    /// @brief parse stop edge
+    GNEEdge* parseStopEdge(const CommonXMLStructure::SumoBaseObject* sumoBaseObject) const;
+
+    /// @brief parse edge from lane ID
+    GNEEdge* parseEdgeFromLaneID(const std::string &laneID) const;
 
     /// @brief parse edges
     std::vector<GNEEdge*> parseEdges(const SumoXMLTag tag, const std::vector<std::string>& edgeIDs);

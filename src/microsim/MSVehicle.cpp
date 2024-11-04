@@ -5400,39 +5400,6 @@ MSVehicle::registerInsertionApproach(MSLink* link, double dist) {
 
 
 void
-MSVehicle::activateReminders(const MSMoveReminder::Notification reason, const MSLane* enteredLane) {
-    for (MoveReminderCont::iterator rem = myMoveReminders.begin(); rem != myMoveReminders.end();) {
-        // skip the reminder if it is a lane reminder but not for my lane (indicated by rem->second > 0.)
-        if (rem->first->getLane() != nullptr && rem->second > 0.) {
-#ifdef _DEBUG
-            if (myTraceMoveReminders) {
-                traceMoveReminder("notifyEnter_skipped", rem->first, rem->second, true);
-            }
-#endif
-            ++rem;
-        } else {
-            if (rem->first->notifyEnter(*this, reason, enteredLane)) {
-#ifdef _DEBUG
-                if (myTraceMoveReminders) {
-                    traceMoveReminder("notifyEnter", rem->first, rem->second, true);
-                }
-#endif
-                ++rem;
-            } else {
-#ifdef _DEBUG
-                if (myTraceMoveReminders) {
-                    traceMoveReminder("notifyEnter", rem->first, rem->second, false);
-                }
-//                std::cout << SIMTIME << " Vehicle '" << getID() << "' erases MoveReminder (with offset " << rem->second << ")" << std::endl;
-#endif
-                rem = myMoveReminders.erase(rem);
-            }
-        }
-    }
-}
-
-
-void
 MSVehicle::enterLaneAtMove(MSLane* enteredLane, bool onTeleporting) {
     myAmOnNet = !onTeleporting;
     // vaporizing edge?
