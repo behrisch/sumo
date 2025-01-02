@@ -73,15 +73,16 @@ jobs:
 
     - name: Building Examples and Tests
       run: |
-        export DYLD_FALLBACK_LIBRARY_PATH=$PWD/jupedsim-install/lib:$DYLD_FALLBACK_LIBRARY_PATH
         cd sumo/cmake-build
         make CTEST_OUTPUT_ON_FAILURE=1 examples test
 
     - name: Running texttest
       run: |
         brew install texttest
-        export DYLD_FALLBACK_LIBRARY_PATH=$PWD/jupedsim-install/lib:$DYLD_FALLBACK_LIBRARY_PATH
-        sumo/tests/runTests.sh -b ci -v ci -ts meta
+        python3 -m venv testenv --system-site-packages
+        source testenv/bin/activate
+        python3 -m pip install -r sumo/tools/req_ci.txt -r sumo/tools/requirements.txt
+        sumo/tests/runTests.sh -b ci -v ci.fast
 
     - name: Uploading artifacts (SUMO binaries and FMU)
       uses: actions/upload-artifact@v4
