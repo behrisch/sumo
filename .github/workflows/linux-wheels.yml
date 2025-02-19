@@ -19,7 +19,7 @@ jobs:
         path: sumo0
 
     - name: Check version
-      run: cd sumo0 && git describe
+      run: cd sumo0 && git describe --long --always
 
     - name: Cloning SUMO with tags
       uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
         path: sumo1
 
     - name: Check version
-      run: cd sumo1 && git describe
+      run: cd sumo1 && git describe --long --always
 
     - name: Cloning SUMO with depth 0
       uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
         path: sumo2
 
     - name: Check version
-      run: cd sumo2 && git describe
+      run: cd sumo2 && git describe --long --always
 
     - name: Cloning SUMO with depth 0 and tree filter
       uses: actions/checkout@v4
@@ -47,7 +47,7 @@ jobs:
         path: sumo3
 
     - name: Check version
-      run: cd sumo3 && git describe
+      run: cd sumo3 && git describe --long --always
 
     - name: Cloning SUMO with depth 0 and tree filter and tags
       uses: actions/checkout@v4
@@ -58,4 +58,4 @@ jobs:
         path: sumo4
 
     - name: Check version
-      run: cd sumo4 && git describe
+      run: cd sumo4 && git describe --long --always
