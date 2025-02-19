@@ -21,6 +21,9 @@ jobs:
     - name: Check version
       run: cd sumo0 && git describe --long --always
 
+    - name: Fetching SUMO tags
+      run: cd sumo0 && git fetch --tags --force && git describe --long --always
+
     - name: Cloning SUMO with tags
       uses: actions/checkout@v4
       with:
@@ -30,6 +33,9 @@ jobs:
     - name: Check version
       run: cd sumo1 && git describe --long --always
 
+    - name: Fetching SUMO tags
+      run: cd sumo1 && git fetch --tags --force && git describe --long --always
+
     - name: Cloning SUMO with depth 0
       uses: actions/checkout@v4
       with:
@@ -38,6 +44,9 @@ jobs:
 
     - name: Check version
       run: cd sumo2 && git describe --long --always
+
+    - name: Fetching SUMO tags
+      run: cd sumo2 && git fetch --tags --force && git describe --long --always
 
     - name: Cloning SUMO with depth 0 and tree filter
       uses: actions/checkout@v4
@@ -49,6 +58,9 @@ jobs:
     - name: Check version
       run: cd sumo3 && git describe --long --always
 
+    - name: Fetching SUMO tags
+      run: cd sumo3 && git fetch --tags --force && git describe --long --always
+
     - name: Cloning SUMO with depth 0 and tree filter and tags
       uses: actions/checkout@v4
       with:
@@ -59,3 +71,6 @@ jobs:
 
     - name: Check version
       run: cd sumo4 && git describe --long --always
+
+    - name: Fetching SUMO tags
+      run: cd sumo4 && git fetch --tags --force && git describe --long --always
