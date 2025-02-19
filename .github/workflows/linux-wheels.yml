@@ -17,6 +17,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: sumo0
+        ref: ${{ github.ref }}
 
     - name: Check version
       run: cd sumo0 && git describe --long --always
@@ -29,6 +30,7 @@ jobs:
       with:
         fetch-tags: true
         path: sumo1
+        ref: ${{ github.ref }}
 
     - name: Check version
       run: cd sumo1 && git describe --long --always
@@ -41,6 +43,7 @@ jobs:
       with:
         fetch-depth: 0
         path: sumo2
+        ref: ${{ github.ref }}
 
     - name: Check version
       run: cd sumo2 && git describe --long --always
@@ -54,6 +57,7 @@ jobs:
         fetch-depth: 0
         filter: tree:0
         path: sumo3
+        ref: ${{ github.ref }}
 
     - name: Check version
       run: cd sumo3 && git describe --long --always
@@ -68,6 +72,7 @@ jobs:
         filter: tree:0
         fetch-tags: true
         path: sumo4
+        ref: ${{ github.ref }}
 
     - name: Check version
       run: cd sumo4 && git describe --long --always
