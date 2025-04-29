@@ -33,4 +33,4 @@ jobs:
       run: |
         python -m pip install libsumo
         python -c "import libsumo; print(libsumo.__file__)"
-        python -c "import libsumo, subprocess; subprocess.call(["Dependencies\Dependencies.exe", "-modules", "-depth", "2", libsumo.__file__.replace('__init__.py', '_libsumo.pyd')])"
+        python -c "import libsumo, subprocess; subprocess.call(['Dependencies\Dependencies.exe', '-modules', '-depth', '2', libsumo.__file__.replace('__init__.py', '_libsumo.pyd')])"
