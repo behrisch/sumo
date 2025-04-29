@@ -33,7 +33,7 @@ jobs:
     - name: Testing dependency checker
       run: |
           Invoke-WebRequest -Uri https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x64_Release_.without.peview.exe.zip -OutFile Dependencies.zip
-          7z x -o Dependencies Dependencies.zip
+          7z x -oDependencies Dependencies.zip
           Dependencies\Dependencies.exe -help
           Dependencies.exe -help
 
