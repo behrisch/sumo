@@ -19,6 +19,24 @@ on:
     - cron:  '5 1 * * *'
 
 jobs:
+  test-deps:
+    runs-on: windows-latest
+
+    steps:
+    - name: Installing dependency checker
+      uses: engineerd/configurator@v0.0.9
+      with:
+        name: "Dependencies.exe"
+        url: "https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x64_Release_.without.peview.exe.zip"
+        pathInArchive: "Dependencies.exe"
+
+    - name: Testing dependency checker
+      run: |
+          Invoke-WebRequest -Uri https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x64_Release_.without.peview.exe.zip -OutFile Dependencies.zip
+          7z x -o Dependencies Dependencies.zip
+          Dependencies\Dependencies.exe -help
+          Dependencies.exe -help
+
   build-wheels:
     runs-on: windows-latest
     strategy:
