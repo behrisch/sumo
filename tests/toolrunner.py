@@ -35,5 +35,6 @@ if tool[0].endswith(".jar"):
 
 if tool[0].endswith(".py"):
     python = os.environ.get('PYTHON', 'python')
+    print(sys.executable, python, file=sys.stderr)
     tool = ([python] + tool) if python.endswith("2") else ([python, "-Wd"] + tool)
 subprocess.call(tool + sys.argv[1:], env=os.environ, stdout=sys.stdout, stderr=sys.stderr)
