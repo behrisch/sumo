@@ -1,3 +1,4 @@
+interpreter:python
 import_config_file:../config_all
 kill_timeout:900
 binary:$TEXTTEST_HOME/toolrunner.py
