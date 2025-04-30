@@ -43,7 +43,7 @@ jobs:
 
     - name: Installing libsumo
       run: |
-        python -m pip install -f python-wheels libsumo
+        python -m pip install libsumo
         python -c "import libsumo; print(libsumo.__file__)"
 
     - name: Running libsumo tests
