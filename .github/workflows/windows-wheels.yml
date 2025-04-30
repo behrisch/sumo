@@ -28,9 +28,12 @@ jobs:
           Invoke-WebRequest -Uri https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x64_Release_.without.peview.exe.zip -OutFile Dependencies.zip
           7z x -oDependencies Dependencies.zip
           Dependencies\Dependencies.exe -help
+          python -m pip install eclipse_sumo
+          python -c "import sumo; print('SUMO_HOME=' + sumo.SUMO_HOME)" >> $env:GITHUB_ENV
 
     - name: Installing libsumo
       run: |
         python -m pip install libsumo
         python -c "import libsumo; print(libsumo.__file__)"
+        $env:PATH += ";" + $env:SUMO_HOME + "\bin"
         python -c "import libsumo, subprocess; subprocess.call(['Dependencies\Dependencies.exe', '-modules', '-depth', '2', libsumo.__file__.replace('__init__.py', '_libsumo.pyd')])"
