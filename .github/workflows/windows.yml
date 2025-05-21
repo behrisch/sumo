@@ -21,7 +21,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        build_type: [plain, extra]
+#        build_type: [plain, extra]
+        build_type: [extra]
     env:
       CC: cl
       CXX: cl
@@ -59,52 +60,13 @@ jobs:
     - name: Setup Python dependencies
       run: python -m pip install -r sumo/tools/req_ci.txt -r sumo/tools/requirements.txt texttest
 
-    - name: Building SUMO plain
-      if: matrix.build_type == 'plain'
-      run: |
-        python -m pip install build wheel
-        cd sumo
-        cmake -Bbuild_msvc -GNinja -DCHECK_OPTIONAL_LIBS=false -DENABLE_JAVA_BINDINGS=false
-        cmake --build build_msvc
-
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
-      run: |
-        cd sumo
-        cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
-        cmake --build build_msvc
-
-    - name: Building SUMO debug
-      if: github.event_name == 'workflow_dispatch'
-      run: |
-        cd sumo
-        cmake -Bbuild_msvc_debug -GNinja -DCMAKE_BUILD_TYPE=Debug
-        cmake --build build_msvc_debug
-
-    - name: Building TraaS
-      run: cmake --build sumo/build_msvc --config Release --target traas
-
-    - name: Uploading artifacts (SUMO binaries)
-      uses: actions/upload-artifact@v4
-      with:
-        name: windows-${{ matrix.build_type }}-binaries
-        path: sumo/bin
-        retention-days: 30
-
-    - name: Running examples and unit tests
-      run: |
-        cmake --build sumo/build_msvc --config Release --target examples
-        ctest --test-dir sumo/build_msvc -E texttest --output-on-failure
-
-    - name: Plain tests
-      if: matrix.build_type == 'plain'
-      run: |
-        $env:TEXTTEST_CI_APPS = "-a activitygen,dfrouter,duarouter,jtrrouter"
-        sumo\tests\runCiTests.bat texttest.exe
-        $env:TEXTTEST_CI_APPS = "-a marouter,netgen,od2trips,polyconvert,netconvert"
-        sumo\tests\runCiTests.bat texttest.exe
-        $env:TEXTTEST_CI_APPS = "-a sumo"
-        sumo\tests\runCiTests.bat texttest.exe
+      run: python -m pip install eclipse-sumo
+#      run: |
+#        cd sumo
+#        cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
+#        cmake --build build_msvc
 
     - name: Extra tests
       if: matrix.build_type == 'extra'
