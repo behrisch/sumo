@@ -76,10 +76,13 @@ jobs:
         cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
-    - name: Extra tests
+    - name: complex tests
       run: |
         $env:TEXTTEST_CI_APPS = "-a complex"
         sumo\tests\runCiTests.bat texttest.exe
+
+    - name: Extra tests
+      run: |
         $env:TEXTTEST_CI_APPS = "-a sumo.meso,sumo.extra,netconvert.gdal,polyconvert.gdal"
         sumo\tests\runCiTests.bat texttest.exe
 
