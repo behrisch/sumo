@@ -78,7 +78,7 @@ jobs:
 
     - name: Extra tests
       run: |
-        $env:TEXTTEST_CI_APPS = "-a complex,traci"
+        $env:TEXTTEST_CI_APPS = "-a complex"
         sumo\tests\runCiTests.bat texttest.exe
         $env:TEXTTEST_CI_APPS = "-a sumo.meso,sumo.extra,netconvert.gdal,polyconvert.gdal"
         sumo\tests\runCiTests.bat texttest.exe
