@@ -66,9 +66,7 @@ jobs:
       if: matrix.build_type == 'extra'
       uses: lukka/run-vcpkg@v11
       with:
-        vcpkgDirectory: '${{ github.workspace }}/vcpkg'
-        vcpkgJsonGlob: '**/vcpkg.json'
-        useVcpkgCache: true
+        runVcpkgInstall: true
 
     - name: Building SUMO plain
       if: matrix.build_type == 'plain'
