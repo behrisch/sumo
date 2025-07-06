@@ -1,5 +1,5 @@
 {
-  "name": "SUMO",
+  "name": "sumo",
   "version-string": "0.1.0",
   "builtin-baseline": "f9c128a6f7a96f5fa2f6f089f37ed6788a90e4b0",
   "dependencies": [
