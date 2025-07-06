@@ -62,6 +62,14 @@ jobs:
         python -m pip install -r tools/req_ci.txt -r tools/requirements.txt texttest pipdeptree
         pipdeptree
 
+    - name: Run vcpkg
+      if: matrix.build_type == 'extra'
+      uses: lukka/run-vcpkg@v11
+      with:
+        vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+        vcpkgJsonGlob: '**/vcpkg.json'
+        useVcpkgCache: true
+
     - name: Building SUMO plain
       if: matrix.build_type == 'plain'
       run: |
@@ -72,7 +80,7 @@ jobs:
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
       run: |
-        cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
+        cmake -Bbuild_msvc -GNinja -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
     - name: Building SUMO debug
