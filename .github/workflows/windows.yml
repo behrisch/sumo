@@ -65,8 +65,8 @@ jobs:
     - name: Run vcpkg
       if: matrix.build_type == 'extra'
       uses: lukka/run-vcpkg@v11
-      with:
-        runVcpkgInstall: true
+#      with:
+##        runVcpkgInstall: true
 
     - name: Building SUMO plain
       if: matrix.build_type == 'plain'
@@ -78,7 +78,7 @@ jobs:
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
       run: |
-        cmake -Bbuild_msvc -GNinja -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake -DENABLE_JAVA_BINDINGS=false
+        cmake -B build_msvc -S . -A x64 -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
     - name: Building SUMO debug
