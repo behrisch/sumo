@@ -65,8 +65,8 @@ jobs:
     - name: Run vcpkg
       if: matrix.build_type == 'extra'
       uses: lukka/run-vcpkg@v11
-#      with:
-##        runVcpkgInstall: true
+      with:
+        runVcpkgInstall: true
 
     - name: Building SUMO plain
       if: matrix.build_type == 'plain'
