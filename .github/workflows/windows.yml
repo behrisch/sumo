@@ -79,7 +79,7 @@ jobs:
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
       run: |
-        Copy-Item -Path "*\vcpkg_installedinstalled\x64-windows" -Destination "SUMOLibraries\arrow-20.0.0"
+        Copy-Item -Path "*\vcpkg_installed\x64-windows" -Destination "SUMOLibraries\arrow-20.0.0"
         dir SUMOLibraries
         cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
