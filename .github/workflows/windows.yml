@@ -75,6 +75,7 @@ jobs:
       uses: lukka/run-vcpkg@v11
       with:
         runVcpkgInstall: true
+        vcpkgJsonGlob: build_config/vcpkg.json
 
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
