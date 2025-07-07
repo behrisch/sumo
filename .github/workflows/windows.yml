@@ -21,12 +21,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        build_type: [plain, extra]
+        build_type: [extra]
     env:
       CC: cl
       CXX: cl
       SUMO_LIBRARIES: D:\a\sumo\sumo\SUMOLibraries
       TEXTTEST_TMP: D:/texttest
+      VCPKG_MANIFEST_DIR: ${{ github.workspace }}/build_config
 
     steps:
     - name: Cloning SUMO
