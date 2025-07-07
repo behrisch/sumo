@@ -307,8 +307,9 @@ if (SUMO_LIBRARIES AND WIN32)
     file(GLOB FREETYPE_PATH "${SUMO_LIBRARIES}/3rdPartyLibs/freetype-2.??.?")
     file(GLOB EIGEN3_PATH "${SUMO_LIBRARIES}/eigen-3.?.?")
     file(GLOB GETTEXT_PATH "${SUMO_LIBRARIES}/gettext-?.??")
+    file(GLOB ARROW_PATH "${SUMO_LIBRARIES}/arrow-*")
     # set all paths in prefix
-    set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};${EIGEN3_PATH};${XERCES_PATH};${ZLIB_PATH};${PROJ_PATH};${FOX_PATH};${FREETYPE_PATH};${GETTEXT_PATH};${GETTEXT_PATH}/tools/gettext")
+    set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};${EIGEN3_PATH};${XERCES_PATH};${ZLIB_PATH};${PROJ_PATH};${FOX_PATH};${FREETYPE_PATH};${GETTEXT_PATH};${GETTEXT_PATH}/tools/gettext;${ARROW_PATH}")
     # save in variable SUMO_LIBRARIES_DLL all paths to dll files
     file(GLOB SUMO_LIBRARIES_DLL "${XERCES_PATH}/bin/*.dll"
                                  "${PROJ_PATH}/bin/*.dll"
@@ -317,6 +318,7 @@ if (SUMO_LIBRARIES AND WIN32)
                                  "${FREETYPE_PATH}/bin/*.dll"
                                  "${GETTEXT_PATH}/bin/*.dll"
                                  "${GDAL_PATH}/bin/*.dll"
+                                 "${ARROW_PATH}/bin/*.dll"
                                  "${SUMO_LIBRARIES}/libspatialite-*/bin/*.dll"
                                  "${SUMO_LIBRARIES}/geos-*/bin/*.dll"
                                  "${SUMO_LIBRARIES}/3rdPartyLibs/bzip2-*/bin/*.dll"
@@ -469,6 +471,7 @@ if (PARQUET)
         set(HAVE_PARQUET 1)
         set(ENABLED_FEATURES "${ENABLED_FEATURES} Parquet")
         set(PARQUET_LIBRARY Parquet::parquet_shared)
+        include_directories(SYSTEM ${ARROW_INCLUDE_DIR})
         # if (GTEST_FOUND)
         #     add_definitions("GTest_SOURCE=Bundled")
         # endif()

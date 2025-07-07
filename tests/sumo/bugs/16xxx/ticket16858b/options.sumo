@@ -1,0 +1,3 @@
+--no-step-log --net-file=net.net.xml
+-r input_routes.rou.xml
+--no-internal-links

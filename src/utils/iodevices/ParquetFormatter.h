@@ -244,7 +244,7 @@ inline void ParquetFormatter::writeAttr(std::ostream& into, const SumoXMLAttr at
             mySchema = *mySchema->AddField(mySchema->num_fields(), arrow::field(getAttrString(toString(attr)), arrow::float32()));
             myBuilders.push_back(std::make_shared<arrow::FloatBuilder>());
         }
-        myValues.push_back(isNull ? nullptr : std::make_shared<arrow::FloatScalar>(val));
+        myValues.push_back(isNull ? nullptr : std::make_shared<arrow::FloatScalar>((float)val));
     }
 }
 

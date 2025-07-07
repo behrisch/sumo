@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-04 15:12:35 by Eclipse SUMO netedit Version v1_23_1+0860-fdcc195bc5c
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <vType id="DEFAULT_VEHTYPE" sigma="0" speedDev="0" length="15"/>
+    <vehicle id="blocker2" depart="0.00" departPos="-1">
+        <route edges="E1 E1b E2 E4"/>
+        <stop edge="E1b" duration="400"/>
+    </vehicle>
+    <vehicle id="blocker1" depart="0.00" departPos="-1">
+        <route edges="E0 E2 E4"/>
+    </vehicle>
+    <vehicle id="ego" depart="0.00" departPos="-1" departLane="1">
+        <route edges="E0 E2 E4"/>
+    </vehicle>
+</routes>
