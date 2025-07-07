@@ -73,15 +73,15 @@ jobs:
     - name: Run vcpkg
       if: matrix.build_type == 'extra'
       uses: lukka/run-vcpkg@v11
-
-    - name: Run CMake consuming CMakePreset.json and run vcpkg to build packages
-      if: matrix.build_type == 'extra'
-      uses: lukka/run-cmake@v10
       with:
-        configurePreset: 'ninja-multi-vcpkg'
-        configurePresetAdditionalArgs: "['-DENABLE_JAVA_BINDINGS=false']"
-        buildPreset: 'ninja-multi-vcpkg'
-        buildPresetAdditionalArgs: "['--config Release']"
+        runVcpkgInstall: true
+
+    - name: Building SUMO extra
+      if: matrix.build_type == 'extra'
+      run: |
+        Copy-Item -Path "vcpkg\installed\x64-windows" -Destination "SUMOLibraries\arrow-20.0.0"
+        cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
+        cmake --build build_msvc
 
     - name: Building SUMO debug
       if: github.event_name == 'workflow_dispatch'
