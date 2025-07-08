@@ -23,10 +23,6 @@ jobs:
       matrix:
         build_type: [extra]
 
-    permissions:
-      actions: read
-      contents: read # Usually enabled by default. Needed for checkout
-
     env:
       CC: cl
       CXX: cl
@@ -74,18 +70,18 @@ jobs:
         cmake -Bbuild_msvc -GNinja -DCHECK_OPTIONAL_LIBS=false -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
-    - name: Restore vcpkg cache
+    - name: Cache vcpkg
       if: matrix.build_type == 'extra'
-      id: vcpkg-cache
-      uses: TAServers/vcpkg-cache@v3
+      uses: actions/cache@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        path: ${{ github.workspace }}/vcpkg_cache
+        key: ${{ hashFiles('build_config/vcpkg.json') }}
  
     - name: Run vcpkg
       if: matrix.build_type == 'extra'
-      env:
-        VCPKG_BINARY_SOURCES: "clear;files,${{ steps.vcpkg-cache.outputs.path }},readwrite"
       uses: lukka/run-vcpkg@v11
+      env:
+        VCPKG_BINARY_SOURCES: " clear;files,${{ github.workspace }}/vcpkg_cache,readwrite"
       with:
         runVcpkgInstall: true
         vcpkgJsonGlob: build_config/vcpkg.json
