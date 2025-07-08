@@ -4,5 +4,3 @@ Warning: Speed of straight connection 'i2_2->i3_2' reduced by 9.61 due to turnin
 Warning: Speed of straight connection 'i3_0->i4_0' reduced by 5.29 due to turning radius of 13.45 (length=5.96, angle=41.99).
 Warning: Speed of straight connection 'i3_1->i4_1' reduced by 7.10 due to turning radius of 8.39 (length=3.58, angle=41.99).
 Warning: 18 total messages of type: Speed of % connection '%' reduced by % due to turning radius of % (length=%, angle=%).
-Warning: Teleporting vehicle 'vehicle.960'; waited too long (wrong lane), lane='i7_1', time=3164.00.
-Warning: Vehicle 'vehicle.960' ends teleporting on edge 'e1', time=3195.00.

@@ -44,6 +44,9 @@ CSVFormatter::openTag(std::ostream& /* into */, const std::string& xmlElement) {
     if (!myWroteHeader) {
         myCurrentTag = xmlElement;
     }
+    if (myMaxDepth == myCurrentDepth && myWroteHeader && myCurrentTag != xmlElement) {
+        WRITE_WARNINGF("Encountered mismatch in XML tags (expected % but got %). Column names may be incorrect.", myCurrentTag, xmlElement);
+    }
 }
 
 
@@ -55,6 +58,9 @@ CSVFormatter::openTag(std::ostream& /* into */, const SumoXMLTag& xmlElement) {
     }
     if (!myWroteHeader) {
         myCurrentTag = toString(xmlElement);
+    }
+    if (myMaxDepth == myCurrentDepth && myWroteHeader && myCurrentTag != toString(xmlElement)) {
+        WRITE_WARNINGF("Encountered mismatch in XML tags (expected % but got %). Column names may be incorrect.", myCurrentTag, toString(xmlElement));
     }
 }
 
@@ -71,7 +77,7 @@ CSVFormatter::closeTag(std::ostream& into, const std::string& /* comment */) {
     }
     if (myCurrentDepth == myMaxDepth) {
         if (myCheckColumns && myExpectedAttrs != mySeenAttrs) {
-            throw ProcessError(TLF("Incomplete attribute set '%', this file format does not support CSV output yet.", toString(mySeenAttrs)));
+            WRITE_ERRORF("Incomplete attribute set '%', this file format does not support CSV output yet.", toString(mySeenAttrs));
         }
         for (auto it = myXMLStack.begin(); it != myXMLStack.end() - 1; ++it) {
             into << (*it)->str();

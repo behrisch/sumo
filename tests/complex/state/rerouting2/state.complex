@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-14 14:49:55 by Eclipse SUMO sumo Version v1_23_1+0571-0c0912eecef
+<!-- generated on 2025-07-07 17:31:50 by Eclipse SUMO sumo Version v1_23_1+0906-aec72dab441
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -27,7 +27,7 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="micro" version="v1_23_1+0571-0c0912eecef" time="500.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="micro" version="v1_23_1+0906-aec72dab441" time="500.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!v" state="0" edges="A0A1 E3E4"/>
     <route id="!v.0!var#1" state="0" edges="A0A1 A1A2 A2A3 A3B3 B3C3 C3D3 D3E3 E3E4"/>
     <route id="!v.1!var#1" state="0" edges="A0A1 A1A2 A2A3 A3B3 B3C3 C3D3 D3E3 E3E4"/>
@@ -709,6 +709,86 @@
     <delay number="116" begin="500" end="127" depart="29852.00" time="19861.00"/>
     <vType id="DEFAULT_VEHTYPE"/>
     <vType id="default" vClass="passenger" color="red"/>
+    <vehicle id="v.19" depart="19.00" departSpeed="avg" route="!v.19!var#1" distance="1200 1" speedFactor="1.1582" reroute="1" state="262320 39000 6 5.10 46000 374.23 499000 0 0" pos="184.90 179.90 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 46000 52000 101000">
+        <device id="vehroute_v.19" state="0 0.00 12.05 5.10 1 !NULL 19000 !v device.rerouting -1 0"/>
+        <device id="routing_v.19" state="0"/>
+    </vehicle>
+    <vehicle id="v.20" depart="20.00" departSpeed="avg" route="!v.20!var#1" distance="1200 1" speedFactor="1.0181" reroute="1" state="262320 41000 6 5.10 44000 360.96 499000 0 0" pos="177.40 172.40 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 44000 51000 99000">
+        <device id="vehroute_v.20" state="0 0.00 11.52 5.10 1 !NULL 20000 !v device.rerouting -1 0"/>
+        <device id="routing_v.20" state="50000"/>
+    </vehicle>
+    <vehicle id="v.22" depart="22.00" departSpeed="avg" route="!v.22!var#1" distance="1200 1" speedFactor="0.9750" reroute="1" state="262320 45000 6 5.10 43000 353.22 499000 0 0" pos="169.89 164.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 43000 50000 97000">
+        <device id="vehroute_v.22" state="0 0.00 11.43 5.10 1 !NULL 22000 !v device.rerouting -1 0"/>
+        <device id="routing_v.22" state="50000"/>
+    </vehicle>
+    <vehicle id="v.23" depart="23.00" departSpeed="avg" route="!v.23!var#1" distance="1200 1" speedFactor="0.8896" reroute="1" state="262320 47000 6 5.10 41000 342.16 499000 0 0" pos="162.39 157.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 41000 49000 96000">
+        <device id="vehroute_v.23" state="0 0.00 12.12 5.10 1 !NULL 23000 !v device.rerouting -1 0"/>
+        <device id="routing_v.23" state="0"/>
+    </vehicle>
+    <vehicle id="v.24" depart="24.00" departSpeed="avg" route="!v.24!var#1" distance="1200 1" speedFactor="0.8257" reroute="1" state="262320 49000 6 5.10 40000 332.31 499000 0 0" pos="154.89 149.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 40000 48000 95000">
+        <device id="vehroute_v.24" state="0 0.00 11.47 5.10 1 !NULL 24000 !v device.rerouting -1 0"/>
+        <device id="routing_v.24" state="0"/>
+    </vehicle>
+    <vehicle id="v.25" depart="25.00" departSpeed="avg" route="!v.25!var#1" distance="1200 1" speedFactor="0.8726" reroute="1" state="262320 51000 6 5.10 38000 337.25 499000 0 0" pos="147.39 142.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 38000 47000 94000">
+        <device id="vehroute_v.25" state="0 0.00 11.50 5.10 1 !NULL 25000 !v device.rerouting -1 0"/>
+        <device id="routing_v.25" state="0"/>
+    </vehicle>
+    <vehicle id="v.26" depart="26.00" departSpeed="avg" route="!v.26!var#1" distance="1200 1" speedFactor="0.9172" reroute="1" state="262320 53000 6 5.10 37000 341.23 499000 0 0" pos="139.89 134.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 37000 46000 91000">
+        <device id="vehroute_v.26" state="0 0.00 11.45 5.10 1 !NULL 26000 !v device.rerouting -1 0"/>
+        <device id="routing_v.26" state="0"/>
+    </vehicle>
+    <vehicle id="v.27" depart="27.00" departSpeed="avg" route="!v.27!var#1" distance="1200 1" speedFactor="0.9488" reroute="1" state="262320 55000 6 5.10 36000 343.29 499000 0 0" pos="132.39 127.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 36000 45000 89000 99000 207000">
+        <device id="vehroute_v.27" state="0 0.00 11.43 5.10 1 !NULL 27000 !v device.rerouting -1 0"/>
+        <device id="routing_v.27" state="50000"/>
+    </vehicle>
+    <vehicle id="v.29" depart="29.00" departSpeed="avg" route="!v.29!var#1" distance="1200 1" speedFactor="0.9313" reroute="1" state="262320 59000 6 5.10 33000 337.97 499000 0 0" pos="124.89 119.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 33000 44000 87000 98000 206000">
+        <device id="vehroute_v.29" state="0 0.00 11.26 5.10 1 !NULL 29000 !v device.rerouting -1 0"/>
+        <device id="routing_v.29" state="50000"/>
+    </vehicle>
+    <vehicle id="v.36" depart="36.00" departSpeed="avg" route="!v.36!var#1" distance="1200 1" speedFactor="0.9732" reroute="1" state="262320 73000 6 5.10 32000 328.92 499000 0 0" pos="117.39 112.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 32000 33000 34000 43000 86000 97000 204000">
+        <device id="vehroute_v.36" state="0 0.00 11.50 5.10 1 !NULL 36000 !v device.rerouting -1 0"/>
+        <device id="routing_v.36" state="0"/>
+    </vehicle>
+    <vehicle id="v.39" depart="39.00" departSpeed="avg" route="!v.39!var#1" distance="1200 1" speedFactor="0.9006" reroute="1" state="262320 79000 6 5.10 31000 315.69 499000 0 0" pos="109.89 104.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 31000 41000 85000 96000 203000">
+        <device id="vehroute_v.39" state="0 0.00 12.25 5.10 1 !NULL 39000 !v device.rerouting -1 0"/>
+        <device id="routing_v.39" state="50000"/>
+    </vehicle>
+    <vehicle id="v.41" depart="41.00" departSpeed="avg" route="!v.41!var#1" distance="1200 1" speedFactor="0.9571" reroute="1" state="262320 83000 6 5.10 30000 318.42 499000 0 0" pos="102.39 97.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 30000 31000 32000 40000 83000 95000 202000">
+        <device id="vehroute_v.41" state="0 0.00 11.88 5.10 1 !NULL 41000 !v device.rerouting -1 0"/>
+        <device id="routing_v.41" state="0"/>
+    </vehicle>
+    <vehicle id="v.47" depart="47.00" departSpeed="avg" route="!v.47!var#1" distance="1200 1" speedFactor="0.9005" reroute="1" state="262320 95000 6 5.10 28000 300.88 499000 0 0" pos="94.88 89.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 28000 39000 82000 94000 202000">
+        <device id="vehroute_v.47" state="0 0.00 12.51 5.10 1 !NULL 47000 !v device.rerouting -1 0"/>
+        <device id="routing_v.47" state="0"/>
+    </vehicle>
+    <vehicle id="v.48" depart="48.00" departSpeed="avg" route="!v.48!var#1" distance="1200 1" speedFactor="0.8769" reroute="1" state="262320 97000 6 5.10 25000 296.72 499000 0 0" pos="87.38 82.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 25000 26000 27000 38000 81000 93000 200000">
+        <device id="vehroute_v.48" state="0 0.00 12.18 5.10 1 !NULL 48000 !v device.rerouting -1 0"/>
+        <device id="routing_v.48" state="50000"/>
+    </vehicle>
+    <vehicle id="v.49" depart="49.00" departSpeed="avg" route="!v.49!var#1" distance="1200 1" speedFactor="0.8504" reroute="1" state="262320 99000 6 5.10 24000 292.08 499000 0 0" pos="79.88 74.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 24000 37000 80000 91000 198000">
+        <device id="vehroute_v.49" state="0 0.00 11.81 5.10 1 !NULL 49000 !v device.rerouting -1 0"/>
+        <device id="routing_v.49" state="0"/>
+    </vehicle>
+    <vehicle id="v.50" depart="50.00" departSpeed="avg" route="!v.50!var#1" distance="1200 1" speedFactor="0.8549" reroute="1" state="262320 101000 6 5.10 23000 291.28 499000 0 0" pos="72.38 67.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 23000 36000 79000 90000 196000">
+        <device id="vehroute_v.50" state="0 0.00 11.87 5.10 1 !NULL 50000 !v device.rerouting -1 0"/>
+        <device id="routing_v.50" state="0"/>
+    </vehicle>
+    <vehicle id="v.56" depart="56.00" departSpeed="avg" route="!v.56!var#1" distance="1200 1" speedFactor="0.8989" reroute="1" state="262320 113000 6 5.10 22000 285.10 499000 0 0" pos="64.88 59.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 22000 34000 77000 89000 195000">
+        <device id="vehroute_v.56" state="0 0.00 11.68 5.10 1 !NULL 56000 !v device.rerouting -1 0"/>
+        <device id="routing_v.56" state="50000"/>
+    </vehicle>
+    <vehicle id="v.65" depart="65.00" departSpeed="avg" route="!v.65!var#2" distance="1200 2" speedFactor="0.8823" reroute="1" state="262320 131000 6 5.10 50000 254.19 499000 0 0" pos="199.90 194.90 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 50000 54000 104000">
+        <device id="vehroute_v.65" state="0 0.00 12.26 5.10 2 !NULL 65000 !v device.rerouting -1 0 A0A1 131000 !v.65!var#1 device.rerouting 0 0"/>
+        <device id="routing_v.65" state="0"/>
+    </vehicle>
+    <vehicle id="v.66" depart="66.00" departSpeed="avg" route="!v.66!var#2" distance="1200 2" speedFactor="0.9068" reroute="1" state="262320 133000 6 5.10 49000 255.86 499000 0 0" pos="192.40 187.40 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 49000 53000 102000">
+        <device id="vehroute_v.66" state="0 0.00 12.09 5.10 2 !NULL 66000 !v device.rerouting -1 0 A0A1 133000 !v.66!var#1 device.rerouting 0 0"/>
+        <device id="routing_v.66" state="0"/>
+    </vehicle>
+    <vehicle id="v.91" depart="91.00" departSpeed="avg" route="!v.91!var#2" distance="1200 2" speedFactor="0.8918" reroute="1" state="262320 183000 6 5.10 20000 214.90 499000 0 0" pos="57.38 52.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 20000 33000 76000 87000 193000">
+        <device id="vehroute_v.91" state="0 0.00 12.39 5.10 2 !NULL 91000 !v device.rerouting -1 0 A0A1 183000 !v.91!var#1 device.rerouting 0 0"/>
+        <device id="routing_v.91" state="0"/>
+    </vehicle>
     <vehicle id="v.114" depart="114.00" departSpeed="avg" route="!v.114!var#2" distance="1000 2" speedFactor="1.0964" reroute="1" state="262320 230000 5 5.10 47000 190.54 499000 0 0" pos="199.90 194.90 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 47000 51000 125000">
         <device id="vehroute_v.114" state="0 0.00 11.91 5.10 2 !NULL 114000 !v device.rerouting -1 0 A0A1 230000 !v.114!var#1 device.rerouting 0 0"/>
         <device id="routing_v.114" state="0"/>
@@ -881,10 +961,6 @@
         <device id="vehroute_v.189" state="0 0.00 10.12 5.10 2 !NULL 189000 !v device.rerouting -1 0 A0A1 379000 !v.189!var#1 device.rerouting 0 0"/>
         <device id="routing_v.189" state="50000"/>
     </vehicle>
-    <vehicle id="v.19" depart="19.00" departSpeed="avg" route="!v.19!var#1" distance="1200 1" speedFactor="1.1582" reroute="1" state="262320 39000 6 5.10 46000 374.23 499000 0 0" pos="184.90 179.90 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 46000 52000 101000">
-        <device id="vehroute_v.19" state="0 0.00 12.05 5.10 1 !NULL 19000 !v device.rerouting -1 0"/>
-        <device id="routing_v.19" state="0"/>
-    </vehicle>
     <vehicle id="v.190" depart="190.00" departSpeed="avg" route="!v.190!var#2" distance="1000 2" speedFactor="0.9015" reroute="1" state="262320 381000 5 5.10 0 38.10 499000 0 0" pos="5.55 0.55 6.76" speed="6.76 5.21" angle="0.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.190" state="0 0.00 9.64 5.10 2 !NULL 190000 !v device.rerouting -1 0 A0A1 381000 !v.190!var#1 device.rerouting 0 0"/>
         <device id="routing_v.190" state="50000"/>
@@ -924,10 +1000,6 @@
     <vehicle id="v.199" depart="199.00" departSpeed="avg" route="!v.199!var#2" distance="600 2" speedFactor="0.8277" reroute="1" state="262320 398000 3 5.10 0 34.07 499000 0 0" pos="174.62 169.62 8.53" speed="8.53 10.06" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.199" state="0 0.00 7.86 5.10 2 !NULL 199000 !v device.rerouting -1 0 A0A1 398000 !v.199!var#1 device.rerouting 0 0"/>
         <device id="routing_v.199" state="0"/>
-    </vehicle>
-    <vehicle id="v.20" depart="20.00" departSpeed="avg" route="!v.20!var#1" distance="1200 1" speedFactor="1.0181" reroute="1" state="262320 41000 6 5.10 44000 360.96 499000 0 0" pos="177.40 172.40 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 44000 51000 99000">
-        <device id="vehroute_v.20" state="0 0.00 11.52 5.10 1 !NULL 20000 !v device.rerouting -1 0"/>
-        <device id="routing_v.20" state="50000"/>
     </vehicle>
     <vehicle id="v.200" depart="200.00" departSpeed="avg" route="!v.200!var#2" distance="600 2" speedFactor="0.9474" reroute="1" state="262320 400000 3 5.10 0 41.86 499000 0 0" pos="157.05 152.05 10.74" speed="10.74 11.07" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.200" state="0 0.00 7.53 5.10 2 !NULL 200000 !v device.rerouting -1 0 A0A1 400000 !v.200!var#1 device.rerouting 0 0"/>
@@ -1009,10 +1081,6 @@
         <device id="vehroute_v.219" state="0 0.00 6.51 5.10 2 !NULL 219000 !v device.rerouting -1 0 A0A1 443000 !v.219!var#1 device.rerouting 0 0"/>
         <device id="routing_v.219" state="50000"/>
     </vehicle>
-    <vehicle id="v.22" depart="22.00" departSpeed="avg" route="!v.22!var#1" distance="1200 1" speedFactor="0.9750" reroute="1" state="262320 45000 6 5.10 43000 353.22 499000 0 0" pos="169.89 164.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 43000 50000 97000">
-        <device id="vehroute_v.22" state="0 0.00 11.43 5.10 1 !NULL 22000 !v device.rerouting -1 0"/>
-        <device id="routing_v.22" state="50000"/>
-    </vehicle>
     <vehicle id="v.220" depart="220.00" departSpeed="avg" route="!v.220!var#2" distance="200 2" speedFactor="0.9959" reroute="1" state="262320 445000 1 5.10 0 29.48 499000 0 0" pos="144.27 139.27 6.38" speed="6.38 8.30" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.220" state="0 0.00 6.38 5.10 2 !NULL 220000 !v device.rerouting -1 0 A0A1 445000 !v.220!var#1 device.rerouting 0 0"/>
         <device id="routing_v.220" state="0"/>
@@ -1052,10 +1120,6 @@
     <vehicle id="v.229" depart="229.00" departSpeed="avg" route="!v.229!var#2" distance="200 2" speedFactor="0.9948" reroute="1" state="262320 467000 1 5.10 0 17.37 499000 0 0" pos="7.20 2.20 7.16" speed="7.16 5.55" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.229" state="0 0.00 6.44 5.10 2 !NULL 229000 !v device.rerouting -1 0 A0A1 467000 !v.229!var#1 device.rerouting 0 0"/>
         <device id="routing_v.229" state="50000"/>
-    </vehicle>
-    <vehicle id="v.23" depart="23.00" departSpeed="avg" route="!v.23!var#1" distance="1200 1" speedFactor="0.8896" reroute="1" state="262320 47000 6 5.10 41000 342.16 499000 0 0" pos="162.39 157.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 41000 49000 96000">
-        <device id="vehroute_v.23" state="0 0.00 12.12 5.10 1 !NULL 23000 !v device.rerouting -1 0"/>
-        <device id="routing_v.23" state="0"/>
     </vehicle>
     <vehicle id="v.230" depart="230.00" departSpeed="avg" route="!v.230!var#2" distance="0 2" speedFactor="1.0406" reroute="1" state="262320 470000 0 5.10 0 16.10 499000 0 0" pos="191.52 186.52 6.13" speed="6.13 5.91" angle="0.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.230" state="0 0.00 6.76 5.10 2 !NULL 230000 !v device.rerouting -1 0 A0A1 470000 !v.230!var#1 device.rerouting 0 0"/>
@@ -1097,10 +1161,6 @@
         <device id="vehroute_v.239" state="0 0.00 6.16 5.10 2 !NULL 239000 !v device.rerouting -1 0 A0A1 491000 !v.239!var#1 device.rerouting 0 0"/>
         <device id="routing_v.239" state="50000"/>
     </vehicle>
-    <vehicle id="v.24" depart="24.00" departSpeed="avg" route="!v.24!var#1" distance="1200 1" speedFactor="0.8257" reroute="1" state="262320 49000 6 5.10 40000 332.31 499000 0 0" pos="154.89 149.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 40000 48000 95000">
-        <device id="vehroute_v.24" state="0 0.00 11.47 5.10 1 !NULL 24000 !v device.rerouting -1 0"/>
-        <device id="routing_v.24" state="0"/>
-    </vehicle>
     <vehicle id="v.240" depart="240.00" departSpeed="avg" route="!v.240!var#2" distance="0 2" speedFactor="0.9511" reroute="1" state="262320 493000 0 5.10 0 3.22 499000 0 0" pos="41.86 36.86 4.54" speed="4.54 4.15" angle="0.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.240" state="0 0.00 6.12 5.10 2 !NULL 240000 !v device.rerouting -1 0 A0A1 493000 !v.240!var#1 device.rerouting 0 0"/>
         <device id="routing_v.240" state="50000"/>
@@ -1140,10 +1200,6 @@
     <vehicle id="v.249" depart="249.00" departSpeed="avg" route="!v.249!var#1" distance="0 1" speedFactor="1.1118" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.249" state="-1 0.00 -1.00 -1.00 1 !NULL 249000 !v device.rerouting -1 0"/>
         <device id="routing_v.249" state="50000"/>
-    </vehicle>
-    <vehicle id="v.25" depart="25.00" departSpeed="avg" route="!v.25!var#1" distance="1200 1" speedFactor="0.8726" reroute="1" state="262320 51000 6 5.10 38000 337.25 499000 0 0" pos="147.39 142.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 38000 47000 94000">
-        <device id="vehroute_v.25" state="0 0.00 11.50 5.10 1 !NULL 25000 !v device.rerouting -1 0"/>
-        <device id="routing_v.25" state="0"/>
     </vehicle>
     <vehicle id="v.250" depart="250.00" departSpeed="avg" route="!v.250!var#1" distance="0 1" speedFactor="0.9320" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.250" state="-1 0.00 -1.00 -1.00 1 !NULL 250000 !v device.rerouting -1 0"/>
@@ -1185,10 +1241,6 @@
         <device id="vehroute_v.259" state="-1 0.00 -1.00 -1.00 1 !NULL 259000 !v device.rerouting -1 0"/>
         <device id="routing_v.259" state="50000"/>
     </vehicle>
-    <vehicle id="v.26" depart="26.00" departSpeed="avg" route="!v.26!var#1" distance="1200 1" speedFactor="0.9172" reroute="1" state="262320 53000 6 5.10 37000 341.23 499000 0 0" pos="139.89 134.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 37000 46000 91000">
-        <device id="vehroute_v.26" state="0 0.00 11.45 5.10 1 !NULL 26000 !v device.rerouting -1 0"/>
-        <device id="routing_v.26" state="0"/>
-    </vehicle>
     <vehicle id="v.260" depart="260.00" departSpeed="avg" route="!v.260!var#1" distance="0 1" speedFactor="0.7524" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.260" state="-1 0.00 -1.00 -1.00 1 !NULL 260000 !v device.rerouting -1 0"/>
         <device id="routing_v.260" state="50000"/>
@@ -1228,10 +1280,6 @@
     <vehicle id="v.269" depart="269.00" departSpeed="avg" route="!v.269!var#1" distance="0 1" speedFactor="1.2622" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.269" state="-1 0.00 -1.00 -1.00 1 !NULL 269000 !v device.rerouting -1 0"/>
         <device id="routing_v.269" state="0"/>
-    </vehicle>
-    <vehicle id="v.27" depart="27.00" departSpeed="avg" route="!v.27!var#1" distance="1200 1" speedFactor="0.9488" reroute="1" state="262320 55000 6 5.10 36000 343.29 499000 0 0" pos="132.39 127.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 36000 45000 89000 99000 207000">
-        <device id="vehroute_v.27" state="0 0.00 11.43 5.10 1 !NULL 27000 !v device.rerouting -1 0"/>
-        <device id="routing_v.27" state="50000"/>
     </vehicle>
     <vehicle id="v.270" depart="270.00" departSpeed="avg" route="!v.270!var#1" distance="0 1" speedFactor="0.9713" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.270" state="-1 0.00 -1.00 -1.00 1 !NULL 270000 !v device.rerouting -1 0"/>
@@ -1312,10 +1360,6 @@
     <vehicle id="v.289" depart="289.00" departSpeed="avg" route="!v.289!var#1" distance="0 1" speedFactor="1.1941" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.289" state="-1 0.00 -1.00 -1.00 1 !NULL 289000 !v device.rerouting -1 0"/>
         <device id="routing_v.289" state="50000"/>
-    </vehicle>
-    <vehicle id="v.29" depart="29.00" departSpeed="avg" route="!v.29!var#1" distance="1200 1" speedFactor="0.9313" reroute="1" state="262320 59000 6 5.10 33000 337.97 499000 0 0" pos="124.89 119.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 33000 44000 87000 98000 206000">
-        <device id="vehroute_v.29" state="0 0.00 11.26 5.10 1 !NULL 29000 !v device.rerouting -1 0"/>
-        <device id="routing_v.29" state="50000"/>
     </vehicle>
     <vehicle id="v.290" depart="290.00" departSpeed="avg" route="!v.290!var#1" distance="0 1" speedFactor="0.9695" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.290" state="-1 0.00 -1.00 -1.00 1 !NULL 290000 !v device.rerouting -1 0"/>
@@ -1597,10 +1641,6 @@
         <device id="vehroute_v.359" state="-1 0.00 -1.00 -1.00 1 !NULL 359000 !v device.rerouting -1 0"/>
         <device id="routing_v.359" state="0"/>
     </vehicle>
-    <vehicle id="v.36" depart="36.00" departSpeed="avg" route="!v.36!var#1" distance="1200 1" speedFactor="0.9732" reroute="1" state="262320 73000 6 5.10 32000 328.92 499000 0 0" pos="117.39 112.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 32000 33000 34000 43000 86000 97000 204000">
-        <device id="vehroute_v.36" state="0 0.00 11.50 5.10 1 !NULL 36000 !v device.rerouting -1 0"/>
-        <device id="routing_v.36" state="0"/>
-    </vehicle>
     <vehicle id="v.360" depart="360.00" departSpeed="avg" route="!v.360!var#1" distance="0 1" speedFactor="1.1872" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.360" state="-1 0.00 -1.00 -1.00 1 !NULL 360000 !v device.rerouting -1 0"/>
         <device id="routing_v.360" state="0"/>
@@ -1721,10 +1761,6 @@
         <device id="vehroute_v.389" state="-1 0.00 -1.00 -1.00 1 !NULL 389000 !v device.rerouting -1 0"/>
         <device id="routing_v.389" state="0"/>
     </vehicle>
-    <vehicle id="v.39" depart="39.00" departSpeed="avg" route="!v.39!var#1" distance="1200 1" speedFactor="0.9006" reroute="1" state="262320 79000 6 5.10 31000 315.69 499000 0 0" pos="109.89 104.89 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 31000 41000 85000 96000 203000">
-        <device id="vehroute_v.39" state="0 0.00 12.25 5.10 1 !NULL 39000 !v device.rerouting -1 0"/>
-        <device id="routing_v.39" state="50000"/>
-    </vehicle>
     <vehicle id="v.390" depart="390.00" departSpeed="avg" route="!v.390!var#1" distance="0 1" speedFactor="1.0715" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.390" state="-1 0.00 -1.00 -1.00 1 !NULL 390000 !v device.rerouting -1 0"/>
         <device id="routing_v.390" state="50000"/>
@@ -1804,10 +1840,6 @@
     <vehicle id="v.409" depart="409.00" departSpeed="avg" route="!v.409!var#1" distance="0 1" speedFactor="0.9932" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.409" state="-1 0.00 -1.00 -1.00 1 !NULL 409000 !v device.rerouting -1 0"/>
         <device id="routing_v.409" state="50000"/>
-    </vehicle>
-    <vehicle id="v.41" depart="41.00" departSpeed="avg" route="!v.41!var#1" distance="1200 1" speedFactor="0.9571" reroute="1" state="262320 83000 6 5.10 30000 318.42 499000 0 0" pos="102.39 97.39 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 30000 31000 32000 40000 83000 95000 202000">
-        <device id="vehroute_v.41" state="0 0.00 11.88 5.10 1 !NULL 41000 !v device.rerouting -1 0"/>
-        <device id="routing_v.41" state="0"/>
     </vehicle>
     <vehicle id="v.410" depart="410.00" departSpeed="avg" route="!v.410!var#1" distance="0 1" speedFactor="1.1041" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.410" state="-1 0.00 -1.00 -1.00 1 !NULL 410000 !v device.rerouting -1 0"/>
@@ -2049,10 +2081,6 @@
         <device id="vehroute_v.469" state="-1 0.00 -1.00 -1.00 1 !NULL 469000 !v device.rerouting -1 0"/>
         <device id="routing_v.469" state="0"/>
     </vehicle>
-    <vehicle id="v.47" depart="47.00" departSpeed="avg" route="!v.47!var#1" distance="1200 1" speedFactor="0.9005" reroute="1" state="262320 95000 6 5.10 28000 300.88 499000 0 0" pos="94.88 89.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 28000 39000 82000 94000 202000">
-        <device id="vehroute_v.47" state="0 0.00 12.51 5.10 1 !NULL 47000 !v device.rerouting -1 0"/>
-        <device id="routing_v.47" state="0"/>
-    </vehicle>
     <vehicle id="v.470" depart="470.00" departSpeed="avg" route="!v.470!var#1" distance="0 1" speedFactor="1.0404" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.470" state="-1 0.00 -1.00 -1.00 1 !NULL 470000 !v device.rerouting -1 0"/>
         <device id="routing_v.470" state="0"/>
@@ -2092,10 +2120,6 @@
     <vehicle id="v.479" depart="479.00" departSpeed="avg" route="!v.479!var#1" distance="0 1" speedFactor="0.9399" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.479" state="-1 0.00 -1.00 -1.00 1 !NULL 479000 !v device.rerouting -1 0"/>
         <device id="routing_v.479" state="50000"/>
-    </vehicle>
-    <vehicle id="v.48" depart="48.00" departSpeed="avg" route="!v.48!var#1" distance="1200 1" speedFactor="0.8769" reroute="1" state="262320 97000 6 5.10 25000 296.72 499000 0 0" pos="87.38 82.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 4 0 25000 26000 27000 38000 81000 93000 200000">
-        <device id="vehroute_v.48" state="0 0.00 12.18 5.10 1 !NULL 48000 !v device.rerouting -1 0"/>
-        <device id="routing_v.48" state="50000"/>
     </vehicle>
     <vehicle id="v.480" depart="480.00" departSpeed="avg" route="!v.480!var#1" distance="0 1" speedFactor="1.0284" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.480" state="-1 0.00 -1.00 -1.00 1 !NULL 480000 !v device.rerouting -1 0"/>
@@ -2137,10 +2161,6 @@
         <device id="vehroute_v.489" state="-1 0.00 -1.00 -1.00 1 !NULL 489000 !v device.rerouting -1 0"/>
         <device id="routing_v.489" state="50000"/>
     </vehicle>
-    <vehicle id="v.49" depart="49.00" departSpeed="avg" route="!v.49!var#1" distance="1200 1" speedFactor="0.8504" reroute="1" state="262320 99000 6 5.10 24000 292.08 499000 0 0" pos="79.88 74.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 24000 37000 80000 91000 198000">
-        <device id="vehroute_v.49" state="0 0.00 11.81 5.10 1 !NULL 49000 !v device.rerouting -1 0"/>
-        <device id="routing_v.49" state="0"/>
-    </vehicle>
     <vehicle id="v.490" depart="490.00" departSpeed="avg" route="!v.490!var#1" distance="0 1" speedFactor="1.0827" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.490" state="-1 0.00 -1.00 -1.00 1 !NULL 490000 !v device.rerouting -1 0"/>
         <device id="routing_v.490" state="0"/>
@@ -2180,26 +2200,6 @@
     <vehicle id="v.499" depart="499.00" departSpeed="avg" route="!v.499!var#1" distance="0 1" speedFactor="1.2363" reroute="1" state="262320 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="0.00 0.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_v.499" state="-1 0.00 -1.00 -1.00 1 !NULL 499000 !v device.rerouting -1 0"/>
         <device id="routing_v.499" state="0"/>
-    </vehicle>
-    <vehicle id="v.50" depart="50.00" departSpeed="avg" route="!v.50!var#1" distance="1200 1" speedFactor="0.8549" reroute="1" state="262320 101000 6 5.10 23000 291.28 499000 0 0" pos="72.38 67.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 23000 36000 79000 90000 196000">
-        <device id="vehroute_v.50" state="0 0.00 11.87 5.10 1 !NULL 50000 !v device.rerouting -1 0"/>
-        <device id="routing_v.50" state="0"/>
-    </vehicle>
-    <vehicle id="v.56" depart="56.00" departSpeed="avg" route="!v.56!var#1" distance="1200 1" speedFactor="0.8989" reroute="1" state="262320 113000 6 5.10 22000 285.10 499000 0 0" pos="64.88 59.88 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 22000 34000 77000 89000 195000">
-        <device id="vehroute_v.56" state="0 0.00 11.68 5.10 1 !NULL 56000 !v device.rerouting -1 0"/>
-        <device id="routing_v.56" state="50000"/>
-    </vehicle>
-    <vehicle id="v.65" depart="65.00" departSpeed="avg" route="!v.65!var#2" distance="1200 2" speedFactor="0.8823" reroute="1" state="262320 131000 6 5.10 50000 254.19 499000 0 0" pos="199.90 194.90 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 50000 54000 104000">
-        <device id="vehroute_v.65" state="0 0.00 12.26 5.10 2 !NULL 65000 !v device.rerouting -1 0 A0A1 131000 !v.65!var#1 device.rerouting 0 0"/>
-        <device id="routing_v.65" state="0"/>
-    </vehicle>
-    <vehicle id="v.66" depart="66.00" departSpeed="avg" route="!v.66!var#2" distance="1200 2" speedFactor="0.9068" reroute="1" state="262320 133000 6 5.10 49000 255.86 499000 0 0" pos="192.40 187.40 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 49000 53000 102000">
-        <device id="vehroute_v.66" state="0 0.00 12.09 5.10 2 !NULL 66000 !v device.rerouting -1 0 A0A1 133000 !v.66!var#1 device.rerouting 0 0"/>
-        <device id="routing_v.66" state="0"/>
-    </vehicle>
-    <vehicle id="v.91" depart="91.00" departSpeed="avg" route="!v.91!var#2" distance="1200 2" speedFactor="0.8918" reroute="1" state="262320 183000 6 5.10 20000 214.90 499000 0 0" pos="57.38 52.38 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 3 0 20000 33000 76000 87000 193000">
-        <device id="vehroute_v.91" state="0 0.00 12.39 5.10 2 !NULL 91000 !v device.rerouting -1 0 A0A1 183000 !v.91!var#1 device.rerouting 0 0"/>
-        <device id="routing_v.91" state="0"/>
     </vehicle>
     <flowState id="v" begin="0.00" departSpeed="avg" period="1.00" next="500.00" end="700.00" route="!v" done="500" index="500" reroute="1"/>
     <lane id="A0A1_0">

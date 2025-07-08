@@ -1,10 +1,4 @@
 Warning: Missing yellow phase in tlLogic '0', program 'freaky' for tl-index 0 when switching to phase 1.
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '1o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '2o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '3o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '4o_0' is targeted by 4 'G'-links. (use 'g' instead)
+Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '1o_0' is targeted by 4 'G'-links. (use 'g' instead) Overall 4 lanes in 1 phases are unsafe.
 Warning: Missing yellow phase in tlLogic '0', program 'freaky' for tl-index 0 when switching to phase 1.
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '1o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '2o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '3o_0' is targeted by 4 'G'-links. (use 'g' instead)
-Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '4o_0' is targeted by 4 'G'-links. (use 'g' instead)
+Warning: Unsafe green phase 0 in tlLogic '0', program 'freaky'. Lane '1o_0' is targeted by 4 'G'-links. (use 'g' instead) Overall 4 lanes in 1 phases are unsafe.

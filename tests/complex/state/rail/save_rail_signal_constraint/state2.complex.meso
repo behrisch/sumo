@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-17 08:54:23 by Eclipse SUMO sumo Version v1_23_1+0606-06b23075d04
+<!-- generated on 2025-07-07 17:35:10 by Eclipse SUMO sumo Version v1_23_1+0906-aec72dab441
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -32,20 +32,20 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0606-06b23075d04" time="10.00" rail="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0906-aec72dab441" time="10.00" rail="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!between" state="0" edges="d e"/>
     <route id="!t0!var#1" state="0" edges="a b c"/>
     <route id="!t1" state="0" edges="d c c"/>
     <delay number="2" begin="3" end="0" depart="0.00" time="0.00"/>
     <vType id="train" length="50.00" vClass="rail"/>
-    <vehicle id="between" type="train" depart="0.00" departSpeed="max" route="!between" distance="0 0" speedFactor="1.0000" reroute="1" state="262162 0 0 0 1 0 14400 7200 9223372036854774807">
-        <device id="tripinfo_between" state="d_0 13.89 -0 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
-        <device id="routing_between" state="0"/>
-    </vehicle>
     <vehicle id="t0" type="train" depart="0.00" departSpeed="max" route="!t0!var#1" distance="0 1" speedFactor="1.0000" reroute="1" state="262162 0 0 0 1 0 14398 7199 9223372036854774807">
         <stop busStop="stop_c" arrival="100.00" duration="30.00" until="130.00"/>
         <device id="tripinfo_t0" state="a_0 13.89 -0 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
         <device id="routing_t0" state="0"/>
+    </vehicle>
+    <vehicle id="between" type="train" depart="0.00" departSpeed="max" route="!between" distance="0 0" speedFactor="1.0000" reroute="1" state="262162 0 0 0 1 0 14400 7200 9223372036854774807">
+        <device id="tripinfo_between" state="d_0 13.89 -0 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+        <device id="routing_between" state="0"/>
     </vehicle>
     <vehicle id="t1" type="train" depart="20.00" departSpeed="max" route="!t1" distance="0 0" speedFactor="1.0000" reroute="1" state="262162 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
         <stop busStop="stop_c" arrival="50.00" duration="30.00" until="80.00"/>

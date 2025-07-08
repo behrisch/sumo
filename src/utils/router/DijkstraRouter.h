@@ -157,7 +157,7 @@ public:
         // loop
         int num_visited = 0;
 #ifdef DijkstraRouter_DEBUG_QUERY_VISITED
-        DijkstraRouter_DEBUG_QUERY_VISITED_OUT << "<edgeData>\n <interval begin=\"" << time2string(msTime) << "\" end=\"" << toString(msTime + 1000) << "\">\n";
+        DijkstraRouter_DEBUG_QUERY_VISITED_OUT << "<edgeData>\n <interval begin=\"" << time2string(msTime) << "\" end=\"" << toString(msTime + 1000) << "\" id=\"" << Named::getIDSecure(vehicle) << "\">\n";
 #endif
         while (!this->myFrontierList.empty()) {
             num_visited += 1;

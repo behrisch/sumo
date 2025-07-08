@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-15 05:10:12 by Eclipse SUMO sumo Version v1_23_1+0573-d229b23078f
+<!-- generated on 2025-07-07 17:35:10 by Eclipse SUMO sumo Version v1_23_1+0906-aec72dab441
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -28,13 +28,17 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0573-d229b23078f" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0906-aec72dab441" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!persontrip_car1_0!var#1" state="0" edges="3/1to2/1 2/1to1/1 1/1to0/1"/>
     <route id="!persontrip_car2_0!var#1" state="0" edges="3/1to2/1 2/1to1/1 1/1to0/1"/>
     <route id="!persontrip_car_0!var#1" state="0" edges="3/1to2/1 2/1to1/1 1/1to0/1"/>
     <delay number="3" begin="3" end="0" depart="0.00" time="0.00"/>
     <vType id="DEFAULT_PEDTYPE" vClass="pedestrian"/>
     <vType id="DEFAULT_VEHTYPE" length="3.00" minGap="2.00" maxSpeed="10.00" impatience="0.50" accel="0.8" decel="4.5" sigma="0"/>
+    <vehicle id="persontrip_car_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" route="!persontrip_car_0!var#1" distance="0 1" speedFactor="1.0303" state="24576 2000 0 0 0 0 12000 2000 9223372036854774807">
+        <device id="vehroute_persontrip_car_0" state="10.00 0.00 1 !NULL 2000 persontrip_car_0 person:persontrip_car -1 0"/>
+        <device id="person_persontrip_car_0" state="0"/>
+    </vehicle>
     <vehicle id="persontrip_car1_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" route="!persontrip_car1_0!var#1" distance="0 1" speedFactor="0.8310" state="24576 2000 0 0 0 0 14034 2000 9223372036854774807">
         <device id="vehroute_persontrip_car1_0" state="8.31 0.00 1 !NULL 2000 persontrip_car1_0 person:persontrip_car1 -1 0"/>
         <device id="person_persontrip_car1_0" state="0"/>
@@ -42,10 +46,6 @@
     <vehicle id="persontrip_car2_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" route="!persontrip_car2_0!var#1" distance="0 1" speedFactor="1.0458" state="24576 2000 0 0 0 0 15664 2000 9223372036854774807">
         <device id="vehroute_persontrip_car2_0" state="7.32 0.00 1 !NULL 2000 persontrip_car2_0 person:persontrip_car2 -1 0"/>
         <device id="person_persontrip_car2_0" state="0"/>
-    </vehicle>
-    <vehicle id="persontrip_car_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" route="!persontrip_car_0!var#1" distance="0 1" speedFactor="1.0303" state="24576 2000 0 0 0 0 12000 2000 9223372036854774807">
-        <device id="vehroute_persontrip_car_0" state="10.00 0.00 1 !NULL 2000 persontrip_car_0 person:persontrip_car -1 0"/>
-        <device id="person_persontrip_car_0" state="0"/>
     </vehicle>
     <transportables type="person" state="3 4 0 1 0 0 0 0 0 0">
         <person id="persontrip_car" type="DEFAULT_PEDTYPE" depart="2.00" speedFactor="1.0600" state="262144 1 2000 0 -1 1 2000 persontrip_car_0 0">

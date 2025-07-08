@@ -1158,6 +1158,11 @@ MSLink::computeFoeArrivalTimeBraking(SUMOTime arrivalTime, const SUMOVehicle* fo
     // actual arrivalTime must fall on a simulation step
     if (arrivalTime - arrivalTime % DELTA_T == foeArrivalTime - foeArrivalTime % DELTA_T) {
         // foe enters the junction in the same step
+#ifdef MSLink_DEBUG_OPENED
+        if (gDebugFlag6) {
+            std::cout << "   foeAT before egoAT\n";
+        }
+#endif
         return foeArrivalTime;
     }
     if (arrivalTime % DELTA_T > 0) {
@@ -1170,10 +1175,20 @@ MSLink::computeFoeArrivalTimeBraking(SUMOTime arrivalTime, const SUMOVehicle* fo
     const double a = dt * d / 2;
     const double v = dist / STEPS2TIME(foeArrivalTime - SIMSTEP + DELTA_T);
     const double dist2 = dist - v * STEPS2TIME(arrivalTime - SIMSTEP);
+#ifdef MSLink_DEBUG_OPENED
+    if (gDebugFlag6) {
+        std::cout << "   dist=" << dist << " dist2=" << dist2
+            << " at=" << STEPS2TIME(arrivalTime)
+            << " fat=" << STEPS2TIME(foeArrivalTime)
+            << " dt=" << dt << " v=" << v << " m=" << m << " d=" << d << " a=" << a << "\n";
+    }
+#endif
     if (0.5 * v * v / m <= dist2) {
+#ifdef MSLink_DEBUG_OPENED
         if (gDebugFlag6) {
-            std::cout << "   dist=" << dist << " dist2=" << dist2 << " at=" << STEPS2TIME(arrivalTime) << " m=" << m << " d=" << d << " a=" << a << " canBrakeToStop\n";
+            std::cout << "   canBrakeToStop\n";
         }
+#endif
         fasb = 0;
         return foeArrivalTime + TIME2STEPS(30);
     }

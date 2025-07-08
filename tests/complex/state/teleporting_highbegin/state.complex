@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-14 14:49:59 by Eclipse SUMO sumo Version v1_23_1+0571-0c0912eecef
+<!-- generated on 2025-07-07 17:31:50 by Eclipse SUMO sumo Version v1_23_1+0906-aec72dab441
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -31,10 +31,15 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="micro" version="v1_23_1+0571-0c0912eecef" time="1576800330.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="micro" version="v1_23_1+0906-aec72dab441" time="1576800330.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="r1" state="1" edges="A0toB0 B0toC0 C0toD0 D0toE0 E0toF0 F0toF1 F1toE1 E1toD1 D1toC1 C1toB1 B1toA1 A1toA0 A0toA1 A1toA0"/>
     <delay number="14" begin="20" end="6" depart="104.00" time="1379.00"/>
     <vType id="DEFAULT_VEHTYPE" sigma="0"/>
+    <vehicle id="flow.2" depart="1576800004.00" route="r1" distance="182.52 0" speedFactor="1.0000" state="2240 1576800005000 12 5.10 73000 310.63 1576800329000 0 0" pos="8.40 3.40 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 2 0 73000 75000 175000"/>
+    <vehicle id="flow.4" depart="1576800008.00" route="r1" distance="169.2 0" speedFactor="1.0000" state="2240 1576800010000 11 5.10 29000 306.59 1576800329000 0 0" pos="8.40 3.40 0.00" speed="0.00 0.00" angle="180.00" posLat="0.00" waitingTime="100000 3 0 29000 30000 73000 76000 174000"/>
+    <vehicle id="flow.5" depart="1576800010.00" route="r1" distance="169.2 0" speedFactor="1.0000" state="2240 1576800012000 11 5.10 28000 305.13 1576800329000 0 0" pos="0.90 3.80 0.00" speed="0.00 0.00" angle="196.26" posLat="0.00" waitingTime="100000 3 0 28000 29000 72000 75000 173000"/>
+    <vehicle id="flow.7" depart="1576800014.00" route="r1" distance="146.3 0" speedFactor="1.0000" state="2240 1576800018000 10 5.10 0 300.91 1576800329000 0 0" pos="5.00 0.00 0.00" speed="0.00 0.00" angle="270.00" posLat="-1.60" waitingTime="100000 1 0 101000"/>
+    <vehicle id="flow.9" depart="1576800018.00" route="r1" distance="122.8 0" speedFactor="1.0000" state="2240 1576800023000 8 5.10 99000 296.99 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 1 0 99000"/>
     <vehicle id="flow.11" depart="1576800022.00" route="r1" distance="107.8 0" speedFactor="1.0000" state="2240 1576800028000 7 5.10 97000 293.07 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 1 0 97000"/>
     <vehicle id="flow.12" depart="1576800024.00" route="r1" distance="126.8 0" speedFactor="1.0000" state="2240 1576800031000 10 5.10 72000 265.97 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 2 0 72000 73000 174000"/>
     <vehicle id="flow.13" depart="1576800026.00" route="r1" distance="92.8 0" speedFactor="1.0000" state="2240 1576800033000 6 5.10 95000 289.15 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 2 0 95000 98000 198000"/>
@@ -44,11 +49,6 @@
     <vehicle id="flow.17" depart="1576800034.00" route="r1" distance="60 0" speedFactor="1.0000" state="2240 1576800043000 4 5.10 92000 281.51 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 92000 94000 194000"/>
     <vehicle id="flow.18" depart="1576800036.00" route="r1" distance="53.5 0" speedFactor="1.0000" state="2240 1576800046000 3 5.10 91000 279.05 1576800329000 0 0" pos="6.50 1.50 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 91000 93000 193000"/>
     <vehicle id="flow.19" depart="1576800038.00" route="r1" distance="45 0" speedFactor="1.0000" state="2240 1576800048000 3 5.10 90000 277.59 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 2 0 90000 92000 192000"/>
-    <vehicle id="flow.2" depart="1576800004.00" route="r1" distance="182.52 0" speedFactor="1.0000" state="2240 1576800005000 12 5.10 73000 310.63 1576800329000 0 0" pos="8.40 3.40 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 2 0 73000 75000 175000"/>
-    <vehicle id="flow.4" depart="1576800008.00" route="r1" distance="169.2 0" speedFactor="1.0000" state="2240 1576800010000 11 5.10 29000 306.59 1576800329000 0 0" pos="8.40 3.40 0.00" speed="0.00 0.00" angle="180.00" posLat="0.00" waitingTime="100000 3 0 29000 30000 73000 76000 174000"/>
-    <vehicle id="flow.5" depart="1576800010.00" route="r1" distance="169.2 0" speedFactor="1.0000" state="2240 1576800012000 11 5.10 28000 305.13 1576800329000 0 0" pos="0.90 3.80 0.00" speed="0.00 0.00" angle="196.26" posLat="0.00" waitingTime="100000 3 0 28000 29000 72000 75000 173000"/>
-    <vehicle id="flow.7" depart="1576800014.00" route="r1" distance="146.3 0" speedFactor="1.0000" state="2240 1576800018000 10 5.10 0 300.91 1576800329000 0 0" pos="5.00 0.00 0.00" speed="0.00 0.00" angle="270.00" posLat="-1.60" waitingTime="100000 1 0 101000"/>
-    <vehicle id="flow.9" depart="1576800018.00" route="r1" distance="122.8 0" speedFactor="1.0000" state="2240 1576800023000 8 5.10 99000 296.99 1576800329000 0 0" pos="7.50 2.50 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 1 0 99000"/>
     <vehicleTransfer id="flow.7" depart="1576800337500"/>
     <lane id=":E0_6_0">
         <vehicles value="flow.18"/>

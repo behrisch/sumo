@@ -204,6 +204,19 @@ MSLeaderInfo::hasStoppedVehicle() const {
 }
 
 
+bool
+MSLeaderInfo::hasVehicle(const MSVehicle* veh) const {
+    if (!myHasVehicles) {
+        return false;
+    }
+    for (int i = 0; i < (int)myVehicles.size(); ++i) {
+        if (myVehicles[i] == veh) {
+            return true;
+        }
+    }
+    return false;
+}
+
 void
 MSLeaderInfo::removeOpposite(const MSLane* lane) {
     for (int i = 0; i < (int)myVehicles.size(); ++i) {

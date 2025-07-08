@@ -192,9 +192,12 @@ def main(options, platform="x64"):
         status.printLog("Warning: Could not create nightly sumo-game.zip! (%s)" % e)
 
     if options.suffix == "extra":
-        buildWindowsSUMOWheel.main()
-        f = glob.glob(os.path.join(SUMO_HOME, "dist", "eclipse_sumo-*"))[0]
-        shutil.copy(f, os.path.join(options.remoteDir, "wheels"))
+        try:
+            buildWindowsSUMOWheel.main()
+            f = glob.glob(os.path.join(SUMO_HOME, "dist", "eclipse_sumo-*"))[0]
+            shutil.copy(f, os.path.join(options.remoteDir, "wheels"))
+        except Exception as e:
+            status.printLog("Warning: Could not create nightly sumo wheel! (%s)" % e)
 
     debug_handler = status.set_rotating_log(makeAllLog, log_handler)
     ret = status.log_subprocess(["cmake", "--build", ".", "--config", "Debug"], cwd=buildDir)

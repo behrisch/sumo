@@ -239,8 +239,13 @@ MSVehicleControl::saveState(OutputDevice& out) {
         out.writeAttr(SUMO_ATTR_PROBS, item.second->getProbs());
         out.closeTag();
     }
+    std::vector<SUMOVehicle*> sortedVehs;
     for (const auto& item : myVehicleDict) {
-        item.second->saveState(out);
+        sortedVehs.push_back(item.second);
+    }
+    std::sort(sortedVehs.begin(), sortedVehs.end(), ComparatorNumericalIdLess());
+    for (SUMOVehicle* veh : sortedVehs) {
+        veh->saveState(out);
     }
 }
 

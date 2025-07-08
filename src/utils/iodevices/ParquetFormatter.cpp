@@ -48,6 +48,9 @@ ParquetFormatter::openTag(std::ostream& /* into */, const std::string& xmlElemen
     if (!myWroteHeader) {
         myCurrentTag = xmlElement;
     }
+    if (myMaxDepth == (int)myXMLStack.size() && myWroteHeader && myCurrentTag != xmlElement) {
+        WRITE_WARNINGF("Encountered mismatch in XML tags (expected % but got %). Column names may be incorrect.", myCurrentTag, xmlElement);
+    }
 }
 
 
@@ -56,6 +59,9 @@ ParquetFormatter::openTag(std::ostream& /* into */, const SumoXMLTag& xmlElement
     myXMLStack.push_back(myValues.size());
     if (!myWroteHeader) {
         myCurrentTag = toString(xmlElement);
+    }
+    if (myMaxDepth == (int)myXMLStack.size() && myWroteHeader && myCurrentTag != toString(xmlElement)) {
+        WRITE_WARNINGF("Encountered mismatch in XML tags (expected % but got %). Column names may be incorrect.", myCurrentTag, toString(xmlElement));
     }
 }
 
@@ -77,8 +83,8 @@ ParquetFormatter::closeTag(std::ostream& into, const std::string& /* comment */)
         if (myCheckColumns && myExpectedAttrs != mySeenAttrs) {
             for (int i = 0; i < (int)myExpectedAttrs.size(); ++i) {
                 if (myExpectedAttrs.test(i) && !mySeenAttrs.test(i)) {
-                    throw ProcessError(TLF("Incomplete attribute set, '%' is missing. This file format does not support Parquet output yet.",
-                                           toString((SumoXMLAttr)i)));
+                    WRITE_ERRORF("Incomplete attribute set, '%' is missing. This file format does not support Parquet output yet.",
+                                 toString((SumoXMLAttr)i));
                 }
             }
         }

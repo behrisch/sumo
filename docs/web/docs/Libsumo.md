@@ -136,6 +136,13 @@ import org.eclipse.sumo.libsumo.StringVector;
 
 public class Test {
     public static void main(String[] args) {
+        if (System.getProperty("os.name").startsWith("Windows")) {
+            System.loadLibrary("iconv-2");
+            System.loadLibrary("intl-8");
+            System.loadLibrary("libcrypto-3-x64");
+            System.loadLibrary("libssl-3-x64");
+            System.loadLibrary("proj_9");
+        }
         System.loadLibrary("libsumojni");
         Simulation.start(new StringVector(new String[] {"sumo", "-c", "test.sumocfg"}));
         for (int i = 0; i < 5; i++) {
@@ -146,19 +153,19 @@ public class Test {
 }
 ```
 
-Please note that starting with SUMO 1.16.0 it seems to be necessary to preload more libraries
-on Windows, see https://github.com/eclipse-sumo/sumo/issues/12605
+Please note that starting with SUMO 1.16.0 it seems to be necessary to preload some libraries
+on Windows, see https://github.com/eclipse-sumo/sumo/issues/12605.
 
 ### compiling on Linux (make sure SUMO_HOME is set and sumo has been built)
 
 ```
-javac -cp $SUMO_HOME/bin/libsumo-1.8.0-SNAPSHOT.jar Test.java
+javac -cp $SUMO_HOME/bin/libsumo-{{Version}}-SNAPSHOT.jar Test.java
 ```
 
 ### running on Linux
 
 ```
-java -Djava.library.path=$SUMO_HOME/bin -cp $SUMO_HOME/bin/libsumo-1.8.0-SNAPSHOT.jar:. Test
+java -Djava.library.path=$SUMO_HOME/bin -cp $SUMO_HOME/bin/libsumo-{{Version}}-SNAPSHOT.jar:. Test
 ```
 
 ### casting subscription results

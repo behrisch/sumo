@@ -109,6 +109,9 @@ public:
     /// @brief whether a stopped vehicle is leader
     bool hasStoppedVehicle() const;
 
+    /// @brief whether the given vehicle is part of this leaderInfo
+    bool hasVehicle(const MSVehicle* veh) const;
+
     /// @brief remove vehicles that are driving in the opposite direction (fully or partially) on the given lane
     void removeOpposite(const MSLane* lane);
 

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on Wed Jun 17 11:40:34 2020 by Eclipse SUMO Version v1_6_0+0791-c319842b44
+<!-- generated on 2025-07-07 12:11:18 by Eclipse SUMO sumo Version v1_23_1+0902-3439667007f
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
 http://www.eclipse.org/legal/epl-v20.html
-SPDX-License-Identifier: EPL-2.0
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="net.net.xml"/>
@@ -28,7 +33,7 @@ SPDX-License-Identifier: EPL-2.0
         <no-step-log value="true"/>
     </report>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <netstate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netstate_file.xsd">
@@ -3914,7 +3919,7 @@ SPDX-License-Identifier: EPL-2.0
         </edge>
         <edge id="Wout">
             <lane id="Wout_0">
-                <vehicle id="early.10" pos="1.40" speed="1.60" posLat="0.00" speedLat="0.00"/>
+                <vehicle id="early.10" pos="1.40" speed="1.60" posLat="0.70" speedLat="0.70"/>
                 <vehicle id="early.7" pos="222.20" speed="11.11" posLat="0.00" speedLat="0.00"/>
             </lane>
         </edge>
@@ -3985,7 +3990,7 @@ SPDX-License-Identifier: EPL-2.0
         </edge>
         <edge id="Wout">
             <lane id="Wout_0">
-                <vehicle id="early.10" pos="3.80" speed="2.40" posLat="0.00" speedLat="0.00"/>
+                <vehicle id="early.10" pos="3.80" speed="2.40" posLat="0.40" speedLat="-0.30"/>
                 <vehicle id="early.7" pos="233.31" speed="11.11" posLat="0.00" speedLat="0.00"/>
             </lane>
         </edge>
@@ -4056,7 +4061,7 @@ SPDX-License-Identifier: EPL-2.0
         </edge>
         <edge id="Wout">
             <lane id="Wout_0">
-                <vehicle id="early.10" pos="7.00" speed="3.20" posLat="0.00" speedLat="0.00"/>
+                <vehicle id="early.10" pos="7.00" speed="3.20" posLat="0.00" speedLat="-0.40"/>
                 <vehicle id="early.7" pos="244.42" speed="11.11" posLat="0.00" speedLat="0.00"/>
             </lane>
         </edge>
