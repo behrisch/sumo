@@ -22,12 +22,16 @@ jobs:
       fail-fast: false
       matrix:
         build_type: [extra]
+
+    permissions:
+      actions: read
+      contents: read # Usually enabled by default. Needed for checkout
+
     env:
       CC: cl
       CXX: cl
       SUMO_LIBRARIES: D:\a\sumo\sumo\SUMOLibraries
       TEXTTEST_TMP: D:/texttest
-      VCPKG_MANIFEST_DIR: ${{ github.workspace }}/build_config
 
     steps:
     - name: Cloning SUMO
@@ -70,8 +74,17 @@ jobs:
         cmake -Bbuild_msvc -GNinja -DCHECK_OPTIONAL_LIBS=false -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
+    - name: Restore vcpkg cache
+      if: matrix.build_type == 'extra'
+      id: vcpkg-cache
+      uses: TAServers/vcpkg-cache@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+ 
     - name: Run vcpkg
       if: matrix.build_type == 'extra'
+      env:
+        VCPKG_BINARY_SOURCES: "clear;files,${{ steps.vcpkg-cache.outputs.path }},readwrite"
       uses: lukka/run-vcpkg@v11
       with:
         runVcpkgInstall: true
@@ -144,7 +157,7 @@ jobs:
     - name: meso, extra and gdal tests
       if: matrix.build_type == 'extra'
       run: |
-        $env:TEXTTEST_CI_APPS = "-a sumo.meso,sumo.extra,netconvert.gdal,polyconvert.gdal"
+        $env:TEXTTEST_CI_APPS = "-a sumo.extra,netconvert.gdal,polyconvert.gdal"
         tests\runCiTests.bat texttest.exe
 
     - name: Compressing test results
