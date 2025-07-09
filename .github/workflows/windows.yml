@@ -81,7 +81,7 @@ jobs:
       if: matrix.build_type == 'extra'
       uses: lukka/run-vcpkg@v11
       env:
-        VCPKG_BINARY_SOURCES: " clear;files,${{ github.workspace }}\vcpkg_cache,readwrite"
+        VCPKG_BINARY_SOURCES: "clear;files,${{ github.workspace }}/vcpkg_cache,readwrite"
       with:
         runVcpkgInstall: true
         vcpkgJsonGlob: build_config/vcpkg.json
