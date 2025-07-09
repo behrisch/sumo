@@ -20,6 +20,7 @@ title: ChangeLog
   - Fixed invalid emergency stop when vehicle is teleported beyond `arrivalEdge` attribute #16802
   - Fixed bug where parking outflow would be blocked due to numerical issues. #16809
   - Fixed invalid rail signal state when departing before crossed tracks #16819
+  - Fixed inconsistencies in emission value output. The option **--emission-output.precision** is now being applied also to [tripinfo](Simulation/Output/TripInfo.md) and [edgedata](Simulation/Output/Lane-_or_Edge-based_Emissions_Measures.md). #16832
 
 - netedit
   - link-direction arrows for spread bidi-rail are drawn in the correct spot #16718 (regression in 1.20.0)
@@ -69,7 +70,7 @@ title: ChangeLog
   - scaleTimeLine.py: Fixed invalid sorting of output #16744
   - sumolib.net.connection: No longer ignores connection permissions #16633
   - sumolib.xml.toXML: custom indent is now passed on #16734
-  - generateRerouters.py: fixed missing character in XML output #16815 
+  - generateRerouters.py: fixed missing character in XML output #16815
 
 ### Enhancements
 
@@ -82,6 +83,7 @@ title: ChangeLog
   - containerStop now supports elemnt `<access>` #16811
   - Vehroute output for persons and containers can now selectively be disalled via param key `"has.vehroute.person-device"`  #16820
   - It is now possible to model [trailers / marshalling](Specification/Logistics.md#trailers_and_rail_cars) by changing vehicle properties upon loading/unloading of containers #8800
+  - Experimental support for [CSV and Parquet output](TabularOutputs.md) #14694 #16791
 
 
 - meso
