@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        build_type: [extra]
+        build_type: [plain,extra,vcpkg]
 
     env:
       CC: cl
@@ -39,6 +39,7 @@ jobs:
         ref: ${{ github.ref }}
 
     - name: Cloning SUMO Libraries
+      if: matrix.build_type != 'vcpkg'
       uses: actions/checkout@v4
       with:
         repository: DLR-TS/SUMOLibraries
@@ -70,15 +71,15 @@ jobs:
         cmake -Bbuild_msvc -GNinja -DCHECK_OPTIONAL_LIBS=false -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
-    - name: Cache vcpkg
-      if: matrix.build_type == 'extra'
+    - name: Setup vcpkg cache
+      if: matrix.build_type == 'vcpkg'
       uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/vcpkg_cache
         key: ${{ hashFiles('build_config/vcpkg.json') }}
  
     - name: Run vcpkg
-      if: matrix.build_type == 'extra'
+      if: matrix.build_type == 'vcpkg'
       uses: lukka/run-vcpkg@v11
       env:
         VCPKG_BINARY_SOURCES: "clear;files,${{ github.workspace }}/vcpkg_cache,readwrite"
@@ -86,10 +87,15 @@ jobs:
         runVcpkgInstall: true
         vcpkgJsonGlob: build_config/vcpkg.json
 
+    - name: Building SUMO vcpkg
+      if: matrix.build_type == 'vcpkg'
+      run: |
+        cmake -Bbuild_msvc -GNinja -DCMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+        cmake --build build_msvc_vcpkg
+
     - name: Building SUMO extra
       if: matrix.build_type == 'extra'
       run: |
-        Copy-Item -Path "*\vcpkg_installed\x64-windows" -Destination "SUMOLibraries\arrow-20.0.0" -Recurse
         cmake -Bbuild_msvc -GNinja -DENABLE_JAVA_BINDINGS=false
         cmake --build build_msvc
 
