@@ -44,7 +44,7 @@ fi
 
 # Tuesday
 if [ "$(date +%u)" -eq 2 ]; then
-  for f in $TEXTTEST_HOME/netedit/testsuite.netedit.external.daily.elements.network.*; do
+  for f in $TEXTTEST_HOME/netedit/testsuite.netedit.external.daily.network.*; do
     base=`basename $f`
     texttest -a ${base:10} "$@" &
   done
@@ -60,7 +60,7 @@ fi
 
 # Thursday
 if [ "$(date +%u)" -eq 4 ]; then
-  for f in $TEXTTEST_HOME/netedit/testsuite.netedit.external.daily.demands.*; do
+  for f in $TEXTTEST_HOME/netedit/testsuite.netedit.external.daily.elements.demands.*; do
     base=`basename $f`
     texttest -a ${base:10} "$@" &
   done

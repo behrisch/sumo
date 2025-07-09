@@ -35,7 +35,7 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # remove phase
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.single.staticPhase.deleteButton)
+netedit.tlsDeletePhase(1)
 
 # type enter to save changes
 netedit.typeKey("enter")

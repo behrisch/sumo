@@ -131,7 +131,6 @@ FXDEFMAP(GNEApplicationWindow) GNEApplicationWindowMap[] = {
     FXMAPFUNC(SEL_UPDATE,   MID_GNE_TOOLBARFILE_RELOAD_SUMOCONFIG,  GNEApplicationWindow::onUpdReloadSumoConfig),
     FXMAPFUNC(SEL_COMMAND,  MID_HOTKEY_CTRL_SHIFT_S_SAVESUMOCONFIG, GNEApplicationWindow::onCmdSaveSumoConfig),
     FXMAPFUNC(SEL_UPDATE,   MID_HOTKEY_CTRL_SHIFT_S_SAVESUMOCONFIG, GNEApplicationWindow::onUpdSaveSumoConfig),
-    FXMAPFUNC(SEL_COMMAND,  MID_HOTKEY_CTRL_SHIFT_T_FOCUSTLSTABLE,  GNEApplicationWindow::onCmdFocusTLSTable),
     FXMAPFUNC(SEL_COMMAND,  MID_GNE_TOOLBARFILE_SAVESUMOCONFIG_AS,  GNEApplicationWindow::onCmdSaveSumoConfigAs),
     FXMAPFUNC(SEL_UPDATE,   MID_GNE_TOOLBARFILE_SAVESUMOCONFIG_AS,  GNEApplicationWindow::onUpdNeedsNetwork),
     // TLS
@@ -3510,16 +3509,6 @@ GNEApplicationWindow::onUpdSaveSumoConfig(FXObject* sender, FXSelector, void*) {
     } else {
         return sender->handle(this, FXSEL(SEL_COMMAND, ID_DISABLE), nullptr);
     }
-}
-
-
-long
-GNEApplicationWindow::onCmdFocusTLSTable(FXObject*, FXSelector, void*) {
-    // check that view exists
-    if (myViewNet && myViewNet->getEditModes().isCurrentSupermodeNetwork() && (myViewNet->getEditModes().networkEditMode == NetworkEditMode::NETWORK_TLS)) {
-        myViewNet->getViewParent()->getTLSEditorFrame()->focusTLSTable();
-    }
-    return 1;
 }
 
 

@@ -28,6 +28,8 @@ if test -z $HTTPS_PROXY; then
     yum install -y --nogpgcheck ccache libxerces-c-devel proj-devel fox16-devel bzip2-devel gl2ps-devel swig3 eigen3-devel
     yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
     yum install -y geos311-devel
+    yum install -y https://packages.apache.org/artifactory/arrow/centos/$(cut -d: -f5 /etc/system-release-cpe | cut -d. -f1)/apache-arrow-release-latest.rpm
+    yum install -y arrow-devel parquet-devel # For Apache Parquet
     pipx install -f patchelf==0.16.1.0  # see https://github.com/pypa/manylinux/issues/1421
 fi
 

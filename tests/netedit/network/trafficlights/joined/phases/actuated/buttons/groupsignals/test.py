@@ -32,7 +32,7 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # group signal
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.join.actuatedPhase.groupSignal)
+netedit.tlsGroupSignal()
 
 # type enter to save changes
 netedit.typeKey("enter")

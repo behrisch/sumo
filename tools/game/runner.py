@@ -120,17 +120,13 @@ if _UPLOAD:
     except Exception:
         printDebug("FAILED - disabling upload...")
         _UPLOAD = False
-if _UPLOAD:
-    print("Highscore upload is enabled. To disable call this script with 'noupload' argument.")
-else:
-    print("Upload is disabled.")
 
 
 def computeScoreFromWaitingTime(gamename, maxScore=10000):
     totalArrived = 0
     totalWaitingTime = 0
     complete = True
-    for s in sumolib.xml.parse(os.path.join(BASE, gamename, "stats.xml"), ("performance", "vehicleTripStatistics")):
+    for s in sumolib.xml.parse(os.path.join(BASE, "output", gamename + ".stats.xml"), ("performance", "vehicleTripStatistics")):
         if s.name == "performance":
             if float(s.end) != parseEndTime(os.path.join(BASE, gamename + ".sumocfg")):
                 return 0, 0, False
@@ -151,7 +147,7 @@ def computeScoreFromTimeLoss(gamename, maxScore=10000):
     waiting = None
     completed = False
 
-    for line in open(os.path.join(BASE, gamename, "log")):
+    for line in open(os.path.join(BASE, "output", gamename + ".log")):
         if "Reason: The final simulation step has been reached." in line:
             completed = True
         m = re.search('Inserted: ([0-9]*)', line)
@@ -191,7 +187,7 @@ def computeScoreDRT(gamename):
     rideStarted = 0
     rideFinished = 0
     rideCount = 0
-    for ride in sumolib.xml.parse(os.path.join(BASE, gamename, "tripinfos.xml"), 'ride'):
+    for ride in sumolib.xml.parse(os.path.join(BASE, "output", gamename + ".tripinfos.xml"), 'ride'):
         if float(ride.waitingTime) < 0:
             if _DEBUG:
                 print("negative waitingTime")
@@ -221,7 +217,7 @@ def computeScoreRail(gamename):
     expectedMeanWait = 360
     rideCount = 0
     score = 0
-    for ride in sumolib.xml.parse(os.path.join(BASE, gamename, "tripinfos.xml"), 'ride'):
+    for ride in sumolib.xml.parse(os.path.join(BASE, "output", gamename + ".tripinfos.xml"), 'ride'):
         wt = float(ride.waitingTime)
         if wt < 0:
             if _DEBUG:
@@ -245,7 +241,7 @@ def computeScoreSquare(gamename):
     timeLoss = 0
     tripCount = 0
     arrived = 0
-    for trip in sumolib.xml.parse(os.path.join(BASE, gamename, "tripinfos.xml"), 'tripinfo'):
+    for trip in sumolib.xml.parse(os.path.join(BASE, "output", gamename + ".tripinfos.xml"), 'tripinfo'):
         timeLoss += float(trip.timeLoss) + float(trip.departDelay)
         tripCount += 1
         if float(trip.arrival) > 0:
@@ -478,9 +474,10 @@ class StartDialog(Tkinter.Frame):
         binary = sumolib.checkBinary("sumo-gui", BASE)
         if binary == "sumo-gui":  # fallback in case SUMO_HOME env is not defined
             binary = sumolib.checkBinary("sumo-gui", os.path.join(SUMO_HOME, "bin"))
+        os.makedirs(os.path.join(BASE, "output"), exist_ok=True)
         self.ret = subprocess.call(
             [binary, "-S", "-G", "-Q", "-c", cfg, '-l', 'log',
-                '--output-prefix', "%s/" % self.category, '--language', self._langCode,
+                '--output-prefix', os.path.join("output", self.category + "."), '--language', self._langCode,
                 '--duration-log.statistics', '--statistic-output', 'stats.xml',
                 '--tripinfo-output.write-unfinished'], stderr=sys.stderr)
 

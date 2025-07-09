@@ -35,13 +35,13 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "NEMA")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "NEMA")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
 # move down
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.single.NEMAPhase.cleanStates)
+netedit.tlsCleanStates()
 
 # type enter to save changes
 netedit.typeKey("enter")

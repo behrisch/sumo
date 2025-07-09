@@ -233,6 +233,8 @@ MSDevice_Routing::rebuildRerouteCommand(SUMOTime start) {
         if (OptionsCont::getOptions().getBool("device.rerouting.synchronize")) {
             start -= start % myPeriod;
         }
+        // ensure stable sorting of events (for repeatable routing with randomness)
+        myRerouteCommand->priority = myHolder.getNumericalID();
         MSNet::getInstance()->getBeginOfTimestepEvents()->addEvent(myRerouteCommand, start);
     }
 }
@@ -345,6 +347,7 @@ MSDevice_Routing::saveState(OutputDevice& out) const {
     out.writeAttr(SUMO_ATTR_ID, getID());
     std::vector<std::string> internals;
     internals.push_back(toString(myPeriod));
+    internals.push_back(toString(myLastRouting));
     out.writeAttr(SUMO_ATTR_STATE, toString(internals));
     out.closeTag();
 }
@@ -354,6 +357,7 @@ void
 MSDevice_Routing::loadState(const SUMOSAXAttributes& attrs) {
     std::istringstream bis(attrs.getString(SUMO_ATTR_STATE));
     bis >> myPeriod;
+    bis >> myLastRouting;
     if (myHolder.hasDeparted()) {
         SUMOTime offset = myPeriod;
         if (myPeriod > 0) {

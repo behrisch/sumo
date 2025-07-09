@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-14 14:49:25 by Eclipse SUMO sumo Version v1_23_1+0571-0c0912eecef
+<!-- generated on 2025-07-08 16:26:06 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -18,20 +18,20 @@
     </report>
 
     <traci_server>
-        <remote-port value="55011"/>
+        <remote-port value="42473"/>
     </traci_server>
 
 </sumoConfiguration>
 -->
 
-<snapshot type="micro" version="v1_23_1+0571-0c0912eecef" time="1.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="micro" version="v1_23_1+0938-cf8b72380de" time="1.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!0" state="0" edges="WC CE"/>
     <delay number="1" begin="1" end="0" depart="0.00" time="0.00"/>
     <vType id="car" sigma="0"/>
     <vType id="ped" vClass="pedestrian"/>
     <vehicle id="0" type="car" depart="0.00" route="!0" distance="0 0" speedFactor="1.0600" reroute="1" state="262146 0 0 5.10 0 0.00 1000 0 0" pos="5.10 0.10 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="tripinfo_0" state="WC_0 0 0 -5.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
-        <device id="routing_0" state="0"/>
+        <device id="routing_0" state="0 0"/>
     </vehicle>
     <transportables type="person" state="1 1 0 0 0 0 0 0 0 0">
         <person id="p1" type="ped" depart="0.00" speedFactor="0.9383" state="262146 1 0 0 0 WC_0 0 2.56 -1 0 0 1 0 null null 0 CW_0 null null -1">
@@ -42,7 +42,7 @@
         <vehicles value="0"/>
     </lane>
     <tlLogic id="C" programID="0" phase="0" duration="1000"/>
-    <routingEngine>
+    <routingEngine last="1000">
         <edge id="WC" speed="13.85" pastSpeed="6.95 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
     </routingEngine>
 </snapshot>

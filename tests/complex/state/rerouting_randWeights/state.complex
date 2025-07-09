@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-09 09:01:59 by Eclipse SUMO sumo Version v1_23_1+0953-fd1a9fac310
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="vehroutes.xml"/>
+        <save-state.times value="500"/>
+        <save-state.files value="state.xml"/>
+        <save-state.rng value="true"/>
+    </output>
+
+    <routing>
+        <weights.random-factor value="5"/>
+        <device.rerouting.period value="30"/>
+    </routing>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>
+-->
+
+<snapshot type="micro" version="v1_23_1+0953-fd1a9fac310" time="500.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+    <rngState default="14844" routeHandler="256" insertionControl="0" device="0" device.btreceiver="0" driverState="0" device.toc="0">
+        <rngLane index="0" state="341"/>
+        <rngLane index="1" state="523"/>
+        <rngLane index="2" state="525"/>
+        <rngLane index="3" state="128"/>
+        <rngLane index="4" state="765"/>
+        <rngLane index="5" state="277"/>
+        <rngLane index="6" state="253"/>
+        <rngLane index="7" state="253"/>
+        <rngLane index="8" state="611"/>
+        <rngLane index="9" state="746"/>
+        <rngLane index="10" state="457"/>
+        <rngLane index="11" state="457"/>
+        <rngLane index="12" state="503"/>
+        <rngLane index="13" state="804"/>
+        <rngLane index="14" state="284"/>
+        <rngLane index="15" state="380"/>
+        <rngLane index="16" state="447"/>
+        <rngLane index="17" state="615"/>
+        <rngLane index="18" state="439"/>
+        <rngLane index="19" state="354"/>
+        <rngLane index="20" state="885"/>
+        <rngLane index="21" state="301"/>
+        <rngLane index="22" state="468"/>
+        <rngLane index="23" state="771"/>
+        <rngLane index="24" state="313"/>
+        <rngLane index="25" state="447"/>
+        <rngLane index="26" state="236"/>
+        <rngLane index="27" state="497"/>
+        <rngLane index="28" state="587"/>
+        <rngLane index="29" state="389"/>
+        <rngLane index="30" state="919"/>
+        <rngLane index="31" state="467"/>
+        <rngLane index="32" state="543"/>
+        <rngLane index="33" state="509"/>
+        <rngLane index="34" state="295"/>
+        <rngLane index="35" state="391"/>
+        <rngLane index="36" state="174"/>
+        <rngLane index="37" state="530"/>
+        <rngLane index="38" state="518"/>
+        <rngLane index="39" state="774"/>
+        <rngLane index="40" state="483"/>
+        <rngLane index="41" state="319"/>
+        <rngLane index="42" state="326"/>
+        <rngLane index="43" state="125"/>
+        <rngLane index="44" state="0"/>
+        <rngLane index="45" state="0"/>
+        <rngLane index="46" state="0"/>
+        <rngLane index="47" state="0"/>
+        <rngLane index="48" state="0"/>
+        <rngLane index="49" state="0"/>
+        <rngLane index="50" state="0"/>
+        <rngLane index="51" state="0"/>
+        <rngLane index="52" state="0"/>
+        <rngLane index="53" state="0"/>
+        <rngLane index="54" state="0"/>
+        <rngLane index="55" state="0"/>
+        <rngLane index="56" state="0"/>
+        <rngLane index="57" state="0"/>
+        <rngLane index="58" state="0"/>
+        <rngLane index="59" state="0"/>
+        <rngLane index="60" state="0"/>
+        <rngLane index="61" state="0"/>
+        <rngLane index="62" state="0"/>
+        <rngLane index="63" state="0"/>
+    </rngState>
+    <edgeControl lanes="1/1to2/1_0 3/1to2/1_0 2/1to3/1_0 1/0to1/1_0 1/1to0/1_0 1/1to1/2_0 4/1to4/2_0 2/0to2/1_0 2/1to2/0_0 0/0to0/1_0 1/2to1/1_0 2/2to1/2_0 2/0to3/0_0 3/2to4/2_0 1/1to1/0_0 2/1to2/2_0 3/1to4/1_0 3/1to3/2_0 4/2to3/2_0 2/0to1/0_0 0/1to0/0_0 2/2to2/1_0 4/0to4/1_0"/>
+    <route id="!10!var#1" state="0" edges="0/2to1/2 1/2to1/1 1/1to2/1 2/1to3/1 3/1to3/2"/>
+    <route id="!13!var#1" state="0" edges="1/2to1/1 1/1to1/2 1/2to2/2 2/2to3/2 3/2to4/2 4/2to4/1"/>
+    <route id="!21!var#2" state="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to0/1 0/1to0/2 0/2to0/1"/>
+    <route id="!23!var#2" state="0" edges="3/1to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to0/2"/>
+    <route id="!31!var#2" state="0" edges="1/0to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to4/1 4/1to4/2"/>
+    <route id="!40!var#1" state="0" edges="0/2to0/1 0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0"/>
+    <route id="!41!var#1" state="0" edges="4/1to4/2 4/2to3/2 3/2to3/1 3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0"/>
+    <route id="!42!var#2" state="0" edges="2/1to3/1 3/1to2/1 2/1to2/2 2/2to3/2"/>
+    <route id="!46!var#2" state="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to1/0 1/0to1/1 1/1to1/2 1/2to2/2"/>
+    <route id="!49!var#2" state="0" edges="0/0to0/1 0/1to0/2 0/2to1/2 1/2to2/2 2/2to1/2"/>
+    <route id="!51!var#1" state="0" edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/0"/>
+    <route id="!57!var#1" state="0" edges="1/1to0/1 0/1to1/1 1/1to2/1 2/1to1/1"/>
+    <route id="!58!var#2" state="0" edges="2/0to1/0 1/0to1/1 1/1to0/1 0/1to1/1"/>
+    <route id="!59!var#2" state="0" edges="3/0to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to1/1"/>
+    <route id="!60!var#2" state="0" edges="2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/0 4/0to4/1"/>
+    <route id="!61!var#1" state="0" edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1"/>
+    <route id="!64!var#1" state="0" edges="0/1to1/1 1/1to1/0 1/0to1/1"/>
+    <route id="!65!var#1" state="0" edges="2/1to3/1 3/1to2/1 2/1to2/2 2/2to1/2 1/2to0/2 0/2to1/2"/>
+    <route id="!67!var#2" state="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+    <route id="!69!var#2" state="0" edges="0/1to1/1 1/1to2/1 2/1to2/0 2/0to3/0 3/0to3/1"/>
+    <route id="!70!var#1" state="0" edges="2/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/0 0/0to0/1"/>
+    <route id="!71!var#1" state="0" edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
+    <route id="!72!var#2" state="0" edges="1/1to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to1/0"/>
+    <route id="!74!var#2" state="0" edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+    <route id="!77!var#2" state="0" edges="1/1to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to2/1"/>
+    <route id="!79!var#1" state="0" edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to2/1 2/1to2/0"/>
+    <route id="!81!var#2" state="0" edges="0/1to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to3/1 3/1to3/2"/>
+    <route id="!83!var#1" state="0" edges="0/1to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to1/1"/>
+    <route id="!84!var#1" state="0" edges="4/1to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to3/1"/>
+    <route id="!86!var#2" state="0" edges="4/0to3/0 3/0to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+    <route id="!87!var#1" state="0" edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to3/0"/>
+    <route id="!88!var#2" state="0" edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to4/1 4/1to4/2"/>
+    <route id="!90!var#2" state="0" edges="0/0to1/0 1/0to0/0 0/0to0/1 0/1to0/2"/>
+    <route id="!92!var#1" state="0" edges="1/1to2/1 2/1to1/1 1/1to1/0"/>
+    <route id="!93!var#1" state="0" edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to1/1 1/1to2/1"/>
+    <route id="!94!var#1" state="0" edges="1/1to1/0 1/0to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+    <route id="!96!var#1" state="0" edges="4/1to4/0 4/0to4/1 4/1to4/2"/>
+    <route id="!97!var#2" state="0" edges="0/0to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to3/0 3/0to2/0"/>
+    <route id="!99!var#1" state="0" edges="2/1to3/1 3/1to2/1 2/1to2/2"/>
+    <delay number="38" begin="100" end="61" depart="830.00" time="12398.00"/>
+    <vType id="DEFAULT_VEHTYPE"/>
+    <vehicle id="31" depart="103.00" route="!31!var#2" distance="2400 6" speedFactor="0.8784" reroute="1" state="262144 103000 6 5.10 0 109.35 499000 0 0" pos="122.99 117.99 7.55" speed="7.55 7.94" angle="0.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_31" state="0 0.00 0.00 5.10 6 !NULL 103000 !31 device.rerouting -1 0 1/0to0/0 133000 !31!var#1 device.rerouting 0 0 1/0to0/0 163000 !31!var#2 device.rerouting 0 0 0/0to1/0 193000 !31!var#1 device.rerouting 1 1 1/0to2/0 253000 !31!var#2 device.rerouting 2 2 1/0to2/0 283000 !31!var#1 device.rerouting 2 2"/>
+        <device id="routing_31" state="30000 493000"/>
+    </vehicle>
+    <vehicle id="41" depart="135.00" route="!41!var#1" distance="2000 5" speedFactor="0.8257" reroute="1" state="262144 135000 5 5.10 0 105.98 499000 0 0" pos="135.61 130.61 7.86" speed="7.86 7.46" angle="270.00" posLat="0.00" waitingTime="100000 1 72000 98000">
+        <device id="vehroute_41" state="0 0.00 0.00 5.10 5 !NULL 135000 !41 device.rerouting -1 0 4/1to4/2 165000 !41!var#1 device.rerouting 0 0 4/2to3/2 195000 !41!var#2 device.rerouting 1 1 3/2to3/1 255000 !41!var#1 device.rerouting 2 2 3/2to3/1 315000 !41!var#2 device.rerouting 2 2"/>
+        <device id="routing_41" state="30000 495000"/>
+    </vehicle>
+    <vehicle id="67" depart="170.00" route="!67!var#2" distance="2400 8" speedFactor="1.0052" reroute="1" state="262144 170000 6 5.10 0 81.32 499000 0 0" pos="94.75 89.75 9.76" speed="9.76 9.54" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_67" state="0 0.00 0.00 5.10 8 !NULL 170000 !67 device.rerouting -1 0 4/0to4/1 230000 !67!var#1 device.rerouting 0 0 4/1to3/1 260000 !67!var#2 device.rerouting 1 1 4/1to3/1 290000 !67!var#1 device.rerouting 1 1 3/1to3/2 320000 !67!var#2 device.rerouting 2 2 3/1to3/2 350000 !67!var#1 device.rerouting 2 2 3/2to2/2 380000 !67!var#2 device.rerouting 3 3 2/2to2/1 410000 !67!var#1 device.rerouting 4 4"/>
+        <device id="routing_67" state="30000 470000"/>
+    </vehicle>
+    <vehicle id="65" depart="179.00" route="!65!var#1" distance="800 3" speedFactor="1.0197" reroute="1" state="262144 309000 2 5.10 0 88.99 499000 0 0" pos="235.07 230.07 9.75" speed="9.75 9.87" angle="0.00" posLat="0.00" waitingTime="100000 1 27000 62000">
+        <device id="vehroute_65" state="0 0.00 0.00 5.10 3 !NULL 179000 !65 device.rerouting -1 0 2/1to3/1 339000 !65!var#1 device.rerouting 0 0 3/1to2/1 399000 !65!var#2 device.rerouting 1 1"/>
+        <device id="routing_65" state="30000 489000"/>
+    </vehicle>
+    <vehicle id="13" depart="197.00" route="!13!var#1" distance="1600 1" speedFactor="1.0304" reroute="1" state="262144 197000 4 5.10 0 113.64 499000 0 0" pos="345.99 340.99 9.19" speed="9.19 9.56" angle="90.00" posLat="0.00" waitingTime="100000 1 38000 69000">
+        <device id="vehroute_13" state="0 0.00 0.00 5.10 1 !NULL 197000 !13 device.rerouting -1 0"/>
+        <device id="routing_13" state="30000 497000"/>
+    </vehicle>
+    <vehicle id="86" depart="197.00" route="!86!var#2" distance="1600 2" speedFactor="0.9571" reroute="1" state="262144 206000 4 5.10 0 105.38 499000 0 0" pos="200.80 195.80 8.47" speed="8.47 9.54" angle="270.00" posLat="0.00" waitingTime="100000 1 26000 61000">
+        <device id="vehroute_86" state="0 0.00 0.00 5.10 2 !NULL 197000 !86 device.rerouting -1 0 4/0to3/0 236000 !86!var#1 device.rerouting 0 0"/>
+        <device id="routing_86" state="30000 476000"/>
+    </vehicle>
+    <vehicle id="10" depart="210.00" route="!10!var#1" distance="1600 5" speedFactor="0.9005" reroute="1" state="262144 210000 4 5.10 0 91.27 499000 0 0" pos="185.68 180.68 8.10" speed="8.10 8.17" angle="0.00" posLat="0.00" waitingTime="100000 2 26000 33000 87000 105000">
+        <device id="vehroute_10" state="0 0.00 0.00 5.10 5 !NULL 210000 !10 device.rerouting -1 0 0/2to1/2 240000 !10!var#1 device.rerouting 0 0 1/2to1/1 270000 !10!var#2 device.rerouting 1 1 1/2to1/1 300000 !10!var#1 device.rerouting 1 1 1/2to1/1 330000 !10!var#2 device.rerouting 1 1"/>
+        <device id="routing_10" state="30000 480000"/>
+    </vehicle>
+    <vehicle id="21" depart="213.00" route="!21!var#2" distance="2000 8" speedFactor="0.8769" reroute="1" state="262144 213000 5 5.10 0 41.07 499000 0 0" pos="152.91 147.91 8.71" speed="8.71 8.67" angle="270.00" posLat="0.00" waitingTime="100000 1 70000 86000">
+        <device id="vehroute_21" state="0 0.00 0.00 5.10 8 !NULL 213000 !21 device.rerouting -1 0 3/0to4/0 243000 !21!var#1 device.rerouting 0 0 4/0to3/0 273000 !21!var#2 device.rerouting 1 1 4/0to3/0 303000 !21!var#1 device.rerouting 1 1 2/0to2/1 363000 !21!var#2 device.rerouting 3 3 2/0to2/1 393000 !21!var#1 device.rerouting 3 3 2/0to2/1 423000 !21!var#2 device.rerouting 3 3 2/1to1/1 453000 !21!var#1 device.rerouting 4 4"/>
+        <device id="routing_21" state="30000 483000"/>
+    </vehicle>
+    <vehicle id="59" depart="215.00" route="!59!var#2" distance="1600 4" speedFactor="0.8549" reroute="1" state="262144 215000 4 5.10 0 53.37 499000 0 0" pos="376.75 371.75 8.28" speed="8.28 8.14" angle="180.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_59" state="0 0.00 0.00 5.10 4 !NULL 215000 !59 device.rerouting -1 0 3/0to3/1 245000 !59!var#1 device.rerouting 0 0 3/1to2/1 275000 !59!var#2 device.rerouting 1 1 3/1to2/1 305000 !59!var#1 device.rerouting 1 1"/>
+        <device id="routing_59" state="30000 485000"/>
+    </vehicle>
+    <vehicle id="46" depart="224.00" route="!46!var#2" distance="1600 4" speedFactor="1.1425" reroute="1" state="262144 228000 4 5.10 30000 96.48 499000 0 0" pos="399.00 394.00 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 2 0 30000 72000 73000">
+        <device id="vehroute_46" state="0 0.00 0.00 5.10 4 !NULL 224000 !46 device.rerouting -1 0 3/0to4/0 258000 !46!var#1 device.rerouting 0 0 4/0to3/0 288000 !46!var#2 device.rerouting 1 1 3/0to2/0 318000 !46!var#1 device.rerouting 2 2"/>
+        <device id="routing_46" state="30000 498000"/>
+    </vehicle>
+    <vehicle id="51" depart="226.00" route="!51!var#1" distance="2000 5" speedFactor="1.0236" reroute="1" state="262144 228000 5 5.10 0 63.68 499000 0 0" pos="127.25 122.25 9.17" speed="9.17 9.97" angle="180.00" posLat="0.00" waitingTime="100000 1 58000 59000">
+        <device id="vehroute_51" state="0 0.00 0.00 5.10 5 !NULL 226000 !51 device.rerouting -1 0 3/1to3/0 258000 !51!var#1 device.rerouting 0 0 3/0to2/0 288000 !51!var#2 device.rerouting 1 1 3/0to2/0 318000 !51!var#1 device.rerouting 1 1 2/0to1/0 378000 !51!var#2 device.rerouting 2 2"/>
+        <device id="routing_51" state="30000 498000"/>
+    </vehicle>
+    <vehicle id="71" depart="226.00" route="!71!var#1" distance="1200 1" speedFactor="0.9695" reroute="1" state="262144 234000 3 5.10 0 118.64 499000 0 0" pos="224.07 219.07 8.76" speed="8.76 8.87" angle="90.00" posLat="0.00" waitingTime="100000 2 27000 38000 88000 110000">
+        <device id="vehroute_71" state="0 0.00 0.00 5.10 1 !NULL 226000 !71 device.rerouting -1 0"/>
+        <device id="routing_71" state="30000 474000"/>
+    </vehicle>
+    <vehicle id="49" depart="229.00" route="!49!var#2" distance="1600 2" speedFactor="1.0825" reroute="1" state="262144 229000 4 5.10 0 89.29 499000 0 0" pos="361.26 356.26 10.25" speed="10.25 10.26" angle="270.00" posLat="0.00" waitingTime="100000 1 38000 70000">
+        <device id="vehroute_49" state="0 0.00 0.00 5.10 2 !NULL 229000 !49 device.rerouting -1 0 0/0to0/1 259000 !49!var#1 device.rerouting 0 0"/>
+        <device id="routing_49" state="30000 499000"/>
+    </vehicle>
+    <vehicle id="40" depart="231.00" route="!40!var#1" distance="1600 1" speedFactor="1.1193" reroute="1" state="262144 231000 4 5.10 0 91.93 499000 0 0" pos="375.90 370.90 10.31" speed="10.31 11.15" angle="90.00" posLat="0.00" waitingTime="100000 1 38000 74000">
+        <device id="vehroute_40" state="0 0.00 0.00 5.10 1 !NULL 231000 !40 device.rerouting -1 0"/>
+        <device id="routing_40" state="30000 471000"/>
+    </vehicle>
+    <vehicle id="74" depart="234.00" route="!74!var#2" distance="1200 6" speedFactor="0.9870" reroute="1" state="262144 234000 3 5.10 0 120.35 499000 0 0" pos="232.75 227.75 9.66" speed="9.66 9.01" angle="180.00" posLat="0.00" waitingTime="100000 1 27000 64000">
+        <device id="vehroute_74" state="0 0.00 0.00 5.10 6 !NULL 234000 !74 device.rerouting -1 0 4/1to3/1 264000 !74!var#1 device.rerouting 0 0 4/1to3/1 294000 !74!var#2 device.rerouting 0 0 3/1to2/1 324000 !74!var#1 device.rerouting 1 1 3/1to2/1 354000 !74!var#2 device.rerouting 1 1 3/1to2/1 384000 !74!var#1 device.rerouting 1 1"/>
+        <device id="routing_74" state="30000 474000"/>
+    </vehicle>
+    <vehicle id="84" depart="253.00" route="!84!var#1" distance="1200 1" speedFactor="0.8823" reroute="1" state="262144 255000 3 5.10 13000 63.35 499000 0 0" pos="399.00 394.00 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 1 0 13000">
+        <device id="vehroute_84" state="0 0.00 0.00 5.10 1 !NULL 253000 !84 device.rerouting -1 0"/>
+        <device id="routing_84" state="30000 495000"/>
+    </vehicle>
+    <vehicle id="79" depart="255.00" route="!79!var#1" distance="1200 3" speedFactor="0.9068" reroute="1" state="262144 255000 3 5.10 0 88.43 499000 0 0" pos="215.85 210.85 8.66" speed="8.66 8.96" angle="270.00" posLat="0.00" waitingTime="100000 1 27000 64000">
+        <device id="vehroute_79" state="0 0.00 0.00 5.10 3 !NULL 255000 !79 device.rerouting -1 0 3/0to4/0 285000 !79!var#1 device.rerouting 0 0 3/0to4/0 315000 !79!var#2 device.rerouting 0 0"/>
+        <device id="routing_79" state="30000 495000"/>
+    </vehicle>
+    <vehicle id="60" depart="271.00" route="!60!var#2" distance="1600 4" speedFactor="0.9146" reroute="1" state="262144 271000 4 5.10 0 48.44 499000 0 0" pos="47.39 42.39 8.53" speed="8.53 7.88" angle="0.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_60" state="0 0.00 0.00 5.10 4 !NULL 271000 !60 device.rerouting -1 0 2/0to2/1 301000 !60!var#1 device.rerouting 0 0 2/1to3/1 361000 !60!var#2 device.rerouting 1 1 2/1to3/1 391000 !60!var#1 device.rerouting 1 1"/>
+        <device id="routing_60" state="30000 481000"/>
+    </vehicle>
+    <vehicle id="97" depart="279.00" route="!97!var#2" distance="1600 2" speedFactor="1.0221" reroute="1" state="262144 279000 4 5.10 0 42.48 499000 0 0" pos="219.50 214.50 9.85" speed="9.85 9.39" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_97" state="0 0.00 0.00 5.10 2 !NULL 279000 !97 device.rerouting -1 0 0/0to0/1 309000 !97!var#1 device.rerouting 0 0"/>
+        <device id="routing_97" state="30000 489000"/>
+    </vehicle>
+    <vehicle id="88" depart="295.00" route="!88!var#2" distance="800 6" speedFactor="1.0230" reroute="1" state="262144 310000 2 5.10 0 79.82 499000 0 0" pos="322.01 317.01 10.04" speed="10.04 9.36" angle="90.00" posLat="0.00" waitingTime="100000 1 37000 69000">
+        <device id="vehroute_88" state="0 0.00 0.00 5.10 6 !NULL 295000 !88 device.rerouting -1 0 2/0to1/0 340000 !88!var#1 device.rerouting 0 0 2/0to1/0 370000 !88!var#2 device.rerouting 0 0 1/0to2/0 400000 !88!var#1 device.rerouting 1 1 1/0to2/0 430000 !88!var#2 device.rerouting 1 1 2/0to3/0 490000 !88!var#1 device.rerouting 2 2"/>
+        <device id="routing_88" state="30000 490000"/>
+    </vehicle>
+    <vehicle id="58" depart="298.00" route="!58!var#2" distance="800 2" speedFactor="0.9729" reroute="1" state="262144 317000 2 5.10 17000 59.28 499000 0 0" pos="399.00 394.00 0.00" speed="0.00 0.00" angle="270.00" posLat="0.00" waitingTime="100000 1 0 17000">
+        <device id="vehroute_58" state="0 0.00 0.00 5.10 2 !NULL 298000 !58 device.rerouting -1 0 2/0to1/0 377000 !58!var#1 device.rerouting 0 0"/>
+        <device id="routing_58" state="30000 497000"/>
+    </vehicle>
+    <vehicle id="72" depart="302.00" route="!72!var#2" distance="1600 4" speedFactor="1.0557" reroute="1" state="262144 302000 4 5.10 0 26.68 499000 0 0" pos="203.18 198.18 9.63" speed="9.63 10.49" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_72" state="0 0.00 0.00 5.10 4 !NULL 302000 !72 device.rerouting -1 0 1/1to0/1 332000 !72!var#1 device.rerouting 0 0 0/1to1/1 362000 !72!var#2 device.rerouting 1 1 0/1to1/1 392000 !72!var#1 device.rerouting 1 1"/>
+        <device id="routing_72" state="30000 482000"/>
+    </vehicle>
+    <vehicle id="94" depart="302.00" route="!94!var#1" distance="800 3" speedFactor="0.9551" reroute="1" state="262144 302000 2 5.10 21000 72.00 499000 0 0" pos="399.00 394.00 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 2 0 21000 70000 98000">
+        <device id="vehroute_94" state="0 0.00 0.00 5.10 3 !NULL 302000 !94 device.rerouting -1 0 1/1to1/0 332000 !94!var#1 device.rerouting 0 0 1/0to1/1 362000 !94!var#2 device.rerouting 1 1"/>
+        <device id="routing_94" state="30000 482000"/>
+    </vehicle>
+    <vehicle id="23" depart="305.00" route="!23!var#2" distance="800 2" speedFactor="0.9849" reroute="1" state="262144 388000 2 5.10 0 10.01 499000 0 0" pos="199.77 194.77 9.33" speed="9.33 9.00" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_23" state="0 0.00 0.00 5.10 2 !NULL 305000 !23 device.rerouting -1 0 3/1to4/1 388000 !23!var#1 device.rerouting 0 0"/>
+        <device id="routing_23" state="30000 478000"/>
+    </vehicle>
+    <vehicle id="42" depart="305.00" route="!42!var#2" distance="800 2" speedFactor="1.0325" reroute="1" state="262144 312000 2 5.10 0 89.20 499000 0 0" pos="214.84 209.84 9.52" speed="9.52 10.00" angle="0.00" posLat="0.00" waitingTime="100000 1 26000 60000">
+        <device id="vehroute_42" state="0 0.00 0.00 5.10 2 !NULL 305000 !42 device.rerouting -1 0 2/1to3/1 372000 !42!var#1 device.rerouting 0 0"/>
+        <device id="routing_42" state="30000 492000"/>
+    </vehicle>
+    <vehicle id="87" depart="310.00" route="!87!var#1" distance="1200 1" speedFactor="1.0169" reroute="1" state="262144 313000 3 5.10 0 41.10 499000 0 0" pos="278.56 273.56 9.12" speed="9.12 9.37" angle="90.00" posLat="0.00" waitingTime="100000 1 35000 52000">
+        <device id="vehroute_87" state="0 0.00 0.00 5.10 1 !NULL 310000 !87 device.rerouting -1 0"/>
+        <device id="routing_87" state="30000 493000"/>
+    </vehicle>
+    <vehicle id="61" depart="313.00" route="!61!var#1" distance="1200 1" speedFactor="0.9670" reroute="1" state="262144 316000 3 5.10 0 34.16 499000 0 0" pos="244.36 239.36 9.47" speed="9.47 8.57" angle="90.00" posLat="0.00" waitingTime="100000 1 34000 48000">
+        <device id="vehroute_61" state="0 0.00 0.00 5.10 1 !NULL 313000 !61 device.rerouting -1 0"/>
+        <device id="routing_61" state="30000 496000"/>
+    </vehicle>
+    <vehicle id="64" depart="323.00" route="!64!var#1" distance="800 1" speedFactor="1.0017" reroute="1" state="262144 324000 2 5.10 21000 56.56 499000 0 0" pos="391.50 386.50 0.00" speed="0.00 0.00" angle="0.00" posLat="0.00" waitingTime="100000 1 0 21000">
+        <device id="vehroute_64" state="0 0.00 0.00 5.10 1 !NULL 323000 !64 device.rerouting -1 0"/>
+        <device id="routing_64" state="30000 474000"/>
+    </vehicle>
+    <vehicle id="81" depart="324.00" route="!81!var#2" distance="1600 2" speedFactor="1.0428" reroute="1" state="262144 324000 4 5.10 0 16.10 499000 0 0" pos="62.13 57.13 9.32" speed="9.32 9.79" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_81" state="0 0.00 0.00 5.10 2 !NULL 324000 !81 device.rerouting -1 0 0/1to0/0 354000 !81!var#1 device.rerouting 0 0"/>
+        <device id="routing_81" state="30000 474000"/>
+    </vehicle>
+    <vehicle id="69" depart="341.00" route="!69!var#2" distance="800 4" speedFactor="1.0220" reroute="1" state="262144 341000 2 5.10 0 56.14 499000 0 0" pos="246.14 241.14 10.02" speed="10.02 10.18" angle="180.00" posLat="0.00" waitingTime="100000 1 27000 62000">
+        <device id="vehroute_69" state="0 0.00 0.00 5.10 4 !NULL 341000 !69 device.rerouting -1 0 0/1to1/1 371000 !69!var#1 device.rerouting 0 0 1/1to2/1 401000 !69!var#2 device.rerouting 1 1 1/1to2/1 431000 !69!var#1 device.rerouting 1 1"/>
+        <device id="routing_69" state="30000 491000"/>
+    </vehicle>
+    <vehicle id="57" depart="347.00" route="!57!var#1" distance="800 1" speedFactor="1.0167" reroute="1" state="262144 391000 2 5.10 0 11.19 499000 0 0" pos="189.34 184.34 9.53" speed="9.53 9.06" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_57" state="0 0.00 0.00 5.10 1 !NULL 347000 !57 device.rerouting -1 0"/>
+        <device id="routing_57" state="30000 481000"/>
+    </vehicle>
+    <vehicle id="77" depart="347.00" route="!77!var#2" distance="800 4" speedFactor="0.8918" reroute="1" state="262144 391000 2 5.10 0 9.89 499000 0 0" pos="80.02 75.02 7.68" speed="7.68 8.39" angle="180.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_77" state="0 0.00 0.00 5.10 4 !NULL 347000 !77 device.rerouting -1 0 1/1to1/2 421000 !77!var#1 device.rerouting 0 0 1/2to2/2 451000 !77!var#2 device.rerouting 1 1 1/2to2/2 481000 !77!var#1 device.rerouting 1 1"/>
+        <device id="routing_77" state="30000 481000"/>
+    </vehicle>
+    <vehicle id="90" depart="347.00" route="!90!var#2" distance="800 2" speedFactor="0.8336" reroute="1" state="262144 350000 2 5.10 0 13.25 499000 0 0" pos="336.69 331.69 7.17" speed="7.17 7.79" angle="0.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_90" state="0 0.00 0.00 5.10 2 !NULL 347000 !90 device.rerouting -1 0 0/0to1/0 380000 !90!var#1 device.rerouting 0 0"/>
+        <device id="routing_90" state="30000 470000"/>
+    </vehicle>
+    <vehicle id="83" depart="353.00" route="!83!var#1" distance="800 3" speedFactor="0.9214" reroute="1" state="262144 353000 2 5.10 0 26.20 499000 0 0" pos="308.92 303.92 8.95" speed="8.95 7.99" angle="0.00" posLat="0.00" waitingTime="100000 1 38000 49000">
+        <device id="vehroute_83" state="0 0.00 0.00 5.10 3 !NULL 353000 !83 device.rerouting -1 0 0/1to0/0 383000 !83!var#1 device.rerouting 0 0 0/0to1/0 413000 !83!var#2 device.rerouting 1 1"/>
+        <device id="routing_83" state="30000 473000"/>
+    </vehicle>
+    <vehicle id="96" depart="355.00" route="!96!var#1" distance="800 1" speedFactor="1.0910" reroute="1" state="262144 355000 2 5.10 0 37.28 499000 0 0" pos="369.37 364.37 9.91" speed="9.91 10.53" angle="0.00" posLat="0.00" waitingTime="100000 2 38000 48000 92000 100000">
+        <device id="vehroute_96" state="0 0.00 0.00 5.10 1 !NULL 355000 !96 device.rerouting -1 0"/>
+        <device id="routing_96" state="30000 475000"/>
+    </vehicle>
+    <vehicle id="93" depart="389.00" route="!93!var#1" distance="800 3" speedFactor="1.0099" reroute="1" state="262144 389000 2 5.10 0 20.73 499000 0 0" pos="106.59 101.59 8.37" speed="8.37 7.52" angle="0.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_93" state="0 0.00 0.00 5.10 3 !NULL 389000 !93 device.rerouting -1 0 3/0to4/0 419000 !93!var#1 device.rerouting 0 0 4/0to4/1 479000 !93!var#2 device.rerouting 1 1"/>
+        <device id="routing_93" state="30000 479000"/>
+    </vehicle>
+    <vehicle id="70" depart="401.00" route="!70!var#1" distance="0 1" speedFactor="0.9065" reroute="1" state="262144 474000 0 5.10 0 3.41 499000 0 0" pos="200.79 195.79 7.82" speed="7.82 8.76" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_70" state="0 0.00 0.00 5.10 1 !NULL 401000 !70 device.rerouting -1 0"/>
+        <device id="routing_70" state="30000 401000"/>
+    </vehicle>
+    <vehicle id="99" depart="407.00" route="!99!var#1" distance="0 1" speedFactor="1.1216" reroute="1" state="262144 477000 0 5.10 0 6.10 499000 0 0" pos="183.48 178.48 7.97" speed="7.97 9.12" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_99" state="0 0.00 0.00 5.10 1 !NULL 407000 !99 device.rerouting -1 0"/>
+        <device id="routing_99" state="30000 407000"/>
+    </vehicle>
+    <vehicle id="92" depart="434.00" route="!92!var#1" distance="0 1" speedFactor="1.0972" reroute="1" state="262144 9223372036854774807 0 -1.00 0 0.00 0 0 0" pos="5.10 0.10 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_92" state="-1 0.00 -1.00 -1.00 1 !NULL 434000 !92 device.rerouting -1 0"/>
+        <device id="routing_92" state="30000 434000"/>
+    </vehicle>
+    <lane id="0/0to0/1_0">
+        <vehicles value="90"/>
+    </lane>
+    <lane id="0/1to0/0_0">
+        <vehicles value="51"/>
+    </lane>
+    <lane id="1/0to1/1_0">
+        <vehicles value="83 64 46"/>
+    </lane>
+    <lane id="1/1to0/1_0">
+        <vehicles value="67 21 86 58"/>
+    </lane>
+    <lane id="1/1to1/0_0">
+        <vehicles value="74"/>
+    </lane>
+    <lane id="1/1to1/2_0">
+        <vehicles value="94"/>
+    </lane>
+    <lane id="1/1to2/1_0">
+        <vehicles value="57"/>
+    </lane>
+    <lane id="1/2to1/1_0">
+        <vehicles value="59"/>
+    </lane>
+    <lane id="2/0to1/0_0">
+        <vehicles value="41 72"/>
+    </lane>
+    <lane id="2/0to2/1_0">
+        <vehicles value="84"/>
+    </lane>
+    <lane id="2/0to3/0_0">
+        <vehicles value="97 61 87 88 40"/>
+    </lane>
+    <lane id="2/1to2/0_0">
+        <vehicles value="69"/>
+    </lane>
+    <lane id="2/1to2/2_0">
+        <vehicles value="42 65"/>
+    </lane>
+    <lane id="2/1to3/1_0">
+        <vehicles value="81 99 70"/>
+    </lane>
+    <lane id="2/2to1/2_0">
+        <vehicles value="49"/>
+    </lane>
+    <lane id="2/2to2/1_0">
+        <vehicles value="77"/>
+    </lane>
+    <lane id="3/1to2/1_0">
+        <vehicles value="79"/>
+    </lane>
+    <lane id="3/1to3/2_0">
+        <vehicles value="10"/>
+    </lane>
+    <lane id="3/1to4/1_0">
+        <vehicles value="71"/>
+    </lane>
+    <lane id="3/2to4/2_0">
+        <vehicles value="13"/>
+    </lane>
+    <lane id="4/0to4/1_0">
+        <vehicles value="60"/>
+    </lane>
+    <lane id="4/1to4/2_0">
+        <vehicles value="93 31 96"/>
+    </lane>
+    <lane id="4/2to3/2_0">
+        <vehicles value="23"/>
+    </lane>
+    <tlLogic id="0/0" programID="0" phase="0" duration="24000"/>
+    <tlLogic id="0/1" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="0/2" programID="0" phase="0" duration="24000"/>
+    <tlLogic id="1/0" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="1/1" programID="0" phase="4" duration="27000"/>
+    <tlLogic id="1/2" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="2/0" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="2/1" programID="0" phase="4" duration="27000"/>
+    <tlLogic id="2/2" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="3/0" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="3/1" programID="0" phase="4" duration="27000"/>
+    <tlLogic id="3/2" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="4/0" programID="0" phase="0" duration="24000"/>
+    <tlLogic id="4/1" programID="0" phase="2" duration="4000"/>
+    <tlLogic id="4/2" programID="0" phase="0" duration="24000"/>
+    <routingEngine last="500000">
+        <edge id="0/0to0/1" speed="9.11" pastSpeed="8.98 8.08 8.97 9.02 8.82 8.92 8.69 8.87 8.28 8.19 8.87 8.05 8.79 9.25 8.99 8.52 9.20 9.23 9.23 8.07 9.01 8.82 8.90 9.22 8.23 8.56 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.60 4.54 6.52 8.20 9.20 9.61 9.74 9.79 9.08 9.85 10.04 9.96 9.82 9.39 8.51 8.06 8.83 8.21 9.05 8.19 8.29 8.89 8.72 8.82 8.32 8.53 8.37 8.82 8.08 8.46 8.44 8.18 8.88 8.39 8.50 8.68 9.05 8.09 9.16 9.08 8.91 8.38 8.21 5.90 8.00 7.45 7.84 7.28 8.14 7.98 7.67 8.19 8.23 8.23 8.07 7.25 7.79 7.17 9.25 9.26 9.36 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.88 8.68 9.26 8.50 9.16 8.71 8.24 8.31 8.48 9.02 7.99 8.76 9.13 8.58 9.25 8.52 8.97 8.56 8.04 8.09"/>
+        <edge id="0/0to1/0" speed="8.46" pastSpeed="9.36 8.78 8.73 8.91 9.29 9.07 9.05 9.32 8.92 8.66 8.42 8.32 8.38 8.45 8.65 8.56 8.41 8.46 8.33 8.35 8.35 8.52 7.96 7.94 7.97 8.07 7.94 7.36 7.65 7.41 7.43 8.15 8.45 7.90 6.33 9.11 8.75 9.07 9.03 9.16 9.01 7.94 7.97 7.92 9.01 8.61 9.05 8.75 9.10 8.41 8.28 7.91 8.25 8.78 9.03 8.97 8.02 9.21 9.17 8.78 9.08 8.22 8.68 8.12 7.94 8.98 8.29 8.92 8.14 9.01 8.21 7.20 3.60 0.39 0.25 0.10 0.02 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.13 10.35 5.29 6.13 7.30 8.44 9.41 9.40 9.26 9.16 9.19 9.38 9.24 9.36 9.36 9.20 9.20 9.26 9.21 9.20 9.38 8.79 8.99 9.26 9.12 8.50 8.85 8.91"/>
+        <edge id="0/1to0/0" speed="9.44" pastSpeed="8.09 8.72 8.76 8.77 7.96 8.75 8.27 8.87 8.88 9.15 8.43 8.04 8.29 8.17 8.78 8.93 9.16 8.23 8.37 8.63 9.00 8.17 8.71 8.86 8.52 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.02 9.20 9.76 9.77 9.85 9.62 9.91 9.90 9.23 9.64 10.35 9.95 9.63 9.97 9.38 9.20 9.72 9.77 9.69 10.04 10.16 9.27 10.09 9.83 10.08 9.68 9.74 9.91 9.69 10.14 9.33 9.68 10.26 10.14 9.31 9.62 9.26 9.38 10.10 9.61 9.03 9.61 9.76 9.30 9.97 10.05 10.21 9.94 9.55 10.24 9.17 9.32 9.48 9.96 10.18 10.00 6.45 8.67 9.60 9.87 9.23 9.53 9.63 9.63 9.37 9.08 9.10 10.14 9.97 9.17 9.65 9.93 9.92 9.89 7.79 8.40 8.68 9.13 9.47 10.10 9.85 10.00 9.90 9.93 9.90 9.60 9.93 10.04 9.87 9.91 9.90 10.06 9.91 9.85 10.06 9.93 9.92 10.12 9.82 9.58 9.88 9.50 9.37 6.93 7.48 8.03 8.36 8.44 8.58 9.08 9.23 9.10 9.35 8.90 9.26 9.27 9.19 8.43 8.96 8.40 8.15 8.83 8.25 8.96 8.86 9.17"/>
+        <edge id="0/1to0/2" speed="10.04" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.55 9.91 10.16 10.79 10.79 10.60 9.82 10.46 10.56 10.41 10.14 10.47 10.52 10.61 10.65 10.04 9.99 10.41 10.09 9.90 9.70 9.69 9.82 9.70 10.03 10.65 10.71 9.86 10.28 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="0/1to1/1" speed="8.43" pastSpeed="4.84 4.84 4.81 5.05 4.92 4.78 4.90 3.85 2.87 2.55 2.48 3.26 3.58 3.70 3.77 3.80 5.26 5.27 7.57 10.00 10.00 10.00 10.00 10.00 10.00 10.00 6.63 8.50 8.95 8.17 8.17 9.26 8.55 8.12 8.58 8.84 8.52 8.81 8.24 8.20 8.13 8.84 9.36 8.45 9.04 9.35 8.65 8.51 8.32 8.37 8.69 8.98 9.09 8.59 9.16 8.55 8.17 8.94 9.33 8.89 8.95 7.54 8.19 9.25 9.31 9.10 9.20 8.81 8.55 9.68 8.58 8.60 9.29 9.72 10.09 9.05 9.74 9.63 9.18 9.50 8.95 9.24 9.13 9.57 9.19 9.36 9.93 9.63 9.26 9.63 8.98 10.00 8.91 9.27 9.69 8.92 9.75 9.05 9.77 10.03 9.24 9.90 9.47 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.07 5.11 5.56 6.33 7.44 7.93 8.79 9.51 9.44 9.79 9.45 9.42 9.53 9.72 9.02 9.14 9.59 9.43 6.24 6.80 7.51 8.05 8.71 9.42 9.06 10.01 9.40 9.53 7.66 8.01 8.96 9.37 9.53 9.62 9.92 9.54 9.62 10.03 9.47 9.62 9.75 8.85 7.83 7.58 7.38 6.26 5.24 5.02 5.03 5.00 4.87 4.94 5.03"/>
+        <edge id="0/2to0/1" speed="9.63" pastSpeed="8.47 8.18 8.44 8.53 8.30 8.71 8.56 8.90 8.22 8.64 9.18 8.78 8.18 9.11 8.20 8.86 8.66 8.69 9.33 9.00 8.28 9.17 9.36 8.46 8.16 5.20 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.97 8.75 8.51 8.71 8.22 8.85 9.20 8.76 9.13 8.60 8.28 8.75 8.64 8.54 8.49 8.24 8.82 8.37 8.43 9.31 8.66"/>
+        <edge id="0/2to1/2" speed="10.10" pastSpeed="10.67 10.96 9.82 9.67 10.45 10.16 10.71 10.39 10.18 10.49 10.77 10.74 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.98 10.31 10.16 10.35 9.90 10.64 9.84 10.79 10.05 9.56 10.13 10.82 10.34 10.37 9.88 9.85 9.93 10.60 10.44 10.72 5.80 6.78 8.24 9.22 9.91 10.85 10.73 10.05 10.42 10.69 10.67 10.51 10.90 10.58 10.33 10.51 10.75 10.21 10.57 10.25 10.65 10.99 10.04 10.38 10.66 10.85 10.74 10.63 10.79 10.21 10.70 10.47 10.69 10.92 10.57 10.81"/>
+        <edge id="1/0to0/0" speed="9.16" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.02 9.27 9.38 9.24 10.12 9.13 9.72 8.49 8.68 8.85 8.51 8.63 8.59 8.57 9.03 8.15 8.62 8.35 8.68 8.49 9.20 9.01 8.71 8.37 8.53 8.22 8.69 8.55 8.53 8.75 8.46 8.66 8.70 8.24 8.28 8.19 8.62 8.35 8.37 8.68 8.46 8.76 6.76 4.09 4.09 8.16 7.91 8.03 8.15 7.98 7.86 7.32 8.30 8.11 7.96 8.12 7.11 8.12 7.24 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.43 8.79 8.94 8.64 8.46 8.36 8.57 8.30 8.71 8.17 8.00 8.34 8.54 8.36 8.29 8.61 8.53 9.18 8.33 8.06 8.48 8.37 8.29 8.22 8.62 8.17 8.80 9.03 8.95 8.16 8.87 8.68 9.22 8.47 9.11 8.40 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="1/0to1/1" speed="7.65" pastSpeed="9.45 8.81 9.32 8.56 8.51 9.22 8.34 8.26 8.71 8.91 8.78 8.68 8.55 9.44 9.13 8.63 9.16 8.59 9.39 9.20 8.51 8.67 7.01 5.68 4.45 4.82 4.79 4.53 4.82 4.80 4.79 4.38 4.74 4.43 4.56 4.85 5.72 6.22 6.22 6.60 6.35 6.43 6.45 6.38 6.08 6.06 6.22 6.33 6.29 6.19 6.12 6.23 5.00 5.46 7.86 9.01 9.34 9.55 9.72 8.77 8.69 9.91 10.02 9.93 10.10 9.92 9.89 9.89 10.09 9.70 10.02 9.97 10.29 9.79 9.87 9.85 10.08 10.03 10.03 10.07 9.66 9.94 9.91 10.56 10.26 10.36 7.37 7.94 8.31 8.98 9.55 8.40 6.75 5.91 6.30 5.75 6.00 5.91 6.04 6.18 5.75 4.18 3.72 2.81 2.94 2.73 2.78 2.89 2.85 2.78 2.87 2.75 2.68 2.81 2.95 2.77 2.67 3.06 2.86 2.67 2.84 2.89 2.66 2.98 7.86 9.50 10.02 10.08 10.15 9.92 9.70 9.72 9.38 9.32 9.70 9.99 9.78 10.06 9.95 9.47 9.32 9.47 9.61 9.84 9.30 10.10 9.16 9.41 9.19 9.78 9.56 9.39 9.58 9.22 9.19 9.71 7.18 7.85 8.41 8.15 9.17 9.31 9.19 9.46 9.12 9.57 8.56 9.29 8.59 8.47 8.99 9.04 9.04 9.02 9.03 9.41 8.72 8.59 9.35 8.41"/>
+        <edge id="1/0to2/0" speed="7.41" pastSpeed="5.00 4.68 4.89 4.59 4.94 4.97 4.82 4.71 4.73 5.37 10.01 7.72 8.18 9.38 10.01 9.58 9.91 9.74 9.73 9.26 9.21 9.55 9.40 9.62 9.51 9.79 9.61 9.50 9.40 9.82 9.37 9.46 9.14 9.26 9.41 9.50 9.54 9.22 9.51 9.62 9.36 9.78 9.50 9.38 9.81 9.44 9.66 8.61 7.82 7.48 7.36 7.41 5.94 5.75 5.38 5.89 6.26 6.66 6.58 6.69 6.59 6.84 6.98 6.94 6.61 6.15 6.02 5.92 5.83 5.63 4.92 4.71 4.49 4.01 3.84 3.57 3.59 3.71 3.58 3.72 3.53 3.71 3.55 3.76 3.55 3.76 4.22 4.32 4.54 5.17 5.67 5.86 6.16 5.73 5.79 6.41 6.65 7.25 8.12 9.01 9.62 9.57 6.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.83 10.06 9.82 10.62 10.90 10.98 9.73 10.91 10.34 10.58 10.38 10.93 10.73 10.65 10.49 10.91 10.86 11.01 10.38 10.62 10.65 10.87 10.53 10.55 10.85 10.43 10.38 10.27 5.77 1.97 0.03 0.01 0.00 0.00 0.00 3.01 4.09 4.73 4.59 4.74 4.72 4.99 4.67 4.77 4.93 5.12 5.09 4.82 4.73 4.93 4.59 5.04 4.83 4.89 5.14 4.69"/>
+        <edge id="1/1to0/1" speed="8.69" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.01 3.61 5.85 7.50 4.52 6.10 6.41 7.49 8.26 9.00 9.37 9.77 9.59 9.83 9.75 9.66 9.42 9.80 9.80 9.30 9.85 9.61 9.57 9.31 9.50 9.65 9.78 9.63 9.29 9.39 9.29 9.47 9.52 9.44 9.38 9.43 9.45 9.38 9.67 9.64 9.48 9.76 9.94 9.87 9.78 9.62 9.66 9.30 8.65 7.04 8.90 9.68 9.46 9.51 9.17 9.70 9.74 9.46 8.43 9.29 8.51 9.42 8.88 9.31 8.58 8.64 8.66 8.77 9.19 8.66 9.58 9.49 9.21 8.65 8.88 9.72 9.56 9.48 8.48 9.35 9.72 8.82 9.07 9.21 8.47 8.51 9.01 9.21 9.69 6.93 7.66 8.32 8.66 9.15 7.40 5.82 5.84 5.51 5.88 5.69 5.40 5.73 5.69 6.28 6.59 6.89 6.83 6.83 6.98 6.62 6.44 6.94 6.73 10.14 10.00 9.93 10.53 9.92 9.99 9.67 10.02 10.43 10.13 9.60 10.26 9.56 9.26 10.36 9.76 9.67 10.53 10.43 9.49 9.41 9.70 9.67 10.07 5.78 1.96 0.26 0.05 0.02 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="1/1to1/0" speed="8.73" pastSpeed="10.31 9.79 9.54 9.20 10.38 10.02 9.43 10.35 10.20 10.14 10.30 5.45 6.58 7.46 8.34 8.51 8.83 9.41 9.51 9.65 8.59 6.48 6.48 7.05 7.03 7.64 7.56 7.66 7.86 7.78 7.78 8.00 7.79 7.68 7.71 7.57 8.00 7.71 7.94 7.56 7.96 7.79 7.82 7.79 7.40 7.57 7.81 7.61 7.59 7.60 7.86 7.77 9.88 9.77 9.15 8.89 9.05 9.02 7.40 7.64 7.48 7.80 10.10 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.05 4.42 5.93 8.35 9.34 8.78 8.62 9.48 9.79 8.78 9.70 8.97 8.71 9.56 9.16 8.93 9.64 9.48 9.49 9.74 8.84 9.11 9.53 9.10 9.58 9.01 9.66 8.96 8.80 8.35 8.76 9.22 8.99 9.04 9.11 8.47 9.36 9.58 9.46 9.43 9.32 9.27 9.33 9.20 8.94 8.99 9.53 9.13 8.71 9.10 9.07 9.42 9.34 9.30 8.12 4.65 1.90 0.41 0.64 0.73 1.38 3.44 10.00 9.40 9.88 9.61 10.30 9.66 9.54 10.08 9.37 9.15 9.62 9.91 10.40 10.10 10.09 10.14 10.35 10.21 9.26 9.85 10.14"/>
+        <edge id="1/1to1/2" speed="7.52" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 0.00 1.98 4.13 6.02 7.86 7.64 8.35 7.69 8.42 6.59 7.72 7.83 8.08 8.43 8.49 8.01 7.76 7.90 8.51 8.61 7.56 8.62 7.87 8.41 7.53 8.11 8.03 7.82 7.71 7.89 7.80 8.12 7.69 8.46 8.14 7.88 7.56 7.74 8.08 5.77 6.08 6.65 7.75 8.09 8.46 8.91 8.27 8.35 7.99 8.52 8.57 8.10 8.47 8.33 8.20 8.55 8.18 8.00 8.51 8.41 6.72 9.49 9.09 9.31 8.44 8.80 8.80 9.55 9.25 8.87 9.53 8.75 8.61 8.79 8.68 8.35 8.55 8.31 8.34 9.17 9.50 8.64 9.33 9.50 8.54 7.27 4.62 0.35 0.05 0.04 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 8.72 9.22 9.23 8.45 8.16 8.83 8.64 9.34 8.24 9.35 8.55 8.31 8.54 8.56 8.49 8.33 8.43 9.32 8.83 9.22 9.06 8.75 9.20 9.37 9.06 8.35 8.61 8.92 9.38 4.88 0.40 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="1/1to2/1" speed="5.71" pastSpeed="4.40 4.68 4.62 4.61 4.44 4.41 4.55 4.30 4.50 4.43 4.69 4.67 4.79 4.33 4.70 4.11 3.12 3.75 3.90 3.74 3.83 3.77 3.94 3.81 3.72 2.79 1.88 1.84 1.79 1.81 2.00 1.90 2.01 1.84 1.87 2.35 2.49 3.30 4.33 4.98 5.68 6.91 7.83 9.26 9.86 9.67 9.64 9.37 9.37 10.19 9.66 9.91 8.97 8.98 9.73 9.71 9.97 9.18 8.85 4.35 0.79 0.13 0.05 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 4.98 5.08 5.17 5.12 4.68 5.19 5.11 4.90 5.00 5.21 5.13 4.60 5.08 4.78 4.96 5.15 4.73 4.59 4.72 5.04 4.75 9.63 9.97 9.17 9.77 9.16 10.34 9.15 9.36 9.44 9.67 9.35 9.52 9.21 9.81 9.48 9.37 9.77 9.34 9.35 9.59 10.03 9.09 9.52 9.04 9.83 9.06 9.53 9.33 9.03 9.25 9.00 8.79 8.95 8.95 9.20 8.75 8.91 8.86 9.29 9.43 8.87 8.56 9.47 8.86 9.19 8.80 9.16 9.40 9.01 8.90 8.80 6.84 7.08 6.72 5.29 4.31 3.11 3.00 2.95 2.63 2.76 2.96 2.84 2.61 2.99 2.84 2.87 2.66 2.59 4.46 4.41 4.35 4.64 4.63 4.51 4.47 4.46 4.62 4.61 4.23 4.57 4.57 4.39"/>
+        <edge id="1/2to0/2" speed="9.27" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 4.15 4.47 4.44 4.67 4.47 4.35 4.66 4.27 4.61 4.59 4.45 4.41 4.64 4.49 4.24 4.05 4.64 4.39 4.26 4.29 8.47 9.35 9.31 8.16 8.99 8.37 8.90 8.34 8.39 8.39 8.65 8.72 8.89 8.74 9.14 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="1/2to1/1" speed="8.07" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 6.80 7.59 7.94 8.27 7.88 8.54 7.94 7.66 8.38 8.01 8.03 8.26 7.32 7.77 8.09 8.01 7.98 8.01 7.27 7.35 8.14 7.39 7.69 8.21 7.28 7.69 7.47 8.01 8.03 8.27 7.59 8.22 8.16 7.66 7.45 7.73 8.50 7.96 7.80 8.25 8.48 7.64 7.32 8.05 7.31 7.26 8.14 8.28 4.58 4.19 4.45 3.98 2.95 0.70 0.31 0.08 0.05 0.01 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.23 2.87 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="1/2to2/2" speed="6.65" pastSpeed="4.50 4.13 4.53 4.61 4.08 4.34 4.35 4.26 4.07 8.62 8.60 8.81 9.70 9.61 9.97 9.77 9.56 9.78 9.17 9.04 8.99 9.14 10.23 10.20 10.48 9.72 10.28 10.20 9.57 10.17 10.17 9.57 10.35 9.79 9.56 9.68 10.06 9.91 9.97 10.53 9.79 9.90 10.26 10.80 9.66 10.71 10.36 10.64 10.74 10.67 10.47 6.24 1.74 0.30 0.09 0.03 0.01 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 4.07 4.18 4.15 3.88 4.43 3.89 3.88 4.20 4.21 4.15 4.00 4.18 4.15 3.95 4.10 4.42 3.88 4.13 3.88 4.26 4.46 8.01 7.89 8.45 8.80 8.40 8.32 8.86 7.93 8.69 7.93 8.18 8.54 7.88 8.41 8.85 7.98 7.75 8.49 8.70 7.74 7.90 7.72 8.18 8.66 8.24 7.79 8.51 8.01 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.22 10.13 9.06 9.15 9.82 9.39 10.26 9.23 9.75 9.88 9.15 10.29 9.53 9.11 9.62 9.26 10.25 9.99 9.77 9.95 9.02 8.13 4.51 0.72 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.95 2.16 2.92 3.99 4.30 4.49 4.15 4.09 4.32 4.49 4.33 4.64 4.15 4.60 4.56 4.14 4.43 4.31 4.40 4.46 4.29 4.21 4.33 4.32 4.22"/>
+        <edge id="2/0to1/0" speed="7.98" pastSpeed="0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.37 0.61 1.11 1.71 2.60 3.30 4.47 5.96 6.79 7.39 8.55 9.44 10.04 10.17 9.80 10.25 10.08 10.85 10.75 10.69 9.91 10.50 9.87 10.47 10.06 10.11 10.15 10.57 9.90 10.46 10.37 10.26 10.00 10.72 10.27 10.46 10.29 10.35 9.95 9.13 6.94 4.76 4.67 9.67 9.49 10.26 10.35 9.88 9.23 10.14 10.28 9.93 9.60 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.03 9.49 9.43 8.28 8.57 8.78 9.17 9.08 9.00 8.49 9.03 8.89 8.73 8.56 8.80 8.85 8.76 8.65 8.30 8.97 8.75 8.71 9.49 9.58 9.93 9.59 9.95 9.46 9.27 9.09 9.35 8.95 9.16 8.94 8.71 8.93 9.13 8.97 9.29 8.94 8.99 8.90 9.01 8.96 9.18 9.17 9.24 8.95 8.96 8.90 9.13 9.20 8.72 9.02 8.63 7.66 6.05 5.14 5.27 5.15 5.32 4.95 4.20 3.51 3.63 3.48 3.12 3.26 3.42 3.42 3.32 3.28 2.66 1.01 0.17 0.03 0.01"/>
+        <edge id="2/0to2/1" speed="6.18" pastSpeed="7.55 8.43 7.62 7.95 8.53 8.49 7.97 7.96 8.13 7.79 5.45 6.20 7.17 8.18 9.13 9.01 9.81 8.83 9.21 9.47 9.14 9.33 9.13 9.17 9.12 9.38 9.83 9.11 9.06 9.11 9.50 9.49 9.42 9.14 9.13 9.18 6.74 5.03 4.95 5.31 5.01 4.99 5.24 5.25 5.13 5.35 5.23 5.31 4.66 2.41 0.88 0.11 0.01 0.00 0.00 1.51 2.83 10.00 10.00 7.56 8.03 8.17 8.62 8.17 8.63 8.22 8.57 8.65 8.36 7.64 8.50 8.72 8.26 7.87 8.63 7.72 8.81 7.83 7.68 8.34 7.66 7.94 8.07 8.18 8.07 7.97 7.63 8.63 8.23 8.56 7.72 8.23 7.60 8.81 7.85 7.84 8.81 7.62 7.64 8.18 7.96 7.64 8.36 8.38 7.84 8.47 8.75 6.98 3.71 0.43 0.24 0.04 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 5.73 1.93 1.00 0.14 0.07 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.30 7.88 7.61 8.62 8.27 7.82 8.22 8.64 8.10 7.73 8.56 8.13 7.51 8.63"/>
+        <edge id="2/0to3/0" speed="8.68" pastSpeed="6.45 6.38 6.25 6.34 6.33 6.52 5.85 6.13 6.22 9.37 9.41 9.87 8.89 9.03 9.18 9.34 9.14 9.62 9.19 8.91 9.41 9.10 9.12 9.74 9.22 9.75 9.96 9.42 9.16 9.41 9.55 8.97 9.52 9.23 9.34 9.75 9.34 9.09 9.25 9.11 9.35 9.54 9.86 9.22 9.00 8.89 9.96 9.11 9.89 8.69 9.48 9.42 8.71 9.46 8.80 9.91 9.48 8.93 9.05 9.50 9.21 9.85 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 1.48 3.02 5.40 7.28 7.61 9.66 9.81 10.31 9.24 9.76 9.97 9.59 9.59 9.84 9.75 9.91 9.45 9.94 10.10 9.58 9.66 9.60 9.41 9.68 9.80 9.70 9.54 9.66 9.78 9.62 9.85 9.75 9.57 9.25 9.52 9.62 9.57 9.76 8.75 7.95 8.46 8.26 7.62 7.87 8.52 7.58 7.79 8.08 7.49 8.19 8.58 7.87 7.65 7.74 8.37 8.29 8.29 8.30 7.75 8.37 8.75 7.69 7.57 7.83 7.50 8.33 7.83 7.54 7.52 7.90 8.74 8.54 8.88 9.07 8.56 9.26 9.25 7.32 6.43 6.18 6.31 6.36 6.18 6.19 5.98 6.45 6.30 6.46 6.40 6.31 6.09 6.39 6.19 6.38"/>
+        <edge id="2/1to1/1" speed="6.24" pastSpeed="1.85 1.83 1.99 1.83 1.89 1.84 2.05 1.85 1.89 2.00 1.83 2.35 2.67 3.53 4.56 5.51 6.82 7.14 6.23 5.87 5.62 6.61 7.18 7.93 8.50 8.60 8.87 9.75 9.76 9.63 9.40 9.85 9.47 9.49 9.31 9.59 9.52 9.68 9.53 9.74 9.69 9.60 9.57 9.15 9.71 9.59 9.91 9.22 9.77 9.50 9.68 9.59 9.40 9.65 7.44 7.88 8.19 8.04 7.83 6.71 6.31 5.06 3.10 2.40 2.13 1.94 2.00 1.90 2.17 2.16 3.49 3.43 3.50 3.48 3.54 3.54 3.45 3.51 3.55 3.48 3.55 3.58 3.44 3.70 3.37 3.39 3.55 3.49 3.32 3.52 3.27 3.43 3.28 3.59 3.66 3.55 3.63 4.23 4.80 5.34 6.33 7.10 7.11 7.98 8.45 8.80 9.43 8.84 10.03 9.20 9.05 9.81 9.06 9.37 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.37 9.66 9.21 9.38 9.20 9.18 9.60 9.67 9.55 9.05 9.38 9.52 9.37 9.00 9.07 9.70 9.36 9.05 9.36 9.27 9.63 9.32 9.46 9.33 9.52 9.96 9.78 8.90 7.59 5.50 3.95 2.96 2.16 2.00 1.92 2.10 2.01 2.09 1.84 1.90 3.41 3.49 3.63 3.64 3.39 3.48 3.27 2.30 2.07 1.91 2.00 1.98 1.94 1.99 1.92 1.91"/>
+        <edge id="2/1to2/0" speed="9.46" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.97 8.87 8.87 8.46 8.90 7.98 8.31 8.89 8.95 8.73 8.98 8.39 8.61 8.11 8.87 8.62 8.76 9.07 8.45 8.47 8.06 8.34 8.31 8.82 8.59 8.63 8.38 8.46 8.80 8.59 8.84 8.75 9.09 8.23 8.87 8.38 8.32 8.47 6.48 7.21 8.08 8.84 9.18 9.00 8.55 8.98 9.01 8.96 9.14 8.95 9.43 8.89 9.60 9.54 9.32 10.20 9.66 9.80 9.52 10.19 9.64 9.15 9.34 10.18 10.02 9.47 9.51 9.44 9.56 9.10 9.94 9.95 8.89 8.89 9.24 9.36 8.82 9.24 9.38 9.54 9.62 9.31 9.11 9.80 9.81 9.48 9.89 9.38 9.73 9.50 9.78 9.31 9.73 8.86 9.00 9.84 9.52 9.34 8.77 9.86 8.89 9.76 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="2/1to2/2" speed="8.28" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.20 7.76 7.88 7.88 7.73 7.64 8.21 7.31 7.70 7.85 8.33 8.73 6.35 7.10 7.97 8.32 8.37 8.77 8.77 8.90 8.75 8.43 8.41 8.85 9.13 8.49 8.88 8.64 8.80 8.62 8.54 8.58 8.59 8.54 7.91 8.35 8.68 9.40 9.20 9.28 9.25 9.17 8.69 9.45 9.20 9.05 9.11 9.28 9.17 9.07 9.18 9.26 9.65 9.84 9.94 10.12 9.52 10.38 9.87 10.59 10.12 10.88 10.11 9.86 10.73 10.76 9.94 10.92 10.07 9.74 10.97 10.96 10.74 10.00 2.37 4.82 6.24 6.48 7.75 9.12 9.31 9.18 9.45 9.75 9.18 9.16 9.89 9.95 9.31 8.93 9.65 9.33 9.68 9.38 9.11 8.99 8.93 9.15 9.47 9.94 9.63 6.70 6.76 7.00 6.64 6.85 6.70 6.67 6.97 6.62 6.45 7.03 6.56 6.90 6.86 6.79 6.79 6.80 6.80 5.67 4.64 3.29 3.37 3.12 3.08 2.92 1.51 0.65 0.04 0.02 0.00 0.00 0.00 0.97 2.66 2.99 4.74 6.13 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="2/1to3/1" speed="6.78" pastSpeed="2.60 2.39 2.42 2.46 2.47 2.44 2.47 2.46 2.50 2.47 2.54 2.21 2.29 2.62 3.50 4.57 5.00 6.02 6.95 7.17 8.16 9.07 9.67 9.73 9.72 10.64 10.77 11.13 11.47 10.71 10.72 10.82 11.19 11.05 10.75 10.92 11.35 11.45 7.27 8.41 9.37 9.07 9.38 9.71 8.97 9.46 9.21 9.63 9.63 9.40 8.75 8.85 8.43 8.33 9.15 9.14 8.92 8.60 8.83 8.73 8.41 8.84 8.64 9.10 8.55 8.54 8.56 8.50 8.24 8.74 8.55 8.64 8.82 8.64 8.78 9.13 8.51 8.54 8.50 8.41 8.72 8.37 7.70 6.14 4.81 3.97 4.06 3.95 2.92 1.34 0.18 0.03 0.01 0.00 0.00 0.00 0.00 0.00 0.60 2.33 3.77 2.73 4.93 5.96 6.93 7.75 9.57 9.65 9.20 8.45 8.54 9.19 8.59 8.62 8.18 8.25 8.41 9.16 8.86 9.14 8.76 8.98 9.22 8.37 8.99 9.44 9.43 9.57 9.29 9.33 9.33 9.64 9.45 9.51 9.29 9.51 9.60 9.44 9.24 9.41 9.45 9.26 9.31 9.41 9.54 9.25 8.97 8.21 6.29 6.60 6.63 7.17 7.31 7.22 7.07 6.84 5.73 4.49 3.79 3.07 2.59 2.58 2.56 2.42 2.61 2.57 2.53 2.41 2.54 2.48 2.58 2.44 2.45 2.49 2.56 2.48 2.63 2.55 2.56 2.62"/>
+        <edge id="2/2to1/2" speed="9.70" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.70 10.16 9.34 9.99 9.13 9.63 9.95 9.03 8.99 9.71 9.61 9.21 10.02 10.06 10.10 9.65 9.69 9.05 9.59 9.74 9.18 9.79 9.65 9.51 9.04 8.90 8.97 9.05 10.06 10.01 9.08 9.72 10.10 9.68 9.95 9.17 9.01 9.01 9.44 9.48 9.93 9.79 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.94 9.18 9.41 8.49 9.05 9.22 9.19 8.69 8.63 8.72 5.25 6.12 6.83 8.03 9.53 9.48 9.72 10.00 9.74 9.53 9.72 9.83 9.85 9.35 9.57 9.35 9.41 9.15 9.76 9.46 9.46 9.62 9.28 9.68 9.21 9.94 9.53 9.54 9.97 9.78 9.78 9.41 9.43 10.03 9.65 10.29 10.26 10.25 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="2/2to2/1" speed="9.35" pastSpeed="11.46 10.97 10.76 10.50 11.03 10.44 11.02 10.98 10.67 11.37 6.85 7.01 8.61 6.11 7.29 6.56 6.90 7.77 8.94 9.07 9.39 9.02 8.47 8.49 7.33 7.44 8.39 8.51 8.39 8.64 8.86 8.49 8.09 8.73 8.63 8.56 8.40 8.28 8.60 8.57 8.25 8.30 8.71 8.70 8.14 8.29 8.22 8.39 8.39 8.55 8.78 8.72 8.47 8.16 8.37 8.88 8.45 8.52 8.98 8.75 8.80 8.45 9.12 8.98 9.34 9.02 9.05 8.92 8.18 8.77 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.12 8.62 8.44 8.46 8.64 8.00 8.08 8.47 8.39 7.68 9.61 9.35 8.88 9.11 9.02 9.22 9.02 9.32 8.80 9.65 9.31 9.39 9.25 9.44 9.31 9.11 9.21 9.32 9.39 9.38 9.63 9.55 8.86 8.99 9.07 9.08 8.89 9.37 9.25 9.69 9.77 8.97 9.28 9.05 6.62 9.29 9.99 10.17 10.15 10.11 11.47 10.88 11.30 11.37 10.56 11.48 10.79 11.49 10.94 10.69 11.20 10.71 10.41 10.76 11.52 11.13"/>
+        <edge id="2/2to3/2" speed="7.66" pastSpeed="8.78 8.21 8.63 8.76 8.96 8.51 9.31 8.61 9.37 5.36 5.88 6.53 8.04 8.72 9.02 8.80 8.90 8.97 9.45 9.17 9.40 9.33 10.01 10.18 9.23 9.33 10.27 9.71 9.70 9.28 9.87 9.99 9.55 9.88 9.23 9.37 10.00 9.99 10.15 10.13 9.60 9.51 9.69 10.12 9.27 10.09 10.27 9.04 9.10 10.20 9.47 9.53 5.03 0.58 0.15 0.04 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.36 4.62 6.84 9.16 8.14 8.29 8.35 8.51 8.13 8.90 9.19 8.11 8.84 9.34 9.01 9.35 8.88 8.12 8.28 8.29 8.74 8.84 9.36 8.37 8.68"/>
+        <edge id="3/0to2/0" speed="7.82" pastSpeed="4.59 4.86 4.53 4.59 4.57 4.45 4.94 4.49 4.83 5.21 6.66 7.05 8.05 9.29 8.58 8.37 8.71 8.42 6.59 8.18 8.53 8.71 7.66 8.62 8.36 8.40 8.51 8.81 7.67 8.82 8.60 8.66 8.73 7.74 7.67 8.29 8.16 8.10 7.97 7.95 8.66 8.22 7.67 8.59 8.55 8.03 8.24 8.09 8.38 8.44 8.06 8.41 5.28 6.49 7.51 8.02 7.64 7.98 8.21 7.19 8.11 7.96 8.00 7.74 7.93 7.60 7.47 7.81 7.80 8.56 7.63 7.57 8.15 8.19 8.01 7.64 7.77 8.06 7.68 7.66 8.32 8.22 8.06 8.33 7.59 7.67 7.78 8.15 7.86 7.87 7.85 7.70 7.40 7.33 7.80 7.49 8.22 7.78 7.79 8.21 7.69 8.02 7.89 7.67 8.17 7.72 8.34 8.54 8.79 8.64 8.29 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.42 8.14 8.62 8.20 8.15 8.55 8.38 8.17 8.21 7.59 8.14 8.44 8.27 8.54 8.01 8.18 7.58 8.17 8.24 8.24 8.20 7.48 8.30 8.33 8.13 8.05 8.35 8.45 7.83 7.85 7.75 7.34 8.38 8.46 8.91 8.65 8.64 8.38 8.54 8.45 8.54 8.45 9.14 8.56 7.15 5.42 4.76 4.62 4.61 4.62 4.46 4.76 4.54 4.70 4.73 4.55"/>
+        <edge id="3/0to3/1" speed="9.09" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 5.27 5.84 6.83 7.17 7.26 6.66 5.46 4.35 4.11 3.96 4.06 3.90 3.96 4.06 3.88 4.09 4.05 3.93 3.92 4.10 3.85 3.87 3.89 3.74 4.09 5.31 5.45 6.33 7.47 8.40 9.86 9.62 9.46 9.89 10.13 8.04 9.28 9.64 8.48 9.03 9.57 9.26 8.77 9.26 6.47 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="3/0to4/0" speed="9.30" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.51 4.85 6.41 8.43 4.12 4.98 5.82 6.48 7.28 8.05 8.95 8.79 9.48 8.92 8.78 9.08 8.88 9.16 9.31 9.22 8.94 9.14 8.61 8.92 8.97 8.82 8.73 9.13 8.84 8.71 8.86 8.63 8.73 8.60 8.53 8.28 8.87 8.62 8.92 8.53 8.55 8.53 8.90 9.07 8.91 8.65 8.45 8.33 8.35 8.32 8.43 9.02 8.96 8.88 7.31 5.57 4.10 4.90 1.89 3.55 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="3/1to2/1" speed="6.85" pastSpeed="5.83 5.83 5.95 5.78 5.69 5.60 5.47 5.77 5.67 5.38 5.44 6.70 6.47 6.32 7.15 7.55 7.90 7.41 8.57 8.54 8.62 8.34 8.51 8.96 9.09 9.03 9.29 9.44 9.67 9.27 9.42 9.62 9.32 9.14 9.72 9.40 9.91 9.89 9.40 9.22 9.69 9.66 9.16 9.72 9.65 9.74 10.19 9.46 9.36 9.42 9.90 9.18 9.12 9.77 9.75 9.91 9.67 9.59 9.32 6.47 4.32 3.34 3.32 2.68 2.87 2.65 2.74 2.55 2.48 2.55 2.84 2.59 2.82 2.76 2.83 2.78 2.80 2.53 2.65 2.56 2.61 2.91 2.82 2.56 2.81 2.85 2.77 2.54 2.88 2.53 2.56 2.70 2.58 2.88 2.54 2.65 2.77 3.45 4.40 5.96 8.22 8.11 8.26 8.37 8.28 8.54 8.29 8.65 8.58 8.37 8.75 8.76 7.94 8.01 7.93 8.00 8.44 8.49 7.80 8.74 8.80 8.43 8.96 8.66 8.55 9.19 9.05 8.96 8.69 8.81 8.88 9.09 8.97 8.93 8.97 8.87 8.78 9.00 8.56 9.07 8.78 8.99 8.60 9.26 8.84 8.89 8.82 8.93 8.82 7.28 8.13 8.59 7.94 8.30 7.41 6.93 6.73 5.72 4.56 4.11 5.19 5.30 5.47 5.46 5.56 5.40 5.35 5.39 5.44 6.09 6.08 6.13 6.11 5.85 6.01 5.72 5.93 5.75 5.61 5.61"/>
+        <edge id="3/1to3/0" speed="8.52" pastSpeed="7.60 7.40 7.05 7.38 7.79 7.79 7.97 7.42 6.98 7.62 7.19 5.02 5.92 6.94 7.07 8.51 8.33 8.77 8.29 8.47 8.95 8.98 7.44 6.90 7.18 7.02 7.13 7.16 6.87 6.82 7.25 7.13 6.76 7.09 7.16 7.20 6.85 7.22 6.61 6.87 6.95 6.86 7.03 6.79 6.99 7.09 6.85 6.81 7.00 6.58 6.55 6.66 7.27 6.47 7.22 7.75 7.96 8.21 8.28 8.34 8.24 7.94 8.53 9.01 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.67 9.63 9.60 9.34 9.95 9.41 9.80 8.68 8.86 9.00 9.06 9.20 9.76 9.14 9.27 8.99 9.18 8.89 9.27 8.76 8.85 9.27 9.24 9.47 5.74 6.49 7.74 8.37 8.40 7.95 6.04 7.04 8.01 8.14 7.54 7.93 7.07 7.22 7.30 7.21 8.18 8.00 7.77 7.16 7.36 7.84 7.89 7.04 8.09 7.13 8.18 7.13 7.40 8.11 7.49 7.51"/>
+        <edge id="3/1to3/2" speed="7.83" pastSpeed="10.39 10.44 10.87 10.30 9.84 10.84 10.07 10.13 9.78 10.71 9.86 9.92 4.83 5.40 4.36 3.61 3.95 2.97 3.99 4.38 4.96 5.66 6.22 5.99 6.33 6.40 6.11 6.22 6.49 6.27 6.17 6.17 6.19 6.24 6.46 6.51 6.18 6.31 6.20 6.30 6.23 6.09 6.46 5.94 5.95 6.04 6.25 6.55 6.06 6.14 6.18 6.41 9.30 9.42 9.19 9.59 9.09 7.14 9.05 9.33 9.01 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 5.49 6.90 8.90 7.87 8.39 8.29 8.05 8.93 8.28 8.36 7.97 7.85 8.26 8.06 7.93 7.90 8.97 8.14 8.96 8.69 8.37 8.17 8.10 4.52 4.64 4.61 4.75 4.75 4.51 4.82 4.89 4.39 4.82 4.58 4.39 4.80 4.80 4.98 4.77 4.90 5.01 4.66 4.59 4.55 4.60 4.56 4.61 4.42 4.62 4.46 4.71 4.77 4.55 4.77 6.12 6.38 7.26 10.11 10.61 9.76 10.03 10.35 9.71 10.00 10.90 10.32 10.29 10.66 10.59 9.82 10.54 10.03 9.84 9.76 10.25 9.94 9.89 9.74 9.74"/>
+        <edge id="3/1to4/1" speed="9.16" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 0.00 1.55 2.94 4.28 6.12 7.58 9.53 8.94 9.14 8.68 8.79 8.33 9.17 8.50 8.75 8.77 8.63 8.75 9.17 8.64 8.59 8.50 8.56 8.75 8.68 8.72 8.39 8.59 8.52 8.58 8.87 8.75 8.46 8.99 8.95 8.73 8.86 8.73 8.94 9.04 8.79 8.51 8.91 8.73 8.91 8.95 8.57 8.40 8.52 8.72 8.54 8.10 8.67 8.79 8.61 8.40 8.75 8.11 8.59 8.95 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 1.46 3.19 5.11 7.18 8.48 9.30 9.39 8.78 9.19 8.58 8.97 9.13 9.46 9.67 8.89 8.58 9.33 8.83 9.48 9.68 9.43 8.72 8.86 8.96 8.80 8.87 8.76 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="3/2to2/2" speed="8.70" pastSpeed="6.28 6.47 6.10 6.49 6.09 6.32 6.27 6.61 6.20 6.41 9.46 9.65 9.21 9.84 9.59 9.55 9.28 9.43 9.40 8.93 9.58 5.60 1.17 0.89 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.09 3.40 5.49 6.83 8.90 10.62 10.22 10.30 10.20 9.69 9.76 9.67 9.90 9.88 10.24 9.97 10.35 9.89 10.04 9.78 10.16 9.86 10.18 10.07 9.82 10.01 9.65 9.52 9.98 9.92 10.03 10.31 9.38 9.69 9.39 9.89 9.85 9.96 9.70 10.38 10.19 8.94 8.91 8.96 9.91 9.25 8.98 8.81 9.92 9.55 9.49 9.11 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.19 8.88 8.79 8.92 8.32 8.40 8.46 8.82 8.30 8.72 8.49 8.42 8.33 7.79 8.81 7.88 8.94 7.98 8.68 7.98 8.77 7.85 8.78 8.85 7.86 8.88 8.02 8.73 8.74 8.03 8.88 5.31 6.16 7.41 7.30 8.39 8.02 6.67 6.58 6.26 6.24 6.45 6.21 6.27 6.39 6.27 6.01 6.13 6.03 6.26 6.31 6.06 6.15 5.96 6.32 6.41"/>
+        <edge id="3/2to3/1" speed="7.87" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.10 3.54 5.64 7.52 8.27 8.67 8.04 8.21 8.25 8.12 7.64 8.30 8.14 8.64 8.54 7.91 7.80 7.89 8.14 8.39 8.28 7.60 7.96 8.42 7.93 7.98 7.45 7.73 8.09 8.07 8.44 7.74 8.51 7.48 7.45 7.80 8.72 7.96 8.17 7.80 8.06 8.24 8.72 7.43 8.51 7.91 7.78 8.05 7.70 6.99 7.92 9.49 8.57 8.82 8.88 8.91 8.82 9.74 9.30 9.24 8.77 9.42 9.31 8.78 9.46 9.11 9.08 9.04 9.48 9.32 9.62 8.86 9.50 9.80 9.37 9.65 9.02 9.02 9.62 9.74 9.70 9.16 9.19 9.78 9.68 9.15 8.82 9.38 9.01 9.78 8.69 9.30 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="3/2to4/2" speed="9.82" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 1.65 3.83 5.30 7.02 9.14 10.19 10.04 9.07 10.30 10.25 9.58 9.48 10.28 9.38 9.98 10.13 9.78 9.76 9.52 10.09 9.79 9.19 9.82 9.57 9.28 9.68 9.01 9.73 9.73 9.03 9.87 9.93 9.20 9.71 10.29 9.65 9.56 9.19 10.05 10.53 10.02 11.32 10.39 10.68 11.11 11.01 11.04 10.26 10.93 11.23 10.07 10.25 7.90 3.62 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="4/0to3/0" speed="8.42" pastSpeed="0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.01 2.85 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 7.97 7.89 7.96 8.00 8.14 8.34 8.50 8.77 8.78 8.32 8.05 8.56 9.57 9.80 9.67 10.06 9.67 9.51 9.73 9.66 9.75 9.59 9.95 10.24 9.14 9.60 9.54 9.33 9.71 9.36 9.73 9.95 9.55 9.51 9.00 7.52 5.65 5.65 5.60 5.45 5.84 5.55 5.53 5.63 5.65 5.61 4.46 2.56 0.52 0.24 0.15 0.01 0.00 0.00 0.00 0.00"/>
+        <edge id="4/0to4/1" speed="7.70" pastSpeed="0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 1.64 3.81 5.82 7.87 10.17 9.74 10.21 10.31 10.62 10.29 10.18 10.89 10.34 9.93 10.20 10.13 10.47 9.66 9.79 9.80 9.77 10.08 10.20 10.78 9.63 10.17 10.15 9.72 9.78 8.89 8.58 8.64 8.97 8.97 7.31 7.64 8.49 8.04 8.77 9.30 8.34 7.59 7.11 7.01 6.77 6.65 6.86 7.08 6.94 6.83 6.93 6.82 6.99 7.15 8.64 8.57 8.75 8.91 8.98 9.30 9.06 8.38 8.13 7.97 8.73 8.42 8.51 7.95 8.16 8.31 8.46 8.42 8.85 8.21 7.91 7.83 8.06 8.48 8.00 7.68 7.52 8.83 8.82 10.00 10.00 10.00 6.40 8.39 8.17 8.91 7.88 8.53 8.11 8.84 9.02 8.90 8.78 8.07 8.70 7.87 8.41 8.26 8.72 8.80 7.98 8.06 7.98 8.23 8.23 8.32 8.09 7.80 8.72 8.43 7.91 8.54 8.01 8.22 8.54 8.14 8.02 8.52 8.11 8.42 8.13 9.05 8.03 8.24 8.29 7.78 7.80 8.35 8.48 8.79 8.35 6.22 3.18 0.58 0.27 0.18 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00"/>
+        <edge id="4/1to3/1" speed="7.33" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 1.98 3.63 5.46 7.02 7.89 8.14 8.67 8.51 8.63 8.86 8.91 7.96 8.36 8.89 7.84 8.14 8.91 8.33 8.24 8.15 9.00 8.43 8.15 8.49 8.02 8.87 8.96 8.52 8.82 7.92 7.93 7.96 8.30 9.02 8.28 8.02 8.47 8.71 7.82 8.84 8.16 8.07 8.60 8.03 8.89 8.18 8.73 8.43 7.34 3.81 0.64 0.04 0.02 0.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="4/1to4/0" speed="8.78" pastSpeed="10.27 10.58 10.08 9.76 10.27 10.89 10.36 10.62 10.19 10.90 10.13 10.08 10.33 10.56 9.80 10.47 10.10 9.66 10.68 9.12 4.82 1.53 0.50 0.28 0.09 0.01 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.04 8.48 9.03 8.11 9.03 8.24 8.29 8.18 8.90 8.12 8.94 8.65 8.65 8.20 8.97 8.60 8.54 8.12 8.62 8.41 8.57 7.93 8.31 8.01 7.99 8.87 8.82 8.97 8.43 8.92 8.57 8.92 8.77 8.48 8.60 8.50 8.57 8.38 7.93 8.77 9.14 8.37 7.96 7.95 7.97 8.78 7.42 4.43 10.00 10.00 10.00 10.00 10.00 10.00 10.68 10.39 10.19 9.80 10.07 10.18 10.42 10.40 10.42 10.46 9.64 10.17 8.75 8.57 8.94 8.71 8.52 9.57 9.51 9.32 9.54 9.33 8.66 9.65 9.28 9.65 9.46 8.77 8.95 9.26 8.46 8.60 9.69 9.39 9.65 4.57 5.93 6.22 7.03 7.93 9.10 9.32 9.52 9.53 9.37 9.71 9.88 10.17 10.47 10.44 9.86 9.82 10.85 10.68 10.90 9.96"/>
+        <edge id="4/1to4/2" speed="9.26" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 8.66 9.35 9.09 9.15 8.83 8.94 9.01 8.82 9.37 8.94 9.48 8.62 9.44 9.05 8.63 9.20 8.72 8.96 9.10 8.78 9.25 8.89 9.25 8.78 8.77 9.43 9.19 9.13 6.85 7.49 8.02 9.02 8.96 9.12 9.35 9.52 9.51 9.37 9.36 9.56 9.63 9.54 9.22 9.55 9.52 9.96 10.07 9.45 9.14 9.29 9.16 9.33 8.96 8.85 8.55 8.86 8.73 8.61 8.90 9.22 8.82 8.72 8.76 8.85 8.66 8.61 0.00 0.00 0.00 0.00 0.00 0.00 0.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+        <edge id="4/2to3/2" speed="8.91" pastSpeed="8.18 7.41 4.24 1.90 0.63 0.07 0.02 0.02 0.00 0.00 1.88 2.57 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.02 9.56 9.06 8.94 9.77 8.97 9.52 9.19 8.72 9.66 8.82 9.43 9.30 9.25 9.41 9.74 8.79 9.66 9.51 9.09 9.00 9.33 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.28 4.32 5.76 7.87 8.30 7.54 7.94 7.68 8.20 6.62 7.48 8.66 9.51 8.90 9.45 9.07 9.43 9.12 9.76 9.51 9.80 9.26 9.00 9.38 8.99 9.44 9.29 9.26 9.38 8.84 8.35 8.48 8.83 8.19 8.04 7.95 8.07 8.38 7.49 7.83 7.99 8.49 7.97 7.35 7.74 8.41 7.82 7.88 8.43"/>
+        <edge id="4/2to4/1" speed="10.00" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.19 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
+    </routingEngine>
+</snapshot>

@@ -40,15 +40,14 @@ import sumolib  # noqa
 
 def computeHighScore(scen, high, alg=""):
     score = computeScore(scen)
-    i = 0
-    for i, s in enumerate(high[scen]):
-        if s[2] < score[0]:
-            break
-    high[scen].insert(i, ("SUMO " + alg, "", score[0]))
+    high[scen].append(("SUMO " + alg, "", score[0]))
+    high[scen].sort(key=lambda x: -x[2])
 
 
 def main():
     base = os.path.dirname(os.path.abspath(__file__))
+    os.makedirs(os.path.join(base, "tls"), exist_ok=True)
+    os.makedirs(os.path.join(base, "output"), exist_ok=True)
     high = {}
     for config in sorted(glob.glob(os.path.join(base, "*.sumocfg"))):
         scen = os.path.basename(config[:-8])
@@ -83,7 +82,7 @@ def main():
             for alg, minDur in (("actuated", 3), ("delay_based", 1), ("no_switch", 0)):
                 print("running scenario '%s' with algorithm '%s'" % (scen, alg))
                 if minDur:
-                    with open(tls + "." + alg, "w") as tls_out:
+                    with open(os.path.join(base, "tls", ".".join((os.path.basename(tls), scen, alg))), "w") as tls_out:
                         for line in lines:
                             line = line.replace('type="static"', 'type="%s"' % alg)
                             if "phase" in line:
@@ -98,7 +97,7 @@ def main():
                         addStr += "," + tls_out.name
                 subprocess.call([sumolib.checkBinary('sumo'), "-c", config,
                                  "-a", addStr,
-                                 '--output-prefix', os.path.join(scen, ""),
+                                 '--output-prefix', os.path.join("output", scen + "."),
                                  '-l', 'log', '--duration-log.statistics',
                                  '--statistic-output', 'stats.xml',
                                  '-v', 'false', '--no-warnings', '--no-step-log',
@@ -108,7 +107,7 @@ def main():
             high[scen] = []
             print("running scenario 'rail'")
             subprocess.call([sumolib.checkBinary('sumo'), "-c", config.replace("rail", "rail_demo"),
-                             '--output-prefix', os.path.join(scen, ""),
+                             '--output-prefix', os.path.join("output", scen + "."),
                              '-l', "log", '--duration-log.statistics',
                              '--statistic-output', 'stats.xml',
                              '-v', 'false', '--no-warnings', '--no-step-log',

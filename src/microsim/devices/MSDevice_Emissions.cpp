@@ -62,7 +62,6 @@ MSDevice_Emissions::buildVehicleDevices(SUMOVehicle& v, std::vector<MSVehicleDev
     OptionsCont& oc = OptionsCont::getOptions();
     if (equippedByDefaultAssignmentOptions(oc, "emissions", v, oc.isSet("emission-output"))) {
         into.push_back(new MSDevice_Emissions(v));
-        initOnce();
     }
 }
 
@@ -103,7 +102,7 @@ MSDevice_Emissions::initOnce() {
             myWrittenAttributes.set(attr);
         }
     }
-    //std::cout << "mask=" << myWrittenAttributes << "\n";
+    OutputDevice::getDeviceByOption("emission-output").setExpectedAttributes(0);
 }
 
 

@@ -35,13 +35,16 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "delay_based")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "delay_based")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
-# add phase
-netedit.addDuplicatePhase(netedit.attrs.TLS.single.delayBasedPhase.addButton)
+# duplicate phase
+netedit.addDuplicatePhase(0)
+
+# duplicate phase
+netedit.addDuplicatePhase(3)
 
 # type enter to save changes
 netedit.typeKey("enter")

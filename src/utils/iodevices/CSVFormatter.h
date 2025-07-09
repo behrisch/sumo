@@ -108,7 +108,7 @@ public:
     void setExpectedAttributes(const SumoXMLAttrMask& expected, const int depth = 2) {
         myExpectedAttrs = expected;
         myMaxDepth = depth;
-        myCheckColumns = true;
+        myCheckColumns = expected.any();
     }
 
 private:

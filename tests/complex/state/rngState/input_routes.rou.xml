@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-09 08:59:14 by Eclipse SUMO duarouter Version v1_23_1+0953-aaf198e2eb9
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="../input_net.net.xml"/>
+        <route-files value="input_routes2.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="input_routes3.rou.xml"/>
+        <write-trips value="true"/>
+    </output>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <flow id="v" begin="0" end="1000" period="3" departSpeed="max">
+        <route edges="1/0to2/0"/>
+    </flow>
+</routes>

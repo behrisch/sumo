@@ -106,6 +106,7 @@ behavior on [netconvert](../../netconvert.md).
 | **--shapefile.use-defaults-on-failure** | Uses edge type defaults on problems; *default: **false***                   |
 | **--shapefile.all-bidirectional**       | Insert edges in both directions; *default: **false***                       |
 | **--shapefile.guess-projection**        | Guess the proper projection; *default: **false***                           |
+| **--shapefile.node-join-dist**    | Assume edges share a node if when no node id was found and their geometry-endpoints are within FLOAT m (default 0) |
 
 # Examples
 

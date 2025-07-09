@@ -46,9 +46,9 @@ class MSLane;
  */
 class MSEmissionExport {
 public:
-    /** @brief Writes the complete network state of the given edges into the given device
+    /** @brief Writes emission values into the given device
      *
-     *  Opens the current time step and export the emission factors of all availabel vehicles
+     *  Opens the current time step and export the emission factors of all available vehicles
      *
      * @param[in] of The output device to use
      * @param[in] timestep The current time step
@@ -56,6 +56,17 @@ public:
      */
     static void write(OutputDevice& of, SUMOTime timestep);
 
+    /** @brief Writes emission values for a single vehicle into the given device
+     *
+     *  Opens the current time step and export the emission factors of all available vehicles
+     *
+     * @param[in] of The output device to use
+     * @param[in] veh The vehicle to generate data for
+     * @param[in] scaled Whetehr the values are scaled to the current step length
+     * @param[in] mask The attributes to write
+     * @exception IOError If an error on writing occurs (!!! not yet implemented)
+     */
+    static void writeEmissions(OutputDevice& of, const bool scaled, const MSBaseVehicle* const veh, const bool includeType, const SumoXMLAttrMask& mask);
 
 private:
     /// @brief Invalidated copy constructor.

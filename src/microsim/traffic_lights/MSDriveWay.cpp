@@ -1361,7 +1361,7 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
     // add driveways that start on the same signal / lane
     dw->addParallelFoes(link, *first);
     // add driveways that reverse along this driveways route
-    dw->addReversalFoes();
+    dw->addReversalFoes(movingBlock);
     // make foes unique and symmetrical
     std::set<MSDriveWay*, ComparatorNumericalIdLess> uniqueFoes(dw->myFoes.begin(), dw->myFoes.end());
     std::set<MSLink*> uniqueCLink(dw->myConflictLinks.begin(), dw->myConflictLinks.end());
@@ -1387,16 +1387,18 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
             } else {
                 dw->buildSubFoe(foe, movingBlock);
             }
-            if (dw->bidiBlockedByEnd(*foe)) {
+            if (foe != dw) { // check for movingBlock
+                if (dw->bidiBlockedByEnd(*foe)) {
 #ifdef DEBUG_ADD_FOES
-                if (DEBUG_COND_DW) {
-                    std::cout << " addFoeCheckSiding " << foe->getID() << "\n";
-                }
+                    if (DEBUG_COND_DW) {
+                        std::cout << " addFoeCheckSiding " << foe->getID() << "\n";
+                    }
 #endif
-                dw->myFoes.push_back(foe);
-                dw->addSidings(foe);
-            } else  {
-                foe->buildSubFoe(dw, movingBlock);
+                    dw->myFoes.push_back(foe);
+                    dw->addSidings(foe);
+                } else  {
+                    foe->buildSubFoe(dw, movingBlock);
+                }
             }
         }
         if (link) {
@@ -1618,7 +1620,7 @@ MSDriveWay::addParallelFoes(const MSLink* link, const MSEdge* first) {
 
 
 void
-MSDriveWay::addReversalFoes() {
+MSDriveWay::addReversalFoes(bool movingBlock) {
 #ifdef DEBUG_ADD_FOES
     std::cout << "driveway " << myID << " addReversalFoes\n";
 #endif
@@ -1630,8 +1632,9 @@ MSDriveWay::addReversalFoes() {
     }
     int i = 0;
     for (const MSEdge* e : myRoute) {
-        if (forward.count(e) != 0) {
-            // reversals in our own forward section must be ignored
+        if (forward.count(e) != 0 && !movingBlock) {
+            // reversals in our own forward can be ignored because each driveway
+            // is automatically a foe of itself by default
             continue;
         }
         if (i == myCoreSize) {
@@ -1665,6 +1668,11 @@ MSDriveWay::addReversalFoes() {
 #endif
                         myFoes.push_back(foe);
                     }
+                } else if (movingBlock && foe == this) {
+#ifdef DEBUG_ADD_FOES
+                    std::cout << "  dw " << getID() << " reverses on forward edge=" << e->getID() << " (movingBlock)\n";
+#endif
+                    myFoes.push_back(foe);
                 }
             }
         }

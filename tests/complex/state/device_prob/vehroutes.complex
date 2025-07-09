@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-08 14:31:45 by Eclipse SUMO sumo Version v1_23_1+0932-2ae6f5fa0dc
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net.net.xml"/>
+        <load-state value="state.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo2.xml"/>
+        <vehroute-output value="vehroutes.xml"/>
+    </output>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <tripinfo_device>
+        <device.tripinfo.probability value="0.5"/>
+    </tripinfo_device>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0.0" depart="0.00" departSpeed="10.00" speedFactor="1.0600" arrival="260.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.1" depart="2.00" departSpeed="9.38" speedFactor="0.9383" arrival="264.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.2" depart="4.00" departSpeed="10.00" speedFactor="1.0104" arrival="266.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.3" depart="6.00" departSpeed="10.00" speedFactor="1.0827" arrival="267.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.4" depart="8.00" departSpeed="10.00" speedFactor="1.0303" arrival="269.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.5" depart="10.00" departSpeed="8.31" speedFactor="0.8310" arrival="275.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.6" depart="12.00" departSpeed="9.64" speedFactor="1.0458" arrival="277.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.7" depart="14.00" departSpeed="8.86" speedFactor="0.8860" arrival="279.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.8" depart="16.00" departSpeed="9.38" speedFactor="0.9379" arrival="280.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.9" depart="18.00" departSpeed="8.57" speedFactor="0.8569" arrival="282.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.10" depart="20.00" departSpeed="9.90" speedFactor="1.0907" arrival="283.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.11" depart="22.00" departSpeed="10.00" speedFactor="1.0263" arrival="285.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.12" depart="24.00" departSpeed="10.00" speedFactor="1.0471" arrival="286.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.13" depart="26.00" departSpeed="10.00" speedFactor="1.1229" arrival="288.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.14" depart="28.00" departSpeed="9.91" speedFactor="0.9912" arrival="289.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.15" depart="30.00" departSpeed="9.27" speedFactor="0.9268" arrival="349.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.16" depart="32.00" departSpeed="8.78" speedFactor="0.8784" arrival="353.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.17" depart="34.00" departSpeed="9.41" speedFactor="0.9414" arrival="354.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.18" depart="36.00" departSpeed="9.36" speedFactor="0.9362" arrival="356.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.19" depart="38.00" departSpeed="10.00" speedFactor="1.1582" arrival="357.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.20" depart="40.00" departSpeed="10.00" speedFactor="1.0181" arrival="359.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.21" depart="42.00" departSpeed="10.00" speedFactor="1.0102" arrival="360.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.22" depart="44.00" departSpeed="9.75" speedFactor="0.9750" arrival="362.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.23" depart="46.00" departSpeed="8.90" speedFactor="0.8896" arrival="364.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.24" depart="48.00" departSpeed="8.26" speedFactor="0.8257" arrival="368.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.25" depart="50.00" departSpeed="8.726" speedFactor="0.8726" arrival="370.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.26" depart="52.00" departSpeed="9.172" speedFactor="0.9172" arrival="371.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.27" depart="54.00" departSpeed="9.488" speedFactor="0.9488" arrival="373.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.28" depart="56.00" departSpeed="10.00" speedFactor="1.1318" arrival="374.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.29" depart="58.00" departSpeed="9.313" speedFactor="0.9313" arrival="376.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.30" depart="60.00" departSpeed="10.00" speedFactor="1.1786" arrival="377.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.31" depart="62.00" departSpeed="10.00" speedFactor="1.1544" arrival="379.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.32" depart="64.00" departSpeed="10.00" speedFactor="1.0052" arrival="432.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.33" depart="66.00" departSpeed="10.00" speedFactor="1.1718" arrival="434.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.34" depart="68.00" departSpeed="9.948" speedFactor="0.9948" arrival="436.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.35" depart="70.00" departSpeed="10.00" speedFactor="1.0197" arrival="437.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.36" depart="72.00" departSpeed="9.732" speedFactor="0.9732" arrival="439.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.37" depart="74.00" departSpeed="10.00" speedFactor="1.1797" arrival="441.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.38" depart="76.00" departSpeed="10.00" speedFactor="1.1023" arrival="442.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.39" depart="78.00" departSpeed="9.006" speedFactor="0.9006" arrival="447.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.40" depart="80.00" departSpeed="10.00" speedFactor="1.0304" arrival="449.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.41" depart="82.00" departSpeed="9.571" speedFactor="0.9571" arrival="450.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.42" depart="84.00" departSpeed="10.00" speedFactor="1.0919" arrival="452.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.43" depart="86.00" departSpeed="10.00" speedFactor="1.0378" arrival="453.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.44" depart="88.00" departSpeed="10.00" speedFactor="1.0434" arrival="455.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.45" depart="90.00" departSpeed="10.00" speedFactor="1.0880" arrival="456.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.46" depart="92.00" departSpeed="9.974" speedFactor="0.9974" arrival="458.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.47" depart="94.00" departSpeed="9.005" speedFactor="0.9005" arrival="459.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.48" depart="96.00" departSpeed="8.769" speedFactor="0.8769" arrival="462.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="0.49" depart="98.00" departSpeed="8.504" speedFactor="0.8504" arrival="524.00">
+        <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    </vehicle>
+
+</routes>

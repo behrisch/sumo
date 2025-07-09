@@ -187,8 +187,34 @@ MSDevice_FCD::initOnce() {
             myEdgeFilter.insert(MSEdge::dictionary(name));
         }
     }
+    const SumoXMLAttrMask traffic = getDefaultMask();
+    SumoXMLAttrMask emissions;
+    emissions.set(SUMO_ATTR_ECLASS);
+    emissions.set(SUMO_ATTR_CO2);
+    emissions.set(SUMO_ATTR_CO);
+    emissions.set(SUMO_ATTR_HC);
+    emissions.set(SUMO_ATTR_PMX);
+    emissions.set(SUMO_ATTR_FUEL);
+    emissions.set(SUMO_ATTR_ELECTRICITY);
+    SumoXMLAttrMask misc;
+    misc.set(SUMO_ATTR_SIGNALS);
+    misc.set(SUMO_ATTR_ACCELERATION);
+    misc.set(SUMO_ATTR_ACCELERATION_LAT);
+    misc.set(SUMO_ATTR_DISTANCE);
+    misc.set(SUMO_ATTR_ODOMETER);
+    misc.set(SUMO_ATTR_POSITION_LAT);
+    misc.set(SUMO_ATTR_SPEED_LAT);
+    misc.set(SUMO_ATTR_LEADER_ID);
+    misc.set(SUMO_ATTR_LEADER_SPEED);
+    misc.set(SUMO_ATTR_ARRIVALDELAY);
+    misc.set(SUMO_ATTR_SEGMENT);
+    misc.set(SUMO_ATTR_QUEUE);
+    misc.set(SUMO_ATTR_ENTRYTIME);
+    misc.set(SUMO_ATTR_EVENTTIME);
+    misc.set(SUMO_ATTR_BLOCKTIME);
+    const std::map<std::string, SumoXMLAttrMask> special = {{"traffic", traffic}, {"emissions", emissions}, {"misc", misc}};
     if (oc.isSet("fcd-output.attributes")) {
-        myWrittenAttributes = OutputDevice::parseWrittenAttributes(oc.getStringVector("fcd-output.attributes"), "fcd output");
+        myWrittenAttributes = OutputDevice::parseWrittenAttributes(oc.getStringVector("fcd-output.attributes"), "fcd output", special);
     } else {
         myWrittenAttributes = getDefaultMask();
     }

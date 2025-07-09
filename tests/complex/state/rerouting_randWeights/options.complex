@@ -1,0 +1,20 @@
+--vehroute-output=vehroutes.xml 
+--no-step-log 
+--no-duration-log 
+-n input_net.net.xml 
+-r input_routes.rou.xml 
+--weights.random-factor 5
+--device.rerouting.period 30
+--save-state.times 500
+--save-state.files state.xml 
+--save-state.rng
+: 
+--no-step-log
+--no-duration-log
+-n input_net.net.xml
+--begin 500
+--vehroute-output=vehroutes2.xml
+--weights.random-factor 5
+--device.rerouting.period 30
+--load-state state.xml
+tests/complex/state/runner.py

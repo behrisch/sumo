@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-15 05:10:12 by Eclipse SUMO sumo Version v1_23_1+0573-d229b23078f
+<!-- generated on 2025-07-08 16:24:19 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -28,13 +28,14 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0573-d229b23078f" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0938-cf8b72380de" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!v0" state="0" edges="3/1to2/1 1/1to0/1"/>
     <delay number="0" begin="1" end="0" depart="0.00" time="0.00"/>
     <vType id="DEFAULT_PEDTYPE" vClass="pedestrian"/>
     <vType id="DEFAULT_VEHTYPE" length="3.00" minGap="2.00" maxSpeed="10.00" impatience="0.50" accel="0.8" decel="4.5" sigma="0"/>
     <vehicle id="v0" depart="20.00" route="!v0" distance="0 0" speedFactor="0.9383" reroute="1" state="262144 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
-        <device id="routing_v0" state="0"/>
+        <device id="tripinfo_v0"/>
+        <device id="routing_v0" state="0 -1"/>
     </vehicle>
     <transportables type="person" state="1 1 0 0 0 0 0 1 0 0">
         <person id="persontrip_car" type="DEFAULT_PEDTYPE" depart="2.00" departPos="10.00" speedFactor="1.0600" state="8 1 2000 -1 -1 0">
@@ -56,5 +57,5 @@
     <tlLogic id="4/0" programID="0" phase="0" duration="10000"/>
     <tlLogic id="4/1" programID="0" phase="0" duration="10000"/>
     <tlLogic id="4/2" programID="0" phase="0" duration="10000"/>
-    <routingEngine/>
+    <routingEngine last="2000"/>
 </snapshot>

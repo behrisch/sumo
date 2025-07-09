@@ -20,6 +20,9 @@
 
 #include <netedit/frames/GNETagSelector.h>
 #include <netedit/GNEViewNet.h>
+#include <netedit/GNEViewParent.h>
+#include <netedit/frames/GNETLSTable.h>
+#include <netedit/frames/network/GNETLSEditorFrame.h>
 #include <netedit/GNEApplicationWindow.h>
 #include <utils/tests/InternalTestStep.h>
 
@@ -52,11 +55,18 @@ GNEInternalTest::runNeteditInternalTests(GNEApplicationWindow* applicationWindow
         if (testStep->getModalArguments()) {
             argument = testStep->getModalArguments();
         }
+        if (testStep->getTLSTableTest()) {
+            argument = testStep->getTLSTableTest();
+        }
         // check if we have to process it in main windows, abstract view or specific view
         if (testStep->getCategory() == InternalTestStep::Category::APP) {
             applicationWindow->handle(this, testStep->getSelector(), argument);
         } else if (testStep->getCategory() == InternalTestStep::Category::VIEW) {
             applicationWindow->getViewNet()->handle(this, testStep->getSelector(), argument);
+        } else if (testStep->getCategory() == InternalTestStep::Category::TLS_PHASES) {
+            applicationWindow->getViewNet()->getViewParent()->getTLSEditorFrame()->getTLSPhases()->handle(this, testStep->getSelector(), argument);
+        } else if (testStep->getCategory() == InternalTestStep::Category::TLS_PHASETABLE) {
+            applicationWindow->getViewNet()->getViewParent()->getTLSEditorFrame()->getTLSPhases()->getPhaseTable()->onInternalTest(this, testStep->getSelector(), argument);
         } else if (testStep->getCategory() == InternalTestStep::Category::INIT) {
             writeClosedSucessfully = true;
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-18 11:39:57 by Eclipse SUMO sumo Version v1_23_1+0631-03092716493
+<!-- generated on 2025-07-09 17:03:24 by Eclipse SUMO sumo Version v1_23_1+0975-acf3267315e
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -47,18 +47,18 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
 <fcd-export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/fcd_file.xsd">
     <timestep time="0.00">
-        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.77" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.50" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="1.00">
-        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.77" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.50" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="2.00">
-        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.77" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.50" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="3.00">
-        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.77" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.50" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="4.00">
-        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="0" x="1497.62" y="401.65" angle="270.00" type="t1" speed="10.00" pos="97.62" edge="4/1to3/1" slope="0.00" distance="97.62" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="1" queue="0" entryTime="0.00" eventTime="9.76" blockTime="-1.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.77" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.50" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
 </fcd-export>

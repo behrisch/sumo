@@ -73,6 +73,9 @@ extended_attributes
 # filter written attributes with "all"
 all_attributes
 
+# filter written attributes with "emissions"
+emissions
+
 # filter output with shape
 shape_filter
 begin

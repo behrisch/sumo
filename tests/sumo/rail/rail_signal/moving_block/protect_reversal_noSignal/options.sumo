@@ -1,0 +1,6 @@
+--no-step-log --no-duration-log --net-file=net.net.xml
+--routes=input_routes.rou.xml
+--tripinfo-output tripinfos.xml
+--railsignal-moving-block
+--railsignal-vehicle-output railsignal_vehicles.xml
+--collision.action warn

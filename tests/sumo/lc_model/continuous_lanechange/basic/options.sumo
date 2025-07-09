@@ -1,5 +1,5 @@
 --no-step-log --no-duration-log -n net.net.xml -r input_routes.rou.xml --fcd-output fcd.xml --step-length 0.5 --lanechange.duration 3 --fcd-output.signals
 --netstate-dump rawdump.xml
---fcd-output.attributes all
+--fcd-output.attributes traffic,misc
 --lanechange-output lanechanges.xml
 --lanechange-output.xy

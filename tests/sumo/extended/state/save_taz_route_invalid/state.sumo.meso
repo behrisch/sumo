@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-15 05:10:02 by Eclipse SUMO sumo Version v1_23_1+0573-d229b23078f
+<!-- generated on 2025-07-08 16:22:44 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -45,7 +45,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0573-d229b23078f" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0938-cf8b72380de" time="10.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!tripFromTo!var#1" state="0" edges="middle"/>
     <route id="!tripFromTo2" state="0" edges="1-source 1-sink"/>
     <route id="!tripFromTo3" state="0" edges="1-source 1-sink"/>
@@ -54,21 +54,24 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <vType id="t0" sigma="0"/>
     <vehicle id="tripFromTo" type="t0" depart="9.00" fromTaz="1" toTaz="1" route="!tripFromTo!var#1" distance="0 1" speedFactor="1.0000" reroute="1" state="458754 9000 0 0 0 0 16199 9000 9223372036854774807">
         <device id="tripinfo_tripFromTo" state="middle_0 13.89 -0 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
-        <device id="routing_tripFromTo" state="0"/>
+        <device id="routing_tripFromTo" state="0 9000"/>
     </vehicle>
     <vehicle id="tripFromTo2" type="t0" depart="10.00" fromTaz="1" toTaz="1" route="!tripFromTo2" distance="0 0" speedFactor="1.0000" reroute="1" state="458754 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
-        <device id="routing_tripFromTo2" state="0"/>
+        <device id="tripinfo_tripFromTo2"/>
+        <device id="routing_tripFromTo2" state="0 -1"/>
     </vehicle>
     <vehicle id="tripFromTo3" type="t0" depart="199.00" fromTaz="1" toTaz="1" route="!tripFromTo3" distance="0 0" speedFactor="1.0000" reroute="1" state="458754 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
-        <device id="routing_tripFromTo3" state="0"/>
+        <device id="tripinfo_tripFromTo3"/>
+        <device id="routing_tripFromTo3" state="0 -1"/>
     </vehicle>
     <vehicle id="tripFromTo4" type="t0" depart="399.00" fromTaz="1" toTaz="1" route="!tripFromTo4" distance="0 0" speedFactor="1.0000" reroute="1" state="458754 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
-        <device id="routing_tripFromTo4" state="0"/>
+        <device id="tripinfo_tripFromTo4"/>
+        <device id="routing_tripFromTo4" state="0 -1"/>
     </vehicle>
     <segment id="middle:0">
         <vehicles time="-1" blockTime="-9223372036854775808" value="tripFromTo"/>
     </segment>
-    <routingEngine>
+    <routingEngine last="10000">
         <edge id="middle" speed="13.89" pastSpeed="13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
     </routingEngine>
 </snapshot>

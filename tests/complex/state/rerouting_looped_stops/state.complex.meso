@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-07 17:35:11 by Eclipse SUMO sumo Version v1_23_1+0906-aec72dab441
+<!-- generated on 2025-07-08 16:24:20 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -34,7 +34,7 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0906-aec72dab441" time="10800.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0938-cf8b72380de" time="10800.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!0_0_0!var#1" state="0" edges="D4D3 D3D2 D2D1 D1E1 E1E0 E0D0 D0D1 D1C1 C1C2 C2C3 C3B3 B3C3 C3C2 C2C1 C1D1 D1C1 C1B1 B1B0 B0A0 A0A1 A1B1 B1C1 C1D1 D1E1 E1E2 E2E1 E1E2 E2E3 E3D3 D3C3 C3C2 C2B2 B2B1 B1B0 B0A0 A0A1 A1B1 B1C1 C1B1 B1B2 B2C2 C2B2 B2B1 B1B2 B2B1 B1B0 B0A0 A0A1 A1A2 A2A3 A3B3 B3B4 B4B3 B3B2 B2B1 B1C1 C1C0 C0C1 C1C2 C2C3 C3C4 C4C3 C3C2 C2C1 C1C0 C0B0 B0A0 A0A1 A1B1 B1C1 C1C2 C2D2 D2D3 D3C3 C3C2 C2B2 B2B1"/>
     <route id="!100_0_0!var#1" state="0" edges="E3D3 D3C3 C3C4 C4B4 B4B3 B3B2 B2B1 B1C1 C1C0 C0C1 C1C2 C2C3 C3B3 B3B4 B4A4 A4A3 A3B3 B3C3 C3C4 C4D4 D4C4 C4C3 C3C2 C2D2 D2D1 D1C1 C1C2 C2B2 B2B3 B3A3 A3A4 A4B4 B4B3 B3B2 B2B1 B1C1 C1C0 C0C1 C1D1 D1E1 E1E2 E2E1 E1D1 D1C1 C1B1 B1A1 A1A2 A2B2 B2C2 C2D2 D2D1 D1D2 D2C2 C2C3 C3B3 B3B4 B4A4 A4A3 A3B3 B3C3 C3D3 D3C3 C3C2 C2B2"/>
     <route id="!101_0_0!var#1" state="0" edges="D1D0 D0C0 C0C1 C1B1 B1B2 B2B3 B3A3 A3A2 A2B2 B2C2 C2D2 D2D3 D3D2 D2D3 D3D4 D4C4 C4C3 C3C2 C2B2 B2A2 A2B2 B2C2 C2C3 C3D3 D3D4 D4E4 E4E3 E3E2 E2E3 E3D3 D3D2 D2C2 C2C1 C1D1 D1C1 C1B1 B1A1 A1A2 A2A1 A1A2 A2B2 B2B3 B3B4 B4B3"/>
@@ -315,7 +315,7 @@
         <stop parkingArea="PAB0A0" until="8494.00" started="8289.81" ended="8494.00"/>
         <stop parkingArea="PAD2D3" until="8889.00" started="8529.67" ended="8889.00"/>
         <stop parkingArea="PAB2B1" until="13097.00" started="8914.35"/>
-        <device id="routing_0_0_0" state="600000"/>
+        <device id="routing_0_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="1_0_0" depart="18.00" departPos="stop" route="!1_0_0!var#1" distance="5237.6 1" speedFactor="0.9383" reroute="1" state="262152 18000 61 0 0 -1 14226000 9718840 9223372036854774807">
         <stop parkingArea="PAB3A3" until="3618.00" started="18.00" ended="3618.00"/>
@@ -335,7 +335,7 @@
         <stop parkingArea="PAD4D3" until="8795.00" started="8540.30" ended="8795.00"/>
         <stop parkingArea="PAB1B2" until="9686.00" started="8827.84" ended="9686.00"/>
         <stop parkingArea="PAE3E2" until="14226.00" started="9718.84"/>
-        <device id="routing_1_0_0" state="600000"/>
+        <device id="routing_1_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="2_0_0" depart="21.00" departPos="stop" route="!2_0_0!var#1" distance="6810.4 1" speedFactor="1.0104" reroute="1" state="262152 21000 79 0 0 -1 13384000 8805594 9223372036854774807">
         <stop parkingArea="PAC4D4" until="3621.00" started="21.00" ended="3621.00"/>
@@ -358,7 +358,7 @@
         <stop parkingArea="PAD0C0" until="8479.00" started="8315.58" ended="8479.00"/>
         <stop parkingArea="PAC1B1" until="8769.00" started="8491.20" ended="8769.00"/>
         <stop parkingArea="PAD4D3" until="13384.00" started="8805.59"/>
-        <device id="routing_2_0_0" state="600000"/>
+        <device id="routing_2_0_0" state="600000 21000"/>
     </vehicle>
     <vehicle id="3_0_0" depart="28.00" departPos="stop" route="!3_0_0!var#1" distance="6382.4 1" speedFactor="1.0827" reroute="1" state="262152 28000 74 0 0 -1 14144000 9938076 9223372036854774807">
         <stop parkingArea="PAC1C0" until="3628.00" started="28.00" ended="3628.00"/>
@@ -381,7 +381,7 @@
         <stop parkingArea="PAE4D4" until="9540.00" started="9328.65" ended="9540.00"/>
         <stop parkingArea="PAE2E1" until="9921.00" started="9563.03" ended="9921.00"/>
         <stop parkingArea="PAE3E2" until="14144.00" started="9938.08"/>
-        <device id="routing_3_0_0" state="600000"/>
+        <device id="routing_3_0_0" state="600000 28000"/>
     </vehicle>
     <vehicle id="4_0_0" depart="31.00" departPos="stop" route="!4_0_0!var#1" distance="6444 1" speedFactor="1.0303" reroute="1" state="262152 31000 75 0 0 -1 14217000 9833608 9223372036854774807">
         <stop parkingArea="PAD1E1" until="3631.00" started="31.00" ended="3631.00"/>
@@ -404,7 +404,7 @@
         <stop parkingArea="PAA1B1" until="9348.00" started="9268.47" ended="9348.00"/>
         <stop parkingArea="PAC1C0" until="9808.00" started="9360.67" ended="9810.00"/>
         <stop parkingArea="PAD2D3" until="14217.00" started="9833.61"/>
-        <device id="routing_4_0_0" state="600000"/>
+        <device id="routing_4_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="5_0_0" depart="46.00" departPos="stop" route="!5_0_0!var#1" distance="4996.8 1" speedFactor="0.8310" reroute="1" state="262152 46000 58 0 0 -1 14396000 9965289 9223372036854774807">
         <stop parkingArea="PAB2B1" until="3646.00" started="46.00" ended="3646.00"/>
@@ -425,7 +425,7 @@
         <stop parkingArea="PAD0D1" until="9572.00" started="9129.08" ended="9572.00"/>
         <stop parkingArea="PAE4D4" until="9942.00" started="9611.10" ended="9942.00"/>
         <stop parkingArea="PAE3E4" until="14396.00" started="9965.29"/>
-        <device id="routing_5_0_0" state="600000"/>
+        <device id="routing_5_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="6_0_0" depart="88.00" departPos="stop" route="!6_0_0!var#2" distance="6468 2" speedFactor="1.0458" reroute="1" state="262152 88000 75 0 0 -1 14261000 10166572 9223372036854774807">
         <stop parkingArea="PAC2C1" until="3688.00" started="88.00" ended="3688.00"/>
@@ -447,7 +447,7 @@
         <stop parkingArea="PAE0D0" until="9607.00" started="9410.76" ended="9607.00"/>
         <stop parkingArea="PAC1C2" until="10143.00" started="9624.95" ended="10143.00"/>
         <stop parkingArea="PAA3A4" until="14261.00" started="10166.57"/>
-        <device id="routing_6_0_0" state="600000"/>
+        <device id="routing_6_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="7_0_0" depart="93.00" departPos="stop" route="!7_0_0!var#1" distance="7067.2 1" speedFactor="0.8860" reroute="1" state="262152 93000 82 0 0 -1 13579000 9652824 9223372036854774807">
         <stop parkingArea="PAB3B4" until="3693.00" started="93.00" ended="3693.00"/>
@@ -469,7 +469,7 @@
         <stop parkingArea="PAE1E2" until="9095.00" started="8569.82" ended="9095.00"/>
         <stop parkingArea="PAC0D0" until="9625.00" started="9129.78" ended="9625.00"/>
         <stop parkingArea="PAB1A1" until="13579.00" started="9652.82"/>
-        <device id="routing_7_0_0" state="600000"/>
+        <device id="routing_7_0_0" state="600000 93000"/>
     </vehicle>
     <vehicle id="8_0_0" depart="106.00" departPos="stop" route="!8_0_0!var#1" distance="4552.8 1" speedFactor="0.9379" reroute="1" state="262152 106000 53 0 0 -1 14239000 9647469 9223372036854774807">
         <stop parkingArea="PAE3E4" until="3706.00" started="106.00" ended="3706.00"/>
@@ -489,7 +489,7 @@
         <stop parkingArea="PAD2D3" until="9313.00" started="9177.14" ended="9313.00"/>
         <stop parkingArea="PAD4E4" until="9614.00" started="9326.14" ended="9614.00"/>
         <stop parkingArea="PAC4D4" until="14239.00" started="9647.47"/>
-        <device id="routing_8_0_0" state="600000"/>
+        <device id="routing_8_0_0" state="600000 106000"/>
     </vehicle>
     <vehicle id="9_0_0" depart="117.00" departPos="stop" route="!9_0_0!var#1" distance="6537.6 1" speedFactor="0.8569" reroute="1" state="262152 117000 76 0 0 -1 14283000 10310872 9223372036854774807">
         <stop parkingArea="PAA0B0" until="3717.00" started="117.00" ended="3717.00"/>
@@ -510,7 +510,7 @@
         <stop parkingArea="PAE3E2" until="10046.00" started="9733.05" ended="10046.00"/>
         <stop parkingArea="PAD1E1" until="10253.00" started="10067.58" ended="10253.00"/>
         <stop parkingArea="PAA4A3" until="14283.00" started="10310.87"/>
-        <device id="routing_9_0_0" state="600000"/>
+        <device id="routing_9_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="10_0_0" depart="121.00" departPos="stop" route="!10_0_0!var#2" distance="5506.4 2" speedFactor="1.0907" reroute="1" state="262152 121000 64 0 0 -1 14342000 9894630 9223372036854774807">
         <stop parkingArea="PAD3C3" until="3721.00" started="121.00" ended="3721.00"/>
@@ -531,7 +531,7 @@
         <stop parkingArea="PAB1B2" until="9473.00" started="9360.95" ended="9473.00"/>
         <stop parkingArea="PAD4E4" until="9865.00" started="9501.25" ended="9865.00"/>
         <stop parkingArea="PAE0D0" until="14342.00" started="9894.63"/>
-        <device id="routing_10_0_0" state="600000"/>
+        <device id="routing_10_0_0" state="600000 4800000"/>
     </vehicle>
     <vehicle id="11_0_0" depart="129.00" departPos="stop" route="!11_0_0!var#2" distance="6708.8 2" speedFactor="1.0263" reroute="1" state="262152 129000 78 0 0 -1 14062000 9992673 9223372036854774807">
         <stop parkingArea="PAB4B3" until="3729.00" started="129.00" ended="3729.00"/>
@@ -554,7 +554,7 @@
         <stop parkingArea="PAA1A2" until="9518.00" started="9262.04" ended="9518.00"/>
         <stop parkingArea="PAB2B1" until="9954.00" started="9530.01" ended="9954.00"/>
         <stop parkingArea="PAD4C4" until="14062.00" started="9992.67"/>
-        <device id="routing_11_0_0" state="600000"/>
+        <device id="routing_11_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="12_0_0" depart="155.00" departPos="stop" route="!12_0_0!var#2" distance="6272.8 2" speedFactor="1.0471" reroute="1" state="262152 155000 73 0 0 -1 14205000 10103425 9223372036854774807">
         <stop parkingArea="PAB4B3" until="3755.00" started="155.00" ended="3755.00"/>
@@ -575,7 +575,7 @@
         <stop parkingArea="PAB4A4" until="9480.00" started="9110.21" ended="9480.00"/>
         <stop parkingArea="PAB2A2" until="10074.00" started="9504.33" ended="10074.00"/>
         <stop parkingArea="PAD3C3" until="14205.00" started="10103.43"/>
-        <device id="routing_12_0_0" state="600000"/>
+        <device id="routing_12_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="13_0_0" depart="198.00" departPos="stop" route="!13_0_0!var#1" distance="6953.6 1" speedFactor="1.1229" reroute="1" state="262152 198000 81 0 0 -1 13894000 9429219 9223372036854774807">
         <stop parkingArea="PAD0C0" until="4367.00" started="198.00" ended="4367.00"/>
@@ -597,7 +597,7 @@
         <stop parkingArea="PAA3A2" until="9287.00" started="9084.00" ended="9287.00"/>
         <stop parkingArea="PAE3D3" until="9389.00" started="9320.73" ended="9389.00"/>
         <stop parkingArea="PAA0B0" until="13894.00" started="9429.22"/>
-        <device id="routing_13_0_0" state="600000"/>
+        <device id="routing_13_0_0" state="600000 198000"/>
     </vehicle>
     <vehicle id="14_0_0" depart="201.00" departPos="stop" route="!14_0_0!var#1" distance="5245.6 1" speedFactor="0.9912" reroute="1" state="262152 201000 61 0 0 -1 14328000 10316651 9223372036854774807">
         <stop parkingArea="PAB3B2" until="3801.00" started="201.00" ended="3801.00"/>
@@ -618,7 +618,7 @@
         <stop parkingArea="PAA0A1" until="9749.00" started="9238.38" ended="9749.00"/>
         <stop parkingArea="PAB3A3" until="10298.00" started="9774.16" ended="10298.00"/>
         <stop parkingArea="PAC3D3" until="14328.00" started="10316.65"/>
-        <device id="routing_14_0_0" state="600000"/>
+        <device id="routing_14_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="15_0_0" depart="237.00" departPos="stop" route="!15_0_0!var#1" distance="5860.8 1" speedFactor="0.9268" reroute="1" state="262152 237000 68 0 0 -1 14044000 9424298 9223372036854774807">
         <stop parkingArea="PAD2D3" until="3837.00" started="237.00" ended="3837.00"/>
@@ -636,7 +636,7 @@
         <stop parkingArea="PAE4D4" until="8846.00" started="8620.21" ended="8846.00"/>
         <stop parkingArea="PAA1B1" until="9411.00" started="8892.85" ended="9411.00"/>
         <stop parkingArea="PAB2B1" until="14044.00" started="9424.30"/>
-        <device id="routing_15_0_0" state="600000"/>
+        <device id="routing_15_0_0" state="600000 237000"/>
     </vehicle>
     <vehicle id="16_0_0" depart="242.00" departPos="stop" route="!16_0_0!var#1" distance="4214.4 1" speedFactor="0.8784" reroute="1" state="262152 242000 49 0 0 -1 14377000 9478360 9223372036854774807">
         <stop parkingArea="PAE1E0" until="3842.00" started="242.00" ended="3842.00"/>
@@ -656,7 +656,7 @@
         <stop parkingArea="PAB2B1" until="9096.00" started="8526.05" ended="9096.00"/>
         <stop parkingArea="PAB1A1" until="9464.00" started="9103.02" ended="9464.00"/>
         <stop parkingArea="PAA0B0" until="14377.00" started="9478.36"/>
-        <device id="routing_16_0_0" state="600000"/>
+        <device id="routing_16_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="17_0_0" depart="298.00" departPos="stop" route="!17_0_0!var#1" distance="6440 1" speedFactor="0.9414" reroute="1" state="262152 298000 75 0 0 -1 14292000 10151184 9223372036854774807">
         <stop parkingArea="PAA4A3" until="3898.00" started="298.00" ended="3898.00"/>
@@ -679,7 +679,7 @@
         <stop parkingArea="PAD0C0" until="9843.00" started="9434.18" ended="9843.00"/>
         <stop parkingArea="PAB2B1" until="10125.00" started="9871.75" ended="10125.00"/>
         <stop parkingArea="PAD2C2" until="14292.00" started="10151.18"/>
-        <device id="routing_17_0_0" state="600000"/>
+        <device id="routing_17_0_0" state="600000 298000"/>
     </vehicle>
     <vehicle id="18_0_0" depart="306.00" departPos="stop" route="!18_0_0!var#1" distance="5767.2 1" speedFactor="0.9362" reroute="1" state="262152 306000 67 0 0 -1 14219000 9947222 9223372036854774807">
         <stop parkingArea="PAE2E3" until="3906.00" started="306.00" ended="3906.00"/>
@@ -701,7 +701,7 @@
         <stop parkingArea="PAC3C4" until="9671.00" started="9605.42" ended="9671.00"/>
         <stop parkingArea="PAE0D0" until="9914.00" started="9717.39" ended="9914.00"/>
         <stop parkingArea="PAC3C2" until="14219.00" started="9947.22"/>
-        <device id="routing_18_0_0" state="600000"/>
+        <device id="routing_18_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="19_0_0" depart="309.00" departPos="stop" route="!19_0_0!var#1" distance="5400.8 1" speedFactor="1.1582" reroute="1" state="262152 309000 63 0 0 -1 14154000 9706963 9223372036854774807">
         <stop parkingArea="PAC4B4" until="3909.00" started="309.00" ended="3909.00"/>
@@ -724,7 +724,7 @@
         <stop parkingArea="PAA3A4" until="9469.00" started="9378.28" ended="9469.00"/>
         <stop parkingArea="PAC2B2" until="9691.00" started="9496.10" ended="9691.00"/>
         <stop parkingArea="PAC1D1" until="14154.00" started="9706.96"/>
-        <device id="routing_19_0_0" state="600000"/>
+        <device id="routing_19_0_0" state="600000 309000"/>
     </vehicle>
     <vehicle id="20_0_0" depart="417.00" departPos="stop" route="!20_0_0!var#2" distance="5331.2 2" speedFactor="1.0181" reroute="1" state="262152 417000 62 0 0 -1 14339000 9922106 9223372036854774807">
         <stop parkingArea="PAB3B4" until="4017.00" started="417.00" ended="4017.00"/>
@@ -744,7 +744,7 @@
         <stop parkingArea="PAC0B0" until="9386.00" started="9182.67" ended="9386.00"/>
         <stop parkingArea="PAE2D2" until="9910.00" started="9422.32" ended="9910.00"/>
         <stop parkingArea="PAD1D0" until="14339.00" started="9922.11"/>
-        <device id="routing_20_0_0" state="600000"/>
+        <device id="routing_20_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="21_0_0" depart="424.00" departPos="stop" route="!21_0_0!var#1" distance="4381.6 1" speedFactor="1.0102" reroute="1" state="262152 424000 51 0 0 -1 14075000 9638600 9223372036854774807">
         <stop parkingArea="PAC2C1" until="4024.00" started="424.00" ended="4024.00"/>
@@ -761,7 +761,7 @@
         <stop parkingArea="PAD3D4" until="9265.00" started="8799.10" ended="9265.00"/>
         <stop parkingArea="PAB0C0" until="9602.00" started="9307.70" ended="9602.00"/>
         <stop parkingArea="PAA3A4" until="14075.00" started="9638.60"/>
-        <device id="routing_21_0_0" state="600000"/>
+        <device id="routing_21_0_0" state="600000 424000"/>
     </vehicle>
     <vehicle id="22_0_0" depart="428.00" departPos="stop" route="!22_0_0!var#1" distance="5938.4 1" speedFactor="0.9750" reroute="1" state="262152 428000 69 0 0 -1 14203000 10229594 9223372036854774807">
         <stop parkingArea="PAC1B1" until="4028.00" started="428.00" ended="4028.00"/>
@@ -783,7 +783,7 @@
         <stop parkingArea="PAE4E3" until="9727.00" started="9225.25" ended="9727.00"/>
         <stop parkingArea="PAD2C2" until="10210.00" started="9746.26" ended="10210.00"/>
         <stop parkingArea="PAC0D0" until="14203.00" started="10229.59"/>
-        <device id="routing_22_0_0" state="600000"/>
+        <device id="routing_22_0_0" state="600000 428000"/>
     </vehicle>
     <vehicle id="25_0_0" depart="479.00" departPos="stop" route="!25_0_0!var#1" distance="7214.4 1" speedFactor="0.8257" reroute="1" state="262152 479000 84 0 0 -1 14173000 10234204 9223372036854774807">
         <stop parkingArea="PAB1B0" until="4079.00" started="479.00" ended="4079.00"/>
@@ -806,7 +806,7 @@
         <stop parkingArea="PAE4E3" until="10050.00" started="9522.35" ended="10050.00"/>
         <stop parkingArea="PAA0B0" until="10204.00" started="10110.41" ended="10204.00"/>
         <stop parkingArea="PAB3C3" until="14173.00" started="10234.20"/>
-        <device id="routing_25_0_0" state="600000"/>
+        <device id="routing_25_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="26_0_0" depart="554.00" departPos="stop" route="!26_0_0!var#1" distance="5848.8 1" speedFactor="0.8726" reroute="1" state="262152 554000 68 0 0 -1 14389000 10186516 9223372036854774807">
         <stop parkingArea="PAD1E1" until="4154.00" started="554.00" ended="4154.00"/>
@@ -827,7 +827,7 @@
         <stop parkingArea="PAE2E3" until="9880.00" started="9608.37" ended="9880.00"/>
         <stop parkingArea="PAD0C0" until="10165.00" started="9915.31" ended="10165.00"/>
         <stop parkingArea="PAE0E1" until="14389.00" started="10186.52"/>
-        <device id="routing_26_0_0" state="600000"/>
+        <device id="routing_26_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="24_0_1" depart="583.00" departPos="stop" route="!24_0_1!var#1" distance="6872 1" speedFactor="0.9172" reroute="1" state="262152 583000 80 0 0 -1 13988000 9505909 9223372036854774807">
         <stop parkingArea="PAD2E2" until="4183.00" started="583.00" ended="4183.00"/>
@@ -849,7 +849,7 @@
         <stop parkingArea="PAA2B2" until="9197.00" started="8637.63" ended="9197.00"/>
         <stop parkingArea="PAA0A1" until="9472.00" started="9224.19" ended="9472.00"/>
         <stop parkingArea="PAD0E0_shift" until="13988.00" started="9505.91"/>
-        <device id="routing_24_0_1" state="600000"/>
+        <device id="routing_24_0_1" state="600000 6000000"/>
     </vehicle>
     <vehicle id="27_0_0" depart="584.00" departPos="stop" route="!27_0_0!var#1" distance="4467.2 1" speedFactor="0.9488" reroute="1" state="262152 584000 52 0 0 -1 14112000 9777980 9223372036854774807">
         <stop parkingArea="PAB2C2" until="4184.00" started="584.00" ended="4184.00"/>
@@ -866,7 +866,7 @@
         <stop parkingArea="PAB2A2" until="9286.00" started="8987.49" ended="9286.00"/>
         <stop parkingArea="PAD2D3" until="9752.00" started="9314.67" ended="9752.00"/>
         <stop parkingArea="PAC1D1" until="14112.00" started="9777.98"/>
-        <device id="routing_27_0_0" state="600000"/>
+        <device id="routing_27_0_0" state="600000 4200000"/>
     </vehicle>
     <vehicle id="29_0_0" depart="612.00" departPos="stop" route="!29_0_0!var#1" distance="6888 1" speedFactor="1.1318" reroute="1" state="262152 612000 80 0 0 -1 13544000 9576532 9223372036854774807">
         <stop parkingArea="PAD4D3" until="4212.00" started="612.00" ended="4212.00"/>
@@ -887,7 +887,7 @@
         <stop parkingArea="PAB1C1" until="9062.00" started="8710.34" ended="9062.00"/>
         <stop parkingArea="PAA3A4" until="9543.00" started="9090.02" ended="9543.00"/>
         <stop parkingArea="PAA1B1" until="13544.00" started="9576.53"/>
-        <device id="routing_29_0_0" state="600000"/>
+        <device id="routing_29_0_0" state="600000 612000"/>
     </vehicle>
     <vehicle id="30_0_0" depart="620.00" departPos="stop" route="!30_0_0!var#1" distance="5930.4 1" speedFactor="0.9313" reroute="1" state="262152 620000 69 0 0 -1 14186000 9883851 9223372036854774807">
         <stop parkingArea="PAC0B0" until="4220.00" started="620.00" ended="4220.00"/>
@@ -909,7 +909,7 @@
         <stop parkingArea="PAA4A3" until="9328.00" started="9023.01" ended="9328.00"/>
         <stop parkingArea="PAC2D2" until="9864.00" started="9354.78" ended="9864.00"/>
         <stop parkingArea="PAD4E4" until="14186.00" started="9883.85"/>
-        <device id="routing_30_0_0" state="600000"/>
+        <device id="routing_30_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="31_0_0" depart="646.00" departPos="stop" route="!31_0_0!var#1" distance="6085.6 1" speedFactor="1.1786" reroute="1" state="262152 646000 71 0 0 -1 14215000 9944687 9223372036854774807">
         <stop parkingArea="PAC3C4" until="4246.00" started="646.00" ended="4246.00"/>
@@ -931,7 +931,7 @@
         <stop parkingArea="PAE2D2" until="9716.00" started="9261.34" ended="9716.00"/>
         <stop parkingArea="PAC3C2" until="9929.00" started="9731.69" ended="9929.00"/>
         <stop parkingArea="PAC0B0" until="14215.00" started="9944.69"/>
-        <device id="routing_31_0_0" state="600000"/>
+        <device id="routing_31_0_0" state="600000 646000"/>
     </vehicle>
     <vehicle id="32_0_0" depart="647.00" departPos="stop" route="!32_0_0!var#2" distance="6545.6 2" speedFactor="1.1544" reroute="1" state="262152 647000 76 0 0 -1 14088000 9616278 9223372036854774807">
         <stop parkingArea="PAA4B4" until="4247.00" started="647.00" ended="4247.00"/>
@@ -953,7 +953,7 @@
         <stop parkingArea="PAB4B3" until="9368.00" started="9154.03" ended="9368.00"/>
         <stop parkingArea="PAB1A1" until="9584.00" started="9384.01" ended="9584.00"/>
         <stop parkingArea="PAA4A3" until="14088.00" started="9616.28"/>
-        <device id="routing_32_0_0" state="600000"/>
+        <device id="routing_32_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="33_0_0" depart="656.00" departPos="stop" route="!33_0_0!var#2" distance="5751.2 2" speedFactor="1.0052" reroute="1" state="262152 656000 67 0 0 -1 14337000 10373917 9223372036854774807">
         <stop parkingArea="PAB1B2" until="4818.00" started="656.00" ended="4818.00"/>
@@ -972,7 +972,7 @@
         <stop parkingArea="PAB2B3" until="9946.00" started="9484.26" ended="9946.00"/>
         <stop parkingArea="PAD1D0" until="10331.00" started="9977.01" ended="10331.00"/>
         <stop parkingArea="PAA3A4" until="14337.00" started="10373.92"/>
-        <device id="routing_33_0_0" state="600000"/>
+        <device id="routing_33_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="34_0_0" depart="658.00" departPos="stop" route="!34_0_0!var#1" distance="4931.2 1" speedFactor="1.1718" reroute="1" state="262152 658000 57 0 0 -1 14105000 9759989 9223372036854774807">
         <stop parkingArea="PAA0B0" until="4258.00" started="658.00" ended="4258.00"/>
@@ -992,7 +992,7 @@
         <stop parkingArea="PAC0C1" until="9266.00" started="9161.78" ended="9266.00"/>
         <stop parkingArea="PAD1D2" until="9744.00" started="9276.52" ended="9744.00"/>
         <stop parkingArea="PAD0C0" until="14105.00" started="9759.99"/>
-        <device id="routing_34_0_0" state="600000"/>
+        <device id="routing_34_0_0" state="600000 658000"/>
     </vehicle>
     <vehicle id="35_0_0" depart="667.00" departPos="stop" route="!35_0_0!var#1" distance="4218.4 1" speedFactor="0.9948" reroute="1" state="262152 667000 49 0 0 -1 14123000 9688390 9223372036854774807">
         <stop parkingArea="PAA1A2" until="4267.00" started="667.00" ended="4267.00"/>
@@ -1011,7 +1011,7 @@
         <stop parkingArea="PAA1B1" until="9419.00" started="9104.39" ended="9419.00"/>
         <stop parkingArea="PAC0B0" until="9676.00" started="9438.67" ended="9676.00"/>
         <stop parkingArea="PAC0C1" until="14123.00" started="9688.39"/>
-        <device id="routing_35_0_0" state="600000"/>
+        <device id="routing_35_0_0" state="600000 667000"/>
     </vehicle>
     <vehicle id="36_0_0" depart="675.00" departPos="stop" route="!36_0_0!var#1" distance="6631.2 1" speedFactor="1.0197" reroute="1" state="262152 675000 77 0 0 -1 14234000 10104176 9223372036854774807">
         <stop parkingArea="PAC0B0" until="4275.00" started="675.00" ended="4275.00"/>
@@ -1032,7 +1032,7 @@
         <stop parkingArea="PAD4E4" until="9860.00" started="9492.26" ended="9860.00"/>
         <stop parkingArea="PAA1A2" until="10080.00" started="9908.92" ended="10080.00"/>
         <stop parkingArea="PAB4B3" until="14234.00" started="10104.18"/>
-        <device id="routing_36_0_0" state="600000"/>
+        <device id="routing_36_0_0" state="600000 675000"/>
     </vehicle>
     <vehicle id="37_0_0" depart="677.00" departPos="stop" route="!37_0_0!var#1" distance="5673.6 1" speedFactor="0.9732" reroute="1" state="262152 677000 66 0 0 -1 14289000 9813996 9223372036854774807">
         <stop parkingArea="PAB1C1" until="4277.00" started="677.00" ended="4277.00"/>
@@ -1051,7 +1051,7 @@
         <stop parkingArea="PAE3E4" until="9234.00" started="8967.33" ended="9234.00"/>
         <stop parkingArea="PAA1B1" until="9795.00" started="9285.25" ended="9795.00"/>
         <stop parkingArea="PAC0C1" until="14289.00" started="9814.00"/>
-        <device id="routing_37_0_0" state="600000"/>
+        <device id="routing_37_0_0" state="600000 677000"/>
     </vehicle>
     <vehicle id="38_0_0" depart="693.00" departPos="stop" route="!38_0_0!var#2" distance="4047.2 2" speedFactor="1.1797" reroute="1" state="262152 693000 47 0 0 -1 13983000 9795672 9223372036854774807">
         <stop parkingArea="PAD0E0_shift" until="4293.00" started="693.00" ended="4293.00"/>
@@ -1069,7 +1069,7 @@
         <stop parkingArea="PAE3D3" until="9331.00" started="9152.67" ended="9331.00"/>
         <stop parkingArea="PAB2A2" until="9780.00" started="9351.90" ended="9780.00"/>
         <stop parkingArea="PAB3A3" until="13983.00" started="9795.67"/>
-        <device id="routing_38_0_0" state="600000"/>
+        <device id="routing_38_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="39_0_0" depart="722.00" departPos="stop" route="!39_0_0!var#1" distance="3852 1" speedFactor="1.1023" reroute="1" state="262152 722000 45 0 0 -1 14002000 9723259 9223372036854774807">
         <stop parkingArea="PAD1C1" until="4322.00" started="722.00" ended="4322.00"/>
@@ -1086,7 +1086,7 @@
         <stop parkingArea="PAC1D1" until="9391.00" started="8876.36" ended="9392.00"/>
         <stop parkingArea="PAE3E2" until="9711.00" started="9413.53" ended="9711.00"/>
         <stop parkingArea="PAD2C2" until="14002.00" started="9723.26"/>
-        <device id="routing_39_0_0" state="600000"/>
+        <device id="routing_39_0_0" state="600000 722000"/>
     </vehicle>
     <vehicle id="40_0_0" depart="725.00" departPos="stop" route="!40_0_0!var#1" distance="4720 1" speedFactor="0.9006" reroute="1" state="262152 725000 55 0 0 -1 13898000 9370221 9223372036854774807">
         <stop parkingArea="PAB2A2" until="4325.00" started="725.00" ended="4325.00"/>
@@ -1104,7 +1104,7 @@
         <stop parkingArea="PAB3C3" until="9188.00" started="9090.53" ended="9188.00"/>
         <stop parkingArea="PAA3A2" until="9322.00" started="9209.52" ended="9322.00"/>
         <stop parkingArea="PAE4D4" until="13898.00" started="9370.22"/>
-        <device id="routing_40_0_0" state="600000"/>
+        <device id="routing_40_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="41_0_0" depart="776.00" departPos="stop" route="!41_0_0!var#1" distance="4813.6 1" speedFactor="1.0304" reroute="1" state="262152 776000 56 0 0 -1 14087000 9794886 9223372036854774807">
         <stop parkingArea="PAE0E1" until="4376.00" started="776.00" ended="4376.00"/>
@@ -1125,7 +1125,7 @@
         <stop parkingArea="PAD3E3" until="9539.00" started="9140.96" ended="9539.00"/>
         <stop parkingArea="PAC4D4" until="9759.00" started="9562.92" ended="9759.00"/>
         <stop parkingArea="PAC0C1" until="14087.00" started="9794.89"/>
-        <device id="routing_41_0_0" state="600000"/>
+        <device id="routing_41_0_0" state="600000 776000"/>
     </vehicle>
     <vehicle id="42_0_0" depart="785.00" departPos="stop" route="!42_0_0!var#1" distance="5339.2 1" speedFactor="0.9571" reroute="1" state="262152 785000 62 0 0 -1 14054000 9707424 9223372036854774807">
         <stop parkingArea="PAB3B2" until="4385.00" started="785.00" ended="4385.00"/>
@@ -1144,7 +1144,7 @@
         <stop parkingArea="PAB4A4" until="9120.00" started="8873.37" ended="9120.00"/>
         <stop parkingArea="PAB3A3" until="9681.00" started="9139.92" ended="9682.00"/>
         <stop parkingArea="PAB1A1" until="14054.00" started="9707.42"/>
-        <device id="routing_42_0_0" state="600000"/>
+        <device id="routing_42_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="43_0_0" depart="798.00" departPos="stop" route="!43_0_0!var#2" distance="6048 2" speedFactor="1.0919" reroute="1" state="262152 798000 70 0 0 -1 14079000 9653852 9223372036854774807">
         <stop parkingArea="PAB0A0" until="4398.00" started="798.00" ended="4398.00"/>
@@ -1163,7 +1163,7 @@
         <stop parkingArea="PAE3E4" until="9212.00" started="8981.81" ended="9212.00"/>
         <stop parkingArea="PAD2E2" until="9630.00" started="9235.10" ended="9630.00"/>
         <stop parkingArea="PAC3C4" until="14079.00" started="9653.85"/>
-        <device id="routing_43_0_0" state="600000"/>
+        <device id="routing_43_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="44_0_0" depart="802.00" departPos="stop" route="!44_0_0!var#1" distance="5604 1" speedFactor="1.0378" reroute="1" state="262152 802000 65 0 0 -1 14209000 9880876 9223372036854774807">
         <stop parkingArea="PAB4A4" until="4402.00" started="802.00" ended="4402.00"/>
@@ -1182,7 +1182,7 @@
         <stop parkingArea="PAD4C4" until="8797.00" started="8456.40" ended="8797.00"/>
         <stop parkingArea="PAA2B2" until="9869.00" started="8826.69" ended="9869.00"/>
         <stop parkingArea="PAC2D2" until="14209.00" started="9880.88"/>
-        <device id="routing_44_0_0" state="600000"/>
+        <device id="routing_44_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="45_0_0" depart="823.00" departPos="stop" route="!45_0_0!var#1" distance="5237.6 1" speedFactor="1.0434" reroute="1" state="262152 823000 61 0 0 -1 14199000 9859624 9223372036854774807">
         <stop parkingArea="PAC2D2" until="4423.00" started="823.00" ended="4423.00"/>
@@ -1200,7 +1200,7 @@
         <stop parkingArea="PAE2E3" until="9468.00" started="9379.94" ended="9470.00"/>
         <stop parkingArea="PAE3D3" until="9836.00" started="9475.67" ended="9836.00"/>
         <stop parkingArea="PAE1E0" until="14199.00" started="9859.62"/>
-        <device id="routing_45_0_0" state="600000"/>
+        <device id="routing_45_0_0" state="600000 823000"/>
     </vehicle>
     <vehicle id="46_0_0" depart="858.00" departPos="stop" route="!46_0_0!var#1" distance="6284.8 1" speedFactor="1.0880" reroute="1" state="262152 858000 73 0 0 -1 14146000 10090913 9223372036854774807">
         <stop parkingArea="PAB4C4" until="4458.00" started="858.00" ended="4458.00"/>
@@ -1221,7 +1221,7 @@
         <stop parkingArea="PAA1A0" until="9507.00" started="9383.08" ended="9507.00"/>
         <stop parkingArea="PAB4C4" until="10051.00" started="9541.51" ended="10051.00"/>
         <stop parkingArea="PAA0A1" until="14146.00" started="10090.91"/>
-        <device id="routing_46_0_0" state="600000"/>
+        <device id="routing_46_0_0" state="600000 858000"/>
     </vehicle>
     <vehicle id="47_0_0" depart="876.00" departPos="stop" route="!47_0_0!var#2" distance="4809.6 2" speedFactor="0.9974" reroute="1" state="262152 876000 56 0 0 -1 14375000 9939713 9223372036854774807">
         <stop parkingArea="PAD2C2" until="4476.00" started="876.00" ended="4476.00"/>
@@ -1240,7 +1240,7 @@
         <stop parkingArea="PAB0A0" until="9535.00" started="9110.54" ended="9535.00"/>
         <stop parkingArea="PAB3C3" until="9907.00" started="9566.47" ended="9907.00"/>
         <stop parkingArea="PAE1E2" until="14375.00" started="9939.71"/>
-        <device id="routing_47_0_0" state="600000"/>
+        <device id="routing_47_0_0" state="600000 4800000"/>
     </vehicle>
     <vehicle id="28_0_1" depart="901.00" departPos="stop" route="!28_0_1!var#1" distance="4552.8 1" speedFactor="0.9005" reroute="1" state="262152 901000 53 0 0 -1 14108000 9660532 9223372036854774807">
         <stop parkingArea="PAD0D1" until="4501.00" started="901.00" ended="4501.00"/>
@@ -1258,7 +1258,7 @@
         <stop parkingArea="PAB1A1" until="9161.00" started="8845.64" ended="9161.00"/>
         <stop parkingArea="PAE3D3" until="9640.00" started="9208.91" ended="9640.00"/>
         <stop parkingArea="PAE2E1" until="14108.00" started="9660.53"/>
-        <device id="routing_28_0_1" state="600000"/>
+        <device id="routing_28_0_1" state="600000 901000"/>
     </vehicle>
     <vehicle id="48_0_0" depart="907.00" departPos="stop" route="!48_0_0!var#1" distance="5331.2 1" speedFactor="0.8769" reroute="1" state="262152 907000 62 0 0 -1 14233000 10031524 9223372036854774807">
         <stop parkingArea="PAC3C2" until="4507.00" started="907.00" ended="4507.00"/>
@@ -1278,7 +1278,7 @@
         <stop parkingArea="PAB0C0" until="9808.00" started="9572.11" ended="9808.00"/>
         <stop parkingArea="PAE0E1" until="9982.00" started="9829.41" ended="9982.00"/>
         <stop parkingArea="PAA3A2" until="14233.00" started="10031.52"/>
-        <device id="routing_48_0_0" state="600000"/>
+        <device id="routing_48_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="49_0_0" depart="923.00" departPos="stop" route="!49_0_0!var#1" distance="6888 1" speedFactor="0.8504" reroute="1" state="262152 923000 80 0 0 -1 14211000 9707741 9223372036854774807">
         <stop parkingArea="PAC2C1" until="4523.00" started="923.00" ended="4523.00"/>
@@ -1301,7 +1301,7 @@
         <stop parkingArea="PAE1E0" until="9531.00" started="9188.49" ended="9531.00"/>
         <stop parkingArea="PAB4C4" until="9686.00" started="9589.65" ended="9686.00"/>
         <stop parkingArea="PAD3D2" until="14211.00" started="9707.74"/>
-        <device id="routing_49_0_0" state="600000"/>
+        <device id="routing_49_0_0" state="600000 923000"/>
     </vehicle>
     <vehicle id="50_0_0" depart="951.00" departPos="stop" route="!50_0_0!var#1" distance="5580 1" speedFactor="0.8549" reroute="1" state="262152 951000 65 0 0 -1 14030000 9789418 9223372036854774807">
         <stop parkingArea="PAB4B3" until="4551.00" started="951.00" ended="4551.00"/>
@@ -1321,7 +1321,7 @@
         <stop parkingArea="PAD1C1" until="9642.00" started="9259.63" ended="9642.00"/>
         <stop parkingArea="PAD3D4" until="9775.00" started="9672.62" ended="9775.00"/>
         <stop parkingArea="PAC4B4" until="14030.00" started="9789.42"/>
-        <device id="routing_50_0_0" state="600000"/>
+        <device id="routing_50_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="51_0_0" depart="951.00" departPos="stop" route="!51_0_0!var#1" distance="5665.6 1" speedFactor="1.1689" reroute="1" state="262152 951000 66 0 0 -1 14386000 10338816 9223372036854774807">
         <stop parkingArea="PAB3B2" until="4878.00" started="951.00" ended="4878.00"/>
@@ -1342,7 +1342,7 @@
         <stop parkingArea="PAB3C3" until="9890.00" started="9583.79" ended="9890.00"/>
         <stop parkingArea="PAB2B1" until="10323.00" started="9907.35" ended="10323.00"/>
         <stop parkingArea="PAB3B2" until="14386.00" started="10338.82"/>
-        <device id="routing_51_0_0" state="600000"/>
+        <device id="routing_51_0_0" state="600000 951000"/>
     </vehicle>
     <vehicle id="52_0_0" depart="951.00" departPos="stop" route="!52_0_0!var#2" distance="5518.4 2" speedFactor="1.0168" reroute="1" state="262152 951000 64 0 0 -1 14279000 9652183 9223372036854774807">
         <stop parkingArea="PAD0E0_shift" until="4551.00" started="951.00" ended="4551.00"/>
@@ -1360,7 +1360,7 @@
         <stop parkingArea="PAA3B3" until="9100.00" started="8667.43" ended="9100.00"/>
         <stop parkingArea="PAD1D2" until="9634.00" started="9130.67" ended="9634.00"/>
         <stop parkingArea="PAC3D3" until="14279.00" started="9652.18"/>
-        <device id="routing_52_0_0" state="600000"/>
+        <device id="routing_52_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="54_0_0" depart="1004.00" departPos="stop" route="!54_0_0!var#2" distance="5152 2" speedFactor="1.0032" reroute="1" state="262152 1004000 60 0 0 -1 13860000 9702715 9223372036854774807">
         <stop parkingArea="PAC4B4" until="4604.00" started="1004.00" ended="4604.00"/>
@@ -1379,7 +1379,7 @@
         <stop parkingArea="PAA2A3" until="9546.00" started="9440.86" ended="9546.00"/>
         <stop parkingArea="PAB0C0" until="9672.00" started="9577.23" ended="9672.00"/>
         <stop parkingArea="PAA2B2" until="13860.00" started="9702.72"/>
-        <device id="routing_54_0_0" state="600000"/>
+        <device id="routing_54_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="55_0_0" depart="1021.00" departPos="stop" route="!55_0_0!var#2" distance="6965.6 2" speedFactor="0.9960" reroute="1" state="262152 1021000 81 0 0 -1 13676000 9728711 9223372036854774807">
         <stop parkingArea="PAD3D4" until="4621.00" started="1021.00" ended="4621.00"/>
@@ -1402,7 +1402,7 @@
         <stop parkingArea="PAE2D2" until="9480.00" started="9323.37" ended="9482.00"/>
         <stop parkingArea="PAC2C1" until="9708.00" started="9493.89" ended="9710.00"/>
         <stop parkingArea="PAD2D3" until="13676.00" started="9728.71"/>
-        <device id="routing_55_0_0" state="600000"/>
+        <device id="routing_55_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="56_0_0" depart="1035.00" departPos="stop" route="!56_0_0!var#1" distance="5751.2 1" speedFactor="0.8989" reroute="1" state="262152 1035000 67 0 0 -1 14331000 10490424 9223372036854774807">
         <stop parkingArea="PAD3C3" until="4635.00" started="1035.00" ended="4635.00"/>
@@ -1422,7 +1422,7 @@
         <stop parkingArea="PAA4A3" until="10154.00" started="9747.31" ended="10154.00"/>
         <stop parkingArea="PAE1D1" until="10463.00" started="10202.31" ended="10463.00"/>
         <stop parkingArea="PAE3E4" until="14331.00" started="10490.42"/>
-        <device id="routing_56_0_0" state="600000"/>
+        <device id="routing_56_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="57_0_0" depart="1052.00" departPos="stop" route="!57_0_0!var#1" distance="4654.4 1" speedFactor="1.1425" reroute="1" state="262152 1052000 54 0 0 -1 13941000 9540381 9223372036854774807">
         <stop parkingArea="PAA2B2" until="4652.00" started="1052.00" ended="4652.00"/>
@@ -1441,7 +1441,7 @@
         <stop parkingArea="PAD1D2" until="9158.00" started="9006.39" ended="9158.00"/>
         <stop parkingArea="PAB2A2" until="9513.00" started="9175.81" ended="9513.00"/>
         <stop parkingArea="PAD1D2" until="13941.00" started="9540.38"/>
-        <device id="routing_57_0_0" state="600000"/>
+        <device id="routing_57_0_0" state="600000 1052000"/>
     </vehicle>
     <vehicle id="58_0_0" depart="1053.00" departPos="stop" route="!58_0_0!var#1" distance="4373.6 1" speedFactor="1.0236" reroute="1" state="262152 1053000 51 0 0 -1 14011000 9596063 9223372036854774807">
         <stop parkingArea="PAB2A2" until="4653.00" started="1053.00" ended="4653.00"/>
@@ -1458,7 +1458,7 @@
         <stop parkingArea="PAE2E3" until="9199.00" started="8656.38" ended="9199.00"/>
         <stop parkingArea="PAD1D2" until="9581.00" started="9223.08" ended="9582.00"/>
         <stop parkingArea="PAE2D2" until="14011.00" started="9596.06"/>
-        <device id="routing_58_0_0" state="600000"/>
+        <device id="routing_58_0_0" state="600000 1053000"/>
     </vehicle>
     <vehicle id="59_0_0" depart="1059.00" departPos="stop" route="!59_0_0!var#1" distance="5681.6 1" speedFactor="0.9695" reroute="1" state="262152 1059000 66 0 0 -1 14240000 9798785 9223372036854774807">
         <stop parkingArea="PAD0C0" until="4659.00" started="1059.00" ended="4659.00"/>
@@ -1478,7 +1478,7 @@
         <stop parkingArea="PAD3D4" until="9271.00" started="8913.07" ended="9271.00"/>
         <stop parkingArea="PAB1C1" until="9767.00" started="9309.14" ended="9767.00"/>
         <stop parkingArea="PAD4D3" until="14240.00" started="9798.79"/>
-        <device id="routing_59_0_0" state="600000"/>
+        <device id="routing_59_0_0" state="600000 1059000"/>
     </vehicle>
     <vehicle id="60_0_0" depart="1086.00" departPos="stop" route="!60_0_0!var#2" distance="5930.4 2" speedFactor="1.0825" reroute="1" state="262152 1086000 69 0 0 -1 14382000 9897158 9223372036854774807">
         <stop parkingArea="PAD2D1" until="4686.00" started="1086.00" ended="4686.00"/>
@@ -1499,7 +1499,7 @@
         <stop parkingArea="PAD4D3" until="9195.00" started="8932.36" ended="9195.00"/>
         <stop parkingArea="PAC0D0" until="9863.00" started="9223.47" ended="9863.00"/>
         <stop parkingArea="PAC4D4" until="14382.00" started="9897.16"/>
-        <device id="routing_60_0_0" state="600000"/>
+        <device id="routing_60_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="61_0_0" depart="1103.00" departPos="stop" route="!61_0_0!var#2" distance="5184 2" speedFactor="1.1193" reroute="1" state="262152 1103000 60 0 0 -1 13942000 9677448 9223372036854774807">
         <stop parkingArea="PAE3E4" until="4703.00" started="1103.00" ended="4703.00"/>
@@ -1517,7 +1517,7 @@
         <stop parkingArea="PAD1C1" until="9199.00" started="8643.04" ended="9199.00"/>
         <stop parkingArea="PAE0D0" until="9648.00" started="9221.28" ended="9648.00"/>
         <stop parkingArea="PAC3C2" until="13942.00" started="9677.45"/>
-        <device id="routing_61_0_0" state="600000"/>
+        <device id="routing_61_0_0" state="600000 6000000"/>
     </vehicle>
     <vehicle id="62_0_0" depart="1114.00" departPos="stop" route="!62_0_0!var#1" distance="4646.4 1" speedFactor="1.0158" reroute="1" state="262152 1114000 54 0 0 -1 14393000 10175201 9223372036854774807">
         <stop parkingArea="PAB0B1" until="4714.00" started="1114.00" ended="4714.00"/>
@@ -1536,7 +1536,7 @@
         <stop parkingArea="PAB0C0" until="9635.00" started="9532.40" ended="9635.00"/>
         <stop parkingArea="PAC4D4" until="10157.00" started="9665.34" ended="10157.00"/>
         <stop parkingArea="PAD2E2" until="14393.00" started="10175.20"/>
-        <device id="routing_62_0_0" state="600000"/>
+        <device id="routing_62_0_0" state="600000 1114000"/>
     </vehicle>
     <vehicle id="63_0_0" depart="1122.00" departPos="stop" route="!63_0_0!var#1" distance="5082.4 1" speedFactor="0.9870" reroute="1" state="262152 1122000 59 0 0 -1 14041000 9669096 9223372036854774807">
         <stop parkingArea="PAC1D1" until="4722.00" started="1122.00" ended="4722.00"/>
@@ -1556,7 +1556,7 @@
         <stop parkingArea="PAB2A2" until="9401.00" started="9097.73" ended="9401.00"/>
         <stop parkingArea="PAE2D2" until="9643.00" started="9432.22" ended="9643.00"/>
         <stop parkingArea="PAB3A3" until="14041.00" started="9669.10"/>
-        <device id="routing_63_0_0" state="600000"/>
+        <device id="routing_63_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="64_0_0" depart="1123.00" departPos="stop" route="!64_0_0!var#1" distance="4630.4 1" speedFactor="0.9376" reroute="1" state="262152 1123000 54 0 0 -1 13925000 9698719 9223372036854774807">
         <stop parkingArea="PAC2C3" until="4723.00" started="1123.00" ended="4723.00"/>
@@ -1573,7 +1573,7 @@
         <stop parkingArea="PAE1D1" until="9510.00" started="9056.50" ended="9510.00"/>
         <stop parkingArea="PAB0C0" until="9679.00" started="9536.29" ended="9679.00"/>
         <stop parkingArea="PAD1D0" until="13925.00" started="9698.72"/>
-        <device id="routing_64_0_0" state="600000"/>
+        <device id="routing_64_0_0" state="600000 1123000"/>
     </vehicle>
     <vehicle id="65_0_0" depart="1129.00" departPos="stop" route="!65_0_0!var#1" distance="5681.6 1" speedFactor="0.8823" reroute="1" state="262152 1129000 66 0 0 -1 14313000 9781970 9223372036854774807">
         <stop parkingArea="PAD0C0" until="4729.00" started="1129.00" ended="4729.00"/>
@@ -1593,7 +1593,7 @@
         <stop parkingArea="PAC4D4" until="9203.00" started="9109.96" ended="9203.00"/>
         <stop parkingArea="PAD2D3" until="9768.00" started="9223.96" ended="9768.00"/>
         <stop parkingArea="PAD2E2" until="14313.00" started="9781.97"/>
-        <device id="routing_65_0_0" state="600000"/>
+        <device id="routing_65_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="66_0_0" depart="1133.00" departPos="stop" route="!66_0_0!var#1" distance="6794.4 1" speedFactor="0.9068" reroute="1" state="262152 1133000 79 0 0 -1 14343000 9944184 9223372036854774807">
         <stop parkingArea="PAB3B2" until="4733.00" started="1133.00" ended="4733.00"/>
@@ -1615,7 +1615,7 @@
         <stop parkingArea="PAD4E4" until="9607.00" started="9524.82" ended="9607.00"/>
         <stop parkingArea="PAD4D3" until="9917.00" started="9634.82" ended="9917.00"/>
         <stop parkingArea="PAB2A2" until="14343.00" started="9944.18"/>
-        <device id="routing_66_0_0" state="600000"/>
+        <device id="routing_66_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="68_0_0" depart="1207.00" departPos="stop" route="!68_0_0!var#1" distance="5677.6 1" speedFactor="0.9146" reroute="1" state="262152 1207000 66 0 0 -1 14068000 9721690 9223372036854774807">
         <stop parkingArea="PAA0B0" until="4807.00" started="1207.00" ended="4807.00"/>
@@ -1634,7 +1634,7 @@
         <stop parkingArea="PAD1D0" until="9198.00" started="9030.21" ended="9198.00"/>
         <stop parkingArea="PAC3D3" until="9688.00" started="9231.69" ended="9688.00"/>
         <stop parkingArea="PAC0B0" until="14068.00" started="9721.69"/>
-        <device id="routing_68_0_0" state="600000"/>
+        <device id="routing_68_0_0" state="600000 1207000"/>
     </vehicle>
     <vehicle id="69_0_0" depart="1234.00" departPos="stop" route="!69_0_0!var#1" distance="5502.4 1" speedFactor="1.0400" reroute="1" state="262152 1234000 64 0 0 -1 13929000 9901055 9223372036854774807">
         <stop parkingArea="PAA1A0" until="4834.00" started="1234.00" ended="4834.00"/>
@@ -1654,7 +1654,7 @@
         <stop parkingArea="PAB3C3" until="9617.00" started="9109.21" ended="9617.00"/>
         <stop parkingArea="PAE0E1" until="9883.00" started="9652.83" ended="9883.00"/>
         <stop parkingArea="PAE3D3" until="13929.00" started="9901.06"/>
-        <device id="routing_69_0_0" state="600000"/>
+        <device id="routing_69_0_0" state="600000 1234000"/>
     </vehicle>
     <vehicle id="70_0_0" depart="1295.00" departPos="stop" route="!70_0_0!var#1" distance="4630.4 1" speedFactor="1.0221" reroute="1" state="262152 1295000 54 0 0 -1 14174000 9921145 9223372036854774807">
         <stop parkingArea="PAC1C0" until="4895.00" started="1295.00" ended="4895.00"/>
@@ -1671,7 +1671,7 @@
         <stop parkingArea="PAC2C1" until="9751.00" started="9508.09" ended="9751.00"/>
         <stop parkingArea="PAB1B2" until="9891.00" started="9763.06" ended="9891.00"/>
         <stop parkingArea="PAE1E2" until="14174.00" started="9921.15"/>
-        <device id="routing_70_0_0" state="600000"/>
+        <device id="routing_70_0_0" state="600000 1295000"/>
     </vehicle>
     <vehicle id="71_0_0" depart="1297.00" departPos="stop" route="!71_0_0!var#1" distance="4996.8 1" speedFactor="1.0230" reroute="1" state="262152 1297000 58 0 0 -1 14312000 10122636 9223372036854774807">
         <stop parkingArea="PAB2B3" until="4897.00" started="1297.00" ended="4897.00"/>
@@ -1689,7 +1689,7 @@
         <stop parkingArea="PAD4C4" until="9700.00" started="9547.35" ended="9700.00"/>
         <stop parkingArea="PAB3A3" until="10104.00" started="9719.69" ended="10104.00"/>
         <stop parkingArea="PAB4A4" until="14312.00" started="10122.64"/>
-        <device id="routing_71_0_0" state="600000"/>
+        <device id="routing_71_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="72_0_0" depart="1301.00" departPos="stop" route="!72_0_0!var#1" distance="4210.4 1" speedFactor="0.9729" reroute="1" state="262152 1301000 49 0 0 -1 14094000 10058928 9223372036854774807">
         <stop parkingArea="PAD3D4" until="4901.00" started="1301.00" ended="4901.00"/>
@@ -1706,7 +1706,7 @@
         <stop parkingArea="PAC1D1" until="9652.00" started="9371.67" ended="9652.00"/>
         <stop parkingArea="PAD0E0_shift" until="10033.00" started="9664.67" ended="10033.00"/>
         <stop parkingArea="PAD2D3" until="14094.00" started="10058.93"/>
-        <device id="routing_72_0_0" state="600000"/>
+        <device id="routing_72_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="74_0_0" depart="1326.00" departPos="stop" route="!74_0_0!var#1" distance="5596 1" speedFactor="1.0557" reroute="1" state="262152 1326000 65 0 0 -1 14202000 9975563 9223372036854774807">
         <stop parkingArea="PAB0B1" until="4926.00" started="1326.00" ended="4926.00"/>
@@ -1725,7 +1725,7 @@
         <stop parkingArea="PAD2D1" until="9468.00" started="9128.35" ended="9468.00"/>
         <stop parkingArea="PAC1B1" until="9953.00" started="9479.68" ended="9954.00"/>
         <stop parkingArea="PAB3C3" until="14202.00" started="9975.56"/>
-        <device id="routing_74_0_0" state="600000"/>
+        <device id="routing_74_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="75_0_0" depart="1356.00" departPos="stop" route="!75_0_0!var#1" distance="4988.8 1" speedFactor="0.9551" reroute="1" state="262152 1356000 58 0 0 -1 13858000 9434356 9223372036854774807">
         <stop parkingArea="PAB2B1" until="4956.00" started="1356.00" ended="4956.00"/>
@@ -1743,7 +1743,7 @@
         <stop parkingArea="PAD3C3" until="8960.00" started="8711.90" ended="8960.00"/>
         <stop parkingArea="PAC2D2" until="9415.00" started="8973.67" ended="9415.00"/>
         <stop parkingArea="PAC1C2" until="13858.00" started="9434.36"/>
-        <device id="routing_75_0_0" state="600000"/>
+        <device id="routing_75_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="76_0_0" depart="1373.00" departPos="stop" route="!76_0_0!var#1" distance="5673.6 1" speedFactor="0.9849" reroute="1" state="262152 1373000 66 0 0 -1 14228000 9844499 9223372036854774807">
         <stop parkingArea="PAC2B2" until="4973.00" started="1373.00" ended="4973.00"/>
@@ -1762,7 +1762,7 @@
         <stop parkingArea="PAA1A0" until="9696.00" started="9619.54" ended="9696.00"/>
         <stop parkingArea="PAE2E1" until="9819.00" started="9740.39" ended="9819.00"/>
         <stop parkingArea="PAD3C3" until="14228.00" started="9844.50"/>
-        <device id="routing_76_0_0" state="600000"/>
+        <device id="routing_76_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="77_0_0" depart="1375.00" departPos="stop" route="!77_0_0!var#2" distance="4365.6 2" speedFactor="1.0325" reroute="1" state="262152 1375000 51 0 0 -1 14061000 9570814 9223372036854774807">
         <stop parkingArea="PAB3A3" until="4975.00" started="1375.00" ended="4975.00"/>
@@ -1779,7 +1779,7 @@
         <stop parkingArea="PAD2E2" until="9279.00" started="8908.02" ended="9279.00"/>
         <stop parkingArea="PAB0B1" until="9535.00" started="9318.73" ended="9535.00"/>
         <stop parkingArea="PAD4E4" until="14061.00" started="9570.81"/>
-        <device id="routing_77_0_0" state="600000"/>
+        <device id="routing_77_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="78_0_0" depart="1392.00" departPos="stop" route="!78_0_0!var#1" distance="5938.4 1" speedFactor="0.9819" reroute="1" state="262152 1392000 69 0 0 -1 14373000 10208461 9223372036854774807">
         <stop parkingArea="PAC4C3" until="4992.00" started="1392.00" ended="4992.00"/>
@@ -1800,7 +1800,7 @@
         <stop parkingArea="PAC1C0" until="9813.00" started="9476.55" ended="9813.00"/>
         <stop parkingArea="PAB4C4" until="10170.00" started="9850.66" ended="10170.00"/>
         <stop parkingArea="PAE1E2" until="14373.00" started="10208.46"/>
-        <device id="routing_78_0_0" state="600000"/>
+        <device id="routing_78_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="79_0_0" depart="1394.00" departPos="stop" route="!79_0_0!var#1" distance="4744 1" speedFactor="1.0073" reroute="1" state="262152 1394000 55 0 0 -1 14001000 9426876 9223372036854774807">
         <stop parkingArea="PAC1C2" until="4994.00" started="1394.00" ended="4994.00"/>
@@ -1817,7 +1817,7 @@
         <stop parkingArea="PAD0D1" until="9081.00" started="8575.35" ended="9081.00"/>
         <stop parkingArea="PAE3D3" until="9396.00" started="9105.47" ended="9396.00"/>
         <stop parkingArea="PAA4B4" until="14001.00" started="9426.88"/>
-        <device id="routing_79_0_0" state="600000"/>
+        <device id="routing_79_0_0" state="600000 1394000"/>
     </vehicle>
     <vehicle id="80_0_0" depart="1477.00" departPos="stop" route="!80_0_0!var#1" distance="3774.4 1" speedFactor="1.0869" reroute="1" state="262152 1477000 44 0 0 -1 14198000 9594350 9223372036854774807">
         <stop parkingArea="PAD1C1" until="5077.00" started="1477.00" ended="5077.00"/>
@@ -1833,7 +1833,7 @@
         <stop parkingArea="PAC2C3" until="8997.00" started="8755.88" ended="8997.00"/>
         <stop parkingArea="PAC3B3" until="9566.00" started="9002.67" ended="9566.00"/>
         <stop parkingArea="PAC0D0" until="14198.00" started="9594.35"/>
-        <device id="routing_80_0_0" state="600000"/>
+        <device id="routing_80_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="81_0_0" depart="1484.00" departPos="stop" route="!81_0_0!var#1" distance="4911.2 1" speedFactor="1.0345" reroute="1" state="262152 1484000 57 0 0 -1 14290000 9992828 9223372036854774807">
         <stop parkingArea="PAC3B3" until="5084.00" started="1484.00" ended="5084.00"/>
@@ -1851,7 +1851,7 @@
         <stop parkingArea="PAD3D4" until="9461.00" started="9234.83" ended="9461.00"/>
         <stop parkingArea="PAC4D4" until="9969.00" started="9472.91" ended="9969.00"/>
         <stop parkingArea="PAD1E1" until="14290.00" started="9992.83"/>
-        <device id="routing_81_0_0" state="600000"/>
+        <device id="routing_81_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="82_0_0" depart="1491.00" departPos="stop" route="!82_0_0!var#1" distance="3884 1" speedFactor="0.9981" reroute="1" state="262152 1491000 45 0 0 -1 14094000 9944174 9223372036854774807">
         <stop parkingArea="PAC4D4" until="5091.00" started="1491.00" ended="5091.00"/>
@@ -1868,7 +1868,7 @@
         <stop parkingArea="PAB3C3" until="9764.00" started="9255.35" ended="9764.00"/>
         <stop parkingArea="PAC2C3" until="9938.00" started="9776.35" ended="9938.00"/>
         <stop parkingArea="PAC3C4" until="14094.00" started="9944.17"/>
-        <device id="routing_82_0_0" state="600000"/>
+        <device id="routing_82_0_0" state="600000 1491000"/>
     </vehicle>
     <vehicle id="83_0_0" depart="1506.00" departPos="stop" route="!83_0_0!var#2" distance="5514.4 2" speedFactor="1.0169" reroute="1" state="262152 1506000 64 0 0 -1 14352000 10031703 9223372036854774807">
         <stop parkingArea="PAA2A1" until="5106.00" started="1506.00" ended="5106.00"/>
@@ -1887,7 +1887,7 @@
         <stop parkingArea="PAC2C1" until="9718.00" started="9181.47" ended="9720.00"/>
         <stop parkingArea="PAC1B1" until="9989.00" started="9725.76" ended="9989.00"/>
         <stop parkingArea="PAE4D4" until="14352.00" started="10031.70"/>
-        <device id="routing_83_0_0" state="600000"/>
+        <device id="routing_83_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="84_0_0" depart="1547.00" departPos="stop" route="!84_0_0!var#1" distance="5237.6 1" speedFactor="0.9670" reroute="1" state="262152 1547000 61 0 0 -1 14021000 9713787 9223372036854774807">
         <stop parkingArea="PAD2C2" until="5147.00" started="1547.00" ended="5147.00"/>
@@ -1906,7 +1906,7 @@
         <stop parkingArea="PAC4D4" until="9532.00" started="9333.24" ended="9532.00"/>
         <stop parkingArea="PAB2B3" until="9693.00" started="9563.87" ended="9695.00"/>
         <stop parkingArea="PAD3C3" until="14021.00" started="9713.79"/>
-        <device id="routing_84_0_0" state="600000"/>
+        <device id="routing_84_0_0" state="600000 1547000"/>
     </vehicle>
     <vehicle id="67_0_1" depart="1560.00" departPos="stop" route="!67_0_1!var#1" distance="4552.8 1" speedFactor="1.1478" reroute="1" state="262152 1560000 53 0 0 -1 14148000 9892107 9223372036854774807">
         <stop parkingArea="PAC3C4" until="5268.00" started="1560.00" ended="5268.00"/>
@@ -1925,7 +1925,7 @@
         <stop parkingArea="PAC3D3" until="9282.00" started="8956.33" ended="9282.00"/>
         <stop parkingArea="PAB2B3" until="9876.00" started="9303.48" ended="9876.00"/>
         <stop parkingArea="PAA2A3" until="14148.00" started="9892.11"/>
-        <device id="routing_67_0_1" state="600000"/>
+        <device id="routing_67_0_1" state="600000 1560000"/>
     </vehicle>
     <vehicle id="85_0_0" depart="1563.00" departPos="stop" route="!85_0_0!var#1" distance="5257.6 1" speedFactor="0.9759" reroute="1" state="262152 1563000 61 0 0 -1 14203000 9840185 9223372036854774807">
         <stop parkingArea="PAD4D3" until="5163.00" started="1563.00" ended="5163.00"/>
@@ -1943,7 +1943,7 @@
         <stop parkingArea="PAB2C2" until="9581.00" started="9203.92" ended="9581.00"/>
         <stop parkingArea="PAB3C3" until="9802.00" started="9599.95" ended="9802.00"/>
         <stop parkingArea="PAE0E1" until="14203.00" started="9840.19"/>
-        <device id="routing_85_0_0" state="600000"/>
+        <device id="routing_85_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="86_0_0" depart="1567.00" departPos="stop" route="!86_0_0!var#1" distance="4654.4 1" speedFactor="1.0017" reroute="1" state="262152 1567000 54 0 0 -1 14209000 9934608 9223372036854774807">
         <stop parkingArea="PAC1C0" until="5167.00" started="1567.00" ended="5167.00"/>
@@ -1960,7 +1960,7 @@
         <stop parkingArea="PAC0B0" until="9487.00" started="9238.30" ended="9487.00"/>
         <stop parkingArea="PAB4B3" until="9910.00" started="9517.76" ended="9910.00"/>
         <stop parkingArea="PAC1B1" until="14209.00" started="9934.61"/>
-        <device id="routing_86_0_0" state="600000"/>
+        <device id="routing_86_0_0" state="600000 1567000"/>
     </vehicle>
     <vehicle id="87_0_0" depart="1571.00" departPos="stop" route="!87_0_0!var#1" distance="4120.8 1" speedFactor="1.0428" reroute="1" state="262152 1571000 48 0 0 -1 14248000 9938460 9223372036854774807">
         <stop parkingArea="PAA4B4" until="5171.00" started="1571.00" ended="5171.00"/>
@@ -1976,7 +1976,7 @@
         <stop parkingArea="PAC4C3" until="9519.00" started="9437.83" ended="9519.00"/>
         <stop parkingArea="PAD1D0" until="9903.00" started="9542.78" ended="9903.00"/>
         <stop parkingArea="PAB3A3" until="14248.00" started="9938.46"/>
-        <device id="routing_87_0_0" state="600000"/>
+        <device id="routing_87_0_0" state="600000 1571000"/>
     </vehicle>
     <vehicle id="89_0_0" depart="1603.00" departPos="stop" route="!89_0_0!var#2" distance="5604 2" speedFactor="1.0071" reroute="1" state="262152 1603000 65 0 0 -1 14377000 10381357 9223372036854774807">
         <stop parkingArea="PAD2C2" until="5203.00" started="1603.00" ended="5203.00"/>
@@ -1996,7 +1996,7 @@
         <stop parkingArea="PAB4C4" until="9911.00" started="9387.48" ended="9911.00"/>
         <stop parkingArea="PAD2D3" until="10363.00" started="9935.48" ended="10363.00"/>
         <stop parkingArea="PAC2D2" until="14377.00" started="10381.36"/>
-        <device id="routing_89_0_0" state="600000"/>
+        <device id="routing_89_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="90_0_0" depart="1650.00" departPos="stop" route="!90_0_0!var#1" distance="4304 1" speedFactor="1.0220" reroute="1" state="262152 1650000 50 0 0 -1 14253000 9884030 9223372036854774807">
         <stop parkingArea="PAB3A3" until="5250.00" started="1650.00" ended="5250.00"/>
@@ -2013,7 +2013,7 @@
         <stop parkingArea="PAD0E0_shift" until="9737.00" started="8729.31" ended="9737.00"/>
         <stop parkingArea="PAB2C2" until="9878.00" started="9773.74" ended="9878.00"/>
         <stop parkingArea="PAC2B2" until="14253.00" started="9884.03"/>
-        <device id="routing_90_0_0" state="600000"/>
+        <device id="routing_90_0_0" state="600000 1650000"/>
     </vehicle>
     <vehicle id="91_0_0" depart="1672.00" departPos="stop" route="!91_0_0!var#1" distance="5767.2 1" speedFactor="1.0167" reroute="1" state="262152 1672000 67 0 0 -1 14251000 9704790 9223372036854774807">
         <stop parkingArea="PAE3D3" until="5272.00" started="1672.00" ended="5272.00"/>
@@ -2032,7 +2032,7 @@
         <stop parkingArea="PAE4D4" until="9355.00" started="9276.72" ended="9355.00"/>
         <stop parkingArea="PAC3C2" until="9686.00" started="9375.77" ended="9686.00"/>
         <stop parkingArea="PAA2A3" until="14251.00" started="9704.79"/>
-        <device id="routing_91_0_0" state="600000"/>
+        <device id="routing_91_0_0" state="600000 1672000"/>
     </vehicle>
     <vehicle id="92_0_0" depart="1687.00" departPos="stop" route="!92_0_0!var#1" distance="4047.2 1" speedFactor="0.8918" reroute="1" state="262152 1687000 47 0 0 -1 13989000 9683640 9223372036854774807">
         <stop parkingArea="PAD0E0_shift" until="5287.00" started="1687.00" ended="5287.00"/>
@@ -2049,7 +2049,7 @@
         <stop parkingArea="PAD1D2" until="9067.00" started="8604.73" ended="9069.00"/>
         <stop parkingArea="PAE2E3" until="9656.00" started="9083.18" ended="9656.00"/>
         <stop parkingArea="PAC4C3" until="13989.00" started="9683.64"/>
-        <device id="routing_92_0_0" state="600000"/>
+        <device id="routing_92_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="88_0_1" depart="1733.00" departPos="stop" route="!88_0_1!var#1" distance="4132.8 1" speedFactor="0.8336" reroute="1" state="262152 1733000 48 0 0 -1 13970000 9906310 9223372036854774807">
         <stop parkingArea="PAB2A2" until="5333.00" started="1733.00" ended="5333.00"/>
@@ -2066,7 +2066,7 @@
         <stop parkingArea="PAB0B1" until="9356.00" started="8843.97" ended="9356.00"/>
         <stop parkingArea="PAE4D4" until="9869.00" started="9408.10" ended="9869.00"/>
         <stop parkingArea="PAD0D1" until="13970.00" started="9906.31"/>
-        <device id="routing_88_0_1" state="600000"/>
+        <device id="routing_88_0_1" state="600000 1733000"/>
     </vehicle>
     <vehicle id="93_0_0" depart="1758.00" departPos="stop" route="!93_0_0!var#1" distance="4560.8 1" speedFactor="0.9214" reroute="1" state="262152 1758000 53 0 0 -1 14272000 10208440 9223372036854774807">
         <stop parkingArea="PAC4B4" until="5358.00" started="1758.00" ended="5358.00"/>
@@ -2084,7 +2084,7 @@
         <stop parkingArea="PAB0A0" until="9663.00" started="9317.06" ended="9663.00"/>
         <stop parkingArea="PAC4C3" until="10175.00" started="9710.44" ended="10175.00"/>
         <stop parkingArea="PAB0A0" until="14272.00" started="10208.44"/>
-        <device id="routing_93_0_0" state="600000"/>
+        <device id="routing_93_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="94_0_0" depart="1762.00" departPos="stop" route="!94_0_0!var#1" distance="4817.6 1" speedFactor="1.0910" reroute="1" state="262152 1762000 56 0 0 -1 14212000 9980509 9223372036854774807">
         <stop parkingArea="PAD0C0" until="5362.00" started="1762.00" ended="5362.00"/>
@@ -2103,7 +2103,7 @@
         <stop parkingArea="PAB2A2" until="9743.00" started="9542.95" ended="9743.00"/>
         <stop parkingArea="PAA0B0" until="9952.00" started="9760.21" ended="9952.00"/>
         <stop parkingArea="PAD2D1" until="14212.00" started="9980.51"/>
-        <device id="routing_94_0_0" state="600000"/>
+        <device id="routing_94_0_0" state="600000 1762000"/>
     </vehicle>
     <vehicle id="95_0_0" depart="1769.00" departPos="stop" route="!95_0_0!var#1" distance="4483.2 1" speedFactor="1.0568" reroute="1" state="262152 1769000 52 0 0 -1 14164000 9856743 9223372036854774807">
         <stop parkingArea="PAD1D2" until="5369.00" started="1769.00" ended="5369.00"/>
@@ -2119,7 +2119,7 @@
         <stop parkingArea="PAC0B0" until="8741.00" started="8196.70" ended="8741.00"/>
         <stop parkingArea="PAD4D3" until="9837.00" started="8781.82" ended="9837.00"/>
         <stop parkingArea="PAC2B2" until="14164.00" started="9856.74"/>
-        <device id="routing_95_0_0" state="600000"/>
+        <device id="routing_95_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="96_0_0" depart="1777.00" departPos="stop" route="!96_0_0!var#1" distance="4568.8 1" speedFactor="1.0099" reroute="1" state="262152 1777000 53 0 0 -1 14362000 10240613 9223372036854774807">
         <stop parkingArea="PAE2D2" until="5377.00" started="1777.00" ended="5377.00"/>
@@ -2136,7 +2136,7 @@
         <stop parkingArea="PAE1E0" until="9632.00" started="9288.18" ended="9632.00"/>
         <stop parkingArea="PAB2B1" until="10216.00" started="9669.18" ended="10216.00"/>
         <stop parkingArea="PAC3D3" until="14362.00" started="10240.61"/>
-        <device id="routing_96_0_0" state="600000"/>
+        <device id="routing_96_0_0" state="600000 1777000"/>
     </vehicle>
     <vehicle id="97_0_0" depart="1779.00" departPos="stop" route="!97_0_0!var#1" distance="3517.6 1" speedFactor="0.9065" reroute="1" state="262152 1779000 41 0 0 -1 14127000 9868671 9223372036854774807">
         <stop parkingArea="PAD0E0_shift" until="5379.00" started="1779.00" ended="5379.00"/>
@@ -2152,7 +2152,7 @@
         <stop parkingArea="PAC3C2" until="9574.00" started="9052.60" ended="9574.00"/>
         <stop parkingArea="PAE2D2" until="9840.00" started="9594.39" ended="9840.00"/>
         <stop parkingArea="PAB1B2" until="14127.00" started="9868.67"/>
-        <device id="routing_97_0_0" state="600000"/>
+        <device id="routing_97_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="98_0_0" depart="1796.00" departPos="stop" route="!98_0_0!var#2" distance="4837.6 2" speedFactor="1.1216" reroute="1" state="262152 1796000 56 0 0 -1 14088000 9655492 9223372036854774807">
         <stop parkingArea="PAB1A1" until="5396.00" started="1796.00" ended="5396.00"/>
@@ -2169,7 +2169,7 @@
         <stop parkingArea="PAE2D2" until="9042.00" started="8917.26" ended="9042.00"/>
         <stop parkingArea="PAA0B0" until="9633.00" started="9075.23" ended="9633.00"/>
         <stop parkingArea="PAE0E1" until="14088.00" started="9655.49"/>
-        <device id="routing_98_0_0" state="600000"/>
+        <device id="routing_98_0_0" state="600000 5400000"/>
     </vehicle>
     <vehicle id="99_0_0" depart="1805.00" departPos="stop" route="!99_0_0!var#1" distance="3774.4 1" speedFactor="1.0972" reroute="1" state="262152 1805000 44 0 0 -1 14061000 9400702 9223372036854774807">
         <stop parkingArea="PAD0C0" until="5405.00" started="1805.00" ended="5405.00"/>
@@ -2184,7 +2184,7 @@
         <stop parkingArea="PAD3E3" until="9138.00" started="8707.23" ended="9138.00"/>
         <stop parkingArea="PAA1A2" until="9367.00" started="9177.32" ended="9367.00"/>
         <stop parkingArea="PAD0D1" until="14061.00" started="9400.70"/>
-        <device id="routing_99_0_0" state="600000"/>
+        <device id="routing_99_0_0" state="600000 1805000"/>
     </vehicle>
     <vehicle id="100_0_0" depart="1825.00" departPos="stop" route="!100_0_0!var#1" distance="5416.8 1" speedFactor="1.0650" reroute="1" state="262152 1825000 63 0 0 -1 14317000 10088647 9223372036854774807">
         <stop parkingArea="PAE3D3" until="5425.00" started="1825.00" ended="5425.00"/>
@@ -2202,7 +2202,7 @@
         <stop parkingArea="PAA4A3" until="9972.00" started="9541.42" ended="9972.00"/>
         <stop parkingArea="PAD3C3" until="10077.00" started="9995.42" ended="10077.00"/>
         <stop parkingArea="PAC2B2" until="14317.00" started="10088.65"/>
-        <device id="routing_100_0_0" state="600000"/>
+        <device id="routing_100_0_0" state="600000 1825000"/>
     </vehicle>
     <vehicle id="101_0_0" depart="1848.00" departPos="stop" route="!101_0_0!var#1" distance="3688.8 1" speedFactor="0.9567" reroute="1" state="262152 1848000 43 0 0 -1 14375000 9916884 9223372036854774807">
         <stop parkingArea="PAD1D0" until="5448.00" started="1848.00" ended="5448.00"/>
@@ -2220,7 +2220,7 @@
         <stop parkingArea="PAA2A1" until="9708.00" started="9566.88" ended="9708.00"/>
         <stop parkingArea="PAB2B3" until="9904.00" started="9728.09" ended="9904.00"/>
         <stop parkingArea="PAB4B3" until="14375.00" started="9916.88"/>
-        <device id="routing_101_0_0" state="600000"/>
+        <device id="routing_101_0_0" state="600000 1848000"/>
     </vehicle>
     <vehicle id="102_0_0" depart="1849.00" departPos="stop" route="!102_0_0!var#1" distance="4801.6 1" speedFactor="0.9682" reroute="1" state="262152 1849000 56 0 0 -1 14158000 9910620 9223372036854774807">
         <stop parkingArea="PAC2C1" until="5449.00" started="1849.00" ended="5449.00"/>
@@ -2238,7 +2238,7 @@
         <stop parkingArea="PAB3B2" until="9705.00" started="9619.10" ended="9705.00"/>
         <stop parkingArea="PAC1D1" until="9891.00" started="9724.10" ended="9891.00"/>
         <stop parkingArea="PAB1B2" until="14158.00" started="9910.62"/>
-        <device id="routing_102_0_0" state="600000"/>
+        <device id="routing_102_0_0" state="600000 1849000"/>
     </vehicle>
     <vehicle id="103_0_0" depart="1861.00" departPos="stop" route="!103_0_0!var#1" distance="4728 1" speedFactor="0.9525" reroute="1" state="262152 1861000 55 0 0 -1 14350000 9807652 9223372036854774807">
         <stop parkingArea="PAD2D1" until="5461.00" started="1861.00" ended="5461.00"/>
@@ -2255,7 +2255,7 @@
         <stop parkingArea="PAB3A3" until="9518.00" started="8967.24" ended="9518.00"/>
         <stop parkingArea="PAB2B3" until="9775.00" started="9537.41" ended="9775.00"/>
         <stop parkingArea="PAA0B0" until="14350.00" started="9807.65"/>
-        <device id="routing_103_0_0" state="600000"/>
+        <device id="routing_103_0_0" state="600000 1861000"/>
     </vehicle>
     <vehicle id="104_0_0" depart="1862.00" departPos="stop" route="!104_0_0!var#1" distance="3354.4 1" speedFactor="0.8939" reroute="1" state="262152 1862000 39 0 0 -1 14047000 9686781 9223372036854774807">
         <stop parkingArea="PAB4A4" until="5462.00" started="1862.00" ended="5462.00"/>
@@ -2270,7 +2270,7 @@
         <stop parkingArea="PAB4A4" until="9339.00" started="9246.47" ended="9339.00"/>
         <stop parkingArea="PAC4C3" until="9658.00" started="9374.11" ended="9658.00"/>
         <stop parkingArea="PAC0C1" until="14047.00" started="9686.78"/>
-        <device id="routing_104_0_0" state="600000"/>
+        <device id="routing_104_0_0" state="600000 1862000"/>
     </vehicle>
     <vehicle id="105_0_0" depart="1864.00" departPos="stop" route="!105_0_0!var#1" distance="5176 1" speedFactor="1.0727" reroute="1" state="262152 1864000 60 0 0 -1 14268000 9816122 9223372036854774807">
         <stop parkingArea="PAA1A0" until="5464.00" started="1864.00" ended="5464.00"/>
@@ -2286,7 +2286,7 @@
         <stop parkingArea="PAB3B2" until="9325.00" started="9029.98" ended="9325.00"/>
         <stop parkingArea="PAB0B1" until="9781.00" started="9342.24" ended="9781.00"/>
         <stop parkingArea="PAD4C4" until="14268.00" started="9816.12"/>
-        <device id="routing_105_0_0" state="600000"/>
+        <device id="routing_105_0_0" state="600000 1864000"/>
     </vehicle>
     <vehicle id="106_0_0" depart="1911.00" departPos="stop" route="!106_0_0!var#1" distance="6187.2 1" speedFactor="1.0140" reroute="1" state="262152 1911000 72 0 0 -1 14176000 9458312 9223372036854774807">
         <stop parkingArea="PAC4C3" until="5511.00" started="1911.00" ended="5511.00"/>
@@ -2305,7 +2305,7 @@
         <stop parkingArea="PAC4B4" until="8883.00" started="8772.42" ended="8883.00"/>
         <stop parkingArea="PAC2C1" until="9434.00" started="8907.31" ended="9434.00"/>
         <stop parkingArea="PAD3D2" until="14176.00" started="9458.31"/>
-        <device id="routing_106_0_0" state="600000"/>
+        <device id="routing_106_0_0" state="600000 1911000"/>
     </vehicle>
     <vehicle id="107_0_0" depart="1919.00" departPos="stop" route="!107_0_0!var#1" distance="5494.4 3" speedFactor="1.0345" reroute="1" state="262152 1919000 64 0 0 -1 14320000 9819914 9223372036854774807">
         <stop parkingArea="PAB2A2" until="5519.00" started="1919.00" ended="5519.00"/>
@@ -2325,7 +2325,7 @@
         <stop parkingArea="PAA2A1" until="9542.00" started="9004.02" ended="9542.00"/>
         <stop parkingArea="PAD4D3" until="9808.00" started="9586.01" ended="9808.00"/>
         <stop parkingArea="PAD2E2" until="14320.00" started="9819.91"/>
-        <device id="routing_107_0_0" state="600000"/>
+        <device id="routing_107_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="108_0_0" depart="1932.00" departPos="stop" route="!108_0_0!var#2" distance="3089.6 2" speedFactor="1.0648" reroute="1" state="262152 1932000 36 0 0 -1 14280000 10188364 9223372036854774807">
         <stop parkingArea="PAB1B2" until="5532.00" started="1932.00" ended="5534.00"/>
@@ -2340,7 +2340,7 @@
         <stop parkingArea="PAD2D1" until="9783.00" started="9465.94" ended="9783.00"/>
         <stop parkingArea="PAD0D1" until="10171.00" started="9794.58" ended="10171.00"/>
         <stop parkingArea="PAD3E3" until="14280.00" started="10188.36"/>
-        <device id="routing_108_0_0" state="600000"/>
+        <device id="routing_108_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="109_0_0" depart="1943.00" departPos="stop" route="!109_0_0!var#1" distance="3464 1" speedFactor="0.9596" reroute="1" state="262152 1943000 40 0 0 -1 14191000 9959722 9223372036854774807">
         <stop parkingArea="PAA3A4" until="5543.00" started="1943.00" ended="5543.00"/>
@@ -2356,7 +2356,7 @@
         <stop parkingArea="PAB1C1" until="9603.00" started="9317.27" ended="9603.00"/>
         <stop parkingArea="PAA4A3" until="9953.00" started="9641.83" ended="9953.00"/>
         <stop parkingArea="PAA3A4" until="14191.00" started="9959.72"/>
-        <device id="routing_109_0_0" state="600000"/>
+        <device id="routing_109_0_0" state="600000 1943000"/>
     </vehicle>
     <vehicle id="110_0_0" depart="1979.00" departPos="stop" route="!110_0_0!var#1" distance="3509.6 1" speedFactor="0.9277" reroute="1" state="262152 1979000 41 0 0 -1 14000000 9732858 9223372036854774807">
         <stop parkingArea="PAA2B2" until="5579.00" started="1979.00" ended="5579.00"/>
@@ -2370,7 +2370,7 @@
         <stop parkingArea="PAC2B2" until="9209.00" started="8667.93" ended="9209.00"/>
         <stop parkingArea="PAB4C4" until="9693.00" started="9228.93" ended="9693.00"/>
         <stop parkingArea="PAB0A0" until="14000.00" started="9732.86"/>
-        <device id="routing_110_0_0" state="600000"/>
+        <device id="routing_110_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="111_0_0" depart="1989.00" departPos="stop" route="!111_0_0!var#1" distance="4825.6 1" speedFactor="0.8659" reroute="1" state="262152 1989000 56 0 0 -1 14342000 10038585 9223372036854774807">
         <stop parkingArea="PAD4E4" until="5589.00" started="1989.00" ended="5589.00"/>
@@ -2388,7 +2388,7 @@
         <stop parkingArea="PAB0B1" until="9695.00" started="9452.35" ended="9695.00"/>
         <stop parkingArea="PAA2A1" until="10003.00" started="9716.35" ended="10003.00"/>
         <stop parkingArea="PAD2D1" until="14342.00" started="10038.59"/>
-        <device id="routing_111_0_0" state="600000"/>
+        <device id="routing_111_0_0" state="600000 1989000"/>
     </vehicle>
     <vehicle id="112_0_0" depart="2068.00" departPos="stop" route="!112_0_0!var#1" distance="3117.6 1" speedFactor="1.0985" reroute="1" state="262152 2068000 36 0 0 -1 14270000 9881822 9223372036854774807">
         <stop parkingArea="PAE2D2" until="5668.00" started="2068.00" ended="5668.00"/>
@@ -2404,7 +2404,7 @@
         <stop parkingArea="PAA4A3" until="9235.00" started="8833.96" ended="9235.00"/>
         <stop parkingArea="PAC2B2" until="9856.00" started="9257.70" ended="9857.00"/>
         <stop parkingArea="PAA0B0" until="14270.00" started="9881.82"/>
-        <device id="routing_112_0_0" state="600000"/>
+        <device id="routing_112_0_0" state="600000 2068000"/>
     </vehicle>
     <vehicle id="113_0_0" depart="2087.00" departPos="stop" route="!113_0_0!var#1" distance="4140.8 1" speedFactor="1.0090" reroute="1" state="262152 2087000 48 0 0 -1 14343000 9624432 9223372036854774807">
         <stop parkingArea="PAD1E1" until="5687.00" started="2087.00" ended="5687.00"/>
@@ -2420,7 +2420,7 @@
         <stop parkingArea="PAB0A0" until="9469.00" started="8989.43" ended="9469.00"/>
         <stop parkingArea="PAC0D0" until="9600.00" started="9500.25" ended="9600.00"/>
         <stop parkingArea="PAD3E3" until="14343.00" started="9624.43"/>
-        <device id="routing_113_0_0" state="600000"/>
+        <device id="routing_113_0_0" state="600000 2087000"/>
     </vehicle>
     <vehicle id="114_0_0" depart="2092.00" departPos="stop" route="!114_0_0!var#1" distance="3860 1" speedFactor="1.0964" reroute="1" state="262152 2092000 45 0 0 -1 14225000 10196863 9223372036854774807">
         <stop parkingArea="PAB1B0" until="5692.00" started="2092.00" ended="5692.00"/>
@@ -2437,7 +2437,7 @@
         <stop parkingArea="PAD2C2" until="10021.00" started="9865.24" ended="10021.00"/>
         <stop parkingArea="PAC2C1" until="10180.00" started="10026.62" ended="10180.00"/>
         <stop parkingArea="PAC3D3" until="14225.00" started="10196.86"/>
-        <device id="routing_114_0_0" state="600000"/>
+        <device id="routing_114_0_0" state="600000 2092000"/>
     </vehicle>
     <vehicle id="115_0_0" depart="2106.00" departPos="stop" route="!115_0_0!var#1" distance="4720 1" speedFactor="0.9220" reroute="1" state="262152 2106000 55 0 0 -1 13857000 9601052 9223372036854774807">
         <stop parkingArea="PAA0A1" until="5706.00" started="2106.00" ended="5706.00"/>
@@ -2453,7 +2453,7 @@
         <stop parkingArea="PAD1D2" until="9476.00" started="9236.10" ended="9476.00"/>
         <stop parkingArea="PAB1B2" until="9581.00" started="9502.74" ended="9581.00"/>
         <stop parkingArea="PAD2D3" until="13857.00" started="9601.05"/>
-        <device id="routing_115_0_0" state="600000"/>
+        <device id="routing_115_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="116_0_0" depart="2129.00" departPos="stop" route="!116_0_0!var#1" distance="4809.6 1" speedFactor="1.1771" reroute="1" state="262152 2129000 56 0 0 -1 14357000 10004370 9223372036854774807">
         <stop parkingArea="PAA1A2" until="5729.00" started="2129.00" ended="5729.00"/>
@@ -2471,7 +2471,7 @@
         <stop parkingArea="PAE3D3" until="9474.00" started="9343.18" ended="9474.00"/>
         <stop parkingArea="PAA1A0" until="9962.00" started="9509.64" ended="9962.00"/>
         <stop parkingArea="PAE3E2" until="14357.00" started="10004.37"/>
-        <device id="routing_116_0_0" state="600000"/>
+        <device id="routing_116_0_0" state="600000 2129000"/>
     </vehicle>
     <vehicle id="117_0_0" depart="2152.00" departPos="stop" route="!117_0_0!var#1" distance="3619.2 1" speedFactor="1.0043" reroute="1" state="262152 2152000 42 0 0 -1 14073000 9798254 9223372036854774807">
         <stop parkingArea="PAE2D2" until="5752.00" started="2152.00" ended="5752.00"/>
@@ -2486,7 +2486,7 @@
         <stop parkingArea="PAD2D3" until="9170.00" started="8862.27" ended="9170.00"/>
         <stop parkingArea="PAB4A4" until="9767.00" started="9194.54" ended="9767.00"/>
         <stop parkingArea="PAC4B4" until="14073.00" started="9798.25"/>
-        <device id="routing_117_0_0" state="600000"/>
+        <device id="routing_117_0_0" state="600000 2152000"/>
     </vehicle>
     <vehicle id="118_0_0" depart="2199.00" departPos="stop" route="!118_0_0!var#1" distance="4646.4 1" speedFactor="0.9914" reroute="1" state="262152 2199000 54 0 0 -1 14391000 9741864 9223372036854774807">
         <stop parkingArea="PAB0C0" until="5799.00" started="2199.00" ended="5799.00"/>
@@ -2503,7 +2503,7 @@
         <stop parkingArea="PAC0B0" until="9569.00" started="9160.08" ended="9569.00"/>
         <stop parkingArea="PAD4D3" until="9717.00" started="9614.22" ended="9717.00"/>
         <stop parkingArea="PAB2A2" until="14391.00" started="9741.86"/>
-        <device id="routing_118_0_0" state="600000"/>
+        <device id="routing_118_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="119_0_0" depart="2217.00" departPos="stop" route="!119_0_0!var#1" distance="3611.2 1" speedFactor="1.0709" reroute="1" state="262152 2217000 42 0 0 -1 14152000 9984044 9223372036854774807">
         <stop parkingArea="PAA0A1" until="5817.00" started="2217.00" ended="5817.00"/>
@@ -2518,7 +2518,7 @@
         <stop parkingArea="PAC0B0" until="9808.00" started="9291.22" ended="9808.00"/>
         <stop parkingArea="PAC1C2" until="9955.00" started="9825.27" ended="9955.00"/>
         <stop parkingArea="PAE0E1" until="14152.00" started="9984.04"/>
-        <device id="routing_119_0_0" state="600000"/>
+        <device id="routing_119_0_0" state="600000 2217000"/>
     </vehicle>
     <vehicle id="120_0_0" depart="2221.00" departPos="stop" route="!120_0_0!var#1" distance="5237.6 1" speedFactor="0.9415" reroute="1" state="262152 2221000 61 0 0 -1 14094000 9898638 9223372036854774807">
         <stop parkingArea="PAE3E2" until="5821.00" started="2221.00" ended="5821.00"/>
@@ -2536,7 +2536,7 @@
         <stop parkingArea="PAD4E4" until="9496.00" started="9146.28" ended="9496.00"/>
         <stop parkingArea="PAB0C0" until="9879.00" started="9550.31" ended="9879.00"/>
         <stop parkingArea="PAC2D2" until="14094.00" started="9898.64"/>
-        <device id="routing_120_0_0" state="600000"/>
+        <device id="routing_120_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="121_0_0" depart="2233.00" departPos="stop" route="!121_0_0!var#2" distance="3969.6 2" speedFactor="1.1032" reroute="1" state="262152 2233000 46 0 0 -1 14118000 10035840 9223372036854774807">
         <stop parkingArea="PAD4C4" until="5833.00" started="2233.00" ended="5833.00"/>
@@ -2553,7 +2553,7 @@
         <stop parkingArea="PAA2A1" until="9580.00" started="9354.43" ended="9580.00"/>
         <stop parkingArea="PAB3C3" until="10007.00" started="9602.34" ended="10007.00"/>
         <stop parkingArea="PAE1D1" until="14118.00" started="10035.84"/>
-        <device id="routing_121_0_0" state="600000"/>
+        <device id="routing_121_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="122_0_0" depart="2237.00" departPos="stop" route="!122_0_0!var#1" distance="5253.6 1" speedFactor="1.0314" reroute="1" state="262152 2237000 61 0 0 -1 14323000 10124925 9223372036854774807">
         <stop parkingArea="PAE2E1" until="5837.00" started="2237.00" ended="5837.00"/>
@@ -2571,7 +2571,7 @@
         <stop parkingArea="PAA0B0" until="9815.00" started="9704.22" ended="9815.00"/>
         <stop parkingArea="PAD1C1" until="10107.00" started="9839.18" ended="10107.00"/>
         <stop parkingArea="PAD2C2" until="14323.00" started="10124.93"/>
-        <device id="routing_122_0_0" state="600000"/>
+        <device id="routing_122_0_0" state="600000 2237000"/>
     </vehicle>
     <vehicle id="123_0_0" depart="2244.00" departPos="stop" route="!123_0_0!var#1" distance="4658.4 1" speedFactor="1.0234" reroute="1" state="262152 2244000 54 0 0 -1 14215000 10364997 9223372036854774807">
         <stop parkingArea="PAC2C1" until="5844.00" started="2244.00" ended="5844.00"/>
@@ -2589,7 +2589,7 @@
         <stop parkingArea="PAC3B3" until="9792.00" started="9369.31" ended="9792.00"/>
         <stop parkingArea="PAB4A4" until="10322.00" started="9804.04" ended="10322.00"/>
         <stop parkingArea="PAA0A1" until="14215.00" started="10365.00"/>
-        <device id="routing_123_0_0" state="600000"/>
+        <device id="routing_123_0_0" state="600000 2244000"/>
     </vehicle>
     <vehicle id="124_0_0" depart="2260.00" departPos="stop" route="!124_0_0!var#1" distance="3712.8 1" speedFactor="1.0609" reroute="1" state="262152 2260000 43 0 0 -1 14347000 9941778 9223372036854774807">
         <stop parkingArea="PAB1A1" until="5860.00" started="2260.00" ended="5860.00"/>
@@ -2605,7 +2605,7 @@
         <stop parkingArea="PAB4A4" until="9559.00" started="9333.06" ended="9559.00"/>
         <stop parkingArea="PAA3A4" until="9918.00" started="9571.16" ended="9918.00"/>
         <stop parkingArea="PAD4D3" until="14347.00" started="9941.78"/>
-        <device id="routing_124_0_0" state="600000"/>
+        <device id="routing_124_0_0" state="600000 2260000"/>
     </vehicle>
     <vehicle id="125_0_0" depart="2265.00" departPos="stop" route="!125_0_0!var#1" distance="3175.2 1" speedFactor="1.1528" reroute="1" state="262152 2265000 37 0 0 -1 13863000 9362384 9223372036854774807">
         <stop parkingArea="PAB0B1" until="5865.00" started="2265.00" ended="5865.00"/>
@@ -2618,7 +2618,7 @@
         <stop parkingArea="PAB0C0" until="9058.00" started="8700.73" ended="9058.00"/>
         <stop parkingArea="PAC4D4" until="9341.00" started="9088.30" ended="9341.00"/>
         <stop parkingArea="PAD1D2" until="13863.00" started="9362.38"/>
-        <device id="routing_125_0_0" state="600000"/>
+        <device id="routing_125_0_0" state="600000 2265000"/>
     </vehicle>
     <vehicle id="126_0_0" depart="2271.00" departPos="stop" route="!126_0_0!var#2" distance="3440 2" speedFactor="1.0322" reroute="1" state="262152 2271000 40 0 0 -1 14300000 9777940 9223372036854774807">
         <stop parkingArea="PAB0A0" until="5871.00" started="2271.00" ended="5871.00"/>
@@ -2632,7 +2632,7 @@
         <stop parkingArea="PAC3B3" until="9471.00" started="9120.91" ended="9471.00"/>
         <stop parkingArea="PAE1D1" until="9766.00" started="9506.82" ended="9766.00"/>
         <stop parkingArea="PAD0D1" until="14300.00" started="9777.94"/>
-        <device id="routing_126_0_0" state="600000"/>
+        <device id="routing_126_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="127_0_0" depart="2283.00" departPos="stop" route="!127_0_0!var#1" distance="3595.2 1" speedFactor="0.8221" reroute="1" state="262152 2283000 42 0 0 -1 13913000 9411480 9223372036854774807">
         <stop parkingArea="PAB1B2" until="5883.00" started="2283.00" ended="5883.00"/>
@@ -2647,7 +2647,7 @@
         <stop parkingArea="PAC1C0" until="9192.00" started="8757.12" ended="9192.00"/>
         <stop parkingArea="PAE1E2" until="9374.00" started="9221.98" ended="9374.00"/>
         <stop parkingArea="PAC4D4" until="13913.00" started="9411.48"/>
-        <device id="routing_127_0_0" state="600000"/>
+        <device id="routing_127_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="128_0_0" depart="2293.00" departPos="stop" route="!128_0_0!var#1" distance="2576 1" speedFactor="1.1184" reroute="1" state="262152 2293000 30 0 0 -1 14200000 9768530 9223372036854774807">
         <stop parkingArea="PAD1D0" until="5893.00" started="2293.00" ended="5893.00"/>
@@ -2662,7 +2662,7 @@
         <stop parkingArea="PAD3D4" until="9373.00" started="9101.02" ended="9373.00"/>
         <stop parkingArea="PAC3C2" until="9752.00" started="9389.53" ended="9752.00"/>
         <stop parkingArea="PAD3D2" until="14200.00" started="9768.53"/>
-        <device id="routing_128_0_0" state="600000"/>
+        <device id="routing_128_0_0" state="600000 2293000"/>
     </vehicle>
     <vehicle id="129_0_0" depart="2316.00" departPos="stop" route="!129_0_0!var#1" distance="2996 1" speedFactor="1.0083" reroute="1" state="262152 2316000 35 0 0 -1 14194000 10237336 9223372036854774807">
         <stop parkingArea="PAD0C0" until="5916.00" started="2316.00" ended="5916.00"/>
@@ -2677,7 +2677,7 @@
         <stop parkingArea="PAD2C2" until="9759.00" started="9210.14" ended="9759.00"/>
         <stop parkingArea="PAC1D1" until="10219.00" started="9771.22" ended="10219.00"/>
         <stop parkingArea="PAC0B0" until="14194.00" started="10237.34"/>
-        <device id="routing_129_0_0" state="600000"/>
+        <device id="routing_129_0_0" state="600000 2316000"/>
     </vehicle>
     <vehicle id="130_0_0" depart="2319.00" departPos="stop" route="!130_0_0!var#2" distance="4560.8 2" speedFactor="1.0322" reroute="1" state="262152 2319000 53 0 0 -1 14364000 10091940 9223372036854774807">
         <stop parkingArea="PAA1A0" until="5919.00" started="2319.00" ended="5919.00"/>
@@ -2695,7 +2695,7 @@
         <stop parkingArea="PAE4E3" until="9733.00" started="9361.16" ended="9733.00"/>
         <stop parkingArea="PAD3E3" until="10080.00" started="9745.22" ended="10080.00"/>
         <stop parkingArea="PAD3C3" until="14364.00" started="10091.94"/>
-        <device id="routing_130_0_0" state="600000"/>
+        <device id="routing_130_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="131_0_0" depart="2332.00" departPos="stop" route="!131_0_0!var#2" distance="4662.4 2" speedFactor="1.0683" reroute="1" state="262152 2332000 54 0 0 -1 14170000 10122845 9223372036854774807">
         <stop parkingArea="PAA3A4" until="5932.00" started="2332.00" ended="5932.00"/>
@@ -2711,7 +2711,7 @@
         <stop parkingArea="PAC2C1" until="9875.00" started="9533.35" ended="9875.00"/>
         <stop parkingArea="PAA2A1" until="10094.00" started="9899.05" ended="10094.00"/>
         <stop parkingArea="PAE1E2" until="14170.00" started="10122.85"/>
-        <device id="routing_131_0_0" state="600000"/>
+        <device id="routing_131_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="132_0_0" depart="2350.00" departPos="stop" route="!132_0_0!var#1" distance="4397.6 1" speedFactor="0.9597" reroute="1" state="262152 2350000 51 0 0 -1 14180000 9669128 9223372036854774807">
         <stop parkingArea="PAE2E3" until="5950.00" started="2350.00" ended="5950.00"/>
@@ -2727,7 +2727,7 @@
         <stop parkingArea="PAE1E0" until="9372.00" started="9174.11" ended="9372.00"/>
         <stop parkingArea="PAA1A0" until="9630.00" started="9411.73" ended="9630.00"/>
         <stop parkingArea="PAB4B3" until="14180.00" started="9669.13"/>
-        <device id="routing_132_0_0" state="600000"/>
+        <device id="routing_132_0_0" state="600000 2350000"/>
     </vehicle>
     <vehicle id="133_0_0" depart="2386.00" departPos="stop" route="!133_0_0!var#2" distance="4381.6 2" speedFactor="1.0374" reroute="1" state="262152 2386000 51 0 0 -1 14086000 9935823 9223372036854774807">
         <stop parkingArea="PAB2B1" until="5986.00" started="2386.00" ended="5986.00"/>
@@ -2744,7 +2744,7 @@
         <stop parkingArea="PAA3B3" until="9405.00" started="8967.94" ended="9407.00"/>
         <stop parkingArea="PAD0D1" until="9918.00" started="9442.19" ended="9918.00"/>
         <stop parkingArea="PAD3D2" until="14086.00" started="9935.82"/>
-        <device id="routing_133_0_0" state="600000"/>
+        <device id="routing_133_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="134_0_0" depart="2400.00" departPos="stop" route="!134_0_0!var#1" distance="4491.2 1" speedFactor="1.2260" reroute="1" state="262152 2400000 52 0 0 -1 13931000 9735370 9223372036854774807">
         <stop parkingArea="PAE4E3" until="6000.00" started="2400.00" ended="6000.00"/>
@@ -2759,7 +2759,7 @@
         <stop parkingArea="PAD2E2" until="9540.00" started="9068.63" ended="9540.00"/>
         <stop parkingArea="PAB2B3" until="9710.00" started="9561.96" ended="9710.00"/>
         <stop parkingArea="PAA0B0" until="13931.00" started="9735.37"/>
-        <device id="routing_134_0_0" state="600000"/>
+        <device id="routing_134_0_0" state="600000 2400000"/>
     </vehicle>
     <vehicle id="135_0_0" depart="2407.00" departPos="stop" route="!135_0_0!var#1" distance="4226.4 1" speedFactor="1.0117" reroute="1" state="262152 2407000 49 0 0 -1 14260000 9780273 9223372036854774807">
         <stop parkingArea="PAC3C4" until="6007.00" started="2407.00" ended="6007.00"/>
@@ -2776,7 +2776,7 @@
         <stop parkingArea="PAA4A3" until="9578.00" started="9278.74" ended="9580.00"/>
         <stop parkingArea="PAD2D1" until="9762.00" started="9610.41" ended="9762.00"/>
         <stop parkingArea="PAE2D2" until="14260.00" started="9780.27"/>
-        <device id="routing_135_0_0" state="600000"/>
+        <device id="routing_135_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="136_0_0" depart="2412.00" departPos="stop" route="!136_0_0!var#1" distance="5938.4 1" speedFactor="1.1195" reroute="1" state="262152 2412000 69 0 0 -1 14393000 9899020 9223372036854774807">
         <stop parkingArea="PAE2E1" until="6012.00" started="2412.00" ended="6012.00"/>
@@ -2794,7 +2794,7 @@
         <stop parkingArea="PAC3C4" until="9514.00" started="8988.52" ended="9514.00"/>
         <stop parkingArea="PAA1B1" until="9877.00" started="9549.00" ended="9877.00"/>
         <stop parkingArea="PAD0C0" until="14393.00" started="9899.02"/>
-        <device id="routing_136_0_0" state="600000"/>
+        <device id="routing_136_0_0" state="600000 2412000"/>
     </vehicle>
     <vehicle id="137_0_0" depart="2431.00" departPos="stop" route="!137_0_0!var#1" distance="4039.2 1" speedFactor="1.0152" reroute="1" state="262152 2431000 47 0 0 -1 14101000 9665708 9223372036854774807">
         <stop parkingArea="PAB1B2" until="6031.00" started="2431.00" ended="6031.00"/>
@@ -2809,7 +2809,7 @@
         <stop parkingArea="PAE3E2" until="9057.00" started="8953.74" ended="9057.00"/>
         <stop parkingArea="PAB4A4" until="9653.00" started="9094.86" ended="9653.00"/>
         <stop parkingArea="PAA3B3" until="14101.00" started="9665.71"/>
-        <device id="routing_137_0_0" state="600000"/>
+        <device id="routing_137_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="138_0_0" depart="2441.00" departPos="stop" route="!138_0_0!var#1" distance="2576 1" speedFactor="1.0039" reroute="1" state="262152 2441000 30 0 0 -1 14400000 9694237 9223372036854774807">
         <stop parkingArea="PAD2D1" until="6041.00" started="2441.00" ended="6041.00"/>
@@ -2821,7 +2821,7 @@
         <stop parkingArea="PAB3B2" until="9177.00" started="8100.70" ended="9177.00"/>
         <stop parkingArea="PAB0B1" until="9680.00" started="9195.42" ended="9680.00"/>
         <stop parkingArea="PAB2B1" until="14400.00" started="9694.24"/>
-        <device id="routing_138_0_0" state="600000"/>
+        <device id="routing_138_0_0" state="600000 2441000"/>
     </vehicle>
     <vehicle id="139_0_0" depart="2443.00" departPos="stop" route="!139_0_0!var#1" distance="5176 1" speedFactor="0.9535" reroute="1" state="262152 2443000 60 0 0 -1 14251000 10160530 9223372036854774807">
         <stop parkingArea="PAE3E2" until="6043.00" started="2443.00" ended="6043.00"/>
@@ -2839,7 +2839,7 @@
         <stop parkingArea="PAB0C0" until="9885.00" started="9388.85" ended="9885.00"/>
         <stop parkingArea="PAA3A4" until="10147.00" started="9923.78" ended="10147.00"/>
         <stop parkingArea="PAB4A4" until="14251.00" started="10160.53"/>
-        <device id="routing_139_0_0" state="600000"/>
+        <device id="routing_139_0_0" state="600000 2443000"/>
     </vehicle>
     <vehicle id="140_0_0" depart="2454.00" departPos="stop" route="!140_0_0!var#1" distance="4132.8 1" speedFactor="1.1138" reroute="1" state="262152 2454000 48 0 0 -1 14118000 9769132 9223372036854774807">
         <stop parkingArea="PAD3D4" until="6054.00" started="2454.00" ended="6054.00"/>
@@ -2854,7 +2854,7 @@
         <stop parkingArea="PAC3D3" until="9322.00" started="8764.13" ended="9322.00"/>
         <stop parkingArea="PAE2E1" until="9747.00" started="9341.58" ended="9747.00"/>
         <stop parkingArea="PAC0C1" until="14118.00" started="9769.13"/>
-        <device id="routing_140_0_0" state="600000"/>
+        <device id="routing_140_0_0" state="600000 2454000"/>
     </vehicle>
     <vehicle id="141_0_0" depart="2459.00" departPos="stop" route="!141_0_0!var#1" distance="2490.4 1" speedFactor="1.1643" reroute="1" state="262152 2459000 29 0 0 -1 13825000 9279326 9223372036854774807">
         <stop parkingArea="PAC1D1" until="6059.00" started="2459.00" ended="6059.00"/>
@@ -2866,7 +2866,7 @@
         <stop parkingArea="PAB4C4" until="9147.00" started="8585.17" ended="9147.00"/>
         <stop parkingArea="PAB4B3" until="9263.00" started="9157.59" ended="9263.00"/>
         <stop parkingArea="PAC4B4" until="13825.00" started="9279.33"/>
-        <device id="routing_141_0_0" state="600000"/>
+        <device id="routing_141_0_0" state="600000 2459000"/>
     </vehicle>
     <vehicle id="142_0_0" depart="2461.00" departPos="stop" route="!142_0_0!var#1" distance="4560.8 1" speedFactor="0.9364" reroute="1" state="262152 2461000 53 0 0 -1 14255000 9798905 9223372036854774807">
         <stop parkingArea="PAC2C3" until="6061.00" started="2461.00" ended="6062.00"/>
@@ -2883,7 +2883,7 @@
         <stop parkingArea="PAA0B0" until="9181.00" started="8735.05" ended="9181.00"/>
         <stop parkingArea="PAC4B4" until="9766.00" started="9221.99" ended="9766.00"/>
         <stop parkingArea="PAC1C2" until="14255.00" started="9798.91"/>
-        <device id="routing_142_0_0" state="600000"/>
+        <device id="routing_142_0_0" state="600000 2461000"/>
     </vehicle>
     <vehicle id="143_0_0" depart="2473.00" departPos="stop" route="!143_0_0!var#1" distance="3175.2 1" speedFactor="1.1290" reroute="1" state="262152 2473000 37 0 0 -1 14139000 10005918 9223372036854774807">
         <stop parkingArea="PAD2E2" until="6073.00" started="2473.00" ended="6073.00"/>
@@ -2898,7 +2898,7 @@
         <stop parkingArea="PAB1B0" until="9446.00" started="9083.47" ended="9447.00"/>
         <stop parkingArea="PAD3E3" until="9995.00" started="9482.86" ended="9995.00"/>
         <stop parkingArea="PAE2D2" until="14139.00" started="10005.92"/>
-        <device id="routing_143_0_0" state="600000"/>
+        <device id="routing_143_0_0" state="600000 2473000"/>
     </vehicle>
     <vehicle id="144_0_0" depart="2483.00" departPos="stop" route="!144_0_0!var#1" distance="4365.6 1" speedFactor="0.7336" reroute="1" state="262152 2483000 51 0 0 -1 14349000 10230005 9223372036854774807">
         <stop parkingArea="PAA1B1" until="6083.00" started="2483.00" ended="6083.00"/>
@@ -2915,7 +2915,7 @@
         <stop parkingArea="PAE3D3" until="9908.00" started="9764.60" ended="9908.00"/>
         <stop parkingArea="PAD4C4" until="10188.00" started="9924.80" ended="10188.00"/>
         <stop parkingArea="PAD1C1" until="14349.00" started="10230.01"/>
-        <device id="routing_144_0_0" state="600000"/>
+        <device id="routing_144_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="145_0_0" depart="2505.00" departPos="stop" route="!145_0_0!var#1" distance="3354.4 1" speedFactor="1.1408" reroute="1" state="262152 2505000 39 0 0 -1 14369000 10214804 9223372036854774807">
         <stop parkingArea="PAC1D1" until="6105.00" started="2505.00" ended="6105.00"/>
@@ -2932,7 +2932,7 @@
         <stop parkingArea="PAC3D3" until="9881.00" started="9075.11" ended="9881.00"/>
         <stop parkingArea="PAD3D2" until="10204.00" started="9886.40" ended="10204.00"/>
         <stop parkingArea="PAD3C3" until="14369.00" started="10214.80"/>
-        <device id="routing_145_0_0" state="600000"/>
+        <device id="routing_145_0_0" state="600000 2505000"/>
     </vehicle>
     <vehicle id="146_0_0" depart="2508.00" departPos="stop" route="!146_0_0!var#1" distance="3852 1" speedFactor="0.8868" reroute="1" state="262152 2508000 45 0 0 -1 14284000 9843421 9223372036854774807">
         <stop parkingArea="PAB0B1" until="6108.00" started="2508.00" ended="6108.00"/>
@@ -2945,7 +2945,7 @@
         <stop parkingArea="PAA1A2" until="9137.00" started="8664.81" ended="9137.00"/>
         <stop parkingArea="PAD3D2" until="9814.00" started="9171.75" ended="9816.00"/>
         <stop parkingArea="PAA2A1" until="14284.00" started="9843.42"/>
-        <device id="routing_146_0_0" state="600000"/>
+        <device id="routing_146_0_0" state="600000 2508000"/>
     </vehicle>
     <vehicle id="147_0_0" depart="2533.00" departPos="stop" route="!147_0_0!var#1" distance="3529.6 1" speedFactor="1.0022" reroute="1" state="262152 2533000 41 0 0 -1 14226000 9727735 9223372036854774807">
         <stop parkingArea="PAA4B4" until="6133.00" started="2533.00" ended="6133.00"/>
@@ -2959,7 +2959,7 @@
         <stop parkingArea="PAD0D1" until="9115.00" started="8821.45" ended="9115.00"/>
         <stop parkingArea="PAE4E3" until="9709.00" started="9146.03" ended="9709.00"/>
         <stop parkingArea="PAD2D1" until="14226.00" started="9727.74"/>
-        <device id="routing_147_0_0" state="600000"/>
+        <device id="routing_147_0_0" state="600000 2533000"/>
     </vehicle>
     <vehicle id="148_0_0" depart="2545.00" departPos="stop" route="!148_0_0!var#1" distance="3276.8 1" speedFactor="0.9668" reroute="1" state="262152 2545000 38 0 0 -1 14111000 9474748 9223372036854774807">
         <stop parkingArea="PAD3D4" until="6145.00" started="2545.00" ended="6145.00"/>
@@ -2972,7 +2972,7 @@
         <stop parkingArea="PAE0E1" until="9068.00" started="8634.06" ended="9068.00"/>
         <stop parkingArea="PAB3C3" until="9462.00" started="9107.54" ended="9462.00"/>
         <stop parkingArea="PAB3A3" until="14111.00" started="9474.75"/>
-        <device id="routing_148_0_0" state="600000"/>
+        <device id="routing_148_0_0" state="600000 2545000"/>
     </vehicle>
     <vehicle id="149_0_0" depart="2596.00" departPos="stop" route="!149_0_0!var#1" distance="4047.2 1" speedFactor="1.0399" reroute="1" state="262152 2596000 47 0 0 -1 14017000 9787907 9223372036854774807">
         <stop parkingArea="PAB3B4" until="6196.00" started="2596.00" ended="6196.00"/>
@@ -2988,7 +2988,7 @@
         <stop parkingArea="PAC4B4" until="9198.00" started="8742.78" ended="9198.00"/>
         <stop parkingArea="PAA4B4" until="9758.00" started="9221.98" ended="9758.00"/>
         <stop parkingArea="PAD2C2" until="14017.00" started="9787.91"/>
-        <device id="routing_149_0_0" state="600000"/>
+        <device id="routing_149_0_0" state="600000 2596000"/>
     </vehicle>
     <vehicle id="150_0_0" depart="2636.00" departPos="stop" route="!150_0_0!var#1" distance="3884 1" speedFactor="0.9630" reroute="1" state="262152 2636000 45 0 0 -1 14086000 9567995 9223372036854774807">
         <stop parkingArea="PAC4D4" until="6236.00" started="2636.00" ended="6236.00"/>
@@ -3002,7 +3002,7 @@
         <stop parkingArea="PAA0A1" until="9024.00" started="8850.90" ended="9024.00"/>
         <stop parkingArea="PAB3A3" until="9536.00" started="9049.90" ended="9536.00"/>
         <stop parkingArea="PAE3E2" until="14086.00" started="9568.00"/>
-        <device id="routing_150_0_0" state="600000"/>
+        <device id="routing_150_0_0" state="600000 2636000"/>
     </vehicle>
     <vehicle id="151_0_0" depart="2700.00" departPos="stop" route="!151_0_0!var#1" distance="4475.2 1" speedFactor="1.0046" reroute="1" state="262152 2700000 52 0 0 -1 14376000 10221110 9223372036854774807">
         <stop parkingArea="PAA1A0" until="6300.00" started="2700.00" ended="6300.00"/>
@@ -3017,7 +3017,7 @@
         <stop parkingArea="PAD3D4" until="9843.00" started="9361.67" ended="9843.00"/>
         <stop parkingArea="PAB0A0" until="10196.00" started="9885.94" ended="10196.00"/>
         <stop parkingArea="PAB2C2" until="14376.00" started="10221.11"/>
-        <device id="routing_151_0_0" state="600000"/>
+        <device id="routing_151_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="152_0_0" depart="2709.00" departPos="stop" route="!152_0_0!var#1" distance="4059.2 1" speedFactor="1.0714" reroute="1" state="262152 2709000 47 0 0 -1 14139000 9894029 9223372036854774807">
         <stop parkingArea="PAA4B4" until="6309.00" started="2709.00" ended="6309.00"/>
@@ -3031,7 +3031,7 @@
         <stop parkingArea="PAA3B3" until="9441.00" started="8952.53" ended="9441.00"/>
         <stop parkingArea="PAE4D4" until="9865.00" started="9470.03" ended="9865.00"/>
         <stop parkingArea="PAB2A2" until="14139.00" started="9894.03"/>
-        <device id="routing_152_0_0" state="600000"/>
+        <device id="routing_152_0_0" state="600000 2709000"/>
     </vehicle>
     <vehicle id="153_0_0" depart="2720.00" departPos="stop" route="!153_0_0!var#1" distance="3802.4 1" speedFactor="0.9270" reroute="1" state="262152 2720000 44 0 0 -1 14364000 9992888 9223372036854774807">
         <stop parkingArea="PAA0B0" until="6320.00" started="2720.00" ended="6320.00"/>
@@ -3046,7 +3046,7 @@
         <stop parkingArea="PAA3B3" until="9514.00" started="9207.66" ended="9514.00"/>
         <stop parkingArea="PAC0D0" until="9953.00" started="9547.24" ended="9953.00"/>
         <stop parkingArea="PAB3A3" until="14364.00" started="9992.89"/>
-        <device id="routing_153_0_0" state="600000"/>
+        <device id="routing_153_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="154_0_0" depart="2721.00" departPos="stop" route="!154_0_0!var#1" distance="4116.8 1" speedFactor="1.0646" reroute="1" state="262152 2721000 48 0 0 -1 14288000 9679252 9223372036854774807">
         <stop parkingArea="PAC4C3" until="6321.00" started="2721.00" ended="6321.00"/>
@@ -3060,7 +3060,7 @@
         <stop parkingArea="PAD1D0" until="9480.00" started="9265.73" ended="9480.00"/>
         <stop parkingArea="PAA2B2" until="9655.00" started="9514.73" ended="9655.00"/>
         <stop parkingArea="PAC4C3" until="14288.00" started="9679.25"/>
-        <device id="routing_154_0_0" state="600000"/>
+        <device id="routing_154_0_0" state="600000 2721000"/>
     </vehicle>
     <vehicle id="155_0_0" depart="2791.00" departPos="stop" route="!155_0_0!var#1" distance="3696.8 1" speedFactor="1.1236" reroute="1" state="262152 2791000 43 0 0 -1 14314000 9945940 9223372036854774807">
         <stop parkingArea="PAE2D2" until="6391.00" started="2791.00" ended="6391.00"/>
@@ -3075,7 +3075,7 @@
         <stop parkingArea="PAA3A4" until="9371.00" started="8889.97" ended="9371.00"/>
         <stop parkingArea="PAC3B3" until="9924.00" started="9393.45" ended="9924.00"/>
         <stop parkingArea="PAC1C0" until="14314.00" started="9945.94"/>
-        <device id="routing_155_0_0" state="600000"/>
+        <device id="routing_155_0_0" state="600000 2791000"/>
     </vehicle>
     <vehicle id="156_0_0" depart="2826.00" departPos="stop" route="!156_0_0!var#1" distance="4833.6 1" speedFactor="1.1790" reroute="1" state="262152 2826000 56 0 0 -1 14173000 9732908 9223372036854774807">
         <stop parkingArea="PAC1B1" until="6426.00" started="2826.00" ended="6426.00"/>
@@ -3090,7 +3090,7 @@
         <stop parkingArea="PAC0C1" until="9465.00" started="9271.75" ended="9465.00"/>
         <stop parkingArea="PAB4B3" until="9712.00" started="9492.30" ended="9712.00"/>
         <stop parkingArea="PAC1B1" until="14173.00" started="9732.91"/>
-        <device id="routing_156_0_0" state="600000"/>
+        <device id="routing_156_0_0" state="600000 2826000"/>
     </vehicle>
     <vehicle id="157_0_0" depart="2831.00" departPos="stop" route="!157_0_0!var#1" distance="4124.8 1" speedFactor="1.0788" reroute="1" state="262152 2831000 48 0 0 -1 14080000 9550139 9223372036854774807">
         <stop parkingArea="PAC0B0" until="6431.00" started="2831.00" ended="6431.00"/>
@@ -3105,7 +3105,7 @@
         <stop parkingArea="PAD2D3" until="9275.00" started="8968.85" ended="9275.00"/>
         <stop parkingArea="PAC1D1" until="9533.00" started="9298.93" ended="9533.00"/>
         <stop parkingArea="PAE2E3" until="14080.00" started="9550.14"/>
-        <device id="routing_157_0_0" state="600000"/>
+        <device id="routing_157_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="158_0_0" depart="2843.00" departPos="stop" route="!158_0_0!var#1" distance="3937.6 1" speedFactor="0.9097" reroute="1" state="262152 2843000 46 0 0 -1 13728000 9782374 9223372036854774807">
         <stop parkingArea="PAA3B3" until="6443.00" started="2843.00" ended="6443.00"/>
@@ -3120,7 +3120,7 @@
         <stop parkingArea="PAA1A2" until="9534.00" started="9435.32" ended="9534.00"/>
         <stop parkingArea="PAD1E1" until="9734.00" started="9567.87" ended="9734.00"/>
         <stop parkingArea="PAB4B3" until="13728.00" started="9782.37"/>
-        <device id="routing_158_0_0" state="600000"/>
+        <device id="routing_158_0_0" state="600000 2843000"/>
     </vehicle>
     <vehicle id="159_0_0" depart="2857.00" departPos="stop" route="!159_0_0!var#1" distance="3444 1" speedFactor="1.1421" reroute="1" state="262152 2857000 40 0 0 -1 14206000 9498416 9223372036854774807">
         <stop parkingArea="PAE4E3" until="6457.00" started="2857.00" ended="6457.00"/>
@@ -3134,7 +3134,7 @@
         <stop parkingArea="PAC4D4" until="9195.00" started="8837.96" ended="9195.00"/>
         <stop parkingArea="PAD1E1" until="9464.00" started="9217.21" ended="9464.00"/>
         <stop parkingArea="PAB3A3" until="14206.00" started="9498.42"/>
-        <device id="routing_159_0_0" state="600000"/>
+        <device id="routing_159_0_0" state="600000 2857000"/>
     </vehicle>
     <vehicle id="160_0_0" depart="2869.00" departPos="stop" route="!160_0_0!var#1" distance="3440 1" speedFactor="0.8786" reroute="1" state="262152 2869000 40 0 0 -1 14227000 9627712 9223372036854774807">
         <stop parkingArea="PAB2B3" until="6469.00" started="2869.00" ended="6469.00"/>
@@ -3149,7 +3149,7 @@
         <stop parkingArea="PAC2C1" until="9475.00" started="9122.03" ended="9475.00"/>
         <stop parkingArea="PAB4A4" until="9599.00" started="9511.07" ended="9599.00"/>
         <stop parkingArea="PAC3C2" until="14227.00" started="9627.71"/>
-        <device id="routing_160_0_0" state="600000"/>
+        <device id="routing_160_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="161_0_0" depart="2927.00" departPos="stop" route="!161_0_0!var#1" distance="5156 1" speedFactor="1.0777" reroute="1" state="262152 2927000 60 0 0 -1 14256000 10332590 9223372036854774807">
         <stop parkingArea="PAE4E3" until="6527.00" started="2927.00" ended="6527.00"/>
@@ -3166,7 +3166,7 @@
         <stop parkingArea="PAE2E3" until="10147.00" started="10011.50" ended="10147.00"/>
         <stop parkingArea="PAA3A2" until="10304.00" started="10175.59" ended="10304.00"/>
         <stop parkingArea="PAD1D2" until="14256.00" started="10332.59"/>
-        <device id="routing_161_0_0" state="600000"/>
+        <device id="routing_161_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="162_0_0" depart="2932.00" departPos="stop" route="!162_0_0!var#1" distance="4055.2 1" speedFactor="0.9928" reroute="1" state="262152 2932000 47 0 0 -1 14235000 10140207 9223372036854774807">
         <stop parkingArea="PAB1C1" until="6532.00" started="2932.00" ended="6532.00"/>
@@ -3181,7 +3181,7 @@
         <stop parkingArea="PAD1D0" until="9959.00" started="9550.68" ended="9959.00"/>
         <stop parkingArea="PAB1C1" until="10134.00" started="9983.83" ended="10134.00"/>
         <stop parkingArea="PAC1C2" until="14235.00" started="10140.21"/>
-        <device id="routing_162_0_0" state="600000"/>
+        <device id="routing_162_0_0" state="600000 2932000"/>
     </vehicle>
     <vehicle id="163_0_0" depart="2939.00" departPos="stop" route="!163_0_0!var#1" distance="3619.2 1" speedFactor="1.1269" reroute="1" state="262152 2939000 42 0 0 -1 14220000 10044131 9223372036854774807">
         <stop parkingArea="PAB3B4" until="6539.00" started="2939.00" ended="6540.00"/>
@@ -3196,7 +3196,7 @@
         <stop parkingArea="PAB0C0" until="9837.00" started="9415.94" ended="9837.00"/>
         <stop parkingArea="PAA4B4" until="10022.00" started="9875.54" ended="10022.00"/>
         <stop parkingArea="PAB1B2" until="14220.00" started="10044.13"/>
-        <device id="routing_163_0_0" state="600000"/>
+        <device id="routing_163_0_0" state="600000 2939000"/>
     </vehicle>
     <vehicle id="164_0_0" depart="2952.00" departPos="stop" route="!164_0_0!var#1" distance="3860 1" speedFactor="1.0519" reroute="1" state="262152 2952000 45 0 0 -1 14185000 10126568 9223372036854774807">
         <stop parkingArea="PAD1D0" until="6552.00" started="2952.00" ended="6552.00"/>
@@ -3209,7 +3209,7 @@
         <stop parkingArea="PAE2D2" until="9526.00" started="9426.30" ended="9526.00"/>
         <stop parkingArea="PAA0B0" until="10097.00" started="9563.04" ended="10097.00"/>
         <stop parkingArea="PAE1E2" until="14185.00" started="10126.57"/>
-        <device id="routing_164_0_0" state="600000"/>
+        <device id="routing_164_0_0" state="600000 2952000"/>
     </vehicle>
     <vehicle id="165_0_0" depart="2963.00" departPos="stop" route="!165_0_0!var#1" distance="3264.8 1" speedFactor="0.9144" reroute="1" state="262152 2963000 38 0 0 -1 14107000 9777668 9223372036854774807">
         <stop parkingArea="PAB1B0" until="6563.00" started="2963.00" ended="6563.00"/>
@@ -3224,7 +3224,7 @@
         <stop parkingArea="PAD2E2" until="9252.00" started="8839.96" ended="9252.00"/>
         <stop parkingArea="PAE0D0" until="9736.00" started="9274.70" ended="9736.00"/>
         <stop parkingArea="PAE4D4" until="14107.00" started="9777.67"/>
-        <device id="routing_165_0_0" state="600000"/>
+        <device id="routing_165_0_0" state="600000 2963000"/>
     </vehicle>
     <vehicle id="166_0_0" depart="2971.00" departPos="stop" route="!166_0_0!var#2" distance="3020 2" speedFactor="1.0044" reroute="1" state="262152 2971000 35 0 0 -1 14171000 9545544 9223372036854774807">
         <stop parkingArea="PAC0D0" until="6571.00" started="2971.00" ended="6571.00"/>
@@ -3237,7 +3237,7 @@
         <stop parkingArea="PAE1E0" until="9343.00" started="8939.41" ended="9343.00"/>
         <stop parkingArea="PAB2B1" until="9521.00" started="9380.39" ended="9521.00"/>
         <stop parkingArea="PAA3A4" until="14171.00" started="9545.54"/>
-        <device id="routing_166_0_0" state="600000"/>
+        <device id="routing_166_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="167_0_0" depart="2982.00" departPos="stop" route="!167_0_0!var#1" distance="3607.2 1" speedFactor="1.0296" reroute="1" state="262152 2982000 42 0 0 -1 14277000 10141972 9223372036854774807">
         <stop parkingArea="PAE0D0" until="6582.00" started="2982.00" ended="6582.00"/>
@@ -3252,7 +3252,7 @@
         <stop parkingArea="PAE4E3" until="10030.00" started="9675.22" ended="10030.00"/>
         <stop parkingArea="PAC0D0" until="10130.00" started="10066.20" ended="10130.00"/>
         <stop parkingArea="PAC0C1" until="14277.00" started="10141.97"/>
-        <device id="routing_167_0_0" state="600000"/>
+        <device id="routing_167_0_0" state="600000 2982000"/>
     </vehicle>
     <vehicle id="168_0_0" depart="2987.00" departPos="stop" route="!168_0_0!var#1" distance="4740 1" speedFactor="0.9838" reroute="1" state="262152 2987000 55 0 0 -1 14373000 10019613 9223372036854774807">
         <stop parkingArea="PAA1B1" until="6587.00" started="2987.00" ended="6587.00"/>
@@ -3267,7 +3267,7 @@
         <stop parkingArea="PAE4D4" until="9776.00" started="9334.16" ended="9776.00"/>
         <stop parkingArea="PAB2B3" until="9987.00" started="9808.90" ended="9988.00"/>
         <stop parkingArea="PAE2E3" until="14373.00" started="10019.61"/>
-        <device id="routing_168_0_0" state="600000"/>
+        <device id="routing_168_0_0" state="600000 6600000"/>
     </vehicle>
     <vehicle id="169_0_0" depart="3012.00" departPos="stop" route="!169_0_0!var#1" distance="3688.8 1" speedFactor="0.9402" reroute="1" state="262152 3012000 43 0 0 -1 14127000 9689780 9223372036854774807">
         <stop parkingArea="PAB2B3" until="6612.00" started="3012.00" ended="6612.00"/>
@@ -3281,7 +3281,7 @@
         <stop parkingArea="PAE1E2" until="9503.00" started="9071.22" ended="9503.00"/>
         <stop parkingArea="PAB4C4" until="9657.00" started="9542.33" ended="9657.00"/>
         <stop parkingArea="PAD1C1" until="14127.00" started="9689.78"/>
-        <device id="routing_169_0_0" state="600000"/>
+        <device id="routing_169_0_0" state="600000 3012000"/>
     </vehicle>
     <vehicle id="170_0_0" depart="3046.00" departPos="stop" route="!170_0_0!var#2" distance="3533.6 2" speedFactor="1.0869" reroute="1" state="262152 3046000 41 0 0 -1 14090000 10049010 9223372036854774807">
         <stop parkingArea="PAD0E0_shift" until="6646.00" started="3046.00" ended="6646.00"/>
@@ -3294,7 +3294,7 @@
         <stop parkingArea="PAE0E1" until="9567.00" started="9225.38" ended="9567.00"/>
         <stop parkingArea="PAC3C4" until="10032.00" started="9596.18" ended="10032.00"/>
         <stop parkingArea="PAC2B2" until="14090.00" started="10049.01"/>
-        <device id="routing_170_0_0" state="600000"/>
+        <device id="routing_170_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="171_0_0" depart="3053.00" departPos="stop" route="!171_0_0!var#1" distance="2922.4 1" speedFactor="0.8963" reroute="1" state="262152 3053000 34 0 0 -1 14320000 9763825 9223372036854774807">
         <stop parkingArea="PAB3B2" until="6653.00" started="3053.00" ended="6653.00"/>
@@ -3307,7 +3307,7 @@
         <stop parkingArea="PAA1A0" until="9280.00" started="8777.50" ended="9280.00"/>
         <stop parkingArea="PAC2B2" until="9736.00" started="9315.02" ended="9736.00"/>
         <stop parkingArea="PAA4A3" until="14320.00" started="9763.83"/>
-        <device id="routing_171_0_0" state="600000"/>
+        <device id="routing_171_0_0" state="600000 3053000"/>
     </vehicle>
     <vehicle id="172_0_0" depart="3092.00" departPos="stop" route="!172_0_0!var#1" distance="3961.6 1" speedFactor="0.8929" reroute="1" state="262152 3092000 46 0 0 -1 13956000 9616608 9223372036854774807">
         <stop parkingArea="PAD3E3" until="6692.00" started="3092.00" ended="6692.00"/>
@@ -3320,7 +3320,7 @@
         <stop parkingArea="PAA2B2" until="9068.00" started="8615.21" ended="9068.00"/>
         <stop parkingArea="PAB1B0" until="9589.00" started="9081.80" ended="9589.00"/>
         <stop parkingArea="PAD1D2" until="13956.00" started="9616.61"/>
-        <device id="routing_172_0_0" state="600000"/>
+        <device id="routing_172_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="173_0_0" depart="3102.00" departPos="stop" route="!173_0_0!var#1" distance="3892 1" speedFactor="1.1420" reroute="1" state="262152 3102000 45 0 0 -1 14253000 9671837 9223372036854774807">
         <stop parkingArea="PAE3E4" until="6702.00" started="3102.00" ended="6702.00"/>
@@ -3333,7 +3333,7 @@
         <stop parkingArea="PAA4A3" until="9180.00" started="8674.08" ended="9180.00"/>
         <stop parkingArea="PAE4E3" until="9650.00" started="9215.08" ended="9650.00"/>
         <stop parkingArea="PAC4B4" until="14253.00" started="9671.84"/>
-        <device id="routing_173_0_0" state="600000"/>
+        <device id="routing_173_0_0" state="600000 3102000"/>
     </vehicle>
     <vehicle id="174_0_0" depart="3128.00" departPos="stop" route="!174_0_0!var#1" distance="2836.8 1" speedFactor="0.9559" reroute="1" state="262152 3128000 33 0 0 -1 13994000 9424682 9223372036854774807">
         <stop parkingArea="PAE0E1" until="6728.00" started="3128.00" ended="6728.00"/>
@@ -3345,7 +3345,7 @@
         <stop parkingArea="PAB4A4" until="8871.00" started="8355.92" ended="8871.00"/>
         <stop parkingArea="PAE3E2" until="9386.00" started="8910.28" ended="9386.00"/>
         <stop parkingArea="PAA3A4" until="13994.00" started="9424.68"/>
-        <device id="routing_174_0_0" state="600000"/>
+        <device id="routing_174_0_0" state="600000 3128000"/>
     </vehicle>
     <vehicle id="175_0_0" depart="3135.00" departPos="stop" route="!175_0_0!var#1" distance="4899.2 1" speedFactor="0.9193" reroute="1" state="262152 3135000 57 0 0 -1 14127000 9869833 9223372036854774807">
         <stop parkingArea="PAA1A2" until="6735.00" started="3135.00" ended="6735.00"/>
@@ -3361,7 +3361,7 @@
         <stop parkingArea="PAC1C2" until="9575.00" started="9424.82" ended="9575.00"/>
         <stop parkingArea="PAD2E2" until="9836.00" started="9590.93" ended="9836.00"/>
         <stop parkingArea="PAE4E3" until="14127.00" started="9869.83"/>
-        <device id="routing_175_0_0" state="600000"/>
+        <device id="routing_175_0_0" state="600000 3135000"/>
     </vehicle>
     <vehicle id="176_0_0" depart="3139.00" departPos="stop" route="!176_0_0!var#1" distance="4031.2 1" speedFactor="1.0897" reroute="1" state="262152 3139000 47 0 0 -1 13855000 9430965 9223372036854774807">
         <stop parkingArea="PAD2D3" until="6739.00" started="3139.00" ended="6739.00"/>
@@ -3376,7 +3376,7 @@
         <stop parkingArea="PAB1B0" until="9205.00" started="8958.93" ended="9205.00"/>
         <stop parkingArea="PAD0C0" until="9414.00" started="9221.97" ended="9414.00"/>
         <stop parkingArea="PAD1E1" until="13855.00" started="9430.97"/>
-        <device id="routing_176_0_0" state="600000"/>
+        <device id="routing_176_0_0" state="600000 3139000"/>
     </vehicle>
     <vehicle id="177_0_0" depart="3157.00" departPos="stop" route="!177_0_0!var#1" distance="2241.6 1" speedFactor="1.0309" reroute="1" state="262152 3157000 26 0 0 -1 14082000 9882956 9223372036854774807">
         <stop parkingArea="PAC0D0" until="6757.00" started="3157.00" ended="6757.00"/>
@@ -3387,7 +3387,7 @@
         <stop parkingArea="PAA4A3" until="9578.00" started="9036.17" ended="9578.00"/>
         <stop parkingArea="PAC2C3" until="9871.00" started="9602.44" ended="9871.00"/>
         <stop parkingArea="PAC4D4" until="14082.00" started="9882.96"/>
-        <device id="routing_177_0_0" state="600000"/>
+        <device id="routing_177_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="178_0_0" depart="3157.00" departPos="stop" route="!178_0_0!var#1" distance="4218.4 1" speedFactor="1.0834" reroute="1" state="262152 3157000 49 0 0 -1 14289000 9680129 9223372036854774807">
         <stop parkingArea="PAA2B2" until="6757.00" started="3157.00" ended="6757.00"/>
@@ -3401,7 +3401,7 @@
         <stop parkingArea="PAA4B4" until="9281.00" started="9164.32" ended="9281.00"/>
         <stop parkingArea="PAD1C1" until="9650.00" started="9315.39" ended="9650.00"/>
         <stop parkingArea="PAD4C4" until="14289.00" started="9680.13"/>
-        <device id="routing_178_0_0" state="600000"/>
+        <device id="routing_178_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="179_0_0" depart="3177.00" departPos="stop" route="!179_0_0!var#1" distance="3619.2 1" speedFactor="1.0645" reroute="1" state="262152 3177000 42 0 0 -1 14354000 9947427 9223372036854774807">
         <stop parkingArea="PAD3D2" until="6777.00" started="3177.00" ended="6777.00"/>
@@ -3415,7 +3415,7 @@
         <stop parkingArea="PAC2B2" until="9557.00" started="9143.43" ended="9557.00"/>
         <stop parkingArea="PAA0A1" until="9924.00" started="9581.27" ended="9924.00"/>
         <stop parkingArea="PAB3B4" until="14354.00" started="9947.43"/>
-        <device id="routing_179_0_0" state="600000"/>
+        <device id="routing_179_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="180_0_0" depart="3181.00" departPos="stop" route="!180_0_0!var#1" distance="3876 1" speedFactor="1.0998" reroute="1" state="262152 3181000 45 0 0 -1 13950000 9483603 9223372036854774807">
         <stop parkingArea="PAB3B2" until="6781.00" started="3181.00" ended="6781.00"/>
@@ -3428,7 +3428,7 @@
         <stop parkingArea="PAB0A0" until="9183.00" started="9045.69" ended="9183.00"/>
         <stop parkingArea="PAD3E3" until="9478.00" started="9226.62" ended="9478.00"/>
         <stop parkingArea="PAE3E2" until="13950.00" started="9483.60"/>
-        <device id="routing_180_0_0" state="600000"/>
+        <device id="routing_180_0_0" state="600000 3181000"/>
     </vehicle>
     <vehicle id="181_0_0" depart="3186.00" departPos="stop" route="!181_0_0!var#1" distance="3260.8 1" speedFactor="1.0262" reroute="1" state="262152 3186000 38 0 0 -1 14108000 9803020 9223372036854774807">
         <stop parkingArea="PAB1A1" until="6786.00" started="3186.00" ended="6786.00"/>
@@ -3441,7 +3441,7 @@
         <stop parkingArea="PAB0B1" until="9507.00" started="8980.43" ended="9507.00"/>
         <stop parkingArea="PAE2E3" until="9779.00" started="9537.03" ended="9779.00"/>
         <stop parkingArea="PAC4C3" until="14108.00" started="9803.02"/>
-        <device id="routing_181_0_0" state="600000"/>
+        <device id="routing_181_0_0" state="600000 3186000"/>
     </vehicle>
     <vehicle id="182_0_0" depart="3215.00" departPos="stop" route="!182_0_0!var#2" distance="4825.6 2" speedFactor="1.0297" reroute="1" state="262152 3215000 56 0 0 -1 13873000 9742925 9223372036854774807">
         <stop parkingArea="PAC3B3" until="6815.00" started="3215.00" ended="6815.00"/>
@@ -3456,7 +3456,7 @@
         <stop parkingArea="PAD1C1" until="9285.00" started="9133.52" ended="9285.00"/>
         <stop parkingArea="PAB1A1" until="9713.00" started="9296.97" ended="9713.00"/>
         <stop parkingArea="PAD0C0" until="13873.00" started="9742.93"/>
-        <device id="routing_182_0_0" state="600000"/>
+        <device id="routing_182_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="183_0_0" depart="3252.00" departPos="stop" route="!183_0_0!var#1" distance="3619.2 1" speedFactor="1.0820" reroute="1" state="262152 3252000 42 0 0 -1 14392000 10210480 9223372036854774807">
         <stop parkingArea="PAC4C3" until="6852.00" started="3252.00" ended="6852.00"/>
@@ -3471,7 +3471,7 @@
         <stop parkingArea="PAD3D2" until="9643.00" started="9194.62" ended="9643.00"/>
         <stop parkingArea="PAB4B3" until="10182.00" started="9672.33" ended="10182.00"/>
         <stop parkingArea="PAE2E1" until="14392.00" started="10210.48"/>
-        <device id="routing_183_0_0" state="600000"/>
+        <device id="routing_183_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="184_0_0" depart="3254.00" departPos="stop" route="!184_0_0!var#1" distance="3782.4 1" speedFactor="0.9418" reroute="1" state="262152 3254000 44 0 0 -1 14242000 9920637 9223372036854774807">
         <stop parkingArea="PAE2E3" until="6854.00" started="3254.00" ended="6854.00"/>
@@ -3486,7 +3486,7 @@
         <stop parkingArea="PAD0E0_shift" until="9341.00" started="8972.18" ended="9341.00"/>
         <stop parkingArea="PAD1D0" until="9894.00" started="9361.24" ended="9894.00"/>
         <stop parkingArea="PAD3E3" until="14242.00" started="9920.64"/>
-        <device id="routing_184_0_0" state="600000"/>
+        <device id="routing_184_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="185_0_0" depart="3310.00" departPos="stop" route="!185_0_0!var#1" distance="2657.6 1" speedFactor="0.9160" reroute="1" state="262152 3310000 31 0 0 -1 14242000 9989226 9223372036854774807">
         <stop parkingArea="PAC3C4" until="6910.00" started="3310.00" ended="6910.00"/>
@@ -3498,7 +3498,7 @@
         <stop parkingArea="PAB0B1" until="9779.00" started="8909.37" ended="9779.00"/>
         <stop parkingArea="PAA2A1" until="9962.00" started="9799.18" ended="9962.00"/>
         <stop parkingArea="PAA4B4" until="14242.00" started="9989.23"/>
-        <device id="routing_185_0_0" state="600000"/>
+        <device id="routing_185_0_0" state="600000 3310000"/>
     </vehicle>
     <vehicle id="186_0_0" depart="3339.00" departPos="stop" route="!186_0_0!var#1" distance="1540.8 1" speedFactor="1.0790" reroute="1" state="262152 3339000 18 0 0 -1 14148000 9746422 9223372036854774807">
         <stop parkingArea="PAA3A2" until="6939.00" started="3339.00" ended="6939.00"/>
@@ -3509,7 +3509,7 @@
         <stop parkingArea="PAC3B3" until="8883.00" started="8765.71" ended="8883.00"/>
         <stop parkingArea="PAA3A2" until="9735.00" started="8894.42" ended="9735.00"/>
         <stop parkingArea="PAB2A2" until="14148.00" started="9746.42"/>
-        <device id="routing_186_0_0" state="600000"/>
+        <device id="routing_186_0_0" state="600000 3339000"/>
     </vehicle>
     <vehicle id="187_0_0" depart="3363.00" departPos="stop" route="!187_0_0!var#1" distance="3525.6 1" speedFactor="0.8914" reroute="1" state="262152 3363000 41 0 0 -1 14362000 10423828 9223372036854774807">
         <stop parkingArea="PAE3E4" until="6963.00" started="3363.00" ended="6963.00"/>
@@ -3523,7 +3523,7 @@
         <stop parkingArea="PAE0E1" until="10059.00" started="9684.98" ended="10059.00"/>
         <stop parkingArea="PAB3B2" until="10410.00" started="10100.81" ended="10410.00"/>
         <stop parkingArea="PAB1A1" until="14362.00" started="10423.83"/>
-        <device id="routing_187_0_0" state="600000"/>
+        <device id="routing_187_0_0" state="600000 3363000"/>
     </vehicle>
     <vehicle id="188_0_0" depart="3370.00" departPos="stop" route="!188_0_0!var#1" distance="4899.2 1" speedFactor="0.9715" reroute="1" state="262152 3370000 57 0 0 -1 14232000 10313355 9223372036854774807">
         <stop parkingArea="PAC3D3" until="6970.00" started="3370.00" ended="6970.00"/>
@@ -3540,7 +3540,7 @@
         <stop parkingArea="PAB1A1" until="9889.00" started="9807.06" ended="9890.00"/>
         <stop parkingArea="PAB1C1" until="10275.00" started="9901.87" ended="10275.00"/>
         <stop parkingArea="PAA4A3" until="14232.00" started="10313.36"/>
-        <device id="routing_188_0_0" state="600000"/>
+        <device id="routing_188_0_0" state="600000 3370000"/>
     </vehicle>
     <vehicle id="189_0_0" depart="3384.00" departPos="stop" route="!189_0_0!var#1" distance="3004 1" speedFactor="0.9712" reroute="1" state="262152 3384000 35 0 0 -1 14021000 9555725 9223372036854774807">
         <stop parkingArea="PAC4B4" until="6984.00" started="3384.00" ended="6984.00"/>
@@ -3552,7 +3552,7 @@
         <stop parkingArea="PAC2B2" until="9009.00" started="8849.38" ended="9009.00"/>
         <stop parkingArea="PAD3C3" until="9524.00" started="9034.38" ended="9524.00"/>
         <stop parkingArea="PAB0A0" until="14021.00" started="9555.73"/>
-        <device id="routing_189_0_0" state="600000"/>
+        <device id="routing_189_0_0" state="600000 3384000"/>
     </vehicle>
     <vehicle id="190_0_0" depart="3417.00" departPos="stop" route="!190_0_0!var#1" distance="3961.6 1" speedFactor="0.9015" reroute="1" state="262152 3417000 46 0 0 -1 14341000 10247836 9223372036854774807">
         <stop parkingArea="PAA1A0" until="7017.00" started="3417.00" ended="7017.00"/>
@@ -3567,7 +3567,7 @@
         <stop parkingArea="PAE4D4" until="9889.00" started="9418.50" ended="9889.00"/>
         <stop parkingArea="PAE2E3" until="10241.00" started="9916.66" ended="10241.00"/>
         <stop parkingArea="PAE3E2" until="14341.00" started="10247.84"/>
-        <device id="routing_190_0_0" state="600000"/>
+        <device id="routing_190_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="191_0_0" depart="3437.00" departPos="stop" route="!191_0_0!var#1" distance="2404.8 1" speedFactor="0.9279" reroute="1" state="262152 3437000 28 0 0 -1 14299000 9810037 9223372036854774807">
         <stop parkingArea="PAA1B1" until="7037.00" started="3437.00" ended="7037.00"/>
@@ -3578,7 +3578,7 @@
         <stop parkingArea="PAD1C1" until="9299.00" started="8943.85" ended="9299.00"/>
         <stop parkingArea="PAC1C0" until="9770.00" started="9305.64" ended="9770.00"/>
         <stop parkingArea="PAB4B3" until="14299.00" started="9810.04"/>
-        <device id="routing_191_0_0" state="600000"/>
+        <device id="routing_191_0_0" state="600000 3437000"/>
     </vehicle>
     <vehicle id="192_0_0" depart="3481.00" departPos="stop" route="!192_0_0!var#1" distance="4194.4 1" speedFactor="1.0957" reroute="1" state="262152 3481000 49 0 0 -1 14306000 10133496 9223372036854774807">
         <stop parkingArea="PAE2E1" until="7081.00" started="3481.00" ended="7081.00"/>
@@ -3593,7 +3593,7 @@
         <stop parkingArea="PAE2D2" until="9584.00" started="9383.16" ended="9584.00"/>
         <stop parkingArea="PAA3A2" until="10111.00" started="9612.12" ended="10111.00"/>
         <stop parkingArea="PAB0C0" until="14306.00" started="10133.50"/>
-        <device id="routing_192_0_0" state="600000"/>
+        <device id="routing_192_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="193_0_0" depart="3490.00" departPos="stop" route="!193_0_0!var#1" distance="3370.4 1" speedFactor="1.0678" reroute="1" state="262152 3490000 39 0 0 -1 14340000 9522125 9223372036854774807">
         <stop parkingArea="PAB1B0" until="7090.00" started="3490.00" ended="7090.00"/>
@@ -3604,7 +3604,7 @@
         <stop parkingArea="PAC4B4" until="9063.00" started="8576.94" ended="9063.00"/>
         <stop parkingArea="PAE0D0" until="9493.00" started="9111.60" ended="9493.00"/>
         <stop parkingArea="PAD4E4" until="14340.00" started="9522.13"/>
-        <device id="routing_193_0_0" state="600000"/>
+        <device id="routing_193_0_0" state="600000 3490000"/>
     </vehicle>
     <vehicle id="194_0_0" depart="3509.00" departPos="stop" route="!194_0_0!var#1" distance="2233.6 1" speedFactor="0.9989" reroute="1" state="262152 3509000 26 0 0 -1 14300000 9896531 9223372036854774807">
         <stop parkingArea="PAD2D3" until="7109.00" started="3509.00" ended="7109.00"/>
@@ -3615,7 +3615,7 @@
         <stop parkingArea="PAC1D1" until="8592.00" started="8491.51" ended="8592.00"/>
         <stop parkingArea="PAC3B3" until="9883.00" started="8616.68" ended="9885.00"/>
         <stop parkingArea="PAA3A4" until="14300.00" started="9896.53"/>
-        <device id="routing_194_0_0" state="600000"/>
+        <device id="routing_194_0_0" state="600000 3509000"/>
     </vehicle>
     <vehicle id="195_0_0" depart="3524.00" departPos="stop" route="!195_0_0!var#1" distance="3167.2 1" speedFactor="0.8412" reroute="1" state="262152 3524000 37 0 0 -1 14163000 9534994 9223372036854774807">
         <stop parkingArea="PAE2E3" until="7124.00" started="3524.00" ended="7124.00"/>
@@ -3629,7 +3629,7 @@
         <stop parkingArea="PAC1C2" until="8900.00" started="8742.98" ended="8900.00"/>
         <stop parkingArea="PAE2D2" until="9498.00" started="8921.98" ended="9498.00"/>
         <stop parkingArea="PAA3A2" until="14163.00" started="9534.99"/>
-        <device id="routing_195_0_0" state="600000"/>
+        <device id="routing_195_0_0" state="600000 3524000"/>
     </vehicle>
     <vehicle id="196_0_0" depart="3535.00" departPos="stop" route="!196_0_0!var#1" distance="1883.2 1" speedFactor="1.0300" reroute="1" state="262152 3535000 22 0 0 -1 14178000 10059949 9223372036854774807">
         <stop parkingArea="PAD4C4" until="7135.00" started="3535.00" ended="7135.00"/>
@@ -3642,7 +3642,7 @@
         <stop parkingArea="PAA1B1" until="9738.00" started="9520.66" ended="9738.00"/>
         <stop parkingArea="PAB1B2" until="10042.00" started="9743.98" ended="10042.00"/>
         <stop parkingArea="PAB4A4" until="14178.00" started="10059.95"/>
-        <device id="routing_196_0_0" state="600000"/>
+        <device id="routing_196_0_0" state="600000 3535000"/>
     </vehicle>
     <vehicle id="197_0_0" depart="3546.00" departPos="stop" route="!197_0_0!var#1" distance="3012 1" speedFactor="0.8728" reroute="1" state="262152 3546000 35 0 0 -1 14278000 9678122 9223372036854774807">
         <stop parkingArea="PAC4C3" until="7146.00" started="3546.00" ended="7146.00"/>
@@ -3655,7 +3655,7 @@
         <stop parkingArea="PAD2D3" until="9530.00" started="9393.51" ended="9530.00"/>
         <stop parkingArea="PAA1B1" until="9664.00" started="9573.85" ended="9664.00"/>
         <stop parkingArea="PAB0A0" until="14278.00" started="9678.12"/>
-        <device id="routing_197_0_0" state="600000"/>
+        <device id="routing_197_0_0" state="600000 3546000"/>
     </vehicle>
     <vehicle id="198_0_0" depart="3579.00" departPos="stop" route="!198_0_0!var#2" distance="2086.4 2" speedFactor="1.0647" reroute="1" state="262152 3579000 24 0 0 -1 13896000 9285788 9223372036854774807">
         <stop parkingArea="PAE1E0" until="7179.00" started="3579.00" ended="7179.00"/>
@@ -3666,7 +3666,7 @@
         <stop parkingArea="PAB4A4" until="9045.00" started="8534.75" ended="9045.00"/>
         <stop parkingArea="PAA2A3" until="9280.00" started="9062.91" ended="9280.00"/>
         <stop parkingArea="PAA3A4" until="13896.00" started="9285.79"/>
-        <device id="routing_198_0_0" state="600000"/>
+        <device id="routing_198_0_0" state="600000 7200000"/>
     </vehicle>
     <vehicle id="199_0_0" depart="3606.00" departPos="stop" route="!199_0_0!var#1" distance="2490.4 1" speedFactor="0.8277" reroute="1" state="262152 3606000 29 0 0 -1 14309000 9822122 9223372036854774807">
         <stop parkingArea="PAB3C3" until="7206.00" started="3606.00" ended="7206.00"/>
@@ -3676,7 +3676,7 @@
         <stop parkingArea="PAE1E2" until="9360.00" started="9056.58" ended="9362.00"/>
         <stop parkingArea="PAC0D0" until="9770.00" started="9400.45" ended="9770.00"/>
         <stop parkingArea="PAA3A4" until="14309.00" started="9822.12"/>
-        <device id="routing_199_0_0" state="600000"/>
+        <device id="routing_199_0_0" state="600000 3606000"/>
     </vehicle>
     <vehicle id="200_0_0" depart="3668.00" departPos="stop" route="!200_0_0!var#1" distance="3260.8 1" speedFactor="0.9474" reroute="1" state="262152 3668000 38 0 0 -1 14269000 10385183 9223372036854774807">
         <stop parkingArea="PAC2D2" until="7268.00" started="3668.00" ended="7268.00"/>
@@ -3689,7 +3689,7 @@
         <stop parkingArea="PAA1B1" until="9913.00" started="9609.02" ended="9913.00"/>
         <stop parkingArea="PAD3D4" until="10358.00" started="9945.53" ended="10358.00"/>
         <stop parkingArea="PAD1D2" until="14269.00" started="10385.18"/>
-        <device id="routing_200_0_0" state="600000"/>
+        <device id="routing_200_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="201_0_0" depart="3720.00" departPos="stop" route="!201_0_0!var#1" distance="4373.6 1" speedFactor="0.8749" reroute="1" state="262152 3720000 51 0 0 -1 14300000 10215308 9223372036854774807">
         <stop parkingArea="PAA2B2" until="7320.00" started="3720.00" ended="7320.00"/>
@@ -3704,7 +3704,7 @@
         <stop parkingArea="PAE2E1" until="9931.00" started="9816.22" ended="9931.00"/>
         <stop parkingArea="PAA2A3" until="10166.00" started="9973.26" ended="10166.00"/>
         <stop parkingArea="PAE1E0" until="14300.00" started="10215.31"/>
-        <device id="routing_201_0_0" state="600000"/>
+        <device id="routing_201_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="202_0_0" depart="3728.00" departPos="stop" route="!202_0_0!var#1" distance="2054.4 1" speedFactor="1.0350" reroute="1" state="262152 3728000 24 0 0 -1 14129000 9977816 9223372036854774807">
         <stop parkingArea="PAD3D2" until="7328.00" started="3728.00" ended="7328.00"/>
@@ -3716,7 +3716,7 @@
         <stop parkingArea="PAE1E2" until="9655.00" started="9282.91" ended="9655.00"/>
         <stop parkingArea="PAD3C3" until="9954.00" started="9672.86" ended="9954.00"/>
         <stop parkingArea="PAE2E3" until="14129.00" started="9977.82"/>
-        <device id="routing_202_0_0" state="600000"/>
+        <device id="routing_202_0_0" state="600000 3728000"/>
     </vehicle>
     <vehicle id="203_0_0" depart="3737.00" departPos="stop" route="!203_0_0!var#1" distance="2482.4 1" speedFactor="1.1086" reroute="1" state="262152 3737000 29 0 0 -1 14267000 9917984 9223372036854774807">
         <stop parkingArea="PAC1D1" until="7337.00" started="3737.00" ended="7337.00"/>
@@ -3728,7 +3728,7 @@
         <stop parkingArea="PAD2D1" until="9608.00" started="9129.75" ended="9608.00"/>
         <stop parkingArea="PAA1B1" until="9886.00" started="9630.24" ended="9886.00"/>
         <stop parkingArea="PAD3D2" until="14267.00" started="9917.98"/>
-        <device id="routing_203_0_0" state="600000"/>
+        <device id="routing_203_0_0" state="600000 3737000"/>
     </vehicle>
     <vehicle id="204_0_0" depart="3751.00" departPos="stop" route="!204_0_0!var#2" distance="3346.4 2" speedFactor="1.0674" reroute="1" state="262152 3751000 39 0 0 -1 14013000 9605774 9223372036854774807">
         <stop parkingArea="PAB2A2" until="7351.00" started="3751.00" ended="7351.00"/>
@@ -3742,7 +3742,7 @@
         <stop parkingArea="PAC0C1" until="9278.00" started="9071.41" ended="9278.00"/>
         <stop parkingArea="PAB0B1" until="9600.00" started="9296.06" ended="9600.00"/>
         <stop parkingArea="PAB1C1" until="14013.00" started="9605.77"/>
-        <device id="routing_204_0_0" state="600000"/>
+        <device id="routing_204_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="205_0_0" depart="3766.00" departPos="stop" route="!205_0_0!var#1" distance="3105.6 1" speedFactor="1.0219" reroute="1" state="262152 3766000 36 0 0 -1 14218000 10043155 9223372036854774807">
         <stop parkingArea="PAC3B3" until="7366.00" started="3766.00" ended="7366.00"/>
@@ -3756,7 +3756,7 @@
         <stop parkingArea="PAA0A1" until="9782.00" started="9699.93" ended="9782.00"/>
         <stop parkingArea="PAB3A3" until="10013.00" started="9806.41" ended="10013.00"/>
         <stop parkingArea="PAD2D1" until="14218.00" started="10043.16"/>
-        <device id="routing_205_0_0" state="600000"/>
+        <device id="routing_205_0_0" state="600000 3766000"/>
     </vehicle>
     <vehicle id="206_0_0" depart="3776.00" departPos="stop" route="!206_0_0!var#1" distance="2576 1" speedFactor="1.0034" reroute="1" state="262152 3776000 30 0 0 -1 14207000 9730710 9223372036854774807">
         <stop parkingArea="PAC2D2" until="7376.00" started="3776.00" ended="7376.00"/>
@@ -3767,7 +3767,7 @@
         <stop parkingArea="PAA1B1" until="9464.00" started="9124.71" ended="9464.00"/>
         <stop parkingArea="PAA3B3" until="9700.00" started="9488.57" ended="9700.00"/>
         <stop parkingArea="PAD1E1" until="14207.00" started="9730.71"/>
-        <device id="routing_206_0_0" state="600000"/>
+        <device id="routing_206_0_0" state="600000 3776000"/>
     </vehicle>
     <vehicle id="207_0_0" depart="3788.00" departPos="stop" route="!207_0_0!var#1" distance="3533.6 1" speedFactor="0.9713" reroute="1" state="262152 3788000 41 0 0 -1 14157000 9931810 9223372036854774807">
         <stop parkingArea="PAA2A3" until="7388.00" started="3788.00" ended="7388.00"/>
@@ -3780,7 +3780,7 @@
         <stop parkingArea="PAC2C3" until="9557.00" started="9310.68" ended="9557.00"/>
         <stop parkingArea="PAA3A4" until="9892.00" started="9576.04" ended="9892.00"/>
         <stop parkingArea="PAE3E2" until="14157.00" started="9931.81"/>
-        <device id="routing_207_0_0" state="600000"/>
+        <device id="routing_207_0_0" state="600000 3788000"/>
     </vehicle>
     <vehicle id="208_0_0" depart="3794.00" departPos="stop" route="!208_0_0!var#1" distance="2584 1" speedFactor="0.9620" reroute="1" state="262152 3794000 30 0 0 -1 14028000 9423628 9223372036854774807">
         <stop parkingArea="PAB3C3" until="7394.00" started="3794.00" ended="7394.00"/>
@@ -3792,7 +3792,7 @@
         <stop parkingArea="PAE1E2" until="9171.00" started="8872.81" ended="9171.00"/>
         <stop parkingArea="PAB4A4" until="9391.00" started="9210.75" ended="9391.00"/>
         <stop parkingArea="PAC4C3" until="14028.00" started="9423.63"/>
-        <device id="routing_208_0_0" state="600000"/>
+        <device id="routing_208_0_0" state="600000 3794000"/>
     </vehicle>
     <vehicle id="209_0_0" depart="3813.00" departPos="stop" route="!209_0_0!var#1" distance="3517.6 1" speedFactor="0.9844" reroute="1" state="262152 3813000 41 0 0 -1 14112000 10152593 9223372036854774807">
         <stop parkingArea="PAC2B2" until="7413.00" started="3813.00" ended="7413.00"/>
@@ -3807,7 +3807,7 @@
         <stop parkingArea="PAA2A3" until="9657.00" started="9230.30" ended="9657.00"/>
         <stop parkingArea="PAE0D0" until="10121.00" started="9707.37" ended="10121.00"/>
         <stop parkingArea="PAD4C4" until="14112.00" started="10152.59"/>
-        <device id="routing_209_0_0" state="600000"/>
+        <device id="routing_209_0_0" state="600000 3813000"/>
     </vehicle>
     <vehicle id="210_0_0" depart="3840.00" departPos="stop" route="!210_0_0!var#1" distance="2665.6 1" speedFactor="1.1048" reroute="1" state="262152 3840000 31 0 0 -1 13929000 9332729 9223372036854774807">
         <stop parkingArea="PAD2D1" until="7440.00" started="3840.00" ended="7441.00"/>
@@ -3818,7 +3818,7 @@
         <stop parkingArea="PAA4B4" until="9103.00" started="8802.63" ended="9103.00"/>
         <stop parkingArea="PAE2E3" until="9299.00" started="9136.73" ended="9299.00"/>
         <stop parkingArea="PAE0E1" until="13929.00" started="9332.73"/>
-        <device id="routing_210_0_0" state="600000"/>
+        <device id="routing_210_0_0" state="600000 3840000"/>
     </vehicle>
     <vehicle id="211_0_0" depart="3875.00" departPos="stop" route="!211_0_0!var#1" distance="3008 1" speedFactor="1.0365" reroute="1" state="262152 3875000 35 0 0 -1 14344000 10156008 9223372036854774807">
         <stop parkingArea="PAC3C2" until="7475.00" started="3875.00" ended="7475.00"/>
@@ -3831,7 +3831,7 @@
         <stop parkingArea="PAE1E2" until="9899.00" started="9562.78" ended="9899.00"/>
         <stop parkingArea="PAE1D1" until="10126.00" started="9910.89" ended="10126.00"/>
         <stop parkingArea="PAE4E3" until="14344.00" started="10156.01"/>
-        <device id="routing_211_0_0" state="600000"/>
+        <device id="routing_211_0_0" state="600000 3875000"/>
     </vehicle>
     <vehicle id="212_0_0" depart="3933.00" departPos="stop" route="!212_0_0!var#1" distance="3798.4 1" speedFactor="1.0028" reroute="1" state="262152 3933000 44 0 0 -1 14212000 9668725 9223372036854774807">
         <stop parkingArea="PAB1A1" until="7533.00" started="3933.00" ended="7533.00"/>
@@ -3844,7 +3844,7 @@
         <stop parkingArea="PAA1A0" until="9492.00" started="9356.53" ended="9492.00"/>
         <stop parkingArea="PAB2A2" until="9638.00" started="9517.44" ended="9638.00"/>
         <stop parkingArea="PAC0C1" until="14212.00" started="9668.73"/>
-        <device id="routing_212_0_0" state="600000"/>
+        <device id="routing_212_0_0" state="600000 3933000"/>
     </vehicle>
     <vehicle id="213_0_0" depart="3948.00" departPos="stop" route="!213_0_0!var#1" distance="2922.4 1" speedFactor="1.1018" reroute="1" state="262152 3948000 34 0 0 -1 14268000 10017448 9223372036854774807">
         <stop parkingArea="PAD3D4" until="7548.00" started="3948.00" ended="7548.00"/>
@@ -3856,7 +3856,7 @@
         <stop parkingArea="PAB0B1" until="9457.00" started="9317.97" ended="9457.00"/>
         <stop parkingArea="PAA2A3" until="10006.00" started="9475.35" ended="10006.00"/>
         <stop parkingArea="PAA4B4" until="14268.00" started="10017.45"/>
-        <device id="routing_213_0_0" state="600000"/>
+        <device id="routing_213_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="214_0_0" depart="3969.00" departPos="stop" route="!214_0_0!var#1" distance="2848.8 1" speedFactor="0.8324" reroute="1" state="262152 3969000 33 0 0 -1 14279000 9994212 9223372036854774807">
         <stop parkingArea="PAD3D4" until="7569.00" started="3969.00" ended="7569.00"/>
@@ -3869,7 +3869,7 @@
         <stop parkingArea="PAE3E4" until="9444.00" started="9372.37" ended="9444.00"/>
         <stop parkingArea="PAD3E3" until="9972.00" started="9466.90" ended="9972.00"/>
         <stop parkingArea="PAD4C4" until="14279.00" started="9994.21"/>
-        <device id="routing_214_0_0" state="600000"/>
+        <device id="routing_214_0_0" state="600000 3969000"/>
     </vehicle>
     <vehicle id="215_0_0" depart="3971.00" departPos="stop" route="!215_0_0!var#1" distance="3440 1" speedFactor="1.0879" reroute="1" state="262152 3971000 40 0 0 -1 14120000 10024655 9223372036854774807">
         <stop parkingArea="PAD0C0" until="7571.00" started="3971.00" ended="7571.00"/>
@@ -3881,7 +3881,7 @@
         <stop parkingArea="PAC2C1" until="9642.00" started="9463.92" ended="9642.00"/>
         <stop parkingArea="PAC4D4" until="9985.00" started="9668.27" ended="9985.00"/>
         <stop parkingArea="PAA1A0" until="14120.00" started="10024.66"/>
-        <device id="routing_215_0_0" state="600000"/>
+        <device id="routing_215_0_0" state="600000 3971000"/>
     </vehicle>
     <vehicle id="216_0_0" depart="3973.00" departPos="stop" route="!216_0_0!var#1" distance="2576 1" speedFactor="0.9690" reroute="1" state="262152 3973000 30 0 0 -1 14030000 9849720 9223372036854774807">
         <stop parkingArea="PAD3D2" until="7573.00" started="3973.00" ended="7573.00"/>
@@ -3892,7 +3892,7 @@
         <stop parkingArea="PAE1E0" until="9268.00" started="8908.08" ended="9270.00"/>
         <stop parkingArea="PAC4C3" until="9837.00" started="9315.12" ended="9837.00"/>
         <stop parkingArea="PAB3B2" until="14030.00" started="9849.72"/>
-        <device id="routing_216_0_0" state="600000"/>
+        <device id="routing_216_0_0" state="600000 3973000"/>
     </vehicle>
     <vehicle id="217_0_0" depart="3976.00" departPos="stop" route="!217_0_0!var#1" distance="2584 1" speedFactor="1.0705" reroute="1" state="262152 3976000 30 0 0 -1 14398000 10047783 9223372036854774807">
         <stop parkingArea="PAC2C3" until="7576.00" started="3976.00" ended="7576.00"/>
@@ -3905,7 +3905,7 @@
         <stop parkingArea="PAE3E4" until="9757.00" started="9367.70" ended="9757.00"/>
         <stop parkingArea="PAA4A3" until="10036.00" started="9786.59" ended="10036.00"/>
         <stop parkingArea="PAA2A3" until="14398.00" started="10047.78"/>
-        <device id="routing_217_0_0" state="600000"/>
+        <device id="routing_217_0_0" state="600000 3976000"/>
     </vehicle>
     <vehicle id="218_0_0" depart="3985.00" departPos="stop" route="!218_0_0!var#1" distance="2156 1" speedFactor="1.0671" reroute="1" state="262152 3985000 25 0 0 -1 13986000 9837695 9223372036854774807">
         <stop parkingArea="PAA2A1" until="7585.00" started="3985.00" ended="7585.00"/>
@@ -3916,7 +3916,7 @@
         <stop parkingArea="PAD3C3" until="9393.00" started="8941.82" ended="9393.00"/>
         <stop parkingArea="PAA4A3" until="9797.00" started="9416.37" ended="9797.00"/>
         <stop parkingArea="PAE1D1" until="13986.00" started="9837.70"/>
-        <device id="routing_218_0_0" state="600000"/>
+        <device id="routing_218_0_0" state="600000 3985000"/>
     </vehicle>
     <vehicle id="219_0_0" depart="4000.00" departPos="stop" route="!219_0_0!var#1" distance="1968.8 1" speedFactor="0.9103" reroute="1" state="262152 4000000 23 0 0 -1 13999000 9664310 9223372036854774807">
         <stop parkingArea="PAB1C1" until="7600.00" started="4000.00" ended="7600.00"/>
@@ -3927,7 +3927,7 @@
         <stop parkingArea="PAD1C1" until="9406.00" started="8988.08" ended="9406.00"/>
         <stop parkingArea="PAC2C1" until="9644.00" started="9419.78" ended="9644.00"/>
         <stop parkingArea="PAD0C0" until="13999.00" started="9664.31"/>
-        <device id="routing_219_0_0" state="600000"/>
+        <device id="routing_219_0_0" state="600000 4000000"/>
     </vehicle>
     <vehicle id="220_0_0" depart="4027.00" departPos="stop" route="!220_0_0!var#1" distance="1797.6 1" speedFactor="0.9959" reroute="1" state="262152 4027000 21 0 0 -1 14271000 9741376 9223372036854774807">
         <stop parkingArea="PAD1D2" until="7627.00" started="4027.00" ended="7627.00"/>
@@ -3937,7 +3937,7 @@
         <stop parkingArea="PAC1D1" until="9284.00" started="8795.75" ended="9284.00"/>
         <stop parkingArea="PAB2B1" until="9729.00" started="9309.82" ended="9729.00"/>
         <stop parkingArea="PAC1C0" until="14271.00" started="9741.38"/>
-        <device id="routing_220_0_0" state="600000"/>
+        <device id="routing_220_0_0" state="600000 4027000"/>
     </vehicle>
     <vehicle id="221_0_0" depart="4083.00" departPos="stop" route="!221_0_0!var#1" distance="2588 1" speedFactor="1.1479" reroute="1" state="262152 4083000 30 0 0 -1 14174000 10255860 9223372036854774807">
         <stop parkingArea="PAC0C1" until="7683.00" started="4083.00" ended="7683.00"/>
@@ -3951,7 +3951,7 @@
         <stop parkingArea="PAD1C1" until="9888.00" started="9718.37" ended="9888.00"/>
         <stop parkingArea="PAA3A4" until="10239.00" started="9916.41" ended="10239.00"/>
         <stop parkingArea="PAA4A3" until="14174.00" started="10255.86"/>
-        <device id="routing_221_0_0" state="600000"/>
+        <device id="routing_221_0_0" state="600000 4083000"/>
     </vehicle>
     <vehicle id="222_0_0" depart="4090.00" departPos="stop" route="!222_0_0!var#1" distance="1797.6 1" speedFactor="0.8357" reroute="1" state="262152 4090000 21 0 0 -1 14138000 9836122 9223372036854774807">
         <stop parkingArea="PAA2B2" until="7690.00" started="4090.00" ended="7690.00"/>
@@ -3963,7 +3963,7 @@
         <stop parkingArea="PAA3B3" until="9647.00" started="9504.12" ended="9647.00"/>
         <stop parkingArea="PAD3D4" until="9814.00" started="9669.12" ended="9814.00"/>
         <stop parkingArea="PAC3B3" until="14138.00" started="9836.12"/>
-        <device id="routing_222_0_0" state="600000"/>
+        <device id="routing_222_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="223_0_0" depart="4106.00" departPos="stop" route="!223_0_0!var#1" distance="2747.2 1" speedFactor="1.0644" reroute="1" state="262152 4106000 32 0 0 -1 13915000 9348010 9223372036854774807">
         <stop parkingArea="PAD1E1" until="7706.00" started="4106.00" ended="7706.00"/>
@@ -3974,7 +3974,7 @@
         <stop parkingArea="PAC1D1" until="9061.00" started="8966.48" ended="9061.00"/>
         <stop parkingArea="PAE4E3" until="9313.00" started="9090.22" ended="9313.00"/>
         <stop parkingArea="PAB1B2" until="13915.00" started="9348.01"/>
-        <device id="routing_223_0_0" state="600000"/>
+        <device id="routing_223_0_0" state="600000 4106000"/>
     </vehicle>
     <vehicle id="224_0_0" depart="4123.00" departPos="stop" route="!224_0_0!var#1" distance="2747.2 1" speedFactor="1.0151" reroute="1" state="262152 4123000 32 0 0 -1 14289000 10142284 9223372036854774807">
         <stop parkingArea="PAE2E3" until="7723.00" started="4123.00" ended="7723.00"/>
@@ -3986,7 +3986,7 @@
         <stop parkingArea="PAD2E2" until="9802.00" started="9501.28" ended="9802.00"/>
         <stop parkingArea="PAE2E1" until="10118.00" started="9808.07" ended="10118.00"/>
         <stop parkingArea="PAC2B2" until="14289.00" started="10142.28"/>
-        <device id="routing_224_0_0" state="600000"/>
+        <device id="routing_224_0_0" state="600000 4123000"/>
     </vehicle>
     <vehicle id="225_0_0" depart="4126.00" departPos="stop" route="!225_0_0!var#1" distance="1634.4 1" speedFactor="0.9690" reroute="1" state="262152 4126000 19 0 0 -1 14186000 9836720 9223372036854774807">
         <stop parkingArea="PAD2C2" until="7726.00" started="4126.00" ended="7726.00"/>
@@ -3997,7 +3997,7 @@
         <stop parkingArea="PAD3D2" until="9426.00" started="9011.72" ended="9426.00"/>
         <stop parkingArea="PAE2E1" until="9824.00" started="9438.72" ended="9824.00"/>
         <stop parkingArea="PAD1E1" until="14186.00" started="9836.72"/>
-        <device id="routing_225_0_0" state="600000"/>
+        <device id="routing_225_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="226_0_0" depart="4126.00" departPos="stop" route="!226_0_0!var#1" distance="3786.4 1" speedFactor="1.2424" reroute="1" state="262152 4126000 44 0 0 -1 14204000 10157992 9223372036854774807">
         <stop parkingArea="PAD1D0" until="7726.00" started="4126.00" ended="7726.00"/>
@@ -4010,7 +4010,7 @@
         <stop parkingArea="PAE1E0" until="9861.00" started="9522.88" ended="9861.00"/>
         <stop parkingArea="PAE2E1" until="10128.00" started="9886.26" ended="10128.00"/>
         <stop parkingArea="PAA0A1" until="14204.00" started="10157.99"/>
-        <device id="routing_226_0_0" state="600000"/>
+        <device id="routing_226_0_0" state="600000 4126000"/>
     </vehicle>
     <vehicle id="227_0_0" depart="4134.00" departPos="stop" route="!227_0_0!var#1" distance="2914.4 1" speedFactor="1.1097" reroute="1" state="262152 4134000 34 0 0 -1 14234000 9653739 9223372036854774807">
         <stop parkingArea="PAD3D4" until="7734.00" started="4134.00" ended="7734.00"/>
@@ -4021,7 +4021,7 @@
         <stop parkingArea="PAD1D0" until="9191.00" started="8669.77" ended="9191.00"/>
         <stop parkingArea="PAB1B2" until="9619.00" started="9213.21" ended="9619.00"/>
         <stop parkingArea="PAE0D0" until="14234.00" started="9653.74"/>
-        <device id="routing_227_0_0" state="600000"/>
+        <device id="routing_227_0_0" state="600000 4134000"/>
     </vehicle>
     <vehicle id="229_0_0" depart="4157.00" departPos="stop" route="!229_0_0!var#1" distance="1720 1" speedFactor="1.0918" reroute="1" state="262152 4157000 20 0 0 -1 14393000 10094751 9223372036854774807">
         <stop parkingArea="PAD3C3" until="7757.00" started="4157.00" ended="7757.00"/>
@@ -4031,7 +4031,7 @@
         <stop parkingArea="PAB1B0" until="9499.00" started="8963.29" ended="9499.00"/>
         <stop parkingArea="PAB0A0" until="10066.00" started="9504.65" ended="10066.00"/>
         <stop parkingArea="PAC0C1" until="14393.00" started="10094.75"/>
-        <device id="routing_229_0_0" state="600000"/>
+        <device id="routing_229_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="230_0_0" depart="4185.00" departPos="stop" route="!230_0_0!var#1" distance="3195.2 1" speedFactor="0.9948" reroute="1" state="262152 4185000 37 0 0 -1 14307000 10382874 9223372036854774807">
         <stop parkingArea="PAD2C2" until="7785.00" started="4185.00" ended="7785.00"/>
@@ -4044,7 +4044,7 @@
         <stop parkingArea="PAB3B2" until="9882.00" started="9784.59" ended="9882.00"/>
         <stop parkingArea="PAD4D3" until="10364.00" started="9912.98" ended="10364.00"/>
         <stop parkingArea="PAE4E3" until="14307.00" started="10382.87"/>
-        <device id="routing_230_0_0" state="600000"/>
+        <device id="routing_230_0_0" state="600000 7800000"/>
     </vehicle>
     <vehicle id="231_0_0" depart="4208.00" departPos="stop" route="!231_0_0!var#1" distance="2665.6 1" speedFactor="1.0406" reroute="1" state="262152 4208000 31 0 0 -1 14342000 9891766 9223372036854774807">
         <stop parkingArea="PAA0B0" until="7808.00" started="4208.00" ended="7808.00"/>
@@ -4056,7 +4056,7 @@
         <stop parkingArea="PAE2E3" until="9468.00" started="9235.69" ended="9468.00"/>
         <stop parkingArea="PAC0C1" until="9874.00" started="9503.53" ended="9874.00"/>
         <stop parkingArea="PAB0B1" until="14342.00" started="9891.77"/>
-        <device id="routing_231_0_0" state="600000"/>
+        <device id="routing_231_0_0" state="600000 4208000"/>
     </vehicle>
     <vehicle id="232_0_0" depart="4214.00" departPos="stop" route="!232_0_0!var#1" distance="2922.4 1" speedFactor="1.1411" reroute="1" state="262152 4214000 34 0 0 -1 14265000 10050005 9223372036854774807">
         <stop parkingArea="PAA0B0" until="7814.00" started="4214.00" ended="7814.00"/>
@@ -4068,7 +4068,7 @@
         <stop parkingArea="PAD0C0" until="9509.00" started="9281.77" ended="9509.00"/>
         <stop parkingArea="PAD2E2" until="10023.00" started="9530.60" ended="10023.00"/>
         <stop parkingArea="PAB3A3" until="14265.00" started="10050.01"/>
-        <device id="routing_232_0_0" state="600000"/>
+        <device id="routing_232_0_0" state="600000 4214000"/>
     </vehicle>
     <vehicle id="233_0_0" depart="4231.00" departPos="stop" route="!233_0_0!var#1" distance="3252.8 1" speedFactor="0.9699" reroute="1" state="262152 4231000 38 0 0 -1 14302000 10069124 9223372036854774807">
         <stop parkingArea="PAD3C3" until="7831.00" started="4231.00" ended="7831.00"/>
@@ -4080,7 +4080,7 @@
         <stop parkingArea="PAA1A2" until="9704.00" started="9541.12" ended="9704.00"/>
         <stop parkingArea="PAD1D0" until="10031.00" started="9735.77" ended="10031.00"/>
         <stop parkingArea="PAA2A1" until="14302.00" started="10069.12"/>
-        <device id="routing_233_0_0" state="600000"/>
+        <device id="routing_233_0_0" state="600000 4231000"/>
     </vehicle>
     <vehicle id="234_0_0" depart="4283.00" departPos="stop" route="!234_0_0!var#1" distance="2319.2 1" speedFactor="1.1519" reroute="1" state="262152 4283000 27 0 0 -1 14090000 9906922 9223372036854774807">
         <stop parkingArea="PAC1D1" until="7883.00" started="4283.00" ended="7883.00"/>
@@ -4090,7 +4090,7 @@
         <stop parkingArea="PAB4B3" until="9502.00" started="8972.75" ended="9502.00"/>
         <stop parkingArea="PAE0E1" until="9885.00" started="9543.29" ended="9885.00"/>
         <stop parkingArea="PAB1B2" until="14090.00" started="9906.92"/>
-        <device id="routing_234_0_0" state="600000"/>
+        <device id="routing_234_0_0" state="600000 4283000"/>
     </vehicle>
     <vehicle id="235_0_0" depart="4289.00" departPos="stop" route="!235_0_0!var#1" distance="2156 1" speedFactor="0.9112" reroute="1" state="262152 4289000 25 0 0 -1 14289000 10066289 9223372036854774807">
         <stop parkingArea="PAD2C2" until="7889.00" started="4289.00" ended="7891.00"/>
@@ -4101,7 +4101,7 @@
         <stop parkingArea="PAB2A2" until="9652.00" started="9453.61" ended="9652.00"/>
         <stop parkingArea="PAB2C2" until="10046.00" started="9665.53" ended="10046.00"/>
         <stop parkingArea="PAB3A3" until="14289.00" started="10066.29"/>
-        <device id="routing_235_0_0" state="600000"/>
+        <device id="routing_235_0_0" state="600000 4289000"/>
     </vehicle>
     <vehicle id="236_0_0" depart="4297.00" departPos="stop" route="!236_0_0!var#1" distance="2588 1" speedFactor="0.9583" reroute="1" state="262152 4297000 30 0 0 -1 14289000 9886186 9223372036854774807">
         <stop parkingArea="PAD1C1" until="7897.00" started="4297.00" ended="7899.00"/>
@@ -4111,7 +4111,7 @@
         <stop parkingArea="PAB3C3" until="9658.00" started="9389.64" ended="9658.00"/>
         <stop parkingArea="PAE0D0" until="9847.00" started="9696.89" ended="9847.00"/>
         <stop parkingArea="PAE4E3" until="14289.00" started="9886.19"/>
-        <device id="routing_236_0_0" state="600000"/>
+        <device id="routing_236_0_0" state="600000 4297000"/>
     </vehicle>
     <vehicle id="237_0_0" depart="4299.00" departPos="stop" route="!237_0_0!var#1" distance="2156 1" speedFactor="1.0413" reroute="1" state="262152 4299000 25 0 0 -1 14145000 9758672 9223372036854774807">
         <stop parkingArea="PAD2E2" until="7899.00" started="4299.00" ended="7899.00"/>
@@ -4122,7 +4122,7 @@
         <stop parkingArea="PAE1E2" until="9371.00" started="9151.75" ended="9371.00"/>
         <stop parkingArea="PAD1C1" until="9735.00" started="9388.75" ended="9735.00"/>
         <stop parkingArea="PAE2D2" until="14145.00" started="9758.67"/>
-        <device id="routing_237_0_0" state="600000"/>
+        <device id="routing_237_0_0" state="600000 4299000"/>
     </vehicle>
     <vehicle id="238_0_0" depart="4302.00" departPos="stop" route="!238_0_0!var#1" distance="2229.6 1" speedFactor="0.8847" reroute="1" state="262152 4302000 26 0 0 -1 14235000 10155853 9223372036854774807">
         <stop parkingArea="PAD3E3" until="7902.00" started="4302.00" ended="7902.00"/>
@@ -4132,7 +4132,7 @@
         <stop parkingArea="PAB4C4" until="9683.00" started="9358.79" ended="9683.00"/>
         <stop parkingArea="PAB3B4" until="10099.00" started="9703.90" ended="10100.00"/>
         <stop parkingArea="PAE0E1" until="14235.00" started="10155.85"/>
-        <device id="routing_238_0_0" state="600000"/>
+        <device id="routing_238_0_0" state="600000 4302000"/>
     </vehicle>
     <vehicle id="239_0_0" depart="4345.00" departPos="stop" route="!239_0_0!var#1" distance="2058.4 1" speedFactor="1.0954" reroute="1" state="262152 4345000 24 0 0 -1 13979000 10053899 9223372036854774807">
         <stop parkingArea="PAC0B0" until="7945.00" started="4345.00" ended="7945.00"/>
@@ -4143,7 +4143,7 @@
         <stop parkingArea="PAC2C3" until="9661.00" started="8935.92" ended="9661.00"/>
         <stop parkingArea="PAC3D3" until="10014.00" started="9667.08" ended="10015.00"/>
         <stop parkingArea="PAA0A1" until="13979.00" started="10053.90"/>
-        <device id="routing_239_0_0" state="600000"/>
+        <device id="routing_239_0_0" state="600000 4345000"/>
     </vehicle>
     <vehicle id="240_0_0" depart="4356.00" departPos="stop" route="!240_0_0!var#1" distance="1976.8 1" speedFactor="1.1276" reroute="1" state="262152 4356000 23 0 0 -1 14292000 9921686 9223372036854774807">
         <stop parkingArea="PAD1D2" until="7956.00" started="4356.00" ended="7956.00"/>
@@ -4152,7 +4152,7 @@
         <stop parkingArea="PAD1E1" until="9257.00" started="8750.17" ended="9257.00"/>
         <stop parkingArea="PAC2B2" until="9893.00" started="9280.71" ended="9893.00"/>
         <stop parkingArea="PAE3D3" until="14292.00" started="9921.69"/>
-        <device id="routing_240_0_0" state="600000"/>
+        <device id="routing_240_0_0" state="600000 4356000"/>
     </vehicle>
     <vehicle id="241_0_0" depart="4375.00" departPos="stop" route="!241_0_0!var#1" distance="1903.2 1" speedFactor="0.9511" reroute="1" state="262152 4375000 22 0 0 -1 14179000 9912222 9223372036854774807">
         <stop parkingArea="PAE0D0" until="7975.00" started="4375.00" ended="7975.00"/>
@@ -4161,7 +4161,7 @@
         <stop parkingArea="PAA0B0" until="9501.00" started="9012.70" ended="9501.00"/>
         <stop parkingArea="PAE0D0" until="9886.00" started="9540.48" ended="9886.00"/>
         <stop parkingArea="PAE2E3" until="14179.00" started="9912.22"/>
-        <device id="routing_241_0_0" state="600000"/>
+        <device id="routing_241_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="242_0_0" depart="4437.00" departPos="stop" route="!242_0_0!var#1" distance="2054.4 1" speedFactor="1.0129" reroute="1" state="262152 4437000 24 0 0 -1 14076000 9737252 9223372036854774807">
         <stop parkingArea="PAB2C2" until="8037.00" started="4437.00" ended="8037.00"/>
@@ -4171,7 +4171,7 @@
         <stop parkingArea="PAE2E1" until="9369.00" started="9052.34" ended="9369.00"/>
         <stop parkingArea="PAC2C3" until="9719.00" started="9394.11" ended="9719.00"/>
         <stop parkingArea="PAD2C2" until="14076.00" started="9737.25"/>
-        <device id="routing_242_0_0" state="600000"/>
+        <device id="routing_242_0_0" state="600000 4437000"/>
     </vehicle>
     <vehicle id="243_0_0" depart="4438.00" departPos="stop" route="!243_0_0!var#1" distance="2311.2 1" speedFactor="0.9699" reroute="1" state="262152 4438000 27 0 0 -1 14005000 9953770 9223372036854774807">
         <stop parkingArea="PAC3C4" until="8038.00" started="4438.00" ended="8038.00"/>
@@ -4181,7 +4181,7 @@
         <stop parkingArea="PAD3E3" until="9589.00" started="9464.06" ended="9589.00"/>
         <stop parkingArea="PAA3A2" until="9922.00" started="9620.77" ended="9922.00"/>
         <stop parkingArea="PAC4D4" until="14005.00" started="9953.77"/>
-        <device id="routing_243_0_0" state="600000"/>
+        <device id="routing_243_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="244_0_0" depart="4455.00" departPos="stop" route="!244_0_0!var#1" distance="2747.2 1" speedFactor="0.9897" reroute="1" state="262152 4455000 32 0 0 -1 14383000 10449908 9223372036854774807">
         <stop parkingArea="PAE2E1" until="8055.00" started="4455.00" ended="8055.00"/>
@@ -4194,7 +4194,7 @@
         <stop parkingArea="PAC1C2" until="10183.00" started="9737.23" ended="10183.00"/>
         <stop parkingArea="PAD3E3" until="10425.00" started="10201.68" ended="10425.00"/>
         <stop parkingArea="PAD1C1" until="14383.00" started="10449.91"/>
-        <device id="routing_244_0_0" state="600000"/>
+        <device id="routing_244_0_0" state="600000 10200000"/>
     </vehicle>
     <vehicle id="245_0_0" depart="4470.00" departPos="stop" route="!245_0_0!var#1" distance="1292 1" speedFactor="1.0240" reroute="1" state="262152 4470000 15 0 0 -1 14207000 9446598 9223372036854774807">
         <stop parkingArea="PAB3B2" until="8070.00" started="4470.00" ended="8072.00"/>
@@ -4202,7 +4202,7 @@
         <stop parkingArea="PAD1E1" until="8984.00" started="8484.05" ended="8984.00"/>
         <stop parkingArea="PAA1A0" until="9434.00" started="9014.09" ended="9434.00"/>
         <stop parkingArea="PAB0A0" until="14207.00" started="9446.60"/>
-        <device id="routing_245_0_0" state="600000"/>
+        <device id="routing_245_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="246_0_0" depart="4483.00" departPos="stop" route="!246_0_0!var#1" distance="1467.2 1" speedFactor="1.0107" reroute="1" state="262152 4483000 17 0 0 -1 14136000 9810845 9223372036854774807">
         <stop parkingArea="PAE0D0" until="8083.00" started="4483.00" ended="8083.00"/>
@@ -4211,7 +4211,7 @@
         <stop parkingArea="PAE0E1" until="9234.00" started="8850.67" ended="9234.00"/>
         <stop parkingArea="PAC2C1" until="9790.00" started="9258.67" ended="9790.00"/>
         <stop parkingArea="PAE1E0" until="14136.00" started="9810.85"/>
-        <device id="routing_246_0_0" state="600000"/>
+        <device id="routing_246_0_0" state="600000 4483000"/>
     </vehicle>
     <vehicle id="247_0_0" depart="4485.00" departPos="stop" route="!247_0_0!var#1" distance="1984.8 1" speedFactor="0.9726" reroute="1" state="262152 4485000 23 0 0 -1 14252000 9941336 9223372036854774807">
         <stop parkingArea="PAA3B3" until="8085.00" started="4485.00" ended="8085.00"/>
@@ -4221,7 +4221,7 @@
         <stop parkingArea="PAE0E1" until="9635.00" started="9313.65" ended="9635.00"/>
         <stop parkingArea="PAD0D1" until="9935.00" started="9655.43" ended="9935.00"/>
         <stop parkingArea="PAD1D2" until="14252.00" started="9941.34"/>
-        <device id="routing_247_0_0" state="600000"/>
+        <device id="routing_247_0_0" state="600000 4485000"/>
     </vehicle>
     <vehicle id="248_0_0" depart="4513.00" departPos="stop" route="!248_0_0!var#1" distance="1556.8 1" speedFactor="1.0405" reroute="1" state="262152 4513000 18 0 0 -1 14247000 9976304 9223372036854774807">
         <stop parkingArea="PAA4A3" until="8113.00" started="4513.00" ended="8113.00"/>
@@ -4230,7 +4230,7 @@
         <stop parkingArea="PAA4B4" until="9570.00" started="9245.20" ended="9570.00"/>
         <stop parkingArea="PAD1C1" until="9948.00" started="9606.62" ended="9948.00"/>
         <stop parkingArea="PAA0B0" until="14247.00" started="9976.30"/>
-        <device id="routing_248_0_0" state="600000"/>
+        <device id="routing_248_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="249_0_0" depart="4543.00" departPos="stop" route="!249_0_0!var#1" distance="2584 1" speedFactor="1.1398" reroute="1" state="262152 4543000 30 0 0 -1 14038000 9761132 9223372036854774807">
         <stop parkingArea="PAD4D3" until="8143.00" started="4543.00" ended="8143.00"/>
@@ -4241,7 +4241,7 @@
         <stop parkingArea="PAA2A3" until="9541.00" started="9173.63" ended="9541.00"/>
         <stop parkingArea="PAA3A4" until="9739.00" started="9546.41" ended="9739.00"/>
         <stop parkingArea="PAD4C4" until="14038.00" started="9761.13"/>
-        <device id="routing_249_0_0" state="600000"/>
+        <device id="routing_249_0_0" state="600000 4543000"/>
     </vehicle>
     <vehicle id="250_0_0" depart="4544.00" departPos="stop" route="!250_0_0!var#1" distance="1377.6 1" speedFactor="1.1118" reroute="1" state="262152 4544000 16 0 0 -1 14303000 9908629 9223372036854774807">
         <stop parkingArea="PAE1D1" until="8144.00" started="4544.00" ended="8144.00"/>
@@ -4250,7 +4250,7 @@
         <stop parkingArea="PAB3C3" until="9382.00" started="8831.23" ended="9382.00"/>
         <stop parkingArea="PAD3E3" until="9892.00" started="9394.63" ended="9892.00"/>
         <stop parkingArea="PAC3C2" until="14303.00" started="9908.63"/>
-        <device id="routing_250_0_0" state="600000"/>
+        <device id="routing_250_0_0" state="600000 4544000"/>
     </vehicle>
     <vehicle id="252_0_0" depart="4563.00" departPos="stop" route="!252_0_0!var#1" distance="1891.2 1" speedFactor="0.9320" reroute="1" state="262152 4563000 22 0 0 -1 14117000 9974448 9223372036854774807">
         <stop parkingArea="PAE2E3" until="8163.00" started="4563.00" ended="8163.00"/>
@@ -4260,7 +4260,7 @@
         <stop parkingArea="PAD2D1" until="9425.00" started="9055.84" ended="9425.00"/>
         <stop parkingArea="PAD1D2" until="9948.00" started="9431.61" ended="9948.00"/>
         <stop parkingArea="PAC0C1" until="14117.00" started="9974.45"/>
-        <device id="routing_252_0_0" state="600000"/>
+        <device id="routing_252_0_0" state="600000 4563000"/>
     </vehicle>
     <vehicle id="253_0_0" depart="4594.00" departPos="stop" route="!253_0_0!var#1" distance="1805.6 1" speedFactor="0.8779" reroute="1" state="262152 4594000 21 0 0 -1 14341000 9704040 9223372036854774807">
         <stop parkingArea="PAB0C0" until="8194.00" started="4594.00" ended="8194.00"/>
@@ -4270,7 +4270,7 @@
         <stop parkingArea="PAC4D4" until="9354.00" started="9224.54" ended="9354.00"/>
         <stop parkingArea="PAC2C1" until="9690.00" started="9382.08" ended="9690.00"/>
         <stop parkingArea="PAD1D2" until="14341.00" started="9704.04"/>
-        <device id="routing_253_0_0" state="600000"/>
+        <device id="routing_253_0_0" state="600000 4594000"/>
     </vehicle>
     <vehicle id="254_0_0" depart="4595.00" departPos="stop" route="!254_0_0!var#1" distance="2592 1" speedFactor="0.9875" reroute="1" state="262152 4595000 30 0 0 -1 14170000 10088205 9223372036854774807">
         <stop parkingArea="PAA1A2" until="8195.00" started="4595.00" ended="8195.00"/>
@@ -4280,7 +4280,7 @@
         <stop parkingArea="PAD1C1" until="9594.00" started="9163.27" ended="9594.00"/>
         <stop parkingArea="PAA2A1" until="10057.00" started="9618.96" ended="10057.00"/>
         <stop parkingArea="PAE1D1" until="14170.00" started="10088.21"/>
-        <device id="routing_254_0_0" state="600000"/>
+        <device id="routing_254_0_0" state="600000 9600000"/>
     </vehicle>
     <vehicle id="255_0_0" depart="4605.00" departPos="stop" route="!255_0_0!var#1" distance="1720 1" speedFactor="0.9795" reroute="1" state="262152 4605000 20 0 0 -1 14335000 10079168 9223372036854774807">
         <stop parkingArea="PAB3B2" until="8205.00" started="4605.00" ended="8205.00"/>
@@ -4291,7 +4291,7 @@
         <stop parkingArea="PAA0B0" until="9550.00" started="9252.46" ended="9550.00"/>
         <stop parkingArea="PAA2B2" until="10054.00" started="9575.46" ended="10054.00"/>
         <stop parkingArea="PAD3D4" until="14335.00" started="10079.17"/>
-        <device id="routing_255_0_0" state="600000"/>
+        <device id="routing_255_0_0" state="600000 4605000"/>
     </vehicle>
     <vehicle id="256_0_0" depart="4637.00" departPos="stop" route="!256_0_0!var#1" distance="1540.8 1" speedFactor="0.8792" reroute="1" state="262152 4637000 18 0 0 -1 13942000 9669027 9223372036854774807">
         <stop parkingArea="PAA2B2" until="8237.00" started="4637.00" ended="8237.00"/>
@@ -4300,7 +4300,7 @@
         <stop parkingArea="PAC0B0" until="9181.00" started="9019.70" ended="9181.00"/>
         <stop parkingArea="PAC1B1" until="9648.00" started="9206.02" ended="9648.00"/>
         <stop parkingArea="PAC2C3" until="13942.00" started="9669.03"/>
-        <device id="routing_256_0_0" state="600000"/>
+        <device id="routing_256_0_0" state="600000 9000000"/>
     </vehicle>
     <vehicle id="228_0_1" depart="4644.00" departPos="stop" route="!228_0_1!var#1" distance="1284 1" speedFactor="0.7089" reroute="1" state="262152 4644000 15 0 0 -1 14210000 9878772 9223372036854774807">
         <stop parkingArea="PAC1B1" until="8244.00" started="4644.00" ended="8245.00"/>
@@ -4309,7 +4309,7 @@
         <stop parkingArea="PAB1A1" until="9482.00" started="9055.08" ended="9482.00"/>
         <stop parkingArea="PAA2A1" until="9844.00" started="9499.39" ended="9844.00"/>
         <stop parkingArea="PAC2C3" until="14210.00" started="9878.77"/>
-        <device id="routing_228_0_1" state="600000"/>
+        <device id="routing_228_0_1" state="600000 4644000"/>
     </vehicle>
     <vehicle id="251_0_1" depart="4726.00" departPos="stop" route="!251_0_1!var#1" distance="1976.8 1" speedFactor="0.9639" reroute="1" state="262152 4726000 23 0 0 -1 14175000 9802970 9223372036854774807">
         <stop parkingArea="PAC3B3" until="8326.00" started="4726.00" ended="8326.00"/>
@@ -4319,7 +4319,7 @@
         <stop parkingArea="PAD3D2" until="9663.00" started="9546.18" ended="9663.00"/>
         <stop parkingArea="PAB2B3" until="9771.00" started="9682.18" ended="9771.00"/>
         <stop parkingArea="PAE2E1" until="14175.00" started="9802.97"/>
-        <device id="routing_251_0_1" state="600000"/>
+        <device id="routing_251_0_1" state="600000 4726000"/>
     </vehicle>
     <vehicle id="257_0_0" depart="4749.00" departPos="stop" route="!257_0_0!var#1" distance="1720 1" speedFactor="1.2998" reroute="1" state="262152 4749000 20 0 0 -1 13855000 9719646 9223372036854774807">
         <stop parkingArea="PAD3E3" until="8349.00" started="4749.00" ended="8349.00"/>
@@ -4327,7 +4327,7 @@
         <stop parkingArea="PAE0E1" until="9112.00" started="8702.22" ended="9112.00"/>
         <stop parkingArea="PAB2B3" until="9693.00" started="9135.93" ended="9693.00"/>
         <stop parkingArea="PAE2D2" until="13855.00" started="9719.65"/>
-        <device id="routing_257_0_0" state="600000"/>
+        <device id="routing_257_0_0" state="600000 4749000"/>
     </vehicle>
     <vehicle id="259_0_0" depart="4784.00" departPos="stop" route="!259_0_0!var#1" distance="1720 1" speedFactor="1.0143" reroute="1" state="262152 4784000 20 0 0 -1 14198000 9689304 9223372036854774807">
         <stop parkingArea="PAB4B3" until="8384.00" started="4784.00" ended="8384.00"/>
@@ -4336,7 +4336,7 @@
         <stop parkingArea="PAC3B3" until="9237.00" started="9090.51" ended="9237.00"/>
         <stop parkingArea="PAD0D1" until="9665.00" started="9274.63" ended="9665.00"/>
         <stop parkingArea="PAD4C4" until="14198.00" started="9689.30"/>
-        <device id="routing_259_0_0" state="600000"/>
+        <device id="routing_259_0_0" state="600000 8400000"/>
     </vehicle>
     <vehicle id="258_0_1" depart="5037.00" departPos="stop" route="!258_0_1!var#1" distance="1548.8 1" speedFactor="0.8362" reroute="1" state="262152 5037000 18 0 0 -1 14304000 10104454 9223372036854774807">
         <stop parkingArea="PAA4B4" until="8637.00" started="5037.00" ended="8637.00"/>
@@ -4345,7 +4345,7 @@
         <stop parkingArea="PAB1B2" until="9646.00" started="9294.11" ended="9646.00"/>
         <stop parkingArea="PAD0D1" until="10082.00" started="9682.85" ended="10082.00"/>
         <stop parkingArea="PAE0D0" until="14304.00" started="10104.45"/>
-        <device id="routing_258_0_1" state="600000"/>
+        <device id="routing_258_0_1" state="600000 5037000"/>
     </vehicle>
     <segment id="A0A1:0">
         <vehicles time="10210511" blockTime="10204089" value=""/>
@@ -4587,7 +4587,7 @@
     <segment id="E4E3:0">
         <vehicles time="10059481" blockTime="10051668" value=""/>
     </segment>
-    <routingEngine>
+    <routingEngine last="10791000">
         <edge id="A0A1" speed="13.89" pastSpeed="13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
         <edge id="A0B0" speed="13.89" pastSpeed="13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
         <edge id="A1A0" speed="13.89" pastSpeed="13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>

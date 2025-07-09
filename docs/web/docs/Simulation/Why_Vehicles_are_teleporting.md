@@ -56,10 +56,16 @@ following reasons is given:
 
 - **wrong lane**: The vehicle is stuck on a lane which has no
   connection to the next edge on its route.
+  - **highway** special case of *wrong lane* where the lane had a speed limit above threshold **--time-to-teleport.highways.min-speed** (default 69km/h)
 - **yield** The vehicle is stuck on a low-priority road and did not
   find a gap in the prioritized traffic
 - **jam** The vehicle is stuck on a priority road and there is no
   space on the next edge.
+- **blocked** The vehicle was standing behind a [stopped](../Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.md#stops_and_waypoints) vehicle
+- **disconnected** The current and next edge of the vehicle are not connected (for the vClass of the vehicle)
+- **bidi** The current lane is usable in both directions which means the vehicle may be blocked by oncoming traffic
+- **railSignal** The vehicle was waiting at a red rail signal with a circular dependency ([deadlock](Railways.md#deadlocks))
+
 
 Related options are
 
@@ -68,6 +74,8 @@ Related options are
 - **--time-to-teleport.highways.min-speed**: configure threshold for above option
 - **--time-to-teleport.disconnected**: teleport earlier when the route is disconnected
 - **--time-to-teleport.bidi**: teleport earlier when on a bidi-edge (as this is more prone to dead-lock)
+- **--time-to-teleport.remove-constraint**: resolve a constraint-based [railsignal-deadlock](Railways.md#deadlocks) by removing a constraint
+- **--time-to-teleport.railsignal-deadlock**: teleport earlier when stopped due to a [railsignal-deadlock](Railways.md#deadlocks)
 - **--time-to-teleport.ride**: teleports [persons that are waiting for a ride](../Specification/Persons.md#riding) rather than vehicles.
 - **--time-to-teleport.remove**: remove teleporting vehicles directly
 

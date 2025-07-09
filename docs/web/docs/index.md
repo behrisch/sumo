@@ -23,12 +23,12 @@ This Documentation is continuously updated and always refers to the latest devel
 # Basic Usage
 
 - [Notation in this Documentation](Basics/Notation.md)
-- [Needed, basic Computer
-  Skills](Basics/Basic_Computer_Skills.md)
+- [Needed, basic Computer Skills](Basics/Basic_Computer_Skills.md)
 - [Installing SUMO](Installing/index.md)
 - [Using SUMO Command Line Applications](Basics/Using_the_Command_Line_Applications.md)
 - [Tutorials](Tutorials/index.md)
 - [Validating application inputs](XMLValidation.md)
+- [Tabular outputs](TabularOutputs.md)
 
 # Network Building
 

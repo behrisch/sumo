@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-04-14 14:39:00 by Eclipse SUMO sumo Version v1_22_0+1491-6ef8282ea1d
+<!-- generated on 2025-07-08 14:31:44 by Eclipse SUMO sumo Version v1_23_1+0932-2ae6f5fa0dc
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -47,27 +47,27 @@
         <stop edge="1/1to2/1" startPos="399.80" endPos="400.00" duration="10.00"/>
     </vehicle>
 
-    <vehicle id="0.5" depart="50.00" arrival="354.00">
+    <vehicle id="0.5" depart="50.00" arrival="344.00">
         <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
         <stop edge="1/1to2/1" duration="10.00"/>
     </vehicle>
 
-    <vehicle id="0.6" depart="60.00" arrival="426.00">
+    <vehicle id="0.6" depart="60.00" arrival="431.00">
         <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
         <stop edge="1/1to2/1" duration="10.00"/>
     </vehicle>
 
-    <vehicle id="0.7" depart="70.00" arrival="435.00">
+    <vehicle id="0.7" depart="70.00" arrival="432.00">
         <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
         <stop edge="1/1to2/1" duration="10.00"/>
     </vehicle>
 
-    <vehicle id="0.8" depart="80.00" arrival="437.00">
+    <vehicle id="0.8" depart="80.00" arrival="434.00">
         <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
         <stop edge="1/1to2/1" duration="10.00"/>
     </vehicle>
 
-    <vehicle id="0.9" depart="90.00" arrival="520.00">
+    <vehicle id="0.9" depart="90.00" arrival="513.00">
         <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
         <stop edge="1/1to2/1" duration="10.00"/>
     </vehicle>

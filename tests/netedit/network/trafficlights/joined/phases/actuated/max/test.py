@@ -32,13 +32,13 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.actuatedPhase.maxD, "dummyDur")
+netedit.modifyTLSTable(0, netedit.attrs.TLS.phases.actuated.maxD, "dummyDur")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.actuatedPhase.maxD, "-20")
+netedit.modifyTLSTable(1, netedit.attrs.TLS.phases.actuated.maxD, "-20")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.actuatedPhase.maxD, "13.15")
+netedit.modifyTLSTable(2, netedit.attrs.TLS.phases.actuated.maxD, "13.15")
 
 # type enter to save changes
 netedit.typeKey("enter")

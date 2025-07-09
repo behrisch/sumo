@@ -28,6 +28,7 @@
 #include <utils/gui/div/GUIDesigns.h>
 #include <utils/gui/images/GUIIconSubSys.h>
 #include <utils/gui/windows/GUIAppEnum.h>
+#include <utils/tests/InternalTestStep.h>
 
 #include "GNETLSTable.h"
 
@@ -73,16 +74,6 @@ FXIMPLEMENT(GNETLSTable, FXHorizontalFrame, GNETLSTableMap, ARRAYNUMBER(GNETLSTa
 // ===========================================================================
 // method definitions
 // ===========================================================================
-
-// ---------------------------------------------------------------------------
-// GNETLSTable::Test - public methods
-// ---------------------------------------------------------------------------
-
-GNETLSTable::GNETLSTableTest::GNETLSTableTest(FXSelector sel_, const int row_, const int column_, const std::string& text_) :
-    row(row_),
-    column(column_),
-    text(text_) {
-}
 
 // ---------------------------------------------------------------------------
 // GNETLSTable - public methods
@@ -292,7 +283,7 @@ GNETLSTable::setColumnLabelBot(const int column, const std::string& text) {
 long
 GNETLSTable::onInternalTest(FXObject*, FXSelector, void* ptr) {
     // parse table test
-    GNETLSTableTest* tableTest = static_cast<GNETLSTableTest*>(ptr);
+    InternalTestStep::TLSTableTest* tableTest = static_cast<InternalTestStep::TLSTableTest*>(ptr);
     // obtain cell
     if (tableTest->row > (int)myRows.size()) {
         throw ProcessError(TL("Invalid row in table test"));
@@ -324,6 +315,9 @@ GNETLSTable::onInternalTest(FXObject*, FXSelector, void* ptr) {
             // set text in text field
             cell->getTextField()->setText(tableTest->text.c_str(), TRUE);
             return 1;
+        } else {
+            // unknown operation
+            throw ProcessError(TL("Unknown operation in table test"));
         }
     }
 }
@@ -1066,7 +1060,9 @@ GNETLSTable::Cell::getType() const {
 
 void
 GNETLSTable::Cell::hideMenuButtonPopup() {
-    myMenuButtonPopup->popdown();
+    if (myMenuButtonPopup) {
+        myMenuButtonPopup->popdown();
+    }
 }
 
 

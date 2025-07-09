@@ -39,6 +39,16 @@ ParquetFormatter::ParquetFormatter(const std::string& columnNames, const std::st
         myCompression = parquet::Compression::BROTLI;
     } else if (compression == "zstd") {
         myCompression = parquet::Compression::ZSTD;
+    } else if (compression == "lz4") {
+        myCompression = parquet::Compression::LZ4;
+    } else if (compression == "bz2") {
+        myCompression = parquet::Compression::BZ2;
+    } else if (compression != "" && compression != "uncompressed") {
+        WRITE_ERRORF("Unknown compression: %", compression);
+    }
+    if (!arrow::util::Codec::IsAvailable(myCompression)) {
+        WRITE_WARNINGF("Compression '%' not available, falling back to uncompressed.", compression);
+        myCompression = parquet::Compression::UNCOMPRESSED;
     }
 }
 

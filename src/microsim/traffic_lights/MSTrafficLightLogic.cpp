@@ -56,7 +56,7 @@ MSTrafficLightLogic::SwitchCommand::SwitchCommand(MSTLLogicControl& tlcontrol,
     myTLControl(tlcontrol), myTLLogic(tlLogic),
     myAssumedNextSwitch(nextSwitch), myAmValid(true) {
     // higher than default command priority of 0
-    priority = 1;
+    priority = std::numeric_limits<int>::max();
 }
 
 

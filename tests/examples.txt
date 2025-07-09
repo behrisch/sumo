@@ -29,7 +29,7 @@ sumo/gui/visualization/paradeContainers;../docs/examples/sumo/visualization/para
 sumo/output/examples/cross3ltl_emission;../docs/examples/sumo/output/cross3ltl_emission
 sumo/output/examples/cross3ltl_fcd;../docs/examples/sumo/output/cross3ltl_fcd
 sumo/output/examples/cross3ltl_fcd_csv;../docs/examples/sumo/output/cross3ltl_fcd_csv
-#sumo/output/examples/cross3ltl_fcd_parquet;../docs/examples/sumo/output/cross3ltl_fcd_parquet
+sumo/output/examples/cross3ltl_fcd_parquet;../docs/examples/sumo/output/cross3ltl_fcd_parquet
 sumo/output/examples/cross3ltl_full;../docs/examples/sumo/output/cross3ltl_full
 sumo/output/examples/cross3ltl_inductloops;../docs/examples/sumo/output/cross3ltl_inductloops
 sumo/output/examples/cross3ltl_meandata_constrained;../docs/examples/sumo/output/cross3ltl_meandata_constrained

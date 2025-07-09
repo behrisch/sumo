@@ -35,7 +35,7 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # ungroup signal
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.single.staticPhase.ungroupSignal)
+netedit.tlsUngroupSignal()
 
 # type enter to save changes
 netedit.typeKey("enter")

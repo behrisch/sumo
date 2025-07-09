@@ -4,5 +4,5 @@ Warning: Teleporting vehicle 'v.256'; waited too long (yield), lane='E4E3_0', ti
 Warning: Vehicle 'v.256' ends teleporting on edge 'E3E4', time=1789.00.
 Warning: Teleporting vehicle 'v.239'; waited too long (yield), lane='E4E3_0', time=934.00.
 Warning: Vehicle 'v.239' ends teleporting on edge 'E3E4', time=934.00.
-Warning: Teleporting vehicle 'v.238'; waited too long (yield), lane='E4E3_0', time=1239.00.
-Warning: Vehicle 'v.238' ends teleporting on edge 'E3E4', time=1239.00.
+Warning: Teleporting vehicle 'v.241'; waited too long (yield), lane='E4E3_0', time=1540.00.
+Warning: Vehicle 'v.241' ends teleporting on edge 'E3E4', time=1541.00.

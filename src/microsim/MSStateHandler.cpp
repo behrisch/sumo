@@ -60,7 +60,6 @@
 #include <mesosim/MESegment.h>
 #include <mesosim/MELoop.h>
 
-
 // ===========================================================================
 // MSStateTimeHandler method definitions
 // ===========================================================================
@@ -246,7 +245,9 @@ MSStateHandler::myStartElement(int element, const SUMOSAXAttributes& attrs) {
             break;
         }
         case SUMO_TAG_ROUTINGENGINE: {
-            MSRoutingEngine::initEdgeWeights(SVC_PASSENGER);
+            bool ok = true;
+            const SUMOTime lastAdaptation = attrs.get<SUMOTime>(SUMO_ATTR_LAST, nullptr, ok);
+            MSRoutingEngine::initEdgeWeights(SVC_PASSENGER, lastAdaptation);
             if (OptionsCont::getOptions().getBool("device.rerouting.bike-speeds")) {
                 MSRoutingEngine::initEdgeWeights(SVC_BICYCLE);
             }
@@ -511,24 +512,16 @@ MSStateHandler::closeVehicle() {
     if (myVehiclesToRemove.count(vehID) == 0) {
 
         // devices that influence simulation behavior must replicate stochastic assignment
-        std::vector<std::string> addedParams;
+        // also, setting the parameter avoids extra calls to MSDevice::myEquipmentRNG (which would pollute replication)
+        std::vector<std::string> deviceNames;
         for (auto attrs : myDeviceAttrs) {
-            const std::string attrID = attrs->getString(SUMO_ATTR_ID);
-            if (StringUtils::startsWith(attrID, "routing_")) {
-                const std::string key = "has.rerouting.device";
-                if (!myVehicleParameter->hasParameter(key)) {
-                    myVehicleParameter->setParameter(key, "true");
-                    addedParams.push_back(key);
-                }
-            }
+            deviceNames.push_back(MSDevice::getDeviceName(attrs->getString(SUMO_ATTR_ID)));
         }
+        myVehicleParameter->setParameter(MSDevice::LOADSTATE_DEVICENAMES, toString(deviceNames));
         MSRouteHandler::closeVehicle();
         SUMOVehicle* v = vc.getVehicle(vehID);
-        // clean up added params after initializing devices in closeVehicle
-        for (std::string& key : addedParams) {
-            ((SUMOVehicleParameter&)v->getParameter()).unsetParameter(key);
-        }
-
+        // clean up added param after initializing devices in closeVehicle
+        ((SUMOVehicleParameter&)v->getParameter()).unsetParameter(MSDevice::LOADSTATE_DEVICENAMES);
         if (v == nullptr) {
             throw ProcessError(TLF("Could not load vehicle '%' from state", vehID));
         }

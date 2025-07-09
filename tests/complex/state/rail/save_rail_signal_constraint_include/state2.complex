@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-14 14:49:52 by Eclipse SUMO sumo Version v1_23_1+0571-0c0912eecef
+<!-- generated on 2025-07-08 16:23:52 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -33,7 +33,7 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="micro" version="v1_23_1+0571-0c0912eecef" time="61.00" constraints="1" rail="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="micro" version="v1_23_1+0938-cf8b72380de" time="61.00" constraints="1" rail="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!t0!var#1" state="0" edges="a b c"/>
     <route id="!t1!var#1" state="0" edges="d e c"/>
     <delay number="2" begin="3" end="1" depart="9.00" time="36.00"/>
@@ -41,12 +41,12 @@
     <vehicle id="t0" type="train" depart="0.00" departSpeed="max" route="!t0!var#1" distance="0 1" speedFactor="1.0000" reroute="1" state="262162 0 0 50.10 30000 34.88 60000 0 0" pos="399.00 349.00 0.00" speed="0.00 0.00" angle="90.00" posLat="0.00" waitingTime="100000 1 0 30000">
         <stop busStop="stop_c" arrival="100.00" duration="30.00" until="130.00"/>
         <device id="tripinfo_t0" state="a_0 0 13.89 -50.1 30000 1 1 0 -1 -1000 NONE -1 0 -1"/>
-        <device id="routing_t0" state="0"/>
+        <device id="routing_t0" state="0 0"/>
     </vehicle>
     <vehicle id="t1" type="train" depart="20.00" departSpeed="max" route="!t1!var#1" distance="400.05 1" speedFactor="1.0000" reroute="1" state="262162 29000 1 50.10 0 0.00 60000 0 0" pos="80.64 30.64 13.89" speed="13.89 13.89" angle="135.00" posLat="0.00" waitingTime="100000 0">
         <stop busStop="stop_c" arrival="50.00" duration="30.00" until="80.00"/>
         <device id="tripinfo_t1" state="d_0 0 13.89 349.95 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
-        <device id="routing_t1" state="0"/>
+        <device id="routing_t1" state="0 20000"/>
     </vehicle>
     <lane id="a_0">
         <vehicles value="t0"/>
@@ -69,7 +69,7 @@
     <railSignalConstraintTracker lane="e_0" index="1" state="between t1"/>
     <driveWay id="gneJ1.d0" edges="a" vehicles="t0"/>
     <driveWay id="D.0" edges="e c" vehicles="t1"/>
-    <routingEngine>
+    <routingEngine last="61000">
         <edge id="a" speed="11.20" pastSpeed="0.00 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 12.96 11.66 10.36 9.06 7.76 6.46 5.16 3.86 2.56 1.26 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
         <edge id="e" speed="13.89" pastSpeed="13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89 13.89"/>
     </routingEngine>

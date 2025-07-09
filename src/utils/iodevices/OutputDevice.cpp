@@ -293,19 +293,20 @@ OutputDevice::inform(const std::string& msg, const bool progress) {
 
 
 const SumoXMLAttrMask
-OutputDevice::parseWrittenAttributes(const std::vector<std::string>& attrList, const std::string& desc) {
+OutputDevice::parseWrittenAttributes(const std::vector<std::string>& attrList, const std::string& desc, const std::map<std::string, SumoXMLAttrMask>& special) {
     SumoXMLAttrMask result;
     for (std::string attrName : attrList) {
-        if (!SUMOXMLDefinitions::Attrs.hasString(attrName)) {
-            if (attrName == "all") {
-                result.set();
+        if (attrName == "all") {
+            result.set();
+        } else if (special.count(attrName) > 0) {
+            result |= special.find(attrName)->second;
+        } else {
+            if (SUMOXMLDefinitions::Attrs.hasString(attrName)) {
+                result.set(SUMOXMLDefinitions::Attrs.get(attrName));
             } else {
                 WRITE_ERRORF(TL("Unknown attribute '%' to write in %."), attrName, desc);
             }
-            continue;
         }
-        int attr = SUMOXMLDefinitions::Attrs.get(attrName);
-        result.set(attr);
     }
     return result;
 }

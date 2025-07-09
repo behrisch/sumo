@@ -6,3 +6,15 @@ protect_bidi_option
 
 # rail signal protects against flanking traffic but allows forward traffic freely
 protect_flank_option
+
+# rail signal must prohibit entering an occupied driveway if it contains a reversal
+protect_reversal
+
+# insertion checks must prohibit entering an occupied driveway if it contains a reversal
+protect_reversal2
+
+# insertion checks must prohibit entering an occupied driveway if it contains a reversal
+protect_reversal_noSignal
+
+# rail signal must prohibit entering an occupied driveway if it contains a self-intersecting part
+protect_selfintersecting

@@ -104,11 +104,14 @@ MSRoutingEngine::initWeightUpdate() {
 
 
 void
-MSRoutingEngine::initEdgeWeights(SUMOVehicleClass svc) {
+MSRoutingEngine::initEdgeWeights(SUMOVehicleClass svc, SUMOTime lastAdaption) {
     if (myBikeSpeeds && svc == SVC_BICYCLE) {
         _initEdgeWeights(myEdgeBikeSpeeds, myPastEdgeBikeSpeeds);
     } else {
         _initEdgeWeights(myEdgeSpeeds, myPastEdgeSpeeds);
+    }
+    if (lastAdaption >= 0) {
+        myLastAdaptation = lastAdaption;
     }
 }
 
@@ -604,6 +607,7 @@ MSRoutingEngine::saveState(OutputDevice& out) {
         return;
     }
     out.openTag(SUMO_TAG_ROUTINGENGINE);
+    out.writeAttr(SUMO_ATTR_LAST, myLastAdaptation);
     const MSEdgeVector& edges = MSNet::getInstance()->getEdgeControl().getEdges();
     for (const MSEdge* const e : edges) {
         if (e->isDelayed()) {

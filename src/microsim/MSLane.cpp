@@ -1046,6 +1046,11 @@ MSLane::isInsertionSuccess(MSVehicle* aVehicle,
             // do not insert if the bidirectional edge is occupied before a railSignal has been encountered
             if (firstRailSignal == nullptr && nextLane->getBidiLane() != nullptr && nextLane->getBidiLane()->getVehicleNumberWithPartials() > 0) {
                 if ((insertionChecks & (int)InsertionCheck::ONCOMING_TRAIN) != 0) {
+#ifdef DEBUG_INSERTION
+                    if (DEBUG_COND2(aVehicle) || DEBUG_COND) {
+                        std::cout << " nextLane=" << nextLane->getID() << " occupiedBidi\n";
+                    }
+#endif
                     return false;
                 }
             }

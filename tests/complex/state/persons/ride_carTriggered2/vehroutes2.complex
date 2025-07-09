@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-04-28 12:14:42 by Eclipse SUMO sumo Version v1_17_0+0071-cb2b077
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<!-- generated on 2025-07-08 14:31:43 by Eclipse SUMO sumo Version v1_23_1+0932-2ae6f5fa0dc
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="input_net.net.xml"/>
@@ -23,7 +23,7 @@
         <no-step-log value="true"/>
     </report>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
@@ -43,11 +43,11 @@
         <route edges="3/1to2/1 2/1to1/1 1/1to0/1"/>
     </vehicle>
 
-    <person id="persontrip_car3" depart="160.00" arrival="329.00">
+    <person id="persontrip_car3" depart="160.00" arrival="327.00">
         <ride from="3/1to2/1" to="1/1to0/1" arrivalPos="200.00" lines="persontrip_car3_0"/>
     </person>
 
-    <vehicle id="persontrip_car3_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" arrival="329.00">
+    <vehicle id="persontrip_car3_0" depart="triggered" arrivalPos="200.00" arrivalSpeed="0.00" arrival="327.00">
         <routeDistribution>
             <route replacedOnEdge="" reason="person:persontrip_car3" replacedAtTime="160.00" probability="0" edges="3/1to2/1"/>
             <route edges="3/1to2/1 2/1to1/1 1/1to0/1"/>

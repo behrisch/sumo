@@ -35,7 +35,10 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # add phase
-netedit.addGreenPhase(netedit.attrs.TLS.single.staticPhase.addButton)
+netedit.addGreenPhase(0)
+
+# add phase
+netedit.addGreenPhase(2)
 
 # type enter to save changes
 netedit.typeKey("enter")

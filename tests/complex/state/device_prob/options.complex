@@ -1,0 +1,13 @@
+--vehroute-output=vehroutes.xml --no-step-log --no-duration-log
+-n input_net.net.xml -r input_routes.rou.xml --save-state.times 50
+--save-state.rng
+--tripinfo-output tripinfo.xml
+--device.tripinfo.probability 0.5
+--save-state.files state.xml 
+:
+--vehroute-output=vehroutes.xml --no-step-log --no-duration-log
+-n input_net.net.xml --load-state state.xml
+--tripinfo-output tripinfo2.xml
+--device.tripinfo.probability 0.5
+
+tests/complex/state/runner.py

@@ -32,7 +32,7 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # add states
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.join.actuatedPhase.addStates)
+netedit.tlsAddStates()
 
 # type enter to save changes
 netedit.typeKey("enter")

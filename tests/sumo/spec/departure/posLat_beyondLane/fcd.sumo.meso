@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-18 11:39:54 by Eclipse SUMO sumo Version v1_23_1+0631-03092716493
+<!-- generated on 2025-07-09 17:03:22 by Eclipse SUMO sumo Version v1_23_1+0975-acf3267315e
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -21,7 +21,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <output>
         <write-license value="true"/>
         <fcd-output value="fcd.xml"/>
-        <fcd-output.attributes value="all"/>
+        <fcd-output.attributes value="traffic,misc"/>
     </output>
 
     <time>
@@ -47,6 +47,6 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
 <fcd-export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/fcd_file.xsd">
     <timestep time="0.00">
-        <vehicle id="1" x="0.00" y="-8.25" angle="90.00" type="DEFAULT_VEHTYPE" speed="55.56" pos="0.00" edge="beg" slope="0.00" distance="0.00" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="0" queue="0" entryTime="0.00" eventTime="1.80" blockTime="-1.00" tag="vehicle"/>
+        <vehicle id="1" x="0.00" y="-8.25" angle="90.00" type="DEFAULT_VEHTYPE" speed="55.56" pos="0.00" edge="beg" slope="0.00" distance="0.00" odometer="0.00" posLat="0.00" arrivalDelay="0.00" segment="0" queue="0" entryTime="0.00" eventTime="1.80" blockTime="-1.00"/>
     </timestep>
 </fcd-export>

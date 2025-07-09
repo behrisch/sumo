@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-08 09:38:51 by Eclipse SUMO sumo Version v1_23_1+0919-355ec72f872
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+        <vehroute-output value="vehroutes.xml"/>
+        <save-state.times value="50"/>
+        <save-state.files value="state.xml"/>
+        <save-state.rng value="true"/>
+    </output>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <tripinfo_device>
+        <device.tripinfo.probability value="0.5"/>
+    </tripinfo_device>
+
+</sumoConfiguration>
+-->
+
+<snapshot type="micro" version="v1_23_1+0919-355ec72f872" time="50.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+    <rngState default="0" routeHandler="66" insertionControl="0" device="25" device.btreceiver="0" driverState="0" device.toc="0">
+        <rngLane index="0" state="0"/>
+        <rngLane index="1" state="0"/>
+        <rngLane index="2" state="0"/>
+        <rngLane index="3" state="0"/>
+        <rngLane index="4" state="0"/>
+        <rngLane index="5" state="0"/>
+        <rngLane index="6" state="0"/>
+        <rngLane index="7" state="0"/>
+        <rngLane index="8" state="0"/>
+        <rngLane index="9" state="0"/>
+        <rngLane index="10" state="0"/>
+        <rngLane index="11" state="0"/>
+        <rngLane index="12" state="0"/>
+        <rngLane index="13" state="0"/>
+        <rngLane index="14" state="0"/>
+        <rngLane index="15" state="0"/>
+        <rngLane index="16" state="0"/>
+        <rngLane index="17" state="0"/>
+        <rngLane index="18" state="0"/>
+        <rngLane index="19" state="0"/>
+        <rngLane index="20" state="0"/>
+        <rngLane index="21" state="0"/>
+        <rngLane index="22" state="0"/>
+        <rngLane index="23" state="0"/>
+        <rngLane index="24" state="0"/>
+        <rngLane index="25" state="0"/>
+        <rngLane index="26" state="0"/>
+        <rngLane index="27" state="0"/>
+        <rngLane index="28" state="0"/>
+        <rngLane index="29" state="0"/>
+        <rngLane index="30" state="7"/>
+        <rngLane index="31" state="0"/>
+        <rngLane index="32" state="0"/>
+        <rngLane index="33" state="0"/>
+        <rngLane index="34" state="0"/>
+        <rngLane index="35" state="0"/>
+        <rngLane index="36" state="0"/>
+        <rngLane index="37" state="0"/>
+        <rngLane index="38" state="0"/>
+        <rngLane index="39" state="618"/>
+        <rngLane index="40" state="0"/>
+        <rngLane index="41" state="0"/>
+        <rngLane index="42" state="0"/>
+        <rngLane index="43" state="0"/>
+        <rngLane index="44" state="0"/>
+        <rngLane index="45" state="0"/>
+        <rngLane index="46" state="0"/>
+        <rngLane index="47" state="0"/>
+        <rngLane index="48" state="0"/>
+        <rngLane index="49" state="0"/>
+        <rngLane index="50" state="0"/>
+        <rngLane index="51" state="0"/>
+        <rngLane index="52" state="0"/>
+        <rngLane index="53" state="0"/>
+        <rngLane index="54" state="0"/>
+        <rngLane index="55" state="0"/>
+        <rngLane index="56" state="0"/>
+        <rngLane index="57" state="0"/>
+        <rngLane index="58" state="0"/>
+        <rngLane index="59" state="0"/>
+        <rngLane index="60" state="0"/>
+        <rngLane index="61" state="0"/>
+        <rngLane index="62" state="0"/>
+        <rngLane index="63" state="0"/>
+    </rngState>
+    <edgeControl lanes="4/1to3/1_0 3/1to2/1_0"/>
+    <route id="r1" state="1" edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1"/>
+    <delay number="25" begin="25" end="0" depart="0.00" time="0.00"/>
+    <vType id="DEFAULT_VEHTYPE" length="3.00" minGap="2.00" maxSpeed="10.00" impatience="0.50" accel="0.8" decel="4.5" sigma="0"/>
+    <vehicle id="0.0" depart="0.00" departSpeed="max" route="r1" distance="400 0" speedFactor="1.0600" state="2224 0 1 3.10 0 7.17 49000 0 0" pos="21.40 18.40 5.60" speed="5.60 4.80" angle="270.00" posLat="0.00" waitingTime="100000 1 7000 8000">
+        <device id="vehroute_0.0" state="0 0.00 10.00 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.1" depart="2.00" departSpeed="max" route="r1" distance="400 0" speedFactor="0.9383" state="2224 2000 1 3.10 0 3.55 49000 0 0" pos="10.80 7.80 4.80" speed="4.80 4.00" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.1" state="0 0.00 9.38 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.2" depart="4.00" departSpeed="max" route="r1" distance="400 0" speedFactor="1.0104" state="2224 4000 1 3.10 0 5.21 49000 0 0" pos="1.00 398.00 4.00" speed="4.00 3.20" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.2" state="0 0.00 10.00 3.10 0"/>
+        <device id="tripinfo_0.2" state="4/1to3/1_0 0 10 396.9 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.3" depart="6.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0827" state="2224 6000 0 3.10 0 4.11 49000 0 0" pos="392.00 389.00 3.20" speed="3.20 2.40" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.3" state="0 0.00 10.00 3.10 0"/>
+        <device id="tripinfo_0.3" state="4/1to3/1_0 0 10 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.4" depart="8.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0303" state="2224 8000 0 3.10 0 2.93 49000 0 0" pos="383.80 380.80 2.40" speed="2.40 2.85" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.4" state="0 0.00 10.00 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.5" depart="10.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8310" state="2224 10000 0 3.10 0 0.00 49000 0 0" pos="327.19 324.19 8.31" speed="8.31 8.31" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.5" state="0 0.00 8.31 3.10 0"/>
+        <device id="tripinfo_0.5" state="4/1to3/1_0 0 8.31 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.6" depart="12.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0458" state="2224 12000 0 3.10 0 5.92 49000 0 0" pos="313.88 310.88 8.31" speed="8.31 8.31" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.6" state="0 0.00 9.64 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.7" depart="14.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8860" state="2224 14000 0 3.10 0 1.43 49000 0 0" pos="300.57 297.57 8.31" speed="8.31 8.31" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.7" state="0 0.00 8.86 3.10 0"/>
+        <device id="tripinfo_0.7" state="4/1to3/1_0 0 8.86 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.8" depart="16.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9379" state="2224 16000 0 3.10 0 2.70 49000 0 0" pos="287.26 284.26 8.31" speed="8.31 8.31" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.8" state="0 0.00 9.38 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.9" depart="18.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8569" state="2224 18000 0 3.10 0 0.00 49000 0 0" pos="268.74 265.74 8.57" speed="8.57 8.57" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.9" state="0 0.00 8.57 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.10" depart="20.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0907" state="2224 20000 0 3.10 0 3.79 49000 0 0" pos="255.17 252.17 8.57" speed="8.57 8.57" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.10" state="0 0.00 9.90 3.10 0"/>
+        <device id="tripinfo_0.10" state="4/1to3/1_0 0 9.902 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.11" depart="22.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0263" state="2224 22000 0 3.10 0 3.15 49000 0 0" pos="241.60 238.60 8.57" speed="8.57 8.57" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.11" state="0 0.00 10.00 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.12" depart="24.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0471" state="2224 24000 0 3.10 0 2.51 49000 0 0" pos="228.03 225.03 8.57" speed="8.57 8.57" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.12" state="0 0.00 10.00 3.10 0"/>
+        <device id="tripinfo_0.12" state="4/1to3/1_0 0 10 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.13" depart="26.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.1229" state="2224 26000 0 3.10 0 1.86 49000 0 0" pos="214.46 211.46 8.57" speed="8.57 8.57" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.13" state="0 0.00 10.00 3.10 0"/>
+        <device id="tripinfo_0.13" state="4/1to3/1_0 0 10 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.14" depart="28.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9912" state="2224 28000 0 3.10 0 1.05 49000 0 0" pos="200.88 197.88 8.57" speed="8.57 8.58" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.14" state="0 0.00 9.91 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.15" depart="30.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9268" state="2224 30000 0 3.10 0 0.00 49000 0 0" pos="179.19 176.19 9.27" speed="9.27 9.27" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.15" state="0 0.00 9.27 3.10 0"/>
+        <device id="tripinfo_0.15" state="4/1to3/1_0 0 9.268 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.16" depart="32.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8784" state="2224 32000 0 3.10 0 0.00 49000 0 0" pos="152.43 149.43 8.78" speed="8.78 8.78" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.16" state="0 0.00 8.78 3.10 0"/>
+        <device id="tripinfo_0.16" state="4/1to3/1_0 0 8.784 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.17" depart="34.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9414" state="2224 34000 0 3.10 0 0.60 49000 0 0" pos="138.64 135.64 8.78" speed="8.78 8.79" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.17" state="0 0.00 9.41 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.18" depart="36.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9362" state="2224 36000 0 3.10 0 0.04 49000 0 0" pos="124.44 121.44 9.10" speed="9.10 9.26" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.18" state="0 0.00 9.36 3.10 0"/>
+        <device id="tripinfo_0.18" state="4/1to3/1_0 0 9.362 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.19" depart="38.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.1582" state="2224 38000 0 3.10 0 0.29 49000 0 0" pos="110.23 107.23 9.31" speed="9.31 9.44" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.19" state="0 0.00 10.00 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.20" depart="40.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0181" state="2224 40000 0 3.10 0 0.00 49000 0 0" pos="93.10 90.10 10.00" speed="10.00 10.00" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.20" state="0 0.00 10.00 3.10 0"/>
+        <device id="tripinfo_0.20" state="4/1to3/1_0 0 10 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.21" depart="42.00" departSpeed="max" route="r1" distance="0 0" speedFactor="1.0102" state="2224 42000 0 3.10 0 0.00 49000 0 0" pos="73.10 70.10 10.00" speed="10.00 10.00" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.21" state="0 0.00 10.00 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.22" depart="44.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.9750" state="2224 44000 0 3.10 0 0.00 49000 0 0" pos="51.85 48.85 9.75" speed="9.75 9.75" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.22" state="0 0.00 9.75 3.10 0"/>
+        <device id="tripinfo_0.22" state="4/1to3/1_0 0 9.75 -3.1 0 0 0 0 -1 -1000 NONE -1 0 -1"/>
+    </vehicle>
+    <vehicle id="0.23" depart="46.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8896" state="2224 46000 0 3.10 0 0.00 49000 0 0" pos="29.79 26.79 8.90" speed="8.90 8.90" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.23" state="0 0.00 8.90 3.10 0"/>
+    </vehicle>
+    <vehicle id="0.24" depart="48.00" departSpeed="max" route="r1" distance="0 0" speedFactor="0.8257" state="2224 48000 0 3.10 0 0.00 49000 0 0" pos="11.36 8.36 8.26" speed="8.26 8.26" angle="270.00" posLat="0.00" waitingTime="100000 0">
+        <device id="vehroute_0.24" state="0 0.00 8.26 3.10 0"/>
+    </vehicle>
+    <flowState id="0" begin="0.00" departSpeed="max" period="2.00" next="50.00" end="100.00" route="r1" done="25" index="25"/>
+    <lane id="3/1to2/1_0">
+        <vehicles value="0.2 0.1 0.0"/>
+    </lane>
+    <lane id="4/1to3/1_0">
+        <vehicles value="0.24 0.23 0.22 0.21 0.20 0.19 0.18 0.17 0.16 0.15 0.14 0.13 0.12 0.11 0.10 0.9 0.8 0.7 0.6 0.5 0.4 0.3"/>
+    </lane>
+    <tlLogic id="0/0" programID="0" phase="2" duration="16000"/>
+    <tlLogic id="0/1" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="0/2" programID="0" phase="2" duration="16000"/>
+    <tlLogic id="1/0" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="1/1" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="1/2" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="2/0" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="2/1" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="2/2" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="3/0" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="3/1" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="3/2" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="4/0" programID="0" phase="2" duration="16000"/>
+    <tlLogic id="4/1" programID="0" phase="4" duration="7000"/>
+    <tlLogic id="4/2" programID="0" phase="2" duration="16000"/>
+</snapshot>

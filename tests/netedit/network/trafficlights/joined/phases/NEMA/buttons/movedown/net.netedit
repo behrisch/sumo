@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-10-08 09:18:09 by Eclipse SUMO netedit Version v1_20_0+2246-02b4422aa12
+<!-- generated on 2025-07-09 16:01:41 by Eclipse SUMO netedit Version v1_23_1+0962-6b33e61ca3a
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -14,19 +14,21 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <additional-files value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\additionals.add.xml"/>
-        <route-files value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\routes.rou.xml"/>
-        <data-files value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\datas.dat.xml"/>
-        <sumo-net-file value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\net.net.xml"/>
+        <additional-files value="additionals.add.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <data-files value="datas.dat.xml"/>
+        <meandata-files value="datas.med.add.xml"/>
+        <sumo-net-file value="net.net.xml"/>
     </input>
 
     <output>
         <write-license value="true"/>
-        <output-file value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\net.net.xml"/>
+        <output-file value="net.net.xml"/>
     </output>
 
     <processing>
         <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
         <geometry.max-grade.fix value="false"/>
         <offset.disable-normalization value="true"/>
         <lefthand value="0"/>
@@ -45,19 +47,22 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <netedit>
         <ignore-supermode-question value="true"/>
+        <ignore.additionalelements value="0"/>
+        <ignore.routeelements value="0"/>
+        <force-saving value="true"/>
     </netedit>
 
     <visualisation>
-        <gui-settings-file value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\gui-settings.xml"/>
+        <gui-settings-file value="gui-settings.xml"/>
         <window-size value="1280, 720"/>
         <window-pos value="50,50"/>
         <gui-testing value="true"/>
-        <gui-testing.setting-output value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\guisettingsoutput.xml"/>
+        <gui-testing.setting-output value="guisettingsoutput.xml"/>
     </visualisation>
 
     <report>
         <no-warnings value="true"/>
-        <error-log value="C:\Users\alva_pa\.texttest\tmp\netedit.gui.08Oct091510.3764\netedit.gui\network\trafficlights\joined\phases\NEMA\buttons\movedown\log.txt"/>
+        <error-log value="log.txt"/>
     </report>
 
 </neteditConfiguration>
@@ -228,8 +233,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </edge>
 
     <tlLogic id="J0" type="NEMA" programID="0" offset="0">
-        <phase duration="90" state="grgrgrgrgrgrgrgrgrgrgrgrgrgr" minDur="6" maxDur="55" vehext="3" yellow="4" red="5" name="1"/>
         <phase duration="90" state="rgrgrgrgrgrgrgrgrgrgrgrgrgrg" name="2"/>
+        <phase duration="90" state="grgrgrgrgrgrgrgrgrgrgrgrgrgr" minDur="6" maxDur="55" vehext="3" yellow="4" red="5" name="1"/>
         <param key="barrier2Phases" value="2,6"/>
         <param key="barrierPhases" value="4,8"/>
         <param key="ring1" value="0,2,0,4"/>

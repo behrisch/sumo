@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-01-09 13:53:18 by Eclipse SUMO netedit Version v1_21_0+1772-5a84b6bc508
+<!-- generated on 2025-07-09 15:53:57 by Eclipse SUMO netedit Version v1_23_1+0962-6b33e61ca3a
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -14,20 +14,21 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <additional-files value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/additionals.add.xml"/>
-        <route-files value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/routes.rou.xml"/>
-        <data-files value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/datas.dat.xml"/>
-        <meandata-files value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/datas.med.add.xml"/>
-        <sumo-net-file value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/net.net.xml"/>
+        <additional-files value="additionals.add.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <data-files value="datas.dat.xml"/>
+        <meandata-files value="datas.med.add.xml"/>
+        <sumo-net-file value="net.net.xml"/>
     </input>
 
     <output>
         <write-license value="true"/>
-        <output-file value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/net.net.xml"/>
+        <output-file value="net.net.xml"/>
     </output>
 
     <processing>
         <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
         <geometry.max-grade.fix value="false"/>
         <offset.disable-normalization value="true"/>
         <lefthand value="0"/>
@@ -46,20 +47,22 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <netedit>
         <ignore-supermode-question value="true"/>
+        <ignore.additionalelements value="0"/>
+        <ignore.routeelements value="0"/>
         <force-saving value="true"/>
     </netedit>
 
     <visualisation>
-        <gui-settings-file value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/gui-settings.xml"/>
+        <gui-settings-file value="gui-settings.xml"/>
         <window-size value="1280, 720"/>
         <window-pos value="50,50"/>
         <gui-testing value="true"/>
-        <gui-testing.setting-output value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/guisettingsoutput.xml"/>
+        <gui-testing.setting-output value="guisettingsoutput.xml"/>
     </visualisation>
 
     <report>
         <no-warnings value="true"/>
-        <error-log value="/home/palcraft/.texttest/tmp/netedit.gui.09Jan131143.24868/netedit.gui/network/trafficlights/joined/phases/actuated/buttons/moveup/log.txt"/>
+        <error-log value="log.txt"/>
     </report>
 
 </neteditConfiguration>
@@ -182,8 +185,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </edge>
 
     <tlLogic id="J0" type="actuated" programID="0" offset="0">
-        <phase duration="3"  state="grgrgrgrgrgrgrgrgrgr" minDur="6" maxDur="20" earliestEnd="10" latestEnd="12" name="B" next="0"/>
         <phase duration="31" state="rgrgrgrgrgrgrgrgrgrg" earliestEnd="15" latestEnd="25" name="A" next="1"/>
+        <phase duration="3"  state="grgrgrgrgrgrgrgrgrgr" minDur="6" maxDur="20" earliestEnd="10" latestEnd="12" name="B" next="0"/>
     </tlLogic>
 
     <junction id="J0" type="traffic_light" x="0.00" y="0.00" incLanes="-E2_0 -E2_1 -E2_2 -E1_0 -E1_1 -E1_2 -E3_0 -E3_1 -E3_2 -E0_0 -E0_1 -E0_2" intLanes=":J0_0_0 :J0_0_1 :J0_2_0 :J0_16_0 :J0_4_0 :J0_4_1 :J0_6_0 :J0_17_0 :J0_8_0 :J0_8_1 :J0_10_0 :J0_18_0 :J0_12_0 :J0_12_1 :J0_14_0 :J0_19_0" shape="-9.60,11.10 9.60,11.10 9.77,10.27 9.97,9.97 10.27,9.77 10.64,9.64 11.10,9.60 11.10,-9.60 10.27,-9.77 9.97,-9.97 9.77,-10.27 9.64,-10.64 9.60,-11.10 -9.60,-11.10 -9.77,-10.27 -9.97,-9.97 -10.27,-9.77 -10.64,-9.64 -11.10,-9.60 -11.10,9.60 -10.27,9.77 -9.97,9.97 -9.77,10.27 -9.64,10.64" rightOfWay="allwayStop">

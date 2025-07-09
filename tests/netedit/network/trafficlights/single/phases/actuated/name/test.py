@@ -35,13 +35,16 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "actuated")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "actuated")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.single.actuatedPhase.name, "custom name")
+netedit.modifyTLSTable(0, netedit.attrs.TLS.phases.actuated.name, "%%%%%%%")
+
+# set attribute
+netedit.modifyTLSTable(1, netedit.attrs.TLS.phases.actuated.name, "custom name")
 
 # type enter to save changes
 netedit.typeKey("enter")

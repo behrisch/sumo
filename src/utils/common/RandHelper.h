@@ -30,6 +30,8 @@
 #include <iostream>
 #include <algorithm>
 
+// TODO make this configurable
+#define SAVE_ONLY_COUNT 1000000
 
 // ===========================================================================
 // class declaration
@@ -214,10 +216,9 @@ public:
             rng = &myRandomNumberGenerator;
         }
         std::ostringstream oss;
-        if (rng->count < 1000000) { // TODO make this configurable
-            oss << rng->count;
-        } else {
-            oss << (*rng);
+        oss << rng->count;
+        if (rng->count >= SAVE_ONLY_COUNT) {
+            oss << " " << (*rng);
         }
         return oss.str();
     }
@@ -228,8 +229,8 @@ public:
             rng = &myRandomNumberGenerator;
         }
         std::istringstream iss(state);
-        if (state.size() < 10) {
-            iss >> rng->count;
+        iss >> rng->count;
+        if (rng->count < SAVE_ONLY_COUNT) {
             rng->discard(rng->count);
         } else {
             iss >> (*rng);
@@ -241,6 +242,10 @@ public:
         for (int i = (int)(v.size() - 1); i > 0; --i) {
             std::swap(*(v.begin() + i), *(v.begin() + rand(i, rng)));
         }
+    }
+
+    static long long int count() {
+        return myRandomNumberGenerator.count;
     }
 
 protected:

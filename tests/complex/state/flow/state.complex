@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-14 14:49:55 by Eclipse SUMO sumo Version v1_23_1+0571-0c0912eecef
+<!-- generated on 2025-07-08 16:23:52 by Eclipse SUMO sumo Version v1_23_1+0938-cf8b72380de
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -22,7 +22,7 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="micro" version="v1_23_1+0571-0c0912eecef" time="50.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="micro" version="v1_23_1+0938-cf8b72380de" time="50.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="!0" state="0" edges="0/1to1/1 3/1to4/1"/>
     <route id="!0.0!var#1" state="0" edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
     <route id="!0.1!var#1" state="0" edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
@@ -33,23 +33,23 @@
     <vType id="DEFAULT_VEHTYPE" sigma="0"/>
     <vehicle id="0.0" depart="0.00" route="!0.0!var#1" distance="400 1" speedFactor="1.0600" reroute="1" state="262304 0 1 5.10 0 6.39 49000 0 0" pos="56.80 51.80 10.60" speed="10.60 10.60" angle="90.00" posLat="0.00" waitingTime="100000 1 7000 9000">
         <device id="vehroute_0.0" state="0 0.00 0.00 5.10 1 !NULL 0 !0 device.rerouting -1 0"/>
-        <device id="routing_0.0" state="0"/>
+        <device id="routing_0.0" state="0 0"/>
     </vehicle>
     <vehicle id="0.1" depart="10.00" route="!0.1!var#1" distance="0 1" speedFactor="0.9383" reroute="1" state="262304 10000 0 5.10 0 1.34 49000 0 0" pos="358.49 353.49 9.38" speed="9.38 9.38" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_0.1" state="0 0.00 0.00 5.10 1 !NULL 10000 !0 device.rerouting -1 0"/>
-        <device id="routing_0.1" state="0"/>
+        <device id="routing_0.1" state="0 10000"/>
     </vehicle>
     <vehicle id="0.2" depart="20.00" route="!0.2!var#1" distance="0 1" speedFactor="1.0104" reroute="1" state="262304 20000 0 5.10 0 1.46 49000 0 0" pos="283.40 278.40 10.10" speed="10.10 10.10" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_0.2" state="0 0.00 0.00 5.10 1 !NULL 20000 !0 device.rerouting -1 0"/>
-        <device id="routing_0.2" state="0"/>
+        <device id="routing_0.2" state="0 20000"/>
     </vehicle>
     <vehicle id="0.3" depart="30.00" route="!0.3!var#1" distance="0 1" speedFactor="1.0827" reroute="1" state="262304 30000 0 5.10 0 1.60 49000 0 0" pos="193.50 188.50 10.83" speed="10.83 10.83" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_0.3" state="0 0.00 0.00 5.10 1 !NULL 30000 !0 device.rerouting -1 0"/>
-        <device id="routing_0.3" state="0"/>
+        <device id="routing_0.3" state="0 30000"/>
     </vehicle>
     <vehicle id="0.4" depart="40.00" route="!0.4!var#1" distance="0 1" speedFactor="1.0303" reroute="1" state="262304 40000 0 5.10 0 1.49 49000 0 0" pos="82.52 77.52 10.30" speed="10.30 10.30" angle="90.00" posLat="0.00" waitingTime="100000 0">
         <device id="vehroute_0.4" state="0 0.00 0.00 5.10 1 !NULL 40000 !0 device.rerouting -1 0"/>
-        <device id="routing_0.4" state="0"/>
+        <device id="routing_0.4" state="0 40000"/>
     </vehicle>
     <flowState id="0" begin="0.00" period="10.00" next="50.00" end="100.00" route="!0" done="5" index="5" reroute="1"/>
     <lane id="0/1to1/1_0">
@@ -73,7 +73,7 @@
     <tlLogic id="4/0" programID="0" phase="2" duration="16000"/>
     <tlLogic id="4/1" programID="0" phase="4" duration="7000"/>
     <tlLogic id="4/2" programID="0" phase="2" duration="16000"/>
-    <routingEngine>
+    <routingEngine last="50000">
         <edge id="0/1to1/1" speed="9.69" pastSpeed="0.00 2.60 5.20 7.80 10.40 10.60 10.60 10.60 10.60 10.60 5.30 6.60 7.90 9.20 9.99 9.99 9.99 9.99 9.99 9.99 6.66 7.53 8.39 9.26 10.03 10.03 10.03 10.03 10.03 10.03 7.52 8.17 8.82 9.47 10.12 10.23 10.23 10.23 10.21 9.09 6.37 6.58 7.10 9.53 10.15 10.15 10.15 10.15 10.15 10.15 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
         <edge id="1/1to2/1" speed="9.93" pastSpeed="10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 2.60 5.20 7.80 10.40 10.60 10.60 10.60 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00"/>
     </routingEngine>

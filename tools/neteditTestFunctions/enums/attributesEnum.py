@@ -597,170 +597,48 @@ class attrs:
     # TLS
 
     class TLS:
-        class common:
+
+        class attributes:
             TLID = 2
             TLType = 3
+            offset = 13
+            parameters = 15
 
-        class addPhases:
-            default = 0
-            duplicate = 1
-            red = 2
-            yellow = 3
-            green = 4
-            priorityGreen = 5
+        class phases:
 
-        class single:
+            class static:
+                dur = 1
+                state = 2
+                nxt = 3
+                name = 4
 
-            class attributes:
-                offset = 13
-                parameters = 15
+            class actuated:
+                dur = 1
+                minD = 2
+                maxD = 3
+                state = 4
+                earlyEnd = 5
+                latestEnd = 6
+                nxt = 7
+                name = 8
 
-            class staticPhase:
-                numPhases = 4
-                dur = (0 * numPhases)
-                state = (1 * numPhases)
-                nxt = (2 * numPhases)
-                name = (3 * numPhases)
-                addButton = (4 * numPhases)
-                deleteButton = (5 * numPhases)
-                moveUp = (6 * numPhases)
-                moveDown = (7 * numPhases)
-                cleanStates = (8 * numPhases)
-                groupSignal = (8 * numPhases) + 1
-                addStates = (8 * numPhases) + 2
-                ungroupSignal = (8 * numPhases) + 3
+            class delayBased:
+                dur = 1
+                minD = 2
+                maxD = 3
+                state = 4
+                nxt = 5
+                name = 6
 
-            class actuatedPhase:
-                numPhases = 4
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                earlyEnd = (4 * numPhases)
-                latestEnd = (5 * numPhases)
-                nxt = (6 * numPhases)
-                name = (7 * numPhases)
-                addButton = (8 * numPhases)
-                deleteButton = (9 * numPhases)
-                moveUp = (10 * numPhases)
-                moveDown = (11 * numPhases)
-                cleanStates = (12 * numPhases)
-                groupSignal = (12 * numPhases) + 1
-                addStates = (12 * numPhases) + 2
-                ungroupSignal = (12 * numPhases) + 3
-
-            class delayBasedPhase:
-                numPhases = 4
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                nxt = (4 * numPhases)
-                name = (5 * numPhases)
-                addButton = (6 * numPhases)
-                deleteButton = (7 * numPhases)
-                moveUp = (8 * numPhases)
-                moveDown = (9 * numPhases)
-                cleanStates = (10 * numPhases)
-                groupSignal = (10 * numPhases) + 1
-                addStates = (10 * numPhases) + 2
-                ungroupSignal = (10 * numPhases) + 3
-
-            class NEMAPhase:
-                numPhases = 4
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                vehext = (4 * numPhases)
-                yellow = (5 * numPhases)
-                red = (6 * numPhases)
-                nxt = (7 * numPhases)
-                name = (8 * numPhases)
-                addButton = (9 * numPhases)
-                deleteButton = (10 * numPhases)
-                moveUp = (11 * numPhases)
-                moveDown = (12 * numPhases)
-                cleanStates = (13 * numPhases)
-                groupSignal = (13 * numPhases) + 1
-                addStates = (13 * numPhases) + 2
-                ungroupSignal = (13 * numPhases) + 3
-
-        class join:
-            class attributes:
-                offset = 13
-                parameters = 15
-
-            class staticPhase:
-                numPhases = 2
-                dur = (0 * numPhases)
-                state = (1 * numPhases)
-                nxt = (2 * numPhases)
-                name = (3 * numPhases)
-                addButton = (4 * numPhases)
-                deleteButton = (5 * numPhases)
-                moveUp = (6 * numPhases)
-                moveDown = (7 * numPhases)
-                cleanStates = (8 * numPhases)
-                groupSignal = (8 * numPhases) + 1
-                addStates = (8 * numPhases) + 2
-                ungroupSignal = (8 * numPhases) + 3
-
-            class actuatedPhase:
-                numPhases = 2
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                earlyEnd = (4 * numPhases)
-                latestEnd = (5 * numPhases)
-                nxt = (6 * numPhases)
-                name = (7 * numPhases)
-                addButton = (8 * numPhases)
-                deleteButton = (9 * numPhases)
-                moveUp = (10 * numPhases)
-                moveDown = (11 * numPhases)
-                cleanStates = (12 * numPhases)
-                groupSignal = (12 * numPhases) + 1
-                addStates = (12 * numPhases) + 2
-                ungroupSignal = (12 * numPhases) + 3
-
-            class delayBasedPhase:
-                numPhases = 2
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                nxt = (4 * numPhases)
-                name = (5 * numPhases)
-                addButton = (6 * numPhases)
-                deleteButton = (7 * numPhases)
-                moveUp = (8 * numPhases)
-                moveDown = (9 * numPhases)
-                cleanStates = (10 * numPhases)
-                groupSignal = (10 * numPhases) + 1
-                addStates = (10 * numPhases) + 2
-                ungroupSignal = (10 * numPhases) + 3
-
-            class NEMAPhase:
-                numPhases = 2
-                dur = (0 * numPhases)
-                minD = (1 * numPhases)
-                maxD = (2 * numPhases)
-                state = (3 * numPhases)
-                vehext = (4 * numPhases)
-                yellow = (5 * numPhases)
-                red = (6 * numPhases)
-                nxt = (7 * numPhases)
-                name = (8 * numPhases)
-                addButton = (9 * numPhases)
-                deleteButton = (10 * numPhases)
-                moveUp = (11 * numPhases)
-                moveDown = (12 * numPhases)
-                cleanStates = (13 * numPhases)
-                groupSignal = (13 * numPhases) + 1
-                addStates = (13 * numPhases) + 2
-                ungroupSignal = (13 * numPhases) + 3
+            class NEMA:
+                dur = 1
+                minD = 2
+                maxD = 3
+                state = 4
+                vehext = 5
+                yellow = 6
+                red = 7
+                nxt = 8
 
         create = 3
         createOverlapped = 4

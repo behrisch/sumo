@@ -32,7 +32,10 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # add phase
-netedit.addGreenPriorityPhase(netedit.attrs.TLS.join.delayBasedPhase.addButton)
+netedit.addGreenPriorityPhase(0)
+
+# add phase
+netedit.addGreenPriorityPhase(2)
 
 # type enter to save changes
 netedit.typeKey("enter")

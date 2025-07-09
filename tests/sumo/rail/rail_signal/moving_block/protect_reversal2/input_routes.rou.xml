@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="slow" vClass="rail" length="50" maxSpeed="5"/>
+    <vType id="fast" vClass="rail" length="50" maxSpeed="20"/>
+    <trip id="v0" type="slow" depart="1.00" from="c" to="-c"/>
+    <trip id="v1" type="fast" depart="2.00" from="c" to="-c"/>
+</routes>

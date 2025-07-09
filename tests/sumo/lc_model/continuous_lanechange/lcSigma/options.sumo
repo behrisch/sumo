@@ -1,2 +1,2 @@
 --no-step-log --no-duration-log -n net.net.xml -r input_routes.rou.xml --fcd-output fcd.xml --step-length 0.5 --lanechange.duration 6
---fcd-output.attributes all
+--fcd-output.attributes traffic,misc

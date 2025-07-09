@@ -226,9 +226,6 @@ public:
     /// @brief called when the command/FXCall save SumoConfig is updated
     long onUpdSaveSumoConfig(FXObject*, FXSelector, void*);
 
-    /// @brief called when the command/FXCall focus TLSTable is executed
-    long onCmdFocusTLSTable(FXObject*, FXSelector, void*);
-
     /// @brief called when the command/FXCall save TLSPrograms is executed
     long onCmdSaveTLSPrograms(FXObject*, FXSelector, void*);
 

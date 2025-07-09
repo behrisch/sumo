@@ -134,7 +134,8 @@
 
     <xsd:complexType name="deviceType">
         <xsd:attribute name="id" type="xsd:string" use="required"/>
-        <xsd:attribute name="state" type="xsd:string" use="required"/>
+        <!-- device optional if vehicle has not departed yet -->
+        <xsd:attribute name="state" type="xsd:string" use="optional"/>
         <!-- device specific attributes -->
         <xsd:attribute name="exitTimes" type="xsd:string" use="optional"/>
         <xsd:attribute name="edge" type="xsd:string" use="optional"/>
@@ -251,6 +252,7 @@
         <xsd:sequence>
             <xsd:element name="edge" type="routingEngineEdgeType" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
+        <xsd:attribute name="last" type="xsd:int" use="required"/>
     </xsd:complexType>
 
     <xsd:complexType name="routingEngineEdgeType">

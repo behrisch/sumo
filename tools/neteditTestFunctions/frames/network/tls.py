@@ -145,177 +145,57 @@ def resetAllTLSPhases(joined):
     typeKey('space')
 
 
-def pressTLSPhaseButton(position):
+def pressTLSPhaseButton(button):
     """
     @brief add default phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def modifyTLSTable(position, value):
+def modifyTLSTable(column, row, value):
     """
     @brief modify attribute of type int/float/string
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    time.sleep(1)
-    # jump to attribute
-    for _ in range(position + 1):
-        typeKey('tab')
-    # paste the new value
-    updateText(value)
-    # type Enter to commit change
-    typeKey('enter')
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addDefaultPhase(position):
+def addDefaultPhase(row):
     """
     @brief add default phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addDuplicatePhase(position):
+def addDuplicatePhase(row):
     """
     @brief duplicate phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # go to button
-    for _ in range(attrs.TLS.addPhases.duplicate):
-        typeKey('right')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addRedPhase(position):
+def addRedPhase(row):
     """
     @brief add red phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # go to button
-    for _ in range(attrs.TLS.addPhases.red):
-        typeKey('right')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addYellowPhase(position):
+def addYellowPhase(row):
     """
     @brief add yellow phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # go to button
-    for _ in range(attrs.TLS.addPhases.yellow):
-        typeKey('right')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addGreenPhase(position):
+def addGreenPhase(row):
     """
     @brief add green phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # go to button
-    for _ in range(attrs.TLS.addPhases.green):
-        typeKey('right')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")
 
 
-def addGreenPriorityPhase(position):
+def addGreenPriorityPhase(row):
     """
     @brief add priority phase
     """
-    # focus current frame
-    focusOnFrame()
-    # now focus the table
-    typeThreeKeys('ctrl', 'shift', 't')
-    # go to the button
-    for _ in range(position + 1):
-        typeKey('tab')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
-    # go to button
-    for _ in range(attrs.TLS.addPhases.priorityGreen):
-        typeKey('right')
-    # add phase
-    typeKey('space')
-    # wait
-    time.sleep(DELAY_SELECT)
+    raise ValueError("This function cannot be used in external tests")

@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-09 09:01:59 by Eclipse SUMO sumo Version v1_23_1+0953-fd1a9fac310
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="vehroutes.xml"/>
+        <save-state.times value="500"/>
+        <save-state.files value="state.xml"/>
+        <save-state.rng value="true"/>
+    </output>
+
+    <routing>
+        <weights.random-factor value="5"/>
+        <device.rerouting.period value="30"/>
+    </routing>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="32" depart="61.00" arrival="111.00">
+        <route edges="4/1to4/0"/>
+    </vehicle>
+
+    <vehicle id="0" depart="36.00" arrival="129.00">
+        <route edges="2/1to1/1 1/1to1/0"/>
+    </vehicle>
+
+    <vehicle id="22" depart="47.00" arrival="200.00">
+        <route edges="4/0to4/1 4/1to3/1 3/1to4/1"/>
+    </vehicle>
+
+    <vehicle id="4" depart="64.00" arrival="218.00">
+        <route edges="3/2to4/2 4/2to3/2 3/2to3/1"/>
+    </vehicle>
+
+    <vehicle id="35" depart="66.00" arrival="225.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/2to4/1" reason="device.rerouting" replacedAtTime="96.00" probability="0" edges="4/2to4/1 4/1to3/1 3/1to3/2 3/2to3/1"/>
+            <route edges="4/2to4/1 4/1to4/2 4/2to3/2 3/2to3/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="15" depart="51.00" arrival="226.00">
+        <route edges="3/1to4/1 4/1to4/0 4/0to3/0"/>
+    </vehicle>
+
+    <vehicle id="2" depart="16.00" arrival="241.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/0to2/0" reason="device.rerouting" replacedAtTime="76.00" probability="0" edges="1/0to2/0 2/0to2/1 2/1to1/1 1/1to1/2 1/2to0/2"/>
+            <route replacedOnEdge="2/0to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="106.00" probability="0" edges="1/0to2/0 2/0to2/1 2/1to2/2 2/2to1/2 1/2to0/2"/>
+            <route edges="1/0to2/0 2/0to2/1 2/1to1/1 1/1to1/2 1/2to0/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="38" depart="104.00" arrival="244.00">
+        <route edges="3/1to3/2 3/2to3/1"/>
+    </vehicle>
+
+    <vehicle id="16" depart="53.00" arrival="255.00">
+        <route edges="0/2to1/2 1/2to1/1 1/1to1/0 1/0to0/0"/>
+    </vehicle>
+
+    <vehicle id="14" depart="37.00" arrival="259.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/2to1/2" reason="device.rerouting" replacedAtTime="67.00" probability="0" edges="0/2to1/2 1/2to2/2 2/2to2/1 2/1to2/0"/>
+            <route edges="0/2to1/2 1/2to1/1 1/1to2/1 2/1to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="30" depart="88.00" arrival="260.00">
+        <route edges="1/0to1/1 1/1to1/2 1/2to2/2"/>
+    </vehicle>
+
+    <vehicle id="18" depart="158.00" arrival="269.00">
+        <route edges="1/2to2/2 2/2to3/2"/>
+    </vehicle>
+
+    <vehicle id="36" depart="226.00" arrival="279.00">
+        <route edges="1/1to0/1"/>
+    </vehicle>
+
+    <vehicle id="11" depart="216.00" arrival="290.00">
+        <route edges="2/1to3/1 3/1to3/2"/>
+    </vehicle>
+
+    <vehicle id="37" depart="106.00" arrival="293.00">
+        <route edges="2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/2"/>
+    </vehicle>
+
+    <vehicle id="52" depart="217.00" arrival="312.00">
+        <route edges="0/1to0/0 0/0to1/0"/>
+    </vehicle>
+
+    <vehicle id="48" depart="223.00" arrival="320.00">
+        <route edges="1/1to0/1 0/1to0/0"/>
+    </vehicle>
+
+    <vehicle id="12" depart="174.00" arrival="346.00">
+        <route edges="2/0to2/1 2/1to2/2 2/2to2/1"/>
+    </vehicle>
+
+    <vehicle id="34" depart="148.00" arrival="347.00">
+        <route edges="0/1to1/1 1/1to1/2 1/2to1/1"/>
+    </vehicle>
+
+    <vehicle id="44" depart="156.00" arrival="348.00">
+        <route edges="3/1to4/1 4/1to3/1 3/1to2/1"/>
+    </vehicle>
+
+    <vehicle id="5" depart="80.00" arrival="350.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/0to1/0" reason="device.rerouting" replacedAtTime="110.00" probability="0" edges="2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/0"/>
+            <route replacedOnEdge="1/0to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="170.00" probability="0" edges="2/0to1/0 1/0to1/1 1/1to0/1 0/1to0/0"/>
+            <route edges="2/0to1/0 1/0to1/1 1/1to1/2 1/2to0/2 0/2to0/1 0/1to0/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="9" depart="38.00" arrival="354.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to3/1" reason="device.rerouting" replacedAtTime="68.00" probability="0" edges="3/0to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to0/2 0/2to1/2"/>
+            <route edges="3/0to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2 0/2to1/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="27" depart="126.00" arrival="357.00">
+        <route edges="3/1to4/1 4/1to3/1 3/1to2/1 2/1to2/2"/>
+    </vehicle>
+
+    <vehicle id="43" depart="180.00" arrival="365.00">
+        <route edges="4/2to3/2 3/2to4/2 4/2to4/1 4/1to4/0"/>
+    </vehicle>
+
+    <vehicle id="24" depart="219.00" arrival="378.00">
+        <route edges="1/1to1/2 1/2to0/2 0/2to1/2"/>
+    </vehicle>
+
+    <vehicle id="26" depart="154.00" arrival="388.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/1to3/0" reason="device.rerouting" replacedAtTime="184.00" probability="0" edges="3/1to3/0 3/0to3/1 3/1to4/1 4/1to4/2 4/2to3/2"/>
+            <route edges="3/1to3/0 3/0to3/1 3/1to3/2 3/2to4/2 4/2to3/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="68" depart="200.00" arrival="388.00">
+        <route edges="3/2to3/1 3/1to4/1 4/1to4/0 4/0to3/0"/>
+    </vehicle>
+
+    <vehicle id="66" depart="207.00" arrival="390.00">
+        <route edges="1/0to1/1 1/1to2/1 2/1to1/1"/>
+    </vehicle>
+
+    <vehicle id="45" depart="220.00" arrival="390.00">
+        <route edges="3/1to3/0 3/0to2/0 2/0to1/0"/>
+    </vehicle>
+
+    <vehicle id="56" depart="111.00" arrival="391.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="171.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1"/>
+            <route edges="4/0to4/1 4/1to3/1 3/1to2/1 2/1to2/2 2/2to2/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="17" depart="62.00" arrival="398.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="92.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to3/2 3/2to2/2 2/2to3/2"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="122.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to2/1 2/1to2/2 2/2to3/2"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="152.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to3/2 3/2to2/2 2/2to3/2"/>
+            <route edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to2/2 2/2to3/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="50" depart="92.00" arrival="402.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/2to2/1" reason="device.rerouting" replacedAtTime="122.00" probability="0" edges="2/2to2/1 2/1to2/0 2/0to1/0 1/0to0/0 0/0to0/1"/>
+            <route replacedOnEdge="2/2to2/1" reason="device.rerouting" replacedAtTime="152.00" probability="0" edges="2/2to2/1 2/1to1/1 1/1to0/1 0/1to0/0 0/0to0/1"/>
+            <route edges="2/2to2/1 2/1to2/0 2/0to1/0 1/0to0/0 0/0to0/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="82" depart="233.00" arrival="419.00">
+        <route edges="0/1to0/0 0/0to1/0 1/0to1/1 1/1to2/1"/>
+    </vehicle>
+
+    <vehicle id="39" depart="169.00" arrival="426.00">
+        <route edges="4/2to4/1 4/1to3/1 3/1to2/1 2/1to3/1"/>
+    </vehicle>
+
+    <vehicle id="25" depart="78.00" arrival="431.00">
+        <route edges="0/0to0/1 0/1to1/1 1/1to2/1 2/1to3/1 3/1to3/0"/>
+    </vehicle>
+
+    <vehicle id="6" depart="125.00" arrival="436.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to4/0" reason="device.rerouting" replacedAtTime="155.00" probability="0" edges="4/1to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="215.00" probability="0" edges="4/1to4/0 4/0to3/0 3/0to3/1 3/1to3/2 3/2to2/2 2/2to1/2"/>
+            <route replacedOnEdge="3/0to3/1" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="245.00" probability="0" edges="4/1to4/0 4/0to3/0 3/0to3/1 3/1to2/1 2/1to2/2 2/2to1/2"/>
+            <route edges="4/1to4/0 4/0to3/0 3/0to3/1 3/1to3/2 3/2to2/2 2/2to1/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="89" depart="389.00" arrival="437.00">
+        <route edges="2/2to2/1"/>
+    </vehicle>
+
+    <vehicle id="75" depart="206.00" arrival="438.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/0to0/1" reason="device.rerouting" replacedAtTime="236.00" probability="0" edges="0/0to0/1 0/1to0/0 0/0to1/0 1/0to2/0 2/0to1/0"/>
+            <route replacedOnEdge="0/1to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="296.00" probability="0" edges="0/0to0/1 0/1to1/1 1/1to2/1 2/1to2/0 2/0to1/0"/>
+            <route edges="0/0to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to1/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="47" depart="209.00" arrival="438.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to3/1" reason="device.rerouting" replacedAtTime="269.00" probability="0" edges="4/1to3/1 3/1to2/1 2/1to2/0 2/0to3/0"/>
+            <route edges="4/1to3/1 3/1to3/0 3/0to2/0 2/0to3/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="19" depart="310.00" arrival="439.00">
+        <route edges="2/1to1/1 1/1to1/0"/>
+    </vehicle>
+
+    <vehicle id="55" depart="315.00" arrival="440.00">
+        <route edges="2/1to3/1 3/1to3/0"/>
+    </vehicle>
+
+    <vehicle id="98" depart="244.00" arrival="448.00">
+        <route edges="2/2to1/2 1/2to0/2 0/2to0/1 0/1to1/1"/>
+    </vehicle>
+
+    <vehicle id="29" depart="214.00" arrival="450.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/0to3/0" reason="device.rerouting" replacedAtTime="244.00" probability="0" edges="4/0to3/0 3/0to2/0 2/0to2/1 2/1to2/2"/>
+            <route edges="4/0to3/0 3/0to3/1 3/1to2/1 2/1to2/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="53" depart="134.00" arrival="456.00">
+        <route edges="1/2to0/2 0/2to0/1 0/1to1/1 1/1to2/1 2/1to2/2"/>
+    </vehicle>
+
+    <vehicle id="7" depart="225.00" arrival="468.00">
+        <route edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to2/0"/>
+    </vehicle>
+
+    <vehicle id="76" depart="198.00" arrival="469.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to4/0" reason="device.rerouting" replacedAtTime="228.00" probability="0" edges="4/1to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2"/>
+            <route edges="4/1to4/0 4/0to3/0 3/0to3/1 3/1to3/2 3/2to2/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="62" depart="200.00" arrival="470.00">
+        <route edges="3/0to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/0"/>
+    </vehicle>
+
+    <vehicle id="85" depart="191.00" arrival="472.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/1to0/0" reason="device.rerouting" replacedAtTime="221.00" probability="0" edges="0/1to0/0 0/0to0/1 0/1to1/1 1/1to2/1 2/1to2/2"/>
+            <route edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to2/1 2/1to2/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="80" depart="312.00" arrival="474.00">
+        <route edges="1/0to1/1 1/1to1/0 1/0to2/0"/>
+    </vehicle>
+
+    <vehicle id="63" depart="388.00" arrival="477.00">
+        <route edges="3/1to3/2 3/2to3/1"/>
+    </vehicle>
+
+    <vehicle id="95" depart="316.00" arrival="479.00">
+        <route edges="3/0to3/1 3/1to2/1 2/1to1/1"/>
+    </vehicle>
+
+    <vehicle id="78" depart="393.00" arrival="480.00">
+        <route edges="3/1to3/2 3/2to2/2"/>
+    </vehicle>
+
+    <vehicle id="33" depart="234.00" arrival="483.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/2to3/2" reason="device.rerouting" replacedAtTime="264.00" probability="0" edges="2/2to3/2 3/2to3/1 3/1to2/1 2/1to2/0"/>
+            <route edges="2/2to3/2 3/2to2/2 2/2to2/1 2/1to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="3" depart="74.00" arrival="485.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/1to4/1" reason="device.rerouting" replacedAtTime="104.00" probability="0" edges="3/1to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/0"/>
+            <route replacedOnEdge="4/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="194.00" probability="0" edges="3/1to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/0"/>
+            <route replacedOnEdge="3/2to2/2" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="284.00" probability="0" edges="3/1to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/0"/>
+            <route edges="3/1to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to0/1 0/1to0/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="1" depart="147.00" arrival="485.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/0to4/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="237.00" probability="0" edges="4/1to4/0 4/0to4/1 4/1to3/1 3/1to2/1"/>
+            <route replacedOnEdge="4/1to4/2" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="297.00" probability="0" edges="4/1to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to3/1 3/1to2/1"/>
+            <route replacedOnEdge="4/1to4/2" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="327.00" probability="0" edges="4/1to4/0 4/0to4/1 4/1to4/2 4/2to4/1 4/1to3/1 3/1to2/1"/>
+            <route edges="4/1to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to3/1 3/1to2/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="28" depart="135.00" arrival="487.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="285.00" probability="0" edges="0/1to1/1 1/1to2/1 2/1to2/0 2/0to3/0 3/0to2/0"/>
+            <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to3/0 3/0to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="8" depart="309.00" arrival="488.00">
+        <route edges="2/1to2/0 2/0to3/0 3/0to4/0 4/0to4/1"/>
+    </vehicle>
+
+    <vehicle id="54" depart="302.00" arrival="490.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/1to1/2" reason="device.rerouting" replacedAtTime="332.00" probability="0" edges="1/1to1/2 1/2to1/1 1/1to2/1 2/1to2/0"/>
+            <route edges="1/1to1/2 1/2to2/2 2/2to2/1 2/1to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="73" depart="312.00" arrival="491.00">
+        <route edges="2/1to2/0 2/0to3/0 3/0to4/0 4/0to4/1"/>
+    </vehicle>
+
+    <vehicle id="20" depart="154.00" arrival="493.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/2to1/2" reason="device.rerouting" replacedAtTime="184.00" probability="0" edges="2/2to1/2 1/2to2/2 2/2to3/2 3/2to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="2/2to1/2" reason="device.rerouting" replacedAtTime="214.00" probability="0" edges="2/2to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/2to2/2" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="274.00" probability="0" edges="2/2to1/2 1/2to2/2 2/2to3/2 3/2to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/2to2/2" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="304.00" probability="0" edges="2/2to1/2 1/2to2/2 2/2to3/2 3/2to4/2 4/2to4/1 4/1to4/2"/>
+            <route edges="2/2to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="91" depart="319.00" arrival="497.00">
+        <route edges="3/0to3/1 3/1to2/1 2/1to2/2 2/2to1/2"/>
+    </vehicle>
+
+    <vehicle id="96" depart="355.00" arrival="502.00">
+        <route edges="4/1to4/0 4/0to4/1 4/1to4/2"/>
+    </vehicle>
+
+    <vehicle id="59" depart="215.00" arrival="503.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to3/1" reason="device.rerouting" replacedAtTime="245.00" probability="0" edges="3/0to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to1/1"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="275.00" probability="0" edges="3/0to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to1/1"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="305.00" probability="0" edges="3/0to3/1 3/1to2/1 2/1to2/2 2/2to1/2 1/2to1/1"/>
+            <route edges="3/0to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to1/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="49" depart="229.00" arrival="503.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/0to0/1" reason="device.rerouting" replacedAtTime="259.00" probability="0" edges="0/0to0/1 0/1to1/1 1/1to1/2 1/2to2/2 2/2to1/2"/>
+            <route edges="0/0to0/1 0/1to0/2 0/2to1/2 1/2to2/2 2/2to1/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="71" depart="234.00" arrival="519.00">
+        <route edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to4/1"/>
+    </vehicle>
+
+    <vehicle id="72" depart="302.00" arrival="519.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/1to0/1" reason="device.rerouting" replacedAtTime="332.00" probability="0" edges="1/1to0/1 0/1to0/0 0/0to1/0 1/0to2/0 2/0to1/0"/>
+            <route replacedOnEdge="0/1to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="362.00" probability="0" edges="1/1to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to1/0"/>
+            <route replacedOnEdge="0/1to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="392.00" probability="0" edges="1/1to0/1 0/1to1/1 1/1to2/1 2/1to2/0 2/0to1/0"/>
+            <route edges="1/1to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to1/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="64" depart="324.00" arrival="519.00">
+        <route edges="0/1to1/1 1/1to1/0 1/0to1/1"/>
+    </vehicle>
+
+    <vehicle id="10" depart="210.00" arrival="525.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/2to1/2" reason="device.rerouting" replacedAtTime="240.00" probability="0" edges="0/2to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to3/2"/>
+            <route replacedOnEdge="1/2to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="270.00" probability="0" edges="0/2to1/2 1/2to1/1 1/1to1/0 1/0to2/0 2/0to2/1 2/1to3/1 3/1to3/2"/>
+            <route replacedOnEdge="1/2to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="300.00" probability="0" edges="0/2to1/2 1/2to1/1 1/1to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to3/2"/>
+            <route replacedOnEdge="1/2to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="330.00" probability="0" edges="0/2to1/2 1/2to1/1 1/1to1/2 1/2to2/2 2/2to3/2 3/2to3/1 3/1to3/2"/>
+            <route edges="0/2to1/2 1/2to1/1 1/1to2/1 2/1to3/1 3/1to3/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="51" depart="228.00" arrival="528.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/1to3/0" reason="device.rerouting" replacedAtTime="258.00" probability="0" edges="3/1to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to0/1 0/1to0/0"/>
+            <route replacedOnEdge="3/0to2/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="288.00" probability="0" edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to1/1 1/1to0/1 0/1to0/0"/>
+            <route replacedOnEdge="3/0to2/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="318.00" probability="0" edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/0"/>
+            <route replacedOnEdge="2/0to1/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="378.00" probability="0" edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to1/1 1/1to0/1 0/1to0/0"/>
+            <route edges="3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="31" depart="103.00" arrival="533.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/0to0/0" reason="device.rerouting" replacedAtTime="133.00" probability="0" edges="1/0to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/0to0/0" reason="device.rerouting" replacedAtTime="163.00" probability="0" edges="1/0to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to4/1 4/1to4/2"/>
+            <route replacedOnEdge="0/0to1/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="193.00" probability="0" edges="1/0to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/0to2/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="253.00" probability="0" edges="1/0to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/0to2/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="283.00" probability="0" edges="1/0to0/0 0/0to1/0 1/0to2/0 2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route edges="1/0to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to4/1 4/1to4/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="60" depart="271.00" arrival="541.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/0to2/1" reason="device.rerouting" replacedAtTime="301.00" probability="0" edges="2/0to2/1 2/1to2/0 2/0to3/0 3/0to4/0 4/0to4/1"/>
+            <route replacedOnEdge="2/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="361.00" probability="0" edges="2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/0 4/0to4/1"/>
+            <route replacedOnEdge="2/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="391.00" probability="0" edges="2/0to2/1 2/1to3/1 3/1to3/0 3/0to4/0 4/0to4/1"/>
+            <route edges="2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/0 4/0to4/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="13" depart="197.00" arrival="547.00">
+        <route edges="1/2to1/1 1/1to1/2 1/2to2/2 2/2to3/2 3/2to4/2 4/2to4/1"/>
+    </vehicle>
+
+    <vehicle id="58" depart="317.00" arrival="551.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/0to1/0" reason="device.rerouting" replacedAtTime="377.00" probability="0" edges="2/0to1/0 1/0to0/0 0/0to0/1 0/1to1/1"/>
+            <route edges="2/0to1/0 1/0to1/1 1/1to0/1 0/1to1/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="74" depart="234.00" arrival="561.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to3/1" reason="device.rerouting" replacedAtTime="264.00" probability="0" edges="4/1to3/1 3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0"/>
+            <route replacedOnEdge="4/1to3/1" reason="device.rerouting" replacedAtTime="294.00" probability="0" edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="324.00" probability="0" edges="4/1to3/1 3/1to2/1 2/1to2/0 2/0to1/0 1/0to0/0"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="354.00" probability="0" edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="384.00" probability="0" edges="4/1to3/1 3/1to2/1 2/1to2/0 2/0to1/0 1/0to0/0"/>
+            <route edges="4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="42" depart="312.00" arrival="561.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/1to3/1" reason="device.rerouting" replacedAtTime="372.00" probability="0" edges="2/1to3/1 3/1to3/2 3/2to2/2 2/2to3/2"/>
+            <route edges="2/1to3/1 3/1to2/1 2/1to2/2 2/2to3/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="86" depart="206.00" arrival="566.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/0to3/0" reason="device.rerouting" replacedAtTime="236.00" probability="0" edges="4/0to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/2"/>
+            <route edges="4/0to3/0 3/0to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="84" depart="255.00" arrival="567.00">
+        <route edges="4/1to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to3/1"/>
+    </vehicle>
+
+    <vehicle id="40" depart="231.00" arrival="579.00">
+        <route edges="0/2to0/1 0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0"/>
+    </vehicle>
+
+    <vehicle id="67" depart="170.00" arrival="581.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/0to4/1" reason="device.rerouting" replacedAtTime="230.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+            <route replacedOnEdge="4/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="260.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to2/1 2/1to2/2 2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/2"/>
+            <route replacedOnEdge="4/1to3/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="290.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+            <route replacedOnEdge="3/1to3/2" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="320.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/2"/>
+            <route replacedOnEdge="3/1to3/2" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="350.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+            <route replacedOnEdge="3/2to2/2" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="380.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to0/2 0/2to0/1 0/1to0/2"/>
+            <route replacedOnEdge="2/2to2/1" replacedOnIndex="4" reason="device.rerouting" replacedAtTime="410.00" probability="0" edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to1/0 1/0to0/0 0/0to0/1 0/1to0/2"/>
+            <route edges="4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to0/1 0/1to0/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="97" depart="279.00" arrival="592.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/0to0/1" reason="device.rerouting" replacedAtTime="309.00" probability="0" edges="0/0to0/1 0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to2/0"/>
+            <route edges="0/0to0/1 0/1to1/1 1/1to1/0 1/0to2/0 2/0to3/0 3/0to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="90" depart="350.00" arrival="592.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/0to1/0" reason="device.rerouting" replacedAtTime="380.00" probability="0" edges="0/0to1/0 1/0to1/1 1/1to0/1 0/1to0/2"/>
+            <route edges="0/0to1/0 1/0to0/0 0/0to0/1 0/1to0/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="41" depart="135.00" arrival="593.00">
+        <routeDistribution>
+            <route replacedOnEdge="4/1to4/2" reason="device.rerouting" replacedAtTime="165.00" probability="0" edges="4/1to4/2 4/2to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+            <route replacedOnEdge="4/2to3/2" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="195.00" probability="0" edges="4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to1/1 1/1to1/0 1/0to0/0"/>
+            <route replacedOnEdge="3/2to3/1" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="255.00" probability="0" edges="4/1to4/2 4/2to3/2 3/2to3/1 3/1to2/1 2/1to1/1 1/1to1/0 1/0to0/0"/>
+            <route replacedOnEdge="3/2to3/1" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="315.00" probability="0" edges="4/1to4/2 4/2to3/2 3/2to3/1 3/1to2/1 2/1to2/0 2/0to1/0 1/0to0/0"/>
+            <route edges="4/1to4/2 4/2to3/2 3/2to3/1 3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="94" depart="302.00" arrival="596.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/1to1/0" reason="device.rerouting" replacedAtTime="332.00" probability="0" edges="1/1to1/0 1/0to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+            <route replacedOnEdge="1/0to1/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="362.00" probability="0" edges="1/1to1/0 1/0to1/1 1/1to0/1 0/1to0/2 0/2to0/1"/>
+            <route edges="1/1to1/0 1/0to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="57" depart="391.00" arrival="603.00">
+        <route edges="1/1to0/1 0/1to1/1 1/1to2/1 2/1to1/1"/>
+    </vehicle>
+
+    <vehicle id="61" depart="316.00" arrival="605.00">
+        <route edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1"/>
+    </vehicle>
+
+    <vehicle id="81" depart="324.00" arrival="605.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/1to0/0" reason="device.rerouting" replacedAtTime="354.00" probability="0" edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to3/2"/>
+            <route edges="0/1to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to3/1 3/1to3/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="79" depart="255.00" arrival="607.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="285.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to2/1 2/1to2/0"/>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="315.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to2/1 2/1to2/0"/>
+            <route edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to2/1 2/1to2/0"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="69" depart="341.00" arrival="607.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/1to1/1" reason="device.rerouting" replacedAtTime="371.00" probability="0" edges="0/1to1/1 1/1to1/0 1/0to2/0 2/0to3/0 3/0to3/1"/>
+            <route replacedOnEdge="1/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="401.00" probability="0" edges="0/1to1/1 1/1to2/1 2/1to2/0 2/0to3/0 3/0to3/1"/>
+            <route replacedOnEdge="1/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="431.00" probability="0" edges="0/1to1/1 1/1to2/1 2/1to3/1 3/1to3/0 3/0to3/1"/>
+            <route edges="0/1to1/1 1/1to2/1 2/1to2/0 2/0to3/0 3/0to3/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="46" depart="228.00" arrival="621.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="258.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to3/2 3/2to2/2 2/2to1/2 1/2to2/2"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="288.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to2/2"/>
+            <route replacedOnEdge="3/0to2/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="318.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to1/2 1/2to2/2"/>
+            <route edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to1/0 1/0to1/1 1/1to1/2 1/2to2/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="21" depart="213.00" arrival="628.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="243.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="273.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1 0/1to0/2 0/2to0/1"/>
+            <route replacedOnEdge="4/0to3/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="303.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to3/1 3/1to2/1 2/1to2/2 2/2to1/2 1/2to0/2 0/2to0/1"/>
+            <route replacedOnEdge="2/0to2/1" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="363.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to2/2 2/2to1/2 1/2to0/2 0/2to0/1"/>
+            <route replacedOnEdge="2/0to2/1" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="393.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+            <route replacedOnEdge="2/0to2/1" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="423.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to0/1 0/1to0/2 0/2to0/1"/>
+            <route replacedOnEdge="2/1to1/1" replacedOnIndex="4" reason="device.rerouting" replacedAtTime="453.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to1/2 1/2to0/2 0/2to0/1"/>
+            <route edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to2/1 2/1to1/1 1/1to0/1 0/1to0/2 0/2to0/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="87" depart="313.00" arrival="629.00">
+        <route edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to3/0"/>
+    </vehicle>
+
+    <vehicle id="77" depart="391.00" arrival="648.00">
+        <routeDistribution>
+            <route replacedOnEdge="1/1to1/2" reason="device.rerouting" replacedAtTime="421.00" probability="0" edges="1/1to1/2 1/2to2/2 2/2to3/2 3/2to3/1 3/1to2/1"/>
+            <route replacedOnEdge="1/2to2/2" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="451.00" probability="0" edges="1/1to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to2/1"/>
+            <route replacedOnEdge="1/2to2/2" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="481.00" probability="0" edges="1/1to1/2 1/2to2/2 2/2to3/2 3/2to3/1 3/1to2/1"/>
+            <route edges="1/1to1/2 1/2to2/2 2/2to2/1 2/1to3/1 3/1to2/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="83" depart="353.00" arrival="648.00">
+        <routeDistribution>
+            <route replacedOnEdge="0/1to0/0" reason="device.rerouting" replacedAtTime="383.00" probability="0" edges="0/1to0/0 0/0to0/1 0/1to1/1 1/1to2/1 2/1to1/1"/>
+            <route replacedOnEdge="0/0to1/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="413.00" probability="0" edges="0/1to0/0 0/0to1/0 1/0to2/0 2/0to2/1 2/1to1/1"/>
+            <route edges="0/1to0/0 0/0to1/0 1/0to1/1 1/1to2/1 2/1to1/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="65" depart="309.00" arrival="655.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/1to3/1" reason="device.rerouting" replacedAtTime="339.00" probability="0" edges="2/1to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to0/2 0/2to1/2"/>
+            <route replacedOnEdge="3/1to2/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="399.00" probability="0" edges="2/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/2 0/2to1/2"/>
+            <route edges="2/1to3/1 3/1to2/1 2/1to2/2 2/2to1/2 1/2to0/2 0/2to1/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="99" depart="477.00" arrival="684.00">
+        <route edges="2/1to3/1 3/1to2/1 2/1to2/2"/>
+    </vehicle>
+
+    <vehicle id="92" depart="517.00" arrival="685.00">
+        <route edges="1/1to2/1 2/1to1/1 1/1to1/0"/>
+    </vehicle>
+
+    <vehicle id="88" depart="310.00" arrival="703.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/0to1/0" reason="device.rerouting" replacedAtTime="340.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="2/0to1/0" reason="device.rerouting" replacedAtTime="370.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/0to2/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="400.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="1/0to2/0" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="430.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to2/1 2/1to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="2/0to3/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="490.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to4/1 4/1to4/2"/>
+            <route replacedOnEdge="2/0to3/0" replacedOnIndex="2" reason="device.rerouting" replacedAtTime="520.00" probability="0" edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to4/0 4/0to4/1 4/1to4/2"/>
+            <route edges="2/0to1/0 1/0to2/0 2/0to3/0 3/0to3/1 3/1to4/1 4/1to4/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="23" depart="388.00" arrival="738.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/1to4/1" reason="device.rerouting" replacedAtTime="388.00" probability="0" edges="3/1to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to1/2 1/2to0/2"/>
+            <route edges="3/1to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to0/2"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="93" depart="389.00" arrival="856.00">
+        <routeDistribution>
+            <route replacedOnEdge="3/0to4/0" reason="device.rerouting" replacedAtTime="419.00" probability="0" edges="3/0to4/0 4/0to3/0 3/0to2/0 2/0to1/0 1/0to1/1 1/1to2/1"/>
+            <route replacedOnEdge="4/0to4/1" replacedOnIndex="1" reason="device.rerouting" replacedAtTime="479.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to3/1 3/1to2/1 2/1to1/1 1/1to2/1"/>
+            <route replacedOnEdge="4/2to3/2" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="539.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to1/1 1/1to2/1"/>
+            <route replacedOnEdge="4/2to3/2" replacedOnIndex="3" reason="device.rerouting" replacedAtTime="569.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to2/1"/>
+            <route replacedOnEdge="3/2to2/2" replacedOnIndex="4" reason="device.rerouting" replacedAtTime="659.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to1/1 1/1to2/1"/>
+            <route replacedOnEdge="3/2to2/2" replacedOnIndex="4" reason="device.rerouting" replacedAtTime="689.00" probability="0" edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to2/1 2/1to1/1 1/1to2/1"/>
+            <route edges="3/0to4/0 4/0to4/1 4/1to4/2 4/2to3/2 3/2to2/2 2/2to1/2 1/2to1/1 1/1to2/1"/>
+        </routeDistribution>
+    </vehicle>
+
+    <vehicle id="70" depart="474.00" arrival="867.00">
+        <routeDistribution>
+            <route replacedOnEdge="2/1to3/1" reason="device.rerouting" replacedAtTime="534.00" probability="0" edges="2/1to3/1 3/1to2/1 2/1to1/1 1/1to0/1 0/1to0/0 0/0to0/1"/>
+            <route edges="2/1to3/1 3/1to3/0 3/0to2/0 2/0to1/0 1/0to0/0 0/0to0/1"/>
+        </routeDistribution>
+    </vehicle>
+
+</routes>

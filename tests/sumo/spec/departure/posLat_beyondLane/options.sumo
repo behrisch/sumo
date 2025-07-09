@@ -1,4 +1,4 @@
 --no-step-log -e 1 --no-duration-log --net-file=net.net.xml
 -a=input_routes.rou.xml,input_additional.add.xml
---fcd-output=fcd.xml 
---fcd-output.attributes all
+--fcd-output=fcd.xml
+--fcd-output.attributes traffic,misc

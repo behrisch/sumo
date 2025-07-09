@@ -4,6 +4,9 @@ cross3ltl_fcd
 # CSV output
 cross3ltl_fcd_csv
 
+# parquet output
+cross3ltl_fcd_parquet
+
 cross3ltl_inductloops
 
 # lane area detectors in front of tl junction (NOTE: discrepancies to original E2 test results due to new feature of snapping the detector ends to the lane ends, delete NOTE after approval)

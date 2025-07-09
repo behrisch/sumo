@@ -35,13 +35,13 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "actuated")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "actuated")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
 # remove phase
-netedit.pressTLSPhaseButton(netedit.attrs.TLS.single.actuatedPhase.deleteButton)
+netedit.tlsDeletePhase(1)
 
 # type enter to save changes
 netedit.typeKey("enter")

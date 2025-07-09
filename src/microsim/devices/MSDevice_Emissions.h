@@ -74,7 +74,6 @@ public:
      */
     static void buildVehicleDevices(SUMOVehicle& v, std::vector<MSVehicleDevice*>& into);
 
-
 public:
     /** @brief Constructor
      *
@@ -134,6 +133,9 @@ public:
         return myWrittenAttributes;
     }
 
+    /// @brief initialize attribute mask (once)
+    static void initOnce();
+
     /// @brief resets the attribute mask
     static void cleanup();
 
@@ -159,9 +161,6 @@ private:
     static SumoXMLAttrMask myWrittenAttributes;
     static SumoXMLAttrMask getDefaultMask();
     static bool myAmInitialized;
-
-    /// @brief initialize attribute mask (once)
-    static void initOnce();
 
 private:
     /// @brief Invalidated copy constructor.

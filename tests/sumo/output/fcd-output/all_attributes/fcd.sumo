@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-17 17:56:24 by Eclipse SUMO sumo Version v1_23_1+0603-dee5f43a318
+<!-- generated on 2025-07-09 16:30:27 by Eclipse SUMO sumo Version v1_23_1+0964-c15482fcffc
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -43,18 +43,18 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
 <fcd-export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/fcd_file.xsd">
     <timestep time="0.00">
-        <vehicle id="0" x="1495.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="100.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="100.00" odometer="0.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle"/>
+        <vehicle id="0" x="1495.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="100.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="100.00" odometer="0.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.80" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.51" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="1.00">
-        <vehicle id="0" x="1485.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="110.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="110.00" odometer="10.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle"/>
+        <vehicle id="0" x="1485.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="110.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="110.00" odometer="10.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.80" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.51" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="2.00">
-        <vehicle id="0" x="1475.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="120.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="120.00" odometer="20.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle"/>
+        <vehicle id="0" x="1475.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="120.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="120.00" odometer="20.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.80" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.51" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="3.00">
-        <vehicle id="0" x="1465.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="130.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="130.00" odometer="30.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle"/>
+        <vehicle id="0" x="1465.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="130.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="130.00" odometer="30.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.80" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.51" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
     <timestep time="4.00">
-        <vehicle id="0" x="1455.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="140.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="140.00" odometer="40.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle"/>
+        <vehicle id="0" x="1455.25" y="401.65" angle="270.00" type="t1" speed="10.00" pos="140.00" lane="4/1to3/1_0" slope="0.00" signals="0" acceleration="0.00" distance="140.00" odometer="40.00" posLat="0.00" speedLat="0.00" arrivalDelay="0.00" tag="vehicle" eclass="HBEFA4/PC_petrol_Euro-4" CO2="1796.80" CO="3.06" HC="0.02" NOx="0.67" PMx="0.28" fuel="582.51" electricity="0.00" noise="61.77" route="r1" waiting="0.00"/>
     </timestep>
 </fcd-export>

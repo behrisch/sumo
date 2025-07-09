@@ -35,19 +35,19 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "delay_based")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "delay_based")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.single.delayBasedPhase.state, "dummyDur")
+netedit.modifyTLSTable(0, netedit.attrs.TLS.phases.delayBased.state, "dummyDur")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.single.delayBasedPhase.state, "")
+netedit.modifyTLSTable(1, netedit.attrs.TLS.phases.delayBased.state, "")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.single.delayBasedPhase.state, "rGrrGyGgGrGrGyGg")
+netedit.modifyTLSTable(2, netedit.attrs.TLS.phases.delayBased.state, "rGrrGyGgGrGrGyGg")
 
 # type enter to save changes
 netedit.typeKey("enter")

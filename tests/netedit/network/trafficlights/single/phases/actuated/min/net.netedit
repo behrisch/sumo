@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-01-16 11:00:15 by Eclipse SUMO netedit Version v1_21_0+1913-712b77191d5
+<!-- generated on 2025-07-09 16:09:00 by Eclipse SUMO netedit Version v1_23_1+0962-6b33e61ca3a
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -14,20 +14,21 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <additional-files value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/additionals.add.xml"/>
-        <route-files value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/routes.rou.xml"/>
-        <data-files value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/datas.dat.xml"/>
-        <meandata-files value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/datas.med.add.xml"/>
-        <sumo-net-file value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/net.net.xml"/>
+        <additional-files value="additionals.add.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <data-files value="datas.dat.xml"/>
+        <meandata-files value="datas.med.add.xml"/>
+        <sumo-net-file value="net.net.xml"/>
     </input>
 
     <output>
         <write-license value="true"/>
-        <output-file value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/net.net.xml"/>
+        <output-file value="net.net.xml"/>
     </output>
 
     <processing>
         <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
         <geometry.max-grade.fix value="false"/>
         <offset.disable-normalization value="true"/>
         <lefthand value="0"/>
@@ -46,20 +47,22 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <netedit>
         <ignore-supermode-question value="true"/>
+        <ignore.additionalelements value="0"/>
+        <ignore.routeelements value="0"/>
         <force-saving value="true"/>
     </netedit>
 
     <visualisation>
-        <gui-settings-file value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/gui-settings.xml"/>
+        <gui-settings-file value="gui-settings.xml"/>
         <window-size value="1280, 720"/>
         <window-pos value="50,50"/>
         <gui-testing value="true"/>
-        <gui-testing.setting-output value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/guisettingsoutput.xml"/>
+        <gui-testing.setting-output value="guisettingsoutput.xml"/>
     </visualisation>
 
     <report>
         <no-warnings value="true"/>
-        <error-log value="/home/palcraft/.texttest/tmp/netedit.gui.16Jan103040.9141/netedit.gui/network/trafficlights/single/phases/actuated/min/log.txt"/>
+        <error-log value="log.txt"/>
     </report>
 
 </neteditConfiguration>
@@ -187,8 +190,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
     <tlLogic id="J0" type="actuated" programID="0" offset="0">
         <phase duration="42" state="GGGgrrrrGGGgrrrr" minDur="5" maxDur="50"/>
-        <phase duration="3"  state="yyyyrrrryyyyrrrr" minDur="13.15"/>
-        <phase duration="42" state="rrrrGGGgrrrrGGGg" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <phase duration="42" state="rrrrGGGgrrrrGGGg" minDur="13.15" maxDur="50"/>
         <phase duration="3"  state="rrrryyyyrrrryyyy"/>
     </tlLogic>
 

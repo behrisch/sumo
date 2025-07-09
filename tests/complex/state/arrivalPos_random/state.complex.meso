@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-17 08:46:15 by Eclipse SUMO sumo Version v1_23_1+0606-06b23075d04
+<!-- generated on 2025-07-08 13:28:12 by Eclipse SUMO sumo Version v1_23_1+0929-1744040642a
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -27,7 +27,7 @@
 </sumoConfiguration>
 -->
 
-<snapshot type="meso" version="v1_23_1+0606-06b23075d04" time="20.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+<snapshot type="meso" version="v1_23_1+0929-1744040642a" time="20.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
     <route id="r0" state="1" edges="SC"/>
     <delay number="8" begin="10" end="1" depart="3.00" time="19.00"/>
     <vType id="DEFAULT_VEHTYPE" maxSpeed="5.00" sigma="0"/>
@@ -65,6 +65,7 @@
     </vehicle>
     <vehicle id="f.9" depart="18.00" arrivalPos="random" route="r0" distance="0 0" arrivalPosRandomized="68.51" speedFactor="0.8569" state="10432 9223372036854774807 0 -1000 -1 0 -9223372036854775808 -9223372036854775808 9223372036854774807">
         <device id="vehroute_f.9" state="-1.00 -1.00 0"/>
+        <device id="tripinfo_f.9"/>
     </vehicle>
     <segment id="SC:0">
         <vehicles time="18390" blockTime="-9223372036854775808" value="f.8 f.6 f.4 f.2"/>

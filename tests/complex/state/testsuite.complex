@@ -44,6 +44,12 @@ rerouting3
 # vehicles skip stop edges along looped routes (require stop attribute index) and reroute after finishing the stop (which affects the index value).
 rerouting_looped_stops
 
+# lots of vehicles with rerouting, insertion backlog and vehroute output
+rerouting_randWeights
+
+# enough rng calls to warrant saving the full rng state
+rngState
+
 # flow saved and loaded
 flow
 
@@ -128,3 +134,6 @@ edge_missing
 
 # loading state with a different network
 edge_length_different
+
+# replicate probabilistic device assignment after loading
+device_prob

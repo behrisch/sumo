@@ -32,13 +32,13 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.NEMAPhase.state, "dummyDur")
+netedit.modifyTLSTable(0, netedit.attrs.TLS.phases.NEMA.state, "dummyDur")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.NEMAPhase.state, "")
+netedit.modifyTLSTable(1, netedit.attrs.TLS.phases.NEMA.state, "")
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.NEMAPhase.state, "ryryryryryryryryryryryryryryryryryryryry")
+netedit.modifyTLSTable(2, netedit.attrs.TLS.phases.NEMA.state, "ryryryryryryryryryryryryryryryryryryryry")
 
 # type enter to save changes
 netedit.typeKey("enter")

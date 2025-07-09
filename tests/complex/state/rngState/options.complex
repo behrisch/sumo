@@ -1,0 +1,16 @@
+--no-step-log 
+--no-duration-log 
+--step-length 0.01
+-n input_net.net.xml 
+-r input_routes.rou.xml 
+--device.rerouting.period 30
+--save-state.times 1000
+--save-state.files state.xml 
+--save-state.rng
+: 
+--no-step-log
+--no-duration-log
+--step-length 0.01
+-n input_net.net.xml
+--load-state state.xml
+tests/complex/state/runner.py

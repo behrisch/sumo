@@ -1,0 +1,4 @@
+--fcd-output=fcd.xml --no-step-log --no-duration-log --net-file=net.net.xml -a
+input_routes.rou.xml
+-e 5
+--fcd-output.attributes emissions

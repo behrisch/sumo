@@ -246,7 +246,17 @@ public:
         return *this;
     }
 
-    static const SumoXMLAttrMask parseWrittenAttributes(const std::vector<std::string>& attrList, const std::string& desc);
+    /** @brief Parses a list of strings for attribute names and sets the relevant bits in the returned mask.
+     *
+     * It honors the special value "all" to set all bits and other special values for predefined bit sets given as parameter
+     *
+     * @param[in] attrList The attribute names and special values
+     * @param[in] desc A descriptive string for the error message if the attribute is unknown
+     * @param[in] special special values for predefined bitsets
+     * @return The corresponding mask of bits being set
+     */
+    static const SumoXMLAttrMask parseWrittenAttributes(const std::vector<std::string>& attrList, const std::string& desc,
+            const std::map<std::string, SumoXMLAttrMask>& special = std::map<std::string, SumoXMLAttrMask>());
 
     /** @brief writes a named attribute unless filtered
      *

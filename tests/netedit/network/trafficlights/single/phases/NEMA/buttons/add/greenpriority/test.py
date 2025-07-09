@@ -35,13 +35,19 @@ netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.ce
 netedit.createTLS()
 
 # change type
-netedit.modifyTLSTable(netedit.attrs.TLS.common.TLType, "NEMA")
+netedit.modifyAttribute(netedit.attrs.TLS.attributes.TLType, "NEMA")
 
 # type enter to save changes
 netedit.typeKey("enter")
 
 # add phase
-netedit.addGreenPriorityPhase(netedit.attrs.TLS.single.NEMAPhase.addButton)
+netedit.addGreenPriorityPhase(0)
+
+# add phase
+netedit.addGreenPriorityPhase(2)
+
+# add phase
+netedit.addGreenPriorityPhase(4)
 
 # type enter to save changes
 netedit.typeKey("enter")

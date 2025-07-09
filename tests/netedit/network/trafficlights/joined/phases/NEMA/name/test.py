@@ -32,7 +32,10 @@ netedit.changeMode("TLS")
 netedit.leftClick(referencePosition, netedit.positions.network.junction.cross.center)
 
 # set attribute
-netedit.modifyTLSTable(netedit.attrs.TLS.join.NEMAPhase.name, "custom name")
+netedit.modifyTLSTable(0, netedit.attrs.TLS.phases.NEMA.name, "%%%%%%%")
+
+# set attribute
+netedit.modifyTLSTable(1, netedit.attrs.TLS.phases.NEMA.name, "custom name")
 
 # type enter to save changes
 netedit.typeKey("enter")

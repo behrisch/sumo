@@ -619,9 +619,6 @@ public:
     /// @brief update modules
     void updateModules();
 
-    /// @brief focus TLS table
-    void focusTLSTable();
-
     /**@brief edits the traffic light for the given clicked junction
      * @param[in] clickedPosition clicked position
      * @param[in] viewObjects The clicked objects under cursor
@@ -659,6 +656,9 @@ public:
 
     /// @brief get module for TLS attributes
     GNETLSEditorFrame::TLSAttributes* getTLSAttributes() const;
+
+    /// @brief get module for TLS Phases
+    GNETLSEditorFrame::TLSPhases* getTLSPhases() const;
 
 protected:
     /// @brief converts to SUMOTime
