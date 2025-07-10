@@ -90,7 +90,7 @@ jobs:
     - name: Building SUMO vcpkg
       if: matrix.build_type == 'vcpkg'
       run: |
-        cmake -Bbuild_msvc -GNinja -DCMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+        cmake -Bbuild_msvc -GNinja -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
         cmake --build build_msvc_vcpkg
 
     - name: Building SUMO extra
