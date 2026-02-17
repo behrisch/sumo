@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="taxi_large" personCapacity="12">
+        <param key="has.taxi.device" value="true"/>
+    </vType>
+
+    <trip id="trip_0" type="taxi_large" depart="0.00" from="A0B0" to="B0C0"/>
+
+    <personFlow id="p" number="10" begin="0.00" period="5">
+        <ride from="E2F2" to="A0B0" lines="taxi" group="g0"/>
+    </personFlow>
+
+</routes>

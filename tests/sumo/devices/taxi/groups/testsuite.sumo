@@ -25,6 +25,9 @@
 # 5 persons that do not want to share a taxi but use a sharing dispatcher
 5persons_ungrouped_routeExtension
 
+# 10 persons wish to share a large taxi but do not all arrive at the same time
+10persons_late_grouping
+
 # use a transport definition to call a taxi
 2containers
 
