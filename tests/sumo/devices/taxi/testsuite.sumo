@@ -14,6 +14,9 @@ lines
 
 # test ride sharing
 shared
+
+# test swapping tasks between taxis on idling
+swap
 2taxis_10persons
 
 # Tests for prebookung using ride params "earliestPickupTime" and "reservationTime".
