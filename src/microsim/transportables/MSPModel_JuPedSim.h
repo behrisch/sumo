@@ -27,7 +27,8 @@
 #include <map>
 #include <geos_c.h>
 #include <jupedsim/jupedsim.h>
-#include "microsim/MSNet.h"
+#include <utils/shapes/ShapeContainer.h>
+#include <microsim/MSNet.h>
 #include "MSPModel_Interacting.h"
 
 
@@ -45,7 +46,7 @@ class OutputDevice;
  * @brief A pedestrian following model that acts as a proxy for pedestrian models
  * provided by the JuPedSim third-party simulation framework.
  */
-class MSPModel_JuPedSim : public MSPModel_Interacting {
+class MSPModel_JuPedSim : public MSPModel_Interacting, public ShapeListener {
 public:
     MSPModel_JuPedSim(const OptionsCont& oc, MSNet* net);
     ~MSPModel_JuPedSim();
@@ -80,6 +81,9 @@ public:
     };
 
     typedef std::tuple<JPS_StageId, Position, double> WaypointDesc;
+
+    void polygonChanged(const SUMOPolygon* const poly, const bool added, const bool removed) override;
+
 private:
     /**
     * @class PState
@@ -189,14 +193,14 @@ private:
         const std::string id;
         const std::string areaType;
         const std::vector<JPS_Point> areaBoundary;
-        const Parameterised::Map params;
+        const Parameterised::Map& params;
 
         /// @brief The last time a pedestrian was removed in a vanishing area.
         SUMOTime lastRemovalTime;
     };
 
     /// @brief Array of special areas.
-    std::vector<AreaData> myAreas;
+    std::vector<std::unique_ptr<AreaData> > myAreas;
 
     /// @brief Array of stopped trains, used to detect whether to add carriages and ramps to the geometry.
     std::vector<SUMOTrafficObject::NumericalID> myAllStoppedTrainIDs;

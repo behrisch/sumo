@@ -156,12 +156,24 @@ ShapeContainer::removePolygon(const std::string& id, bool /* useLock */) {
     std::cout << "ShapeContainer: Removing Polygon '" << id << "'" << std::endl;
 #endif
     removePolygonDynamics(id);
+    SUMOPolygon* p = myPolygons.get(id);
+    if (p != nullptr) {
+        for (ShapeListener* listener : myListeners) {
+            listener->polygonChanged(p, false, true);
+        }
+    }
     return myPolygons.remove(id);
 }
 
 
 bool
 ShapeContainer::removePOI(const std::string& id) {
+    PointOfInterest* p = myPOIs.get(id);
+    if (p != nullptr) {
+        for (ShapeListener* listener : myListeners) {
+            listener->poiChanged(p, false, true);
+        }
+    }
     return myPOIs.remove(id);
 }
 
@@ -171,6 +183,9 @@ ShapeContainer::movePOI(const std::string& id, const Position& pos) {
     PointOfInterest* p = myPOIs.get(id);
     if (p != nullptr) {
         static_cast<Position*>(p)->set(pos);
+        for (ShapeListener* listener : myListeners) {
+            listener->poiChanged(p, false, false);
+        }
     }
 }
 
@@ -180,6 +195,9 @@ ShapeContainer::reshapePolygon(const std::string& id, const PositionVector& shap
     SUMOPolygon* p = myPolygons.get(id);
     if (p != nullptr) {
         p->setShape(shape);
+        for (ShapeListener* listener : myListeners) {
+            listener->polygonChanged(p, false, false);
+        }
     }
 }
 
@@ -190,6 +208,9 @@ ShapeContainer::add(SUMOPolygon* poly, bool /* ignorePruning */) {
         delete poly;
         return false;
     }
+    for (ShapeListener* listener : myListeners) {
+        listener->polygonChanged(poly, true, false);
+    }
     return true;
 }
 
@@ -199,6 +220,9 @@ ShapeContainer::add(PointOfInterest* poi, bool /* ignorePruning */) {
     if (!myPOIs.add(poi->getID(), poi)) {
         delete poi;
         return false;
+    }
+    for (ShapeListener* listener : myListeners) {
+        listener->poiChanged(poi, true, false);
     }
     return true;
 }

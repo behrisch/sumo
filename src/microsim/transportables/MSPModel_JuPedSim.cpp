@@ -564,13 +564,13 @@ MSPModel_JuPedSim::execute(SUMOTime time) {
     }
 
     // Remove pedestrians that are in a predefined area, at a predefined rate.
-    for (AreaData& area : myAreas) {
-        const std::vector<JPS_Point>& areaBoundary = area.areaBoundary;
+    for (const auto& area : myAreas) {
+        const std::vector<JPS_Point>& areaBoundary = area->areaBoundary;
         JPS_AgentIdIterator agentsInArea = JPS_Simulation_AgentsInPolygon(myJPSSimulation, areaBoundary.data(), areaBoundary.size());
-        if (area.areaType == "vanishing_area") {
-            const SUMOTime period = area.params.count("period") > 0 ? string2time(area.params.at("period")) : 1000;
+        if (area->areaType == "vanishing_area") {
+            const SUMOTime period = area->params.count("period") > 0 ? string2time(area->params.at("period")) : 1000;
             const int nbrPeriodsCoveringTimestep = (int)ceil(TS / STEPS2TIME(period));
-            if (time - area.lastRemovalTime >= nbrPeriodsCoveringTimestep * period) {
+            if (time - area->lastRemovalTime >= nbrPeriodsCoveringTimestep * period) {
                 for (int k = 0; k < nbrPeriodsCoveringTimestep; k++) {
                     const JPS_AgentId agentID = JPS_AgentIdIterator_Next(agentsInArea);
                     if (agentID != 0) {
@@ -584,11 +584,11 @@ MSPModel_JuPedSim::execute(SUMOTime time) {
                             // Code below only works if the removal happens at the last stage.
                             const bool finalStage = person->getNumRemainingStages() == 1;
                             if (finalStage) {
-                                WRITE_MESSAGEF(TL("Person '%' in vanishing area '%' was removed from the simulation."), person->getID(), area.id);
+                                WRITE_MESSAGEF(TL("Person '%' in vanishing area '%' was removed from the simulation."), person->getID(), area->id);
                                 while (!state->getStage()->moveToNextEdge(person, time, 1, nullptr));
                                 registerArrived(agentID);
                                 myPedestrianStates.erase(iterator);
-                                area.lastRemovalTime = time;
+                                area->lastRemovalTime = time;
                             }
                         }
                     }
@@ -596,9 +596,9 @@ MSPModel_JuPedSim::execute(SUMOTime time) {
             }
         } else {  // areaType == "influencer"
             for (JPS_AgentId agentID = JPS_AgentIdIterator_Next(agentsInArea); agentID != 0; agentID = JPS_AgentIdIterator_Next(agentsInArea)) {
-                if (area.params.count("speed") > 0) {
+                if (area->params.count("speed") > 0) {
                     const JPS_Agent agent = JPS_Simulation_GetAgent(myJPSSimulation, agentID, nullptr);
-                    const double newMaxSpeed = StringUtils::toDouble(area.params.at("speed"));
+                    const double newMaxSpeed = StringUtils::toDouble(area->params.at("speed"));
                     switch (myJPSModel) {
                         case JPS_Model::CollisionFreeSpeed: {
                             JPS_CollisionFreeSpeedModelState modelState = JPS_Agent_GetCollisionFreeSpeedModelState(agent, nullptr);
@@ -1257,19 +1257,7 @@ MSPModel_JuPedSim::initialize(const OptionsCont& oc) {
     }
     // Polygons that define vanishing areas aren't part of the regular JuPedSim geometry.
     for (const auto& polygonWithID : myNetwork->getShapeContainer().getPolygons()) {
-        const SUMOPolygon* const poly = polygonWithID.second;
-        if (poly->getShapeType() == "jupedsim.vanishing_area" || poly->getShapeType() == "jupedsim.influencer") {
-            std::vector<JPS_Point> areaBoundary;
-            for (const Position& p : poly->getShape()) {
-                areaBoundary.push_back({p.x(), p.y()});
-            }
-            // Make sure the shape is not repeating the first point.
-            if (areaBoundary.back().x == areaBoundary.front().x && areaBoundary.back().y == areaBoundary.front().y) {
-                areaBoundary.pop_back();
-            }
-            const std::string type = StringTokenizer(poly->getShapeType(), ".").getVector()[1];
-            myAreas.push_back({poly->getID(), type, areaBoundary, poly->getParametersMap(), 0});
-        }
+        polygonChanged(polygonWithID.second, true, false);
     }
     if (OutputDevice::createDeviceByOption("pedestrian.jupedsim.py")) {
         myPythonScript = &OutputDevice::getDeviceByOption("pedestrian.jupedsim.py");
@@ -1283,6 +1271,36 @@ MSPModel_JuPedSim::initialize(const OptionsCont& oc) {
     for (auto& crossing : myCrossingWaits) {
         crossing.second.first = addWaitingSet(crossing.first, true);
         crossing.second.second = addWaitingSet(crossing.first, false);
+    }
+    myNetwork->getShapeContainer().addShapeListener(this);
+}
+
+
+void
+MSPModel_JuPedSim::polygonChanged(const SUMOPolygon* const poly, const bool added, const bool removed) {
+    if (poly->getShapeType() == "jupedsim.vanishing_area" || poly->getShapeType() == "jupedsim.influencer") {
+        SUMOTime lastRemovalTime = 0;
+        if (!added) {
+            for (auto areaIt = myAreas.begin(); areaIt != myAreas.end(); ++areaIt) {
+                if (poly->getID() == (*areaIt)->id) {
+                    lastRemovalTime = (*areaIt)->lastRemovalTime;
+                    myAreas.erase(areaIt);
+                    break;
+                }
+            }
+        }
+        if (!removed) {
+            std::vector<JPS_Point> areaBoundary;
+            for (const Position& p : poly->getShape()) {
+                areaBoundary.push_back({p.x(), p.y()});
+            }
+            // Make sure the shape is not repeating the first point.
+            if (areaBoundary.back().x == areaBoundary.front().x && areaBoundary.back().y == areaBoundary.front().y) {
+                areaBoundary.pop_back();
+            }
+            const std::string type = StringTokenizer(poly->getShapeType(), ".").getVector()[1];
+            myAreas.emplace_back(std::unique_ptr<AreaData>(new AreaData{poly->getID(), type, areaBoundary, poly->getParametersMap(), lastRemovalTime}));
+        }
     }
 }
 

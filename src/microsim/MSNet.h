@@ -177,7 +177,7 @@ public:
     MSNet(MSVehicleControl* vc, MSEventControl* beginOfTimestepEvents,
           MSEventControl* endOfTimestepEvents,
           MSEventControl* insertionEvents,
-          ShapeContainer* shapeCont = 0);
+          ShapeContainer* shapeCont = nullptr);
 
 
     /// @brief Destructor
