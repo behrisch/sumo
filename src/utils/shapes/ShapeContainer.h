@@ -237,6 +237,14 @@ private:
  */
 class ShapeListener {
 public:
-    virtual void polygonChanged(const SUMOPolygon* const poly, const bool added, const bool removed) {}
-    virtual void poiChanged(const PointOfInterest* const poi, const bool added, const bool removed) {}
+    virtual void polygonChanged(const SUMOPolygon* const poly, const bool added, const bool removed) {
+        UNUSED_PARAMETER(poly);
+        UNUSED_PARAMETER(added);
+        UNUSED_PARAMETER(removed);
+    }
+    virtual void poiChanged(const PointOfInterest* const poi, const bool added, const bool removed) {
+        UNUSED_PARAMETER(poi);
+        UNUSED_PARAMETER(added);
+        UNUSED_PARAMETER(removed);
+    }
 };
