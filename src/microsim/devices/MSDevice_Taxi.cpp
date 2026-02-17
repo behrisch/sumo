@@ -620,6 +620,23 @@ MSDevice_Taxi::cancelCustomer(const MSTransportable* t) {
 
 
 void
+MSDevice_Taxi::addCustomer(const MSTransportable* t, const Reservation* res) {
+    myCustomers.insert(t);
+    int stopIndex = 0;
+    MSBaseVehicle& veh = dynamic_cast<MSBaseVehicle&>(myHolder);
+    for (const Reservation* res2 : myCurrentReservations) {
+        if (res == res2) {
+            SUMOVehicleParameter::Stop& stop = const_cast<SUMOVehicleParameter::Stop&>(veh.getStop(stopIndex).pars);
+            stop.awaitedPersons.insert(t->getID());
+            stop.permitted.insert(t->getID());
+            break;
+        }
+        stopIndex++;
+    }
+}
+
+
+void
 MSDevice_Taxi::prepareStop(ConstMSEdgeVector& edges,
                            StopParVector& stops,
                            double& lastPos, const MSEdge* stopEdge, double stopPos,
@@ -891,6 +908,12 @@ MSDevice_Taxi::checkTaskSwap() {
             bestSwap->myCurrentReservations.clear();
             bestSwap->myCustomers.clear();
             bestSwap->myState = EMPTY;
+            while (bestSwap->getHolder().hasStops()) {
+                bestSwap->getHolder().abortNextStop();
+            }
+            for (const Reservation* res : myCurrentReservations) {
+                myDispatcher->swappedRunning(res, this);
+            }
         }
     }
 }

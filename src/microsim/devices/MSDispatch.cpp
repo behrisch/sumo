@@ -22,6 +22,7 @@
 #include <limits>
 #include <microsim/MSNet.h>
 #include <microsim/MSEdge.h>
+#include <microsim/MSGlobals.h>
 #include <microsim/transportables/MSTransportable.h>
 #include "MSRoutingEngine.h"
 #include "MSDispatch.h"
@@ -35,11 +36,6 @@
 // ===========================================================================
 // Reservation methods
 // ===========================================================================
-
-std::string
-Reservation::getID() const {
-    return toString(persons);
-}
 
 // ===========================================================================
 // MSDispatch methods
@@ -87,6 +83,28 @@ MSDispatch::addReservation(MSTransportable* person,
         // the default empty group implies, no grouping is wanted (and
         // transportable ids are unique)
         group = person->getID();
+    } else {
+        auto it2 = myRunningReservations.find(group);
+        if (it2 != myRunningReservations.end()) {
+            for (auto item : it2->second) {
+                Reservation* res = const_cast<Reservation*>(item.first);
+                if (res->persons.count(person) == 0
+                        && res->from == from
+                        && res->to == to
+                        && res->fromPos == fromPos
+                        && res->toPos == toPos) {
+                    MSDevice_Taxi* taxi = item.second;
+                    if (taxi->getState() == taxi->PICKUP
+                            && remainingCapacity(taxi, res) > 0
+                            && taxi->compatibleLine(taxi->getHolder().getParameter().line, line)) {
+                        //std::cout << SIMTIME << " addPerson=" << person->getID() << " extendRes=" << toString(res->persons) << " taxi=" << taxi->getHolder().getID() << " state=" << taxi->getState() << "\n";
+                        res->persons.insert(person);
+                        taxi->addCustomer(person, res);
+                        return res;
+                    }
+                }
+            }
+        }
     }
     Reservation* result = nullptr;
     bool added = false;
@@ -291,6 +309,12 @@ MSDispatch::servedReservation(const Reservation* res, MSDevice_Taxi* taxi) {
     if (it->second.empty()) {
         myGroupReservations.erase(it);
     }
+}
+
+
+void
+MSDispatch::swappedRunning(const Reservation* res, MSDevice_Taxi* taxi) {
+    myRunningReservations[res->group][res] = taxi;
 }
 
 

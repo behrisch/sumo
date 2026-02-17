@@ -178,6 +178,9 @@ public:
     /// @brief remove person from reservations
     bool cancelCustomer(const MSTransportable* t);
 
+    /// @brief add person after extending reservation
+    void addCustomer(const MSTransportable* t, const Reservation* res);
+
     /// @brief whether the given person is allowed to board this taxi
     bool allowsBoarding(const MSTransportable* t) const;
 

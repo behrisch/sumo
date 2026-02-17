@@ -132,12 +132,16 @@ MSDispatch_RouteExtension::dispatch(MSDevice_Taxi* taxi, std::vector<Reservation
     if (sequence.size() > 2) {
         taxi->dispatchShared(sequence);
         if (myOutput != nullptr) {
+            std::vector<const MSTransportable*> sharing;
+            for (const Reservation* s : sequence) {
+                sharing.insert(sharing.end(), s->persons.begin(), s->persons.end());
+            }
             myOutput->writeXMLHeader("DispatchInfo_RouteExtension", "");
             myOutput->openTag("dispatchShared");
             myOutput->writeAttr("time", time2string(now));
             myOutput->writeAttr("id", taxi->getHolder().getID());
             myOutput->writeAttr("persons", toString(res->persons));
-            myOutput->writeAttr("sharingPersons", toString(sequence));
+            myOutput->writeAttr("sharingPersons", toString(sharing));
             myOutput->writeAttr("type", "routeExtension");
             myOutput->closeTag();
         }

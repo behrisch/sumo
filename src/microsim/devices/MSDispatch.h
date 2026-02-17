@@ -101,8 +101,10 @@ struct Reservation {
                && line == other.line;
     }
 
-    /// @brief debug identification
-    std::string getID() const;
+    /// @brief for sorting by id
+    std::string getID() const {
+        return id;
+    }
 };
 
 /**
@@ -195,6 +197,8 @@ public:
     /// @brief whether the last call to computeDispatch has left servable reservations
     bool myHasServableReservations = false;
 
+    void swappedRunning(const Reservation* res, MSDevice_Taxi* taxi);
+
 protected:
     void servedReservation(const Reservation* res, MSDevice_Taxi* taxi);
 
@@ -202,7 +206,7 @@ protected:
     int remainingCapacity(const MSDevice_Taxi* taxi, const Reservation* res);
 
     // reservations that are currently being served (could still be used during re-dispatch)
-    std::map<std::string, std::map<const Reservation*, MSDevice_Taxi*> > myRunningReservations;
+    std::map<std::string, std::map<const Reservation*, MSDevice_Taxi*, ComparatorIdLess> > myRunningReservations;
 
     /// @brief optional file output for dispatch information
     OutputDevice* myOutput;
