@@ -175,6 +175,8 @@ public:
         return myHasServableReservations;
     }
 
+    virtual SUMOAbstractRouter<MSEdge, SUMOVehicle>& getRouter() const;
+
     ///@brief compute time to pick up the given reservation
     static SUMOTime computePickupTime(SUMOTime t, const MSDevice_Taxi* taxi, const Reservation& res, SUMOAbstractRouter<MSEdge, SUMOVehicle>& router);
 
@@ -211,5 +213,8 @@ protected:
     SUMOTime myKeepUnreachableResTime;
 
     std::map<std::string, std::vector<Reservation*> > myGroupReservations;
+
+    /// @brief which router/edge weights to use
+    const int myRoutingMode;
 
 };

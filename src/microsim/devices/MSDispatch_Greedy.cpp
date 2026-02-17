@@ -48,7 +48,7 @@ MSDispatch_Greedy::computeDispatch(SUMOTime now, const std::vector<MSDevice_Taxi
         }
     }
     // greedy assign closest vehicle in reservation order
-    SUMOAbstractRouter<MSEdge, SUMOVehicle>& router = myRoutingMode == 1 ? MSRoutingEngine::getRouterTT(0, SVC_TAXI) : MSNet::getInstance()->getRouterTT(0);
+    SUMOAbstractRouter<MSEdge, SUMOVehicle>& router = getRouter();
     std::vector<Reservation*> reservations = getReservations();
     std::sort(reservations.begin(), reservations.end(), time_sorter());
 #ifdef DEBUG_DISPATCH

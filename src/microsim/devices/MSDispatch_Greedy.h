@@ -41,7 +41,6 @@ class MSDispatch_Greedy : public MSDispatch {
 public:
     MSDispatch_Greedy(const Parameterised::Map& params) :
         MSDispatch(params),
-        myRoutingMode(StringUtils::toInt(getParameter("routingMode", "1"))),
         myMaximumWaitingTime(TIME2STEPS(StringUtils::toInt(getParameter("maxWaitingTime", "300")))),
         myRecheckTime(TIME2STEPS(StringUtils::toInt(getParameter("recheckTime", "120")))),
         myRecheckSafety(TIME2STEPS(StringUtils::toInt(getParameter("recheckSafety", "3600"))))
@@ -52,9 +51,6 @@ public:
 protected:
     /// @brief trigger taxi dispatch. @note: method exists so subclasses can inject code at this point (ride sharing)
     virtual int dispatch(MSDevice_Taxi* taxi, std::vector<Reservation*>::iterator& resIt, SUMOAbstractRouter<MSEdge, SUMOVehicle>& router, std::vector<Reservation*>& reservations);
-
-    /// @brief which router/edge weights to use
-    const int myRoutingMode;
 
     /// @brief maximum time to arrive earlier at customer
     const SUMOTime myMaximumWaitingTime;

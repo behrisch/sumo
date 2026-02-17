@@ -48,7 +48,9 @@ Reservation::getID() const {
 MSDispatch::MSDispatch(const Parameterised::Map& params) :
     Parameterised(params),
     myOutput(nullptr),
-    myReservationCount(0) {
+    myReservationCount(0),
+    myRoutingMode(StringUtils::toInt(getParameter("routingMode", "1")))
+{
     const std::string opt = "device.taxi.dispatch-algorithm.output";
     if (OptionsCont::getOptions().isSet(opt)) {
         OutputDevice::createDeviceByOption(opt, "DispatchInfo");
@@ -299,6 +301,12 @@ MSDispatch::fulfilledReservation(const Reservation* res) {
         myRunningReservations.erase(res->group);
     }
     delete res;
+}
+
+
+SUMOAbstractRouter<MSEdge, SUMOVehicle>&
+MSDispatch::getRouter() const {
+    return myRoutingMode == 1 ? MSRoutingEngine::getRouterTT(0, SVC_TAXI) : MSNet::getInstance()->getRouterTT(0);
 }
 
 
