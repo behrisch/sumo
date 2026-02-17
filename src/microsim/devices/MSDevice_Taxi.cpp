@@ -70,6 +70,7 @@ std::set<std::string> MSDevice_Taxi::myVClassWarningVTypes;
 
 #define TAXI_SERVICE "taxi"
 #define TAXI_SERVICE_PREFIX "taxi:"
+#define SWAP_THRESHOLD 5
 
 // ===========================================================================
 // method definitions
@@ -830,8 +831,11 @@ MSDevice_Taxi::customerArrived(const MSTransportable* person) {
             myDispatcher->fulfilledReservation(res);
         }
         myCurrentReservations.clear();
-        if (MSGlobals::gUseMesoSim && MSNet::getInstance()->getCurrentTimeStep() < myServiceEnd) {
-            myIdleAlgorithm->idle(this);
+        checkTaskSwap();
+        if (isEmpty()) {
+            if (MSGlobals::gUseMesoSim && MSNet::getInstance()->getCurrentTimeStep() < myServiceEnd) {
+                myIdleAlgorithm->idle(this);
+            }
         }
     } else {
         // check whether a single reservation has been fulfilled
@@ -849,6 +853,44 @@ MSDevice_Taxi::customerArrived(const MSTransportable* person) {
             } else {
                 ++resIt;
             }
+        }
+    }
+}
+
+
+void
+MSDevice_Taxi::checkTaskSwap() {
+    const std::string swapGroup = myHolder.getStringParam("device.taxi.swapGroup", false, "");
+    if (swapGroup != "") {
+        SUMOAbstractRouter<MSEdge, SUMOVehicle>& router = myDispatcher->getRouter();
+        const double stopTime = myHolder.isStopped() ? MAX2(0.0, STEPS2TIME(myHolder.getNextStop().duration)) : 0;
+        double maxSaving = 0;
+        MSDevice_Taxi* bestSwap = nullptr;
+        for (MSDevice_Taxi* taxi : myFleet) {
+            if (taxi->getHolder().hasDeparted() && taxi->getState() == PICKUP
+                    && taxi->getHolder().getStringParam("device.taxi.swapGroup", false, "") == swapGroup) {
+                SUMOVehicle& veh = taxi->getHolder();
+                const MSStop& stop = veh.getNextStop();
+                ConstMSEdgeVector toPickup(veh.getCurrentRouteEdge(), stop.edge + 1);
+                const double cost = router.recomputeCostsPos(toPickup, &veh, veh.getPositionOnLane(), stop.pars.endPos, SIMSTEP);
+                ConstMSEdgeVector toPickup2;
+                router.compute(myHolder.getEdge(), myHolder.getPositionOnLane(), *stop.edge, stop.pars.endPos, &myHolder, SIMSTEP, toPickup2, true);
+                if (!toPickup2.empty()) {
+                    const double cost2 = router.recomputeCostsPos(toPickup2, &myHolder, myHolder.getPositionOnLane(), stop.pars.endPos, SIMSTEP);
+                    const double saving = cost - cost2 - stopTime;
+                    //std::cout << SIMTIME << " taxi=" << getID() << " other=" << veh.getID() << " cost=" << cost << " cost2=" << cost2 << " stopTime=" << stopTime << " saving=" << saving << " route1=" << toString(toPickup) << " route2=" << toString(toPickup2) << "\n";
+                    if (saving > maxSaving) {
+                        maxSaving = saving;
+                        bestSwap = taxi;
+                    }
+                }
+            }
+        }
+        if (maxSaving > SWAP_THRESHOLD) {
+            dispatchShared(bestSwap->myLastDispatch);
+            bestSwap->myCurrentReservations.clear();
+            bestSwap->myCustomers.clear();
+            bestSwap->myState = EMPTY;
         }
     }
 }

@@ -242,6 +242,9 @@ private:
     /// @brief whether the taxi has another pickup scheduled
     bool hasFuturePickup();
 
+    /// @brief optionally swap tasks when a taxi becomes idle
+    void checkTaskSwap();
+
     /// @brief initialize the dispatch algorithm
     static void initDispatch();
 
