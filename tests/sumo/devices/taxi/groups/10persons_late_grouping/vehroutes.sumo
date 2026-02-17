@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-17T23:14:25.229870+01:00 by Eclipse SUMO sumo v1_26_0+0255-8bc8e127672
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <tripinfo-output value="tripinfos.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+        <vehroute-output value="vehroutes.xml"/>
+        <vehroute-output.write-unfinished value="true"/>
+    </output>
+
+    <processing>
+        <default.speeddev value="0"/>
+    </processing>
+
+    <report>
+        <xml-validation value="never"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <person id="p.0" depart="0.00" arrival="381.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.1" depart="5.00" arrival="382.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.2" depart="10.00" arrival="382.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.3" depart="15.00" arrival="383.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.4" depart="20.00" arrival="383.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.5" depart="25.00" arrival="384.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.6" depart="30.00" arrival="384.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.7" depart="35.00" arrival="385.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.8" depart="40.00" arrival="385.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <person id="p.9" depart="45.00" arrival="386.00">
+        <ride from="E2F2" to="A0B0" arrivalPos="287.60" lines="taxi"/>
+    </person>
+
+    <vehicle id="trip_0" type="taxi_large" depart="0.00">
+        <routeDistribution>
+            <route replacedOnEdge="A0B0" reason="taxi:prepare_dispatch" replacedAtTime="0.00" probability="0" edges="A0B0 B0C0"/>
+            <route replacedOnEdge="A0B0" reason="taxi:dispatch" replacedAtTime="0.00" probability="0" edges="A0B0 E2F2 A0B0"/>
+            <route edges="A0B0 B0C0 C0D0 D0D1 D1D2 D2E2 E2F2 F2F1 F1E1 E1D1 D1C1 C1B1 B1A1 A1A0 A0B0"/>
+        </routeDistribution>
+        <stop lane="E2F2_1" permitted="p.0 p.1 p.2 p.3 p.4 p.5 p.6 p.7 p.8 p.9" actType="pickup p.0 (0) +p.1 +p.2 +p.3 +p.4 +p.5 +p.6 +p.7 +p.8 +p.9"/>
+        <stop lane="A0B0_1" actType="dropOff p.0 (0) +p.1 +p.2 +p.3 +p.4 +p.5 +p.6 +p.7 +p.8 +p.9"/>
+    </vehicle>
+
+</routes>

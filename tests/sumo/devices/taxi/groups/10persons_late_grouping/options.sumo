@@ -2,3 +2,5 @@
 -r input_routes.rou.xml
 --tripinfo-output tripinfos.xml
 --tripinfo-output.write-unfinished
+--vehroute-output vehroutes.xml
+--vehroute-output.write-unfinished

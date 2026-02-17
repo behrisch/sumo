@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-02-17T15:18:53.422848+01:00 by Eclipse SUMO sumo v1_26_0+0250-4c2647fa1e7
+<!-- generated on 2026-02-17T23:14:25.229721+01:00 by Eclipse SUMO sumo v1_26_0+0255-8bc8e127672
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -22,6 +22,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <write-license value="true"/>
         <tripinfo-output value="tripinfos.xml"/>
         <tripinfo-output.write-unfinished value="true"/>
+        <vehroute-output value="vehroutes.xml"/>
+        <vehroute-output.write-unfinished value="true"/>
     </output>
 
     <processing>
@@ -68,7 +70,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <personinfo id="p.9" depart="45.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="341.00" waitingTime="77.00" timeLoss="26.91" traveltime="264.00">
         <ride waitingTime="77.00" vehicle="trip_0" depart="122.00" arrival="386.00" arrivalPos="287.60" duration="264.00" routeLength="2271.02" timeLoss="26.91"/>
     </personinfo>
-    <tripinfo id="trip_0" depart="0.00" departLane="A0B0_1" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="-1.00" arrivalLane="" arrivalPos="-1.00" arrivalSpeed="-1.00" duration="388.00" routeLength="3667.32" waitingTime="3.00" waitingCount="1" stopTime="72.00" timeLoss="38.21" rerouteNo="2" devices="tripinfo_trip_0 routing_trip_0 taxi_trip_0 person_trip_0" vType="taxi_large" speedFactor="1.00" vaporized="">
+    <tripinfo id="trip_0" depart="0.00" departLane="A0B0_1" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="-1.00" arrivalLane="" arrivalPos="-1.00" arrivalSpeed="-1.00" duration="388.00" routeLength="3667.32" waitingTime="3.00" waitingCount="1" stopTime="72.00" timeLoss="38.21" rerouteNo="2" devices="vehroute_trip_0 tripinfo_trip_0 routing_trip_0 taxi_trip_0 person_trip_0" vType="taxi_large" speedFactor="1.00" vaporized="">
         <taxi customers="10" occupiedDistance="2271.09" occupiedTime="202.00"/>
     </tripinfo>
 </tripinfos>
