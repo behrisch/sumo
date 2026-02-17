@@ -622,16 +622,23 @@ MSDevice_Taxi::cancelCustomer(const MSTransportable* t) {
 void
 MSDevice_Taxi::addCustomer(const MSTransportable* t, const Reservation* res) {
     myCustomers.insert(t);
-    int stopIndex = 0;
     MSBaseVehicle& veh = dynamic_cast<MSBaseVehicle&>(myHolder);
-    for (const Reservation* res2 : myCurrentReservations) {
-        if (res == res2) {
-            SUMOVehicleParameter::Stop& stop = const_cast<SUMOVehicleParameter::Stop&>(veh.getStop(stopIndex).pars);
-            stop.awaitedPersons.insert(t->getID());
-            stop.permitted.insert(t->getID());
+    for (const MSStop& stop : veh.getStops()) {
+        SUMOVehicleParameter::Stop& pars = const_cast<SUMOVehicleParameter::Stop&>(stop.pars);
+        //std::cout << " sE=" << (*stop.edge)->getID() << " sStart=" << pars.startPos << " sEnd=" << pars.endPos << " rFrom=" <<
+        //    res->from->getID() << " rTo=" << res->to->getID() << " rFromPos=" << res->fromPos << " resToPos=" << res->toPos << "\n";
+        if (*stop.edge == res->from
+                && pars.startPos <= res->fromPos
+                && pars.endPos >= res->fromPos) {
+            pars.awaitedPersons.insert(t->getID());
+            pars.permitted.insert(t->getID());
+            pars.actType += " +" + t->getID();
+        } else if (*stop.edge == res->to
+                && pars.startPos <= res->toPos
+                && pars.endPos >= res->toPos) {
+            pars.actType += " +" + t->getID();
             break;
         }
-        stopIndex++;
     }
 }
 
@@ -904,6 +911,15 @@ MSDevice_Taxi::checkTaskSwap() {
             }
         }
         if (maxSaving > SWAP_THRESHOLD) {
+#ifdef DEBUG_DISPATCH
+            if (DEBUG_CON) {
+                std::cout << SIMTIME << " taxi=" << myHolder.getID() << " swapWith=" << bestSwap->getHolder().getID() << " saving=" << maxSaving << " lastDispatch="; 
+                for (const Reservation* res : bestSwap->myLastDispatch) {
+                    std::cout << toString(res->persons) << "; ";
+                }
+                std::cout << "\n";
+            }
+#endif
             dispatchShared(bestSwap->myLastDispatch);
             bestSwap->myCurrentReservations.clear();
             bestSwap->myCustomers.clear();
