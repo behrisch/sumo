@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-09 19:28+0000\n"
+"PO-Revision-Date: 2026-02-18 18:25+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/activitygen/AGActivityGen.cpp:46
 msgid "Reading input"
@@ -679,9 +679,7 @@ msgstr ""
 
 #: src/duarouter/RODUAFrame.cpp:113 src/microsim/MSFrame.cpp:432
 msgid "Suffix to be added when creating ids for cloned vehicles"
-msgstr ""
-"Beim Erstellen von IDs für geklonte Fahrzeuge muss ein Suffix hinzugefügt "
-"werden"
+msgstr "Beim Erstellen von IDs für geklonte Fahrzeuge benutztes Suffix"
 
 #: src/duarouter/RODUAFrame.cpp:124 src/marouter/ROMAFrame.cpp:206
 msgid "Use FLOAT as Gawron's beta"
@@ -2510,7 +2508,7 @@ msgstr "Ob Rechtsüberholen auf Autobahnen erlaubt ist"
 
 #: src/microsim/MSFrame.cpp:492
 msgid "Switches off all traffic lights."
-msgstr "Schaltet alle LSAs aus."
+msgstr "Schaltet alle LSA aus."
 
 #: src/microsim/MSFrame.cpp:495
 msgid "Sets default visibility for actuation detectors"
@@ -2856,7 +2854,7 @@ msgid ""
 "minimum routing costs for internal lanes at traffic lights"
 msgstr ""
 "Skalierte Reisezeitstrafen basierend auf Grünaufteilung bei der Berechnung "
-"der Mindestroutenkosten für interne Fahrstreifen an LSAs einsetzen"
+"der Mindestroutenkosten für interne Fahrstreifen an LSA einsetzen"
 
 #: src/microsim/MSFrame.cpp:662 src/router/ROFrame.cpp:206
 msgid ""
