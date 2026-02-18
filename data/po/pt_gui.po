@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-13 13:43+0000\n"
+"PO-Revision-Date: 2026-02-18 18:25+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/gui/GUIApplicationWindow.cpp:314 src/gui/GUIApplicationWindow.cpp:317
 #: src/gui/GUIApplicationWindow.cpp:2298 src/gui/GUIApplicationWindow.cpp:2299
@@ -8037,6 +8037,8 @@ msgstr ""
 #: src/netedit/GNETagPropertiesDatabase.cpp:7073
 msgid "Willingness to accept lower front and rear gaps on the target lane."
 msgstr ""
+"Disposição para aceitar intervalos frontais e traseiros menores na faixa de "
+"destino."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7079
 msgid "Dynamic factor for modifying lcAssertive and lcPushy."
@@ -8047,6 +8049,8 @@ msgid ""
 "Time to reach maximum impatience (of 1). Impatience grows whenever a lane-"
 "change manoeuvre is blocked."
 msgstr ""
+"Tempo para atingir a impaciência máxima (de 1). A impaciência cresce sempre "
+"que uma manobra de mudança de faixa é bloqueada."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7091
 msgid "Maximum lateral acceleration per second."
@@ -8078,12 +8082,16 @@ msgid ""
 "Upper bound on lateral speed while moving computed as lcMaxSpeedLatStanding "
 "+ lcMaxSpeedLatFactor * getSpeed()"
 msgstr ""
+"Limite superior para a velocidade lateral durante o movimento, calculado por "
+"lcMaxSpeedLatStanding + lcMaxSpeedLatFactor * getSpeed()"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7121
 msgid ""
 "Distance to an upcoming turn on the vehicles route, below which the "
 "alignment"
 msgstr ""
+"Distância para uma próxima conversão na rota dos veículos, abaixo da qual o "
+"alinhamento"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7122
 msgid "should be dynamically adapted to match the turn direction."
@@ -8094,6 +8102,7 @@ msgstr ""
 #: src/netedit/GNETagPropertiesDatabase.cpp:7128
 msgid "The probability for violating rules gainst overtaking on the right."
 msgstr ""
+"A probabilidade de violação das regras contra a ultrapassagem pela direita."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7134
 msgid "Time threshold for the willingness to change right."
@@ -8109,15 +8118,15 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7155
 msgid "The id of the person type to use for this person"
-msgstr ""
+msgstr "O ID do tipo de pessoa que será usado para essa pessoa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7163
 msgid "The position at which the person shall enter the net"
-msgstr ""
+msgstr "A posição em que a pessoa deve entrar na rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7176
 msgid "The id of the container type to use for this container"
-msgstr ""
+msgstr "O ID do tipo de container que será usado para esse container"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7184
 msgid "The position at which the container shall enter the net"
@@ -8195,6 +8204,8 @@ msgstr ""
 msgid ""
 "transfer time if there shall be a jump from this stop to the next route edge"
 msgstr ""
+"tempo de transferência se houver um salto desta parada para a próxima aresta "
+"da rota"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7280
 msgid "Splits the train upon reaching the stop"
@@ -8274,7 +8285,7 @@ msgstr "ID da aresta final"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7412
 msgid "The position at which the tranship shall enter the net"
-msgstr ""
+msgstr "A posição em que o transbordo deve entrar na rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7418
 msgid "arrival position on the destination edge"
@@ -8313,10 +8324,12 @@ msgid ""
 "List of possible traffic modes. Walking is always possible regardless of "
 "this value"
 msgstr ""
+"Lista de possíveis modos de tráfego. Caminha sempre está disponível "
+"independete deste valor"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7479
 msgid "list of vehicle alternatives to take for the person trip"
-msgstr ""
+msgstr "lista de alternativas de veículos para a viagem da pessoa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7484
 msgid "Walk factor"
@@ -8328,16 +8341,18 @@ msgstr "fator de caminhada"
 msgid ""
 "id of the travel group. Persons with the same group may share a taxi ride"
 msgstr ""
+"ID do grupo de viagem. As pessoas do mesmo grupo podem compartilhar uma "
+"viagem de taxi"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7500
 #, c-format
 msgid "speed of the person for this % in m/s (not together with duration)"
-msgstr ""
+msgstr "velocidade da pessoa para esse % em m/s (separado da duração)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7506
 #: src/netedit/GNETagPropertiesDatabase.cpp:7552
 msgid "duration of the plan in second (not together with speed)"
-msgstr ""
+msgstr "duração desse plano em segundos (separado da velocidade)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7517
 msgid "list of vehicle alternatives to take for the ride"
@@ -8350,11 +8365,11 @@ msgstr "lista de alternativas de veículos para o transporte"
 #: src/netedit/GNETagPropertiesDatabase.cpp:7546
 msgid ""
 "speed of the person for this tranship in m/s (not together with duration)"
-msgstr ""
+msgstr "velocidade da pessoa para esse transbordo em m/s (separado da duração)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7576
 msgid "Activity displayed for stopped person in GUI and output files "
-msgstr ""
+msgstr "Atividade mostrada para a pessoa parada na GUI e nos arquivos de saída "
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7597
 #: src/netedit/frames/data/GNEGenericDataFrame.cpp:72
@@ -8417,31 +8432,41 @@ msgstr "Tipo dos dados gerados por esse meanData"
 msgid ""
 "The aggregation period the values the detector collects shall be summed up"
 msgstr ""
+"O período de agregação em que os valores coletados pelo detector devem ser "
+"somados"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7742
 msgid ""
 "The time to start writing. If not given, the simulation's begin is used."
 msgstr ""
+"O tempo para começar a gravar. Se não for informado, será utilizado o início "
+"da simulação."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7748
 msgid "The time to end writing. If not given the simulation's end is used."
 msgstr ""
+"O tempo para terminar a gravação. Se não for informado, será utilizado o fim "
+"da simulação."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7754
 msgid ""
 "If set to true, edges/lanes which were not used by a vehicle during this "
 "period will not be written"
 msgstr ""
+"Se definido como verdadeiro, arestas/faixas que não foram utilizadas por um "
+"veículo durante este período não serão gravadas"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7761
 msgid "If set, junction internal edges/lanes will be written as well"
-msgstr ""
+msgstr "Se definifo, as arestas/faixas internas da junção também são gravadas"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7767
 msgid ""
 "The maximum travel time in seconds to write if only very small movements "
 "occur"
 msgstr ""
+"O tempo máximo de viagem, em segundos, a ser registrado se ocorrerem apenas "
+"movimentos muito pequenos"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7773
 msgid ""
@@ -8601,6 +8626,8 @@ msgid ""
 "The speed-based threshold that describes how slow a vehicle has to be to be "
 "recognized as halting) in m/s"
 msgstr ""
+"O limiar baseado na velocidade que descreve quão lento um veículo deve estar "
+"para ser reconhecido como parado (em m/s)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:8030
 msgid ""
@@ -9191,6 +9218,8 @@ msgid ""
 "Show grid and restrict movement to the grid - define grid size in "
 "visualization options. (Ctrl+G)"
 msgstr ""
+"Mostrar grade e restringir movimento à grade - definir tamanho da grade nas "
+"opções de visualização. (Ctrl+G)"
 
 #: src/netedit/GNEViewNetHelper.cpp:2722 src/netedit/GNEViewNetHelper.cpp:3006
 #: src/netedit/GNEViewNetHelper.cpp:3278
@@ -13568,6 +13597,8 @@ msgid ""
 "- For numerical attributes the match expression must consist of a comparison"
 " operator ('<', '>', '=') and a number."
 msgstr ""
+"- Para atributos numéricos, a expressão de correspondência deve consistir de "
+"um operador de comparação ('<', '>', '=') e um número."
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:327
 msgid ""
