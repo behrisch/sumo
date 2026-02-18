@@ -1197,7 +1197,11 @@ MSNet::writeOutput() {
 
         if (MSNet::getInstance()->getVehicleControl().getRunningVehicleNo() > 0) {
             std::string timestep = time2string(myStep);
-            timestep = timestep.substr(0, timestep.length() - 3);
+            if (TS >= 1.0) {
+                timestep = timestep.substr(0, timestep.length() - 3);
+            } else if (DELTA_T % 100 == 0) {
+                timestep = timestep.substr(0, timestep.length() - 1);
+            }
             std::string output = OptionsCont::getOptions().getString("vtk-output");
             std::string filename = output + "_" + timestep + ".vtp";
 
