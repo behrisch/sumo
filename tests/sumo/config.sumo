@@ -65,6 +65,12 @@ fcd:fcd.xml
 person_fcd:person_fcd.xml
 full:full.xml
 vtk:vtk.txt
+vtp_0:output_0.vtp
+vtp_0_5:output_0.5.vtp
+vtp_1:output_1.vtp
+vtp_1_5:output_1.5.vtp
+vtp_2:output_2.vtp
+vtp_2_5:output_2.5.vtp
 queue:queue.xml
 emissions:emissions.xml
 battery:battery.xml

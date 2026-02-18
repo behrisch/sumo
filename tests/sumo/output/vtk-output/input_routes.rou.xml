@@ -1,0 +1,5 @@
+<routes>
+    <trip id="v0" depart="0" from="SC" to="CN" departSpeed="max"/>
+    <trip id="v1" depart="0" from="WC" to="CE" departSpeed="max"/>
+
+</routes>
