@@ -16,7 +16,9 @@ set to zero.
 
 The simulation is forced to generate this output using the option **--vtk-output** {{DT_FILE}}. {{DT_FILE}} is
 the name of the folder where all the VTK files will be written to. It's
-very important that the destination folder exists. For every timestep a
+very important that the destination folder exists. If it is not the case, it will be used as the filename prefix.
+Under Windows, it may be necessary to add a backslash or slash, for example {{DT_FILE}\\}.
+For every simulation timestep, defined in the respective sumo-cfg file, a
 new VTK file will be written. The generated VTK files will be detected
 as a timeseries in ParaView and can be imported very easily.
 
