@@ -60,6 +60,7 @@ The parkingArea supports the following attributes:
 | angle            | float (degree) |                                                                                              | 0                                          | The angle of the road-side parking spaces relative to the lane angle, positive means clockwise                             |
 | lefthand         | bool           |     | *false*    | Whether road-side parking spaces should be drawn on the left side of the lane   |
 | acceptedBadges   | string list |     |  | The set of keywords which give access to the parking area (an empty value means free access to all) |
+| reservable       | bool |               | *false* | Whether vehicles that are [cruising for parking](Rerouter.md#rerouting_to_an_alternative_parking_area) can reserve a parking space |
 
 ## Custom parking spaces
 
