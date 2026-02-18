@@ -6,11 +6,20 @@ title: ChangeLog
 
 ### Bugfixes
 
+- sumo
+  - fixed invalid driveWay foes in moving-block mode #17623
+  - fixed invalid estimation of pickup-traveltime during taxi dispatch #17631, #17629
+  - stopping on a long busStop before reaching the designated spot due to jamming now permits passengers to exit if the vehicle is fully within the busStop #17635
+  - Fixed failure to group taxi passengers when the dispatch-period is low #17644
+
 - sumo-gui
   - Fixed crash when drawing persons #17616
+  - Fixed rare crash when vehicle parameter dialog is open while a vehicle exits the simulation #17637
 
 - netedit
   - python tool dialogs now permit selecting multiple files #17615, #17619 (regression in 1.25.0)
+  - fixed crash when calling python tool and using the 'back' button #17618 (regression in 1.25.0)
+
   
 - netconvert
   - NEMA computation now works for 4-arm junction without right-turns (also affects some signal plans of non-NEMA junctions) #17610  
@@ -26,9 +35,18 @@ title: ChangeLog
 
 ### Enhancements
 
+- sumo
+  - Fixed invalid parking positions in network with [length-geometry mismatch](Simulation/Distances.md#length-geometry-mismatch) #17640
+  - parkingAreas with `onRoad="true"` are now filled from the downstream end if overtaking is not possible (i.e. on rails) #17627
+  - Taxis with idle algorithm `taxistand` now advance in queue when parking with `onRoad="true"` and overtaking is not possible #17632
+  - Added parkingArea attribute `reservable` ({{DT_BOOL}}) which avoids multiple vehicles from targeting the same spot when [cruising for parking](Simulation/Rerouter.md#rerouting_to_an_alternative_parking_area) #17628
+  - Added taxi param `<param key="device.taxi.swapGroup" value="<GROUP_NAME>"/>` which permits idle taxis to receive dispatch tasks before pickup is complete from other taxis in the same swapGroup if that would reduce time to pickup #17639
+  - carFollowModel *ACC* now supports driverstate device (but it is only active when setting vType attribute `applyDriverState="1"`) #17633
+  - Option **--vtk-output** now supports writing data at sub-second simulation step-length #17645
+
 - meso
   - edge-type specific meso parameters now support `edgeLength` #17582
-
+  - now supporting battery device in #13843
 
 - tools
   - osmWebWizard.py: now automatically saves osmGet configuration for easier updating of a scenario #17570
@@ -36,6 +54,9 @@ title: ChangeLog
   - osmWebWizadr.py: now permits to set a 'verbose' checkbox which gets forward to all applications #17573
   - osmGet.py: now attempts to download again after timeout and tries to use proxies (also affects osmWebWizard) #17597
   - plotXMLAttrbutes.py: added option **--join** to configure the separator when joining values or labels #17612
+  - generateStationEdges.py: added option **--join-stations** to generate a single access edge for all stops with the same name #17625
+  - generateStationEdges.py: added option **--build** to automatically create the extended network #13383
+
 
 
 ## Version 1.26.0 (29.01.2026)
