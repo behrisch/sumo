@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-05 20:19+0000\n"
+"PO-Revision-Date: 2026-02-18 18:25+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/sumo-"
 "gui-netedit/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/gui/GUIApplicationWindow.cpp:314 src/gui/GUIApplicationWindow.cpp:317
 #: src/gui/GUIApplicationWindow.cpp:2298 src/gui/GUIApplicationWindow.cpp:2299
@@ -5339,6 +5339,8 @@ msgstr "Ob dieser Knotenpunkt am Rand des Netzes liegt"
 #: src/netedit/GNETagPropertiesDatabase.cpp:624
 msgid "Whether this junction may be considered when guessing roundabouts"
 msgstr ""
+"Ob dieser Knotenpunkt als Kandidat beim Raten von Kreisverkehren infrage "
+"kommt"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:633
 msgid "An optional type for the traffic light algorithm"
@@ -13639,6 +13641,9 @@ msgid ""
 " select at least\n"
 " one element"
 msgstr ""
+"-Für dieses weitere Element\n"
+" muss mindestens ein\n"
+" Element ausgewählt werden"
 
 #: src/netedit/frames/GNEViewObjectSelector.cpp:85
 #, c-format
@@ -13842,20 +13847,25 @@ msgstr "- Beispiele:"
 msgid ""
 "     junction; id; 'foo' -> match all junctions that have 'foo' in their id"
 msgstr ""
+"     junction; id; 'foo' -> findet alle Knotenpunkte mit 'foo' in ihrer ID"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:337
 msgid ""
 "     junction; type; '=priority' -> match all junctions of type 'priority', "
 "but not of type 'priority_stop'"
 msgstr ""
+"     junction; type; '=priority' -> trifft auf alle Knotenpunkte vom Typ "
+"'priority' zu, jedoch nicht auf die vom Typ 'priority_stop'"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:338
 msgid "     edge; speed; '>10' -> match all edges with a speed above 10"
 msgstr ""
+"     edge; speed; '>10' -> findet alle Kanten mit einer erlaubten "
+"Geschwindigkeit größer 10"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:341
 msgid "Netedit parameters Help"
-msgstr ""
+msgstr "Netedit-Parameterhilfe"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:486
 msgid "Show all attributes"
@@ -14203,11 +14213,11 @@ msgstr ""
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:607
 msgid "There are locked elements in the current selection."
-msgstr ""
+msgstr "Die aktuelle Auswahl enthält gesperrte Elemente."
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:608
 msgid "Apply operation to locked elements?"
-msgstr ""
+msgstr "Soll die Operation auf die gesperrten Elemente angewandt werden?"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:638
 msgid "Hierarchy operations"
@@ -14561,7 +14571,7 @@ msgstr "auf Standardwerte des Fahrzeugtyps zurücksetzen"
 
 #: src/netedit/frames/demand/GNETypeFrame.cpp:340
 msgid "remove % '%'"
-msgstr ""
+msgstr "% '%' entfernen"
 
 #: src/netedit/frames/demand/GNETypeFrame.cpp:345
 msgid "Delete % '%' will remove one vehicle. Continue?"
