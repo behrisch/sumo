@@ -59,7 +59,7 @@ A person can also use a taxi by including it as a [personTrip](../Specification/
 Whenever a person enters a taxi during the intermodal route search, a time penalty is applied to account for the expected time loss from waiting for the taxi and embarking. The default value is set 300s and can be configure with option **--persontrip.taxi.waiting-time**. This prevents rapid switching between travel modes.
 
 ## Groups of Persons
-Multiple persons can travel together as a group using attribute `group` (if the taxi has sufficient capacity):
+Multiple persons can travel together from the same origin to the same destination as a group using attribute `group` (if the taxi has sufficient capacity):
 
 ```xml
     <person id="p0" depart="0.00">
@@ -69,6 +69,8 @@ Multiple persons can travel together as a group using attribute `group` (if the 
         <ride from="B2C2" to="A0B0" lines="taxi" group="g0"/>
     </person>
 ```
+
+Starting with version SUMO 1.27.0 this grouping also works if reservations are received after a taxi has alrady been dispatched. Persons in the same group will be permitted to join the ride up to the capacity of the vehicle.
 
 ## Prebooking
 Direct ride hailing can be regarded as a spontaneous booking. If the taxi is to be requested before the person is at the pick-up location, prebooking is necessary. This is used by specifying an `earliestPickupTime` and a `reservationTime` in the `ride`. The `reservationTime` specifies the time at which the reservation is created and made available to the dispatch. It may also be less than the person's depart. The `earliestPickupTime` specifies the time at which the person is ready to be picked up. Depending on the algorithm used, this may allow a better dispatch to be made. Especially in combination with a custom dispatch algorithm via [TraCi](#traci), the requirements of different use cases can be addressed.
