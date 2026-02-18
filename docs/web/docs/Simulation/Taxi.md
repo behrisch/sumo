@@ -138,7 +138,16 @@ algorithms are available
 !!! note
     User-contributed dispatch algorithms are welcome.
 
+## Dispatch Options
+
 The period in which the dispatch algorithm runs can be controlled with option **--device.taxi.dispatch-period**. The default is 60s.
+
+The option **--device.taxi.dispatch-algorithm.params KEY1:VALUE1[,KEY2:VALUE]** supports key:value-pair `routingMode:0` which makes taxis use empty-network traveltimes when estimating pickup duration (or loaded traveltimes when available). By default taxis will use [current traveltimes (smoothed)](../Demand/Automatic_Routing.md#edge_weights) instead.
+
+## Swapping tasks after dispatch
+
+Taxis can be configured with `<param key="device.taxi.swapGroup" value="<GROUPNAME>"/>` in their `vType` or `<vehicle>`-definition (setting `<GROUPNAME>` to an arbitrary non-empty string).
+If a taxi sets this parameter, it can receive tasks from other taxis with the same `swapGroup` value upon entering the idle state. This is doen if the other taxi has not yet picked up any passengers and the idle taxi is closer to the pickup location.
 
 ## Algorithm-Output
 
