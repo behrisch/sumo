@@ -200,7 +200,11 @@ Example declarations for the rerouter and the taxi vType that references it:
 </vType>
 ```
 
+### Taxis stands for rail taxis
 
+When defining taxi stands for rail taxis, overtaking on a rail track is not possible and thus parking spaces will automatically be filled beginning at the downstream end.
+If the first taxi in the queue of waiting taxis is dispatched, all idling taxis behind it will then automatically advance in the queue to fill up that spot.
+If another vehicle approaches the end of the queue and cannot park (due to lack of free capacity or havin a different destination), the whole queue ahead will exit the parkingArea to allow the rear vehcle to pass.
 
 ## Customer Stops
 
