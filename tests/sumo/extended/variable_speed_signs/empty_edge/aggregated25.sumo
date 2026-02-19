@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-02-02T16:27:07.208153+01:00 by Eclipse SUMO sumo v1_25_0+1211-51dddf4ab0e
+<!-- generated on 2026-02-19T09:28:20.769252+01:00 by Eclipse SUMO sumo v1_26_0+0259-be3cc20a59c
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -48,7 +48,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="27.80" departed="0" entered="0"/>
         <edge id="left" speed="2.80" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="14.19" departed="0" entered="1"/>
+        <edge id="middle" speed="13.90" departed="0" entered="0"/>
         <edge id="rend" speed="27.80" departed="0" entered="0"/>
     </interval>
     <interval begin="25.00" end="50.00" id="dump_25">
@@ -57,7 +57,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="27.80" departed="0" entered="0"/>
         <edge id="left" speed="2.80" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.90" departed="0" entered="2"/>
+        <edge id="middle" speed="13.90" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="0"/>
     </interval>
     <interval begin="50.00" end="75.00" id="dump_25">
@@ -66,7 +66,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="27.80" departed="0" entered="0"/>
         <edge id="left" speed="2.80" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.90" departed="0" entered="3"/>
+        <edge id="middle" speed="13.90" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="0"/>
     </interval>
     <interval begin="75.00" end="100.00" id="dump_25">
@@ -75,7 +75,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="12.12" departed="0" entered="1"/>
         <edge id="left" speed="2.80" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.81" departed="0" entered="2"/>
+        <edge id="middle" speed="13.81" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="0"/>
     </interval>
     <interval begin="100.00" end="125.00" id="dump_25">
@@ -84,7 +84,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="23.99" departed="0" entered="2"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.74" departed="0" entered="3"/>
+        <edge id="middle" speed="13.74" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="1"/>
     </interval>
     <interval begin="125.00" end="150.00" id="dump_25">
@@ -93,7 +93,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.62" departed="0" entered="3"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.66" departed="0" entered="2"/>
+        <edge id="middle" speed="13.66" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="3"/>
     </interval>
     <interval begin="150.00" end="175.00" id="dump_25">
@@ -102,7 +102,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.61" departed="0" entered="2"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.74" departed="0" entered="3"/>
+        <edge id="middle" speed="13.74" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="2"/>
     </interval>
     <interval begin="175.00" end="200.00" id="dump_25">
@@ -111,7 +111,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.62" departed="0" entered="3"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.66" departed="0" entered="2"/>
+        <edge id="middle" speed="13.66" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="3"/>
     </interval>
     <interval begin="200.00" end="225.00" id="dump_25">
@@ -120,7 +120,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.61" departed="0" entered="2"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.74" departed="0" entered="3"/>
+        <edge id="middle" speed="13.74" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="2"/>
     </interval>
     <interval begin="225.00" end="250.00" id="dump_25">
@@ -129,7 +129,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.62" departed="0" entered="3"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.66" departed="0" entered="2"/>
+        <edge id="middle" speed="13.66" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="3"/>
     </interval>
     <interval begin="250.00" end="275.00" id="dump_25">
@@ -138,7 +138,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.61" departed="0" entered="2"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.74" departed="0" entered="3"/>
+        <edge id="middle" speed="13.74" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="2"/>
     </interval>
     <interval begin="275.00" end="300.00" id="dump_25">
@@ -147,7 +147,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.62" departed="0" entered="3"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.66" departed="0" entered="2"/>
+        <edge id="middle" speed="13.66" departed="0" entered="3"/>
         <edge id="rend" speed="27.80" departed="0" entered="3"/>
     </interval>
     <interval begin="300.00" end="325.00" id="dump_25">
@@ -156,7 +156,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.61" departed="0" entered="2"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.74" departed="0" entered="3"/>
+        <edge id="middle" speed="13.74" departed="0" entered="2"/>
         <edge id="rend" speed="27.80" departed="0" entered="2"/>
     </interval>
     <interval begin="325.00" end="350.00" id="dump_25">
@@ -165,7 +165,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="end" speed="24.62" departed="0" entered="3"/>
         <edge id="left" speed="47.22" departed="0" entered="0"/>
         <edge id="left2end" speed="27.80" departed="0" entered="0"/>
-        <edge id="middle" speed="13.63" departed="0" entered="0"/>
+        <edge id="middle" speed="13.63" departed="0" entered="1"/>
         <edge id="rend" speed="27.80" departed="0" entered="3"/>
     </interval>
     <interval begin="350.00" end="375.00" id="dump_25">

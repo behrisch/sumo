@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-11-18T16:33:47.858899+01:00 by Eclipse SUMO sumo v1_25_0+0086-b1f02afa5bd
+<!-- generated on 2026-02-19T09:28:21.173021+01:00 by Eclipse SUMO sumo v1_26_0+0259-be3cc20a59c
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -46,6 +46,6 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <edge id="beg" sampledSeconds="642.69" traveltime="8.80" overlapTraveltime="9.01" density="30.39" overlapDensity="31.20" laneDensity="15.20" occupancy="7.70" waitingTime="0.00" timeLoss="373.17" speed="11.66" speedRelative="0.42" departed="75" arrived="0" entered="0" left="75" laneChangedFrom="50" laneChangedTo="50" flow="1243.83"/>
         <edge id="end" sampledSeconds="464.15" traveltime="5.13" overlapTraveltime="5.31" density="15.66" overlapDensity="16.10" laneDensity="15.66" occupancy="7.80" waitingTime="0.00" timeLoss="8.54" speed="27.29" speedRelative="0.98" departed="0" arrived="88" entered="88" left="0" laneChangedFrom="0" laneChangedTo="0" flow="1537.86"/>
         <edge id="end2" sampledSeconds="247.88" traveltime="9.64" overlapTraveltime="10.00" density="8.74" overlapDensity="8.99" laneDensity="8.74" occupancy="4.35" waitingTime="0.00" timeLoss="0.00" speed="13.89" speedRelative="1.00" departed="0" arrived="25" entered="25" left="0" laneChangedFrom="0" laneChangedTo="0" flow="436.89"/>
-        <edge id="middle" sampledSeconds="480.62" traveltime="4.10" overlapTraveltime="4.32" density="22.45" overlapDensity="23.68" laneDensity="11.22" occupancy="5.66" waitingTime="0.00" timeLoss="60.00" speed="23.94" speedRelative="0.86" departed="38" arrived="0" entered="75" left="113" laneChangedFrom="38" laneChangedTo="38" flow="1940.38"/>
+        <edge id="middle" sampledSeconds="480.62" traveltime="4.10" overlapTraveltime="4.32" density="22.45" overlapDensity="23.68" laneDensity="11.22" occupancy="5.66" waitingTime="0.00" timeLoss="60.71" speed="23.94" speedRelative="0.86" departed="38" arrived="0" entered="75" left="113" laneChangedFrom="38" laneChangedTo="38" flow="1940.38"/>
     </interval>
 </meandata>
