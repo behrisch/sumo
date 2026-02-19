@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-18 18:25+0000\n"
+"PO-Revision-Date: 2026-02-20 18:14+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/de/>\n"
@@ -4476,11 +4476,12 @@ msgstr "Die Kommunikationsreichweite zur LSA"
 #: src/microsim/devices/MSDevice_GLOSA.cpp:54
 msgid "The maximum speed factor when approaching a green light"
 msgstr ""
-"Der maximale Geschwindigkeitsfaktor bei der Annäherung an eine grüne LSA"
+"Der maximale Geschwindigkeitsfaktor bei der Annäherung an ein Grün zeigendes "
+"Signal"
 
 #: src/microsim/devices/MSDevice_GLOSA.cpp:57
 msgid "Minimum speed when coasting towards a red light"
-msgstr "Mindestgeschwindigkeit beim Annähern auf eine rote LSA"
+msgstr "Mindestgeschwindigkeit beim Annähern an ein rot zeigendes Signal"
 
 #: src/microsim/devices/MSDevice_GLOSA.cpp:60
 msgid ""
@@ -5624,7 +5625,7 @@ msgstr ""
 msgid ""
 "At actuated tlLogic '%', minDur % is too short for a detector gap of %m."
 msgstr ""
-"Bei aktivierter LSA-Logik '%', minimale Dauer % ist zu kurz für eine "
+"Verkehrabhängige LSA-Logik '%': minimale Dauer % ist zu kurz für eine "
 "Detektorlücke von %m."
 
 #: src/microsim/traffic_lights/MSActuatedTrafficLightLogic.cpp:433
