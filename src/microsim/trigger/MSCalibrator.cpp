@@ -92,7 +92,7 @@ MSCalibrator::MSCalibrator(const std::string& id,
     myLane(lane),
     myNode(node),
     myPos(pos), myProbe(probe),
-    myMeanDataParent(id + "_dummyMeanData", 0, 0, false, false, false, false, false, false, 1, 0, 0, vTypes, "",
+    myMeanDataParent(id + "_dummyMeanData", 0, 0, false, "true", false, false, 0, 1, 0, 0, vTypes, "",
                      std::vector<MSEdge*>(), AggregateType::NO),
     myEdgeMeanData(nullptr, length, false, &myMeanDataParent),
     myCurrentStateInterval(myIntervals.begin()),
@@ -369,9 +369,9 @@ MSCalibrator::execute(SUMOTime currentTime) {
         if (!mySpeedIsDefault) {
             // reset speed to default
             if (myLane == nullptr) {
-                myEdge->setMaxSpeed(myDefaultSpeed);
+                myEdge->setMaxSpeed(myDefaultSpeed, false);
             } else {
-                myLane->setMaxSpeed(myDefaultSpeed);
+                myLane->setMaxSpeed(myDefaultSpeed, false);
             }
             mySpeedIsDefault = true;
         }

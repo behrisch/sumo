@@ -310,8 +310,7 @@ public:
      * @param[in] dumpBegin Begin time of dump
      * @param[in] dumpEnd End time of dump
      * @param[in] useLanes Information whether lane-based or edge-based dump shall be generated
-     * @param[in] withEmpty Information whether empty lanes/edges shall be written
-     * @param[in] withInternal Information whether internal lanes/edges shall be written
+     * @param[in] excludeEmpty Information if and which empty lanes/edges shall be written
      * @param[in] trackVehicles Information whether vehicles shall be tracked
      * @param[in] detectPersons Whether pedestrians shall be detected instead of vehicles
      * @param[in] maxTravelTime the maximum travel time to use when calculating per vehicle output
@@ -321,8 +320,7 @@ public:
      */
     MSMeanData(const std::string& id,
                const SUMOTime dumpBegin, const SUMOTime dumpEnd,
-               const bool useLanes, const bool withEmpty,
-               const bool printDefaults, const bool withInternal,
+               const bool useLanes, const std::string& excludeEmpty, const bool withInternal,
                const bool trackVehicles, const int detectPersons,
                const double minSamples,
                const double maxTravelTime,
@@ -471,16 +469,15 @@ protected:
      */
     virtual void openInterval(OutputDevice& dev, const SUMOTime startTime, const SUMOTime stopTime);
 
-    /** @brief Checks for emptiness and writes prefix into the given stream
+    /** @brief Writes the surrounding element into the given stream
      *
      * @param[in] dev The output device to write the data into
      * @param[in] values The values to check for emptiness
      * @param[in] tag The xml tag to write (lane / edge)
      * @param[in] id The id for the lane / edge to write
-     * @return whether further output should be generated
      * @exception IOError If an error on writing occurs (!!! not yet implemented)
      */
-    virtual bool writePrefix(OutputDevice& dev, const MeanDataValues& values,
+    virtual void writePrefix(OutputDevice& dev, const MeanDataValues& values,
                              const SumoXMLTag tag, const std::string id) const;
 
 
@@ -498,7 +495,7 @@ protected:
     std::vector<std::vector<MeanDataValues*> > myMeasures;
 
     /// @brief Whether empty lanes/edges shall be written
-    const bool myDumpEmpty;
+    bool myDumpEmpty = true;
 
     /// @brief Information whether the output shall be edge-based (not lane-based)
     const bool myAmEdgeBased;
@@ -518,8 +515,11 @@ private:
     /// @brief The index in myEdges / myMeasures
     std::map<const MSEdge*, int> myEdgeIndex;
 
-    /// @brief Whether empty lanes/edges shall be written
-    const bool myPrintDefaults;
+    /// @brief Whether empty lanes/edges shall be written with default values
+    bool myPrintDefaults = false;
+
+    /// @brief Whether only empty lanes/edges which have been modified shall be written
+    bool myPrintModified = false;
 
     /// @brief Whether internal lanes/edges shall be written
     const bool myDumpInternal;

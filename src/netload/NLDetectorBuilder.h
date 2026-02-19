@@ -345,7 +345,7 @@ public:
      * @param[in] end dump end time
      * @param[in] type The type of values to be generated
      * @param[in] useLanes Information whether lane-based or edge-based dump shall be generated
-     * @param[in] withEmpty Information whether empty lanes/edges shall be written
+     * @param[in] excludeEmpty Information if and which empty lanes/edges shall be written
      * @param[in] withInternal Information whether internal lanes/edges shall be written
      * @param[in] trackVehicles Information whether information shall be collected per vehicle
      * @param[in] detectPersons Whether pedestrians shall be detected instead of vehicles
@@ -357,7 +357,7 @@ public:
      */
     void createEdgeLaneMeanData(const std::string& id, SUMOTime frequency,
                                 SUMOTime begin, SUMOTime end, const std::string& type,
-                                const bool useLanes, const bool withEmpty, const bool printDefaults,
+                                const bool useLanes, const std::string& excludeEmpty,
                                 const bool withInternal, const bool trackVehicles, const int detectPersons,
                                 const double maxTravelTime, const double minSamples,
                                 const double haltSpeed, const std::string& vTypes,

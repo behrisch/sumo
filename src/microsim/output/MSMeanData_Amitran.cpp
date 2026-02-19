@@ -139,7 +139,7 @@ MSMeanData_Amitran::MSLaneMeanDataValues::write(OutputDevice& dev, const SumoXML
 MSMeanData_Amitran::MSMeanData_Amitran(const std::string& id,
                                        const SUMOTime dumpBegin,
                                        const SUMOTime dumpEnd, const bool useLanes,
-                                       const bool withEmpty, const bool printDefaults,
+                                       const std::string& excludeEmpty,
                                        const bool withInternal,
                                        const bool trackVehicles,
                                        const int detectPersons,
@@ -150,7 +150,7 @@ MSMeanData_Amitran::MSMeanData_Amitran(const std::string& id,
                                        const std::string& writeAttributes,
                                        const std::vector<MSEdge*>& edges,
                                        AggregateType aggregate) :
-    MSMeanData(id, dumpBegin, dumpEnd, useLanes, withEmpty, printDefaults,
+    MSMeanData(id, dumpBegin, dumpEnd, useLanes, excludeEmpty,
                withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate),
     myHaltSpeed(haltSpeed) {
 }
@@ -178,13 +178,9 @@ MSMeanData_Amitran::openInterval(OutputDevice& dev, const SUMOTime startTime, co
 }
 
 
-bool
+void
 MSMeanData_Amitran::writePrefix(OutputDevice& dev, const MeanDataValues& values, const SumoXMLTag /* tag */, const std::string id) const {
-    if (myDumpEmpty || !values.isEmpty()) {
-        dev.openTag("link").writeAttr(SUMO_ATTR_ID, id);
-        return true;
-    }
-    return false;
+    dev.openTag("link").writeAttr(SUMO_ATTR_ID, id);
 }
 
 

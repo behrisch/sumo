@@ -1202,11 +1202,11 @@ MSEdge::getVehicleMaxSpeed(const SUMOTrafficObject* const veh) const {
 
 
 void
-MSEdge::setMaxSpeed(double val, double jamThreshold) {
+MSEdge::setMaxSpeed(const double val, const bool modified, const double jamThreshold) {
     assert(val >= 0);
     if (myLanes != nullptr) {
-        for (std::vector<MSLane*>::const_iterator i = myLanes->begin(); i != myLanes->end(); ++i) {
-            (*i)->setMaxSpeed(val, false, false, jamThreshold);
+        for (MSLane* const lane : *myLanes) {
+            lane->setMaxSpeed(val, modified, jamThreshold);
         }
     }
 }

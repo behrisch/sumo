@@ -261,8 +261,7 @@ MSLane::MSLane(const std::string& id, double maxSpeed, double friction, double l
     myVehicles(), myLength(length), myWidth(width),
     myEdge(edge), myMaxSpeed(maxSpeed),
     myFrictionCoefficient(friction),
-    mySpeedByVSS(false),
-    mySpeedByTraCI(false),
+    mySpeedModified(false),
     myPermissions(permissions),
     myChangeLeft(changeLeft),
     myChangeRight(changeRight),
@@ -2796,10 +2795,9 @@ MSLane::getEntryLink() const {
 
 
 void
-MSLane::setMaxSpeed(double val, bool byVSS, bool byTraCI, double jamThreshold) {
+MSLane::setMaxSpeed(const double val, const bool modified, const double jamThreshold) {
     myMaxSpeed = val;
-    mySpeedByVSS = byVSS;
-    mySpeedByTraCI = byTraCI;
+    mySpeedModified = modified;
     myEdge->recalcCache();
     if (MSGlobals::gUseMesoSim) {
         MESegment* first = MSGlobals::gMesoNet->getSegmentForEdge(*myEdge);

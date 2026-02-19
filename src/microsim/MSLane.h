@@ -581,7 +581,7 @@ public:
         if (myRestrictions != nullptr) {
             std::map<SUMOVehicleClass, double>::const_iterator r = myRestrictions->find(veh->getVClass());
             if (r != myRestrictions->end()) {
-                if (mySpeedByVSS || mySpeedByTraCI) {
+                if (mySpeedModified) {
                     return MIN2(myMaxSpeed, MIN2(vehMaxSpeed, r->second * veh->getChosenSpeedFactor()));
                 } else {
                     return MIN2(vehMaxSpeed, r->second * veh->getChosenSpeedFactor());
@@ -589,6 +589,11 @@ public:
             }
         }
         return MIN2(vehMaxSpeed, myMaxSpeed * veh->getChosenSpeedFactor());
+    }
+
+
+    inline bool isSpeedModified() const {
+        return mySpeedModified;
     }
 
 
@@ -747,12 +752,12 @@ public:
         return myVehicles.empty();
     }
 
-    /** @brief Sets a new maximum speed for the lane (used by TraCI and MSCalibrator)
+    /** @brief Sets a new maximum speed for the lane (used by TraCI, MSLaneSpeedTrigger (VSS) and MSCalibrator)
      * @param[in] val the new speed in m/s
-     * @param[in] whether a variable speed sign (VSS) imposes the speed limit
-     * @param[in] whether TraCI imposes the speed limit
+     * @param[in] modified whether this modifies the original speed
+     * @param[in] jamThreshold also set a new jamThreshold
      */
-    void setMaxSpeed(double val, bool byVSS = false, bool byTraCI = false, double jamThreshold = -1);
+    void setMaxSpeed(const double val, const bool modified = true, const double jamThreshold = -1);
 
     /** @brief Sets a new friction coefficient for the lane [*to be later (used by TraCI and MSCalibrator)*]
     * @param[in] val the new friction coefficient [0..1]
@@ -1532,11 +1537,8 @@ protected:
     /// Lane-wide friction coefficient [0..1]
     double myFrictionCoefficient;
 
-    /// @brief Whether the current speed limit is set by a variable speed sign (VSS)
-    bool mySpeedByVSS;
-
-    /// @brief Whether the current speed limit has been set through TraCI
-    bool mySpeedByTraCI;
+    /// @brief Whether the current speed limit is set by a variable speed sign (VSS), TraCI or a MSCalibrator
+    bool mySpeedModified;
 
     /// The vClass permissions for this lane
     SVCPermissions myPermissions;

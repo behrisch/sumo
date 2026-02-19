@@ -109,15 +109,14 @@ MSMeanData_Harmonoise::MSLaneMeanDataValues::write(OutputDevice& dev, const Sumo
 // ---------------------------------------------------------------------------
 MSMeanData_Harmonoise::MSMeanData_Harmonoise(const std::string& id,
         const SUMOTime dumpBegin, const SUMOTime dumpEnd,
-        const bool useLanes, const bool withEmpty,
-        const bool printDefaults, const bool withInternal,
+        const bool useLanes, const std::string& excludeEmpty, const bool withInternal,
         const bool trackVehicles,
         const double maxTravelTime, const double minSamples,
         const std::string& vTypes,
         const std::string& writeAttributes,
         const std::vector<MSEdge*>& edges,
         AggregateType aggregate) :
-    MSMeanData(id, dumpBegin, dumpEnd, useLanes, withEmpty, printDefaults,
+    MSMeanData(id, dumpBegin, dumpEnd, useLanes, excludeEmpty,
                withInternal, trackVehicles, 0, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate) {
 }
 

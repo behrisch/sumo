@@ -412,8 +412,7 @@ MSMeanData::MeanDataValueTracker::getSamples() const {
 // ---------------------------------------------------------------------------
 MSMeanData::MSMeanData(const std::string& id,
                        const SUMOTime dumpBegin, const SUMOTime dumpEnd,
-                       const bool useLanes, const bool withEmpty,
-                       const bool printDefaults, const bool withInternal,
+                       const bool useLanes, const std::string& excludeEmpty, const bool withInternal,
                        const bool trackVehicles,
                        const int detectPersons,
                        const double maxTravelTime,
@@ -425,18 +424,29 @@ MSMeanData::MSMeanData(const std::string& id,
     MSDetectorFileOutput(id, vTypes, "", detectPersons),
     myMinSamples(minSamples),
     myMaxTravelTime(maxTravelTime),
-    myDumpEmpty(withEmpty),
     myAmEdgeBased(!useLanes),
     myDumpBegin(dumpBegin),
     myDumpEnd(dumpEnd),
     myInitTime(SUMOTime_MAX),
     myEdges(edges),
-    myPrintDefaults(printDefaults),
     myDumpInternal(withInternal && MSGlobals::gUsingInternalLanes),
     myTrackVehicles(trackVehicles),
     myWrittenAttributes(OutputDevice::parseWrittenAttributes(StringTokenizer(writeAttributes).getVector(), "meandata '" + id + "'")),
-    myAggregate(aggregate)
-{ }
+    myAggregate(aggregate) {
+    try {
+        myDumpEmpty = !StringUtils::toBool(excludeEmpty);
+    } catch (const BoolFormatException&) {
+        if (excludeEmpty == "default" || excludeEmpty == "defaults") {
+            myPrintDefaults = true;
+        } else if (excludeEmpty == "modified") {
+            myDumpEmpty = false;
+            myPrintDefaults = true;
+            myPrintModified = true;
+        } else {
+            throw;
+        }
+    }
+}
 
 
 void
@@ -598,7 +608,8 @@ MSMeanData::writeAggregated(OutputDevice& dev, SUMOTime startTime, SUMOTime stop
         }
     }
 
-    if (writePrefix(dev, *sumData, SUMO_TAG_EDGE, "AGGREGATED")) {
+    if (myDumpEmpty || !sumData->isEmpty()) {
+        writePrefix(dev, *sumData, SUMO_TAG_EDGE, "AGGREGATED");
         dev.writeAttr(SUMO_ATTR_NUMEDGES, myEdges.size());
         sumData->write(dev, myWrittenAttributes, stopTime - startTime, laneNumber, speedSum / (double)myEdges.size(),
                        myPrintDefaults ? totalTT : -1.);
@@ -652,7 +663,8 @@ MSMeanData::writeAggregatedTAZ(OutputDevice& dev, SUMOTime startTime, SUMOTime s
                 }
             }
         }
-        if (writePrefix(dev, *sumData, SUMO_TAG_EDGE, taz->getID())) {
+        if (myDumpEmpty || !sumData->isEmpty()) {
+            writePrefix(dev, *sumData, SUMO_TAG_EDGE, taz->getID());
             dev.writeAttr(SUMO_ATTR_NUMEDGES, connected.size());
             sumData->write(dev, myWrittenAttributes, stopTime - startTime, laneNumber, speedSum / (double)connected.size(),
                            myPrintDefaults ? totalTT : -1.);
@@ -685,8 +697,9 @@ MSMeanData::writeEdge(OutputDevice& dev,
             idx++;
         }
         if (myAmEdgeBased) {
-            MeanDataValues* data = edgeValues.front();
-            if (writePrefix(dev, *data, SUMO_TAG_EDGE, getEdgeID(edge))) {
+            MeanDataValues* const data = edgeValues.front();
+            if (myDumpEmpty || (myPrintModified && edge->getLanes()[0]->isSpeedModified()) || !data->isEmpty()) {
+                writePrefix(dev, *data, SUMO_TAG_EDGE, getEdgeID(edge));
                 data->write(dev, myWrittenAttributes, stopTime - startTime,
                             edge->getNumDrivingLanes(),
                             edge->getSpeedLimit(),
@@ -698,12 +711,11 @@ MSMeanData::writeEdge(OutputDevice& dev,
             return;
         }
     }
-    std::vector<MeanDataValues*>::const_iterator lane;
     if (!myAmEdgeBased) {
         bool writeCheck = myDumpEmpty;
         if (!writeCheck) {
-            for (lane = edgeValues.begin(); lane != edgeValues.end(); ++lane) {
-                if (!(*lane)->isEmpty()) {
+            for (const MeanDataValues* const laneData : edgeValues) {
+                if (!laneData->isEmpty() || (myPrintModified && laneData->getLane()->isSpeedModified())) {
                     writeCheck = true;
                     break;
                 }
@@ -712,14 +724,15 @@ MSMeanData::writeEdge(OutputDevice& dev,
         if (writeCheck) {
             dev.openTag(SUMO_TAG_EDGE).writeAttr(SUMO_ATTR_ID, edge->getID());
         }
-        for (lane = edgeValues.begin(); lane != edgeValues.end(); ++lane) {
-            MeanDataValues& meanData = **lane;
-            if (writePrefix(dev, meanData, SUMO_TAG_LANE, meanData.getLane()->getID())) {
-                meanData.write(dev, myWrittenAttributes, stopTime - startTime, 1, meanData.getLane()->getSpeedLimit(),
-                               myPrintDefaults ? meanData.getLane()->getLength() / meanData.getLane()->getSpeedLimit() : -1.);
+        for (MeanDataValues* const laneData : edgeValues) {
+            const MSLane* const lane = laneData->getLane();
+            if (myDumpEmpty || (myPrintModified && lane->isSpeedModified()) || !laneData->isEmpty()) {
+                writePrefix(dev, *laneData, SUMO_TAG_LANE, lane->getID());
+                laneData->write(dev, myWrittenAttributes, stopTime - startTime, 1, lane->getSpeedLimit(),
+                                myPrintDefaults ? lane->getLength() / lane->getSpeedLimit() : -1.);
             }
             if (!MSNet::getInstance()->skipFinalReset()) {
-                meanData.reset(true);
+                laneData->reset(true);
             }
         }
         if (writeCheck) {
@@ -728,7 +741,8 @@ MSMeanData::writeEdge(OutputDevice& dev,
     } else {
         if (myTrackVehicles) {
             MeanDataValues& meanData = **edgeValues.begin();
-            if (writePrefix(dev, meanData, SUMO_TAG_EDGE, edge->getID())) {
+            if (myDumpEmpty || !meanData.isEmpty()) {
+                writePrefix(dev, meanData, SUMO_TAG_EDGE, edge->getID());
                 meanData.write(dev, myWrittenAttributes, stopTime - startTime, edge->getNumDrivingLanes(), edge->getSpeedLimit(),
                                myPrintDefaults ? edge->getLength() / edge->getSpeedLimit() : -1.);
             }
@@ -737,14 +751,18 @@ MSMeanData::writeEdge(OutputDevice& dev,
             }
         } else {
             MeanDataValues* sumData = createValues(nullptr, edge->getLength(), false);
-            for (lane = edgeValues.begin(); lane != edgeValues.end(); ++lane) {
-                MeanDataValues& meanData = **lane;
-                meanData.addTo(*sumData);
+            bool writeCheck = myDumpEmpty;
+            for (MeanDataValues* const laneData : edgeValues) {
+                laneData->addTo(*sumData);
+                if (myPrintModified && laneData->getLane()->isSpeedModified()) {
+                    writeCheck = true;
+                }
                 if (!MSNet::getInstance()->skipFinalReset()) {
-                    meanData.reset();
+                    laneData->reset();
                 }
             }
-            if (writePrefix(dev, *sumData, SUMO_TAG_EDGE, getEdgeID(edge))) {
+            if (writeCheck || !sumData->isEmpty()) {
+                writePrefix(dev, *sumData, SUMO_TAG_EDGE, getEdgeID(edge));
                 sumData->write(dev, myWrittenAttributes, stopTime - startTime, edge->getNumDrivingLanes(), edge->getSpeedLimit(),
                                myPrintDefaults ? edge->getLength() / edge->getSpeedLimit() : -1.);
             }
@@ -761,15 +779,11 @@ MSMeanData::openInterval(OutputDevice& dev, const SUMOTime startTime, const SUMO
 }
 
 
-bool
+void
 MSMeanData::writePrefix(OutputDevice& dev, const MeanDataValues& values, const SumoXMLTag tag, const std::string id) const {
-    if (myDumpEmpty || !values.isEmpty()) {
-        dev.openTag(tag);
-        dev.writeAttr(SUMO_ATTR_ID, id);
-        dev.writeOptionalAttr(SUMO_ATTR_SAMPLEDSECONDS, values.getSamples(), myWrittenAttributes);
-        return true;
-    }
-    return false;
+    dev.openTag(tag);
+    dev.writeAttr(SUMO_ATTR_ID, id);
+    dev.writeOptionalAttr(SUMO_ATTR_SAMPLEDSECONDS, values.getSamples(), myWrittenAttributes);
 }
 
 

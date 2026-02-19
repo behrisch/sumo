@@ -167,8 +167,7 @@ MSMeanData_Emissions::MSLaneMeanDataValues::write(OutputDevice& dev, const SumoX
 MSMeanData_Emissions::MSMeanData_Emissions(const std::string& id,
         const SUMOTime dumpBegin,
         const SUMOTime dumpEnd,
-        const bool useLanes, const bool withEmpty,
-        const bool printDefaults,
+        const bool useLanes, const std::string& excludeEmpty,
         const bool withInternal,
         const bool trackVehicles,
         const double maxTravelTime,
@@ -177,7 +176,7 @@ MSMeanData_Emissions::MSMeanData_Emissions(const std::string& id,
         const std::string& writeAttributes,
         const std::vector<MSEdge*>& edges,
         AggregateType aggregate) :
-    MSMeanData(id, dumpBegin, dumpEnd, useLanes, withEmpty, printDefaults,
+    MSMeanData(id, dumpBegin, dumpEnd, useLanes, excludeEmpty,
                withInternal, trackVehicles, 0, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate)
 { }
 

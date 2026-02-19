@@ -415,7 +415,7 @@ MSMeanData_Net::MSLaneMeanDataValues::getAttributeValue(SumoXMLAttr a,
 MSMeanData_Net::MSMeanData_Net(const std::string& id,
                                const SUMOTime dumpBegin,
                                const SUMOTime dumpEnd, const bool useLanes,
-                               const bool withEmpty, const bool printDefaults,
+                               const std::string& excludeEmpty,
                                const bool withInternal,
                                const bool trackVehicles,
                                const int detectPersons,
@@ -426,7 +426,7 @@ MSMeanData_Net::MSMeanData_Net(const std::string& id,
                                const std::string& writeAttributes,
                                const std::vector<MSEdge*>& edges,
                                AggregateType aggregate) :
-    MSMeanData(id, dumpBegin, dumpEnd, useLanes, withEmpty, printDefaults,
+    MSMeanData(id, dumpBegin, dumpEnd, useLanes, excludeEmpty,
                withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate),
     myHaltSpeed(haltSpeed)
 { }

@@ -504,7 +504,7 @@ NLDetectorBuilder::getPositionChecking(double pos, MSLane* lane, bool friendlyPo
 void
 NLDetectorBuilder::createEdgeLaneMeanData(const std::string& id, SUMOTime frequency,
         SUMOTime begin, SUMOTime end, const std::string& type,
-        const bool useLanes, const bool withEmpty, const bool printDefaults,
+        const bool useLanes, const std::string& excludeEmpty,
         const bool withInternal, const bool trackVehicles, const int detectPersons,
         const double maxTravelTime, const double minSamples,
         const double haltSpeed, const std::string& vTypes,
@@ -526,20 +526,20 @@ NLDetectorBuilder::createEdgeLaneMeanData(const std::string& id, SUMOTime freque
     if ((type == SUMOXMLDefinitions::MeanDataTypes.getString(MeanDataType::DEFAULT)) ||
             (type == SUMOXMLDefinitions::MeanDataTypes.getString(MeanDataType::TRAFFIC)) ||
             (type == "performance")) {
-        det = new MSMeanData_Net(id, begin, end, useLanes, withEmpty,
-                                 printDefaults, withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, haltSpeed, vTypes, writeAttributes, edges, aggregate);
+        det = new MSMeanData_Net(id, begin, end, useLanes, excludeEmpty,
+                                 withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, haltSpeed, vTypes, writeAttributes, edges, aggregate);
     } else if ((type == SUMOXMLDefinitions::MeanDataTypes.getString(MeanDataType::EMISSIONS)) || (type == "hbefa")) {
         if (type == "hbefa") {
             WRITE_WARNING(TL("The netstate type 'hbefa' is deprecated. Please use the type 'emissions' instead."));
         }
-        det = new MSMeanData_Emissions(id, begin, end, useLanes, withEmpty,
-                                       printDefaults, withInternal, trackVehicles, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate);
+        det = new MSMeanData_Emissions(id, begin, end, useLanes, excludeEmpty,
+                                       withInternal, trackVehicles, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate);
     } else if (type == SUMOXMLDefinitions::MeanDataTypes.getString(MeanDataType::HARMONOISE)) {
-        det = new MSMeanData_Harmonoise(id, begin, end, useLanes, withEmpty,
-                                        printDefaults, withInternal, trackVehicles, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate);
+        det = new MSMeanData_Harmonoise(id, begin, end, useLanes, excludeEmpty,
+                                        withInternal, trackVehicles, maxTravelTime, minSamples, vTypes, writeAttributes, edges, aggregate);
     } else if (type == SUMOXMLDefinitions::MeanDataTypes.getString(MeanDataType::AMITRAN)) {
-        det = new MSMeanData_Amitran(id, begin, end, useLanes, withEmpty,
-                                     printDefaults, withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, haltSpeed, vTypes, writeAttributes, edges, aggregate);
+        det = new MSMeanData_Amitran(id, begin, end, useLanes, excludeEmpty,
+                                     withInternal, trackVehicles, detectPersons, maxTravelTime, minSamples, haltSpeed, vTypes, writeAttributes, edges, aggregate);
     } else {
         throw InvalidArgument("Invalid type '" + type + "' for meandata dump '" + id + "'.");
     }
