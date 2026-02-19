@@ -50,7 +50,7 @@ For additional attributes see the table below.
 | period (alias freq) | int (time)                | The aggregation period the values the detector collects shall be summed up. If not given the whole time interval from begin to end (see below) is aggregated.                                                                               |
 | begin          | int (time)                     | The time to start writing (intervals starting before this time are discarded). If not given, the simulation's begin is used.                                                                                                                |
 | end            | int (time)                     | The time to end writing (intervals starting at or after this time are discarded). If not given the simulation's end is used.                                                                                                                |
-| excludeEmpty   | string (true, false, defaults) | If set to true, edges/lanes which were not used by a vehicle during this period will not be written; *default: false*. If set to "defaults" default values for travel time and speed depending on edge length and maximum speed get printed. |
+| excludeEmpty   | string (true, false, defaults, modified) | If set to true, edges/lanes which were not used by a vehicle during this period will not be written; *default: false*. If set to "defaults" default values for travel time and speed depending on edge length and maximum speed get printed, "modified" will print values only for empty edges which have a dynamically adapted maximum speed. |
 | withInternal   | bool                           | If set, junction internal edges/lanes will be written as well; *default: false*.                                                                                                                                                            |
 | maxTraveltime  | float (time)                   | The maximum traveltime in seconds to write if only very small movements occur; *default 100000*.                                                                                                                                            |
 | minSamples     | float (time)                   | The minimum total number of seconds vehicles have to be on the edge / lane to consider it non-empty; *default: \>0*.                                                                                                                        |
@@ -232,7 +232,9 @@ vehicle only once but they include/exclude some special cases.
   drove. If the lane / edge collected no data the attributes speed,
   traveltime, density, occupancy and waitingTime are not written. One
   can disable writing unused edges/lanes by setting the
-  `excludeEmpty` attribute to true.
+  `excludeEmpty` attribute to "true". Setting it to `modified` will
+  print the empty edges if they have been modified by [calibrators](../Calibrator.md),
+  [variable speed signs](../Variable_Speed_Signs.md) or [TraCI](../../TraCI/index.md).
 - Even on lanes/edges which have sampledSeconds="0.00" since the real
   number of sampledSeconds may be 0.001 and was cut off in the output.
   To define a minimum number of samples before you consider your data
