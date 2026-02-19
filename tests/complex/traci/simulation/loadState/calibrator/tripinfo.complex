@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-03-04 18:27:26 by Eclipse SUMO sumo Version v1_12_0+1165-a798d34
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<!-- generated on 2026-02-19T11:18:07.233286+01:00 by Eclipse SUMO sumo v1_26_0+0269-61ae8f436d4
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="input_net2.net.xml"/>
@@ -17,17 +17,17 @@
     </report>
 
     <traci_server>
-        <remote-port value="40610"/>
+        <remote-port value="34949"/>
     </traci_server>
 
-</configuration>
+</sumoConfiguration>
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
     <tripinfo id="cali.0.0" depart="18.00" departLane="SC_0" departPos="4.18" departSpeed="33.19" departDelay="0.00" arrival="30.00" arrivalLane="CN_0" arrivalPos="91.95" arrivalSpeed="14.72" duration="12.00" routeLength="195.82" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="1.52" rerouteNo="0" devices="tripinfo_cali.0.0" vType="car" speedFactor="1.06" vaporized=""/>
-    <tripinfo id="cali.0.2" depart="24.00" departLane="SC_1" departPos="50.14" departSpeed="27.66" departDelay="0.00" arrival="34.00" arrivalLane="CN_1" arrivalPos="91.95" arrivalSpeed="15.04" duration="10.00" routeLength="149.86" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.12" rerouteNo="0" devices="tripinfo_cali.0.2" vType="car" speedFactor="1.08" vaporized=""/>
+    <tripinfo id="cali.0.2" depart="24.00" departLane="SC_1" departPos="50.14" departSpeed="27.66" departDelay="0.00" arrival="34.00" arrivalLane="CN_1" arrivalPos="91.95" arrivalSpeed="15.04" duration="10.00" routeLength="149.86" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.84" rerouteNo="0" devices="tripinfo_cali.0.2" vType="car" speedFactor="1.08" vaporized=""/>
     <tripinfo id="cali.0.1" depart="24.00" departLane="SC_0" departPos="4.01" departSpeed="31.63" departDelay="0.00" arrival="36.00" arrivalLane="CN_0" arrivalPos="91.95" arrivalSpeed="13.55" duration="12.00" routeLength="195.99" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="1.29" rerouteNo="0" devices="tripinfo_cali.0.1" vType="car" speedFactor="0.98" vaporized=""/>
     <tripinfo id="cali.0.0" depart="18.00" departLane="SC_0" departPos="4.18" departSpeed="33.19" departDelay="0.00" arrival="30.00" arrivalLane="CN_0" arrivalPos="91.95" arrivalSpeed="14.72" duration="12.00" routeLength="195.82" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.56" rerouteNo="0" devices="tripinfo_cali.0.0" vType="car" speedFactor="1.06" vaporized=""/>
     <tripinfo id="cali.0.1" depart="25.00" departLane="SC_0" departPos="41.57" departSpeed="28.39" departDelay="0.00" arrival="34.00" arrivalLane="CN_0" arrivalPos="91.95" arrivalSpeed="16.67" duration="9.00" routeLength="158.43" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.83" rerouteNo="0" devices="tripinfo_cali.0.1" vType="car" speedFactor="1.20" vaporized=""/>
-    <tripinfo id="cali.0.2" depart="25.00" departLane="SC_1" departPos="5.54" departSpeed="32.85" departDelay="0.00" arrival="37.00" arrivalLane="CN_1" arrivalPos="91.95" arrivalSpeed="14.53" duration="12.00" routeLength="194.46" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.93" rerouteNo="0" devices="tripinfo_cali.0.2" vType="car" speedFactor="1.05" vaporized=""/>
+    <tripinfo id="cali.0.2" depart="25.00" departLane="SC_1" departPos="5.54" departSpeed="32.85" departDelay="0.00" arrival="37.00" arrivalLane="CN_1" arrivalPos="91.95" arrivalSpeed="14.53" duration="12.00" routeLength="194.46" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="1.52" rerouteNo="0" devices="tripinfo_cali.0.2" vType="car" speedFactor="1.05" vaporized=""/>
 </tripinfos>

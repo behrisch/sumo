@@ -3,11 +3,11 @@
 Success.
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
-Loading net-file from '000/../input_net.net.xml' ... done (1ms).
+Loading net-file from '000/../input_net.net.xml' ... done (0ms).
 Loading additional-files from '000/../edgedata.add.xml' ... done (0ms).
 Loading route-files incrementally from '000/input_routes_000.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 5979.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
@@ -26,7 +26,7 @@ Loading net-file from '001/../input_net.net.xml' ... done (1ms).
 Loading additional-files from '001/../edgedata.add.xml' ... done (0ms).
 Loading route-files incrementally from '001/input_routes_001.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 5257.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
@@ -45,7 +45,7 @@ Loading net-file from '002/../input_net.net.xml' ... done (1ms).
 Loading additional-files from '002/../edgedata.add.xml' ... done (0ms).
 Loading route-files incrementally from '002/input_routes_002.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 4404.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
@@ -60,30 +60,30 @@ Statistics (avg of 1000):
 Success.
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/sumo', '-c', '003/iteration_003.sumocfg']
-Loading net-file from '003/../input_net.net.xml' ... done (0ms).
+Loading net-file from '003/../input_net.net.xml' ... done (5ms).
 Loading additional-files from '003/../edgedata.add.xml' ... done (0ms).
 Loading route-files incrementally from '003/input_routes_003.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 4360.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
  RouteLength: 1005.90
  Speed: 5.77
- Duration: 225.14
- WaitingTime: 70.95
- TimeLoss: 157.11
+ Duration: 225.11
+ WaitingTime: 70.92
+ TimeLoss: 157.08
  DepartDelay: 89.37
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/duarouter', '-c', '004/iteration_004_input_routes_003.duarcfg']
 Success.
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/sumo', '-c', '004/iteration_004.sumocfg']
-Loading net-file from '004/../input_net.net.xml' ... done (0ms).
-Loading additional-files from '004/../edgedata.add.xml' ... done (0ms).
+Loading net-file from '004/../input_net.net.xml' ... done (2ms).
+Loading additional-files from '004/../edgedata.add.xml' ... done (2ms).
 Loading route-files incrementally from '004/input_routes_004.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 4205.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
@@ -98,11 +98,11 @@ Statistics (avg of 1000):
 Success.
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/sumo', '-c', '005/iteration_005.sumocfg']
-Loading net-file from '005/../input_net.net.xml' ... done (1ms).
-Loading additional-files from '005/../edgedata.add.xml' ... done (0ms).
+Loading net-file from '005/../input_net.net.xml' ... done (12ms).
+Loading additional-files from '005/../edgedata.add.xml' ... done (4ms).
 Loading route-files incrementally from '005/input_routes_005.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 3933.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):
@@ -118,10 +118,10 @@ Success.
 -------------------------------------------------------------------------------
 ['/scr1/sumo/bin/sumo', '-c', '006/iteration_006.sumocfg']
 Loading net-file from '006/../input_net.net.xml' ... done (1ms).
-Loading additional-files from '006/../edgedata.add.xml' ... done (1ms).
+Loading additional-files from '006/../edgedata.add.xml' ... done (0ms).
 Loading route-files incrementally from '006/input_routes_006.rou.xml.gz'
 Loading done.
-Simulation version v1_25_0+0021-e81defdd359 started with time: 0.00.
+Simulation version v1_26_0+0269-61ae8f436d4 started with time: 0.00.
 Simulation ended at time: 3772.00.
 Reason: All vehicles have left the simulation.
 Statistics (avg of 1000):

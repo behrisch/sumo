@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-11-18T17:13:11.385358+01:00 by Eclipse SUMO sumo v1_25_0+0086-b1f02afa5bd
+<!-- generated on 2026-02-19T11:17:49.766543+01:00 by Eclipse SUMO sumo v1_26_0+0269-61ae8f436d4
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -18,7 +18,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="46773"/>
+        <remote-port value="42209"/>
     </traci_server>
 
     <mesoscopic>
@@ -36,7 +36,7 @@
         </edge>
         <edge id="A1A2">
             <lane id="A1A2_0" sampledSeconds="82.94" traveltime="7.89" overlapTraveltime="8.27" density="3.65" overlapDensity="3.82" laneDensity="3.65" occupancy="1.80" waitingTime="0.00" timeLoss="6.72" speed="12.69" speedRelative="0.91" departed="0" arrived="0" entered="11" left="10" laneChangedFrom="1" laneChangedTo="0" flow="166.32"/>
-            <lane id="A1A2_1" sampledSeconds="80.60" traveltime="7.70" overlapTraveltime="8.08" density="3.54" overlapDensity="3.71" laneDensity="3.54" occupancy="1.77" waitingTime="0.00" timeLoss="5.19" speed="12.99" speedRelative="0.94" departed="0" arrived="0" entered="9" left="10" laneChangedFrom="0" laneChangedTo="1" flow="165.47"/>
+            <lane id="A1A2_1" sampledSeconds="80.61" traveltime="7.70" overlapTraveltime="8.08" density="3.54" overlapDensity="3.71" laneDensity="3.54" occupancy="1.77" waitingTime="0.00" timeLoss="5.20" speed="12.99" speedRelative="0.94" departed="0" arrived="0" entered="9" left="10" laneChangedFrom="0" laneChangedTo="1" flow="165.48"/>
         </edge>
         <edge id="A2A3">
             <lane id="A2A3_0" sampledSeconds="78.58" traveltime="7.57" overlapTraveltime="7.95" density="3.49" overlapDensity="3.62" laneDensity="3.49" occupancy="1.74" waitingTime="0.00" timeLoss="3.85" speed="13.21" speedRelative="0.95" departed="0" arrived="10" entered="10" left="0" laneChangedFrom="0" laneChangedTo="0" flow="165.90"/>
