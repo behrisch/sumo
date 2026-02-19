@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-16 18:46+0000\n"
+"PO-Revision-Date: 2026-02-19 18:22+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/gui/GUIApplicationWindow.cpp:314 src/gui/GUIApplicationWindow.cpp:317
 #: src/gui/GUIApplicationWindow.cpp:2298 src/gui/GUIApplicationWindow.cpp:2299
@@ -2852,7 +2852,7 @@ msgstr ""
 
 #: src/netedit/GNEApplicationWindow.cpp:3372
 msgid "Force save network"
-msgstr ""
+msgstr "Forza salvataggio della rete"
 
 #: src/netedit/GNEApplicationWindow.cpp:3422
 msgid "Saving network failed"
@@ -2917,6 +2917,8 @@ msgstr ""
 #: src/netedit/GNEApplicationWindow.cpp:3570
 msgid "Saving of netedit configuration aborted (due meanData file)."
 msgstr ""
+"Il salvataggio della configurazione netedit è stato cancellato (a causa del "
+"file meanData)."
 
 #: src/netedit/GNEApplicationWindow.cpp:3582
 #: src/netedit/GNEApplicationWindow.cpp:3726
@@ -2985,7 +2987,7 @@ msgstr "caricamento ripetuto degli elementi addizionali"
 
 #: src/netedit/GNEApplicationWindow.cpp:4005
 msgid "Force save additional elements"
-msgstr ""
+msgstr "Forza salvataggio degli elementi addizionali"
 
 #: src/netedit/GNEApplicationWindow.cpp:4028
 msgid "Additionals saved."
@@ -3052,7 +3054,7 @@ msgstr "caricamento ripetuto degli elementi di domanda"
 
 #: src/netedit/GNEApplicationWindow.cpp:4215
 msgid "Force save demand elements"
-msgstr ""
+msgstr "Forza salvataggio degli elementi di domanda"
 
 #: src/netedit/GNEApplicationWindow.cpp:4236
 msgid "Demand elements saved."
@@ -3105,7 +3107,7 @@ msgstr "caricamento ripetuto degli elementi di dati"
 
 #: src/netedit/GNEApplicationWindow.cpp:4399
 msgid "Force save data elements"
-msgstr ""
+msgstr "Forza salvataggio degli elementi di dati"
 
 #: src/netedit/GNEApplicationWindow.cpp:4417
 msgid "Data elements saved."
@@ -3147,7 +3149,7 @@ msgstr "caricamento ripetuto degli elementi meanData"
 
 #: src/netedit/GNEApplicationWindow.cpp:4570
 msgid "Force save meandata elements"
-msgstr ""
+msgstr "Forza salvataggio degli elementi meanData"
 
 #: src/netedit/GNEApplicationWindow.cpp:4590
 msgid "MeanDatas elements saved"
@@ -7465,11 +7467,11 @@ msgstr "Il percorso del file nel quale questo elemento deve essere salvato"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6207
 msgid "Toggle front element"
-msgstr ""
+msgstr "Cambia elemento frontale"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6212
 msgid "Toggle select element"
-msgstr ""
+msgstr "Cambia elemento selezionato"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6220
 msgid "Change element parent"
@@ -7495,11 +7497,11 @@ msgstr "Lunghezza di %"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6277
 msgid "Force size during creation"
-msgstr ""
+msgstr "Forza grandezza nella creazione"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6279
 msgid "force size"
-msgstr ""
+msgstr "forza grandezza"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6284
 msgid "Longitudinal reference position for creating %"
@@ -11047,7 +11049,7 @@ msgstr "Rimuovi itinerari invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:67
 msgid "Remove invalid routes and save"
-msgstr ""
+msgstr "Rimuovi gli itinerari invalidi e salva gli altri"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:71
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:72
@@ -11373,7 +11375,7 @@ msgstr "Uscita della console"
 
 #: src/netedit/dialogs/run/GNERunDialog.cpp:121
 msgid "tool log file"
-msgstr ""
+msgstr "file protocollo dell'utensile"
 
 #: src/netedit/dialogs/run/GNERunDialog.cpp:196
 msgid "Abort"
@@ -11381,7 +11383,7 @@ msgstr "Interrompi"
 
 #: src/netedit/dialogs/run/GNERunDialog.cpp:197
 msgid "Abort running"
-msgstr ""
+msgstr "Cancella esecuzione"
 
 #: src/netedit/dialogs/run/GNERunNetgenerateDialog.cpp:32
 #: src/netedit/dialogs/tools/GNERunNetgenerateDialog.cpp:56
