@@ -19,6 +19,9 @@ first_later
 # replace first stop after the vehicle has departed
 first_teleport
 
+# insert stop while the vehicle is fast and ahead of a junction
+first_highspeed
+
 # replace second stop after the vehicle has departed
 second
 
