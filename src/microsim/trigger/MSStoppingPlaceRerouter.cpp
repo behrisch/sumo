@@ -128,7 +128,8 @@ MSStoppingPlaceRerouter::rerouteStoppingPlace(MSStoppingPlace* destStoppingPlace
         return nullptr;
     }
 
-    if (ignoreDest || getLastStepStoppingPlaceOccupancy(destStoppingPlace, &veh) >= getStoppingPlaceCapacity(destStoppingPlace) || onTheWay != nullptr) {
+    const bool destIsFull = destStoppingPlace != nullptr && getLastStepStoppingPlaceOccupancy(destStoppingPlace, &veh) >= getStoppingPlaceCapacity(destStoppingPlace);
+    if (ignoreDest || destIsFull || onTheWay != nullptr) {
         // if the current route ends at the stopping place, the new route will
         // also end at the new stopping place
         newDestination = (destStoppingPlace != nullptr && &destStoppingPlace->getLane().getEdge() == route.getLastEdge()
@@ -140,6 +141,7 @@ MSStoppingPlaceRerouter::rerouteStoppingPlace(MSStoppingPlace* destStoppingPlace
         if (DEBUGCOND) {
             std::cout << SIMTIME << " veh=" << veh.getID()
                       << " newDest=" << newDestination
+                      << " destIsFull=" << destIsFull
                       << " onTheWay=" << Named::getIDSecure(onTheWay)
                       << "\n";
         }
@@ -175,7 +177,7 @@ MSStoppingPlaceRerouter::rerouteStoppingPlace(MSStoppingPlace* destStoppingPlace
         std::vector<std::tuple<SUMOTime, MSStoppingPlace*, int>> blockedTimes;
         resetStoppingPlaceScores(veh);
 
-        if (destStoppingPlace != nullptr) {
+        if (destStoppingPlace != nullptr && destIsFull) {
             rememberStoppingPlaceScore(veh, destStoppingPlace, "occupied");
             rememberBlockedStoppingPlace(veh, destStoppingPlace, &destStoppingPlace->getLane().getEdge() == veh.getEdge());
         }
