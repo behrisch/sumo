@@ -2278,7 +2278,8 @@ MSBaseVehicle::insertStop(int nextStopIndex, SUMOVehicleParameter::Stop stop, co
 
     const ConstMSEdgeVector& oldEdges = getRoute().getEdges();
     std::vector<MSStop> stops(myStops.begin(), myStops.end());
-    const int junctionOffset = getLane() != nullptr && getLane()->isInternal() ? 1 : 0;
+    const int junctionOffset = ((getLane() != nullptr && getLane()->isInternal())
+            || getRerouteOrigin() != getCurrentRouteEdge()) ? 1 : 0;
     MSRouteIterator itStart = nextStopIndex == 0 ? getCurrentRouteEdge() + junctionOffset : stops[nextStopIndex - 1].edge;
     double startPos = nextStopIndex == 0 ? getPositionOnLane() : stops[nextStopIndex - 1].pars.endPos;
     MSRouteIterator itEnd = nextStopIndex == n ? oldEdges.end() - 1 : stops[nextStopIndex].edge;
