@@ -83,6 +83,9 @@ public:
     /// removes a single transportable
     virtual void erase(MSTransportable* transportable);
 
+    /// @removes all transportables
+    void eraseAll();
+
     /// sets the arrival time for a waiting transportable
     void setWaitEnd(SUMOTime time, MSTransportable* transportable);
 

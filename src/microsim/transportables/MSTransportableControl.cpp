@@ -36,6 +36,7 @@
 #include <microsim/transportables/MSPModel_Striping.h>
 #include <microsim/transportables/MSTransportableControl.h>
 #include <microsim/devices/MSDevice_Vehroutes.h>
+#include <microsim/devices/MSDevice_Taxi.h>
 #include <microsim/MSNet.h>
 #include <microsim/MSEdge.h>
 #include <microsim/MSVehicle.h>
@@ -180,6 +181,16 @@ MSTransportableControl::erase(MSTransportable* transportable) {
                 transportable->isPerson() ? MSNet::TransportableState::PERSON_ARRIVED : MSNet::TransportableState::CONTAINER_ARRIVED);
         delete i->second;
         myTransportables.erase(i);
+    }
+}
+
+
+void
+MSTransportableControl::eraseAll() {
+    // avoid taxi device having dangling references to erased customers
+    MSDevice_Taxi::allCustomersErased();
+    while (loadedBegin() != loadedEnd()) {
+        erase(loadedBegin()->second);
     }
 }
 

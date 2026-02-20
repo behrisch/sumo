@@ -254,6 +254,15 @@ MSDevice_Taxi::cleanup() {
     myVClassWarningVTypes.clear();
 }
 
+
+void
+MSDevice_Taxi::allCustomersErased() {
+    for (MSDevice_Taxi* taxi : myFleet) {
+        // disable taskSwap
+        taxi->myState = EMPTY;
+    }
+}
+
 // ---------------------------------------------------------------------------
 // MSDevice_Taxi-methods
 // ---------------------------------------------------------------------------

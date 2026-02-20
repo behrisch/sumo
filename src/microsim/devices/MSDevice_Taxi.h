@@ -209,6 +209,9 @@ public:
 
     static bool compatibleLine(const std::string& taxiLine, const std::string& rideLine);
 
+    /// @brief signal the end of the simulation and the removal of all customers
+    static void allCustomersErased();
+
 protected:
     /** @brief Internal notification about the vehicle moves, see MSMoveReminder::notifyMoveInternal()
      *
