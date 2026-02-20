@@ -510,9 +510,11 @@ MSParkingArea::getLastFreePosWithReservation(SUMOTime t, const SUMOVehicle& forV
             // check if there is a reservation from the last time step
             // (this could also be in myReserations, if myLane wasn't processed before the forVehicle-lane)
             const SUMOTime last = t - DELTA_T;
+#ifdef DEBUG_RESERVATIONS
             if (DEBUG_COND2(forVehicle)) {
                 std::cout << SIMTIME << " last=" << time2string(last) << " lastRes=" << time2string(myLastReservationTime) << " resTime=" << toString(myReservationTime) << "\n";
             }
+#endif
             if (myLastReservationTime == last || myReservationTime == last) {
                 int res = myLastReservationTime == last ? myLastReservations : myReservations;
                 if (myCapacity <= getOccupancy() + res) {

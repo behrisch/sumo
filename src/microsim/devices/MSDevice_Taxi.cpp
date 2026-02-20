@@ -912,7 +912,7 @@ MSDevice_Taxi::checkTaskSwap() {
         }
         if (maxSaving > SWAP_THRESHOLD) {
 #ifdef DEBUG_DISPATCH
-            if (DEBUG_CON) {
+            if (DEBUG_COND) {
                 std::cout << SIMTIME << " taxi=" << myHolder.getID() << " swapWith=" << bestSwap->getHolder().getID() << " saving=" << maxSaving << " lastDispatch="; 
                 for (const Reservation* res : bestSwap->myLastDispatch) {
                     std::cout << toString(res->persons) << "; ";
