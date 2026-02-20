@@ -29,3 +29,6 @@ ticket17551
 
 # crash
 ticket17583
+
+# zipper deadlock
+ticket17650

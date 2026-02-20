@@ -1,0 +1,23 @@
+Loading net-file from 'net.net.xml' ... done (1ms).
+Loading route-files incrementally from 'input_routes.rou.xml'
+Loading done.
+Simulation version v1_26_0+0288-ae3543d9579 started with time: 0.00.
+Simulation ended at time: 3600.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 0.05s
+ Real time factor: 72000
+ UPS: 555660.000000
+Vehicles:
+ Inserted: 800
+ Running: 5
+ Waiting: 0
+Statistics (avg of 795):
+ RouteLength: 472.87
+ Speed: 13.57
+ Duration: 34.79
+ WaitingTime: 0.19
+ TimeLoss: 0.22
+ DepartDelay: 0.28
+DijkstraRouter answered 650 queries and explored 4.60 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).
