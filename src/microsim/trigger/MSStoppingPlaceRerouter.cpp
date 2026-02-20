@@ -157,7 +157,7 @@ MSStoppingPlaceRerouter::rerouteStoppingPlace(MSStoppingPlace* destStoppingPlace
         // a map stores elegible stopping places
         StoppingPlaceMap_t stoppingPlaces;
         SUMOAbstractRouter<MSEdge, SUMOVehicle>& router = getRouter(veh, closedEdges);
-        const double brakeGap = veh.getBrakeGap(true);
+        const double brakeGap = veh.getBrakeGap();
 
         if (onTheWay != nullptr) {
             // compute new route
