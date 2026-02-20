@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-19 18:22+0000\n"
+"PO-Revision-Date: 2026-02-20 18:14+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -3007,7 +3007,7 @@ msgstr ""
 
 #: src/netedit/GNEApplicationWindow.cpp:4066
 msgid "Additional elements in unified file"
-msgstr ""
+msgstr "Elementi addizionali nel file unificato"
 
 #: src/netedit/GNEApplicationWindow.cpp:4076
 msgid "saving of unified additional elements in '%'"
@@ -11388,7 +11388,7 @@ msgstr "Cancella esecuzione"
 #: src/netedit/dialogs/run/GNERunNetgenerateDialog.cpp:32
 #: src/netedit/dialogs/tools/GNERunNetgenerateDialog.cpp:56
 msgid "Running netgenerate results"
-msgstr ""
+msgstr "Risultati dell'esecuzione di netgenerate"
 
 #: src/netedit/dialogs/run/GNERunPythonToolDialog.cpp:32
 #: src/netedit/dialogs/tools/GNERunPythonToolDialog.cpp:57
@@ -11480,7 +11480,7 @@ msgstr "Niente da disattivare, da implementare negli elementi figli"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:853
 msgid "Parent filename"
-msgstr ""
+msgstr "Percorso del file del elemento padre"
 
 #: src/netedit/elements/GNEAttributeCarrier.cpp:968
 msgid "Nothing to toggle, implement in Children"
@@ -11529,6 +11529,8 @@ msgid ""
 "Could not build access in netedit; % '%' already owns an access in the edge "
 "'%'"
 msgstr ""
+"Non ho potuto creare l'accesso in netedit; % '%' possiede già un accesso "
+"all'arco '%'"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:214
 #, c-format
@@ -12201,6 +12203,7 @@ msgstr "aggiungi % '%'"
 #: src/netedit/elements/demand/GNERouteHandler.cpp:452
 msgid "Could not build % with ID '%' in netedit; %."
 msgstr ""
+"Non ho potuto costruire % con il codice identificativo '%' in netedit; %."
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:220
 msgid ""
@@ -12448,7 +12451,7 @@ msgstr "rimuovi punto geometrico di %"
 #: src/netedit/elements/moving/GNEMoveElementJunction.cpp:166
 #: src/netedit/elements/moving/GNEMoveElementLane.cpp:133
 msgid "moving custom shape of %"
-msgstr ""
+msgstr "spostando la forma personalizzata di %"
 
 #: src/netedit/elements/moving/GNEMoveElementCrossing.cpp:134
 msgid "moving % of %"
@@ -12456,16 +12459,16 @@ msgstr "spostando % di %"
 
 #: src/netedit/elements/moving/GNEMoveElementEdge.cpp:163
 msgid "remove first geometry point of %"
-msgstr ""
+msgstr "rimuovi il primo punto geometrico di %"
 
 #: src/netedit/elements/moving/GNEMoveElementEdge.cpp:168
 msgid "remove last geometry point of %"
-msgstr ""
+msgstr "rimuovi l'ultimo punto geometrico di %"
 
 #: src/netedit/elements/moving/GNEMoveElementEdge.cpp:219
 #: src/netedit/elements/moving/GNEMoveElementJunction.cpp:161
 msgid "moving shape of %"
-msgstr ""
+msgstr "spostando la forma di %"
 
 #: src/netedit/elements/moving/GNEMoveElementLaneDouble.cpp:326
 msgid "Lanes aren't consecutives"
