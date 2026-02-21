@@ -8,6 +8,9 @@ merge_intersection
 # three edges merging into one
 merge_intersection_4arm
 
+# three edges merging into one
+merge_intersection_4arm_triple_conflict
+
 # two edges merging into one
 merge_intersection_difficult_angles
 
