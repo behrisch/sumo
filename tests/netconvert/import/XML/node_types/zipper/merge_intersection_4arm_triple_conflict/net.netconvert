@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-02-21T23:07:13.871531+01:00 by Eclipse SUMO netconvert v1_26_0+0291-795ab99e056
+<!-- generated on 2026-02-21T23:08:56.335466+01:00 by Eclipse SUMO netconvert v1_26_0+0292-932d67dee6e
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -34,10 +34,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <location netOffset="0.00,100.00" convBoundary="0.00,0.00,200.00,200.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
 
     <edge id=":C_0" function="internal">
-        <lane id=":C_0_0" index="0" speed="7.33" length="7.46" shape="98.40,104.00 98.95,101.55 100.60,99.80 102.98,98.89"/>
-    </edge>
-    <edge id=":C_3" function="internal">
-        <lane id=":C_3_0" index="0" speed="7.33" length="4.26" shape="102.98,98.89 103.35,98.75 107.20,98.40"/>
+        <lane id=":C_0_0" index="0" speed="7.33" length="11.73" shape="98.40,104.00 98.95,101.55 100.60,99.80 103.35,98.75 107.20,98.40"/>
     </edge>
     <edge id=":C_1" function="internal">
         <lane id=":C_1_0" index="0" speed="6.51" length="9.03" shape="101.60,92.80 101.95,95.25 103.00,97.00 104.75,98.05 107.20,98.40"/>
@@ -59,8 +56,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <lane id="WC_0" index="0" speed="13.89" length="92.80" shape="0.00,98.40 92.80,98.40"/>
     </edge>
 
-    <junction id="C" type="zipper" x="100.00" y="100.00" incLanes="NC_0 SC_0 WC_0" intLanes=":C_3_0 :C_1_0 :C_2_0" shape="96.80,104.00 100.00,104.00 100.80,101.78 101.80,101.00 103.20,100.44 105.00,100.11 107.20,100.00 107.20,96.80 104.98,96.36 104.20,95.80 103.64,95.02 103.31,94.02 103.20,92.80 100.00,92.80 99.20,95.02 98.20,95.80 96.80,96.36 95.00,96.69 92.80,96.80 92.80,100.00 95.02,100.44 95.80,101.00 96.36,101.78 96.69,102.78">
-        <request index="0" response="110" foes="110" cont="1"/>
+    <junction id="C" type="zipper" x="100.00" y="100.00" incLanes="NC_0 SC_0 WC_0" intLanes=":C_0_0 :C_1_0 :C_2_0" shape="96.80,104.00 100.00,104.00 100.80,101.78 101.80,101.00 103.20,100.44 105.00,100.11 107.20,100.00 107.20,96.80 104.98,96.36 104.20,95.80 103.64,95.02 103.31,94.02 103.20,92.80 100.00,92.80 99.20,95.02 98.20,95.80 96.80,96.36 95.00,96.69 92.80,96.80 92.80,100.00 95.02,100.44 95.80,101.00 96.36,101.78 96.69,102.78">
+        <request index="0" response="110" foes="110" cont="0"/>
         <request index="1" response="101" foes="101" cont="0"/>
         <request index="2" response="011" foes="011" cont="0"/>
     </junction>
@@ -69,14 +66,11 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <junction id="S" type="dead_end" x="100.00" y="0.00" incLanes="" intLanes="" shape="100.00,0.00 103.20,0.00"/>
     <junction id="W" type="dead_end" x="0.00" y="100.00" incLanes="" intLanes="" shape="0.00,100.00 0.00,96.80"/>
 
-    <junction id=":C_3_0" type="internal" x="102.98" y="98.89" incLanes=":C_0_0 SC_0" intLanes=":C_1_0 :C_2_0"/>
-
     <connection from="NC" to="CE" fromLane="0" toLane="0" via=":C_0_0" dir="l" state="Z"/>
     <connection from="SC" to="CE" fromLane="0" toLane="0" via=":C_1_0" dir="r" state="Z"/>
     <connection from="WC" to="CE" fromLane="0" toLane="0" via=":C_2_0" dir="s" state="Z"/>
 
-    <connection from=":C_0" to="CE" fromLane="0" toLane="0" via=":C_3_0" dir="l" state="m"/>
-    <connection from=":C_3" to="CE" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":C_0" to="CE" fromLane="0" toLane="0" dir="l" state="M"/>
     <connection from=":C_1" to="CE" fromLane="0" toLane="0" dir="r" state="M"/>
     <connection from=":C_2" to="CE" fromLane="0" toLane="0" dir="s" state="M"/>
 
