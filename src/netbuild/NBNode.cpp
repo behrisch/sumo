@@ -983,7 +983,8 @@ NBNode::needsCont(const NBEdge* fromE, const NBEdge* otherFromE,
     if (!checkOnlyTLS) {
         if (myType == SumoXMLNodeType::RIGHT_BEFORE_LEFT
                 || myType == SumoXMLNodeType::LEFT_BEFORE_RIGHT
-                || myType == SumoXMLNodeType::ALLWAY_STOP) {
+                || myType == SumoXMLNodeType::ALLWAY_STOP
+                || myType == SumoXMLNodeType::ZIPPER) {
             return false;
         }
         LinkDirection d1 = getDirection(fromE, toE);
