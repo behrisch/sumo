@@ -164,6 +164,7 @@ public:
     const MSPhaseDefinition& getCurrentPhaseDef() const override;
     /// @}
 
+    void resetLastSwitch(SUMOTime t); 
 
     /// @name Conversion between time and phase
     /// @{

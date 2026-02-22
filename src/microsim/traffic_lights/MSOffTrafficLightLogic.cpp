@@ -125,6 +125,12 @@ MSOffTrafficLightLogic::getCurrentPhaseDef() const {
 }
 
 
+void
+MSOffTrafficLightLogic::resetLastSwitch(SUMOTime t) {
+    myPhaseDefinition[0]->myLastSwitch = t;
+}
+
+
 // ------------ Conversion between time and phase
 SUMOTime
 MSOffTrafficLightLogic::getPhaseIndexAtTime(SUMOTime) const {

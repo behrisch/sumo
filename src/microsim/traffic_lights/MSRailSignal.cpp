@@ -309,6 +309,13 @@ MSRailSignal::getCurrentPhaseDef() const {
     return myCurrentPhase;
 }
 
+
+void
+MSRailSignal::resetLastSwitch(SUMOTime t) {
+    myCurrentPhase.myLastSwitch = t;
+}
+
+
 // ------------ Conversion between time and phase
 SUMOTime
 MSRailSignal::getPhaseIndexAtTime(SUMOTime) const {

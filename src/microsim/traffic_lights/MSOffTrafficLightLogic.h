@@ -137,6 +137,7 @@ public:
     /// @}
 
 
+    void resetLastSwitch(SUMOTime t); 
 
     /// @name Conversion between time and phase
     /// @{

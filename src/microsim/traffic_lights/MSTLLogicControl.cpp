@@ -233,10 +233,14 @@ MSTLLogicControl::TLSLogicVariants::getDefault() const {
 void
 MSTLLogicControl::TLSLogicVariants::switchTo(MSTLLogicControl& tlc, const std::string& programID) {
     // set the found wished sub-program as this tls' current one
+    const std::string state = myCurrentProgram->getCurrentPhaseDef().getState();
     myCurrentProgram->deactivateProgram();
     myCurrentProgram = getLogicInstantiatingOff(tlc, programID);
     myCurrentProgram->activateProgram();
     myCurrentProgram->setTrafficLightSignals(MSNet::getInstance()->getCurrentTimeStep());
+    if (state != myCurrentProgram->getCurrentPhaseDef().getState()) {
+        myCurrentProgram->resetLastSwitch(SIMSTEP);
+    };
     executeOnSwitchActions();
 }
 

@@ -687,6 +687,13 @@ NEMALogic::getCurrentPhaseDef() const {
     return myPhase;
 }
 
+
+void
+NEMALogic::resetLastSwitch(SUMOTime t) {
+    myPhase.myLastSwitch = t;
+}
+
+
 int NEMALogic::measureRingDistance(int p1, int p2, int ringNum) {
     int length = (int)rings[ringNum].size();
     int d = 0;

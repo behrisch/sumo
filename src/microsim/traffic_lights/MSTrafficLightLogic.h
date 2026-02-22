@@ -268,6 +268,8 @@ public:
      */
     virtual const MSPhaseDefinition& getCurrentPhaseDef() const = 0;
 
+    virtual void resetLastSwitch(SUMOTime t) = 0;
+
     virtual SUMOTime getMinDur(int step = -1) const;
     virtual SUMOTime getMaxDur(int step = -1) const;
     virtual SUMOTime getEarliestEnd(int step = -1) const;

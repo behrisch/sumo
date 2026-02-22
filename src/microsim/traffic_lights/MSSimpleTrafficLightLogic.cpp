@@ -149,6 +149,12 @@ MSSimpleTrafficLightLogic::getCurrentPhaseDef() const {
 }
 
 
+void
+MSSimpleTrafficLightLogic::resetLastSwitch(SUMOTime t) {
+    myPhases[myStep]->myLastSwitch = t;
+}
+
+
 // ------------ Conversion between time and phase
 SUMOTime
 MSSimpleTrafficLightLogic::getPhaseIndexAtTime(SUMOTime simStep) const {
