@@ -2405,6 +2405,10 @@ NIImporter_OpenDrive::myStartElement(int element,
         }
         break;
         case OPENDRIVE_TAG_ELEVATION: {
+            if (myCurrentJunctionID != "") {
+                // <elevationGrid> not yet supported
+                break;
+            }
             double s = attrs.get<double>(OPENDRIVE_ATTR_S, myCurrentEdge.id.c_str(), ok);
             double a = attrs.get<double>(OPENDRIVE_ATTR_A, myCurrentEdge.id.c_str(), ok);
             double b = attrs.get<double>(OPENDRIVE_ATTR_B, myCurrentEdge.id.c_str(), ok);
@@ -2775,6 +2779,9 @@ void
 NIImporter_OpenDrive::myEndElement(int element) {
     myElementStack.pop_back();
     switch (element) {
+        case OPENDRIVE_TAG_JUNCTION:
+            myCurrentJunctionID = "";
+            break;
         case OPENDRIVE_TAG_ROAD:
             myEdges[myCurrentEdge.id] = new OpenDriveEdge(myCurrentEdge);
             break;
