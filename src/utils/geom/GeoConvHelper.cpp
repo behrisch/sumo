@@ -64,7 +64,12 @@ GeoConvHelper::GeoConvHelper(const std::string& proj, const Position& offset,
     myUseInverseProjection(inverse),
     myFlatten(flatten),
     myOrigBoundary(orig),
-    myConvBoundary(conv) {
+    myConvBoundary(conv) 
+{
+    // older PROJ libraries fail to construct inverse projection if this
+    // string is present
+    myProjString = StringUtils::replace(myProjString, "+type=crs", "");
+
     if (proj == "!") {
         myProjectionMethod = NONE;
     } else if (proj == "-") {
