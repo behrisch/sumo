@@ -8,138 +8,141 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2025-10-06 11:40+0200\n"
-"PO-Revision-Date: 2025-07-29 11:04+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-23 11:59+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/eclipse-sumo/"
+"python-tools/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: tools/game/runner.py:67
 msgid "Interactive Traffic Light"
-msgstr ""
+msgstr "Lampu Lalu Lintas Interaktif"
 
 #: tools/game/runner.py:68
 msgid "Railway Control"
-msgstr ""
+msgstr "Kendali Rel Kereta"
 
 #: tools/game/runner.py:69
 msgid "Railway Control (Demo)"
-msgstr ""
+msgstr "Kendali Rel Kereta (Demo)"
 
 #: tools/game/runner.py:70
 msgid "Research intersection Braunschweig (Demo)"
-msgstr ""
+msgstr "Persimpangan Riset Braunschweig (Demo)"
 
 #: tools/game/runner.py:71
 msgid "Research intersection Ingolstadt"
-msgstr ""
+msgstr "Persimpangan Riset Ingolstadt"
 
 #: tools/game/runner.py:72
 msgid "Simple Junction"
-msgstr ""
+msgstr "Persimpangan Sederhana"
 
 #: tools/game/runner.py:73
 msgid "Simple Junction (Demo)"
-msgstr ""
+msgstr "Persimpangan Sederhana (Demo)"
 
 #: tools/game/runner.py:74
 msgid "Four Junctions"
-msgstr ""
+msgstr "Empat Persimpangan"
 
 #: tools/game/runner.py:75
 msgid "Six Junctions"
-msgstr ""
+msgstr "Enam Persimpangan"
 
 #: tools/game/runner.py:76
 msgid "Prof. Kühne"
-msgstr ""
+msgstr "Prof. Kühne"
 
 #: tools/game/runner.py:77
 msgid "3D Junction Virtual World"
-msgstr ""
+msgstr "Persimpangan 3D Dunia Virtual"
 
 #: tools/game/runner.py:78
 msgid "3D Junction OpenStreetMap"
-msgstr ""
+msgstr "Persimpangan 3D OpenStreetMap"
 
 #: tools/game/runner.py:79
 msgid "Highway Ramp"
-msgstr ""
+msgstr "Rampa Jalan Tol"
 
 #: tools/game/runner.py:80
 msgid "Combined Highway On and Off Ramp"
-msgstr ""
+msgstr "Gabungan Rampa Masuk dan Keluar Jalan Tol"
 
 #: tools/game/runner.py:81
 msgid "Corridor"
-msgstr ""
+msgstr "Koridor"
 
 #: tools/game/runner.py:82
 msgid "Highway Ramp A10"
-msgstr ""
+msgstr "Rampa Jalan Tol A10"
 
 #: tools/game/runner.py:83
 msgid "Demand Responsive Transport (new)"
-msgstr ""
+msgstr "Transportasi Tanggap Permintaan (baru)"
 
 #: tools/game/runner.py:84
 msgid "DRT - Advanced (new)"
-msgstr ""
+msgstr "DRT - Lanjutan (baru)"
 
 #: tools/game/runner.py:85
 msgid "DRT - Demo"
-msgstr ""
+msgstr "DRT - Demo"
 
 #: tools/game/runner.py:86 tools/game/runner.py:96
 msgid "Highscore"
-msgstr ""
+msgstr "Skor Tertinggi"
 
 #: tools/game/runner.py:87
 msgid "Reset Highscore"
-msgstr ""
+msgstr "Atur Ulang Skor Tertinggi"
 
 #: tools/game/runner.py:88
 msgid "German"
-msgstr ""
+msgstr "Jerman"
 
 #: tools/game/runner.py:89
 msgid "English"
-msgstr ""
+msgstr "Inggris"
 
 #: tools/game/runner.py:90
 msgid "Italian"
-msgstr ""
+msgstr "Italia"
 
 #: tools/game/runner.py:91
 msgid "Spanish"
-msgstr ""
+msgstr "Spanyol"
 
 #: tools/game/runner.py:92
 msgid "French"
-msgstr ""
+msgstr "Prancis"
 
 #: tools/game/runner.py:93
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Tionghoa (sederhana)"
 
 #: tools/game/runner.py:94
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Tionghoa (tradisional)"
 
 #: tools/game/runner.py:95
 msgid "Quit"
-msgstr ""
+msgstr "Keluar"
 
 #: tools/game/runner.py:97
 msgid "Congratulations!"
-msgstr ""
+msgstr "Selamat!"
 
 #: tools/game/runner.py:98
 msgid "Your Score"
-msgstr ""
+msgstr "Nilai Anda"
 
 #: tools/game/runner.py:99
 msgid "Continue"
-msgstr ""
+msgstr "Lanjutkan"
