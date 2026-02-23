@@ -13,6 +13,9 @@ precision
 # include route and vtype dists
 dists
 
+# have vehicles sample from the vTypeDistribution before and after state loading
+dists2
+
 # include route and vtype dists
 dists_gz
 

@@ -1,0 +1,9 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vTypeDistribution id="tD">
+        <vType id="t1" sigma="0" length="3"/>
+        <vType id="t2" sigma="0"/>
+    </vTypeDistribution>
+    <route id="r1" edges="SC CN"/>
+    <flow id="v" begin="0" period="100" end="1000" departSpeed="avg" route="r1" type="tD"/>
+
+</routes>

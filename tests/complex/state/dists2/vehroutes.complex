@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-23T08:22:14.863236+01:00 by Eclipse SUMO sumo v1_26_0+0300-a22ff4fd66a
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net2.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="vehroutes.xml"/>
+        <save-state.times value="500"/>
+        <save-state.files value="state.xml"/>
+        <save-state.rng value="true"/>
+    </output>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="v.0" type="t2" depart="0.00" departSpeed="13.033" speedFactor="0.9383" arrival="15.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.1" type="t2" depart="100.00" departSpeed="11.6565" speedFactor="0.8392" arrival="117.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.2" type="t2" depart="200.00" departSpeed="11.5426" speedFactor="0.8310" arrival="217.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.3" type="t2" depart="300.00" departSpeed="13.8261" speedFactor="0.9954" arrival="370.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.4" type="t2" depart="400.00" departSpeed="12.3065" speedFactor="0.8860" arrival="460.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.5" type="t1" depart="500.00" departSpeed="13.89" speedFactor="1.0131" arrival="549.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.6" type="t2" depart="600.00" departSpeed="13.89" speedFactor="1.0907" arrival="639.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.7" type="t2" depart="700.00" departSpeed="12.8177" speedFactor="0.9228" arrival="730.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.8" type="t1" depart="800.00" departSpeed="13.89" speedFactor="1.1229" arrival="819.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+    <vehicle id="v.9" type="t1" depart="900.00" departSpeed="12.5079" speedFactor="0.9005" arrival="916.00">
+        <route edges="SC CN"/>
+    </vehicle>
+
+</routes>

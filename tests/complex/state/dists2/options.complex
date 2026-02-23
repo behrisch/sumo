@@ -1,0 +1,11 @@
+--vehroute-output=vehroutes.xml
+--no-step-log --no-duration-log -n
+input_net2.net.xml -r input_routes.rou.xml --save-state.times 500
+--save-state.files state.xml 
+--save-state.rng
+:
+--vehroute-output=vehroutes2.xml
+--no-step-log --no-duration-log -n input_net2.net.xml
+--load-state state.xml
+--compare vehroutes:23:3
+tests/complex/state/runner.py
