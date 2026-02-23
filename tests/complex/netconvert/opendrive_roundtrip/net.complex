@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-09-26T11:39:06.440138+01:00 by Eclipse SUMO netconvert v1_24_0+1017-55edef68438
+<!-- generated on 2026-02-23T17:54:20.499452+01:00 by Eclipse SUMO netconvert v1_26_0+0306-b068ccca7e9
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -17,9 +17,7 @@
 
 <net version="1.20" junctionCornerDetail="5" rectangularLaneCut="true" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
-    <location netOffset="-399345.64,-5809365.92" convBoundary="0.00,0.00,1738.51,765.99" origBoundary="0.000000,0.000000,0.000000,0.000000" projParameter="+proj=utm +zone=33 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
-
-        "/>
+    <location netOffset="-399345.64,-5809365.92" convBoundary="0.00,0.00,1738.51,765.99" origBoundary="0.000000,0.000000,0.000000,0.000000" projParameter="+proj=utm +zone=33 +ellps=WGS84 +datum=WGS84 +units=m +no_defs        "/>
 
     <type id="biking" priority="1" speed="22.22" allow="bicycle" width="1.50"/>
     <type id="driving" priority="1" speed="22.22" disallow="pedestrian" width="3.65"/>
