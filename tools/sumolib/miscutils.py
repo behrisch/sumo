@@ -319,7 +319,7 @@ def getFlowNumber(flow):
         if flow.period is not None:
             if 'exp' in flow.period:
                 # use expected value
-                period = 1 / float(flow.period[4:-2])
+                period = 1 / float(flow.period[4:-1])
             else:
                 period = float(flow.period)
         for attr in ['perHour', 'vehsPerHour']:
