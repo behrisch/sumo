@@ -11,6 +11,8 @@ title: ChangeLog
   - fixed invalid estimation of pickup-traveltime during taxi dispatch #17631, #17629
   - stopping on a long busStop before reaching the designated spot due to jamming now permits passengers to exit if the vehicle is fully within the busStop #17635
   - Fixed failure to group taxi passengers when the dispatch-period is low #17644
+  - Fixed bug where imprecise driving caused vehicles to enter a slower lane with excessive speed (this could cause negative timeLoss). #15435
+
 
 - sumo-gui
   - Fixed crash when drawing persons #17616
@@ -22,7 +24,10 @@ title: ChangeLog
 
   
 - netconvert
-  - NEMA computation now works for 4-arm junction without right-turns (also affects some signal plans of non-NEMA junctions) #17610  
+  - NEMA computation now works for 4-arm junction without right-turns (also affects some signal plans of non-NEMA junctions) #17610
+  - Zipper junctions no longer feature internal junctions (which could cause deadlock in the simulation) #17650
+  - Fixed interpretation of some geo-projection strings #17655
+
 
 - TraCI
   - `trafficlight.getSpentDuration` now works correctly after calling `setRedYellowGreenState` #17598
@@ -43,6 +48,7 @@ title: ChangeLog
   - Added taxi param `<param key="device.taxi.swapGroup" value="<GROUP_NAME>"/>` which permits idle taxis to receive dispatch tasks before pickup is complete from other taxis in the same swapGroup if that would reduce time to pickup #17639
   - carFollowModel *ACC* now supports driverstate device (but it is only active when setting vType attribute `applyDriverState="1"`) #17633
   - Option **--vtk-output** now supports writing data at sub-second simulation step-length #17645
+  - edgeData and laneData-output now support attribute `excludeEmpty="modified"` which writes unused edges but only if their speed was modified with calibrators or variableSpeedSigns. #17587
 
 - meso
   - edge-type specific meso parameters now support `edgeLength` #17582
