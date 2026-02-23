@@ -1,0 +1,3 @@
+departEdges: count 1, min 500.00 (m), max 500.00 (m), mean 500.00, Q1 500.00, median 500.00, Q3 500.00
+arrivalEdges: count 1, min 500.00 (o), max 500.00 (o), mean 500.00, Q1 500.00, median 500.00, Q3 500.00
+intermediateEdges: count 3, min 500.00 (m), max 500.00 (m), mean 500.00, Q1 500.00, median 500.00, Q3 500.00
