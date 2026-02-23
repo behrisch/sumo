@@ -87,6 +87,7 @@ StringBijection<PCLoaderVisum::VISUM_KEY>::Entry PCLoaderVisum::KEYS_DE[] = {
     { "KATNR", VISUM_CATID },
     { "ZWISCHENPUNKT", VISUM_EDGEITEM },
     { "POIKATEGORIE", VISUM_POICATEGORY },
+    { "NETZ", VISUM_NETWORK },
     { "NR", VISUM_NO } // must be the last one
 };
 
