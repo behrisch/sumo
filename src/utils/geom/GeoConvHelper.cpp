@@ -83,7 +83,7 @@ GeoConvHelper::GeoConvHelper(const std::string& proj, const Position& offset,
 #ifdef PROJ_API_FILE
     } else {
         myProjectionMethod = PROJ;
-        initProj(proj);
+        initProj(myProjString);
         if (myProjection == nullptr) {
             // avoid error about missing datum shift file
             myProjString = std::regex_replace(proj, std::regex("\\+geoidgrids[^ ]*"), std::string(""));
@@ -110,6 +110,32 @@ GeoConvHelper::initProj(const std::string& proj) {
 #else
     myProjection = pj_init_plus(proj.c_str());
 #endif
+    if (myProjection != nullptr) {
+        const PJ_TYPE type = proj_get_type(myProjection);
+        if (type != PJ_TYPE_TRANSFORMATION
+                && type != PJ_TYPE_CONCATENATED_OPERATION
+                && type != PJ_TYPE_OTHER_COORDINATE_OPERATION) {
+            // handle PROJCS WKT (i.e. from Visum) which doesn't define a transformation but only CRS 
+#ifdef PROJ_VERSION_MAJOR
+            proj_destroy(myProjection);
+#else
+            pj_free(myProjection);
+#endif
+            PJ_CONTEXT *ctx = proj_context_create();
+            proj_context_use_proj4_init_rules(ctx, 1);
+            myProjection = proj_create_crs_to_crs(ctx,
+                    "+proj=latlong +datum=WGS84 +type=crs",
+                    proj.c_str(),
+                    NULL);
+
+            //myProjection = proj_normalize_for_visualization(ctx, tmp);
+            //PJ_PROJ_INFO info = proj_pj_info(myProjection);
+            //printf("ID: %s\n", info.id);
+            //printf("Description: %s\n", info.description);
+            //printf("Definition: %s\n", info.definition);
+            //printf("Has Inverse: %s\n", info.has_inverse ? "Yes" : "No");
+        }
+    }
 }
 #endif
 
@@ -652,7 +678,7 @@ GeoConvHelper::writeLocation(OutputDevice& into) {
     if (myFinal.usingGeoProjection()) {
         into.setPrecision();
     }
-    into.writeAttr(SUMO_ATTR_ORIG_PROJ, myFinal.getProjString());
+    into.writeAttr(SUMO_ATTR_ORIG_PROJ, StringUtils::escapeXML(myFinal.getProjString()));
     into.closeTag();
     into.lf();
 }

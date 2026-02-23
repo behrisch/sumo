@@ -383,6 +383,8 @@ private:
     };
 
 
+    /// @brief Parses meta data (i.e. projection)
+    void parse_Network();
 
     /// @brief Parses VSYS
     void parse_VSysTypes();
@@ -573,6 +575,7 @@ protected:
         VISUM_EDGEITEM,
         VISUM_POICATEGORY,
         VISUM_NETWORK,
+        VISUM_PROJECTIONDEFINITION,
         VISUM_NO // must be the last one
     };
 

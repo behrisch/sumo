@@ -82,6 +82,7 @@ StringBijection<NIImporter_VISUM::VISUM_KEY>::Entry NIImporter_VISUM::KEYS_DE[] 
     { "ZWISCHENPUNKT", VISUM_EDGEITEM },
     { "POIKATEGORIE", VISUM_POICATEGORY },
     { "NETZ", VISUM_NETWORK },
+    { "DEFKOORD", VISUM_PROJECTIONDEFINITION },
     { "NR", VISUM_NO } // must be the last one
 };
 
@@ -127,6 +128,7 @@ NIImporter_VISUM::NIImporter_VISUM(NBNetBuilder& nb,
 
     // the order of process is important!
     // set1
+    addParser(KEYS.getString(VISUM_NETWORK), &NIImporter_VISUM::parse_Network);
     addParser(KEYS.getString(VISUM_SYS), &NIImporter_VISUM::parse_VSysTypes);
     addParser(KEYS.getString(VISUM_LINKTYPE), &NIImporter_VISUM::parse_Types);
     addParser(KEYS.getString(VISUM_NODE), &NIImporter_VISUM::parse_Nodes);
@@ -277,6 +279,18 @@ NIImporter_VISUM::parse_VSysTypes() {
     std::string name = myLineParser.know("VSysCode") ? myLineParser.get("VSysCode").c_str() : myLineParser.get(KEYS.getString(VISUM_CODE)).c_str();
     std::string type = myLineParser.know("VSysMode") ? myLineParser.get("VSysMode").c_str() : myLineParser.get(KEYS.getString(VISUM_TYP)).c_str();
     myVSysTypes[name] = type;
+}
+
+
+void
+NIImporter_VISUM::parse_Network() {
+    const std::string key = KEYS.getString(VISUM_PROJECTIONDEFINITION);
+    if (myLineParser.know(key)) {
+        std::string proj = myLineParser.get(key);
+        // visum network contains projected geometry, we only need the projection info computing lon, lat outputs
+        GeoConvHelper* result = new GeoConvHelper(proj, Position(0, 0), Boundary(0, 0, 1, 1), Boundary(0, 0, 1, 1));
+        GeoConvHelper::setLoaded(*result);
+    }
 }
 
 

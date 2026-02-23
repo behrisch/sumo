@@ -115,6 +115,7 @@ protected:
         VISUM_EDGEITEM,
         VISUM_POICATEGORY,
         VISUM_NETWORK,
+        VISUM_PROJECTIONDEFINITION,
         VISUM_NO // must be the last one
     };
 
