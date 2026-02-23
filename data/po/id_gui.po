@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-23 06:32+0000\n"
+"PO-Revision-Date: 2026-02-23 11:59+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/id/>\n"
@@ -1471,7 +1471,7 @@ msgstr "panjang [m]"
 #: src/guisim/GUIInstantInductLoop.cpp:99
 #: src/utils/gui/div/GUIMessageWindow.cpp:72
 msgid "lane"
-msgstr "lajur"
+msgstr "jalur"
 
 #: src/guisim/GUIE2Collector.cpp:134 src/guisim/GUIE3Collector.cpp:82
 #: src/guisim/GUIInductLoop.cpp:147 src/guisim/GUIInstantInductLoop.cpp:101
@@ -2379,7 +2379,7 @@ msgstr "kelas emisi"
 
 #: src/guisim/GUIVehicle.cpp:242
 msgid "car-following model"
-msgstr "model mengikuti kendaraan"
+msgstr "model mengikuti mobil"
 
 #: src/guisim/GUIVehicle.cpp:243
 msgid "lane-change model"
@@ -4459,7 +4459,7 @@ msgstr "probabilitas"
 
 #: src/netedit/GNEAttributeProperties.cpp:370
 msgid "[0, 1]"
-msgstr ""
+msgstr "[0, 1]"
 
 #: src/netedit/GNEAttributeProperties.cpp:373
 msgid "angle"
@@ -4467,7 +4467,7 @@ msgstr "sudut"
 
 #: src/netedit/GNEAttributeProperties.cpp:374
 msgid "[0, 360]"
-msgstr ""
+msgstr "[0, 360]"
 
 #: src/netedit/GNEAttributeProperties.cpp:661
 #, c-format
