@@ -79,6 +79,9 @@ NILoader::load(OptionsCont& oc) {
         if (oc.isSet("opendrive-files")) {
             files.push_back(opendriveTypemap);
         }
+        if (oc.isSet("visum-file")) {
+            files.push_back(visumTypemap);
+        }
         ok &= NITypeLoader::load(handler, files, toString(SUMO_TAG_TYPES), true);
     } else {
         ok &= NITypeLoader::load(handler, oc.getStringVector("type-files"), toString(SUMO_TAG_TYPES));

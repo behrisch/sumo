@@ -35,6 +35,9 @@
 #include "NILoader.h"
 #include "NIImporter_VISUM.h"
 
+// use a string that distinguishes edge types from tsys-codes
+// (rename codes loaded as types prior to loading edge types)
+#define TSYSPREFIX "@"
 
 StringBijection<NIImporter_VISUM::VISUM_KEY>::Entry NIImporter_VISUM::KEYS_DE[] = {
     { "VSYS", VISUM_SYS },
@@ -108,6 +111,14 @@ NIImporter_VISUM::loadNetwork(const OptionsCont& oc, NBNetBuilder& nb) {
                             NBCapacity2Lanes(oc.getFloat("lanes-from-capacity.norm")),
                             oc.getBool("visum.use-type-priority"),
                             oc.getString("visum.language-file"));
+    // rename loaded types (tsys code interpretations) so they never clash with edge types
+    std::vector<std::string> codes;
+    for (auto it = nb.getTypeCont().begin(); it != nb.getTypeCont().end(); it++) {
+        codes.push_back(it->first);
+    }
+    for (const std::string& code : codes) {
+        nb.getTypeCont().updateEdgeTypeID(code, TSYSPREFIX + code);
+    }
     loader.load();
 }
 
@@ -277,9 +288,10 @@ NIImporter_VISUM::load() {
 
 void
 NIImporter_VISUM::parse_VSysTypes() {
-    std::string name = myLineParser.know("VSysCode") ? myLineParser.get("VSysCode").c_str() : myLineParser.get(KEYS.getString(VISUM_CODE)).c_str();
-    std::string type = myLineParser.know("VSysMode") ? myLineParser.get("VSysMode").c_str() : myLineParser.get(KEYS.getString(VISUM_TYP)).c_str();
-    myVSysTypes[name] = type;
+    std::string code = myLineParser.know("VSysCode") ? myLineParser.get("VSysCode").c_str() : myLineParser.get(KEYS.getString(VISUM_CODE));
+    std::string name = myLineParser.get(KEYS.getString(VISUM_NAME)).c_str();
+    std::string type = myLineParser.know("VSysMode") ? myLineParser.get("VSysMode").c_str() : myLineParser.get(KEYS.getString(VISUM_TYP));
+    myVSysTypes.emplace(code, VSysType(type, name));
 }
 
 
@@ -656,7 +668,7 @@ NIImporter_VISUM::parse_Turns() {
                        ? myLineParser.get("VSysCode")
                        : myLineParser.get(KEYS.getString(VISUM_TYPES));
     if (myVSysTypes.find(type) != myVSysTypes.end() &&
-            myVSysTypes.find(type)->second == KEYS.getString(VISUM_PRT)) {
+            myVSysTypes.find(type)->second.type == KEYS.getString(VISUM_PRT)) {
         // try to set the turning definition
         NBEdge* src = from->getConnectionTo(via);
         NBEdge* dest = via->getConnectionTo(to);
@@ -1240,27 +1252,18 @@ NIImporter_VISUM::getWeightedBool(const std::string& name) {
 SVCPermissions
 NIImporter_VISUM::getPermissions(const std::string& name, bool warn, SVCPermissions unknown) {
     SVCPermissions result = 0;
+    const NBTypeCont& tc = myNetBuilder.getTypeCont();
     for (std::string v : StringTokenizer(myLineParser.get(name), ",").getVector()) {
-        // common values in english and german
-        // || v == "funiculaire-telecabine" ---> no matching
-        v = StringUtils::to_lower_case(v);
-        if (v == "bus" || v == "tcsp" || v == "acces tc" || v == "Accès tc" || v == "accès tc") {
-            result |= SVC_BUS;
-        } else if (v == "walk" || v == "w" || v == "f" || v == "ped" || v == "map") {
-            result |= SVC_PEDESTRIAN;
-        } else if (v == "l" || v == "lkw" || v == "h" || v == "hgv" || v == "lw" || v == "truck" || v == "tru" || v == "pl") {
-            result |= SVC_TRUCK;
-        } else if (v == "b" || v == "bike" || v == "velo") {
-            result |= SVC_BICYCLE;
-        } else if (v == "train" || v == "rail") {
-            result |= SVC_RAIL;
-        } else if (v == "tram") {
-            result |= SVC_TRAM;
-        } else if (v == "p" || v == "pkw" || v == "car" || v == "c" || v == "vp" || v == "2rm") {
-            result |= SVC_PASSENGER;
+        const std::string v2 = TSYSPREFIX + v;
+        const std::string v3 = StringUtils::to_lower_case(v);
+        const std::string v4 = TSYSPREFIX + v3;
+        if (tc.knows(v2)) {
+            result |= tc.getEdgeTypePermissions(v2);
+        } else if (tc.knows(v4)) {
+            result |= tc.getEdgeTypePermissions(v4);
         } else {
             if (warn) {
-                WRITE_WARNINGF("Encountered unknown vehicle category '" + v + "' in type '%'", myLineParser.get(KEYS.getString(VISUM_NO)));
+                WRITE_WARNINGF("Encountered unknown vehicle category '" + v3 + "' in type '%'", myLineParser.get(KEYS.getString(VISUM_NO)));
             }
             result |= unknown;
         }

@@ -1,0 +1,31 @@
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/types_file.xsd">
+    <type id="bus" allow="bus"/>
+    <type id="tcsp" allow="bus"/>
+    <type id="acces tc" allow="bus"/>
+    <type id="accès tc" allow="bus"/>
+    <type id="walk" allow="pedestrian"/>
+    <type id="w" allow="pedestrian"/>
+    <type id="f" allow="pedestrian"/>
+    <type id="ped" allow="pedestrian"/>
+    <type id="map" allow="pedestrian"/>
+    <type id="lkw" allow="truck"/>
+    <type id="l" allow="truck"/>
+    <type id="h" allow="truck"/>
+    <type id="hgv" allow="truck"/>
+    <type id="lw" allow="truck"/>
+    <type id="truck" allow="truck"/>
+    <type id="tru" allow="truck"/>
+    <type id="pl" allow="truck"/>
+    <type id="b" allow="bicycle"/>
+    <type id="bike" allow="bicycle"/>
+    <type id="velo" allow="bicycle"/>
+    <type id="train" allow="rail"/>
+    <type id="rail" allow="rail"/>
+    <type id="tram" allow="tram"/>
+    <type id="pkw" allow="passenger"/>
+    <type id="p" allow="passenger"/>
+    <type id="car" allow="passenger"/>
+    <type id="c" allow="passenger"/>
+    <type id="vp" allow="passenger"/>
+    <type id="2rm" allow="passenger"/>
+</types>

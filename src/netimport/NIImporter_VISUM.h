@@ -484,7 +484,12 @@ private:
     NBCapacity2Lanes myCapacity2Lanes;
 
     /// @brief Definition of a storage for vsystypes
-    typedef std::map<std::string, std::string> VSysTypeNames;
+    struct VSysType {
+        VSysType(const std::string& _type, const std::string& _name) : type(_type), name(_name) {}
+        const std::string type;
+        const std::string name;
+    };
+    typedef std::map<std::string, VSysType> VSysTypeNames;
     /// @brief The used vsystypes
     VSysTypeNames myVSysTypes;
 
