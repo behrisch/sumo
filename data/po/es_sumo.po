@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-12 15:28+0000\n"
+"PO-Revision-Date: 2026-02-24 14:32+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/activitygen/AGActivityGen.cpp:46
 msgid "Reading input"
@@ -3484,6 +3484,8 @@ msgid ""
 "Found invalid logic position of a link for junction '%' (%, max %) -> "
 "(network error)"
 msgstr ""
+"Se encontró una posición lógica no válida de un enlace para el cruce '%' (%, "
+"máx. %) -> (error de red)"
 
 #: src/microsim/MSRouteHandler.cpp:111 src/router/RORouteHandler.cpp:111
 msgid "Taz usage was requested but no taz present in % '%'!"
@@ -3533,6 +3535,8 @@ msgid ""
 "Disconnected route '%' when repeating. Last edge '%' is not connected to "
 "first edge '%'%"
 msgstr ""
+"Ruta '%' desconectada al repetir. La última arista '%' no está conectada con "
+"la primera arista '%'%"
 
 #: src/microsim/MSRouteHandler.cpp:474 src/router/RORouteHandler.cpp:490
 msgid ""
@@ -4084,6 +4088,8 @@ msgstr "Si escribir o no todos los puntos de reconocimiento"
 #: src/microsim/devices/MSDevice_BTreceiver.cpp:71
 msgid "The offtime used for calculating detection probability (in seconds)"
 msgstr ""
+"El tiempo de inactividad usado para calcular la probabilidad de detección "
+"(en segundos)"
 
 #: src/microsim/devices/MSDevice_BTreceiver.cpp:295
 msgid ""
@@ -4158,6 +4164,8 @@ msgstr "La batería del vehículo '%' está agotada, tiempo=%."
 #: src/microsim/devices/MSDevice_Battery.cpp:393
 msgid "Trying to set into the battery device of vehicle '%' an invalid % (%)."
 msgstr ""
+"Intentando establecer en el dispositivo de batería del vehículo '%' un % no "
+"válido (%)."
 
 #: src/microsim/devices/MSDevice_Bluelight.cpp:59
 msgid ""
@@ -4800,6 +4808,8 @@ msgid ""
 "SSM exclude-conflict-type '%' is not supported. Aborting construction of SSM"
 " device '%'."
 msgstr ""
+"Excluir el tipo de conflicto SSM '%' no está soportado. Se aborta la "
+"construcción del dispositivo SSM '%'."
 
 #: src/microsim/devices/MSDevice_SSM.cpp:4058
 #, c-format
