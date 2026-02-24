@@ -1274,12 +1274,12 @@ NIImporter_VISUM::getPermissions(const std::string& name, const std::string& edg
                     guessed = SVC_BUS;
                 } else if (desc.find("seilbahn") != std::string::npos || desc.find("funiculaire") != std::string::npos || desc.find("cable") != std::string::npos || desc.find("funicular") != std::string::npos) {
                     guessed = SVC_CABLE_CAR;
-                } else if (desc.find("train") != std::string::npos || desc.find("schiene") != std::string::npos || desc.find("rail") != std::string::npos || desc.find("bahn") != std::string::npos) {
+                } else if (desc.find("subway") != std::string::npos || desc.find("ubahn") != std::string::npos || desc.find("u-bahn") != std::string::npos) {
+                    guessed = SVC_SUBWAY;
+                } else if (desc.find("train") != std::string::npos || desc.find("schiene") != std::string::npos || desc.find("rail") != std::string::npos || desc.find("bahn") != std::string::npos || desc.find("zug") != std::string::npos) {
                     guessed = SVC_RAIL;
                 } else if (desc.find("tram") != std::string::npos || desc.find("strab") != std::string::npos) {
                     guessed = SVC_TRAM;
-                } else if (desc.find("subway") != std::string::npos || desc.find("ubahn") != std::string::npos || desc.find("u-bahn") != std::string::npos) {
-                    guessed = SVC_SUBWAY;
                 } else if (desc.find("moto") != std::string::npos) {
                     guessed = SVC_MOTORCYCLE;
                 } else if (desc.find("bike") != std::string::npos || desc.find("velo") != std::string::npos || desc.find("bicycle") != std::string::npos || desc.find("rad") != std::string::npos) {
