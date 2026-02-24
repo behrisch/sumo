@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-18 18:25+0000\n"
+"PO-Revision-Date: 2026-02-25 07:48+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/sumo-"
 "gui-netedit/de/>\n"
@@ -5924,7 +5924,7 @@ msgstr "Die Länge vom Detektor in Metern"
 #: src/netedit/GNETagPropertiesDatabase.cpp:1517
 #: src/netedit/GNETagPropertiesDatabase.cpp:1568
 msgid "The traffic light that triggers aggregation when switching"
-msgstr "Die LSA löst beim Schalten die Aggregation aus"
+msgstr "Für Auslösen der Aggregation verantwortliches LSA-Signal"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:1532
 #: src/netedit/GNETagPropertiesDatabase.cpp:1585
@@ -6102,7 +6102,8 @@ msgstr ""
 msgid ""
 "Whether the router should be inactive initially (and switched on in the gui)"
 msgstr ""
-"Ob der Router zunächst inaktiv sein soll (und in der GUI eingeschaltet)"
+"Ob der Router zunächst inaktiv sein soll (und in der GUI eingeschaltet "
+"werden kann)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:1985
 msgid "If rerouter is optional"
