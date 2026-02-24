@@ -53,5 +53,5 @@ if __name__ == "__main__":
     srcDir = join(dirname(__file__), '..', '..', 'src')
     if len(sys.argv) > 1:
         srcDir = sys.argv[1]
-    generateTypeMap(join(srcDir, 'netimport', 'typemap.h'), ("opendrive", "osm"), "Netconvert.typ.xml")
+    generateTypeMap(join(srcDir, 'netimport', 'typemap.h'), ("opendrive", "osm", "visum"), "Netconvert.typ.xml")
     generateTypeMap(join(srcDir, 'polyconvert', 'pc_typemap.h'), ("navteq", "osm", "visum"), "Polyconvert.typ.xml")
