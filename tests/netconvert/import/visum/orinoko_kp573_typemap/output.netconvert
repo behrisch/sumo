@@ -24,7 +24,8 @@ Parsing STRECKENTYP ... done.
 Parsing KNOTEN ... done.
 Parsing BEZIRK ... done.
 Parsing PUNKT ... done.
-Parsing STRECKE ... done.
+Parsing STRECKE ...
+ done.
 Parsing KANTE ... done.
 Parsing ANBINDUNG ... done.
 Parsing ABBIEGER ... done.
@@ -43,17 +44,17 @@ Parsing HALTEPUNKT ...
  Import done:
    21 districts loaded.
    28 nodes loaded.
-   115 types loaded.
+   116 types loaded.
    54 edges loaded.
 Removing self-loops ... done (0ms).
 Removing empty nodes ... done (0ms).
    0 nodes removed.
-Moving network to origin ... done (1ms).
+Moving network to origin ... done (0ms).
 Computing turning directions ... done (0ms).
 Assigning nodes to traffic lights ... done (0ms).
 Sorting nodes' edges ... done (0ms).
-Computing node shapes ... done (0ms).
-Computing edge shapes ... done (1ms).
+Computing node shapes ... done (1ms).
+Computing edge shapes ... done (20ms).
 Computing node types ... done (0ms).
 Computing priorities ... done (0ms).
 Computing approached edges ... done (0ms).
@@ -80,5 +81,5 @@ Summary:
   Converted boundary : 0.00,0.00,3286.00,4143.50
 -----------------------------------------------------
 Writing network ...
- done (2ms).
+ done (14ms).
 Success.

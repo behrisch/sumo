@@ -1,55 +1,15 @@
-Warning: Encountered unknown vehicle category '7' in type '91'
-Warning: Encountered unknown vehicle category '8' in type '91'
-Warning: Encountered unknown vehicle category '1' in type '261'
-Warning: Encountered unknown vehicle category '2' in type '261'
-Warning: Encountered unknown vehicle category '5' in type '261'
-Warning: Encountered unknown vehicle category '6' in type '261'
-Warning: Encountered unknown vehicle category '7' in type '261'
-Warning: Encountered unknown vehicle category '8' in type '261'
-Warning: Encountered unknown vehicle category '9' in type '261'
-Warning: Encountered unknown vehicle category 'a' in type '261'
+Warning: Encountered unknown vehicle category '7' in type '91' (guessed 'rail' based on description 'db-schiene')
+Warning: Encountered unknown vehicle category '8' in type '91' (guessed 'rail' based on description 's-bahn')
+Warning: Encountered unknown vehicle category '1' in type '83' (guessed 'taxi' based on description 'a-sammeltaxi')
+Warning: Encountered unknown vehicle category '2' in type '83' (guessed 'bus' based on description 'stadtbus')
+Warning: Encountered unknown vehicle category '5' in type '83' (guessed 'bus' based on description 'ovf-bus')
+Warning: Encountered unknown vehicle category 'g' in type '82' (description: 'pendler gesamt')
+Warning: Encountered unknown vehicle category 'r' in type '82' (description: 'pendler arbeiten wohnen')
 Warning: Ignoring stopping place '261' without edge id
-Warning: Encountered unknown vehicle category '1' in type '1560'
-Warning: Encountered unknown vehicle category '2' in type '1560'
-Warning: Encountered unknown vehicle category '5' in type '1560'
-Warning: Encountered unknown vehicle category '6' in type '1560'
-Warning: Encountered unknown vehicle category '7' in type '1560'
-Warning: Encountered unknown vehicle category '8' in type '1560'
-Warning: Encountered unknown vehicle category '9' in type '1560'
-Warning: Encountered unknown vehicle category 'a' in type '1560'
 Warning: Ignoring stopping place '1560' without edge id
-Warning: Encountered unknown vehicle category '1' in type '1561'
-Warning: Encountered unknown vehicle category '2' in type '1561'
-Warning: Encountered unknown vehicle category '5' in type '1561'
-Warning: Encountered unknown vehicle category '6' in type '1561'
-Warning: Encountered unknown vehicle category '7' in type '1561'
-Warning: Encountered unknown vehicle category '8' in type '1561'
-Warning: Encountered unknown vehicle category '9' in type '1561'
-Warning: Encountered unknown vehicle category 'a' in type '1561'
 Warning: Ignoring stopping place '1561' without edge id
-Warning: Encountered unknown vehicle category '1' in type '1562'
-Warning: Encountered unknown vehicle category '2' in type '1562'
-Warning: Encountered unknown vehicle category '5' in type '1562'
-Warning: Encountered unknown vehicle category '6' in type '1562'
-Warning: Encountered unknown vehicle category '7' in type '1562'
-Warning: Encountered unknown vehicle category '8' in type '1562'
-Warning: Encountered unknown vehicle category '9' in type '1562'
-Warning: Encountered unknown vehicle category 'a' in type '1562'
 Warning: Ignoring stopping place '1562' without edge id
-Warning: Encountered unknown vehicle category '1' in type '1563'
-Warning: Encountered unknown vehicle category '2' in type '1563'
-Warning: Encountered unknown vehicle category '5' in type '1563'
-Warning: Encountered unknown vehicle category '6' in type '1563'
-Warning: Encountered unknown vehicle category '9' in type '1563'
-Warning: Encountered unknown vehicle category 'a' in type '1563'
 Warning: Ignoring stopping place '1563' without edge id
-Warning: 17 total messages of type: Encountered unknown vehicle category '1' in type '%'
-Warning: 17 total messages of type: Encountered unknown vehicle category '2' in type '%'
-Warning: 17 total messages of type: Encountered unknown vehicle category '5' in type '%'
-Warning: 17 total messages of type: Encountered unknown vehicle category '6' in type '%'
-Warning: 18 total messages of type: Encountered unknown vehicle category '7' in type '%'
-Warning: 18 total messages of type: Encountered unknown vehicle category '8' in type '%'
-Warning: 17 total messages of type: Encountered unknown vehicle category '9' in type '%'
-Warning: 17 total messages of type: Encountered unknown vehicle category 'a' in type '%'
+Warning: 8 total messages of type: Encountered unknown vehicle category '%' in type '%' (guessed '%' based on description '%')
 Warning: 17 total messages of type: Ignoring stopping place '%' without edge id
 Warning: Embedding TAZ-data inside the network is deprecated. Use option --taz-output instead
