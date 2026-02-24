@@ -423,10 +423,6 @@ NIImporter_VISUM::parse_Edges() {
         speed = myNetBuilder.getTypeCont().getEdgeTypeSpeed(type);
     }
 
-    // get the information whether the edge is a one-way
-    bool oneway = myLineParser.know("Einbahn")
-                  ? StringUtils::toBool(myLineParser.get("Einbahn"))
-                  : true;
     // get the number of lanes
     int nolanes = myNetBuilder.getTypeCont().getEdgeTypeNumLanes(type);
     if (!OptionsCont::getOptions().getBool("visum.recompute-lane-number")) {
@@ -446,7 +442,7 @@ NIImporter_VISUM::parse_Edges() {
     }
     // check whether the id is already used
     //  (should be the opposite direction)
-    bool oneway_checked = oneway;
+    bool oneway_checked = true;
     NBEdge* previous = myNetBuilder.getEdgeCont().retrieve(myCurrentID);
     if (previous != nullptr) {
         myCurrentID = '-' + myCurrentID;
@@ -468,23 +464,6 @@ NIImporter_VISUM::parse_Edges() {
     // add the edge
     const SVCPermissions permissions = getPermissions(KEYS.getString(VISUM_TYPES), false, myNetBuilder.getTypeCont().getEdgeTypePermissions(type));
     int prio = myUseVisumPrio ? myNetBuilder.getTypeCont().getEdgeTypePriority(type) : -1;
-    if (nolanes != 0 && speed != 0) {
-        LaneSpreadFunction lsf = oneway_checked ? LaneSpreadFunction::CENTER : LaneSpreadFunction::RIGHT;
-        NBEdge* e = new NBEdge(myCurrentID, from, to, type, speed, NBEdge::UNSPECIFIED_FRICTION, nolanes, prio,
-                               NBEdge::UNSPECIFIED_WIDTH, NBEdge::UNSPECIFIED_OFFSET, lsf, name);
-        e->setPermissions(permissions);
-        if (!myNetBuilder.getEdgeCont().insert(e)) {
-            delete e;
-            WRITE_ERRORF(TL("Duplicate edge occurred ('%')."), myCurrentID);
-        }
-    }
-    myTouchedEdges.push_back(myCurrentID);
-    // nothing more to do, when the edge is a one-way street
-    if (oneway) {
-        return;
-    }
-    // add the opposite edge
-    myCurrentID = '-' + myCurrentID;
     if (nolanes != 0 && speed != 0) {
         LaneSpreadFunction lsf = oneway_checked ? LaneSpreadFunction::CENTER : LaneSpreadFunction::RIGHT;
         NBEdge* e = new NBEdge(myCurrentID, from, to, type, speed, NBEdge::UNSPECIFIED_FRICTION, nolanes, prio,
