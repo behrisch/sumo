@@ -196,6 +196,9 @@ private:
 
     /// @brief The geo proj.4-projection which is the target of the inverse projection
     projPJ myGeoProjection;
+
+    /// @brief whether myProjection uses radians instead of degrees
+    bool myRadians;
 #endif
 
     /// @brief The offset to apply
