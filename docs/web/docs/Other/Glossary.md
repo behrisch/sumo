@@ -53,6 +53,9 @@ Dynamic User Assignment
 - **DUE**:
 Dynamic User Equilibrium
 
+- **DRAC**:
+Deceleration Rate to Avoid Collision, required braking rate to avoid a collision
+
 - **DRT**:
 Demand responsive transport
 
@@ -153,6 +156,9 @@ OpenStreetMap
 
 ## P
 
+- **PET**:
+Post-Encroachment Time, the time between one vehicle leaving a conflict point and another entering it
+
 - **poi**:
 short for "point of interest"; A position of an object that may
 be interesting
@@ -180,6 +186,9 @@ A file containing the sources (program code) for a
 project. The source code must be compiled in order to get the
 runnable application. It is called "tar-ball" because of using the
 application "tar" to join all the source files into a single file.
+
+- **SSM**:
+Surrogate Safety Measures, safety-related indicators in a simulation
 
 - **submicroscopic**:
 In a submicroscopic traffic (flow) simulation, the
@@ -216,10 +225,13 @@ Institute of Transportation Systems at the German Aerospace
 Center (DLR)
 
 - **TS-BS**:
-TS Standort Braunschweig
+TS Location in Brunswick (Braunschweig)
 
 - **TS-BA**:
-TS Standort Berlin-Adlershof
+TS Location in Berlin-Adlershof
+
+- **TTC**:
+Time to Collision, the time remaining until two vehicles would collide if they keep their current speed and trajectory
 
 - **type(s)-file**:
 A XML-file describing types of streets, see [type
