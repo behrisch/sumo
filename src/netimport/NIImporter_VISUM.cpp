@@ -83,6 +83,7 @@ StringBijection<NIImporter_VISUM::VISUM_KEY>::Entry NIImporter_VISUM::KEYS_DE[] 
     { "POIKATEGORIE", VISUM_POICATEGORY },
     { "NETZ", VISUM_NETWORK },
     { "DEFKOORD", VISUM_PROJECTIONDEFINITION },
+    { "IV", VISUM_PRT },
     { "NR", VISUM_NO } // must be the last one
 };
 
@@ -654,7 +655,8 @@ NIImporter_VISUM::parse_Turns() {
     std::string type = myLineParser.know("VSysCode")
                        ? myLineParser.get("VSysCode")
                        : myLineParser.get(KEYS.getString(VISUM_TYPES));
-    if (myVSysTypes.find(type) != myVSysTypes.end() && myVSysTypes.find(type)->second == "IV") {
+    if (myVSysTypes.find(type) != myVSysTypes.end() &&
+            myVSysTypes.find(type)->second == KEYS.getString(VISUM_PRT)) {
         // try to set the turning definition
         NBEdge* src = from->getConnectionTo(via);
         NBEdge* dest = via->getConnectionTo(to);
