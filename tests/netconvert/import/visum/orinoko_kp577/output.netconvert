@@ -41,22 +41,22 @@ Parsing HALTEPUNKT ...
  Import done:
    29 districts loaded.
    49 nodes loaded.
-   100 types loaded.
+   129 types loaded.
    100 edges loaded.
 Removing self-loops ... done (0ms).
 Removing empty nodes ... done (0ms).
    0 nodes removed.
-Moving network to origin ... done (0ms).
+Moving network to origin ... done (1ms).
 Computing turning directions ... done (0ms).
 Assigning nodes to traffic lights ... done (0ms).
 Sorting nodes' edges ... done (0ms).
 Computing node shapes ... done (1ms).
-Computing edge shapes ... done (1ms).
+Computing edge shapes ... done (0ms).
 Computing node types ... done (0ms).
 Computing priorities ... done (0ms).
-Computing approached edges ... done (0ms).
+Computing approached edges ... done (1ms).
 Guessing and setting roundabouts ... done (0ms).
-Computing approaching lanes ... done (1ms).
+Computing approaching lanes ... done (0ms).
 Dividing of lanes on approached lanes ... done (0ms).
 Processing turnarounds ... done (0ms).
 Rechecking of lane endings ... done (0ms).
@@ -77,5 +77,5 @@ Summary:
   Applied offset     : -4436760.00,-5472772.50
   Converted boundary : 0.00,0.00,4020.00,3207.50
 -----------------------------------------------------
-Writing network ... done (4ms).
+Writing network ... done (20ms).
 Success.

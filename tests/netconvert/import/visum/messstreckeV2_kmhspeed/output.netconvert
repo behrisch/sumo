@@ -40,7 +40,7 @@ Parsing FAHRSTREIFENABBIEGER ... done.
 Parsing HALTEPUNKT ... done.
  Import done:
    26 nodes loaded.
-   100 types loaded.
+   129 types loaded.
    50 edges loaded.
 Removing self-loops ... done (0ms).
 Removing empty nodes ... done (0ms).
@@ -49,22 +49,22 @@ Moving network to origin ... done (0ms).
 Computing turning directions ... done (0ms).
 Assigning nodes to traffic lights ... done (0ms).
 Sorting nodes' edges ... done (0ms).
-Computing node shapes ... done (1ms).
-Computing edge shapes ... done (0ms).
+Computing node shapes ... done (0ms).
+Computing edge shapes ... done (1ms).
 Computing node types ... done (0ms).
 Computing priorities ... done (0ms).
 Computing approached edges ... done (0ms).
 Guessing and setting roundabouts ... done (0ms).
 Computing approaching lanes ... done (0ms).
 Dividing of lanes on approached lanes ... done (0ms).
-Processing turnarounds ... done (1ms).
+Processing turnarounds ... done (0ms).
 Rechecking of lane endings ... done (0ms).
 Computing traffic light control information ... done (0ms).
 Computing node logics ... done (0ms).
-Computing traffic light logics ... done (2ms).
+Computing traffic light logics ... done (16ms).
  3 traffic light(s) computed.
 Building inner edges ...
- done (1ms).
+ done (3ms).
 -----------------------------------------------------
 Summary:
  Node type statistics:
@@ -78,5 +78,5 @@ Summary:
   Applied offset     : -889.91,1209.18
   Converted boundary : 0.00,0.00,2060.03,844.92
 -----------------------------------------------------
-Writing network ... done (5ms).
+Writing network ... done (2ms).
 Success.

@@ -1,0 +1,17 @@
+<types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/types_file.xsd">
+    <type id="1" allow="taxi"/>
+    <type id="2" allow="bus"/>
+    <type id="5" allow="bus"/>
+    <type id="6" allow="bus"/>
+    <type id="7" allow="rail"/>
+    <type id="8" allow="rail_urban"/>
+    <type id="9" allow="tram"/>
+    <type id="A" allow="subway"/>
+    <type id="B" allow="taxi"/>
+    <type id="C" allow="pedestrian"/>
+    <type id="G" allow="passenger"/>
+    <type id="L" allow="truck"/>
+    <type id="P" allow="passenger"/>
+    <type id="R" allow="passenger"/>
+    <type id="W" allow="passenger"/>
+</types>

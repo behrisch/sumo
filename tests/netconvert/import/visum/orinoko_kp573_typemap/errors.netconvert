@@ -1,0 +1,7 @@
+Warning: Ignoring stopping place '261' without edge id
+Warning: Ignoring stopping place '1560' without edge id
+Warning: Ignoring stopping place '1561' without edge id
+Warning: Ignoring stopping place '1562' without edge id
+Warning: Ignoring stopping place '1563' without edge id
+Warning: 17 total messages of type: Ignoring stopping place '%' without edge id
+Warning: Embedding TAZ-data inside the network is deprecated. Use option --taz-output instead
