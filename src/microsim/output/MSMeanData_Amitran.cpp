@@ -179,7 +179,7 @@ MSMeanData_Amitran::openInterval(OutputDevice& dev, const SUMOTime startTime, co
 
 
 void
-MSMeanData_Amitran::writePrefix(OutputDevice& dev, const MeanDataValues& values, const SumoXMLTag /* tag */, const std::string id) const {
+MSMeanData_Amitran::writePrefix(OutputDevice& dev, const MeanDataValues& /*values*/, const SumoXMLTag /* tag */, const std::string id) const {
     dev.openTag("link").writeAttr(SUMO_ATTR_ID, id);
 }
 
