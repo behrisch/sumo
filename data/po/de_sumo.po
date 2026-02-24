@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-20 18:14+0000\n"
+"PO-Revision-Date: 2026-02-25 07:48+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/de/>\n"
@@ -5744,7 +5744,7 @@ msgstr ""
 
 #: src/microsim/traffic_lights/MSDriveWay.cpp:1028
 msgid "Found circular block after % (% edges, length %)"
-msgstr "Zirkuläre BLockade nach % gefunden (% Kanten, Länge %)"
+msgstr "Zirkuläre Blockade nach % gefunden (% Kanten, Länge %)"
 
 #: src/microsim/traffic_lights/MSDriveWay.cpp:2153
 msgid "Unknown driveWay '%' with route '%'"
@@ -5764,7 +5764,7 @@ msgstr "Ungültiger 'off'-Stand für Link % am Knotenpunkt '%'"
 
 #: src/microsim/traffic_lights/MSOffTrafficLightLogic.cpp:84
 msgid "Inconsistent 'off'-states for linkIndex % at tlLogic '%'"
-msgstr "Inkonsistente 'off'-Stände für Linkindex % bei LSA-Logik '%'"
+msgstr "Inkonsistente Aus-Zustände für linkIndex % in LSA-Logik '%'"
 
 #: src/microsim/traffic_lights/MSRailSignal.cpp:95
 #, c-format
@@ -5823,11 +5823,11 @@ msgstr ""
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:82
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:123
 msgid "Mismatching phase size in tls '%', program '%'."
-msgstr "Nicht übereinstimmende Phasengröße in LSA '%', Programm '%'."
+msgstr "Nicht übereinstimmende Phasengröße in LSA '%' (Programm '%')."
 
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:117
 msgid "No initial signal plan loaded for tls '%'."
-msgstr "Es wurde kein initialisierter Signalplan für die LSA '%' geladen."
+msgstr "Es wurde kein ursprünglicher Signalplan für die LSA '%' geladen."
 
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:164
 msgid "Could not build an off-state for tls '%'."
@@ -5853,8 +5853,8 @@ msgstr ""
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:643
 msgid "Could not switch tls '%' to program '%': No such tls exists."
 msgstr ""
-"LSA '%' konnte nicht zum das Programm '%' wechseln: Es gibt keine LSA mit "
-"dieser Bezeichnung."
+"LSA '%' konnte nicht zum Programm '%' wechseln: Es gibt keine LSA mit dieser "
+"Bezeichnung."
 
 #: src/microsim/traffic_lights/MSTLLogicControl.cpp:655
 msgid "Waut '%' was already defined."
@@ -5914,7 +5914,7 @@ msgstr ""
 
 #: src/microsim/traffic_lights/MSTrafficLightLogic.cpp:537
 msgid "Green fraction is only 1% for link % in tlLogic '%', program '%'."
-msgstr "Grünanteil ist nur 1% für Link % in der LSA-Logik '%', Programm '%'."
+msgstr "Grünanteil ist nur 1% für Link % in der LSA-Logik '%' (Programm '%')."
 
 #: src/microsim/traffic_lights/MSTrafficLightLogic.cpp:542
 #, c-format
@@ -6383,7 +6383,7 @@ msgstr ""
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:234
 msgid "rerouter '%': parkingAreaReroute requires a parkingArea id."
-msgstr "Rerouter '%': parkingAreaReroute benötigt die ID eines Parkplatz."
+msgstr "Rerouter '%': parkingAreaReroute benötigt die ID eines Parkplatzes."
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:238
 msgid "rerouter '%': parkingArea '%' is not known."
@@ -7131,7 +7131,7 @@ msgstr "Deaktiviert das Erstellen von Kehrtwenden"
 #: src/netbuild/NBFrame.cpp:148
 msgid "Disables building turnarounds at tls-controlled junctions"
 msgstr ""
-"Deaktiviert das Erstellen von Kehrtwenden an LSA gesteuerten Knotenpunkten"
+"Deaktiviert das Erstellen von Kehrtwenden an LSA-gesteuerten Knotenpunkten"
 
 #: src/netbuild/NBFrame.cpp:151
 msgid "Disables building turnarounds at geometry-like junctions"
@@ -7278,8 +7278,8 @@ msgid ""
 "Repair topology of the railway network just enough to let loaded public "
 "transport lines to work"
 msgstr ""
-"Topologie des Schienennetzes das gerade ausreicht, um die ausgelastete ÖV-"
-"Linien zum Laufen zu bringen, reparieren"
+"Topologie des Schienennetzes nur in dem Umfang reparieren, um die geladenen "
+"ÖV-Linien funktionsfähig zu machen"
 
 #: src/netbuild/NBFrame.cpp:245
 msgid ""
@@ -7769,7 +7769,7 @@ msgstr "IDs von '%' konnten nicht geladen werden."
 
 #: src/netbuild/NBHelpers.cpp:123
 msgid "Invalid lane id '%' (missing '_')."
-msgstr "Ungültige Fahrstreifen ID '%' ('_' fehlt)."
+msgstr "Ungültige Fahrstreifen-ID '%' ('_' fehlt)."
 
 #: src/netbuild/NBHelpers.cpp:130
 msgid "Invalid lane index '%' for lane '%'."
@@ -7779,8 +7779,7 @@ msgstr "Ungültiger Fahrstreifenindex '%' für Fahrstreifen '%'."
 #, c-format
 msgid "Could not patch tlLogic '%' for changed crossings"
 msgstr ""
-"LSA-Logik '%' konnte nicht ausgebessert werden für veränderte "
-"Fußgängerfurten"
+"LSA-Logik '%' konnte nicht an veränderte Fußgängerfurten angepasst werden"
 
 #: src/netbuild/NBLoadedSUMOTLDef.cpp:916
 msgid "Unused state in tlLogic '%', program '%' at tl-index %"
@@ -7849,7 +7848,7 @@ msgstr " % Kanten auftrennen, um entfernte Knoten dort einzufügen"
 
 #: src/netbuild/NBNetBuilder.cpp:142
 msgid "Processing public transport stops"
-msgstr "Verarbeitung ÖV-Haltestellen"
+msgstr "Verarbeitung der ÖV-Haltestellen"
 
 #: src/netbuild/NBNetBuilder.cpp:167
 msgid "Align pt stop id signs with corresponding edge id signs"
@@ -8016,7 +8015,7 @@ msgstr "Vereinige LSA-Knoten"
 
 #: src/netbuild/NBNetBuilder.cpp:594
 msgid "Computing traffic light control information"
-msgstr "Berechnung von LSA Kontrollinformation"
+msgstr "Berechnung der LSA-Steuerung"
 
 #: src/netbuild/NBNetBuilder.cpp:601
 msgid "Computing node logics"
