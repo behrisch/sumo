@@ -42,9 +42,9 @@ def get_options(args=None):
     op = sumolib.options.ArgumentParser(description="Import VISUM route file")
     # input
     op.add_argument("-n", "--net-file", category="input", dest="netfile", required=True, type=op.net_file,
-                    help="define the net file (mandatory)")
+                    help="define the SUMO net file (mandatory)")
     op.add_argument("-r", "--route-file", category="input", dest="routefile", required=True, type=op.route_file,
-                    help="define the net file (mandatory)")
+                    help="define the input anm_route.xml file (mandatory)")
     # output
     op.add_argument("-o", "--output-trip-file", category="output", dest="outfile", required=True, type=op.route_file,
                     help="define the output route file")
