@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-24 14:32+0000\n"
+"PO-Revision-Date: 2026-02-25 07:48+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -6489,6 +6489,8 @@ msgid ""
 "Edge sequence is not consistent with stop sequence in line '%', not adding "
 "bidi edges."
 msgstr ""
+"La secuencia de aristas no es coherente con la secuencia de paradas en la "
+"línea '%'; no se agregarán aristas bidireccionales."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1049
 #, c-format
@@ -6496,6 +6498,8 @@ msgid ""
 "Stop on edge '%' can only be reached in reverse but edge has the wrong "
 "spreadType."
 msgstr ""
+"La parada en la arista '%' solo se puede alcanzar en reversa, pero la arista "
+"tiene un spreadType incorrecto."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1067
 msgid "No connection found between stops on edge '%' and edge '%'."
@@ -6507,17 +6511,23 @@ msgid ""
 "Added % bidi-edges to ensure connectivity of straight tracks at geometry-"
 "like nodes."
 msgstr ""
+"Se agregaron % aristas bidireccionales para garantizar la conectividad de "
+"las vías rectas en nodos de tipo geométrico."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1185
 msgid ""
 "Added % bidi-edges to ensure connectivity of straight tracks at switches."
 msgstr ""
+"Se agregaron % aristas bidireccionales para garantizar la conectividad de "
+"las vías rectas en desvíos."
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1246
 msgid ""
 "Cannot extend track direction priority because there are no track edges with"
 " positive priority"
 msgstr ""
+"No se puede extender la prioridad de la dirección de la vía porque no hay "
+"aristas de vía con prioridad positiva"
 
 #: src/netbuild/NBAlgorithms_Railway.cpp:1302
 msgid ""
