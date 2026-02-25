@@ -48,6 +48,7 @@ static StringBijection<SUMOVehicleClass>::Entry sumoVehicleClassStringInitialize
     {"public_army",       SVC_ARMY}, // !!! deprecated
     {"army",              SVC_ARMY},
     {"vip",               SVC_VIP},
+    {"pedestrian",        SVC_PEDESTRIAN},
     {"passenger",         SVC_PASSENGER},
     {"hov",               SVC_HOV},
     {"taxi",              SVC_TAXI},
@@ -58,19 +59,18 @@ static StringBijection<SUMOVehicleClass>::Entry sumoVehicleClassStringInitialize
     {"transport",         SVC_TRUCK}, // !!! deprecated
     {"truck",             SVC_TRUCK},
     {"trailer",           SVC_TRAILER},
+    {"motorcycle",        SVC_MOTORCYCLE},
+    {"moped",             SVC_MOPED},
+    {"bicycle",           SVC_BICYCLE},
+    {"evehicle",          SVC_E_VEHICLE},
     {"lightrail",         SVC_TRAM}, // !!! deprecated
     {"tram",              SVC_TRAM},
     {"cityrail",          SVC_RAIL_URBAN}, // !!! deprecated
     {"rail_urban",        SVC_RAIL_URBAN},
     {"rail_slow",         SVC_RAIL}, // !!! deprecated
     {"rail",              SVC_RAIL},
-    {"rail_fast",         SVC_RAIL_FAST},
     {"rail_electric",     SVC_RAIL_ELECTRIC},
-    {"motorcycle",        SVC_MOTORCYCLE},
-    {"moped",             SVC_MOPED},
-    {"bicycle",           SVC_BICYCLE},
-    {"pedestrian",        SVC_PEDESTRIAN},
-    {"evehicle",          SVC_E_VEHICLE},
+    {"rail_fast",         SVC_RAIL_FAST},
     {"ship",              SVC_SHIP},
     {"container",         SVC_CONTAINER},
     {"cable_car",         SVC_CABLE_CAR},
