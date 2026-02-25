@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-25 07:48+0000\n"
+"PO-Revision-Date: 2026-02-26 12:56+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/de/>\n"
@@ -4350,7 +4350,7 @@ msgstr ""
 #: src/utils/traction_wire/Circuit.cpp:878
 msgid "The element or node with the last Id was not found in the circuit!"
 msgstr ""
-"Das Element oder der Knoten mit der letzten ID wurden nicht im Kreislauf "
+"Das Element oder der Knoten mit der letzten ID wurde nicht im Kreislauf "
 "gefunden!"
 
 #: src/microsim/devices/MSDevice_ElecHybrid.cpp:753
@@ -8297,17 +8297,15 @@ msgstr "Konnte keine vereinigte LSA '%' erstellen."
 
 #: src/netbuild/NBNodeCont.cpp:2395
 msgid "Could not build guessed, joined tls."
-msgstr "Konnte vermutete vereinigte LSA nicht erstellen."
+msgstr "Konnte geratene vereinigte LSA nicht erstellen."
 
 #: src/netbuild/NBNodeCont.cpp:2518
 msgid "Could not build a joined tls."
-msgstr "Konnte nicht eine vereinigte LSA erstellen."
+msgstr "Konnte eine vereinigte LSA nicht erstellen."
 
 #: src/netbuild/NBNodeCont.cpp:2535
 msgid "Building a tl-logic for junction '%' twice is not possible."
-msgstr ""
-"Das Erstellen einer doppelten LSA-Logik für den Knotenpunkt '%' ist nicht "
-"möglich."
+msgstr "Die LSA-Logik für den Knotenpunkt '%' kann nur einmal erstellt werden."
 
 #: src/netbuild/NBNodeCont.cpp:2617 src/netbuild/NBNodeCont.cpp:2709
 msgid "-----------------------------------------------------"
@@ -8352,7 +8350,7 @@ msgstr ""
 
 #: src/netbuild/NBOwnTLDef.cpp:818
 msgid "The traffic light '%' cannot be adapted to a cycle time of %."
-msgstr "Die LSA '%' kann nicht auf eine Umlaufzeit von % angepasst werden."
+msgstr "Die LSA '%' kann nicht an eine Umlaufzeit von % angepasst werden."
 
 #: src/netbuild/NBOwnTLDef.cpp:867
 msgid "The traffic light '%' has a high cycle time of %."
@@ -8428,16 +8426,16 @@ msgid ""
 "Cannot revise pt stop localization for pt line '%', which consist of one way"
 " only. Ignoring!"
 msgstr ""
-"ÖV-Haltestellen-Lokalisierung für die ÖV-Linie '%' kann nicht überarbeitet "
-"werden, da diese nur aus einer Richtung besteht. Ignoriere!"
+"Es können keine ÖV-Haltestellenstandorte der nur in einer Richtung "
+"definierten Linie '%' überarbeitet werden."
 
 #: src/netbuild/NBPTLineCont.cpp:125
 msgid ""
 "Cannot revise pt stop localization for pt line '%', which has no route "
 "edges. Ignoring!"
 msgstr ""
-"ÖV-Haltestellen-Lokalisierung für ÖV-Linie '%' kann nicht überarbeitet "
-"werden, da diese keine Routenkanten hat. Ignoriere!"
+"Die ÖV-Haltestellenstandorte der Linie '%' können nicht überarbeitet werden, "
+"da diese keine Routenkanten hat."
 
 #: src/netbuild/NBPTLineCont.cpp:146
 msgid ""
@@ -8451,8 +8449,8 @@ msgstr ""
 msgid ""
 "Cannot revise pt stop localization for incomplete pt line '%'. Ignoring!"
 msgstr ""
-"ÖV-Halt-Lokalisierung für unvollständige ÖV-Linie '%' kann nicht "
-"überarbeitet werden. Ignoriere!"
+"Die ÖV-Haltstandorte der unvollständigen Linie '%' können nicht überarbeitet "
+"werden."
 
 #: src/netbuild/NBPTLineCont.cpp:188
 msgid ""
@@ -8494,8 +8492,8 @@ msgid ""
 "Could not find corresponding edge or compatible lane for pt stop '%' (%). "
 "Thus, it will be removed!"
 msgstr ""
-"Es konnte keine entsprechende Kante oder kompatibler Fahrstreifen für die "
-"ÖV-Haltestelle '%' (%) gefunden werden. Somit wird es entfernt!"
+"Es konnte keine entsprechende Kante bzw. kompatibler Fahrstreifen für die ÖV-"
+"Haltestelle '%' (%) gefunden werden. Somit wird es entfernt!"
 
 #: src/netbuild/NBPTStopCont.cpp:135
 msgid ""
