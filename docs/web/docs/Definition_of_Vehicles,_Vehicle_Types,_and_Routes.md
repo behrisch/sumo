@@ -643,10 +643,10 @@ The following vehicle classes exist:
 | ignoring       | \- (all bits set to 0) | may drive on all lanes regardless of set permissions.                                                                                                             |
 | private        | 0                      |                                                                                                                                                                   |
 | emergency      | 1                      |                                                                                                                                                                   |
-| authority      | 2                      |                                                                                                                                                                   |
+| authority      | 2                      | lanes which only allow this are considered "closed roads" and [colored "red" by default](sumo-gui.md#default_coloring)                                            |
 | army           | 3                      |                                                                                                                                                                   |
 | vip            | 4                      |                                                                                                                                                                   |
-| pedestrian     | 5                      | lanes which only allow this class are considered to be 'sidewalks' in [netconvert](netconvert.md)                                                         |
+| pedestrian     | 5                      | lanes which only allow this class are considered to be 'sidewalks' in [netconvert](netconvert.md)                                                                 |
 | **passenger**  | 6                      | This is the default vehicle class and denotes regular passenger traffic                                                                                           |
 | hov            | 7                      | [High-occupancy vehicle](https://en.wikipedia.org/wiki/High-occupancy_vehicle_lane)                                                                               |
 | taxi           | 8                      |                                                                                                                                                                   |
@@ -660,13 +660,20 @@ The following vehicle classes exist:
 | bicycle        | 16                     |                                                                                                                                                                   |
 | evehicle       | 17                     | future mobility concepts such as electric vehicles which may get special access rights                                                                            |
 | tram           | 18                     |                                                                                                                                                                   |
-| rail_urban    | 19                     | heavier than 'tram' but distinct from 'rail'. Encompasses [Light Rail](https://en.wikipedia.org/wiki/Light_Rail) and [S-Bahn](https://en.wikipedia.org/wiki/S-Bahn) |
+| rail_urban     | 19                     | heavier than 'tram' but distinct from 'rail'. Encompasses [Light Rail](https://en.wikipedia.org/wiki/Light_Rail) and [S-Bahn](https://en.wikipedia.org/wiki/S-Bahn) |
 | rail           | 20                     | heavy rail                                                                                                                                                        |
-| rail_electric | 21                     | heavy rail vehicle that may only drive on electrified tracks                                                                                                      |
-| rail_fast     | 22                     | [High-speed-rail](https://en.wikipedia.org/wiki/High-speed_rail)                                                                                                  |
+| rail_electric  | 21                     | heavy rail vehicle that may only drive on electrified tracks                                                                                                      |
+| rail_fast      | 22                     | [High-speed-rail](https://en.wikipedia.org/wiki/High-speed_rail)                                                                                                  |
 | ship           | 23                     | basic class for navigating waterways                                                                                                                              |
-| custom1        | 24                     | reserved for user-defined semantics                                                                                                                               |
-| custom2        | 25                     | reserved for user-defined semantics                                                                                                                               |
+| container      | 24                     | used for modelling transhipping
+| cable_car      | 25                     | 
+| subway         | 26                     | 
+| aircraft       | 27                     | 
+| wheelchair     | 28                     | 
+| scooter        | 29                     | 
+| drone          | 30                     | reserved for custom air mobility
+| custom1        | 31                     | reserved for user-defined semantics                                                                                                                               |
+| custom2        | 32                     | reserved for user-defined semantics                                                                                                                               |
 
 These values are a "best guess" of somehow meaningful values, surely
 worth to be discussed. Though, in parts, they represent classes found in
