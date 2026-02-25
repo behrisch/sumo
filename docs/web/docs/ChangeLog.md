@@ -52,12 +52,12 @@ title: ChangeLog
 
 - meso
   - edge-type specific meso parameters now support `edgeLength` #17582
-  - now supporting battery device in #13843
+  - now supporting battery device #13843
 
 - tools
   - osmWebWizard.py: now automatically saves osmGet configuration for easier updating of a scenario #17570
   - osmWebWizard.py: now permits selection of public transport modes to import #8628
-  - osmWebWizadr.py: now permits to set a 'verbose' checkbox which gets forward to all applications #17573
+  - osmWebWizard.py: now permits to set a 'verbose' checkbox which gets forward to all applications #17573
   - osmGet.py: now attempts to download again after timeout and tries to use proxies (also affects osmWebWizard) #17597
   - plotXMLAttrbutes.py: added option **--join** to configure the separator when joining values or labels #17612
   - generateStationEdges.py: added option **--join-stations** to generate a single access edge for all stops with the same name #17625
