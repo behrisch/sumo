@@ -496,7 +496,7 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
     if (type == "") {  // we do not want to import it
         return newIndex;
     }
-
+    std::string routingType = "";
     int numLanesForward = tc.getEdgeTypeNumLanes(type);
     int numLanesBackward = tc.getEdgeTypeNumLanes(type);
     double speed = tc.getEdgeTypeSpeed(type);
@@ -699,7 +699,7 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
         backwardPermissions = SVC_BUS;
         numLanesBackward = 1;
     }
-    // with is meant for raw lane count before adding sidewalks or cycleways
+    // width is meant for raw lane count before adding sidewalks or cycleways
     const int taggedLanes = (addForward ? numLanesForward : 0) + (addBackward ? numLanesBackward : 0);
     if (e->myWidth > 0 && e->myWidthLanesForward.size() == 0 && e->myWidthLanesBackward.size() == 0 && taggedLanes != 0
             && !OptionsCont::getOptions().getBool("ignore-widths")) {
@@ -721,6 +721,22 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
     if (speed <= 0 || speedBackward <= 0) {
         WRITE_WARNINGF(TL("Skipping edge '%' because it has speed %."), id, speed);
         ok = false;
+    }
+    if (e->myNoLanes == 1 && addForward && addBackward) {
+        // narrow road which now receives a total of 2 lanes but has less capacity than implied
+        if (e->myWidth < 0 && e->myWidthLanesForward.size() == 0 && e->myWidthLanesBackward.size() == 0) {
+            if (forwardWidth == NBEdge::UNSPECIFIED_WIDTH) {
+                forwardWidth = SUMO_const_laneWidth;
+            }
+            if (backwardWidth == NBEdge::UNSPECIFIED_WIDTH) {
+                backwardWidth = SUMO_const_laneWidth;
+            }
+            forwardWidth /= 2;
+            backwardWidth /= 2;
+        }
+        if (e->myWidth < 4) {
+            routingType = "narrow";
+        }
     }
     // deal with cycleways that run in the opposite direction of a one-way street
     WayType cyclewayType = e->myCyclewayType; // make a copy because we do some temporary modifications
@@ -856,6 +872,7 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
                     }
                 }
             }
+            nbe->setRoutingType(routingType);
 
             if (!ec.insert(nbe)) {
                 delete nbe;
@@ -909,6 +926,7 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
                     }
                 }
             }
+            nbe->setRoutingType(routingType);
 
             if (!ec.insert(nbe)) {
                 delete nbe;
