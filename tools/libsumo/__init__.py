@@ -67,6 +67,21 @@ from .libsumo import TraCICollision, TraCISignalConstraint  # noqa
 from ._libsumo import TraCILogic_phases_get, TraCILogic_phases_set, TraCILogic_swiginit, new_TraCILogic  # noqa
 from .libsumo import *  # noqa
 
+if os.environ.get('LIBSUMO_AS_TRACI') != "quiet":
+    try:
+        import importlib.metadata  # noqa
+        pyarrow_version = importlib.metadata.version("pyarrow")
+        pyarrow_so_version = "%s%02i" % tuple(map(int, pyarrow_version.split(".")[:2]))
+        sumo_arrow_so_version = simulation.getParameter("", "buildConfig.ARROW_SO_VERSION")
+        if sumo_arrow_so_version and pyarrow_so_version != sumo_arrow_so_version:
+            print("Warning! pyarrow is installed with version %s which might be incompatible with libsumo "
+                  "which is compiled against libarrow%s." % (pyarrow_version, sumo_arrow_so_version))
+            print(" Try to uninstall pyarrow or install a matching pyarrow version, if you encounter problems.")
+    except (ImportError, ValueError, TypeError):
+        # either pyarrow is not installed (fine) or importlib is not available (not great, but we cannot do much)
+        # the ValueError / TypeError occur if we could not parse the pyarrow version
+        pass
+
 DOMAINS = [
     busstop,  # noqa
     calibrator,  # noqa
