@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-08-01 13:22:09.184174 by osmTaxiStop.py v1_24_0+0106-0f6f79163ff
+<!-- generated on 2026-02-26 09:08:30.782241 by Eclipse SUMO osmTaxiStop.py v1_26_0+0334-fe2209085d0
 <configuration>
     <osm-file value="osm_bbox.osm.xml"/>
     <output-file value="out.add.xml"/>
@@ -10,7 +10,7 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <chargingStation id="chargingStation_0" name="Grand Hotel" lane="-194069450#0_0" startPos="7.20" endPos="27.20"/>
+    <chargingStation id="chargingStation_0" name="Grand Hotel" lane="-194069450#0_0" startPos="7.21" endPos="27.21"/>
     <chargingStation id="chargingStation_1" name="Radisson" lane="24913519#2_0" startPos="0.00" endPos="28.41"/>
     <chargingStation id="chargingStation_2" name="Bhf. Alexanderplatz" lane="-4790825#2_0" startPos="58.88" endPos="96.38"/>
     <chargingStation id="chargingStation_3" name="Friedrichstadtpalast" lane="374734389#2_0" startPos="6.04" endPos="58.54"/>

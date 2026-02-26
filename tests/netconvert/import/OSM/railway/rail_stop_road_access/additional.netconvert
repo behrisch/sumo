@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-15T12:11:50.632372+01:00 by Eclipse SUMO netconvert v1_25_0+0976-3f75f4984c5
+<!-- generated on 2026-02-26T09:08:27.645387+01:00 by Eclipse SUMO netconvert v1_26_0+0334-fe2209085d0
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -57,7 +57,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <access lane="26284993#1_0" pos="36.60" length="28.74" friendlyPos="1"/>
     </busStop>
     <busStop id="-344853528" name="Anemonenstraße" lane="-37850032#0_1" startPos="178.39" endPos="193.39" friendlyPos="true" lines="169 165 269 N67"/>
-    <busStop id="-3812676488" name="Betriebshof Köpenick" lane="-403449586#0_1" startPos="97.90" endPos="121.55" friendlyPos="true" lines="N62"/>
+    <busStop id="-3812676488" name="Betriebshof Köpenick" lane="-403449586#0_1" startPos="99.51" endPos="123.15" friendlyPos="true" lines="N62"/>
     <busStop id="-3812676491" name="Dregerhoffstraße" lane="-93704176#0_1" startPos="1051.68" endPos="1066.68" friendlyPos="true"/>
     <busStop id="-3812676496" name="Pritstabelstraße" lane="-93704176#0_1" startPos="733.42" endPos="748.42" friendlyPos="true"/>
     <busStop id="-3812676497" name="Pritstabelstraße" lane="-93704176#0_1" startPos="713.46" endPos="728.46" friendlyPos="true" lines="N62"/>
@@ -77,10 +77,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <access lane="30803555#2_0" pos="0.00" length="17.91" friendlyPos="1"/>
     </trainStop>
     <trainStop id="1865877888" name="Betriebshof Köpenick" lane="176023646#3_0" startPos="0.00" endPos="34.92" friendlyPos="true" lines="62">
-        <access lane="-403449586#0_0" pos="10.66" length="9.04" friendlyPos="1"/>
-        <access lane="-70415298#6_0" pos="0.00" length="21.88" friendlyPos="1"/>
-        <access lane="403449586#0_0" pos="137.64" length="5.06" friendlyPos="1"/>
-        <access lane="70415298#6_0" pos="61.47" length="33.78" friendlyPos="1"/>
+        <access lane="-403449586#0_0" pos="12.26" length="9.04" friendlyPos="1"/>
+        <access lane="-70415298#6_0" pos="0.00" length="24.06" friendlyPos="1"/>
+        <access lane="403449586#0_0" pos="139.25" length="5.06" friendlyPos="1"/>
+        <access lane="70415298#6_0" pos="61.49" length="31.45" friendlyPos="1"/>
     </trainStop>
     <trainStop id="1865877909" name="Mayschweg" lane="107701628_0" startPos="80.35" endPos="101.08" friendlyPos="true" lines="62">
         <access lane="-414498877#0_0" pos="56.09" length="33.88" friendlyPos="1"/>
@@ -112,7 +112,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <trainStop id="3257062965" name="Lienhardweg" lane="319292807_0" startPos="473.93" endPos="498.93" friendlyPos="true" lines="62">
         <access lane="-214614381#1_0" pos="0.00" length="345.10" friendlyPos="1"/>
         <access lane="-93704176#0_0" pos="1706.13" length="41.97" friendlyPos="1"/>
-        <access lane="214614381#1_0" pos="1754.60" length="333.34" friendlyPos="1"/>
+        <access lane="214614381#1_0" pos="1756.20" length="333.34" friendlyPos="1"/>
         <access lane="93704176#0_0" pos="0.00" length="41.64" friendlyPos="1"/>
     </trainStop>
     <trainStop id="3257062966" name="Mayschweg" lane="176023646#0_0" startPos="0.00" endPos="29.17" friendlyPos="true" lines="62">
@@ -138,7 +138,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     </trainStop>
     <busStop id="344853528" name="Anemonenstraße" lane="-37850032#0_1" startPos="178.39" endPos="193.39" friendlyPos="true"/>
     <busStop id="361152198" name="Müggelheimer Straße/Wendenschloßstraße" lane="32204600#1_1" startPos="17.26" endPos="35.15" friendlyPos="true" lines="N65 N69 N62 N67"/>
-    <busStop id="3812676489" name="Betriebshof Köpenick" lane="403449586#0_1" startPos="124.66" endPos="148.30" friendlyPos="true" lines="N62"/>
+    <busStop id="3812676489" name="Betriebshof Köpenick" lane="403449586#0_1" startPos="127.59" endPos="151.23" friendlyPos="true" lines="N62"/>
     <busStop id="3812676491" name="Dregerhoffstraße" lane="93704176#0_1" startPos="639.26" endPos="654.26" friendlyPos="true" lines="N62"/>
     <busStop id="3812676493" name="Mayschweg" lane="93704176#2_1" startPos="0.00" endPos="29.17" friendlyPos="true" lines="N62"/>
     <busStop id="3812676496" name="Pritstabelstraße" lane="93704176#0_1" startPos="957.10" endPos="972.10" friendlyPos="true" lines="N62"/>
@@ -152,17 +152,17 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <access lane="32204600#1_0" pos="55.36" length="25.14" friendlyPos="1"/>
     </trainStop>
     <trainStop id="3895454718" name="Betriebshof Köpenick" lane="143847359#0_0" startPos="27.55" endPos="51.19" friendlyPos="true" lines="62">
-        <access lane="-403449586#0_0" pos="34.91" length="5.29" friendlyPos="1"/>
-        <access lane="-70415298#6_0" pos="0.00" length="57.61" friendlyPos="1"/>
-        <access lane="403449586#0_0" pos="113.39" length="8.81" friendlyPos="1"/>
-        <access lane="70415298#6_0" pos="61.47" length="70.01" friendlyPos="1"/>
+        <access lane="-403449586#0_0" pos="36.51" length="5.29" friendlyPos="1"/>
+        <access lane="-70415298#6_0" pos="0.00" length="59.95" friendlyPos="1"/>
+        <access lane="403449586#0_0" pos="115.00" length="8.81" friendlyPos="1"/>
+        <access lane="70415298#6_0" pos="61.49" length="67.62" friendlyPos="1"/>
     </trainStop>
     <busStop id="3895454719" name="Zur Nachtheide" lane="-93704176#0_1" startPos="1352.04" endPos="1367.04" friendlyPos="true"/>
     <trainStop id="94951410" name="Pablo-Neruda-Straße" lane="10699464#0_0" startPos="140.54" endPos="156.77" friendlyPos="true" lines="27 67">
-        <access lane="-70415298#0_0" pos="39.53" length="12.98" friendlyPos="1"/>
-        <access lane="10780554_0" pos="0.00" length="9.61" friendlyPos="1"/>
+        <access lane="-70415298#0_0" pos="32.13" length="21.64" friendlyPos="1"/>
+        <access lane="356886642#0_0" pos="2.31" length="22.52" friendlyPos="1"/>
         <access lane="356886642#1_0" pos="0.00" length="21.91" friendlyPos="1"/>
-        <access lane="70415298#0_0" pos="0.00" length="10.59" friendlyPos="1"/>
+        <access lane="70415298#0_0" pos="0.00" length="20.82" friendlyPos="1"/>
     </trainStop>
     <trainStop id="95948746" name="Krankenhaus Köpenick/Südseite" lane="10699464#3_0" startPos="286.06" endPos="332.05" friendlyPos="true" lines="27 67">
         <access lane="214614422#0_0" pos="2.80" length="18.77" friendlyPos="1"/>

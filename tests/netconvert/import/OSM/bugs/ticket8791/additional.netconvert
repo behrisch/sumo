@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-08-01 13:22:23 by Eclipse SUMO netconvert Version v1_24_0+0105-e209ab84cb0
+<!-- generated on 2026-02-26T09:08:29.205250+01:00 by Eclipse SUMO netconvert v1_26_0+0334-fe2209085d0
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -44,12 +44,12 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <busStop id="-1711953916" name="Ahrensburg, Klaus-Groth-Straße" lane="-11646390_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="476 769"/>
     <busStop id="-1792502642" name="Ahrensburg, Reesenbüttler Graben" lane="-76424358_0" startPos="65.11" endPos="80.11" friendlyPos="true" lines="669 769"/>
     <busStop id="-2705494849" name="Ahrensburg, Fritz-Reuter-Straße" lane="-39546438_0" startPos="42.49" endPos="57.49" friendlyPos="true" lines="576"/>
-    <busStop id="-8341032348" name="Ahrensburg, Grauer Esel" lane="-19431426#9_0" startPos="90.43" endPos="105.43" friendlyPos="true" lines="576"/>
+    <busStop id="-8341032348" name="Ahrensburg, Grauer Esel" lane="-19431426#9_0" startPos="90.30" endPos="105.30" friendlyPos="true" lines="576"/>
     <busStop id="1711953915" name="Ahrensburg, Klaus-Groth-Straße" lane="11646390_0" startPos="39.04" endPos="54.04" friendlyPos="true" lines="476"/>
     <busStop id="1711953916" name="Ahrensburg, Klaus-Groth-Straße" lane="11646390_0" startPos="39.04" endPos="54.04" friendlyPos="true" lines="569 474 8110 769"/>
     <busStop id="1711974496" name="Ahrensburg, Rathaus" lane="206357901#0_0" startPos="16.97" endPos="31.97" friendlyPos="true" lines="576 476 569 474"/>
     <busStop id="1711974498" name="Ahrensburg, Rathaus" lane="297003189#5_0" startPos="0.00" endPos="13.78" friendlyPos="true" lines="476 474 569 576 8110 769"/>
     <busStop id="2705494849" name="Ahrensburg, Fritz-Reuter-Straße" lane="39546438_0" startPos="103.56" endPos="118.56" friendlyPos="true" lines="576 369 776"/>
     <busStop id="69420884" name="Ahrensburg, Reesenbüttler Graben" lane="76424358_0" startPos="12.26" endPos="27.26" friendlyPos="true" lines="369 769 776"/>
-    <busStop id="8341032348" name="Ahrensburg, Grauer Esel" lane="19431426#9_0" startPos="3.04" endPos="18.04" friendlyPos="true" lines="576 769"/>
+    <busStop id="8341032348" name="Ahrensburg, Grauer Esel" lane="19431426#9_0" startPos="3.16" endPos="18.16" friendlyPos="true" lines="576 769"/>
 </additional>

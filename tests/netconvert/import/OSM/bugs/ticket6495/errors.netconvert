@@ -21,6 +21,7 @@ Warning: Not joining junctions 1352576,658930120 (only 1 entry node).
 Warning: Not joining junctions 1352581,7022635720 (only 1 exit node).
 Warning: Not joining junctions 245904901,248150932 (parallel outgoing 27115018#0,329890957).
 Warning: Not joining junctions 368879,659614608 (only 1 edge within and no cross-traffic).
+Warning: Not joining junctions 3735277343,443847,660638854,660638860 (slip lane).
 Warning: Ambiguity in turnarounds computation at junction '2201773661'.
 Warning: Ambiguity in turnarounds computation at junction '7022635681'.
 Warning: Ambiguity in turnarounds computation at junction 'cluster_370556673_370556675'.

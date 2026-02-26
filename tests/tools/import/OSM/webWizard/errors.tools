@@ -119,5 +119,7 @@ Warning: At actuated tlLogic 'cluster_1673527224_1673527227_21487161_303436603_#
 Warning: At actuated tlLogic 'cluster_1827996421_1827996431_1827996455_2121324874_#10more', linkIndex 16 has no controlling detector.
 Warning: At actuated tlLogic 'joinedS_1840326421_cluster_1828018077_1828018093_1828018094_1828018095_#5more', linkIndex 2,7,8,9,10,31,32,33,34 has no controlling detector.
 Warning: At actuated tlLogic 'joinedS_cluster_1876468341_25665883_29219439_5747234980_#4more_cluster_262469634_29219441_961875301_961875308_#2more', linkIndex 5,6,16,24,32,33 has no controlling detector.
-Warning: Person 'ped133' aborted waiting for ANY at trainStop '4673135647'.
-Warning: Person 'ped57' aborted waiting for ANY at trainStop '1633759766'.
+Warning: Person 'ped95' aborted waiting for ANY at trainStop '4673135647'.
+Warning: Person 'ped58' aborted waiting for ANY at trainStop '4673135647'.
+Warning: Person 'ped21' aborted waiting for ANY at busStop '1827996417'.
+Warning: Person 'ped24' aborted waiting for ANY at trainStop '1633759766'.

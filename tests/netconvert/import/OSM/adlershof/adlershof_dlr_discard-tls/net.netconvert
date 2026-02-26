@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-08-01 13:22:21 by Eclipse SUMO netconvert Version v1_24_0+0105-e209ab84cb0
+<!-- generated on 2026-02-26T09:08:27.515269+01:00 by Eclipse SUMO netconvert v1_26_0+0334-fe2209085d0
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -94,14 +94,14 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <edge id="-26843019" from="294829798" to="294829385" priority="1" type="highway.service">
         <lane id="-26843019_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="98.96" shape="921.00,411.47 863.15,479.74"/>
     </edge>
-    <edge id="-26843038#0" from="294830184" to="294829881" priority="1" type="highway.service">
-        <lane id="-26843038#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="44.08" shape="919.12,482.65 896.56,508.77"/>
+    <edge id="-26843038#0" from="294830184" to="294829881" priority="1" type="highway.service" routingType="narrow">
+        <lane id="-26843038#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="44.08" width="1.60" shape="919.62,480.86 895.95,508.24"/>
     </edge>
-    <edge id="-26843038#1" from="294830188" to="294830184" priority="1" type="highway.service" shape="970.58,476.14 943.81,451.65 921.09,477.93">
-        <lane id="-26843038#1_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="71.02" shape="967.08,475.10 943.94,453.94 925.27,475.54"/>
+    <edge id="-26843038#1" from="294830188" to="294830184" priority="1" type="highway.service" routingType="narrow" shape="970.58,476.14 943.81,451.65 921.09,477.93">
+        <lane id="-26843038#1_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="71.02" width="1.60" shape="968.83,475.62 943.88,452.80 923.67,476.17"/>
     </edge>
-    <edge id="-26843038#2" from="294830184" to="294830188" priority="1" type="highway.service" shape="921.09,477.93 945.99,501.67 970.58,476.14">
-        <lane id="-26843038#2_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="69.85" shape="925.71,480.13 945.94,499.41 967.15,477.39"/>
+    <edge id="-26843038#2" from="294830184" to="294830188" priority="1" type="highway.service" routingType="narrow" shape="921.09,477.93 945.99,501.67 970.58,476.14">
+        <lane id="-26843038#2_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="69.85" width="1.60" shape="923.94,479.55 945.97,500.54 968.86,476.77"/>
     </edge>
     <edge id="-26843133#0" from="294831560" to="294169339" priority="1" type="highway.service">
         <lane id="-26843133#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="9.95" shape="545.46,297.03 545.51,297.70"/>
@@ -167,10 +167,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <lane id="-5198588#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="186.59" shape="1192.54,452.87 1057.48,334.92"/>
     </edge>
     <edge id="-5198596#0" from="294829881" to="36268403" name="Kekuléstraße" priority="3" type="highway.residential">
-        <lane id="-5198596#0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="59.16" shape="896.87,513.15 932.57,544.10"/>
+        <lane id="-5198596#0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="59.16" shape="895.66,512.10 932.57,544.10"/>
     </edge>
     <edge id="-5198596#1" from="294829385" to="294829881" name="Kekuléstraße" priority="3" type="highway.residential">
-        <lane id="-5198596#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="44.21" shape="863.44,484.17 889.76,506.99"/>
+        <lane id="-5198596#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="44.21" shape="863.44,484.17 890.97,508.04"/>
     </edge>
     <edge id="-5198596#2" from="36268406" to="294829385" name="Kekuléstraße" priority="3" type="highway.residential">
         <lane id="-5198596#2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="40.38" shape="834.81,459.35 856.34,478.01"/>
@@ -388,14 +388,14 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <edge id="26843019" from="294829385" to="294829798" priority="1" type="highway.service">
         <lane id="26843019_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="98.96" shape="860.71,477.67 918.56,409.40"/>
     </edge>
-    <edge id="26843038#0" from="294829881" to="294830184" priority="1" type="highway.service">
-        <lane id="26843038#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="44.08" shape="894.14,506.67 916.70,480.56"/>
+    <edge id="26843038#0" from="294829881" to="294830184" priority="1" type="highway.service" routingType="narrow">
+        <lane id="26843038#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="44.08" width="1.60" shape="894.74,507.20 918.41,479.81"/>
     </edge>
-    <edge id="26843038#1" from="294830184" to="294830188" priority="1" type="highway.service" shape="921.09,477.93 943.81,451.65 970.58,476.14">
-        <lane id="26843038#1_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="71.02" shape="922.85,473.44 943.68,449.36 969.24,472.74"/>
+    <edge id="26843038#1" from="294830184" to="294830188" priority="1" type="highway.service" routingType="narrow" shape="921.09,477.93 943.81,451.65 970.58,476.14">
+        <lane id="26843038#1_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="71.02" width="1.60" shape="922.46,475.12 943.74,450.50 969.91,474.44"/>
     </edge>
-    <edge id="26843038#2" from="294830188" to="294830184" priority="1" type="highway.service" shape="970.58,476.14 945.99,501.67 921.09,477.93">
-        <lane id="26843038#2_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="69.85" shape="969.45,479.61 946.04,503.93 923.50,482.44"/>
+    <edge id="26843038#2" from="294830188" to="294830184" priority="1" type="highway.service" routingType="narrow" shape="970.58,476.14 945.99,501.67 921.09,477.93">
+        <lane id="26843038#2_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="69.85" width="1.60" shape="970.02,477.88 946.01,502.80 922.84,480.70"/>
     </edge>
     <edge id="26843133#0" from="294169339" to="294831560" priority="1" type="highway.service">
         <lane id="26843133#0_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="9.95" shape="542.32,297.95 542.27,297.29"/>
@@ -506,10 +506,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <lane id="5198588#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="186.59" shape="1059.58,332.51 1194.64,450.45"/>
     </edge>
     <edge id="5198596#0" from="36268403" to="294829881" name="Kekuléstraße" priority="3" type="highway.residential">
-        <lane id="5198596#0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="59.16" shape="930.47,546.52 894.77,515.56"/>
+        <lane id="5198596#0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="59.16" shape="930.47,546.52 893.56,514.52"/>
     </edge>
     <edge id="5198596#1" from="294829881" to="294829385" name="Kekuléstraße" priority="3" type="highway.residential">
-        <lane id="5198596#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="44.21" shape="887.67,509.41 861.35,486.58"/>
+        <lane id="5198596#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="44.21" shape="888.88,510.45 861.35,486.58"/>
     </edge>
     <edge id="5198596#2" from="294829385" to="36268406" name="Kekuléstraße" priority="3" type="highway.residential">
         <lane id="5198596#2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" speed="13.89" length="40.38" shape="854.24,480.43 832.72,461.77"/>
@@ -793,7 +793,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <request index="5" response="0001110" foes="0001110"/>
         <request index="6" response="0001001" foes="0001001"/>
     </junction>
-    <junction id="294829881" type="priority" x="892.27" y="511.28" incLanes="5198596#0_0 -26843038#0_0 -5198596#1_0" intLanes="" shape="893.72,516.77 897.91,511.94 897.39,511.26 897.31,510.92 897.34,510.56 897.50,510.19 897.77,509.81 892.93,505.63 892.25,506.15 891.91,506.23 891.55,506.20 891.18,506.05 890.81,505.78 886.62,510.62">
+    <junction id="294829881" type="priority" x="892.27" y="511.28" incLanes="5198596#0_0 -26843038#0_0 -5198596#1_0" intLanes="" shape="892.51,515.73 896.70,510.89 896.18,510.22 896.10,509.87 896.13,509.51 896.29,509.14 896.56,508.77 894.13,506.68 893.46,507.20 893.12,507.28 892.76,507.25 892.39,507.10 892.02,506.83 887.83,511.66">
         <request index="0" response="0000000" foes="0001000"/>
         <request index="1" response="1100000" foes="1111000"/>
         <request index="2" response="1000000" foes="1000000"/>
@@ -802,7 +802,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <request index="5" response="0000000" foes="0010010"/>
         <request index="6" response="0000000" foes="0001110"/>
     </junction>
-    <junction id="294830184" type="right_before_left" x="921.09" y="477.93" incLanes="26843038#2_0 -26843038#1_0 26843038#0_0" intLanes="" shape="922.40,483.60 926.82,478.97 926.20,478.15 926.08,477.75 926.09,477.35 926.22,476.96 926.49,476.58 921.64,472.40 915.49,479.52 920.33,483.70 921.00,483.18 921.34,483.11 921.69,483.15 922.04,483.32">
+    <junction id="294830184" type="right_before_left" x="921.09" y="477.93" incLanes="26843038#2_0 -26843038#1_0 26843038#0_0" intLanes="" shape="922.29,481.28 924.50,478.97 923.94,478.21 923.84,477.83 923.87,477.45 924.01,477.07 924.28,476.69 921.86,474.60 917.80,479.29 920.22,481.38 920.89,480.87 921.23,480.79 921.58,480.83 921.93,481.00">
         <request index="0" response="000000000" foes="100010000"/>
         <request index="1" response="011000000" foes="011110000"/>
         <request index="2" response="010001000" foes="010001000"/>
@@ -813,7 +813,7 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <request index="7" response="000011000" foes="000011110"/>
         <request index="8" response="000010001" foes="000010001"/>
     </junction>
-    <junction id="294830188" type="priority" x="970.58" y="476.14" incLanes="26843038#1_0 -26843038#2_0" intLanes="" shape="970.32,471.56 966.00,476.28 970.61,480.72 971.86,479.16 972.60,477.60 972.81,476.07 972.50,474.55 971.67,473.05">
+    <junction id="294830188" type="priority" x="970.58" y="476.14" incLanes="26843038#1_0 -26843038#2_0" intLanes="" shape="970.45,473.85 968.29,476.21 970.59,478.43 971.59,476.87 971.70,476.10 971.54,475.35 971.13,474.59">
         <request index="0" response="00" foes="00"/>
         <request index="1" response="00" foes="00"/>
     </junction>

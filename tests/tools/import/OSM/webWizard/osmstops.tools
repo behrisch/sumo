@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-22T08:52:24.166192+01:00 by Eclipse SUMO netconvert v1_25_0+1124-f2af9bf1fbf
+<!-- generated on 2026-02-26T09:08:33.212556+01:00 by Eclipse SUMO netconvert v1_26_0+0334-fe2209085d0
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
         <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertUrbanDe.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertPedestrians.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertShips.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertBicycle.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
-        <osm-files value="/home/erdm_ja/.texttest/tmp/tools.22Jan085222.1074739/tools/import/OSM/webWizard/osm_bbox.osm.xml"/>
+        <osm-files value="/home/erdm_ja/.texttest/tmp/tools.26Feb090821.3406716/tools/import/OSM/webWizard/osm_bbox.osm.xml"/>
     </input>
 
     <output>
@@ -105,7 +105,7 @@
     <busStop id="-3869306761" name="Friedrichstraße/Reinhardtstraße" lane="-437325051#0_1" startPos="49.07" endPos="64.07" friendlyPos="true" lines="147"/>
     <busStop id="-3869306765" name="S+U Friedrichstraße" lane="-4402228_1" startPos="33.37" endPos="48.37" friendlyPos="true" lines="N6 147"/>
     <busStop id="-3869306766" name="U Französische Straße" lane="-35557143#1_1" startPos="81.98" endPos="96.98" friendlyPos="true" lines="147"/>
-    <busStop id="-3869306770" name="Unter den Linden/Friedrichstraße" lane="-194069450#1_1" startPos="40.01" endPos="55.01" friendlyPos="true" lines="N6 147"/>
+    <busStop id="-3869306770" name="Unter den Linden/Friedrichstraße" lane="-194069450#1_1" startPos="40.03" endPos="55.03" friendlyPos="true" lines="N6 147"/>
     <busStop id="-3869306773" name="Werderscher Markt" lane="-66071366#1_1" startPos="9.26" endPos="24.26" friendlyPos="true" lines="147"/>
     <busStop id="-4015961303" name="U Stadtmitte" lane="-196850606#4_1" startPos="16.86" endPos="31.86" friendlyPos="true" lines="N6"/>
     <busStop id="-4692172068" name="Behrenstraße/Wilhelmstraße" lane="-326116285#2_1" startPos="5.13" endPos="20.13" friendlyPos="true" lines="200 N2"/>
@@ -348,7 +348,7 @@
         <access lane="473149638#0_0" pos="0.00" length="30.84" friendlyPos="1"/>
         <access lane="503549461_0" pos="71.04" length="35.30" friendlyPos="1"/>
     </busStop>
-    <busStop id="272408975" name="Unter den Linden/Friedrichstraße" lane="188386313#0_1" startPos="15.63" endPos="30.63" friendlyPos="true" lines="TXL 100 200 N2"/>
+    <busStop id="272408975" name="Unter den Linden/Friedrichstraße" lane="188386313#0_1" startPos="15.80" endPos="30.80" friendlyPos="true" lines="TXL 100 200 N2"/>
     <trainStop id="27411231" name="S Alexanderplatz" lane="32590496#1_0" startPos="0.00" endPos="188.32" friendlyPos="true" lines="S5 S7 S3 S9">
         <access lane="272757274_0" pos="0.00" length="11.26" friendlyPos="1"/>
         <access lane="272757292_0" pos="0.00" length="10.42" friendlyPos="1"/>
@@ -545,7 +545,7 @@
         <access lane="371919780#0_0" pos="0.00" length="16.07" friendlyPos="1"/>
         <access lane="465376257#1_0" pos="4.03" length="3.24" friendlyPos="1"/>
     </trainStop>
-    <busStop id="3869306771" name="Unter den Linden/Friedrichstraße" lane="461526152_1" startPos="53.30" endPos="68.30" friendlyPos="true" lines="TXL 100 200 N2"/>
+    <busStop id="3869306771" name="Unter den Linden/Friedrichstraße" lane="461526152_1" startPos="54.90" endPos="69.90" friendlyPos="true" lines="TXL 100 200 N2"/>
     <busStop id="3869306772" name="Unter den Linden/Friedrichstraße" lane="169999355_1" startPos="12.57" endPos="27.57" friendlyPos="true" lines="147 N6"/>
     <busStop id="3869306774" name="Werderscher Markt" lane="23755950#0_1" startPos="10.05" endPos="25.05" friendlyPos="true" lines="147"/>
     <busStop id="3870475228" name="Staatsoper" lane="340498982#3_1" startPos="20.89" endPos="35.89" friendlyPos="true" lines="TXL 100 200 N2"/>

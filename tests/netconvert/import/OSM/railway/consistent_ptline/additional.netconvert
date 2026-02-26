@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-01-22T12:42:26.357608+01:00 by Eclipse SUMO netconvert v1_25_0+1132-85821d00738
+<!-- generated on 2026-02-26T09:08:26.728011+01:00 by Eclipse SUMO netconvert v1_26_0+0334-fe2209085d0
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -46,30 +46,30 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <trainStop id="5414156523" name="Ackerstraße" lane="310569080#0_0" startPos="0.00" endPos="23.88" friendlyPos="true" lines="4">
         <access lane="-563320576#2_0" pos="0.00" length="64.17" friendlyPos="1"/>
         <access lane="-599936773_0" pos="0.00" length="64.30" friendlyPos="1"/>
-        <access lane="382039401#0_0" pos="0.20" length="61.97" friendlyPos="1"/>
-        <access lane="382039401#1_0" pos="0.20" length="61.76" friendlyPos="1"/>
-        <access lane="382039401#2_0" pos="0.00" length="61.75" friendlyPos="1"/>
+        <access lane="382039401#0_0" pos="0.20" length="63.12" friendlyPos="1"/>
+        <access lane="382039401#1_0" pos="0.20" length="62.96" friendlyPos="1"/>
+        <access lane="382039401#2_0" pos="0.00" length="62.95" friendlyPos="1"/>
     </trainStop>
     <trainStop id="5414156524" name="Ackerstraße" lane="291757758#15_0" startPos="12.73" endPos="37.73" friendlyPos="true" lines="4">
         <access lane="-563320576#2_0" pos="0.00" length="85.04" friendlyPos="1"/>
         <access lane="-599936773_0" pos="0.00" length="85.17" friendlyPos="1"/>
-        <access lane="382039401#0_0" pos="0.20" length="82.43" friendlyPos="1"/>
-        <access lane="382039401#1_0" pos="0.00" length="82.43" friendlyPos="1"/>
-        <access lane="382039401#2_0" pos="0.00" length="82.54" friendlyPos="1"/>
+        <access lane="382039401#0_0" pos="0.20" length="83.62" friendlyPos="1"/>
+        <access lane="382039401#1_0" pos="0.00" length="83.63" friendlyPos="1"/>
+        <access lane="382039401#2_0" pos="0.00" length="83.73" friendlyPos="1"/>
     </trainStop>
     <busStop id="5428806609" name="Ackerstraße" lane="563320575#1_0" startPos="27.69" endPos="42.69" friendlyPos="true">
         <access lane="-563320576#2_0" pos="0.00" length="81.71" friendlyPos="1"/>
         <access lane="-599936773_0" pos="0.00" length="81.84" friendlyPos="1"/>
-        <access lane="382039401#0_0" pos="0.20" length="78.84" friendlyPos="1"/>
-        <access lane="382039401#1_0" pos="0.00" length="78.87" friendlyPos="1"/>
-        <access lane="382039401#2_0" pos="0.00" length="79.00" friendlyPos="1"/>
+        <access lane="382039401#0_0" pos="0.20" length="80.03" friendlyPos="1"/>
+        <access lane="382039401#1_0" pos="0.00" length="80.07" friendlyPos="1"/>
+        <access lane="382039401#2_0" pos="0.00" length="80.19" friendlyPos="1"/>
     </busStop>
     <busStop id="5428806610" name="Ackerstraße" lane="563320574#0_0" startPos="23.87" endPos="38.87" friendlyPos="true">
         <access lane="-563320576#2_0" pos="0.00" length="65.16" friendlyPos="1"/>
         <access lane="-599936773_0" pos="0.00" length="65.29" friendlyPos="1"/>
-        <access lane="382039401#0_0" pos="0.20" length="63.16" friendlyPos="1"/>
-        <access lane="382039401#1_0" pos="0.20" length="62.93" friendlyPos="1"/>
-        <access lane="382039401#2_0" pos="0.00" length="62.90" friendlyPos="1"/>
+        <access lane="382039401#0_0" pos="0.20" length="64.31" friendlyPos="1"/>
+        <access lane="382039401#1_0" pos="0.20" length="64.13" friendlyPos="1"/>
+        <access lane="382039401#2_0" pos="0.00" length="64.10" friendlyPos="1"/>
     </busStop>
     <busStop id="5708039346" name="Hauptfriedhof" lane="334152816#1_0" startPos="35.66" endPos="50.66" friendlyPos="true">
         <access lane="-23319992#1_0" pos="0.20" length="78.54" friendlyPos="1"/>

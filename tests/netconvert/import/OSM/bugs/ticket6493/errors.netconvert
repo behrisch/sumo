@@ -21,6 +21,7 @@ Warning: Reducing junction cluster 1093872774,245901919,245904890,7022705834 (pa
 Warning: Reducing junction cluster 313566,368880,84510146 (parallel incoming -8225118#0,751186388).
 Warning: Not joining junctions 245904901,248150932 (parallel outgoing 27115018#0,329890957).
 Warning: Not joining junctions 368879,659614608 (only 1 edge within and no cross-traffic).
+Warning: Not joining junctions 3735277343,443847,660638854,660638860 (slip lane).
 Warning: Ambiguity in turnarounds computation at junction '7022635681'.
 Warning: Found sharp turn with radius 5.48 at the start of edge '-8225153#1'.
 Warning: Found sharp turn with radius 8.50 at the end of edge '-8225153#2'.
