@@ -1116,6 +1116,8 @@ GNEEdge::getAttribute(SumoXMLAttr key) const {
             return toString(myNBEdge->getFinalLength());
         case SUMO_ATTR_TYPE:
             return myNBEdge->getTypeID();
+        case SUMO_ATTR_ROUTINGTYPE:
+            return myNBEdge->getRoutingType();
         case SUMO_ATTR_SHAPE:
             return toString(myNBEdge->getInnerGeometry());
         case SUMO_ATTR_SPREADTYPE:
@@ -1294,6 +1296,7 @@ GNEEdge::setAttribute(SumoXMLAttr key, const std::string& value, GNEUndoList* un
         case SUMO_ATTR_PRIORITY:
         case SUMO_ATTR_LENGTH:
         case SUMO_ATTR_TYPE:
+        case SUMO_ATTR_ROUTINGTYPE:
         case SUMO_ATTR_SPREADTYPE:
         case SUMO_ATTR_DISTANCE:
         case GNE_ATTR_MODIFICATION_STATUS:
@@ -1404,6 +1407,7 @@ GNEEdge::isValid(SumoXMLAttr key, const std::string& value) {
         case SUMO_ATTR_DISALLOW:
             return canParseVehicleClasses(value);
         case SUMO_ATTR_TYPE:
+        case SUMO_ATTR_ROUTINGTYPE:
             return true;
         case SUMO_ATTR_SHAPE:
             // empty shapes are allowed
@@ -1872,6 +1876,9 @@ GNEEdge::setAttribute(SumoXMLAttr key, const std::string& value) {
             break;
         case SUMO_ATTR_TYPE:
             myNBEdge->myType = value;
+            break;
+        case SUMO_ATTR_ROUTINGTYPE:
+            myNBEdge->myRoutingType = value;
             break;
         case SUMO_ATTR_SHAPE:
             // set new geometry

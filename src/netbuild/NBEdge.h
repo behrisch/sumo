@@ -1437,7 +1437,7 @@ public:
     }
 
 
-    /// @brief mark this edge as a bidi edge
+    /// @brief set the routingType for this edge
     void setRoutingType(const std::string& routingType) {
         myRoutingType = routingType;
     }

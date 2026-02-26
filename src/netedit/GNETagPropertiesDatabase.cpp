@@ -857,6 +857,12 @@ GNETagPropertiesDatabase::fillNetworkElements() {
                                    GNEAttributeProperties::Edit::CREATEMODE | GNEAttributeProperties::Edit::EDITMODE,
                                    TL("Whether this edge is part of a roundabout"),
                                    GNEAttributeCarrier::FALSE_STR);
+
+        new GNEAttributeProperties(myTagProperties[currentTag], SUMO_ATTR_ROUTINGTYPE,
+                                   GNEAttributeProperties::Property::STRING | GNEAttributeProperties::Property::DEFAULTVALUE | GNEAttributeProperties::Property::COPYABLE,
+                                   GNEAttributeProperties::Edit::CREATEMODE | GNEAttributeProperties::Edit::EDITMODE,
+                                   TL("The name of a routingType"));
+
     }
     currentTag = SUMO_TAG_LANE;
     {
