@@ -40,7 +40,7 @@ class RGBColor;
 // ===========================================================================
 enum class OutputFormatterType {
     XML,
-#ifdef HAVE_PARQUET
+#ifdef ARROW_SO_VERSION
     PARQUET,
 #endif
     CSV

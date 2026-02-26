@@ -73,7 +73,7 @@ OutputDevice::getDevice(const std::string& name, bool usePrefix) {
     const OptionsCont& oc = OptionsCont::getOptions();
     const int len = (int)name.length();
     bool isParquet = (oc.exists("output.format") && oc.getString("output.format") == "parquet") || (len > 8 && name.substr(len - 8) == ".parquet");
-#ifndef HAVE_PARQUET
+#ifndef ARROW_SO_VERSION
     if (isParquet) {
         WRITE_WARNING("Compiled without Parquet support, falling back to XML.")
         isParquet = false;
@@ -128,7 +128,7 @@ OutputDevice::getDevice(const std::string& name, bool usePrefix) {
     if ((oc.exists("output.format") && oc.getString("output.format") == "csv") || (len > 4 && name.substr(len - 4) == ".csv") || (len > 7 && name.substr(len - 7) == ".csv.gz")) {
         dev->setFormatter(new CSVFormatter(oc.getString("output.column-header"), oc.getString("output.column-separator")[0]));
     }
-#ifdef HAVE_PARQUET
+#ifdef ARROW_SO_VERSION
     if (isParquet) {
         dev->setFormatter(new ParquetFormatter(oc.getString("output.column-header"), oc.getString("output.compression")));
     }
