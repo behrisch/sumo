@@ -28,7 +28,7 @@ from sumolib.net import lane2edge, lane2index  # noqa
 
 
 def get_options(args=None):
-    ap = sumolib.options.ArgumentParser(description="Remap infrastructure from one network to another")
+    ap = sumolib.options.ArgumentParser(description="Remap routes, infrastructure or selections from one network to another based on the 'origId' attribute")
     # ap.add_argument("--orig-net", dest="origNet", required=False, category="input", type=ap.net_file,
     #                 help="SUMO network for loading infrastructure", metavar="FILE")
     ap.add_argument("-n", "--net-file", dest="targetNet", required=True, category="input", type=ap.net_file,
