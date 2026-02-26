@@ -21,13 +21,14 @@ title: ChangeLog
 - netedit
   - python tool dialogs now permit selecting multiple files #17615, #17619 (regression in 1.25.0)
   - fixed crash when calling python tool and using the 'back' button #17618 (regression in 1.25.0)
-
+  - The network file name shows up in the window title again #17662 (regression in 1.26.0)
   
 - netconvert
   - NEMA computation now works for 4-arm junction without right-turns (also affects some signal plans of non-NEMA junctions) #17610
   - Zipper junctions no longer feature internal junctions (which could cause deadlock in the simulation) #17650
   - Fixed interpretation of some geo-projection strings #17655
-
+  - Fixed invalid connections in visum import (non-german version) #17660
+  - Fixed invalid edge permissions in visum import #17659
 
 - TraCI
   - `trafficlight.getSpentDuration` now works correctly after calling `setRedYellowGreenState` #17598
@@ -36,6 +37,7 @@ title: ChangeLog
   - osmWebWizard.py: fixed various platform issues that prevent running. #17503
   - patchRailConflicts.py: no longer declaring rail signals that do not control any links #17588
   - plotXMLAttributes.py: fixed missing labels on barplots with a non-numerical axis #17611
+  - countEdgeUsage.py: fixed interpretation of (expected) poisson flow count #17657
 
 
 ### Enhancements
@@ -53,6 +55,14 @@ title: ChangeLog
 - meso
   - edge-type specific meso parameters now support `edgeLength` #17582
   - now supporting battery device #13843
+
+- netedit
+  - Edge attribute routingType is now supported #17095
+
+- netconvert
+  - Now importing geo-projection from visum networks #17658
+  - visum import now supports option **--type-files** for loading custom interpretation of permissions for TSys codes #17659
+  - OSM networks now assign routingType *narrow* to one-lane edges to permit post-processing and [routing](Simulation/Routing.md#routing_by_travel_time_and_routingtype) or capacity adaptations. #17661
 
 - tools
   - osmWebWizard.py: now automatically saves osmGet configuration for easier updating of a scenario #17570
