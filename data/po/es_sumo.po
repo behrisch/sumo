@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-25 07:48+0000\n"
+"PO-Revision-Date: 2026-02-26 12:56+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -6660,18 +6660,25 @@ msgid ""
 "Cannot apply turn sign information for edge '%' because there are % signed "
 "directions but only % targets"
 msgstr ""
+"No se puede aplicar la información de señalización de giro para la arista "
+"'%' porque hay % direcciones señalizadas pero solo % destinos"
 
 #: src/netbuild/NBEdge.cpp:2810
 msgid ""
 "Cannot apply turn sign information for edge '%' because there are % signed "
 "directions and % targets (after target pruning)"
 msgstr ""
+"No se puede aplicar la información de señalización de giro para la arista "
+"'%' porque hay % direcciones señalizadas y % destinos (después de la "
+"depuración de destinos)"
 
 #: src/netbuild/NBEdge.cpp:2827
 msgid ""
 "Cannot apply turn sign information for edge '%' because the target edge '%' "
 "has no suitable lanes"
 msgstr ""
+"No se puede aplicar la información de señalización de giro para la arista "
+"'%' porque la arista de destino '%' no tiene carriles adecuados"
 
 #: src/netbuild/NBEdge.cpp:2833
 msgid ""
@@ -6688,6 +6695,9 @@ msgid ""
 "Cannot apply turn sign information for edge '%' because not enough target "
 "lanes could be determined for direction '%'"
 msgstr ""
+"No se puede aplicar la información de señalización de giro para la arista "
+"'%' porque no se pudieron determinar suficientes carriles de destino para la "
+"dirección '%'"
 
 #: src/netbuild/NBEdge.cpp:3123
 msgid "Edge '%' is not connected to outgoing edges at junction '%'."
@@ -6702,15 +6712,21 @@ msgstr ""
 #, c-format
 msgid "Ignoring changeLeft prohibition for '%' to avoid dead-end"
 msgstr ""
+"Ignorando la prohibición de cambio a la izquierda para '%' para evitar un "
+"callejón sin salida"
 
 #: src/netbuild/NBEdge.cpp:3157
 #, c-format
 msgid "Ignoring changeRight prohibition for '%' to avoid dead-end"
 msgstr ""
+"Ignorando la prohibición de cambio a la derecha para '%' para evitar un "
+"callejón sin salida"
 
 #: src/netbuild/NBEdge.cpp:3210
 msgid "Moving opposite lane '%' from invalid lane '%' to lane index %."
 msgstr ""
+"Moviendo el carril opuesto '%' desde el carril no válido '%' al carril con "
+"índice %."
 
 #: src/netbuild/NBEdge.cpp:3212
 msgid "Removing opposite lane '%' for invalid lane '%'."
@@ -6739,6 +6755,7 @@ msgstr ""
 #: src/netbuild/NBEdge.cpp:3248
 msgid "Adapting inconsistent opposite lanes for edges '%', '%' and '%'."
 msgstr ""
+"Adaptando carriles opuestos inconsistentes para las aristas '%', '%' y '%'."
 
 #: src/netbuild/NBEdge.cpp:3260
 msgid ""
@@ -11068,6 +11085,8 @@ msgid ""
 "Trying to specify detector's lane by the given id since the argument 'lane' "
 "is missing."
 msgstr ""
+"Intentando especificar el carril del detector mediante el ID proporcionado, "
+"ya que falta el argumento 'lane'."
 
 #: src/netload/NLHandler.cpp:1152
 msgid ""
@@ -11095,7 +11114,7 @@ msgstr ""
 
 #: src/netload/NLHandler.cpp:1360
 msgid "Invalid person mode '%' in edgeData definition '%'"
-msgstr ""
+msgstr "Modo de persona '%' no válido en la definición de edgeData '%'"
 
 #: src/netload/NLHandler.cpp:1384
 msgid "Unknown edge '%' in edgeData definition '%'"
