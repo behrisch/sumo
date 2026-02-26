@@ -112,6 +112,15 @@ page. Here, we want to show the
 possibilities to change the connector attributes using
 [netconvert](../../netconvert.md).
 
+
+## Permissions
+
+A VISUM model declares a list of abstract traffic types and uses these to define access rules for every road. While there are some conventions for typical types (i.e. 'c' for passenger car and 'w' for walk), these types are user-definable. Since version 1.27.0 netconvert uses the following three strategies to interpret permissions (earlier versions only use the first strategy):
+
+- a [pre-defined list](https://github.com/eclipse-sumo/sumo/blob/main/data/typemap/visumNetconvert.typ.xml) of typical traffic type codes
+- interpreting the textual description field for each type (i.e. anything with the substring 'bus' in it's description is guessed as abstract vehicle class 'bus')
+- loading a custom type file with option **--type-files** that maps traffic type ids to permissions (the [default file](https://github.com/eclipse-sumo/sumo/blob/main/data/typemap/visumNetconvert.typ.xml) can be copied and extended as needed).
+
 # See also
 
 [netconvert](../../netconvert.md) is able to guess some information
