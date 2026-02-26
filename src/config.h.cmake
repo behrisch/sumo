@@ -205,7 +205,7 @@
 #cmakedefine HAVE_OSG
 
 /* defined and set to version if Arrow / Parquet is available */
-#cmakedefine ARROW_SO_VERSION @ARROW_SO_VERSION@
+#cmakedefine ARROW_SO_VERSION "@ARROW_SO_VERSION@"
 
 /* defined if Boost is available */
 #cmakedefine HAVE_BOOST

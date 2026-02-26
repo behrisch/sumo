@@ -936,7 +936,7 @@ Simulation::getParameter(const std::string& objectID, const std::string& key) {
         }
         if (key == "buildConfig.ARROW_SO_VERSION") {
 #ifdef ARROW_SO_VERSION
-            return toString(ARROW_SO_VERSION);
+            return ARROW_SO_VERSION;
 #else
             return "";
 #endif
