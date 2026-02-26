@@ -137,10 +137,13 @@ projection of geo-coordinates, should not apply when working with
 
 ## Importing other data from VISUM
 
-[VISUM](https://www.ptvgroup.com/en/solutions/products/ptv-visum/) uses O/D-matrices
+- netconvert can import [public transport stop locations](../Simulation/Public_Transport.md#bus_stops) by setting option **--ptstop-output**
+- netconvert can import [Traffic Analysis Zones (TAZ)](../Demand/Importing_O/D_Matrices.md#describing_the_taz) by setting option **--polygon-output**
+- [VISUM](https://www.ptvgroup.com/en/solutions/products/ptv-visum/) uses O/D-matrices
 as a demand descriptions. There is some further information on
 [Demand/Importing O/D
 Matrices](../../Demand/Importing_O/D_Matrices.md).
+- Abstract network model XML routes (anm_routes.xml) can be imported with [visum_convertXMLRoutes.py](../Tools/Import/VISUM.md#visum_convertxmlroutespy)
 
 # References
 
