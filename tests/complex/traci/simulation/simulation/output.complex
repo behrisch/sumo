@@ -1,7 +1,6 @@
 loaded? False
- Retrying in 1 seconds
-version at start (23, 'SUMO v1_25_0+0095-f060767e09c')
-version (23, 'SUMO v1_25_0+0095-f060767e09c')
+version at start (22, 'SUMO v1_26_0+0342-7e6525bfa7b')
+version (22, 'SUMO v1_26_0+0342-7e6525bfa7b')
 loaded? True
 endTime 42.0
 net file input_net.net.xml
@@ -58,11 +57,11 @@ convertRoad2D length (667.2699999999995, 3124.688)
 convert2DGeo (12.023018905461857, 48.09105459778215)
 convertGeo2D (-1619.565396778169, -9550.720808432437)
 convert2DRoad ('o', 2906.1892204510686, 0)
-convertGeoRoad ('o', 1012.1569043555731, 0)
-convertGeoRoadBus ('o', 1012.1569043555731, 0)
-convertGeoRoadBusDisallowed ('2o', 8027.707315024642, 0)
+convertGeoRoad ('o', 1012.1569043554977, 0)
+convertGeoRoadBus ('o', 1012.1569043554977, 0)
+convertGeoRoadBusDisallowed ('2o', 8027.707315024789, 0)
 distance2D 10.0
-distance2Dgeo (12.023018905461857, 48.09105459778215) (12.023153016821599, 48.09105807508728) 10.0
+distance2Dgeo (12.023018905461857, 48.09105459778215) (12.023153016821599, 48.09105807508728) 10.000000000058208
 drivingDistance2D 6.48934561332544
 distanceRoad 5131.878972316085
 drivingDistanceRoad 5136.55
@@ -98,6 +97,9 @@ getParameter stats.persons.jammed 0
 getParameter stats.personTeleports.total 0
 getParameter stats.personTeleports.abortWait 0
 getParameter stats.personTeleports.wrongDest 0
+getParameter buildConfig.ARROW_SO_VERSION 2200
+getParameter buildConfig.JPS_VERSION 131
+getParameter buildConfig.ENABLED Windows-10.0.22631 AMD64 MSVC 19.44.35219.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen GDAL FFmpeg OSG GL2PS JuPedSim
 getBusStopIDList ('bs',)
 getBusStopWaiting 1
 getBusStopWaitingIDList ('p1',)

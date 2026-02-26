@@ -1,16 +1,30 @@
 Warning: Value of tau=0.10 in vehicle type 'badDriver' lower than simulation step size may cause collisions.
 Error: Answered with error to command 0xcb: Setting simulation parameter 'foo.bla' is not supported for object id 'foo'. Use empty id for generic network parameters
 Error: Answered with error to command 0xab: Simulation parameter 'foo.bla' is not supported for object id 'foo'. Use empty id for generic network parameters
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
 Error: Answered with error to command 0xab: Invalid chargingStation parameter 'bla'
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
 Error: Answered with error to command 0xab: Invalid chargingStation 'foo'
-C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:173: UserWarning: Call to deprecated function getBusStopWaiting, use busstop.getPersonCount instead.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
+C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:177: UserWarning: Call to deprecated function getBusStopWaiting, use busstop.getPersonCount instead.
   print("getBusStopWaiting", traci.simulation.getBusStopWaiting("foo"))
 Error: Answered with error to command 0xab: Unknown bus stop 'foo'.
-C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:177: UserWarning: Call to deprecated function getBusStopIDList, use busstop.getIDList instead.
+C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:181: UserWarning: Call to deprecated function getBusStopIDList, use busstop.getIDList instead.
   print("getBusStopIDList", traci.simulation.getBusStopIDList())
-C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:178: UserWarning: Call to deprecated function getBusStopWaiting, use busstop.getPersonCount instead.
+C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:182: UserWarning: Call to deprecated function getBusStopWaiting, use busstop.getPersonCount instead.
   print("getBusStopWaiting", traci.simulation.getBusStopWaiting("bs"))
-C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:179: UserWarning: Call to deprecated function getBusStopWaitingIDList, use busstop.getPersonIDs instead.
+C:\Users\behr_mi\Projekte\sumo\sumo\tests\..\tests/complex/traci/simulation/simulation/runner.py:183: UserWarning: Call to deprecated function getBusStopWaitingIDList, use busstop.getPersonIDs instead.
   print("getBusStopWaitingIDList", traci.simulation.getBusStopWaitingIDList("bs"))
 Error: Answered with error to command 0xab: Unknown from edge 'foo'.
 Error: Answered with error to command 0xab: Invalid departure edge for vehicle type 'DEFAULT_VEHTYPE' (Vehicle 'simulation.findRoute' is not allowed to depart on any lane of edge 'footpath'.)

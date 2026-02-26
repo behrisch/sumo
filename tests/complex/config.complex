@@ -112,6 +112,7 @@ output:Parsing connections from .*{REPLACE Parsing connections from (FILE)}
 output:Loading vehicle type mappings from file.*{REPLACE Loading vehicle type mappings from file '<vtype.map>'...}
 output:Simulation.*started with{REPLACE Simulation started with}
 output:([0-9]* ms){REPLACE (TIME)}
+output:(buildConfig\.[A-Z_]*) .*{REPLACE \1}
 log:([0-9]*ms){REPLACE (TIME)}
 log2:([0-9]*ms){REPLACE (TIME)}
 output:version .*SUMO .*{REPLACE version SUMO}

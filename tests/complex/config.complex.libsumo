@@ -15,7 +15,6 @@ errors:at org.eclipse.sumo.libsumo
 output:***Starting server on port
 output:TraCI {REPLACE Libsumo }
 output:legacy getNextStops
-output:Using libsumo as traci as requested by environment variable.
 output:FatalTraCIError 'Infeasible context domain \([0-9]*\)'{REPLACE FatalTraCIError 'Connection closed by SUMO.'}
 output:A GUIMainWindow instance was not yet constructed\.{REPLACE GUI is not running, command not implemented in command line sumo}
 output:at 0x[0-9a-fA-F]*{REPLACE at (ADDRESS)}

@@ -169,6 +169,10 @@ print("getParameter stats.personTeleports.total", traci.simulation.getParameter(
 print("getParameter stats.personTeleports.abortWait", traci.simulation.getParameter("", "stats.personTeleports.abortWait"))  # noqa
 print("getParameter stats.personTeleports.wrongDest", traci.simulation.getParameter("", "stats.personTeleports.wrongDest"))  # noqa
 
+print("getParameter buildConfig.ARROW_SO_VERSION", traci.simulation.getParameter("", "buildConfig.ARROW_SO_VERSION"))
+print("getParameter buildConfig.JPS_VERSION", traci.simulation.getParameter("", "buildConfig.JPS_VERSION"))
+print("getParameter buildConfig.ENABLED", traci.simulation.getParameter("", "buildConfig.ENABLED"))
+
 try:
     print("getBusStopWaiting", traci.simulation.getBusStopWaiting("foo"))
 except traci.TraCIException:

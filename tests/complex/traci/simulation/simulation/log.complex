@@ -1,14 +1,28 @@
-***Starting server on port 60297 ***
-Loading net-file from 'input_net.net.xml' ... done (4ms).
+***Starting server on port 54289 ***
+Loading net-file from 'input_net.net.xml' ... done (37ms).
 Loading additional-files from 'input_additional2.add.xml' ... done (0ms).
 Loading route-files incrementally from 'input_routes.rou.xml'
 Loading done.
 Warning: Value of tau=0.10 in vehicle type 'badDriver' lower than simulation step size may cause collisions.
-Simulation version v1_24_0+1194-c405f7c857f started with time: 0.00.
+Simulation version v1_26_0+0342-7e6525bfa7b started with time: 0.00.
 Error: Answered with error to command 0xcb: Setting simulation parameter 'foo.bla' is not supported for object id 'foo'. Use empty id for generic network parameters
 Error: Answered with error to command 0xab: Simulation parameter 'foo.bla' is not supported for object id 'foo'. Use empty id for generic network parameters
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
 Error: Answered with error to command 0xab: Invalid chargingStation parameter 'bla'
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
 Error: Answered with error to command 0xab: Invalid chargingStation 'foo'
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving chargingStation parameters via the simulation API is deprecated, please use traci.chargingstation.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
+Warning: Retrieving busStop parameters via the simulation API is deprecated, please use traci.busstop.
 Error: Answered with error to command 0xab: Unknown bus stop 'foo'.
 Error: Answered with error to command 0xab: Unknown from edge 'foo'.
 Error: Answered with error to command 0xab: Invalid departure edge for vehicle type 'DEFAULT_VEHTYPE' (Vehicle 'simulation.findRoute' is not allowed to depart on any lane of edge 'footpath'.)
@@ -28,6 +42,6 @@ Reason: TraCI requested termination.
 DijkstraRouter answered 2 queries and explored 2.00 edges on average.
 DijkstraRouter spent 0.00s answering queries (0.00ms on average).
 DijkstraRouter answered 8 queries and explored 34.62 edges on average.
-DijkstraRouter spent 0.00s answering queries (0.00ms on average).
+DijkstraRouter spent 0.00s answering queries (0.12ms on average).
 DijkstraRouter answered 1 queries and explored 2.00 edges on average.
 DijkstraRouter spent 0.00s answering queries (0.00ms on average).
