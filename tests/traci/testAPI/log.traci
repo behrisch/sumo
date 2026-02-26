@@ -1,12 +1,13 @@
-***Starting server on port 59915 ***
-Loading net-file from 'net.net.xml' ... done (4ms).
-Loading additional-files from 'input_additional.add.xml' ... done (0ms).
+***Starting server on port 39199 ***
+Loading net-file from 'net.net.xml' ... done (7ms).
+Loading additional-files from 'input_additional.add.xml' ... done (1ms).
 Loading route-files incrementally from 'input_routes.rou.xml'
 Loading done.
-Simulation version v1_23_1+0833-b824d39d1ab started with time: 0.00.
+Simulation version v1_26_0+0349-e3b52748933 started with time: 0.00.
 Error: Answered with error to command 0xa3: No connection from lane 'e_vu0_0' to lane 'e_m4_1'
 Error: Answered with error to command 0xa3: Lane 'dummy' is not known
 Warning: Vehicle '0' moved by TraCI from 1640.00,491.75 to 2231.61,498.35 (dist 591.61) with implied speed of 591.61 (exceeding maximum speed 30.00). time=5.00.
+Warning: Retrieving parkingArea parameters via the simulation API is deprecated, please use traci.parkingarea.
 custom message test
 Warning: Person 'p1' walking from edge 'e_u1' to edge 'e_m5' has a disconnect between edge 'e_shape1' and edge 'e_m5', time=12.00.
 Warning: Unsafe green phase 2 in tlLogic 'n_m4', program 'custom'. Lane 'e_m4_0' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
