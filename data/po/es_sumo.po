@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-26 12:56+0000\n"
+"PO-Revision-Date: 2026-02-27 11:10+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -10206,7 +10206,7 @@ msgstr "No se puede abrir el archivo visum '%'."
 #: src/netimport/NIImporter_VISUM.cpp:247
 #, c-format
 msgid "Too short value line in % occurred."
-msgstr ""
+msgstr "Se encontró una línea de valores demasiado corta en %."
 
 #: src/netimport/NIImporter_VISUM.cpp:249
 msgid "A value in % should be numeric but is not (id='%')."
@@ -10830,7 +10830,7 @@ msgstr "No se creará la arista '%'."
 #: src/netimport/vissim/tempstructs/NIVissimEdge.cpp:472
 #, c-format
 msgid "Could not insert node '%' to nodes container."
-msgstr ""
+msgstr "No se pudo insertar el nodo '%' en el contenedor de nodos."
 
 #: src/netimport/vissim/tempstructs/NIVissimEdge.cpp:490
 msgid "Could not build edge '%'; would connect same node."
@@ -10956,6 +10956,8 @@ msgid ""
 "Loading vehicles ahead of a state file is not supported. Correct --begin "
 "option or load vehicles with option --route-files"
 msgstr ""
+"No se admite cargar vehículos antes de un archivo de estado. Corrija la "
+"opción --begin o cargue los vehículos con la opción --route-files"
 
 #: src/netload/NLBuilder.cpp:259
 msgid "Loading weights from '%'..."
@@ -11020,11 +11022,11 @@ msgstr ""
 
 #: src/netload/NLHandler.cpp:421
 msgid "Unknown from-node '%' for edge '%'."
-msgstr ""
+msgstr "Nodo de origen '%' desconocido para la arista '%'."
 
 #: src/netload/NLHandler.cpp:425
 msgid "Unknown to-node '%' for edge '%'."
-msgstr ""
+msgstr "Nodo destino '%' desconocido para la arista '%'."
 
 #: src/netload/NLHandler.cpp:567
 #, c-format
@@ -11168,10 +11170,12 @@ msgstr ""
 #: src/netload/NLHandler.cpp:1665
 msgid "Skipping visualization of taz '%', polygon already exists."
 msgstr ""
+"Omitiendo la visualización de la zona de análisis de tráfico '%'; el "
+"polígono ya existe."
 
 #: src/netload/NLHandler.cpp:1696
 msgid "At district '%': succeeding edge '%' does not exist."
-msgstr ""
+msgstr "En el distrito '%': la arista sucesora '%' no existe."
 
 #: src/netload/NLHandler.cpp:1866
 msgid "Invalid person mode '%' in E1 detector definition '%'"
@@ -11227,6 +11231,8 @@ msgid ""
 "The overheadWireSegment '%' was not created as it is attached to internal "
 "lane. It will be build automatically."
 msgstr ""
+"El segmento de catenaria '%' no se creó porque está asociado a un carril "
+"interno. Se construirá automáticamente."
 
 #: src/netload/NLTriggerBuilder.cpp:204
 #, c-format
@@ -11234,6 +11240,8 @@ msgid ""
 "The overheadWireSegment '%' not built as it is attached to internal lane. It"
 " will be build automatically."
 msgstr ""
+"El segmento de catenaria '%' no se construyó porque está asociado a un "
+"carril interno. Se construirá automáticamente."
 
 #: src/netload/NLTriggerBuilder.cpp:216
 #, c-format
@@ -11241,6 +11249,8 @@ msgid ""
 "The overheadWireSegment '%' has wrong position. Automatically set from 0 to "
 "the length of the lane."
 msgstr ""
+"El segmento de catenaria '%' tiene una posición incorrecta. Se configurará "
+"automáticamente desde 0 hasta la longitud del carril."
 
 #: src/netload/NLTriggerBuilder.cpp:224
 msgid ""
