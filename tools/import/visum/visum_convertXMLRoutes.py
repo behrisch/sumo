@@ -54,6 +54,8 @@ def get_options(args=None):
     op.add_argument("--vclass", help="Only include routes for the given vclass")
     op.add_argument("-a", "--attributes", default="",
                     help="additional flow attributes.")
+    op.add_argument("--trips", action="store_true", default=False, category="processing",
+                    help="write unvalidated trips instead of routes")
 
     options = op.parse_args(args=args)
     return options
@@ -154,6 +156,24 @@ def msgOnce(msg, key, file):
     if key not in MSG_CACHE:
         print(msg, file=file)
         MSG_CACHE.add(key)
+
+
+def getAllowedEdge(validEdgesNodes, vClass):
+    for singleNodes, edge in validEdgesNodes:
+        if edge is not None and edge.allows(vClass):
+            return edge
+        for n in singleNodes:
+            for edge2 in n.getOutgoing():
+                if edge2.allows(vClass):
+                    return edge2
+
+def getTripEdges(validEdgesNodes, vClass):
+    result = [getAllowedEdge(validEdgesNodes, vClass),
+              getAllowedEdge(reversed(validEdgesNodes), vClass)]
+    if any(e is None for e in result):
+        return None
+    else:
+        return result
 
 
 def getConnectedEdges(net, validEdgesNodes, vClass, routeID):
@@ -257,7 +277,10 @@ def main(options):
                 if any([e not in allowed for s, e in validEdgesNodes]):
                     nDisallowed += 1
                     continue
-            edges = getConnectedEdges(net, validEdgesNodes, options.vclass, route.INDEX)
+            if options.trips:
+                edges = getTripEdges(validEdgesNodes, options.vclass)
+            else:
+                edges = getConnectedEdges(net, validEdgesNodes, options.vclass, route.INDEX)
             if not edges:
                 nBroken += 1
                 continue
@@ -271,7 +294,8 @@ def main(options):
 
             edgeIDs = [e.getID() for e in edges]
 
-            fout.write('    <route id="%s" edges="%s"/>\n' % (route.INDEX, ' '.join(edgeIDs)))
+            if not options.trips:
+                fout.write('    <route id="%s" edges="%s"/>\n' % (route.INDEX, ' '.join(edgeIDs)))
             for demand in route.DEMAND:
                 flowID = "%s_%s" % (route.INDEX, demand.VTI)
                 vtype, begin, end = vTypes[demand.VTI]
@@ -281,8 +305,12 @@ def main(options):
                     attrs = ""
                     if options.attributes:
                         attrs = " " + options.attributes
-                    fout.write('    <flow id="%s" route="%s" type="%s" begin="%s" end="%s" period="exp(%s)"%s/>\n' % (
-                        flowID, route.INDEX, vtype, begin, end, rate, attrs))
+                    if options.trips:
+                        fromToRoute = ' from="%s" to="%s"' % (edges[0].getID(), edges[-1].getID())
+                    else:
+                        fromToRoute = ' route="%s"' % route.INDEX
+                    fout.write('    <flow id="%s"%s type="%s" begin="%s" end="%s" period="exp(%s)"%s/>\n' % (
+                        flowID, fromToRoute, vtype, begin, end, rate, attrs))
                 else:
                     nZeroFlows += 1
         fout.write("</routes>\n")
