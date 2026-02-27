@@ -555,6 +555,10 @@ RONet::addFlow(SUMOVehicleParameter* flow, const bool randomize) {
         }
         std::sort(myDepartures[flow->id].begin(), myDepartures[flow->id].end());
         std::reverse(myDepartures[flow->id].begin(), myDepartures[flow->id].end());
+    } else if (flow->repetitionOffset < 0) {
+        // init poisson flow (but only the timing)
+        flow->incrementFlow(1);
+        flow->repetitionsDone--;
     }
     const bool added = myFlows.add(flow->id, flow);
     if (added) {
