@@ -160,9 +160,25 @@ private:
 
     template <class ATTR_TYPE, class BUILDER>
     inline void checkBuilder(const ATTR_TYPE& attr, const std::shared_ptr<arrow::DataType>& (*dataType)()) {
+        myNeedsWrite = true;
         if (!myWroteHeader) {
-            mySchema = *mySchema->AddField(mySchema->num_fields(), arrow::field(getAttrString(toString(attr)), dataType()));
-            myBuilders.push_back(std::make_shared<BUILDER>());
+            const std::string fieldName = getAttrString(toString(attr));
+            for (const auto& field : mySchema->fields()) {
+                if (field->name() == fieldName) {
+                    return;
+                }
+            }
+            mySchema = *mySchema->AddField(mySchema->num_fields(), arrow::field(fieldName, dataType()));
+            auto builder = std::make_shared<BUILDER>();
+            if (!myBuilders.empty()) {
+                if (myBuilders.back()->length() > 0) {
+                    PARQUET_THROW_NOT_OK(builder->AppendNulls(myBuilders.back()->length()));
+                }
+                while (myValues.size() < myBuilders.size()) {
+                    myValues.push_back(nullptr);
+                }
+            }
+            myBuilders.push_back(builder);
         }
     }
 
@@ -201,6 +217,9 @@ private:
 
     /// @brief whether the columns should be checked for completeness
     bool myCheckColumns = false;
+
+    /// @brief whether there is still unwritten data
+    bool myNeedsWrite = false;
 
     /// @brief the attributes which are expected for a complete row (including null values)
     SumoXMLAttrMask myExpectedAttrs;

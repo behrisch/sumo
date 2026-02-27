@@ -130,9 +130,12 @@ ParquetFormatter::openTag(std::ostream& /* into */, const SumoXMLTag& xmlElement
 bool
 ParquetFormatter::closeTag(std::ostream& into, const std::string& /* comment */) {
     if (myMaxDepth == 0) {
+        // the auto detection case: the first closed tag determines the depth
         myMaxDepth = (int)myXMLStack.size();
     }
-    if (myMaxDepth == (int)myXMLStack.size() && !myWroteHeader) {
+    if ((myMaxDepth == (int)myXMLStack.size() || myXMLStack.empty()) && !myWroteHeader) {
+        // we are at the correct depth or the document has ended (XML stack is empty)
+        // so we should initialize the writer with the schema (if not done yet)
         if (!myCheckColumns) {
             WRITE_WARNING("Column based formats are still experimental. Autodetection only works for homogeneous output.");
         }
@@ -142,23 +145,23 @@ ParquetFormatter::closeTag(std::ostream& into, const std::string& /* comment */)
         myWroteHeader = true;
     }
     bool writeBatch = false;
-    if ((int)myXMLStack.size() == myMaxDepth) {
-        if (myCheckColumns && myExpectedAttrs != mySeenAttrs) {
+    if (myNeedsWrite) {
+        if (myCheckColumns && (int)myXMLStack.size() == myMaxDepth && myExpectedAttrs != mySeenAttrs) {
             for (int i = 0; i < (int)myExpectedAttrs.size(); ++i) {
                 if (myExpectedAttrs.test(i) && !mySeenAttrs.test(i)) {
                     WRITE_ERRORF("Incomplete attribute set, '%' is missing. This file format does not support Parquet output yet.",
                                  toString((SumoXMLAttr)i));
-                    myValues.push_back(nullptr);
                 }
             }
         }
         int index = 0;
         for (auto& builder : myBuilders) {
-            const auto val = myValues[index++];
+            const auto val = index < (int)myValues.size() ? myValues[index++] : nullptr;
             PARQUET_THROW_NOT_OK(val == nullptr ? builder->AppendNull() : builder->AppendScalar(*val));
         }
-        writeBatch = myBuilders.back()->length() == myBatchSize;
+        writeBatch = myWroteHeader && myBuilders.back()->length() >= myBatchSize;
         mySeenAttrs.reset();
+        myNeedsWrite = false;
     }
     if (writeBatch || (myXMLStack.empty() && !myBuilders.empty())) {
         std::vector<std::shared_ptr<arrow::Array> > data;
@@ -172,12 +175,8 @@ ParquetFormatter::closeTag(std::ostream& into, const std::string& /* comment */)
         PARQUET_THROW_NOT_OK(myParquetWriter->WriteRecordBatch(*batch));
     }
     if (!myXMLStack.empty()) {
-        while ((int)myValues.size() > myXMLStack.back()) {
-            if (!myWroteHeader) {
-                mySchema = *mySchema->RemoveField(mySchema->num_fields() - 1);
-                myBuilders.pop_back();
-            }
-            myValues.pop_back();
+        if ((int)myValues.size() > myXMLStack.back()) {
+            myValues.resize(myXMLStack.back());
         }
         myXMLStack.pop_back();
     }
