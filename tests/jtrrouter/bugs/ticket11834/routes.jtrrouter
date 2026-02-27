@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-10-14 23:01:51 by Eclipse SUMO jtrrouter Version v1_14_1+1771-7925c84
+<!-- generated on 2026-02-27T09:37:46.122194+01:00 by Eclipse SUMO jtrrouter v1_26_0+0354-0d10804319a
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@ Public License 2.0 are satisfied: GNU General Public License, version 2
 or later which is available at
 https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/jtrrouterConfiguration.xsd">
+<jtrrouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/jtrrouterConfiguration.xsd">
 
     <input>
         <net-file value="input_net.net.xml"/>
@@ -35,62 +35,59 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <no-step-log value="true"/>
     </report>
 
-</configuration>
+</jtrrouterConfiguration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vehicle id="0.0" depart="0.00">
+    <vehicle id="0.0" depart="0.58">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.1" depart="0.58">
+    <vehicle id="0.1" depart="2.27">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.2" depart="2.27">
+    <vehicle id="0.2" depart="17.72">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.3" depart="17.72">
+    <vehicle id="0.3" depart="21.28">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.4" depart="21.28">
+    <vehicle id="0.4" depart="23.92">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.5" depart="23.92">
+    <vehicle id="0.5" depart="39.58">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.6" depart="39.58">
+    <vehicle id="0.6" depart="41.06">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.7" depart="41.06">
+    <vehicle id="0.7" depart="48.04">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.8" depart="48.04">
+    <vehicle id="0.8" depart="51.08">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.9" depart="51.08">
+    <vehicle id="0.9" depart="52.55">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.10" depart="52.55">
+    <vehicle id="0.10" depart="78.10">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.11" depart="78.10">
+    <vehicle id="0.11" depart="80.08">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.12" depart="80.08">
+    <vehicle id="0.12" depart="83.89">
         <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.13" depart="83.89">
+    <vehicle id="0.13" depart="87.86">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.14" depart="87.86">
+    <vehicle id="0.14" depart="90.71">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.15" depart="90.71">
+    <vehicle id="0.15" depart="97.35">
         <route edges="beg beg2right right right2end -middle middle end"/>
     </vehicle>
-    <vehicle id="0.16" depart="97.35">
+    <vehicle id="0.16" depart="111.40">
         <route edges="beg beg2right right right2end -middle middle end"/>
-    </vehicle>
-    <vehicle id="0.17" depart="111.40">
-        <route edges="beg beg2left left left2end -middle middle end"/>
     </vehicle>
 </routes>
