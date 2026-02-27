@@ -19,7 +19,6 @@ from __future__ import print_function
 from __future__ import absolute_import
 import os
 import sys
-from collections import defaultdict
 import subprocess
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -38,13 +37,13 @@ def get_options(args=None):
                     help="File for writing the patched network", metavar="FILE")
     ap.add_argument("-p", "--patch-file-prefix", dest="patchPrefix", category="output", default="patch",
                     help="prefix for patch files")
-    ap.add_argument("-a", "--attributes", required=True, 
+    ap.add_argument("-a", "--attributes", required=True,
                     help="the list of edge attributes that shall be transferred")
     gp = ap.add_mutually_exclusive_group(required=False)
-    gp.add_argument("--osm.origid", action="store_true", dest="osmOrigId",
-                    default=False, help="match objects based on OSM ids (stored in params from --output.original-names)")
-    gp.add_argument("--origid", action="store_true", dest="origId",
-                    default=False, help="match objects based on origIDs after renaming")
+    gp.add_argument("--osm.origid", action="store_true", dest="osmOrigId", default=False,
+                    help="match objects based on OSM ids (stored in params from --output.original-names)")
+    gp.add_argument("--origid", action="store_true", dest="origId", default=False,
+                    help="match objects based on origIDs after renaming")
     ap.add_argument("-v", "--verbose", action="store_true", dest="verbose",
                     default=False, help="tell me what you are doing")
 
@@ -62,9 +61,11 @@ class Ambiguous:
 # override canonical method name if defaults if needed
 RETRIEVERS = {}
 
+
 def getAttr(edge, a):
-    method = RETRIEVERS.get(a, 'get' + a[0].upper()+ a[1:])
+    method = RETRIEVERS.get(a, 'get' + a[0].upper() + a[1:])
     return getattr(edge, method)()
+
 
 def getAttrs(options, edge):
     return [getAttr(edge, a) for a in options.attributes]
@@ -91,7 +92,7 @@ def main(options):
                     lookup[origId] = attrs
                 else:
                     attrs3 = []
-                    for a,v,v2 in zip(options.attributes, attrs, attrs2):
+                    for a, v, v2 in zip(options.attributes, attrs, attrs2):
                         if v == v2 or v2 is None:
                             attrs3.append(v)
                         elif v is None:
@@ -127,13 +128,13 @@ def main(options):
                         v2 = lookup[origId][i]
                         if v2 == Ambiguous:
                             v = None
-                            break;
+                            break
                         if v is None:
                             v = v2
                         elif v2 is not None and v != v2:
                             print("Ambiguous attribute '%s' for edge '%s' with origIds '%s' (%s != %s)" % (
                                 a, edge.getID(), origIds, v, v2), file=sys.stderr)
-                            a2 = None
+                            v = None
                             break
                 if v == attrs[i]:
                     # no need to patch if the attribute is already correct
