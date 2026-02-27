@@ -734,7 +734,7 @@ NIImporter_OpenStreetMap::insertEdge(Edge* e, int index, NBNode* from, NBNode* t
             forwardWidth /= 2;
             backwardWidth /= 2;
         }
-        if (e->myWidth < 4) {
+        if (e->myWidth < 5) {
             routingType = "narrow";
         }
     }
