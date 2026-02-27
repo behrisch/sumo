@@ -1,0 +1,2 @@
+-n net.net.xml -r input_data.xml -o out.rou.xml
+--trips

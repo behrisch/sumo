@@ -1,4 +1,5 @@
 basic
+trips
 repair
 
 # test nodes that consist of "<NODEID> <EDGEID><DIRECTION_SUFFIX>"
