@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-26 12:56+0000\n"
+"PO-Revision-Date: 2026-02-28 18:42+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/de/>\n"
@@ -8549,8 +8549,7 @@ msgstr "Konnte Kante für Parkplatz '%' nicht finden."
 #, c-format
 msgid ""
 "The traffic light '%' does not control any links; it will not be build."
-msgstr ""
-"Die LSA '%' kontrolliert keine Verknüpfungen; sie wird nicht erstellt."
+msgstr "Die LSA '%' kontrolliert keine Verbindungen; sie wird nicht erstellt."
 
 #: src/netbuild/NBTrafficLightDefinition.cpp:231
 msgid "Unreachable edge '%' within tlLogic '%'"
@@ -8577,7 +8576,9 @@ msgstr "Beim Hinzufügen einer Phase: illegales Zeichen '%' im Stand"
 #: src/netbuild/NBTrafficLightLogic.cpp:235
 #, c-format
 msgid "Non-static traffic light '%' does not define variable phase length."
-msgstr "Nicht statische LSA '%' darf keine variable Phasenlängen definieren."
+msgstr ""
+"Die LSA '%' ist von einem nicht statischen Typ, definiert aber keine "
+"variablen Phasenlängen."
 
 #: src/netbuild/NBTrafficLightLogicCont.cpp:248
 msgid "Could not build program '%' for traffic light '%'"
@@ -8630,7 +8631,7 @@ msgid ""
 " when possible"
 msgstr ""
 "Die IDs der generierten Knoten verwenden nach Möglichkeit einen "
-"alphanumerischen Code für eine einfachere Lesbarkeit"
+"alphanumerischen Skript für eine einfachere Lesbarkeit"
 
 #: src/netgen/NGFrame.cpp:48
 msgid "Generate INT left-turn lanes"
@@ -8928,7 +8929,7 @@ msgstr "   % Kanten generiert."
 
 #: src/netgen/netgen_main.cpp:277
 msgid " Removed % traffic lights at geometry-like nodes"
-msgstr " % LSAs am geometrieähnlichen Knoten entfernt"
+msgstr " % LSA an geometrieähnlichen Knoten entfernt"
 
 #: src/netimport/NIFrame.cpp:53
 msgid "Read SUMO-net from FILE"
