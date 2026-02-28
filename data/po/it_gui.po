@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-20 18:14+0000\n"
+"PO-Revision-Date: 2026-02-28 18:42+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -3075,7 +3075,7 @@ msgstr "Elementi di itinerari"
 
 #: src/netedit/GNEApplicationWindow.cpp:4274
 msgid "Route elements file in unified file"
-msgstr ""
+msgstr "Elementi di itinerari nel file unificato"
 
 #: src/netedit/GNEApplicationWindow.cpp:4284
 msgid "saving of unified demand elements in '%'."
@@ -3119,7 +3119,7 @@ msgstr "Il salvataggio degli elementi di dati è fallito"
 
 #: src/netedit/GNEApplicationWindow.cpp:4455
 msgid "Data elements file in unified file"
-msgstr ""
+msgstr "Elementi di dati nel file unificato"
 
 #: src/netedit/GNEApplicationWindow.cpp:4465
 msgid "saving of unified data elements in '%'"
@@ -3169,7 +3169,7 @@ msgstr "Elementi MeanData"
 
 #: src/netedit/GNEApplicationWindow.cpp:4628
 msgid "MeanData elements file in unified file"
-msgstr ""
+msgstr "Elementi MeanData nel file unificato"
 
 #: src/netedit/GNEApplicationWindow.cpp:4638
 msgid "saving of unified mean data elements in '%'"
@@ -11773,11 +11773,11 @@ msgstr "aggiungi poligono '"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1647
 msgid "add POI '%'"
-msgstr ""
+msgstr "aggiungi punto di interesse '%'"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1693
 msgid "add POI lane '%'"
-msgstr ""
+msgstr "aggiungi punto di interesse su corsia '%'"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1726
 #, c-format
@@ -11790,7 +11790,7 @@ msgstr "La rete richiede una proiezione geografica."
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1736
 msgid "add POI GEO '%'"
-msgstr ""
+msgstr "aggiungi punto di interesse geografico '%'"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1763
 msgid "add jps walkable area '"
@@ -12509,11 +12509,11 @@ msgstr ""
 
 #: src/netedit/elements/moving/GNEMoveElementLaneSingle.cpp:222
 msgid "% > length of lane"
-msgstr ""
+msgstr "% > lunghezza di corsia"
 
 #: src/netedit/elements/moving/GNEMoveElementLaneSingle.cpp:224
 msgid "% > (length of lane - EPS)"
-msgstr ""
+msgstr "% > (lunghezza di corsia - EPS)"
 
 #: src/netedit/elements/moving/GNEMoveElementPlan.cpp:127
 #: src/netedit/elements/moving/GNEMoveElementVehicle.cpp:193
@@ -12527,15 +12527,15 @@ msgstr "posizione di partenza di %"
 
 #: src/netedit/elements/moving/GNEMoveElementShape.cpp:190
 msgid "moving center of %"
-msgstr ""
+msgstr "spostamento del centro di %"
 
 #: src/netedit/elements/moving/GNEMoveElementShape.cpp:198
 msgid "moving entire shape of %"
-msgstr ""
+msgstr "spostamento della forma intera di %"
 
 #: src/netedit/elements/moving/GNEMoveElementShape.cpp:216
 msgid "editing shape of %"
-msgstr ""
+msgstr "modifica della forma di %"
 
 #: src/netedit/elements/moving/GNEMoveElementViewResizable.cpp:99
 msgid "length of %"
@@ -12985,7 +12985,7 @@ msgstr "Apri dialogo dell'elemento"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:86
 msgid "Open specific element edit dialog"
-msgstr ""
+msgstr "Apri dialogo di modifica per un elemento preciso"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:92
 msgid "Open help attributes dialog"
@@ -13001,11 +13001,11 @@ msgstr "Modifica gli attributi estesi"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:103
 msgid "Open dialog for editing extended attributes"
-msgstr ""
+msgstr "Apri dialogo per modificare gli attributi avanzati"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:107
 msgid "Open dialog for editing generic parameters"
-msgstr ""
+msgstr "Apri dialogo per modificare i parametri generici"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:214
 #, c-format
