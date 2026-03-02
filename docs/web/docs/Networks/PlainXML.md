@@ -479,7 +479,7 @@ Let's list an edge's attributes again:
 | endOffset      | float \>= 0                           | Move the stop line back from the intersection by the given amount (effectively shortening the edge and locally enlarging the intersection)  |
 | sidewalkWidth  | float \>= 0                           | Adds a sidewalk with the given width (defaults to -1 which adds nothing).  |
 | bikeLaneWidth  | float \>= 0                           | Adds a bicycle lane with the given width (defaults to -1 which adds nothing).  |
-| distance       | float                                 | [Kilometrage](../Simulation/Railways.md#kilometrage_mileage_chainage) at the start of this edge. If the value is positive, kilometrage increases in driving direction; if the value is negative, kilometrage decreases. Kilometrage along the edge is computed as abs(*distance* + *offsetFromStart*).  |
+| distance       | float                                 | [Kilometrage](../Simulation/Distances.md#defining_and_using_linear_coordinates) at the start of this edge. If the value is positive, kilometrage increases in driving direction; if the value is negative, kilometrage decreases. Kilometrage along the edge is computed as abs(*distance* + *offsetFromStart*).  |
 | routingType    | id                                    | Used together with [preference](../Simulation/Routing.md#routing_by_travel_time_and_routingtype) to set custom edge preferences for routing |
 
 The priority plays a role during the computation of the way-giving rules
