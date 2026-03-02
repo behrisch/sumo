@@ -622,7 +622,7 @@ visualised as a time line along the simulation time.
 <code> --xticks 0,86401,14400,14 --xtime1 --ygrid \</code><br />
 <code> --ylabel "running vehicles [#]" --xlabel "time" \</code><br />
 <code> --title "running vehicles over time" --adjust .14,.1 </code></p>
-<p>The example shows the numbers of vehicles running in a large-scale scenario of the city of Brunswick over the day for the standard week day classes. "mo.xml", "dido.xml", "fr.xml", "sa.xml", and "so.xml" are <a href="../Simulation/Output/Summary.md">summary-files</a> resulting from simulations of the weekday-types Monday, Tuesday-Thursday, Friday, Saturday, and Sunday, respectively.</p></td>
+<p>The example shows the numbers of vehicles running in a large-scale scenario of the city of Brunswick over the day for the standard week day classes. "mo.xml", "dido.xml", "fr.xml", "sa.xml", and "so.xml" are <a href="../Simulation/Output/Summary.html">summary-files</a> resulting from simulations of the weekday-types Monday, Tuesday-Thursday, Friday, Saturday, and Sunday, respectively.</p></td>
 </tr>
 </tbody>
 </table>
@@ -659,7 +659,7 @@ the measure (vehicles) that fall into a bin.
 <code> --title "duration distribution" \</code><br />
 <code> --yticks 14 --xlabelsize 14 --ylabelsize 14 --titlesize 16 \</code><br />
 <code> -l mon,tue-thu,fri,sat,sun --adjust .14,.1 --xlim 0,3600</code></p>
-<p>The example shows the travel time distribution for the vehicles of different week day classes (Braunschweig scenario). "mo.xml", "dido.xml", "fr.xml", "sa.xml", and "so.xml" are <a href="../Simulation/Output/TripInfo.md">tripinfo-files</a> resulting from simulations of the weekday-types Monday, Tuesday-Thursday, Friday, Saturday, and Sunday, respectively.</p></td>
+<p>The example shows the travel time distribution for the vehicles of different week day classes (Braunschweig scenario). "mo.xml", "dido.xml", "fr.xml", "sa.xml", and "so.xml" are <a href="../Simulation/Output/TripInfo.html">tripinfo-files</a> resulting from simulations of the weekday-types Monday, Tuesday-Thursday, Friday, Saturday, and Sunday, respectively.</p></td>
 </tr>
 <tr class="even">
 <td><figure>
@@ -703,7 +703,7 @@ using the **--columns** {{DT_INT}}\[,{{DT_INT}}\]\* option. The values are visua
 <code> --xticks 14 --yticks 14 --colors k --ylim 0,125 \</code><br />
 <code> --output nefz.png \</code><br />
 <code> --title "New European Driving Cycle (NEDC)" --titlesize 16</code></p>
-<p>The example shows the <a href="Emissions.md#driving_cycles">New European Driving Cycle (NEDC)</a>.</p></td>
+<p>The example shows the <a href="Emissions.html#driving_cycles">New European Driving Cycle (NEDC)</a>.</p></td>
 </tr>
 </tbody>
 </table>

@@ -196,7 +196,7 @@ vehicles of a type.
 <td><p>string</p></td>
 <td></td>
 <td><p>P_7_7</p></td>
-<td><p>the emission class, see <a href="../Models/Emissions.md">Models/Emissions</a>.</p></td>
+<td><p>the emission class, see <a href="../Models/Emissions.html">Models/Emissions</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>probability</p></td>

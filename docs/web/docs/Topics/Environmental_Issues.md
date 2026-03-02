@@ -91,7 +91,7 @@ The noise model is based on HARMONOISE.
     <td class="tg-amwm">fuel</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><a href="../Models/Emissions/HBEFA-based.md">HBEFA v2.1-based</a></td>
+    <td class="tg-0lax"><a href="../Models/Emissions/HBEFA-based.html">HBEFA v2.1-based</a></td>
     <td class="tg-baqh">x</td>
     <td class="tg-baqh">x</td>
     <td class="tg-baqh">x</td>
@@ -100,7 +100,7 @@ The noise model is based on HARMONOISE.
     <td class="tg-baqh">x</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><a href="../Models/Emissions/PHEMlight.md">PHEMlight</a></td>
+    <td class="tg-0lax"><a href="../Models/Emissions/PHEMlight.html">PHEMlight</a></td>
     <td class="tg-baqh">x</td>
     <td class="tg-baqh">x</td>
     <td class="tg-baqh">x</td>

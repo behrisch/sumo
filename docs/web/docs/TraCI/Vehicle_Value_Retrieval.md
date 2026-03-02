@@ -30,7 +30,7 @@ next stops (0x73).
 <th><p>Variable</p></th>
 <th><p>ValueType</p></th>
 <th><p>Description</p></th>
-<th><p><a href="../TraCI/Interfacing_TraCI_from_Python.md">Python Method</a></p></th>
+<th><p><a href="../TraCI/Interfacing_TraCI_from_Python.html">Python Method</a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -360,7 +360,7 @@ next stops (0x73).
 </tr>
 <tr class="odd">
 <td><p>lane change mode (0xb6)</p></td>
-<td><p>int bitset (see <a href="../TraCI/Change_Vehicle_State.md#lane_change_mode_0xb6">below</a>)</p></td>
+<td><p>int bitset (see <a href="../TraCI/Change_Vehicle_State.html#lane_change_mode_0xb6">below</a>)</p></td>
 <td><p>Get information on how lane changing in general and lane changing requests by TraCI are performed.</p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getLaneChangeMode">getLaneChangeMode</a></p></td>
 </tr>
@@ -576,7 +576,7 @@ Some further messages require additional parameters.
 <th><p>Request ValueType</p></th>
 <th><p>Response ValueType</p></th>
 <th><p>Description</p></th>
-<th><p><a href="../TraCI/Interfacing_TraCI_from_Python.md">Python Method</a></p></th>
+<th><p><a href="../TraCI/Interfacing_TraCI_from_Python.html">Python Method</a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -620,7 +620,7 @@ Return the lane change state for the vehicle.</p></td>
 <td><p>neighboring vehicles (0xbf)</p></td>
 <td><p>byte , <a href="#neighboring_vehicles_0xbf">see below</a></p></td>
 <td><p>stringList <a href="#neighboring_vehicles_0xbf">see below</a></p></td>
-<td><p>Returns a list of IDs for neighboring vehicle relevant to lane changing (&gt;1 elements only possible for <a href="../Simulation/SublaneModel.md">sublane model</a>)</p></td>
+<td><p>Returns a list of IDs for neighboring vehicle relevant to lane changing (&gt;1 elements only possible for <a href="../Simulation/SublaneModel.html">sublane model</a>)</p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getNeighbors">getNeighbors</a>, <a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getLeftFollowers">getLeftFollowers</a>, <a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getLeftLeaders">getLeftLeaders</a>, <a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getRightFollowers">getRightFollowers</a>, <a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getRightLeaders">getRightLeaders</a></p></td>
 </tr>
 <tr class="odd">

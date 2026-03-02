@@ -182,7 +182,7 @@ integrated approach by now.
 </tr>
 <tr class="even">
 <td><p>Jakob Erdmann</p></td>
-<td><p>network import, <a href="netedit.md">netedit</a></p></td>
+<td><p>network import, <a href="netedit.html">netedit</a></p></td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -249,11 +249,11 @@ integrated approach by now.
 <img src="images/Tum-logo.png" title="tum-logo.png" alt="" />
 </figure></td>
 <td><p>Piotr Woznica</p></td>
-<td><p><a href="activitygen.md">activitygen</a></p></td>
+<td><p><a href="activitygen.html">activitygen</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Walter Bamberger</p></td>
-<td><p>Development of <a href="activitygen.md">activitygen</a> as a base for the evaluation of trust scenarios in VANETs. The work is part of the project <a href="https://www.ldv.ei.tum.de/fidens/">Fidens: Trust between Cooperative Systems</a> featuring trusted probabilistic knowledge processing in vehicular networks.</p></td>
+<td><p>Development of <a href="activitygen.html">activitygen</a> as a base for the evaluation of trust scenarios in VANETs. The work is part of the project <a href="https://www.ldv.ei.tum.de/fidens/">Fidens: Trust between Cooperative Systems</a> featuring trusted probabilistic knowledge processing in vehicular networks.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Matthew Fullerton</p></td>
@@ -274,7 +274,7 @@ integrated approach by now.
 <tr class="even">
 <td></td>
 <td><p>Leontios Papaleontiou</p></td>
-<td><p><a href="Contributed/SUMO_Traffic_Modeler.md">Contributed/SUMO Traffic Modeler</a></p></td>
+<td><p><a href="Contributed/SUMO_Traffic_Modeler.html">Contributed/SUMO Traffic Modeler</a></p></td>
 </tr>
 <tr class="odd">
 <td><figure>
