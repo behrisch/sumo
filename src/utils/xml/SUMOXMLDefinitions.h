@@ -1410,6 +1410,8 @@ enum SumoXMLAttr {
     SUMO_ATTR_LCSTATE,
     /// @brief foe visibility distance of a link
     SUMO_ATTR_VISIBILITY_DISTANCE,
+    /// @brief reset building step / connection guessing
+    SUMO_ATTR_RESET,
     /// @brief icon
     SUMO_ATTR_ICON,
     /// @brief A layer number

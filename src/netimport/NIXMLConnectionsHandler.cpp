@@ -355,6 +355,10 @@ NIXMLConnectionsHandler::parseConnection(const SUMOSAXAttributes& attrs) {
     } else {
         fromEdge->addEdge2EdgeConnection(toEdge);
         fromEdge->getToNode()->invalidateTLS(myTLLogicCont, true, false);
+        const bool reset = attrs.getOpt<bool>(SUMO_ATTR_RESET, "connection", ok, false);
+        if (reset) {
+            fromEdge->declareConnectionsAsLoaded(NBEdge::EdgeBuildingStep::INIT);
+        }
         if (attrs.hasAttribute(SUMO_ATTR_PASS)
                 || attrs.hasAttribute(SUMO_ATTR_KEEP_CLEAR)
                 || attrs.hasAttribute(SUMO_ATTR_CONTPOS)

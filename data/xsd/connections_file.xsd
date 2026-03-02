@@ -48,6 +48,7 @@
         <xsd:attribute name="changeLeft" type="xsd:string" use="optional"/>
         <xsd:attribute name="indirect" type="boolType" use="optional"/>
         <xsd:attribute name="type" type="xsd:string" use="optional"/>
+        <xsd:attribute name="reset" type="boolType" use="optional"/>
     </xsd:complexType>
 
     <xsd:complexType name="prohibitionType">

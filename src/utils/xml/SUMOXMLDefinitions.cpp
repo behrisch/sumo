@@ -1067,6 +1067,7 @@ SequentialStringBijection::Entry SUMOXMLDefinitions::attrs[] = {
     { "viaJunctions",           SUMO_ATTR_VIAJUNCTIONS },
     { "nodes",                  SUMO_ATTR_NODES },
     { "visibility",             SUMO_ATTR_VISIBILITY_DISTANCE },
+    { "reset",                  SUMO_ATTR_RESET },
 
     { "minDur",                 SUMO_ATTR_MINDURATION },
     { "maxDur",                 SUMO_ATTR_MAXDURATION },
