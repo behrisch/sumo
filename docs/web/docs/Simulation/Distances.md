@@ -30,8 +30,12 @@ The distance value along an edge is computed as:
 ```
   |edgeDistance + vehiclePos|
 ```
+Networks can be configured with distance values in any of the following ways
 
-Edge distance is imported from OSM and can also be be set along a route in [netedit](../Netedit/elementsDemand.md#route)
+- Edge distance is imported from OSM (when present in the data). Note: This information may be sparse/incomplete
+- Defining the value in [XML inputs](../Networks/PlainXML.md#edge_descriptions)
+- Setting the edge attribute directly in [netedit](../Netedit/elements.md#edges)
+- [Set for all edges](../Netedit/neteditPopupFunctions.md#route) along a [route in netedit](../Netedit/elementsDemand.md#route)
 
 The distances value can be written in [fcd-output](Output/FCDOutput.md#further_options) using option **--fcd-output.distance**. It may then be used for plotting by [plot_trajectories.py](../Tools/Visualization.md#plot_trajectoriespy) using the code `k` (i.e. -t kt). The distances can also be visualized in sumo-gui (color edges by distance).
 
