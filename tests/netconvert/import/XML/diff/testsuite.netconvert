@@ -37,6 +37,9 @@ remove_tll_connection2
 
 # deleting all connections from an edge should not trigger turn-around guessing
 remove_all_connections
+
+# re-guess connections for selected edges
+reguess_connections
 patch_crossing
 remove_crossing
 
