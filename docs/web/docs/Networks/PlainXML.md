@@ -892,9 +892,16 @@ connection file specifies which edges outgoing from a junction may be
 reached by a certain edge incoming into this junction and optionally
 also which lanes shall be used on both sides.
 
+### Edge-to-Edge connectivity
+
 If you only want to describe which edges may be reached from a certain
-edge, the definition is:`<connection from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>"/>`. This tells
-[netconvert](../netconvert.md) not only that vehicles shall be
+edge, the definition is:
+
+```
+<connection from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>"/>
+```
+
+This tells [netconvert](../netconvert.md) not only that vehicles shall be
 allowed to drive from the edge named *<FROM_EDGE_ID\>* to the edge named
 *<TO_EDGE_ID\>*, but also prohibits all movements to other edges from
 *<FROM_EDGE_ID\>*, unless they are specified within this file. Let's
@@ -905,11 +912,19 @@ repeat the parameters:
 | **from**       | referenced edge id | The name of the edge the vehicles leave                                                                                              |
 | to             | referenced edge id | The name of the edge the vehicles may reach when leaving "from". If omitted or set to "" the incoming edge will have no connections. |
 
-When using this kind of input, [netconvert](../netconvert.md) will
+When using the kind of input, [netconvert](../netconvert.md) will
 compute which lanes shall be used if any of the connected edges has more
-than one lane. If you also want to override this computation and set the
-lanes by hand, use the following: `<connection from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>" fromLane="<INT_1>" toLane="<INT_2>"/>`
-Here, a connection from the edge's "*<FROM_EDGE_ID\>*" lane with the number *<INT_1\>* is build to the lane *<INT_2\>* of the edge "*<TO_EDGE_ID\>*". Lanes are counted from the right (outer) to the left (inner) side of the road beginning with 0. Again the parameter:
+than one lane. To obtain more control, additional attributes may be given as described below.
+
+### Lane-to-Lane connectivity
+
+To declare connections fully (and avoid any kind of guessing), use the following:
+
+```
+<connection from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>" fromLane="<INT_1>" toLane="<INT_2>"/>
+```
+
+Here, a connection from the edge's "*<FROM_EDGE_ID\>*" lane with the number *<INT_1\>* is build to the lane *<INT_2\>* of the edge "*<TO_EDGE_ID\>*". Lanes are counted from the right (outer) to the left (inner) side of the road beginning with 0. This style must be used when further connection attributes (such as permissions) shall be declared.
 
 | Attribute Name | Value Type                             | Default | Description      |
 | -------------- | -------------------------------------- | ------- | ----------------------------------------------------------------------- |
@@ -932,8 +947,17 @@ Here, a connection from the edge's "*<FROM_EDGE_ID\>*" lane with the number *<IN
 | indirect | bool    | false | declare an indirect (two-step) turning movement (affects geometry and right-of-way) |
 | type | string    |  | set custom edgeType for applying [vClass-specific speed limits](#vehicle-class_specific_speed_limits) |
 
+### Deleting connections
+
+[netconvert](../netconvert.md) may be used to patch existing sumo networks (*.net.xml* files) and changing connections is one of the supported use cases.
 If you only wish to **remove** a connection it may be convenient to use
-the following xml definition: `<delete from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>"/>`. The attributes are the same as for the
+the following xml definition: 
+
+```
+<delete from="<FROM_EDGE_ID>" to="<T0_EDGE_ID>"/>
+```
+
+The attributes are the same as for the
 simple connection element:
 
 | Attribute Name | Value Type         | Description                                                |
@@ -945,6 +969,24 @@ simple connection element:
 
 !!! note
     Note that in basic format (that is, without **fromLane** and **toLane** attributes) the definition deletes **all** connections from given incoming edge to the given outgoing edge. When **fromLane** and **toLane** attributes are provided, only the connection from given lane to given lane is removed.
+
+### Patching connections and guessing again
+
+By default there are two modes when processing connections.
+
+1. when loading from *plain-xml*, any missing information is guessed (and this typically causes connections to be added)
+2. when loading from a *.net.xml*, everything existing is kept by default and nothing is guessed. Any changes to connections must be enacted by explicitly adding or removing connections (as described above).
+
+It may be convenient to trigger re-guessing of connections for selected edges (i.e. after loading and edge-patch to change lane numbers).
+For this, the following definition may be used:
+
+```
+<connection from="<FROM_EDGE_ID>" reset="true"/>
+```
+
+This will trigger all connections from edge with id `FROM_EDGE_ID` to be removed and re-guessed.
+
+### Examples
 
 There are two examples within the distribution. Both use the nodes and
 edges descriptions from the example located in
@@ -1007,6 +1049,8 @@ Network with explicit lane-2-lane connections
 
 !!! caution
     Please do not use both types of connection declarations (those with an lane attribute and those without) for the same from-edge! The behavior is not verified and tested for these settings.
+
+
 
 ## Setting Connection Priorities
 
