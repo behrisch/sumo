@@ -431,6 +431,12 @@ Vehicle::getDrivingDistance2D(const std::string& vehID, double x, double y) {
 
 
 double
+Vehicle::getReferenceDistance(const std::string& vehID) {
+    return Dom::getDouble(libsumo::VAR_REFERENCE_DISTANCE, vehID);
+}
+
+
+double
 Vehicle::getAllowedSpeed(const std::string& vehID) {
     return Dom::getDouble(libsumo::VAR_ALLOWED_SPEED, vehID);
 }

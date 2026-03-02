@@ -741,6 +741,23 @@ Vehicle::getDrivingDistance2D(const std::string& vehID, double x, double y) {
 
 
 double
+Vehicle::getReferenceDistance(const std::string& vehID) {
+    MSBaseVehicle* veh = Helper::getVehicle(vehID);
+    if (veh->hasDeparted()) {
+        double lanePos = veh->getPositionOnLane();
+        MSVehicle* microVeh = dynamic_cast<MSVehicle*>(veh);
+        if (microVeh != nullptr && microVeh->getLane()->isInternal()) {
+            lanePos = microVeh->getRoute().getDistanceBetween(0., lanePos, microVeh->getEdge()->getLanes()[0], microVeh->getLane(),
+                    microVeh->getRoutePosition());
+        }
+        return veh->getEdge()->getDistanceAt(lanePos);
+    } else {
+        return INVALID_DOUBLE_VALUE;
+    }
+}
+
+
+double
 Vehicle::getAllowedSpeed(const std::string& vehID) {
     MSBaseVehicle* veh = Helper::getVehicle(vehID);
     return veh->isOnRoad() ? CALL_MICRO_FUN(veh, getLane()->getVehicleMaxSpeed(veh), veh->getEdge()->getVehicleMaxSpeed(veh)) : INVALID_DOUBLE_VALUE;
@@ -2922,6 +2939,8 @@ Vehicle::handleVariable(const std::string& objID, const int variable, VariableWr
             return wrapper->wrapInt(objID, variable, getStopState(objID));
         case VAR_DISTANCE:
             return wrapper->wrapDouble(objID, variable, getDistance(objID));
+        case VAR_REFERENCE_DISTANCE:
+            return wrapper->wrapDouble(objID, variable, getReferenceDistance(objID));
         case VAR_ALLOWED_SPEED:
             return wrapper->wrapDouble(objID, variable, getAllowedSpeed(objID));
         case VAR_SPEED_FACTOR:

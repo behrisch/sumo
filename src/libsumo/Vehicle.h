@@ -98,6 +98,7 @@ public:
     static double getDistance(const std::string& vehID);
     static double getDrivingDistance(const std::string& vehID, const std::string& edgeID, double pos, int laneIndex = 0);
     static double getDrivingDistance2D(const std::string& vehID, double x, double y);
+    static double getReferenceDistance(const std::string& vehID);
     static double getAllowedSpeed(const std::string& vehID);
     static int getSpeedMode(const std::string& vehID);
     static int getLaneChangeMode(const std::string& vehID);

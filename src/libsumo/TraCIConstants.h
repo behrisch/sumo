@@ -1404,6 +1404,9 @@ TRACI_CONST int CMD_REROUTE_EFFORT = 0x91;
 // validates current route (vehicles)
 TRACI_CONST int VAR_ROUTE_VALID = 0x92;
 
+// retrieve distance along linear reference system (vehicle, edge)
+TRACI_CONST int VAR_REFERENCE_DISTANCE = 0x95;
+
 // retrieve information regarding the current person/container stage
 TRACI_CONST int VAR_STAGE = 0xc0;
 

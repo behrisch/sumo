@@ -835,6 +835,12 @@ class VehicleDomain(VTypeDomain):
         """
         return self._getUniversal(tc.VAR_DISTANCE, vehID)
 
+    def getReferenceDistance(self, vehID):
+        """getReferenceDistance(string) -> double
+        Returns the distance along the linear reference system in which the current edge takes part (i.e. kilometrage/mile markers)
+        """
+        return self._getUniversal(tc.VAR_REFERENCE_DISTANCE, vehID)
+
     def getStopParameter(self, vehID, nextStopIndex, param, customParam=False):
         """getStopParameter(string, int, string) -> string
         Gets the value of the given parameter for the stop at the given index
