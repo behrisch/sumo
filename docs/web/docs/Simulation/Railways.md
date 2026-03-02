@@ -284,22 +284,9 @@ When setting parameters, `id` indicates the id of the rail-crossing junction and
 
 ## Kilometrage (Mileage, Chainage)
 
-Edges support the attribute *distance* to denote the distance at the
-start of the edge relative to some point of reference for a [linear
-referencing scheme](https://en.wikipedia.org/wiki/Linear_referencing).
-When the distance metric decreases along the forward direction of the edge, this is indicated by using a negative sign for the distance value.
-
-The distance value along an edge is computed as:
-```
-  |edgeDistance + vehiclePos|
-```
-
-Edge distance is imported from OSM and can also be be set along a route in [netedit](../Netedit/elementsDemand.md#route)
-
-The distances value can be written in [fcd-output](Output/FCDOutput.md#further_options) using option **--fcd-output.distance**. It may then be used for plotting by [plot_trajectories.py](../Tools/Visualization.md#plot_trajectoriespy) using the code `k` (i.e. -t kt). The distances can also be visualized in sumo-gui (color edges by distance).
-
-!!! note
-    Negative distance values are not currently supported (pending introduction of another attribute)
+Edges can be configured to take part in a [linear
+referencing scheme](https://en.wikipedia.org/wiki/Linear_referencing) by setting their [`distance`-attribute](Distances.md#defining_and_using_linear_coordinates).
+The linear coordinates of a vehicle can be included in [fcd-output](Output/FCDOutput.md#further_options) using option **--fcd-output.distance**.
 
 # Modelling Trains
 
