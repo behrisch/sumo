@@ -321,6 +321,17 @@ plotXMLAttributes.py tripinfos.xml tripinfos2.xml -x timeLoss -y @COUNT -i @NONE
 !!! caution
     It is important to set **-i @NONE** to ensure that the timeLoss values are aggregated by file rather than by vehicle id.
 
+### Time-Space-Plot
+
+This plot demonstrates a common use-case in traffic simulation: Mapping vehicle positions to a single dimension (i.e. distance driven from a common point) and plotting that distance value over time with one continuous line per vehicle. This kind of plot reveals how disturbances in traffic flow move in space and time through the intuitive impressions of slope and line density.
+The source data for this kind of plot is typically [FCD-Output](../Simulation/Output/FCDOutput.md) and there are different ways to obtain the one dimensional position for the vehicles:
+
+1. use x (or y) coordinate in case the road is aligned with the coordinate system (i.e. in a synthetic scenario). The command is `plotXMLAttributes.py fcd.xml -x time -y x`
+2. use the total distance driven since the vehicle started (i.e. when all vehicles depart at the same location). Requires [SUMO option to enable FCD attribute 'odometer'](../Simulation/Output/FCDOutput.md#changing_the_written_attributes): **--fcd-output.attributes odometer** (or **--fcd-output.attributes all**). The command is `plotXMLAttributes.py fcd.xml -x time -y odometer`
+3. use a sumo network where roads are part of [linear reference scheme (kilometrage)](../Simulation/Railways.md#kilometrage_mileage_chainage). Requires [SUMO option to enable FCD attribute 'distance'](../Simulation/Output/FCDOutput.md#changing_the_written_attributes): **--fcd-output.attributes distance** (or **--fcd-output.attributes all**). The command is `plotXMLAttributes.py fcd.xml -x time -y distance`
+
+<img src="../images/timeSpace.png" width="500px"/>
+
 ## plot_trajectories.py
 
 Create plot of all trajectories obtained from a file generated through [--fcd-output](../Simulation/Output/FCDOutput.md). This tool in particular is located in {{SUMO}}/tools.
