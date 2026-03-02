@@ -79,6 +79,7 @@ driving dist 2D 1089.0303920102156
 line ''
 via ()
 dist 5.467193502862939
+refDist 10.567193502862938
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -170,6 +171,7 @@ driving dist 2D 1063.6456672524512
 line 'S46'
 via ('3o', '4o')
 dist 30.85191826062743
+refDist 35.95191826062743
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -261,6 +263,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist -1073741824.0
+refDist -1073741824.0
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -372,6 +375,7 @@ driving dist 2D 1087.579240951649
 line 't'
 via ()
 dist 6.918344561429695
+refDist 12.018344561429695
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -733,6 +737,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist 458.19101834282105
+refDist 208.19101834282102
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -878,6 +883,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist -1073741824.0
+refDist -1073741824.0
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -961,6 +967,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist -1073741824.0
+refDist -1073741824.0
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -1044,6 +1051,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist -1073741824.0
+refDist -1073741824.0
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False
@@ -1127,6 +1135,7 @@ driving dist 2D -1073741824.0
 line ''
 via ()
 dist -1073741824.0
+refDist -1073741824.0
 lane change state right (1073741824, 1073741824)
 lane change state left (1073741824, 1073741824)
 lane change able right False

@@ -126,6 +126,7 @@ def check(vehID):
     print("line", "'%s'" % traci.vehicle.getLine(vehID))
     print("via", traci.vehicle.getVia(vehID))
     print("dist", traci.vehicle.getDistance(vehID))
+    print("refDist", traci.vehicle.getReferenceDistance(vehID))
     print("lane change state right", traci.vehicle.getLaneChangeState(vehID, -1))
     print("lane change state left", traci.vehicle.getLaneChangeState(vehID, 1))
     print("lane change able right", traci.vehicle.couldChangeLane(vehID, -1))
