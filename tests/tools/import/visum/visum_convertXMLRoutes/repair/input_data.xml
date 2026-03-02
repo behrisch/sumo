@@ -15,7 +15,7 @@
 					<ITEM NODE="J3"/>
 				</ITEMS>
 				<DEMANDS>
-					<DEMAND VTI="1" VOLUME="0.268"/>
+					<DEMAND VTI="1" VOLUME="268"/>
 				</DEMANDS>
 			</ROUTE>
 		</ROUTES>

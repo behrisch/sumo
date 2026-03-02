@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-11-19 08:48:07.660736 by Eclipse SUMO visum_convertXMLRoutes.py v1_25_0+0090-063586976d9
+<!-- generated on 2026-03-02 08:09:58.657888 by Eclipse SUMO visum_convertXMLRoutes.py v1_26_0+0365-39fee3a49df
 <configuration>
     <net-file value="net.net.xml"/>
     <route-file value="input_data.xml"/>
@@ -12,5 +12,5 @@
     <vType id="200"/>
     <vType id="300"/>
     <route id="1" edges="E38 E33"/>
-    <flow id="1_1" route="1" type="200" begin="09:00:00" end="12:00:00" period="exp(3.101851851851852e-06)"/>
+    <flow id="1_1" route="1" type="200" begin="09:00:00" end="12:00:00" period="exp(0.024814814814814814)"/>
 </routes>
