@@ -45,7 +45,6 @@ jobs:
   # checking external links
   ############################
   external-link-check:
-    if: github.event_name != 'push'
     runs-on: ubuntu-latest
 
     steps:
@@ -63,4 +62,4 @@ jobs:
       uses: lycheeverse/lychee-action@v2
       with:
         fail: true
-        args: -c docs/web/lychee.toml -n docs/web/docs/ --cache --max-cache-age 2d
+        args: -c docs/web/lychee.toml -n docs/web/docs/
