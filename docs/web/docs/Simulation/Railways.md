@@ -680,6 +680,13 @@ This file provides the times whenever a vehicle has entered or left a driveway.
 | exit / time          | float or HH:MM:SS                                   | The time at which the vehicle left the driveWay |
 | exit / reason        | string                                              | The reason for leaving the driveWay |
 
+## railsignal state output
+
+For logging the states of a rail signal, the same method as for [logging
+TLS states of traffic lights](../Simulation/Output/Traffic_Lights.md#tls_states) can be
+used. The attribute `source` must be set to the ID of the junction the rail signal belongs to (or omitted to track the states of all rail signals in the simulation).
+
+
 # Miscellaneous
 - Error checking for [railway schedules](Public_Transport.md#single_vehicles_and_trips) can be done with the tool [checkStopOrder.py](../Tools/Routes.md#checkstoporderpy)
 - The tool [scheduleStats.py](../Tools/Railways.md#schedulestatspy) can be used to check how closely simulated train behavior conforms to a loaded rail schedule w.r.t. punctuality and expected traveltimes between stops.
