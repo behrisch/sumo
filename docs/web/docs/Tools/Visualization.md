@@ -328,7 +328,7 @@ The source data for this kind of plot is typically [FCD-Output](../Simulation/Ou
 
 1. use x (or y) coordinate in case the road is aligned with the coordinate system (i.e. in a synthetic scenario). The command is `plotXMLAttributes.py fcd.xml -x time -y x`
 2. use the total distance driven since the vehicle started (i.e. when all vehicles depart at the same location). Requires [SUMO option to enable FCD attribute 'odometer'](../Simulation/Output/FCDOutput.md#changing_the_written_attributes): **--fcd-output.attributes odometer** (or **--fcd-output.attributes all**). The command is `plotXMLAttributes.py fcd.xml -x time -y odometer`
-3. use a sumo network where roads are part of [linear reference scheme (kilometrage)](../Simulation/Railways.md#kilometrage_mileage_chainage). Requires [SUMO option to enable FCD attribute 'distance'](../Simulation/Output/FCDOutput.md#changing_the_written_attributes): **--fcd-output.attributes distance** (or **--fcd-output.attributes all**). The command is `plotXMLAttributes.py fcd.xml -x time -y distance`
+3. use a sumo network where roads are part of [linear reference scheme (kilometrage)](../Simulation/Distances.md#defining_and_using_linear_coordinates). Requires [SUMO option to enable FCD attribute 'distance'](../Simulation/Output/FCDOutput.md#changing_the_written_attributes): **--fcd-output.attributes distance** (or **--fcd-output.attributes all**). The command is `plotXMLAttributes.py fcd.xml -x time -y distance`
 
 <img src="../images/timespace.png" width="500px"/>
 
