@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-27 11:10+0000\n"
+"PO-Revision-Date: 2026-03-02 13:51+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -7010,14 +7010,16 @@ msgid ""
 "Remaps alphanumerical IDs of nodes and edges to ensure that all IDs are "
 "integers"
 msgstr ""
+"Remapea los IDs alfanuméricos de nodos y aristas para asegurar que todos los "
+"IDs sean números enteros"
 
 #: src/netbuild/NBFrame.cpp:126
 msgid "Remaps IDs of nodes to integers starting at INT"
-msgstr ""
+msgstr "Remapea los IDs de los nodos a números enteros, comenzando en INT"
 
 #: src/netbuild/NBFrame.cpp:129
 msgid "Remaps IDs of edges to integers starting at INT"
-msgstr ""
+msgstr "Remapea los IDs de las aristas a números enteros, comenzando en INT"
 
 #: src/netbuild/NBFrame.cpp:133
 msgid ""
@@ -7046,11 +7048,11 @@ msgstr "Desactiva la creación de retornos"
 
 #: src/netbuild/NBFrame.cpp:148
 msgid "Disables building turnarounds at tls-controlled junctions"
-msgstr ""
+msgstr "Desactiva la creación de retornos en cruces controlados por semáforos"
 
 #: src/netbuild/NBFrame.cpp:151
 msgid "Disables building turnarounds at geometry-like junctions"
-msgstr ""
+msgstr "Desactiva la creación de retornos en cruces de tipo geométrico"
 
 #: src/netbuild/NBFrame.cpp:154
 msgid "Disables building turnarounds except at dead end junctions"
@@ -7061,6 +7063,8 @@ msgid ""
 "Disables building turnarounds except at at junctions with a dedicated "
 "turning lane"
 msgstr ""
+"Desactiva la creación de retornos, excepto en cruces con un carril exclusivo "
+"de giro"
 
 #: src/netbuild/NBFrame.cpp:160
 msgid "Disables building turnarounds at fringe junctions"
@@ -7072,13 +7076,15 @@ msgstr "Desactiva la creación de conexiones hacia la izquierda"
 
 #: src/netbuild/NBFrame.cpp:167
 msgid "Splits edges across geometry nodes"
-msgstr ""
+msgstr "Divide las aristas en los nodos geométricos"
 
 #: src/netbuild/NBFrame.cpp:171
 msgid ""
 "Replace nodes which only define edge geometry by geometry points (joins "
 "edges)"
 msgstr ""
+"Reemplazar los nodos que solo definen la geometría de la arista mediante "
+"puntos geométricos (combina aristas)"
 
 #: src/netbuild/NBFrame.cpp:174
 msgid "Ensure that the given list of edges is not modified"
@@ -7103,6 +7109,8 @@ msgid ""
 "Warn about edge geometries with an angle above DEGREES in successive "
 "segments"
 msgstr ""
+"Advertir sobre geometrías de arista con un ángulo superior a DEGREES en "
+"segmentos sucesivos"
 
 #: src/netbuild/NBFrame.cpp:208
 msgid ""
@@ -7114,6 +7122,8 @@ msgid ""
 "Warn about edge geometries with a turning radius less than METERS at the "
 "start or end"
 msgstr ""
+"Advertir sobre geometrías de arista con un radio de giro menor que METERS al "
+"inicio o al final"
 
 #: src/netbuild/NBFrame.cpp:214
 msgid ""
