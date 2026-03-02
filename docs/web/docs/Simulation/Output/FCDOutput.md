@@ -254,6 +254,6 @@ Generated with [plot_trajectories.py](../../Tools/Visualization.md#fcd_based_spe
 
 ### Time-Space-Plot
 
-<img src="../images/timespace.png" width="500px"/>
+<img src="../../images/timespace.png" width="500px"/>
 
 Generated with [plotXMLAttributes.py](../../Tools/Visualization.md#time-space-plot).
