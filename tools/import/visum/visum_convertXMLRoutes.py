@@ -33,7 +33,7 @@ except ImportError:
 if 'SUMO_HOME' in os.environ:
     sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
 import sumolib  # noqa
-from sumolib.miscutils import openz  # noqa
+from sumolib.miscutils import openz, parseTime  # noqa
 
 MSG_CACHE = set()
 
@@ -299,8 +299,8 @@ def main(options):
             for demand in route.DEMAND:
                 flowID = "%s_%s" % (route.INDEX, demand.VTI)
                 vtype, begin, end = vTypes[demand.VTI]
-                #  assume VOLUME is per day
-                rate = float(demand.VOLUME) * options.scale / (3600 * 24)
+                duration = parseTime(end) - parseTime(begin)
+                rate = float(demand.VOLUME) * options.scale / duration
                 if rate > 0:
                     attrs = ""
                     if options.attributes:
