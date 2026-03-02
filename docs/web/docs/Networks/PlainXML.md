@@ -201,7 +201,7 @@ error and will yield in a program stop:
 - `allway_stop`: This junction works like
   an [*All-way stop*](https://en.wikipedia.org/wiki/All-way_stop).
 - `rail_signal`: This junction is
-  controlled by a [rail signal](../Simulation/Rail_signals.md).
+  controlled by a [rail signal](../Simulation/Railways.md#rail_signals).
   This type of junction/control is only useful for rails.
 - `zipper`: This junction connects edges
   where the number of lanes decreases and traffic needs to merge
