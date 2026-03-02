@@ -151,7 +151,7 @@ next stops (0x73).
 <tr class="even">
 <td><p>routing mode (0x89)</p></td>
 <td><p>int</p></td>
-<td><p>An integer encoding the <a href="../Simulation/Routing.md#travel-time_values_for_routing">current routing mode</a> (0: default, 1: aggregated)</p></td>
+<td><p>An integer encoding the <a href="../Simulation/Routing.html#travel-time_values_for_routing">current routing mode</a> (0: default, 1: aggregated)</p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getRoutingMode">getRoutingMode</a></p></td>
 </tr>
 <tr class="even">
@@ -355,7 +355,7 @@ next stops (0x73).
 <tr class="even">
 <td><p>speed mode (0xb3)</p></td>
 <td><p>int bitset (see below)</p></td>
-<td><p>Retrieves how the values set by speed (0x40) and slowdown (0x14) shall be treated. See the <a href="../TraCI/Change_Vehicle_State.md#speed_mode_0xb3">set speedmode command</a> for details.</p></td>
+<td><p>Retrieves how the values set by speed (0x40) and slowdown (0x14) shall be treated. See the <a href="../TraCI/Change_Vehicle_State.html#speed_mode_0xb3">set speedmode command</a> for details.</p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getSpeedMode">getSpeedMode</a></p></td>
 </tr>
 <tr class="odd">
@@ -481,7 +481,7 @@ next stops (0x73).
 <tr class="odd">
 <td><p>teleporting list (0x25)</p></td>
 <td><p>stringList</p></td>
-<td><p>Returns a list of all vehicles that are currently <a href="../Simulation/Why_Vehicles_are_teleporting.md">teleporting/jumping</a></p></td>
+<td><p>Returns a list of all vehicles that are currently <a href="../Simulation/Why_Vehicles_are_teleporting.html">teleporting/jumping</a></p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getTeleportingIDList">getTeleportingIDList</a></p></td>
 </tr>
 <tr class="even">
@@ -523,7 +523,7 @@ next stops (0x73).
 <tr class="even">
   <td><p>reference distance (0x95)</p></td>
   <td><p>double</p></td>
-  <td><p>Returns the position of the vehicle within the <a href="../Simulation/Distances.md#defining_and_using_linear_coordinates">linear reference system of the edge</a></p></td>
+  <td><p>Returns the position of the vehicle within the <a href="../Simulation/Distances.html#defining_and_using_linear_coordinates">linear reference system of the edge</a></p></td>
   <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getReferenceDistance">getDepartSegmentIndex</a></p></td>
 </tr>
 </tbody>
