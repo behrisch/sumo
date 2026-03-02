@@ -245,7 +245,7 @@ The minimum distance of 200m between the two signals can be customized with opti
 
 In mainline rail operations, a rail signal is located upstream of a conflict point (i.e. a switch) by 50 to 200 meters and even more on high-speed lines. This means it will often be necessary to split an edge so that a new node is created at the exact location where a rail signal is needed (whenever a missing rail signal is added manually). This splitting can be accomplished in [netedit](../Netedit/neteditPopupFunctions.md#split_edge_here) or by loading [split definitions](../Networks/PlainXML.md#road_segment_refining) in netconvert patch file.
 
-An altenative is to define, the switch itself as type `rail_signal` and to move the stop line upstream with [edge attribute `endOffset`](Networks/PlainXML.md#edge_descriptions). This has several implications:
+An altenative is to define, the switch itself as type `rail_signal` and to move the stop line upstream with [edge attribute `endOffset`](../Networks/PlainXML.md#edge_descriptions). This has several implications:
 
 - it preserves existing network topology and route validity because no new nodes or edges are introduced
 - it requires simulation with [internal links](Intersections.md#internal_links) because vehicles will spend significant time on the greatly enlarged junction (switch) interior.
