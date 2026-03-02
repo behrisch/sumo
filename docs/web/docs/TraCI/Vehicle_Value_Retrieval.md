@@ -514,11 +514,17 @@ next stops (0x73).
   <td><p>Returns the index of the segment on which the vehicle is driving (mesosim)</p></td>
   <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getSegmentIndex">getDepartSegmentIndex</a></p></td>
 </tr>
-  <tr class="odd">
+<tr class="odd">
 <td><p>mass (0xc8)</p></td>
 <td><p>double</p></td>
 <td><p>Returns the mass of the vehicle</p></td>
 <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getMass">getMass</a></p></td>
+</tr>
+<tr class="even">
+  <td><p>reference distance (0x95)</p></td>
+  <td><p>double</p></td>
+  <td><p>Returns the position of the vehicle within the [linear reference system of the edge](../Simulation/Distances.md#defining_and_using_linear_coordinates)</p></td>
+  <td><p><a href="https://sumo.dlr.de/pydoc/traci._vehicle.html#VehicleDomain-getSegmentIndex">getDepartSegmentIndex</a></p></td>
 </tr>
 </tbody>
 </table>
