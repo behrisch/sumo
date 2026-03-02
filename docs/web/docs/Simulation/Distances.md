@@ -3,14 +3,40 @@ title: Distances
 ---
 
 # Introduction
-A Sumo simulation network uses multiple coordination system
+A Sumo simulation network uses multiple coordinate system
 
 1. x,y,z: coordinates in meters (Cartesian coordinates)
-2. lon,lat,z: geo-coordinates + elevation in meters (typically WGS84) if the network is geo-referenced
+2. lon,lat,z: geo-coordinates + [elevation](../Networks/Elevation.md) in meters (typically WGS84) if the network is [geo-referenced](../Geo-Coordinates.md)
 3. edgeID, laneIndex, lanePosition: The lanePosition is the driving distance from the start of the edge (road) in meters
+4. linear coordinates / distance along a specific road or railway route (also known as kilometrage/mileage/chainage)  
 
 For the simulation behavior of the vehicles, only coordinate system 3 is used
-whereas the other systems are for visualization and output.
+whereas the other systems are for visualization and output. 
+
+# Converting between coordinates
+
+- Several outputs can be configured to switch their output from coordinate systems 1 to system 2. Relevant options are **--fcd-output.geo**, **--emission-output.geo** and **--device.ssm.geo**.
+- [conversion between systems 1 and 2](../Geo-Coordinates.md#performing_coordinate-transformations)
+- [conversion between systems 1 and 3](../Geo-Coordinates.md#mapping_geo-coordinates)
+
+# Defining and Using Linear Coordinates
+
+Edges support the attribute *distance* to denote the distance at the
+start of the edge relative to some point of reference for a [linear
+referencing scheme](https://en.wikipedia.org/wiki/Linear_referencing).
+When the distance metric decreases along the forward direction of the edge, this is indicated by using a negative sign for the distance value.
+
+The distance value along an edge is computed as:
+```
+  |edgeDistance + vehiclePos|
+```
+
+Edge distance is imported from OSM and can also be be set along a route in [netedit](../Netedit/elementsDemand.md#route)
+
+The distances value can be written in [fcd-output](Output/FCDOutput.md#further_options) using option **--fcd-output.distance**. It may then be used for plotting by [plot_trajectories.py](../Tools/Visualization.md#plot_trajectoriespy) using the code `k` (i.e. -t kt). The distances can also be visualized in sumo-gui (color edges by distance).
+
+!!! note
+    Negative distance values are not currently supported (pending introduction of another attribute)
 
 # Length-Geometry-mismatch
 
